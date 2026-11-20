@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Razona · demo
 
-## Getting Started
+"El LeetCode del ENARM": casos clínicos tipo ENARM con un tutor socrático (Google ADK + Gemini) que cita las Guías de Práctica Clínica, examen simulado y progreso.
 
-First, run the development server:
+> **Es un demo, no un producto.** Demo — uso educativo, no sustituye el criterio clínico.
+> Todo el contenido clínico es **CONTENIDO DE EJEMPLO — reemplazar por los ítems validados**.
+
+## Guion (90 s)
+
+1. Escanear el QR → `/login` → **Entrar como Ana (demo)**.
+2. **Inicio**: racha, avance por especialidad y tema débil (Bronquiolitis).
+3. **Practicar mi tema débil** → elegir **a) Salbutamol** → el tutor pregunta y cita la GPC.
+4. Elegir **b)** → feedback con explicación y cita.
+5. **Examen** → Comenzar → responder 2 → **Completar examen (demo)**.
+6. **Resultados**: calificación, aciertos por especialidad, revisión con cita, **Practicar mi tema débil**.
+7. **Progreso**: la racha sube (6 → 7) y el tema débil mejora.
+
+Antes de cada ensayo o del pitch: `pnpm seed:demo` (reinicia a Ana).
+
+## Desarrollo local
+
+Requisitos: Node 24, pnpm, Docker y Supabase CLI.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+supabase start          # API en http://127.0.0.1:55321
+cp .env.example .env.local   # y completa con `supabase status`
+pnpm seed:demo          # crea a Ana + contenido
+pnpm dev --port 3100
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Script | Qué hace |
+|---|---|
+| `pnpm verify` | typecheck + lint (Biome) + tests (Vitest) |
+| `pnpm test:e2e` | Guion completo en viewport de iPhone (Playwright; reinicia a Ana) |
+| `pnpm seed:demo` | Sincroniza contenido y reinicia a Ana (idempotente) |
+| `pnpm db:reset` | Reaplica migraciones y seed de especialidades |
+| `pnpm db:types` | Regenera `lib/supabase/database.types.ts` |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estructura
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/(auth)/login          Login (correo, Ana demo, Google opcional)
+app/(app)/{inicio,practicar,examen,progreso}
+app/api/*                 Route handlers validados con Zod (entrada y salida)
+app/auth/{callback,logout}
+lib/schemas               Contratos Zod (contenido, API, eventos SSE)
+lib/ai                    TutorEngine: ADK, respaldo, resiliente (timeout 6 s), SSE
+lib/learning              Racha, estadísticas, Thompson sampling
+lib/data                  Acceso a datos (RLS con la sesión de la usuaria)
+lib/supabase              Clientes server / proxy / admin (service role, server-only)
+lib/analytics/events.ts   PostHog (no hace nada sin clave)
+content/                  items.json, exam.json, tutor-fallback.json
+supabase/migrations       Esquema + RLS
+scripts/seed-demo.ts      Ana y su historial sintético
+tests/{unit,e2e}
+docs/DECISIONES.md
+```
 
-## Learn More
+## Reemplazar el contenido
 
-To learn more about Next.js, take a look at the following resources:
+Edita `content/items.json` (casos), `content/exam.json` (10 reactivos + `demoAnswers`) y `content/tutor-fallback.json` (preguntas socráticas por opción incorrecta). No hay que tocar código: `pnpm test` valida los archivos con Zod y `pnpm seed:demo` los sincroniza a la tabla `items`. Si un caso nuevo usa otra especialidad, agrégala en `specialties` de `items.json`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy (Vercel + Supabase)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Crea el proyecto en Supabase y aplica migraciones: `supabase link --project-ref <ref> && supabase db push`.
+2. Importa el repo en Vercel y conecta la **integración Supabase–Vercel** (define `NEXT_PUBLIC_SUPABASE_URL`, las llaves públicas y la secreta).
+3. Agrega en Vercel: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_DEMO_MODE=true`, `DEMO_USER_EMAIL`, `DEMO_USER_PASSWORD`, `GOOGLE_GENAI_API_KEY` (opcional), `NEXT_PUBLIC_POSTHOG_KEY` (opcional).
+4. En Supabase → Auth → URL Configuration: Site URL = dominio de Vercel y `https://<dominio>/auth/callback` en Redirect URLs.
+5. Desde tu máquina, con las variables de producción en `.env.local`: `pnpm seed:demo`.
+6. Genera el QR apuntando a `https://<dominio>/login`.
 
-## Deploy on Vercel
+## Checklist del día del pitch
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] `pnpm seed:demo` contra producción justo antes de subir.
+- [ ] Probar el guion completo una vez en el teléfono que se usará.
+- [ ] Con y sin `GOOGLE_GENAI_API_KEY` el guion funciona (sin clave usa el tutor de respaldo).
+- [ ] Si la red falla: el tutor de respaldo responde en <1 s.
