@@ -1,6 +1,17 @@
+import { networkInterfaces } from "node:os";
 import type { NextConfig } from "next";
 
+/** IPs IPv4 de la red local de esta máquina, para abrir el servidor de desarrollo desde el teléfono. */
+function lanAddresses(): string[] {
+  return Object.values(networkInterfaces())
+    .flat()
+    .filter((net) => net && net.family === "IPv4" && !net.internal)
+    .map((net) => net?.address as string);
+}
+
 const nextConfig: NextConfig = {
+  // Solo aplica en `next dev`: permite cargar la app desde otro dispositivo en la misma red.
+  allowedDevOrigins: lanAddresses(),
   // ADK tiene dependencias opcionales (GCP) que no deben empaquetarse: se carga en runtime desde node_modules.
   serverExternalPackages: ["@google/adk", "@google/genai"],
   turbopack: {

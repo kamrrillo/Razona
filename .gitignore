@@ -45,3 +45,6 @@ next-env.d.ts
 # playwright
 /test-results/
 /playwright-report/
+
+# QR locales (IP de la red de cada máquina)
+/docs/qr/
