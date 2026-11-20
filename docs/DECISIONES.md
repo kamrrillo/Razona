@@ -31,7 +31,7 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - **Salvaguarda:** si la respuesta del modelo revela la opción correcta (texto de la opción o "la respuesta correcta es…"), se descarta y se usa el respaldo.
 - **Eventos `hint` y `citation`** se generan de forma determinista desde el contenido (no del texto del modelo), para que la cita siempre exista y sea la del ítem.
 - **Herramientas:** `buscar_gpc` (fragmento de GPC del ítem), `registrar_intento` (marca el último intento de la sesión como `used_tutor`), `siguiente_caso` (tema sugerido por Thompson). El intento en sí lo registra `POST /api/attempt`, no el agente, para no duplicar.
-- Modelo por defecto `gemini-2.5-flash` (el valor por defecto de ADK 2.5); configurable con `GEMINI_MODEL`.
+- Modelo por defecto `gemini-3.5-flash` (configurable con `GEMINI_MODEL`). `gemini-2.5-flash`, el default de ADK TS 2.5, ya no está disponible para claves nuevas de AI Studio (404 al probar con la clave del equipo el 20 nov 2026).
 - **Sin clave de Gemini no se pudo probar una conversación real con ADK.** Se verificó que el módulo carga, que envía la petición a Gemini y que, con clave inválida, cae al respaldo en ~200 ms.
 
 ## Auth

@@ -18,7 +18,7 @@ export const serverEnv = ServerEnvSchema.parse({
   demoEmail: process.env.DEMO_USER_EMAIL || undefined,
   demoPassword: process.env.DEMO_USER_PASSWORD || undefined,
   googleApiKey: process.env.GOOGLE_GENAI_API_KEY || undefined,
-  geminiModel: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+  geminiModel: process.env.GEMINI_MODEL || "gemini-3.5-flash",
   tutorTimeoutMs: process.env.TUTOR_TIMEOUT_MS || 6000,
   agentApiUrl: process.env.AGENT_API_URL || undefined,
   agentApiToken: process.env.AGENT_API_TOKEN || undefined,
