@@ -17,7 +17,8 @@
       "!test-results",
       "!playwright-report",
       "!supabase/.temp",
-      "!.claude"
+      "!.claude",
+      "!agent/.venv"
     ]
   },
   "formatter": {

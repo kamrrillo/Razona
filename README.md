@@ -57,6 +57,19 @@ tests/{unit,e2e}
 docs/DECISIONES.md
 ```
 
+## Agente en Python (ADK)
+
+`agent/` contiene un sistema multiagente con **Google ADK para Python** (coordinador + agente de diagnóstico + agente de preparación + tutor socrático) que lee y escribe en la misma base de Supabase. Solo necesita `GOOGLE_API_KEY`:
+
+```bash
+cd agent && uv sync && export GOOGLE_API_KEY=tu-clave
+uv run adk web                          # UI de ADK → razona_agent
+uv run python -m razona_agent.cli       # chat en la terminal como Ana
+uv run pytest                           # pruebas (sin clave)
+```
+
+Detalles, arquitectura y decisiones: [agent/README.md](agent/README.md).
+
 ## Reemplazar el contenido
 
 Edita `content/items.json` (casos), `content/exam.json` (10 reactivos + `demoAnswers`) y `content/tutor-fallback.json` (preguntas socráticas por opción incorrecta). No hay que tocar código: `pnpm test` valida los archivos con Zod y `pnpm seed:demo` los sincroniza a la tabla `items`. Si un caso nuevo usa otra especialidad, agrégala en `specialties` de `items.json`.
