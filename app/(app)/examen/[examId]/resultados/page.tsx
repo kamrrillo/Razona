@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CitationCard } from "@/components/app/citation-card";
+import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
 import { buttonVariants } from "@/components/ui/button";
@@ -141,6 +142,7 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                   section={item.citation.section}
                   snippet={item.citation.snippet}
                 />
+                <ExplanationDiagramLoader request={{ examId, itemId: item.id }} />
               </div>
             </details>
           );

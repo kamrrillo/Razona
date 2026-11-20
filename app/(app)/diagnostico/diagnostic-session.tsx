@@ -4,6 +4,7 @@ import { Bot, CheckCircle2, Loader2, MicOff, Send, Sparkles, XCircle } from "luc
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
+import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { LogoMark } from "@/components/app/logo";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
@@ -328,6 +329,11 @@ export function DiagnosticSession() {
                     section={r.citation.section}
                     snippet={r.citation.snippet}
                   />
+                  {r.selected_option && (
+                    <ExplanationDiagramLoader
+                      request={{ examId: result.exam_id, itemId: r.item_id }}
+                    />
+                  )}
                 </div>
               </details>
             ))}

@@ -4,6 +4,7 @@ import { CheckCircle2, Lightbulb, Loader2, Send, Sparkles, XCircle } from "lucid
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
+import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -364,6 +365,11 @@ export function PracticeSession({ topic }: { topic?: string }) {
                 gpcTitle={solved.citation.gpcTitle}
                 section={solved.citation.section}
                 snippet={solved.citation.snippet}
+              />
+              <ExplanationDiagramLoader
+                request={{ sessionId: session.sessionId }}
+                autoLoad
+                className="rounded-2xl bg-white p-1"
               />
               <p className="text-xs text-muted-foreground">
                 {solved.attemptNumber === 1

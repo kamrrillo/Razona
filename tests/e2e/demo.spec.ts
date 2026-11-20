@@ -40,6 +40,14 @@ test("guion de la demo", async ({ page }) => {
   const feedback = page.getByTestId("feedback");
   await expect(feedback).toContainText("¡Correcto!");
   await expect(feedback.getByTestId("citation")).toBeVisible();
+  // Diagrama SVG de la explicación, construido paso a paso
+  const diagram = feedback.getByTestId("explanation-diagram");
+  await expect(diagram).toBeVisible({ timeout: 20_000 });
+  await expect(diagram.getByTestId("diagram-step")).toHaveText(/^Paso 1 de \d$/);
+  await expect(diagram.locator('[data-testid="diagram-node"][data-visible="true"]')).toHaveCount(1);
+  await diagram.getByTestId("diagram-next").click();
+  await expect(diagram.getByTestId("diagram-step")).toHaveText(/^Paso 2 de \d$/);
+  await expect(diagram.locator('[data-testid="diagram-node"][data-visible="true"]')).toHaveCount(2);
 
   // 5. Examen simulado: 2 en vivo + "Completar examen (demo)"
   await page.getByRole("link", { name: "Examen", exact: true }).click();
@@ -61,6 +69,10 @@ test("guion de la demo", async ({ page }) => {
   await expect(page.getByTestId("review-item")).toHaveCount(10);
   await page.getByTestId("review-item").first().locator("summary").click();
   await expect(page.getByTestId("review-item").first().getByTestId("citation")).toBeVisible();
+  await page.getByTestId("review-item").first().getByTestId("load-diagram").click();
+  await expect(
+    page.getByTestId("review-item").first().getByTestId("explanation-diagram"),
+  ).toBeVisible({ timeout: 20_000 });
   await expect(page.getByTestId("practice-weak-topic")).toBeVisible();
 
   // 7. Progreso: la racha sube y el tema débil se actualiza
@@ -79,4 +91,18 @@ test("las APIs rechazan peticiones sin sesión", async ({ request }) => {
   expect(res.status()).toBe(401);
   const progress = await request.get("/api/progress");
   expect(progress.status()).toBe(401);
+});
+
+test("el diagrama no se entrega para un caso sin resolver", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByRole("button", { name: "Entrar como Ana (demo)" }).click();
+  await expect(page).toHaveURL(/\/inicio/);
+  const session = await page.request.post("/api/session", { data: {} });
+  const { sessionId } = await session.json();
+  const res = await page.request.post("/api/explain", { data: { sessionId } });
+  expect(res.status()).toBe(409);
+  const unauth = await page.request.post("/api/explain", {
+    data: { examId: "00000000-0000-4000-8000-000000000000", itemId: "ex-mi-01" },
+  });
+  expect(unauth.status()).toBe(404);
 });

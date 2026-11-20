@@ -79,3 +79,11 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - El modelo a veces responde con Markdown; se pide texto plano y además se limpia (`lib/text.ts`).
 - Las pruebas de Python fuerzan la clave vacía para no llamar a Gemini aunque exista en `.env.local`.
 - Si la cuenta se queda sin créditos (402) o el modelo está saturado (503), el tutor cae al respaldo y el diagnóstico sigue sin narración.
+
+## Diagramas paso a paso (iteración 4)
+
+- Cada explicación (feedback de Practicar, revisión del simulacro y del diagnóstico) tiene un **diagrama SVG que se construye paso a paso**: dato clave → razonamiento → descarte de la opción elegida → decisión → GPC.
+- **El modelo no genera SVG.** Un `LlmAgent` de ADK con `outputSchema` (Zod) devuelve pasos estructurados; la app los valida, recorta y dibuja con su propio componente (`components/app/explanation-diagram.tsx`). Así no hay SVG/HTML arbitrario del modelo y el diseño es consistente.
+- **Sin inventar contenido:** el prompt solo incluye viñeta, opciones, explicación y fragmento de GPC del ítem, y exige usar únicamente eso. El último paso (GPC) siempre lo pone la app con la cita real del ítem.
+- **Respaldo determinista** (`buildFallbackDiagram`) construido solo con los campos del ítem si no hay clave, si falla o si tarda más de 9 s. La UI indica si el diagrama fue generado con IA.
+- **`/api/explain` no filtra respuestas:** solo responde si el caso ya se resolvió o el examen ya terminó (409 si no).
