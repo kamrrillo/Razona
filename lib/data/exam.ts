@@ -18,6 +18,7 @@ export async function startExam(supabase: ServerSupabase, userId: string): Promi
 
 export type ExamRow = {
   id: string;
+  examKey: string;
   startedAt: string;
   finishedAt: string | null;
   durationSeconds: number;
@@ -34,7 +35,7 @@ export async function loadExam(
   const [exam, answers] = await Promise.all([
     supabase
       .from("exams")
-      .select("id, started_at, finished_at, duration_seconds, correct, total, score")
+      .select("id, exam_key, started_at, finished_at, duration_seconds, correct, total, score")
       .eq("id", examId)
       .eq("user_id", userId)
       .maybeSingle(),
@@ -50,6 +51,7 @@ export async function loadExam(
   return {
     exam: {
       id: exam.data.id,
+      examKey: exam.data.exam_key,
       startedAt: exam.data.started_at,
       finishedAt: exam.data.finished_at,
       durationSeconds: exam.data.duration_seconds,

@@ -12,6 +12,8 @@ function lanAddresses(): string[] {
 const nextConfig: NextConfig = {
   // Solo aplica en `next dev`: permite cargar la app desde otro dispositivo en la misma red.
   allowedDevOrigins: lanAddresses(),
+  // El indicador de Next.js tapa la navegación inferior en el teléfono (y los clics de Playwright).
+  devIndicators: false,
   // ADK tiene dependencias opcionales (GCP) que no deben empaquetarse: se carga en runtime desde node_modules.
   serverExternalPackages: ["@google/adk", "@google/genai"],
   turbopack: {

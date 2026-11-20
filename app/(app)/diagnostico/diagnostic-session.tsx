@@ -4,10 +4,10 @@ import { Bot, CheckCircle2, Loader2, MicOff, Send, Sparkles, XCircle } from "luc
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
-import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { LogoMark } from "@/components/app/logo";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
+import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -329,11 +329,10 @@ export function DiagnosticSession() {
                     section={r.citation.section}
                     snippet={r.citation.snippet}
                   />
-                  {r.selected_option && (
-                    <ExplanationDiagramLoader
-                      request={{ examId: result.exam_id, itemId: r.item_id }}
-                    />
-                  )}
+                  <TutorExplanation
+                    request={{ examId: result.exam_id, itemId: r.item_id }}
+                    correctLabel={`${r.correct_option}) ${r.correct_option_text}`}
+                  />
                 </div>
               </details>
             ))}

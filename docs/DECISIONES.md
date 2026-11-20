@@ -80,13 +80,14 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - Las pruebas de Python fuerzan la clave vacía para no llamar a Gemini aunque exista en `.env.local`.
 - Si la cuenta se queda sin créditos (402) o el modelo está saturado (503), el tutor cae al respaldo y el diagnóstico sigue sin narración.
 
-## Diagramas paso a paso (iteración 4)
+## Explicación personalizada y diagramas conceptuales (iteración 6, reemplaza a la 4)
 
-- Cada explicación (feedback de Practicar, revisión del simulacro y del diagnóstico) tiene un **diagrama SVG que se construye paso a paso**: dato clave → razonamiento → descarte de la opción elegida → decisión → GPC.
-- **El modelo no genera SVG.** Un `LlmAgent` de ADK con `outputSchema` (Zod) devuelve pasos estructurados; la app los valida, recorta y dibuja con su propio componente (`components/app/explanation-diagram.tsx`). Así no hay SVG/HTML arbitrario del modelo y el diseño es consistente.
-- **Sin inventar contenido:** el prompt solo incluye viñeta, opciones, explicación y fragmento de GPC del ítem, y exige usar únicamente eso. El último paso (GPC) siempre lo pone la app con la cita real del ítem.
-- **Respaldo determinista** (`buildFallbackDiagram`) construido solo con los campos del ítem si no hay clave, si falla o si tarda más de 9 s. La UI indica si el diagrama fue generado con IA.
-- **`/api/explain` no filtra respuestas:** solo responde si el caso ya se resolvió o el examen ya terminó (409 si no).
+- **Después de responder, el tutor explica con el contexto real de la estudiante**: su nombre, qué opción(es) eligió y en qué orden, lo que le escribió al tutor, su historial en el tema (aciertos/total, si es su tema más débil) y su racha. Todo sale de Supabase (`lib/data/learner.ts`); el modelo no inventa datos de la estudiante.
+- **Siempre explica el porqué**: `why` (por qué la correcta), `fundamentals` (2–4 conceptos base), `distractors` (por qué no aplica cada opción incorrecta, primero las que eligió) y `nextStep` según su historial.
+- **Diagramas conceptuales, no recorridos**: el modelo elige el tipo que mejor explica el tema: `escala` (puntos de corte con el valor del paciente), `arbol` (clasificaciones/decisiones, con el criterio en cada arista), `flujo` (mecanismos/cadenas causales) o `comparacion` (tabla correcta vs elegida). El modelo devuelve datos (outputSchema de ADK, plano para Gemini); la app los valida, recorta para el teléfono (árbol ≤ 3 niveles, ≤ 5 hojas) y los dibuja con su propio SVG (`lib/diagram-layout.ts`, `components/app/concept-diagram.tsx`). Los nodos con nota son botones HTML superpuestos (accesibles con teclado).
+- **Límite de contenido**: cifras, puntos de corte, dosis y recomendaciones solo del reactivo y la GPC citada; los fundamentos pueden usar fisiología/fisiopatología básica. Se prohíbe citar otras fuentes (el modelo llegó a mencionar «la ADA»). La UI marca la explicación como generada con IA. Riesgo conocido: en clasificaciones (p. ej. hipertensión en el embarazo) el modelo puede usar criterios generales que no están en el fragmento de ejemplo; con los ítems validados conviene ampliar los fragmentos de GPC.
+- **Respaldo sin LLM** (`buildFallbackExplanation`): mismo contrato, personalizado con los datos reales y con un mapa conceptual en árbol construido solo con campos del ítem. Se usa sin clave, si falla o si tarda más de 14 s. Medido: 4–6 s con `gemini-3.5-flash` y razonamiento MINIMAL.
+- El indicador de desarrollo de Next.js se desactivó: tapaba la navegación inferior en el teléfono.
 
 ## Despliegue (iteración 5, 20 nov 2026)
 

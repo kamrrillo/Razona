@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CitationCard } from "@/components/app/citation-card";
-import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
+import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { examItems, specialties } from "@/lib/content";
@@ -142,7 +142,10 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                   section={item.citation.section}
                   snippet={item.citation.snippet}
                 />
-                <ExplanationDiagramLoader request={{ examId, itemId: item.id }} />
+                <TutorExplanation
+                  request={{ examId, itemId: item.id }}
+                  correctLabel={`${item.correctOptionId}) ${correctText}`}
+                />
               </div>
             </details>
           );

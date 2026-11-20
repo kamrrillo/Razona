@@ -40,14 +40,16 @@ test("guion de la demo", async ({ page }) => {
   const feedback = page.getByTestId("feedback");
   await expect(feedback).toContainText("¡Correcto!");
   await expect(feedback.getByTestId("citation")).toBeVisible();
-  // Diagrama SVG de la explicación, construido paso a paso
-  const diagram = feedback.getByTestId("explanation-diagram");
-  await expect(diagram).toBeVisible({ timeout: 20_000 });
-  await expect(diagram.getByTestId("diagram-step")).toHaveText(/^Paso 1 de \d$/);
-  await expect(diagram.locator('[data-testid="diagram-node"][data-visible="true"]')).toHaveCount(1);
-  await diagram.getByTestId("diagram-next").click();
-  await expect(diagram.getByTestId("diagram-step")).toHaveText(/^Paso 2 de \d$/);
-  await expect(diagram.locator('[data-testid="diagram-node"][data-visible="true"]')).toHaveCount(2);
+  // Explicación personalizada del tutor con fundamentos y diagrama conceptual
+  const explanation = feedback.getByTestId("tutor-explanation");
+  await expect(explanation).toBeVisible({ timeout: 25_000 });
+  await expect(explanation.getByTestId("tutor-personal")).toContainText("Ana");
+  await expect(explanation.getByTestId("tutor-fundamentals").locator("li").first()).toBeVisible();
+  await expect(explanation.getByTestId("tutor-distractors")).toContainText("TU ELECCIÓN");
+  const concept = explanation.getByTestId("concept-diagram");
+  await expect(concept).toHaveAttribute("data-kind", /^(arbol|flujo|escala|comparacion)$/);
+  await expect(concept.getByTestId("concept-node").first()).toBeVisible();
+  await page.screenshot({ path: "test-results/explicacion-practica.png", fullPage: true });
 
   // 5. Examen simulado: 2 en vivo + "Completar examen (demo)"
   await page.getByRole("link", { name: "Examen", exact: true }).click();
@@ -69,10 +71,10 @@ test("guion de la demo", async ({ page }) => {
   await expect(page.getByTestId("review-item")).toHaveCount(10);
   await page.getByTestId("review-item").first().locator("summary").click();
   await expect(page.getByTestId("review-item").first().getByTestId("citation")).toBeVisible();
-  await page.getByTestId("review-item").first().getByTestId("load-diagram").click();
-  await expect(
-    page.getByTestId("review-item").first().getByTestId("explanation-diagram"),
-  ).toBeVisible({ timeout: 20_000 });
+  await page.getByTestId("review-item").first().getByTestId("load-explanation").click();
+  await expect(page.getByTestId("review-item").first().getByTestId("concept-diagram")).toBeVisible({
+    timeout: 25_000,
+  });
   await expect(page.getByTestId("practice-weak-topic")).toBeVisible();
 
   // 7. Progreso: la racha sube y el tema débil se actualiza
@@ -93,7 +95,7 @@ test("las APIs rechazan peticiones sin sesión", async ({ request }) => {
   expect(progress.status()).toBe(401);
 });
 
-test("el diagrama no se entrega para un caso sin resolver", async ({ page }) => {
+test("la explicación no se entrega para un caso sin resolver", async ({ page }) => {
   await page.goto("/login");
   await page.getByRole("button", { name: "Entrar como Ana (demo)" }).click();
   await expect(page).toHaveURL(/\/inicio/);

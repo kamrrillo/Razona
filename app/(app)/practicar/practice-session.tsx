@@ -4,8 +4,8 @@ import { CheckCircle2, Lightbulb, Loader2, Send, Sparkles, XCircle } from "lucid
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
-import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { SampleContentBadge } from "@/components/app/sample-content-badge";
+import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -359,17 +359,19 @@ export function PracticeSession({ topic }: { topic?: string }) {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <p className="leading-relaxed">{solved.explanation}</p>
+              <TutorExplanation
+                request={{ sessionId: session.sessionId }}
+                autoLoad
+                placeholder={solved.explanation}
+                correctLabel={`${solved.correctOptionId}) ${
+                  item.options.find((o) => o.id === solved.correctOptionId)?.text ?? ""
+                }`}
+              />
               <CitationCard
                 gpcId={solved.citation.gpcId}
                 gpcTitle={solved.citation.gpcTitle}
                 section={solved.citation.section}
                 snippet={solved.citation.snippet}
-              />
-              <ExplanationDiagramLoader
-                request={{ sessionId: session.sessionId }}
-                autoLoad
-                className="rounded-2xl bg-white p-1"
               />
               <p className="text-xs text-muted-foreground">
                 {solved.attemptNumber === 1
