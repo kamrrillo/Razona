@@ -82,6 +82,14 @@ export default async function ProgresoPage() {
           </CardContent>
         </Card>
       )}
+      <form action="/auth/logout" method="post">
+        <button
+          type="submit"
+          className="min-h-11 w-full text-sm font-semibold text-muted-foreground underline-offset-4 hover:underline"
+        >
+          Cerrar sesión
+        </button>
+      </form>
     </div>
   );
 }

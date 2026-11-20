@@ -85,3 +85,36 @@ describe("estadísticas", () => {
     expect(picked).toEqual(new Set(["A", "B"]));
   });
 });
+
+describe("ruta de aprendizaje", async () => {
+  const { buildLearningPath } = await import("@/lib/learning/path");
+  const { getAllItems, specialties } = await import("@/lib/content");
+
+  const stats = topicStats([
+    ...outcomes("Bronquiolitis", "pediatria", 2, 9),
+    ...outcomes("Hipertensión arterial", "medicina-interna", 8, 9),
+    ...outcomes("Preeclampsia", "ginecologia-obstetricia", 1, 2),
+  ]);
+  const path = buildLearningPath({
+    specialties,
+    items: getAllItems(),
+    stats,
+    weakTopic: "Bronquiolitis",
+  });
+  const nodes = path.flatMap((u) => u.nodes);
+
+  it("tiene una unidad por especialidad y cubre todos los temas", () => {
+    expect(path).toHaveLength(specialties.length);
+    expect(new Set(nodes.map((n) => n.topic))).toEqual(new Set(getAllItems().map((i) => i.topic)));
+  });
+
+  it("marca estados", () => {
+    const by = (t: string) => nodes.find((n) => n.topic === t);
+    expect(by("Bronquiolitis")?.state).toBe("current");
+    expect(by("Bronquiolitis")?.href).toBe("/practicar?topic=weak");
+    expect(by("Hipertensión arterial")?.state).toBe("mastered");
+    expect(by("Preeclampsia")?.state).toBe("in-progress");
+    expect(by("Colecistitis aguda")?.state).toBe("new");
+    expect(by("Colecistitis aguda")?.href).toBe("/examen");
+  });
+});

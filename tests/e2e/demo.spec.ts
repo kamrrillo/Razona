@@ -15,6 +15,10 @@ test("guion de la demo", async ({ page }) => {
   expect(streakBefore).toBeGreaterThan(0);
   await expect(page.getByTestId("weak-topic-name")).toHaveText("Bronquiolitis");
   await expect(page.getByText("Avance por especialidad")).toBeVisible();
+  // Ruta tipo camino: el nodo actual es el tema débil y abre su tarjeta
+  await page.getByTestId("path-node-current").click();
+  await expect(page.getByTestId("path-practice-weak")).toBeVisible();
+  await page.getByTestId("path-node-current").click();
 
   // 3. Caso del tema débil: respuesta incorrecta → pregunta socrática + cita GPC
   await page.getByTestId("practice-weak-topic").click();

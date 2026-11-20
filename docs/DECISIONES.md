@@ -55,3 +55,11 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 
 - Langfuse (P2 opcional): no se implementó.
 - Recuperación de contraseña, edición de perfil, modo oscuro, service worker/offline.
+
+## Identidad visual y ruta (iteración 2)
+
+- **Paleta** azul profundo + turquesa (`brand-*` y `aqua-*` en `app/globals.css`); primario `#0b7d9a` (contraste AA con texto blanco).
+- **Logo** original (`components/app/logo.tsx`): línea de pulso que termina en palomita ("razonar → acertar"). Los íconos PNG de PWA/iOS se generan desde `public/icons/icon.svg`.
+- **Inicio como camino de objetivos**: una unidad por especialidad (con su % de aciertos = avance por especialidad) y un nodo por tema, en zigzag, con un nodo final de simulacro. Estados: dominado (≥3 respuestas y dominio ≥70 %), tema débil ("¡Empieza aquí!"), en progreso, nuevo. Los temas sin caso de práctica llevan al simulacro. La lógica es pura y está probada en `lib/learning/path.ts`.
+- **Meta diaria** fija de 5 respuestas (`DAILY_GOAL`), sin persistir.
+- "Salir" se movió a Progreso.

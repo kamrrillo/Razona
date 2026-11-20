@@ -102,6 +102,15 @@ export const ProgressSchema = z.object({
       accuracy: z.number().min(0).max(1),
     }),
   ),
+  byTopic: z.array(
+    z.object({
+      topic: z.string(),
+      specialtyId: z.string(),
+      correct: z.number().int().nonnegative(),
+      total: z.number().int().nonnegative(),
+      mastery: z.number().min(0).max(1),
+    }),
+  ),
   weakTopic: z
     .object({
       topic: z.string(),

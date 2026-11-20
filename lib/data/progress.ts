@@ -86,6 +86,7 @@ export async function getProgress(
         accuracy: stat?.accuracy ?? 0,
       };
     }),
+    byTopic: stats,
     weakTopic: weak
       ? {
           topic: weak.topic,
