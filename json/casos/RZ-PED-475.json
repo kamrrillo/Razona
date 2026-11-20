@@ -1,0 +1,270 @@
+[
+  {
+    "id": "RZ-PED-475-I",
+    "version": "0.1.0",
+    "sindrome": "tos_cronica",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+      "clave": "IMSS-475-11",
+      "archivo": "475GER.pdf"
+    },
+    "vineta": "Masculino de 3 años, peso 14 kg, que acude a guardería. Tiene tos húmeda diaria desde hace 6 semanas, sin fiebre, sin pérdida de peso y con buen crecimiento. Recibió salbutamol inhalado durante 2 semanas sin mejoría. A la auscultación presenta roncus espiratorios bilaterales, sin sibilancias. No hay antecedente de atragantamiento. La radiografía de tórax es normal. Sin acropaquias.",
+    "pregunta": "¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "A": "Tratamiento sintomático, porque aún no cumple el tiempo para considerarla tos crónica",
+      "B": "Salbutamol con budesonida inhalados como tratamiento de asma",
+      "C": "Vigilar sin tratamiento como tos crónica no específica",
+      "D": "Amoxicilina durante 7 días",
+      "E": "Amoxicilina 50-90 mg/kg/día dividida en tres tomas durante 2 a 6 semanas"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "La bronquitis bacteriana persistente se considera en tos crónica húmeda sin otros diagnósticos específicos; la radiografía y la espirometría suelen ser normales.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 14,
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+        }
+      },
+      {
+        "texto": "Ante sospecha de bronquitis bacteriana persistente se inicia antibiótico empírico contra S. pneumoniae, H. influenzae y M. catarrhalis por 2 a 6 semanas; se recomienda amoxicilina 50-90 mg/kg/día en tres tomas o amoxicilina con clavulanato.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 15,
+          "fragmento": "Se recomienda iniciar amoxicilina suspensión a dosis de"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee mal la duración: la tos lleva 6 semanas, más de las 4 que definen tos crónica.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "no es crónica",
+          "menos de 4 semanas",
+          "aguda"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tiempo lleva la tos y cómo define la guía la tos crónica?",
+        "explicacion": "La tos crónica en niños se define como la que dura más de 4 semanas.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
+          "pagina": 11,
+          "fragmento": "La tos crónica en niños se define como aquella que dura"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "La clasifica como no específica sin considerar que es húmeda, con roncus y sin respuesta a broncodilatador.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "no específica",
+          "vigilar",
+          "se quita sola"
+        ],
+        "pregunta_socratica_semilla": "¿Qué características de la tos y de la auscultación orientan a una causa específica?",
+        "explicacion": "La bronquitis bacteriana persistente se considera en pacientes con tos crónica húmeda o productiva en ausencia de otros diagnósticos específicos.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 14,
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la bronquitis bacteriana persistente requiere un ciclo prolongado.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "7 días",
+          "ciclo corto",
+          "una semana"
+        ],
+        "pregunta_socratica_semilla": "¿Qué ocurre con los ciclos cortos de antibiótico en la bronquitis bacteriana persistente?",
+        "explicacion": "La bronquitis bacteriana persistente puede requerir tratamiento prolongado, de dos a cuatro semanas; los cursos cortos con frecuencia conducen a recaída.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 15,
+          "fragmento": "cursos cortos con frecuencia conducen a la recaída"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Equipara tos crónica con asma sin ponderar la falta de respuesta al broncodilatador ni la ausencia de sibilancias.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "asma",
+          "inhaladores",
+          "budesonida"
+        ],
+        "pregunta_socratica_semilla": "¿Qué hallazgos de este niño no encajan con asma?",
+        "explicacion": "La bronquitis bacteriana persistente puede parecerse al asma, pero no suele responder a broncodilatadores y la auscultación revela roncus espiratorios en lugar de sibilancias.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 15,
+          "fragmento": "asma pero no suele responder a los broncodilatadores"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-475-V1",
+    "version": "0.1.0",
+    "sindrome": "tos_cronica",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-475-I",
+    "gpc_base": {
+      "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+      "clave": "IMSS-475-11",
+      "archivo": "475GER.pdf"
+    },
+    "vineta": "Femenino de 5 años con tos seca diaria de 5 semanas de evolución, sin fiebre. No hay antecedente de atragantamiento ni de cuerpo extraño. Crece adecuadamente. A la exploración: campos pulmonares sin estertores ni sibilancias, sin acropaquias, sin soplos. No se le han realizado estudios. Acude a su unidad de medicina familiar.",
+    "pregunta": "¿Cuál es el siguiente paso más adecuado en el abordaje?",
+    "opciones": {
+      "A": "Solicitar radiografía de tórax en proyecciones posteroanterior y lateral izquierda",
+      "B": "Iniciar amoxicilina por 2 a 6 semanas por probable bronquitis bacteriana persistente",
+      "C": "Solicitar radiografía anteroposterior en inspiración y espiración",
+      "D": "Considerarla tos crónica no específica sin estudios",
+      "E": "Esperar a que cumpla 8 semanas de tos para estudiarla"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En todo niño con tos crónica se toma radiografía de tórax lateral izquierda y posteroanterior.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.4.1 Radiografía de Tórax",
+          "pagina": 27,
+          "fragmento": "radiografía de tórax en lateral izquierda y postero-"
+        }
+      },
+      {
+        "texto": "La tos de 4 semanas o más se considera no específica solo si no hay datos clínicos, radiológicos o espirométricos que sugieran la causa.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
+          "pagina": 11,
+          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica tratamiento de bronquitis bacteriana persistente en una tos seca.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "antibiótico",
+          "bronquitis bacteriana",
+          "amoxicilina"
+        ],
+        "pregunta_socratica_semilla": "¿La tos de esta niña es húmeda o seca, y en cuál se sospecha bronquitis bacteriana persistente?",
+        "explicacion": "La bronquitis bacteriana persistente se considera en la tos crónica húmeda o productiva; antes de tratar se completa el abordaje con radiografía.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.2.2 Vías Respiratorias Bajas",
+          "pagina": 14,
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce el umbral de tiempo que define la tos crónica.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "8 semanas",
+          "esperar",
+          "todavía no"
+        ],
+        "pregunta_socratica_semilla": "¿A partir de cuántas semanas define la guía la tos crónica en niños?",
+        "explicacion": "La tos crónica en niños se define como la que dura más de 4 semanas.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
+          "pagina": 11,
+          "fragmento": "La tos crónica en niños se define como aquella que dura"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Elige la proyección para cuerpo extraño sin que haya sospecha de aspiración.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "inspiración y espiración",
+          "cuerpo extraño",
+          "atrapamiento"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situación indica la guía las radiografías en inspiración y espiración? ¿Hay datos de ello?",
+        "explicacion": "Las placas en inspiración y espiración se piden ante sospecha de aspiración de cuerpo extraño; en todo niño con tos crónica se toma radiografía posteroanterior y lateral izquierda.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.4.1 Radiografía de Tórax",
+          "pagina": 27,
+          "fragmento": "En caso de sospecha de aspiración de cuerpo extraño se"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Clasifica como no específica sin haber descartado datos radiológicos.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "no específica",
+          "sin estudios",
+          "observar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué estudios deben ser normales para clasificar la tos como no específica?",
+        "explicacion": "La tos se considera no específica solo si no hay datos clínicos, radiológicos o por espirometría que sugieran la etiología.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
+          "clave": "IMSS-475-11",
+          "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
+          "pagina": 11,
+          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "RZ-PED-269-I",
+    "version": "0.1.0",
+    "sindrome": "espina_bifida_prevencion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+      "clave": "IMSS-269-13",
+      "archivo": "269GER.pdf"
+    },
+    "vineta": "Masculino de 2 años con mielomeningocele lumbosacro operado al nacer acude a su control con pediatría. Su madre, de 28 años, sana, comenta que desean otro hijo y que planea suspender el método anticonceptivo en los próximos meses. Desea saber qué puede hacer para disminuir el riesgo de que su siguiente hijo tenga el mismo problema. Su dieta incluye tortillas y pan elaborados con harinas comerciales.",
+    "pregunta": "¿Cuál es la recomendación más adecuada para la madre?",
+    "opciones": {
+      "A": "Ácido fólico 0.4 mg al día para el niño, para prevenir complicaciones de su mielomeningocele",
+      "B": "Ácido fólico 0.4 mg al día desde tres meses antes del embarazo",
+      "C": "No es necesario suplementar, porque las harinas comerciales ya están fortificadas con ácido fólico",
+      "D": "Ácido fólico 4 mg al día desde tres meses antes del embarazo y durante el periodo periconcepcional",
+      "E": "Ácido fólico 4 mg al día a partir de que se confirme el embarazo"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "Con antecedente de un hijo con defecto del tubo neural, la dosis de ácido fólico aumenta a 4.0 mg al día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+        }
+      },
+      {
+        "texto": "El periodo periconcepcional va desde tres meses antes hasta tres meses después de la gestación.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "periconcepcional (desde tres meses antes hasta tres"
+        }
+      },
+      {
+        "texto": "El riesgo de espina bífida se reduce hasta 70 % si la madre ingiere ácido fólico diariamente desde antes del embarazo.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 13,
+          "fragmento": "un 70% si antes del embarazo la madre ingiere"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Responde sobre el niño cuando la pregunta es sobre la madre que planea un embarazo.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "al niño",
+          "para el paciente",
+          "sus complicaciones"
+        ],
+        "pregunta_socratica_semilla": "¿A quién se refiere la pregunta y qué quiere prevenir?",
+        "explicacion": "La suplementación con ácido fólico es periconcepcional y la toma la mujer que puede embarazarse; con antecedente de un hijo con defecto del tubo neural la dosis es de 4.0 mg al día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa la dosis para la población general sin considerar el antecedente de un hijo con mielomeningocele.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "0.4 mg",
+          "dosis habitual",
+          "400 microgramos"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente tiene esta mujer y cómo modifica la dosis recomendada?",
+        "explicacion": "La dosis general es de 0.4 mg al día; con antecedente de un hijo con defecto del tubo neural debe aumentarse a 4.0 mg al día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Sobreestima el aporte de las harinas fortificadas.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "harinas fortificadas",
+          "ya lo come",
+          "dieta"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto ácido fólico añade la fortificación de harinas a la dieta diaria?",
+        "explicacion": "La fortificación de harinas añade alrededor de 0.1 mg al día a la dieta, por debajo de la ingesta recomendada de 0.4 mg en la etapa periconcepcional.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 13,
+          "fragmento": "añade 0.1 mg/ día a la dieta normal"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pospone el suplemento hasta confirmar el embarazo, sin considerar que su efecto preventivo depende de tomarlo desde antes de la concepción.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "cuando se embarace",
+          "al confirmar",
+          "prueba positiva"
+        ],
+        "pregunta_socratica_semilla": "Si el tubo neural se cierra en las primeras semanas de gestación, ¿cuándo debe empezar el suplemento para que proteja?",
+        "explicacion": "La reducción del riesgo se logra si la madre ingiere ácido fólico desde antes del embarazo; la guía indica tomarlo desde tres meses antes de la gestación.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 13,
+          "fragmento": "un 70% si antes del embarazo la madre ingiere"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-269-V1",
+    "version": "0.1.0",
+    "sindrome": "espina_bifida_prevencion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-269-I",
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+      "clave": "IMSS-269-13",
+      "archivo": "269GER.pdf"
+    },
+    "vineta": "Femenino de 22 años acude con su hija de 3 años a consulta de control. Comenta que ella y su pareja buscarán un embarazo en los próximos meses. No tiene enfermedades crónicas, no toma medicamentos y no hay antecedentes familiares ni personales de defectos del tubo neural. Pregunta si debe tomar algún suplemento o si basta con comer más verduras.",
+    "pregunta": "¿Cuál es la recomendación más adecuada?",
+    "opciones": {
+      "A": "No suplementar, porque no tiene antecedentes de defectos del tubo neural",
+      "B": "Ácido fólico 0.4 mg al día a partir de que se confirme el embarazo",
+      "C": "Ácido fólico 4 mg al día, porque una dosis mayor protege más",
+      "D": "Basta una dieta rica en folatos, como espinacas y avena",
+      "E": "Ácido fólico 0.4 mg al día desde tres meses antes del embarazo y durante el periodo periconcepcional"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "0.4mg de ácido fólico por día durante el período"
+        }
+      },
+      {
+        "texto": "La dosis de 4 mg se reserva para mujeres de alto riesgo, como las que tienen antecedente de un hijo con defecto del tubo neural.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que más dosis es mejor, sin considerar que la de 4 mg se reserva para alto riesgo.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "más protege",
+          "dosis alta",
+          "4 mg"
+        ],
+        "pregunta_socratica_semilla": "¿Qué condición indica la guía para usar 4 mg en lugar de 0.4 mg?",
+        "explicacion": "La dosis de 4.0 mg al día se indica con antecedente de un hijo con defecto del tubo neural; para las demás mujeres que pueden embarazarse es de 0.4 mg al día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la dieta sola alcanza la ingesta recomendada.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "verduras",
+          "dieta",
+          "espinacas",
+          "natural"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía a toda mujer con posibilidad de embarazarse, además de la alimentación?",
+        "explicacion": "Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "0.4mg de ácido fólico por día durante el período"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que el suplemento debe iniciarse antes de la concepción.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "al embarazarse",
+          "prueba positiva",
+          "cuando confirme"
+        ],
+        "pregunta_socratica_semilla": "¿Desde cuándo debe tomarse el ácido fólico según la guía?",
+        "explicacion": "El periodo periconcepcional va desde tres meses antes hasta tres meses después de la gestación.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "periconcepcional (desde tres meses antes hasta tres"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Restringe la prevención a mujeres con antecedentes.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "sin antecedentes",
+          "bajo riesgo",
+          "no lo necesita"
+        ],
+        "pregunta_socratica_semilla": "¿La recomendación de 0.4 mg es solo para mujeres con antecedentes?",
+        "explicacion": "Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+          "clave": "IMSS-269-13",
+          "seccion": "4.1 Prevención",
+          "pagina": 14,
+          "fragmento": "0.4mg de ácido fólico por día durante el período"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

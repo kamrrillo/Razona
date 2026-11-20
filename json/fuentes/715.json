@@ -1,0 +1,201 @@
+{
+ "archivo": "715GER.pdf",
+ "clave": "IMSS-715-14",
+ "sindrome": "hiperplasia_suprarrenal_congenita",
+ "guia": "Tamizaje, diagnóstico y tratamiento del paciente con Hiperplasia Suprarrenal Congénita por deficiencia de 21 hidroxilasa",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido de 15 días con genitales ambiguos (clitoromegalia, fusión labioescrotal parcial, sin gónadas palpables) y tamiz neonatal con 17-hidroxiprogesterona elevada. Desde hace 2 días presenta rechazo al alimento, vómitos y pérdida de peso. Llega a urgencias deshidratado, con hiperpigmentación genital, FC 190 lpm y llenado capilar de 4 segundos. Sodio 124 mEq/L, potasio 7.2 mEq/L, glucosa 45 mg/dL. Superficie corporal 0.22 m².",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Tomar muestra e iniciar hidrocortisona intravenosa a 100 mg/m²/día",
+    "Esperar la 17-hidroxiprogesterona sérica confirmatoria antes de iniciar el esteroide",
+    "Hidrocortisona por vía oral a 10-20 mg/m²/día",
+    "Solo soluciones intravenosas con glucosa y sodio, sin esteroide",
+    "Administrar cloruro de potasio por hipokalemia"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Un caso probable con datos de deficiencia mineralocorticoide o sospecha de crisis suprarrenal justifica iniciar el tratamiento, previa toma de muestra.",
+     "4.4.1 Clínico",
+     23,
+     "justifica el inicio del tratamiento, previa toma de muestra"
+    ],
+    [
+     "En la crisis adrenal la hidrocortisona se calcula a 100 mg/m²/día dividida en 3-4 dosis en infusión intravenosa continua; durante el ayuno se aportan soluciones intravenosas con glucosa y sodio.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "calcular 100 mg/m2/día y dividir el resultado en 3-4"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee el potasio como bajo; el paciente tiene 7.2 mEq/L, propio del hipoaldosteronismo.",
+     [
+      "E"
+     ],
+     [
+      "hipokalemia",
+      "potasio bajo",
+      "reponer potasio"
+     ],
+     "¿Qué cifra de potasio tiene el paciente y qué esperarías en la forma perdedora de sal?",
+     "La forma perdedora de sal cursa con hipocortisolismo e hipoaldosteronismo: deshidratación, hipotensión, hipoglucemia y choque.",
+     "4.4.1 Clínico",
+     22,
+     "Los datos de hipocortisolismo e hipoaldosteronismo se"
+    ],
+    [
+     "dato_omitido",
+     "Indica la dosis de mantenimiento sin considerar que el paciente está en crisis suprarrenal y no tolera la vía oral.",
+     [
+      "C"
+     ],
+     [
+      "mantenimiento",
+      "vía oral",
+      "10-20 mg"
+     ],
+     "¿En qué estado clínico está el paciente y qué dosis y vía corresponden?",
+     "La dosis de 10-20 mg/m²/día es de mantenimiento; en la crisis adrenal se calcula 100 mg/m²/día por vía intravenosa.",
+     "4.5.1.1 Terapia inicial de mantenimiento HSC clásica",
+     28,
+     "La dosis de hidrocortisona recomendada es de 10-20 mg-"
+    ],
+    [
+     "conocimiento",
+     "Cree que la rehidratación sola corrige la crisis suprarrenal.",
+     [
+      "D"
+     ],
+     [
+      "solo soluciones",
+      "rehidratar",
+      "sin esteroide"
+     ],
+     "¿Qué hormona falta en la crisis suprarrenal y qué la sustituye?",
+     "En la crisis adrenal se administra hidrocortisona intravenosa a 100 mg/m²/día, además de soluciones con glucosa y sodio.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "calcular 100 mg/m2/día y dividir el resultado en 3-4"
+    ],
+    [
+     "razonamiento",
+     "Prioriza la confirmación diagnóstica sobre el tratamiento de una crisis que amenaza la vida.",
+     [
+      "B"
+     ],
+     [
+      "confirmar",
+      "esperar resultado",
+      "17-OHP sérica"
+     ],
+     "¿Qué riesgo corre el paciente mientras esperas la confirmación, y qué permite hacer la toma de muestra previa?",
+     "La sospecha de crisis suprarrenal justifica iniciar el tratamiento, previa toma de muestra.",
+     "4.4.1 Clínico",
+     23,
+     "justifica el inicio del tratamiento, previa toma de muestra"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Masculino de 9 años con hiperplasia suprarrenal congénita clásica perdedora de sal, en tratamiento de mantenimiento con hidrocortisona oral y fludrocortisona. Desde hoy tiene fiebre de 39.2 °C, malestar general y vómitos con cada intento de tomar líquidos o medicamentos. Está alerta, con TA normal para su edad, FC de 120 lpm y mucosas ligeramente secas. Glucosa capilar 72 mg/dL.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto al glucocorticoide?",
+   "op": [
+    "Duplicar o triplicar la dosis oral habitual",
+    "Mantener la dosis habitual, porque está hemodinámicamente estable",
+    "Hidrocortisona intravenosa a dosis de estrés de 25 mg/día",
+    "Hidrocortisona intravenosa a dosis de estrés de 50 mg/día",
+    "No modificar la dosis, porque una infección no requiere ajuste"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "La dosis inicial de hidrocortisona en situaciones de estrés es de 25 mg/día en lactantes y preescolares, 50 mg/día en escolares y 100 mg/día en adultos.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "Lactantes y preescolares 25 mg/día, escolares: 50 mg/día"
+    ],
+    [
+     "La vía oral, aumentando 2 a 3 veces la dosis, es opción solo si el paciente la tolera y el estrés es leve a moderado.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "una opción, por lo cual se recomienda aumentar la dosis"
+    ]
+   ],
+   "rub": [
+    [
+     "dato_omitido",
+     "Elige la vía oral sin considerar que el paciente vomita todo lo que ingiere.",
+     [
+      "A"
+     ],
+     [
+      "duplicar",
+      "triplicar",
+      "vía oral"
+     ],
+     "¿Tolera el paciente la vía oral? ¿Cuándo es opción aumentar la dosis oral?",
+     "Aumentar 2 a 3 veces la dosis oral es opción cuando el paciente tolera la vía oral y el estrés es leve a moderado.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "una opción, por lo cual se recomienda aumentar la dosis"
+    ],
+    [
+     "razonamiento",
+     "Espera a que aparezca inestabilidad para ajustar la dosis.",
+     [
+      "B"
+     ],
+     [
+      "estable",
+      "esperar",
+      "no urge"
+     ],
+     "¿Qué puede ocurrir en un paciente perdedor de sal con fiebre y vómitos si no recibe dosis de estrés?",
+     "La guía indica dosis de estrés de hidrocortisona en situaciones de estrés: 50 mg/día en escolares.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "Lactantes y preescolares 25 mg/día, escolares: 50 mg/día"
+    ],
+    [
+     "lectura",
+     "Usa la dosis de lactantes y preescolares en un escolar de 9 años.",
+     [
+      "C"
+     ],
+     [
+      "25 mg",
+      "dosis pediátrica"
+     ],
+     "¿A qué grupo de edad pertenece el paciente y qué dosis de estrés le corresponde?",
+     "La dosis de estrés es de 25 mg/día en lactantes y preescolares y de 50 mg/día en escolares.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "Lactantes y preescolares 25 mg/día, escolares: 50 mg/día"
+    ],
+    [
+     "conocimiento",
+     "Generaliza la excepción de la infección sin fiebre a un cuadro febril con vómitos.",
+     [
+      "E"
+     ],
+     [
+      "infección",
+      "no ajustar",
+      "sin cambios"
+     ],
+     "¿Qué tipo de infección menciona la guía como situación en la que no se incrementa la dosis?",
+     "No se incrementa el glucocorticoide en ejercicio, estrés emocional o proceso infeccioso sin fiebre; este paciente tiene fiebre y vómitos.",
+     "4.5.1.3 Terapia en crisis adrenal o en estrés",
+     31,
+     "c) Proceso infeccioso sin fiebre."
+    ]
+   ]
+  }
+ ]
+}

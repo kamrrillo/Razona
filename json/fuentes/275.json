@@ -1,0 +1,201 @@
+{
+ "archivo": "275GER.pdf",
+ "clave": "IMSS-275-10",
+ "sindrome": "malformacion_anorrectal_neonatal",
+ "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de término, 6 horas de vida, peso 3,100 g. En la exploración sistematizada no se identifica orificio anal; hay pliegue interglúteo y foseta anal visibles. No se observa meconio en periné ni en la orina. Abdomen blando, sin distensión. Rafé escrotal normal, testículos en bolsa. Signos vitales normales y succión adecuada. Se encuentra en ayuno con soluciones intravenosas.",
+   "pregunta": "¿Cuál es la conducta diagnóstica más adecuada en este momento?",
+   "op": [
+    "Vigilar 24 horas con exploración perineal repetida antes de definir el tipo",
+    "Realizar invertograma de inmediato para definir la altura del fondo de saco",
+    "Concluir que no tiene fístula, porque no hay meconio en periné",
+    "Solicitar tomografía de abdomen para localizar el fondo de saco rectal y las fístulas",
+    "Explorar el vestíbulo en busca de fístula recto-vestibular"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La exploración perineal y la evolución en las primeras 24 horas de vida son necesarias para complementar el diagnóstico del tipo de malformación.",
+     "4.2 Diagnóstico",
+     19,
+     "evolución dentro de las 24horas de VEU son"
+    ],
+    [
+     "En la fístula recto-perineal el meconio no es visible en periné hasta las 16 a 24 horas, y la distensión abdominal puede no evidenciarse en las primeras horas.",
+     "4.2 Diagnóstico",
+     19,
+     "en el periné hasta las 16 a 24 horas"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Busca una fístula propia del sexo femenino en un recién nacido masculino.",
+     [
+      "E"
+     ],
+     [
+      "vestíbulo",
+      "vestibular",
+      "labios mayores"
+     ],
+     "¿Cuál es el sexo del paciente y qué tipos de fístula son posibles en él según la clasificación de Peña?",
+     "La fístula recto-vestibular pertenece a la clasificación de malformaciones en niñas; en niños las variantes son recto-perineal, recto-uretral, recto-cuello vesical o sin fístula.",
+     "4.2 Diagnóstico",
+     17,
+     "fístula recto-vestibular"
+    ],
+    [
+     "dato_omitido",
+     "Descarta la fístula sin considerar que el paciente tiene solo 6 horas de vida.",
+     [
+      "C"
+     ],
+     [
+      "no hay meconio",
+      "sin fístula",
+      "ano imperforado sin fístula"
+     ],
+     "¿A qué edad suele hacerse visible el meconio en el periné cuando hay fístula recto-perineal?",
+     "El meconio en periné indica fístula recto-perineal, pero su ausencia en las primeras 24 horas no la descarta.",
+     "4.2 Diagnóstico",
+     18,
+     "fístula recto perineal; sin embargo su ausencia"
+    ],
+    [
+     "conocimiento",
+     "Sobreestima la utilidad del invertograma.",
+     [
+      "B"
+     ],
+     [
+      "invertograma",
+      "Wangensteen",
+      "altura del saco"
+     ],
+     "¿Qué sensibilidad reporta la guía para el invertograma?",
+     "El invertograma ha reportado una sensibilidad del 27 % para determinar la distancia entre el fondo de saco rectal y el periné.",
+     "4.2.1 Pruebas Diagnósticas",
+     20,
+     "reportado una sensibilidad del 27%;"
+    ],
+    [
+     "razonamiento",
+     "Supone que el estudio de mayor tecnología resolverá la duda, sin ponderar lo que no detecta y la radiación.",
+     [
+      "D"
+     ],
+     [
+      "tomografía",
+      "más preciso",
+      "ver todo"
+     ],
+     "¿Qué estructuras no identifica la tomografía en la malformación anorrectal?",
+     "La tomografía de abdomen no identifica fístulas recto-urogenitales ni el fondo de saco intestinal, y expone a radiación.",
+     "4.2.1 Pruebas Diagnósticas",
+     20,
+     "recto urogenitales, ni fondo de saco intestinal"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de término, 30 horas de vida. No tiene orificio anal en la posición habitual; en el periné, por delante de la foseta anal y fuera del complejo esfinteriano, se observa un pequeño orificio por el que sale meconio. Genitales femeninos normales con uretra y vagina independientes. Abdomen discretamente distendido, tolera ayuno. Sin otras malformaciones evidentes a la exploración.",
+   "pregunta": "Para establecer el tipo de malformación anorrectal, ¿cuál es la conducta más adecuada?",
+   "op": [
+    "Realizar invertograma para medir la distancia del fondo de saco al periné",
+    "Solicitar resonancia magnética de pelvis antes de cualquier decisión",
+    "Esperar otras 24 horas para confirmar la salida de meconio",
+    "Solicitar tomografía de abdomen y pelvis",
+    "No requiere más pruebas: un cuadro típico con fístula anocutánea define el tipo"
+   ],
+   "rc": "E",
+   "pc": [
+    [
+     "Ante un cuadro clínico típico con fístula anocutánea, el clínico no requiere pruebas diagnósticas adicionales.",
+     "4.2 Diagnóstico",
+     19,
+     "Ante un cuadro clínico típico con presencia de fístula"
+    ],
+    [
+     "La exploración física de la región perianal provee información suficiente para corroborar el tipo de malformación en 90 % de los varones y 95 % de las niñas.",
+     "4.2 Diagnóstico",
+     18,
+     "física de la región perianal provee información"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que el invertograma es necesario aun con fístula visible.",
+     [
+      "A"
+     ],
+     [
+      "invertograma",
+      "medir distancia"
+     ],
+     "Si ya ves la fístula y el meconio, ¿qué información adicional te daría el invertograma, y con qué sensibilidad?",
+     "Los estudios de gabinete se reservan para el 5 a 10 % en que la clínica no define el tipo; el invertograma tiene sensibilidad del 27 %.",
+     "4.2.1 Pruebas Diagnósticas",
+     20,
+     "reportado una sensibilidad del 27%;"
+    ],
+    [
+     "razonamiento",
+     "Pide el estudio más completo por precaución, sin considerar que la clínica ya define el tipo.",
+     [
+      "B"
+     ],
+     [
+      "resonancia",
+      "ver anatomía",
+      "por si acaso"
+     ],
+     "¿En qué proporción de casos la guía considera insuficiente la exploración para definir el tipo?",
+     "Solo en el 5 a 10 % de los casos, cuando no se establece el tipo por datos clínicos, conviene realizar estudios de gabinete.",
+     "4.2.1 Pruebas Diagnósticas",
+     20,
+     "En el 5 a 10% donde no se establezca el tipo de MAR"
+    ],
+    [
+     "dato_omitido",
+     "Pide esperar sin registrar que ya hay salida de meconio por la fístula a las 30 horas.",
+     [
+      "C"
+     ],
+     [
+      "esperar 24 horas",
+      "observar meconio",
+      "todavía no"
+     ],
+     "¿Qué observaste ya en el periné de esta paciente?",
+     "Ante un cuadro clínico típico con fístula anocutánea no se requieren pruebas adicionales, y la observación de 24 horas ya se cumplió.",
+     "4.2 Diagnóstico",
+     19,
+     "Ante un cuadro clínico típico con presencia de fístula"
+    ],
+    [
+     "conocimiento",
+     "Sobreestima lo que aporta la tomografía.",
+     [
+      "D"
+     ],
+     [
+      "tomografía",
+      "TAC",
+      "estructuras"
+     ],
+     "¿Qué no identifica la tomografía en la malformación anorrectal?",
+     "La tomografía no identifica fístulas recto-urogenitales ni el fondo de saco intestinal, y expone a radiación.",
+     "4.2.1 Pruebas Diagnósticas",
+     20,
+     "recto urogenitales, ni fondo de saco intestinal"
+    ]
+   ]
+  }
+ ]
+}

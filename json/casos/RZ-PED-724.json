@@ -1,0 +1,278 @@
+[
+  {
+    "id": "RZ-PED-724-I",
+    "version": "0.1.0",
+    "sindrome": "apnea_del_prematuro",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+      "clave": "IMSS-724-14",
+      "archivo": "724GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 30 semanas de gestación, peso 1,300 g, con 3 días de vida, en incubadora con temperatura estable. El monitor registra varias pausas respiratorias de 25 segundos, acompañadas de bradicardia de 80 lpm, que ceden con estimulación táctil. Glucosa, electrolitos, hemograma y PCR normales; hemocultivo en proceso sin datos clínicos de sepsis. La unidad cuenta con citrato de cafeína.",
+    "pregunta": "¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "A": "Estimulación kinestésica con colchón oscilante como tratamiento",
+      "B": "Doxapram intravenoso",
+      "C": "Vigilancia sin tratamiento, porque las pausas duran menos de 20 segundos",
+      "D": "Aminofilina como fármaco de primera elección",
+      "E": "Citrato de cafeína intravenoso con impregnación de 20 mg/kg y mantenimiento de 5 mg/kg/día"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "El citrato de cafeína es de primera elección: impregnación de 20 mg/kg (10 mg/kg de cafeína base) intravenosa y mantenimiento de 5 mg/kg/día.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.3.2 Cafeína",
+          "pagina": 24,
+          "fragmento": "Dosis de impregnación de 20mg/kg de peso (10"
+        }
+      },
+      {
+        "texto": "La apnea se define como ausencia de respiración por más de 20 segundos, o menor de 20 segundos con bradicardia o cianosis.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
+          "pagina": 13,
+          "fragmento": "Ausencia de respiración por más de 20 segundos"
+        }
+      },
+      {
+        "texto": "Las metilxantinas son los medicamentos de elección en el tratamiento de la apnea del prematuro.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.3.1 Metilxantinas",
+          "pagina": 23,
+          "fragmento": "Las metilxantinas son los medicamento de elección"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la duración de las pausas como menor de 20 segundos; la viñeta describe 25 segundos con bradicardia.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "menos de 20",
+          "respiración periódica",
+          "no es apnea"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto duran las pausas y qué las acompaña? ¿Cumplen la definición de apnea?",
+        "explicacion": "La apnea es la ausencia de respiración por más de 20 segundos, o menor de 20 segundos acompañada de bradicardia o cianosis.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
+          "pagina": 13,
+          "fragmento": "Ausencia de respiración por más de 20 segundos"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Elige aminofilina sin considerar que la unidad cuenta con citrato de cafeína.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "aminofilina",
+          "teofilina",
+          "metilxantina"
+        ],
+        "pregunta_socratica_semilla": "¿Qué metilxantina recomienda la guía cuando la unidad cuenta con ella, y por qué?",
+        "explicacion": "En las unidades que cuenten con citrato de cafeína puede usarse como primera elección; tiene mejor cociente terapéutico, absorción más fiable y vida media más larga que la teofilina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.3.2 Cafeína",
+          "pagina": 24,
+          "fragmento": "En las unidades que cuenten con citrato de cafeína"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa un medicamento en estudio como tratamiento de primera línea.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "doxapram",
+          "estimulante respiratorio"
+        ],
+        "pregunta_socratica_semilla": "¿En qué apartado de la guía se ubica el doxapram?",
+        "explicacion": "El doxapram se ubica entre los medicamentos en estudio como alternativa para la apnea del prematuro; las metilxantinas son las de elección.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.4.1 Doxapram",
+          "pagina": 28,
+          "fragmento": "El doxapram actúa sobre quimiorreceptores periféricos"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Prefiere una medida no farmacológica sin evidencia suficiente frente al fármaco de elección.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "kinestésica",
+          "colchón",
+          "no farmacológico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué evidencia hay de la estimulación kinestésica como tratamiento de la apnea?",
+        "explicacion": "No existe evidencia suficiente para recomendar la estimulación kinestésica como tratamiento de la apnea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.1.3 Estimulación sensorial",
+          "pagina": 20,
+          "fragmento": "estimulación kinestésica como tratamiento de apnea"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-724-V1",
+    "version": "0.1.0",
+    "sindrome": "apnea_del_prematuro",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-724-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+      "clave": "IMSS-724-14",
+      "archivo": "724GER.pdf"
+    },
+    "vineta": "Recién nacida de 33 semanas de gestación, peso 1,900 g, con 12 horas de vida. Respira al aire ambiente, sin pausas respiratorias ni bradicardias desde su ingreso. Tolera la alimentación por sonda. El residente propone iniciar cafeína \"para prevenir apneas\" porque es prematura.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "No indicar metilxantinas profilácticas y mantener vigilancia continua con monitor",
+      "B": "Iniciar aminofilina profiláctica",
+      "C": "Usar estimulación kinestésica profiláctica",
+      "D": "Iniciar citrato de cafeína profiláctica para prevenir apneas",
+      "E": "Retirar el monitor porque no ha presentado apneas"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "No es posible recomendar el uso profiláctico de metilxantinas para evitar la apnea en el prematuro.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.2 Tratamiento Profiláctico",
+          "pagina": 22,
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+        }
+      },
+      {
+        "texto": "El recién nacido pretérmino menor de 34 semanas debe mantenerse con vigilancia continua de eventos de apnea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
+          "pagina": 13,
+          "fragmento": "El recién nacido pretérmino menor de 34 semanas"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que prevenir con cafeína es mejor que tratar, sin evidencia que respalde la profilaxis.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "prevenir",
+          "profiláctica",
+          "es prematura"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la guía sobre el uso profiláctico de metilxantinas?",
+        "explicacion": "No es posible recomendar el uso profiláctico de metilxantinas para evitar la apnea, por falta de estudios aleatorizados o metaanálisis en menores de 34 semanas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.2 Tratamiento Profiláctico",
+          "pagina": 22,
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la aminofilina profiláctica está indicada.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "aminofilina",
+          "profilaxis"
+        ],
+        "pregunta_socratica_semilla": "¿Se recomienda alguna metilxantina de forma profiláctica?",
+        "explicacion": "No es posible recomendar el uso profiláctico de metilxantinas para evitar la apnea en el prematuro.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.2 Tratamiento Profiláctico",
+          "pagina": 22,
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la estimulación kinestésica profiláctica previene la apnea.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "kinestésica",
+          "colchón",
+          "prevenir"
+        ],
+        "pregunta_socratica_semilla": "¿Qué evidencia hay de la estimulación kinestésica para prevenir o tratar la apnea?",
+        "explicacion": "No existe evidencia suficiente para recomendar la estimulación kinestésica en la apnea del prematuro.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.2.1.3 Estimulación sensorial",
+          "pagina": 20,
+          "fragmento": "estimulación kinestésica como tratamiento de apnea"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Retira la vigilancia sin considerar que la paciente tiene menos de 34 semanas.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "sin apneas",
+          "retirar monitor",
+          "estable"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad gestacional tiene la paciente y qué vigilancia indica la guía para ella?",
+        "explicacion": "El recién nacido pretérmino menor de 34 semanas debe mantenerse con vigilancia continua.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
+          "clave": "IMSS-724-14",
+          "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
+          "pagina": 13,
+          "fragmento": "El recién nacido pretérmino menor de 34 semanas"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

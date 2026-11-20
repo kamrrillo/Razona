@@ -1,0 +1,270 @@
+[
+  {
+    "id": "RZ-PED-548-I",
+    "version": "0.1.0",
+    "sindrome": "liquidos_electrolitos_prematuro",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+      "clave": "IMSS-548-12",
+      "archivo": "548GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 29 semanas de gestación, peso al nacer 1,100 g, ingresado a la unidad de cuidados intensivos neonatales a los 30 minutos de vida. Se encuentra en incubadora de doble pared con humedad, en CPAP nasal, sin fototerapia. Se coloca catéter venoso umbilical para iniciar líquidos intravenosos en su primer día de vida, mientras se decide la nutrición parenteral.",
+    "pregunta": "¿Cuál es el aporte de líquidos más adecuado para el primer día de vida?",
+    "opciones": {
+      "A": "70-80 mL/kg/día con solución glucosada al 10 % más sodio y potasio",
+      "B": "70-80 mL/kg/día con solución glucosada al 7.5-10 %, sin electrolitos",
+      "C": "60 mL/kg/día con solución glucosada al 7.5-10 %, sin electrolitos",
+      "D": "70-80 mL/kg/día con solución glucosada al 5 %",
+      "E": "150 mL/kg/día para compensar las pérdidas insensibles del prematuro"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "El primer día de vida el aporte basal es de 60 mL/kg/día, que se aumenta 10 a 20 mL/kg/día en prematuros de menos de 1,500 g.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "nacidos prematuros con peso < 1500 g."
+        }
+      },
+      {
+        "texto": "Para un aporte de glucosa de 4-7 mg/kg/min se usa solución glucosada al 5 % en menores de 1,000 g, al 7.5-10 % de 1,000 a 1,500 g y al 10 % en mayores de 1,500 g; el primer día no se adicionan electrolitos.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "No adicionar electrolitos"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Usa la concentración de glucosa para menores de 1,000 g; el paciente pesa 1,100 g.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "glucosada al 5 %",
+          "menor de 1,000",
+          "hiperglucemia"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto pesa el paciente y qué concentración de glucosa corresponde a ese peso?",
+        "explicacion": "La solución glucosada al 5 % se usa en menores de 1,000 g; de 1,000 a 1,500 g se usa al 7.5-10 %.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "Solución glucosada al 7.5-10 % en los RN de"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa solo el aporte basal sin el aumento que indica la guía para prematuros de menos de 1,500 g.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "60 mL/kg",
+          "aporte basal",
+          "primer día"
+        ],
+        "pregunta_socratica_semilla": "¿Qué ajuste indica la guía al aporte basal según el peso del paciente?",
+        "explicacion": "El aporte basal de 60 mL/kg/día se aumenta 10 a 20 mL/kg/día en prematuros de menos de 1,500 g.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "nacidos prematuros con peso < 1500 g."
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los electrolitos se agregan desde el primer día.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "sodio",
+          "potasio",
+          "electrolitos de mantenimiento"
+        ],
+        "pregunta_socratica_semilla": "¿Qué indica la guía sobre los electrolitos en el primer día de vida?",
+        "explicacion": "En el primer día de vida no se adicionan electrolitos a los líquidos intravenosos.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "No adicionar electrolitos"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Sobrecompensa las pérdidas insensibles sin partir del aporte basal y del balance.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "pérdidas insensibles",
+          "piel inmadura",
+          "mucho líquido"
+        ],
+        "pregunta_socratica_semilla": "¿De qué aporte basal parte la guía el primer día y cómo se ajusta después?",
+        "explicacion": "El primer día el aporte basal es de 60 mL/kg/día, con aumentos de 10 a 20 mL/kg/día por peso menor de 1,500 g o fototerapia; después se ajusta según el balance.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "Aporte basal - 60ml/Kg/día."
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-548-V1",
+    "version": "0.1.0",
+    "sindrome": "liquidos_electrolitos_prematuro",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-548-I",
+    "gpc_base": {
+      "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+      "clave": "IMSS-548-12",
+      "archivo": "548GER.pdf"
+    },
+    "vineta": "Recién nacida de 30 semanas, peso al nacer 1,250 g, en su tercer día de vida en la unidad de cuidados intensivos neonatales. En las últimas 24 horas perdió 4 % de su peso. Sodio sérico 148 mEq/L, diuresis de 0.8 mL/kg/h, densidad urinaria 1,022. Recibe líquidos intravenosos a 90 mL/kg/día. Perfusión adecuada, sin datos de choque.",
+    "pregunta": "¿Cuál es el ajuste más adecuado de los líquidos?",
+    "opciones": {
+      "A": "Medir gases en sangre de rutina antes de modificar el aporte",
+      "B": "Restringir los líquidos y suspender el sodio, porque la hipernatremia indica exceso de sodio",
+      "C": "Aumentar el aporte hídrico, porque hay pérdida de peso mayor de 3 % al día, sodio mayor de 145 mEq/L y diuresis menor de 1 mL/kg/h",
+      "D": "Mantener el mismo aporte",
+      "E": "Restringir los líquidos, porque el sodio es menor de 130 mEq/L"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "Los líquidos intravenosos se aumentan con pérdida de peso mayor de 3 % al día, sodio sérico mayor de 145 mEq/L, densidad urinaria mayor de 1,020 o diuresis menor de 1 mL/kg/h.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 21,
+          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L"
+        }
+      },
+      {
+        "texto": "A partir del segundo día, en niños de menos de 1,500 g el aporte se da según el balance hidroelectrolítico.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 20,
+          "fragmento": "Aumentar 10 ml/kg/día por cada 1% de pérdida de"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee el sodio como bajo; la paciente tiene 148 mEq/L.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hiponatremia",
+          "sodio bajo",
+          "restringir"
+        ],
+        "pregunta_socratica_semilla": "¿Qué cifra de sodio tiene la paciente y qué indica esa cifra sobre su hidratación?",
+        "explicacion": "Se restringen líquidos con sodio menor de 130 mEq/L y aumento de peso; con sodio mayor de 145 mEq/L se aumentan.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 22,
+          "fragmento": "Reducción de sodio sérico (Na<130 mEq/L)en"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Interpreta la hipernatremia como exceso de sodio y no como déficit de agua en un prematuro que pierde peso.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "exceso de sodio",
+          "restringir",
+          "suspender sodio"
+        ],
+        "pregunta_socratica_semilla": "Si la paciente perdió 4 % de peso y orina poco y concentrado, ¿qué falta: sodio o agua?",
+        "explicacion": "La pérdida de peso mayor de 3 % al día, el sodio mayor de 145 mEq/L y la densidad urinaria mayor de 1,020 indican aumentar los líquidos.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 21,
+          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Mantiene el aporte sin considerar la pérdida de peso, la diuresis baja y la densidad urinaria elevada.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "mantener",
+          "sin cambios",
+          "está estable"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos del balance hídrico de las últimas 24 horas están alterados?",
+        "explicacion": "Los líquidos se aumentan con pérdida de peso mayor de 3 % al día o diuresis menor de 1 mL/kg/h.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 21,
+          "fragmento": "Pérdida de peso >3% al día o una pérdida"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la gasometría es necesaria de rutina para manejar líquidos.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "gases",
+          "gasometría",
+          "acidosis"
+        ],
+        "pregunta_socratica_semilla": "¿Cuándo indica la guía medir gases en sangre en el manejo de líquidos?",
+        "explicacion": "No es necesario medir gases de rutina para el manejo de líquidos; se miden obligatoriamente en prematuros con alteración de la perfusión o choque.",
+        "cita_gpc": {
+          "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
+          "clave": "IMSS-548-12",
+          "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
+          "pagina": 21,
+          "fragmento": "No es necesario medir gases en sangre de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

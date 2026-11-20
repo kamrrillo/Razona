@@ -1,0 +1,270 @@
+[
+  {
+    "id": "RZ-PED-601-I",
+    "version": "0.1.0",
+    "sindrome": "dolor_lumbar_cronico_pediatrico",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+      "clave": "IMSS-601-13",
+      "archivo": "601GER.pdf"
+    },
+    "vineta": "Femenino de 14 años que practica gimnasia 5 días por semana. Presenta dolor lumbar bajo de 4 meses de evolución que aparece con el entrenamiento y aumenta al arquear la espalda hacia atrás. Niega fiebre, pérdida de peso, dolor nocturno, rigidez matutina y síntomas en piernas. A la exploración: hiperlordosis lumbar, dolor a la hiperextensión de la columna con la pierna estirada, examen neurológico normal. Sin escoliosis aparente.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Resonancia magnética de columna lumbar como estudio inicial",
+      "B": "Biometría hemática, velocidad de sedimentación y factor reumatoide para descartar artritis juvenil",
+      "C": "Evaluación integral urgente por pediatría por presentar datos de alarma",
+      "D": "Radiografías simples de columna en proyecciones posteroanterior y lateral, y envío a ortopedia",
+      "E": "Considerarlo dolor lumbar inespecífico y no realizar estudios"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "Ante datos clínicos que orientan a espondilólisis o espondilolistesis se solicitan radiografías simples de columna en proyecciones posteroanterior y lateral y se envía a ortopedia.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "espondilólisis, por lo que está indicado solicitar"
+        }
+      },
+      {
+        "texto": "La espondilólisis se manifiesta con dolor relacionado con la actividad física, que aumenta con la hiperextensión lumbar con la pierna estirada, e hiperlordosis; las radiografías simples suelen bastar para el diagnóstico.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "de la columna lumbar mientras se tiene la"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Atribuye datos de alarma que la viñeta niega (fiebre, dolor nocturno, pérdida de peso, síntomas neurológicos).",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "datos de alarma",
+          "urgente",
+          "nocturno"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de alarma lista la guía y cuáles tiene esta paciente?",
+        "explicacion": "Los datos de alarma son dolor persistente o en aumento o nocturno, síntomas radiculares o neurológicos, fiebre, pérdida de peso y edad menor de 4 años.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "Dolor persistente o en aumento,"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Lo clasifica como inespecífico sin considerar la relación con la hiperextensión y la hiperlordosis.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "inespecífico",
+          "muscular",
+          "no estudiar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué hallazgos de la historia y la exploración orientan a una causa específica?",
+        "explicacion": "Solo el dolor sin historia ni hallazgos relevantes, esporádico o intermitente, se considera inespecífico y no requiere estudios.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 17,
+          "fragmento": "inespecífico y por consenso de expertos se"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Busca enfermedad inflamatoria sin datos que la sugieran.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "artritis",
+          "reumatoide",
+          "inflamatorio"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos clínicos orientarían a una causa inflamatoria? ¿Los tiene?",
+        "explicacion": "En las enfermedades inflamatorias que causan dolor lumbar se observa rigidez matutina que mejora con la actividad y dolor sacroiliaco a la palpación.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 19,
+          "fragmento": "Rigidez matutina que mejora con la"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Elige el estudio de mayor resolución en primer nivel cuando la radiografía simple suele bastar.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "resonancia",
+          "más preciso",
+          "ver todo"
+        ],
+        "pregunta_socratica_semilla": "¿Qué estudio considera la guía usualmente suficiente para diagnosticar espondilólisis?",
+        "explicacion": "Las radiografías simples son usualmente suficientes para realizar el diagnóstico de espondilólisis y espondilolistesis.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "Las radiografías simples son usualmente"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-601-V1",
+    "version": "0.1.0",
+    "sindrome": "dolor_lumbar_cronico_pediatrico",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-601-I",
+    "gpc_base": {
+      "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+      "clave": "IMSS-601-13",
+      "archivo": "601GER.pdf"
+    },
+    "vineta": "Masculino de 10 años con dolor lumbar de 3 meses de evolución que en las últimas semanas lo despierta por la noche y va en aumento. Ha perdido 2 kg y tiene fiebre intermitente de 38 °C. Sin antecedente de traumatismo ni actividad deportiva intensa. A la exploración: dolor a la palpación de apófisis espinosas lumbares, fuerza y reflejos normales. Acude a su unidad de medicina familiar.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Radiografías simples y control en 3 meses si son normales",
+      "B": "Considerarlo dolor lumbar inespecífico y vigilar",
+      "C": "Enviar a ortopedia por probable espondilólisis",
+      "D": "Indicar reposo y revalorar si persiste más de 6 meses",
+      "E": "Referir a pediatría por datos de alarma para estudio urgente"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Los datos de alarma (dolor persistente, en aumento o nocturno, síntomas neurológicos, fiebre, pérdida de peso, edad menor de 4 años) sugieren una investigación específica o urgente.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "dolor lumbar que sugieren una investigación"
+        }
+      },
+      {
+        "texto": "Si hay datos de alarma se requiere una evaluación integral por el pediatra.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "caso de estar presentes se requiere una evaluación"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Lo clasifica como inespecífico omitiendo el dolor nocturno, la fiebre y la pérdida de peso.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "inespecífico",
+          "vigilar",
+          "muscular"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de alarma tiene el paciente?",
+        "explicacion": "Dolor nocturno o en aumento, fiebre y pérdida de peso son datos de alarma que sugieren investigación específica o urgente.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "Dolor persistente o en aumento,"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Aplica el abordaje del dolor sin datos de alarma a un paciente que sí los tiene.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "radiografía",
+          "control",
+          "esperar"
+        ],
+        "pregunta_socratica_semilla": "¿A qué pacientes se les indican radiografías simples de primera intención según la guía?",
+        "explicacion": "Las radiografías de primera intención se sugieren ante falta de certeza diagnóstica y en ausencia de datos de alarma; con datos de alarma se requiere evaluación integral por pediatría.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "caso de estar presentes se requiere una evaluación"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Atribuye el cuadro a espondilólisis sin sus características típicas.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "espondilólisis",
+          "ortopedia",
+          "mecánico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué características clínicas tiene la espondilólisis y coinciden con este paciente?",
+        "explicacion": "La espondilólisis se manifiesta con dolor relacionado con la actividad física que aumenta con la hiperextensión, e hiperlordosis.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "de la columna lumbar mientras se tiene la"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pospone la evaluación de un dolor con datos de alarma.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "reposo",
+          "esperar",
+          "6 meses"
+        ],
+        "pregunta_socratica_semilla": "¿Qué riesgo implica esperar en un niño con fiebre, pérdida de peso y dolor nocturno?",
+        "explicacion": "Los datos de alarma sugieren una investigación específica y/o urgente.",
+        "cita_gpc": {
+          "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+          "clave": "IMSS-601-13",
+          "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
+          "pagina": 18,
+          "fragmento": "dolor lumbar que sugieren una investigación"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

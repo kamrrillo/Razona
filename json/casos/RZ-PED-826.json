@@ -1,0 +1,278 @@
+[
+  {
+    "id": "RZ-PED-826-I",
+    "version": "0.1.0",
+    "sindrome": "sindrome_nefritico_postestreptococico",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+      "clave": "GPC-IMSS-826-18",
+      "archivo": "826GER_0.pdf"
+    },
+    "vineta": "Masculino de 7 años que hace 3 semanas tuvo faringoamigdalitis, por la que no recibió antibiótico. Desde hace 2 días presenta orina color \"refresco de cola\", edema palpebral matutino y disminución del volumen urinario. TA 135/90 mmHg (mayor del percentil 95). Examen general de orina con eritrocitos dismórficos y cilindros hemáticos; C3 bajo, C4 normal, antiestreptolisinas elevadas; creatinina ligeramente elevada para la edad.",
+    "pregunta": "¿Cuál es el manejo inicial más adecuado?",
+    "opciones": {
+      "A": "Manejo ambulatorio con dieta y control en una semana",
+      "B": "Hospitalizar, penicilina y antagonista de calcio con diurético",
+      "C": "Bolos de metilprednisolona intravenosa",
+      "D": "Biopsia renal de inmediato por el C3 bajo",
+      "E": "No dar penicilina, porque ya recibió antibiótico"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "Los niños con glomerulonefritis aguda postestreptocócica con hematuria, edema, hipertensión y oliguria se mantienen en vigilancia continua, preferentemente en hospital.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "preferentemente en hospital a los niños"
+        }
+      },
+      {
+        "texto": "Se inicia penicilina en niños con glomerulonefritis aguda postestreptocócica que no recibieron antibiótico previo o con cultivo positivo para estreptococo beta hemolítico.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "Se recomienda iniciar tratamiento con penicilina en"
+        }
+      },
+      {
+        "texto": "Para la hipertensión se usan antagonistas de los canales de calcio asociados con diuréticos; con IECA hay riesgo de disminuir el filtrado glomerular y causar hiperkalemia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "Utilizar antagonistas de los canales de calcio"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee que ya recibió antibiótico; la viñeta dice que no lo recibió.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "ya recibió antibiótico",
+          "no necesita penicilina"
+        ],
+        "pregunta_socratica_semilla": "¿Recibió antibiótico el paciente durante la faringoamigdalitis?",
+        "explicacion": "Se inicia penicilina cuando el niño no recibió tratamiento antibiótico previo o si tiene cultivo positivo para estreptococo beta hemolítico.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "tratamiento antibiótico previo, o si se tiene cultivo"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica manejo ambulatorio sin considerar la hipertensión, la oliguria y el edema.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "ambulatorio",
+          "dieta",
+          "control en casa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de la viñeta indican que requiere vigilancia continua en hospital?",
+        "explicacion": "Se recomienda vigilancia continua, preferentemente en hospital, de los niños con hematuria, edema, hipertensión y oliguria.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "preferentemente en hospital a los niños"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los esteroides en bolo son parte del manejo habitual.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "metilprednisolona",
+          "esteroides",
+          "inmunosupresor"
+        ],
+        "pregunta_socratica_semilla": "¿En qué casos reserva la guía los inmunosupresores y los bolos de metilprednisolona?",
+        "explicacion": "Los inmunosupresores, incluidos los bolos de metilprednisolona, se reservan a la glomerulonefritis rápidamente progresiva con medias lunas en más de 50 % de los glomérulos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 22,
+          "fragmento": "metilprednisolona se reservan a casos de"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Interpreta el C3 bajo de la fase aguda como indicación de biopsia, cuando lo que importa es su persistencia.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "biopsia",
+          "C3 bajo",
+          "otra glomerulopatía"
+        ],
+        "pregunta_socratica_semilla": "¿Qué comportamiento del C3 esperas en la nefritis postestreptocócica y cuándo se vuelve criterio de envío al nefrólogo?",
+        "explicacion": "El C3 se determina al inicio y entre las 6 y 8 semanas; se envía al nefrólogo si persiste bajo después de 8 semanas, con proteinuria masiva persistente o glomerulonefritis rápidamente progresiva.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "Persistencia de niveles bajos de C3 posterior"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-826-V1",
+    "version": "0.1.0",
+    "sindrome": "sindrome_nefritico_postestreptococico",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-826-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+      "clave": "GPC-IMSS-826-18",
+      "archivo": "826GER_0.pdf"
+    },
+    "vineta": "Femenino de 9 años diagnosticada hace 10 semanas con síndrome nefrítico agudo postestreptocócico tras impétigo. La hipertensión y el edema se resolvieron en la segunda semana. En el control actual persiste hematuria microscópica, la proteinuria es leve y la creatinina es normal. El C3 sérico continúa por debajo de lo normal, igual que al inicio.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Repetir el C3 en 6 meses",
+      "B": "Iniciar enalapril para normalizar el complemento",
+      "C": "Enviar a nefrología pediátrica por C3 bajo persistente",
+      "D": "Bolos de metilprednisolona",
+      "E": "Darla de alta, porque los síntomas se resolvieron"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "Se envía al nefrólogo pediatra a los niños con proteinuria masiva persistente, C3 bajo después de 8 semanas de la fase aguda o glomerulonefritis rápidamente progresiva.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que"
+        }
+      },
+      {
+        "texto": "Si persisten niveles bajos de C3 se debe considerar otra causa de la glomerulonefritis.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 17,
+          "fragmento": "en caso de persistir niveles bajos de C3"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Decide el alta por la mejoría clínica y omite el C3 persistentemente bajo.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "asintomática",
+          "alta",
+          "se resolvió"
+        ],
+        "pregunta_socratica_semilla": "¿Qué resultado de laboratorio sigue alterado y qué implica a las 10 semanas?",
+        "explicacion": "La persistencia de C3 bajo después de 8 semanas de la fase aguda es criterio de envío al nefrólogo pediatra.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "Persistencia de niveles bajos de C3 posterior"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pospone la evaluación de un dato que ya rebasó el plazo esperado de normalización.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "6 meses",
+          "esperar",
+          "repetir"
+        ],
+        "pregunta_socratica_semilla": "¿En qué plazo debe normalizarse el C3 y qué se hace si no ocurre?",
+        "explicacion": "El C3 se determina al inicio y entre las 6 y 8 semanas; si persiste bajo se considera otra causa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 17,
+          "fragmento": "en caso de persistir niveles bajos de C3"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que un antihipertensivo corrige el complemento.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "enalapril",
+          "IECA",
+          "complemento"
+        ],
+        "pregunta_socratica_semilla": "¿Qué riesgo describe la guía con los IECA en esta enfermedad y para qué se usan los antihipertensivos?",
+        "explicacion": "Con los IECA hay riesgo de disminuir el filtrado glomerular y causar hiperkalemia; los antihipertensivos se usan para la hipertensión de la fase aguda.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "Considerar el riesgo potencial de disminuir el"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Indica inmunosupresión sin criterio de glomerulonefritis rápidamente progresiva.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "metilprednisolona",
+          "esteroides"
+        ],
+        "pregunta_socratica_semilla": "¿Qué condición histológica justifica los bolos de metilprednisolona?",
+        "explicacion": "Los bolos de metilprednisolona se reservan a glomerulonefritis rápidamente progresiva con medias lunas en más de 50 %.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 22,
+          "fragmento": "metilprednisolona se reservan a casos de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

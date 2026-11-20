@@ -1,0 +1,269 @@
+[
+  {
+    "id": "RZ-PED-442-I",
+    "version": "0.1.0",
+    "sindrome": "hipoglucemia_neonatal_transitoria",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+      "clave": "GPC-IMSS-442-18",
+      "archivo": "442GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 38 semanas, hijo de madre con diabetes gestacional mal controlada, peso 4,100 g. A las 2 horas de vida presenta temblores finos, succión débil, hipotonía y un episodio de apnea breve. Glucosa plasmática de 32 mg/dL. Temperatura 36.7 °C. Se encuentra en la unidad de cuidados intermedios con bomba de infusión disponible y acceso venoso periférico.",
+    "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
+    "opciones": {
+      "A": "Alimentar al seno materno y repetir la glucosa a los 30-60 minutos",
+      "B": "Bolo de solución glucosada al 10 % 2 mL/kg sin infusión posterior",
+      "C": "Bolo de glucosa al 10 % 2 mL/kg seguido de infusión a 6-8 mg/kg/min",
+      "D": "Bolo de solución glucosada al 50 % para corregir más rápido",
+      "E": "Vigilancia clínica, ya que la glucosa está en rango normal para las primeras horas"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "En la hipoglucemia sintomática se administra bolo de solución glucosada al 10 % 2 mL/kg (200 mg/kg) seguido de infusión intravenosa de glucosa al 10 % a 6-8 mg/kg/min, con control a los 30-60 minutos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 21,
+          "fragmento": "Administrar bolo de solución glucosada 10% 2"
+        }
+      },
+      {
+        "texto": "La hipoglucemia sintomática, en particular con síntomas neurológicos, se trata de inmediato con infusión de glucosa intravenosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 21,
+          "fragmento": "inmediatamente con infusión de glucosa intravenosa"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la glucosa de 32 mg/dL como normal.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "normal",
+          "fisiológica",
+          "primeras horas"
+        ],
+        "pregunta_socratica_semilla": "¿Qué cifra de glucosa tiene el paciente y qué umbral se usa para definir hipoglucemia neonatal?",
+        "explicacion": "En los últimos 25 años se ha aceptado una glucosa menor de 47 mg/dL para definir la hipoglucemia neonatal; este paciente tiene 32 mg/dL y síntomas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.1.4 Auxiliares diagnósticos",
+          "pagina": 19,
+          "fragmento": "debe utilizarse para definir la hipoglucemia"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica el manejo de la hipoglucemia asintomática sin considerar los temblores, la hipotonía y la apnea.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "seno materno",
+          "alimentar primero",
+          "repetir glucosa"
+        ],
+        "pregunta_socratica_semilla": "¿Tiene el paciente síntomas? ¿Qué manejo indica la guía en ese caso?",
+        "explicacion": "La hipoglucemia sintomática, particularmente con síntomas neurológicos, debe tratarse de inmediato con infusión de glucosa intravenosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 21,
+          "fragmento": "inmediatamente con infusión de glucosa intravenosa"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que el bolo debe acompañarse de infusión para evitar el rebote.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "solo bolo",
+          "corregir y ya"
+        ],
+        "pregunta_socratica_semilla": "¿Qué puede pasar con la glucosa después de un bolo aislado?",
+        "explicacion": "Si el recién nacido requiere bolo de glucosa al 10 % 2 mL/kg, siempre debe acompañarse de incremento de la infusión intravenosa para evitar hipoglucemia grave por rebote.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 22,
+          "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que una solución más concentrada corrige mejor, sin considerar el rebote ni la vía.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "50 %",
+          "más concentrada",
+          "rápido"
+        ],
+        "pregunta_socratica_semilla": "¿Qué concentración de solución glucosada indica la guía para el bolo, y por qué vía deben pasar las concentraciones mayores de 12.5 %?",
+        "explicacion": "La guía indica bolo de solución glucosada al 10 %; las soluciones mayores de 12.5 % requieren catéter central por riesgo de tromboflebitis.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 22,
+          "fragmento": "Si se usa infusión de solución glucosada mayor de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-442-V1",
+    "version": "0.1.0",
+    "sindrome": "hipoglucemia_neonatal_transitoria",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-442-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+      "clave": "GPC-IMSS-442-18",
+      "archivo": "442GER.pdf"
+    },
+    "vineta": "Recién nacida de 37 semanas, pequeña para la edad gestacional, peso 2,200 g. Por su factor de riesgo se mide la glucosa a las 3 horas de vida: 38 mg/dL. Está activa, con buen tono, succión vigorosa, sin temblores, apnea ni cianosis. Temperatura normal. La madre está en alojamiento conjunto y desea amamantarla.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Bolo de solución glucosada al 10 % 2 mL/kg e infusión intravenosa",
+      "B": "No tratar, porque es una cifra fisiológica en las primeras horas",
+      "C": "Repetir la glucosa en 6 horas sin modificar la alimentación",
+      "D": "Alimentar al seno materno y repetir la glucosa 30-60 minutos después",
+      "E": "Iniciar infusión de glucosa intravenosa y suspender la vía oral"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "En la hipoglucemia asintomática con glucosa entre 25 y 45 mg/dL se inicia alimentación oral, de preferencia seno materno, y se repite la glucosa 30-60 minutos después.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.2 Hipoglucemia asintomática",
+          "pagina": 23,
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+        }
+      },
+      {
+        "texto": "Si tras la toma la glucosa sigue menor de 45 mg/dL, se inicia solución glucosada al 10 % y se maneja como hipoglucemia sintomática.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.2 Hipoglucemia asintomática",
+          "pagina": 23,
+          "fragmento": "Si el nivel < 45 mg/dl, iniciar solución"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Trata como sintomática a una paciente asintomática.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "bolo",
+          "intravenosa",
+          "hipoglucemia"
+        ],
+        "pregunta_socratica_semilla": "¿Tiene síntomas la paciente? ¿Qué rango de glucosa y qué manejo describe la guía para la hipoglucemia asintomática?",
+        "explicacion": "En la hipoglucemia asintomática con glucosa entre 25 y 45 mg/dL se inicia alimentación oral y se repite la glucosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.2 Hipoglucemia asintomática",
+          "pagina": 23,
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la cifra no requiere tratamiento por ser asintomática.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "fisiológica",
+          "no tratar",
+          "es normal"
+        ],
+        "pregunta_socratica_semilla": "¿A partir de qué cifra indica la guía tratar la hipoglucemia asintomática?",
+        "explicacion": "Se debe iniciar tratamiento en el recién nacido con hipoglucemia asintomática cuando la glucosa plasmática está entre 25 y 45 mg/dL.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.2 Hipoglucemia asintomática",
+          "pagina": 23,
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce el intervalo de control después de la toma.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "6 horas",
+          "más tarde",
+          "sin cambios"
+        ],
+        "pregunta_socratica_semilla": "¿Cuándo debe repetirse la glucosa después de alimentar?",
+        "explicacion": "Se repite la glucosa sérica 30-60 minutos después de la alimentación.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.2 Hipoglucemia asintomática",
+          "pagina": 23,
+          "fragmento": "repetir nivel de glucosa sérica 30-60 min después"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Prioriza la vía intravenosa y suspende la alimentación, que es el primer paso del tratamiento.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "suspender vía oral",
+          "ayuno",
+          "intravenosa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué papel tiene la alimentación oral en la hipoglucemia asintomática?",
+        "explicacion": "Se da prioridad a la alimentación temprana con seno materno para aportar los nutrientes que necesita el recién nacido.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
+          "clave": "GPC-IMSS-442-18",
+          "seccion": "2.2.1 Hipoglucemia sintomática",
+          "pagina": 22,
+          "fragmento": "Se debe dar prioridad a la alimentación temprana con"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

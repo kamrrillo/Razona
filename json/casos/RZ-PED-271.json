@@ -1,0 +1,270 @@
+[
+  {
+    "id": "RZ-PED-271-I",
+    "version": "0.1.0",
+    "sindrome": "sindrome_nefrotico_primario",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+      "clave": "IMSS-271-13",
+      "archivo": "271GER.pdf"
+    },
+    "vineta": "Masculino de 4 años, peso 16 kg, superficie corporal 0.68 m², previamente sano. Presenta desde hace 5 días edema palpebral matutino que progresó a edema de miembros inferiores y escrotal. TA 95/60 mmHg. Sin artritis, exantema ni adenopatías. Examen general de orina con proteínas +++ y sin hematuria; índice proteína/creatinina urinaria de 4.5 mg/mg; albúmina sérica 1.8 g/dL; colesterol 380 mg/dL; creatinina sérica normal. Es su primer episodio.",
+    "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
+    "opciones": {
+      "A": "Prednisona 60 mg/m²/día por 4 a 6 semanas y luego 40 mg/m² en días alternos",
+      "B": "Biopsia renal antes de iniciar corticosteroides",
+      "C": "Prednisona por 2 semanas y suspender al negativizarse la proteinuria",
+      "D": "Prednisona 60 mg/m²/día dividida en tres tomas para lograr una remisión más rápida",
+      "E": "Prednisona 60 mg/m²/día solo hasta que la proteinuria se negativice y después 40 mg/m² en días alternos"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En el primer episodio se inicia prednisona 60 mg/m²/día o 2 mg/kg (máximo 60 mg) en una sola dosis diaria por 4 a 6 semanas, y después 40 mg/m² o 1.5 mg/kg (máximo 40 mg) en días alternos por 2 a 5 meses con disminución gradual.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+        }
+      },
+      {
+        "texto": "No se recomienda biopsia renal de rutina en el primer evento, porque la mayoría corresponde a cambios mínimos con buena respuesta a corticosteroides.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 19,
+          "fragmento": "biopsia renal de rutina en el primer evento"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Aplica el esquema de recaída (hasta remisión) a un primer episodio.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hasta remisión",
+          "hasta que se negativice",
+          "recaída"
+        ],
+        "pregunta_socratica_semilla": "¿Es su primer episodio o una recaída? ¿Qué esquema corresponde a cada uno?",
+        "explicacion": "En la recaída se da prednisona diaria hasta que el niño entre en remisión; en el primer episodio el periodo inicial es de 4 a 6 semanas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 31,
+          "fragmento": "Después de lograr nuevamente la remisión"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica biopsia sin considerar los datos típicos de cambios mínimos: edad, ausencia de hematuria, TA y función renal normales.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "biopsia",
+          "tipo histológico",
+          "confirmar lesión"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de este niño apoyan una lesión de cambios mínimos, y cuándo indica la guía la biopsia?",
+        "explicacion": "No se recomienda biopsia de rutina en el primer evento; se indica ante corticorresistencia, recaídas, sospecha de otra patología renal o deterioro de la función renal con inhibidores de calcineurina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 19,
+          "fragmento": "Falta de respuesta al tratamiento inicial"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la duración mínima del tratamiento inicial.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "2 semanas",
+          "en cuanto responda",
+          "suspender pronto"
+        ],
+        "pregunta_socratica_semilla": "¿Cuál es la duración mínima del tratamiento inicial con prednisona según la guía?",
+        "explicacion": "Se recomienda un periodo mínimo de tratamiento inicial con prednisona de cuatro a seis semanas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "Se recomienda un periodo mínimo del tratamiento"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que dividir la dosis acelera la remisión.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "dividir",
+          "tres tomas",
+          "más efecto",
+          "niveles estables"
+        ],
+        "pregunta_socratica_semilla": "¿Qué mostraron los ensayos al comparar dosis única con dosis divididas?",
+        "explicacion": "No hubo diferencia en el tiempo de remisión entre dosis única y dividida; se recomienda dosis única matutina para mejorar el apego.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "no hubo diferencia significativa en el tiempo medio"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-271-V1",
+    "version": "0.1.0",
+    "sindrome": "sindrome_nefrotico_primario",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-271-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+      "clave": "IMSS-271-13",
+      "archivo": "271GER.pdf"
+    },
+    "vineta": "Femenino de 6 años, peso 21 kg, superficie corporal 0.84 m², con primer episodio de síndrome nefrótico diagnosticado hace 6 semanas. Recibe prednisona 50 mg/día en dosis única matutina desde entonces. Desde la segunda semana las tiras reactivas de orina son negativas a proteínas y el edema desapareció. TA normal, creatinina normal. Los padres preguntan qué sigue.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la prednisona?",
+    "opciones": {
+      "A": "Suspender la prednisona, porque ya está en remisión",
+      "B": "Cambiar a 40 mg/m² (máximo 40 mg) en días alternos durante 2 a 5 meses con disminución gradual",
+      "C": "Cambiar a 40 mg/m² diarios durante 2 semanas y suspender",
+      "D": "Biopsia renal para definir la duración del tratamiento",
+      "E": "Continuar con 60 mg/m²/día durante 3 meses más para evitar recaídas"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "Al término del periodo inicial se sigue con 40 mg/m² o 1.5 mg/kg en días alternos (máximo 40 mg).",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2"
+        }
+      },
+      {
+        "texto": "Después del periodo inicial la prednisona se da en días alternos por dos a cinco meses con disminución gradual.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "periodo de dos a cinco meses con disminución"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que el esquema continúa en días alternos tras el periodo inicial.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "suspender",
+          "ya remitió",
+          "ya no necesita"
+        ],
+        "pregunta_socratica_semilla": "¿Qué fase sigue al periodo inicial de 4 a 6 semanas?",
+        "explicacion": "Después del periodo inicial se recomienda prednisona en días alternos por dos a cinco meses con disminución gradual.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "periodo de dos a cinco meses con disminución"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que mantener la dosis plena diaria más tiempo protege mejor.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "más tiempo",
+          "dosis plena",
+          "evitar recaídas"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dosis y frecuencia indica la guía después del periodo inicial?",
+        "explicacion": "Al término del periodo inicial se sigue con 40 mg/m² o 1.5 mg/kg en días alternos, máximo 40 mg.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Indica biopsia en una paciente con respuesta adecuada.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "biopsia",
+          "histología"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situaciones indica la guía biopsia renal en síndrome nefrótico?",
+        "explicacion": "La biopsia se indica en corticorresistencia, recaídas, sospecha de otra patología renal o deterioro de la función renal con inhibidores de calcineurina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 19,
+          "fragmento": "Falta de respuesta al tratamiento inicial"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Acierta la dosis, pero omite que debe darse en días alternos y por 2 a 5 meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "40 mg/m²",
+          "reducir dosis",
+          "diario"
+        ],
+        "pregunta_socratica_semilla": "Además de la dosis, ¿qué frecuencia y duración indica la guía para esta fase?",
+        "explicacion": "Después del periodo inicial la prednisona se da en días alternos por dos a cinco meses con disminución gradual.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "periodo de dos a cinco meses con disminución"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

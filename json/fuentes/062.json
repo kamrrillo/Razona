@@ -1,0 +1,212 @@
+{
+ "archivo": "062GER.pdf",
+ "clave": "IMSS-062-08",
+ "sindrome": "infeccion_aguda_vias_aereas_superiores",
+ "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 8 años, peso 24 kg, acude a consulta por odinofagia intensa y fiebre de 38.7 °C de un día de evolución. Niega tos y rinorrea. A la exploración: amígdalas hipertróficas con exudado blanquecino bilateral y adenopatías cervicales anteriores dolorosas a la palpación. Sin esplenomegalia. No tiene antecedente de alergia a penicilina. No se cuenta con prueba rápida ni cultivo en la unidad.",
+   "pregunta": "¿Cuál es el tratamiento más adecuado?",
+   "op": [
+    "Penicilina G benzatínica 1,200,000 UI intramuscular, dosis única",
+    "Penicilina G benzatínica 600,000 UI intramuscular, dosis única",
+    "Azitromicina por vía oral durante 5 días como primera elección",
+    "Paracetamol y reevaluar en 48 horas sin antibiótico",
+    "Iniciar antibiótico solo si los síntomas persisten más de 10 días"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Con tres o más criterios modificados de Centor se interpreta alta probabilidad de infección estreptocócica y se considera la prescripción inmediata de antibiótico.",
+     "4.2 Diagnóstico Clínico",
+     20,
+     "presencia de tres o más criterios modificados de Centor"
+    ],
+    [
+     "En niños de menos de 27 kg se recomienda penicilina G benzatínica 600,000 UI IM en dosis única.",
+     "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
+     37,
+     "Penicilina G benzatínica: 600,000UI IM dosis"
+    ],
+    [
+     "Los criterios de Centor modificados incluyen exudado o inflamación amigdalina, adenopatía cervical anterior dolorosa, fiebre mayor de 38 °C, ausencia de tos y edad de 3 a 14 años.",
+     "4.2 Diagnóstico Clínico",
+     19,
+     "edad entre 3–14 años"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Usa la dosis de niños de más de 27 kg; no registró que pesa 24 kg.",
+     [
+      "A"
+     ],
+     [
+      "1,200,000",
+      "dosis de escolar",
+      "un millón doscientas"
+     ],
+     "¿Cuánto pesa el paciente y qué punto de corte de peso usa la guía para la dosis?",
+     "La guía indica 600,000 UI en niños de menos de 27 kg y 1,200,000 UI en niños de más de 27 kg.",
+     "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
+     37,
+     "Niños > de 27kg"
+    ],
+    [
+     "dato_omitido",
+     "Trata el cuadro como viral sin sumar los criterios de Centor presentes (exudado, adenopatía dolorosa, fiebre mayor de 38 °C, ausencia de tos y edad).",
+     [
+      "D"
+     ],
+     [
+      "es viral",
+      "solo sintomático",
+      "esperar",
+      "la mayoría son virales"
+     ],
+     "¿Cuántos criterios de Centor modificados tiene el paciente y qué probabilidad de estreptococo implican?",
+     "Con tres o más criterios modificados de Centor la guía interpreta alta probabilidad de infección estreptocócica y considera antibiótico inmediato.",
+     "4.2 Diagnóstico Clínico",
+     20,
+     "presencia de tres o más criterios modificados de Centor"
+    ],
+    [
+     "conocimiento",
+     "Cree que el macrólido es de primera elección.",
+     [
+      "C"
+     ],
+     [
+      "azitromicina",
+      "macrólido",
+      "una vez al día",
+      "menos días"
+     ],
+     "¿Qué problema de resistencia describe la guía para los macrólidos en México?",
+     "En México más del 16 % de las cepas de Streptococcus pyogenes son resistentes a macrólidos, por lo que se recomienda usarlos con reserva.",
+     "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
+     37,
+     "cepas de Streptococcus pyogenes son resistentes a"
+    ],
+    [
+     "razonamiento",
+     "Aplica a la faringitis el criterio de persistencia de 10 a 14 días que la guía usa para sospechar rinosinusitis.",
+     [
+      "E"
+     ],
+     [
+      "10 días",
+      "si no se quita",
+      "esperar evolución",
+      "persistencia"
+     ],
+     "¿A qué diagnóstico corresponde en la guía la persistencia de síntomas de 10 a 14 días?",
+     "La persistencia de síntomas de vías aéreas superiores de 10 a 14 días hace sospechar rinosinusitis; en la faringitis con Centor alto el antibiótico se considera de inmediato.",
+     "4.2 Diagnóstico Clínico",
+     20,
+     "superiores, que persisten de 10 a 14 días"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 13 años, peso 45 kg, acude por dolor de garganta, rinorrea hialina, tos seca y ojos rojos de 2 días de evolución. Temperatura 37.8 °C. A la exploración: faringe hiperémica sin exudado, amígdalas sin hipertrofia, sin adenopatías cervicales palpables y sin esplenomegalia. La madre solicita que se le aplique \"la penicilina\" porque su hermano tuvo faringitis estreptocócica el año pasado.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Penicilina G benzatínica 1,200,000 UI intramuscular, dosis única",
+    "Prueba rápida de antígeno estreptocócico de rutina antes de decidir",
+    "Azitromicina por vía oral durante 5 días",
+    "Tratamiento sintomático sin antibiótico y reevaluar si no mejora",
+    "Penicilina procaínica por 3 días seguida de una dosis de penicilina benzatínica"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "Con criterios de Centor de 0 a 2 la probabilidad de estreptococo es baja y la prueba rápida de rutina no ofrece mayor certeza diagnóstica.",
+     "4.2 Diagnóstico Clínico",
+     19,
+     "criterios de Centor entre 0-2, el uso de rutina de la"
+    ],
+    [
+     "Cuando no hay certeza para prescribir antibiótico de inmediato, se aconseja acudir a reevaluación si los síntomas no se resuelven o aparecen datos de alarma.",
+     "4.6 Tratamiento farmacológico",
+     36,
+     "se aconseje acudir a reevaluación, si los síntomas no"
+    ]
+   ],
+   "rub": [
+    [
+     "razonamiento",
+     "Equipara dolor de garganta con faringitis estreptocócica y se deja guiar por el antecedente del hermano.",
+     [
+      "A"
+     ],
+     [
+      "su hermano",
+      "penicilina",
+      "dolor de garganta",
+      "estreptococo"
+     ],
+     "¿Cuántos criterios de Centor modificados tiene esta paciente?",
+     "Con 2 criterios de Centor o menos, aun sin pruebas diagnósticas, no se recomienda tratamiento antibiótico.",
+     "4.2 Diagnóstico Clínico",
+     20,
+     "y a pesar de no disponer de pruebas diagnósticas, no se"
+    ],
+    [
+     "conocimiento",
+     "Cree que la prueba rápida debe hacerse de rutina en toda faringitis.",
+     [
+      "B"
+     ],
+     [
+      "prueba rápida",
+      "confirmar",
+      "descartar estreptococo"
+     ],
+     "¿En qué puntuación de Centor recomienda la guía considerar la prueba rápida?",
+     "Con Centor de 0 a 2 el uso de rutina de la prueba rápida no ofrece mayor certeza diagnóstica; se considera con puntuación de 3 a 5.",
+     "4.2 Diagnóstico Clínico",
+     19,
+     "criterios de Centor entre 0-2, el uso de rutina de la"
+    ],
+    [
+     "conocimiento",
+     "Cree que el macrólido es una alternativa adecuada en un cuadro probablemente viral.",
+     [
+      "C"
+     ],
+     [
+      "azitromicina",
+      "por si acaso",
+      "cubrir"
+     ],
+     "Si el cuadro es probablemente viral, ¿qué aporta un macrólido y qué riesgo de resistencia describe la guía?",
+     "En México más del 16 % de las cepas de Streptococcus pyogenes son resistentes a macrólidos; la guía recomienda usarlos con reserva.",
+     "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
+     37,
+     "cepas de Streptococcus pyogenes son resistentes a"
+    ],
+    [
+     "dato_omitido",
+     "Omite la tos, la rinorrea, la conjuntivitis y la ausencia de exudado y adenopatía, que apuntan a etiología viral.",
+     [
+      "E"
+     ],
+     [
+      "penicilina procaínica",
+      "esquema completo",
+      "fiebre reumática"
+     ],
+     "¿Qué datos de la viñeta restan puntos en la escala de Centor?",
+     "La escala de Centor modificada suma exudado, adenopatía cervical anterior dolorosa, fiebre mayor de 38 °C, ausencia de tos y edad; esta paciente solo suma por la edad.",
+     "4.2 Diagnóstico Clínico",
+     19,
+     "edad entre 3–14 años"
+    ]
+   ]
+  }
+ ]
+}

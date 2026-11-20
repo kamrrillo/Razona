@@ -1,0 +1,202 @@
+{
+ "archivo": "601GER.pdf",
+ "clave": "IMSS-601-13",
+ "sindrome": "dolor_lumbar_cronico_pediatrico",
+ "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 14 años que practica gimnasia 5 días por semana. Presenta dolor lumbar bajo de 4 meses de evolución que aparece con el entrenamiento y aumenta al arquear la espalda hacia atrás. Niega fiebre, pérdida de peso, dolor nocturno, rigidez matutina y síntomas en piernas. A la exploración: hiperlordosis lumbar, dolor a la hiperextensión de la columna con la pierna estirada, examen neurológico normal. Sin escoliosis aparente.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Radiografías simples de columna en proyecciones posteroanterior y lateral, y envío a ortopedia",
+    "Resonancia magnética de columna lumbar como estudio inicial",
+    "Considerarlo dolor lumbar inespecífico y no realizar estudios",
+    "Evaluación integral urgente por pediatría por presentar datos de alarma",
+    "Biometría hemática, velocidad de sedimentación y factor reumatoide para descartar artritis juvenil"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Ante datos clínicos que orientan a espondilólisis o espondilolistesis se solicitan radiografías simples de columna en proyecciones posteroanterior y lateral y se envía a ortopedia.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "espondilólisis, por lo que está indicado solicitar"
+    ],
+    [
+     "La espondilólisis se manifiesta con dolor relacionado con la actividad física, que aumenta con la hiperextensión lumbar con la pierna estirada, e hiperlordosis; las radiografías simples suelen bastar para el diagnóstico.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "de la columna lumbar mientras se tiene la"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Atribuye datos de alarma que la viñeta niega (fiebre, dolor nocturno, pérdida de peso, síntomas neurológicos).",
+     [
+      "D"
+     ],
+     [
+      "datos de alarma",
+      "urgente",
+      "nocturno"
+     ],
+     "¿Qué datos de alarma lista la guía y cuáles tiene esta paciente?",
+     "Los datos de alarma son dolor persistente o en aumento o nocturno, síntomas radiculares o neurológicos, fiebre, pérdida de peso y edad menor de 4 años.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "Dolor persistente o en aumento,"
+    ],
+    [
+     "dato_omitido",
+     "Lo clasifica como inespecífico sin considerar la relación con la hiperextensión y la hiperlordosis.",
+     [
+      "C"
+     ],
+     [
+      "inespecífico",
+      "muscular",
+      "no estudiar"
+     ],
+     "¿Qué hallazgos de la historia y la exploración orientan a una causa específica?",
+     "Solo el dolor sin historia ni hallazgos relevantes, esporádico o intermitente, se considera inespecífico y no requiere estudios.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     17,
+     "inespecífico y por consenso de expertos se"
+    ],
+    [
+     "conocimiento",
+     "Busca enfermedad inflamatoria sin datos que la sugieran.",
+     [
+      "E"
+     ],
+     [
+      "artritis",
+      "reumatoide",
+      "inflamatorio"
+     ],
+     "¿Qué datos clínicos orientarían a una causa inflamatoria? ¿Los tiene?",
+     "En las enfermedades inflamatorias que causan dolor lumbar se observa rigidez matutina que mejora con la actividad y dolor sacroiliaco a la palpación.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     19,
+     "Rigidez matutina que mejora con la"
+    ],
+    [
+     "razonamiento",
+     "Elige el estudio de mayor resolución en primer nivel cuando la radiografía simple suele bastar.",
+     [
+      "B"
+     ],
+     [
+      "resonancia",
+      "más preciso",
+      "ver todo"
+     ],
+     "¿Qué estudio considera la guía usualmente suficiente para diagnosticar espondilólisis?",
+     "Las radiografías simples son usualmente suficientes para realizar el diagnóstico de espondilólisis y espondilolistesis.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "Las radiografías simples son usualmente"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Masculino de 10 años con dolor lumbar de 3 meses de evolución que en las últimas semanas lo despierta por la noche y va en aumento. Ha perdido 2 kg y tiene fiebre intermitente de 38 °C. Sin antecedente de traumatismo ni actividad deportiva intensa. A la exploración: dolor a la palpación de apófisis espinosas lumbares, fuerza y reflejos normales. Acude a su unidad de medicina familiar.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Considerarlo dolor lumbar inespecífico y vigilar",
+    "Referir a pediatría por datos de alarma para estudio urgente",
+    "Radiografías simples y control en 3 meses si son normales",
+    "Enviar a ortopedia por probable espondilólisis",
+    "Indicar reposo y revalorar si persiste más de 6 meses"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Los datos de alarma (dolor persistente, en aumento o nocturno, síntomas neurológicos, fiebre, pérdida de peso, edad menor de 4 años) sugieren una investigación específica o urgente.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "dolor lumbar que sugieren una investigación"
+    ],
+    [
+     "Si hay datos de alarma se requiere una evaluación integral por el pediatra.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "caso de estar presentes se requiere una evaluación"
+    ]
+   ],
+   "rub": [
+    [
+     "dato_omitido",
+     "Lo clasifica como inespecífico omitiendo el dolor nocturno, la fiebre y la pérdida de peso.",
+     [
+      "A"
+     ],
+     [
+      "inespecífico",
+      "vigilar",
+      "muscular"
+     ],
+     "¿Qué datos de alarma tiene el paciente?",
+     "Dolor nocturno o en aumento, fiebre y pérdida de peso son datos de alarma que sugieren investigación específica o urgente.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "Dolor persistente o en aumento,"
+    ],
+    [
+     "razonamiento",
+     "Aplica el abordaje del dolor sin datos de alarma a un paciente que sí los tiene.",
+     [
+      "C"
+     ],
+     [
+      "radiografía",
+      "control",
+      "esperar"
+     ],
+     "¿A qué pacientes se les indican radiografías simples de primera intención según la guía?",
+     "Las radiografías de primera intención se sugieren ante falta de certeza diagnóstica y en ausencia de datos de alarma; con datos de alarma se requiere evaluación integral por pediatría.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "caso de estar presentes se requiere una evaluación"
+    ],
+    [
+     "conocimiento",
+     "Atribuye el cuadro a espondilólisis sin sus características típicas.",
+     [
+      "D"
+     ],
+     [
+      "espondilólisis",
+      "ortopedia",
+      "mecánico"
+     ],
+     "¿Qué características clínicas tiene la espondilólisis y coinciden con este paciente?",
+     "La espondilólisis se manifiesta con dolor relacionado con la actividad física que aumenta con la hiperextensión, e hiperlordosis.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "de la columna lumbar mientras se tiene la"
+    ],
+    [
+     "razonamiento",
+     "Pospone la evaluación de un dolor con datos de alarma.",
+     [
+      "E"
+     ],
+     [
+      "reposo",
+      "esperar",
+      "6 meses"
+     ],
+     "¿Qué riesgo implica esperar en un niño con fiebre, pérdida de peso y dolor nocturno?",
+     "Los datos de alarma sugieren una investigación específica y/o urgente.",
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "dolor lumbar que sugieren una investigación"
+    ]
+   ]
+  }
+ ]
+}

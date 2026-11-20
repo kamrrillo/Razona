@@ -1,0 +1,280 @@
+[
+  {
+    "id": "RZ-PED-395-I",
+    "version": "0.1.0",
+    "sindrome": "enfermedad_kawasaki",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+      "clave": "IMSS-395-10",
+      "archivo": "395GER.pdf"
+    },
+    "vineta": "Masculino de 2 años, peso 12 kg, con fiebre de 39.5 °C de 6 días de evolución que no cede con antipiréticos. Presenta hiperemia conjuntival bilateral sin secreción, labios rojos y agrietados, lengua en fresa, exantema maculopapular en tronco y edema indurado del dorso de manos y pies. Adenopatía cervical derecha de 2 cm. PCR 9 mg/dL y VSG 70 mm/h. El ecocardiograma inicial no muestra aneurismas.",
+    "pregunta": "¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "A": "Inmunoglobulina intravenosa 400 mg/kg/día durante 5 días",
+      "B": "Inmunoglobulina intravenosa 2 g/kg en dosis única y ácido acetilsalicílico a dosis altas",
+      "C": "Ácido acetilsalicílico a dosis altas como único tratamiento",
+      "D": "Esperar un nuevo ecocardiograma antes de tratar, por tratarse de un cuadro incompleto",
+      "E": "Solo ácido acetilsalicílico, porque la inmunoglobulina no es útil después de 10 días de enfermedad"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "En la enfermedad de Kawasaki se administra inmunoglobulina intravenosa 2 g/kg al hacer el diagnóstico, preferentemente antes de los 10 días de evolución.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 28,
+          "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+        }
+      },
+      {
+        "texto": "El ácido acetilsalicílico se da a 80-100 mg/kg/día en cuatro tomas hasta 48 horas después de ceder la fiebre, y luego a 3-5 mg/kg/día en una toma por 6 a 8 semanas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 31,
+          "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+        }
+      },
+      {
+        "texto": "Se considera el diagnóstico con fiebre de 5 días o más y cuatro o más de los cinco criterios principales.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.1 Diagnóstico clínico",
+          "pagina": 19,
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la evolución como si tuviera más de 10 días; la viñeta dice 6 días.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "más de 10 días",
+          "tarde",
+          "ya no sirve"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos días de fiebre tiene el paciente y hasta cuándo es más eficaz la inmunoglobulina?",
+        "explicacion": "La inmunoglobulina se administra preferentemente antes de los 10 días; el paciente lleva 6 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 28,
+          "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Clasifica el cuadro como incompleto omitiendo criterios presentes (conjuntivitis, cambios en labios, exantema, cambios en extremidades y adenopatía).",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "incompleto",
+          "faltan criterios",
+          "esperar eco"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos de los cinco criterios principales tiene el paciente?",
+        "explicacion": "Se considera el diagnóstico con fiebre de 5 días o más y cuatro o más de los cinco criterios principales; este paciente tiene los cinco.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.1 Diagnóstico clínico",
+          "pagina": 19,
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa el esquema de dosis fraccionada de inmunoglobulina.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "400 mg/kg",
+          "5 días",
+          "dosis fraccionada"
+        ],
+        "pregunta_socratica_semilla": "¿Qué esquema de inmunoglobulina redujo más las anormalidades coronarias?",
+        "explicacion": "La dosis única de 2 g/kg redujo significativamente las anormalidades coronarias frente a 400 mg/kg/día por cinco días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 27,
+          "fragmento": "de la administración de IGIV en una sola dosis de 2"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que el antiinflamatorio basta para proteger las coronarias.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "aspirina sola",
+          "antiinflamatorio",
+          "bajar la fiebre"
+        ],
+        "pregunta_socratica_semilla": "¿Qué desenlace previene la inmunoglobulina que no previene el ácido acetilsalicílico solo?",
+        "explicacion": "El ácido acetilsalicílico no ha demostrado reducir el riesgo de enfermedad cardiaca; la inmunoglobulina disminuye significativamente las anormalidades coronarias.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 26,
+          "fragmento": "normal no ha demostrado reducir el riesgo de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-395-V1",
+    "version": "0.1.0",
+    "sindrome": "enfermedad_kawasaki",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-395-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+      "clave": "IMSS-395-10",
+      "archivo": "395GER.pdf"
+    },
+    "vineta": "Femenino de 4 años, peso 16 kg, referida al día 12 de enfermedad con diagnóstico de enfermedad de Kawasaki. Persiste con fiebre de 39 °C y descamación periungueal de los dedos. PCR 8 mg/dL y VSG 85 mm/h. El ecocardiograma muestra dilatación leve de la arteria coronaria derecha. No ha recibido inmunoglobulina.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la inmunoglobulina intravenosa?",
+    "opciones": {
+      "A": "No administrarla, porque ya pasaron más de 10 días",
+      "B": "Iniciar metilprednisolona de forma rutinaria en lugar de inmunoglobulina",
+      "C": "Administrar inmunoglobulina 2 g/kg, porque persiste la fiebre y los reactantes de fase aguda están elevados",
+      "D": "Administrar solo ácido acetilsalicílico a 3-5 mg/kg/día",
+      "E": "Administrarla solo si el siguiente ecocardiograma muestra un aneurisma"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "Se recomienda inmunoglobulina 2 g/kg en pacientes con más de 10 días de evolución si persiste la fiebre, hay reactantes de fase aguda elevados o aneurismas al diagnóstico.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 28,
+          "fragmento": "pacientes con más de 10 días de evolución, en las"
+        }
+      },
+      {
+        "texto": "Se evita el uso de esteroides de forma rutinaria en el tratamiento inicial.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 29,
+          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Aplica el límite de 10 días como absoluto.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "más de 10 días",
+          "ya no sirve",
+          "fuera de tiempo"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situaciones recomienda la guía inmunoglobulina después de 10 días?",
+        "explicacion": "Se recomienda inmunoglobulina en pacientes con más de 10 días de evolución si persiste la fiebre, hay reactantes elevados o aneurismas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 28,
+          "fragmento": "pacientes con más de 10 días de evolución, en las"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pasa a la fase antiagregante sin haber controlado la inflamación activa.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "dosis baja",
+          "antiagregante",
+          "solo aspirina"
+        ],
+        "pregunta_socratica_semilla": "¿La dosis de 3-5 mg/kg/día corresponde a la fase con fiebre o a la fase posterior?",
+        "explicacion": "La dosis de 3-5 mg/kg/día se usa después de la remisión de la fiebre; esta paciente sigue febril.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 31,
+          "fragmento": "de 3 a 5 mg/kg/día (en una sola toma) por 6 a 8"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el esteroide sustituye a la inmunoglobulina en el tratamiento inicial.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "esteroide",
+          "metilprednisolona",
+          "pulsos"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la guía del uso rutinario de esteroides en el tratamiento inicial?",
+        "explicacion": "Se recomienda evitar el uso de esteroides de forma rutinaria en el tratamiento inicial de la enfermedad de Kawasaki.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 29,
+          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Condiciona el tratamiento al aneurisma y omite la fiebre persistente y los reactantes elevados.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "esperar aneurisma",
+          "nuevo eco",
+          "si hay lesión"
+        ],
+        "pregunta_socratica_semilla": "Además del aneurisma, ¿qué otras condiciones justifican la inmunoglobulina después de 10 días? ¿Las tiene?",
+        "explicacion": "La persistencia de la fiebre y las titulaciones altas de PCR o VSG justifican la inmunoglobulina después de 10 días, aun sin aneurisma.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 28,
+          "fragmento": "pacientes con más de 10 días de evolución, en las"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

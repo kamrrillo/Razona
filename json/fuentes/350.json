@@ -1,0 +1,212 @@
+{
+ "archivo": "350GER.pdf",
+ "clave": "IMSS-350-13",
+ "sindrome": "fiebre_sin_signos_focalizacion",
+ "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 18 meses con esquema de vacunación completo para la edad. Presenta fiebre de 39.2 °C de 24 horas de evolución. Sin tos, rinorrea, vómito ni diarrea. En la consulta está alerta, sonríe, juega con los juguetes de la sala, tiene mucosas húmedas, llenado capilar de 2 segundos y FR de 28 rpm. Oídos, faringe, campos pulmonares, abdomen y piel sin alteraciones; sin rigidez de nuca. Los padres viven cerca de la unidad y entienden las indicaciones.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Examen general de orina y manejo ambulatorio sin antibiótico",
+    "Amoxicilina por vía oral de forma empírica durante 7 días",
+    "Punción lumbar, radiografía de tórax y hemocultivos",
+    "Hospitalizar y aplicar ceftriaxona intravenosa",
+    "Paracetamol y baños con agua tibia, sin estudios, porque luce bien"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "En niños con fiebre sin foco se recomienda examen general de orina, independientemente del grupo de riesgo.",
+     "4.2 Pruebas diagnósticas",
+     21,
+     "recomendable realizar un Examen General de Orina"
+    ],
+    [
+     "Los niños de bajo riesgo pueden manejarse en forma ambulatoria, con información de signos de alarma y una cita de revaloración.",
+     "4.3 Manejo médico",
+     24,
+     "Los niños con bajo riesgo podrán manejarse en forma"
+    ],
+    [
+     "Los antibióticos orales no deben usarse en niños con fiebre sin causa aparente.",
+     "4.3 Manejo médico",
+     24,
+     "Los antibióticos orales no deben ser usados en"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Clasifica al niño como de riesgo alto; la viñeta lo describe alerta, jugando e hidratado.",
+     [
+      "D"
+     ],
+     [
+      "riesgo alto",
+      "tóxico",
+      "bacteremia",
+      "ceftriaxona"
+     ],
+     "¿Qué datos de la viñeta describen el estado general del niño?",
+     "Los antibióticos intravenosos se indican en niños de riesgo alto o con bandera roja; en el niño que luce bien no hay beneficio del antibiótico empírico.",
+     "4.3 Manejo médico",
+     25,
+     "recibir antibióticos intravenosos profilácticos:"
+    ],
+    [
+     "dato_omitido",
+     "Indica el estudio completo del niño de riesgo alto sin considerar que este paciente es de bajo riesgo.",
+     [
+      "C"
+     ],
+     [
+      "punción lumbar",
+      "descartar meningitis",
+      "hemocultivo",
+      "estudio completo"
+     ],
+     "¿A qué grupo de riesgo corresponde este niño y a quiénes recomienda la guía punción lumbar, radiografía y hemocultivos?",
+     "Por consenso, la punción lumbar, la radiografía de tórax y los hemocultivos se recomiendan en los niños de riesgo alto con fiebre sin foco aparente.",
+     "4.2 Pruebas diagnósticas",
+     23,
+     "alto con fiebre sin foco infeccioso aparente realizar:"
+    ],
+    [
+     "conocimiento",
+     "Cree que el antibiótico oral empírico es apropiado en fiebre sin foco.",
+     [
+      "B"
+     ],
+     [
+      "amoxicilina",
+      "por si es bacteriana",
+      "cubrir"
+     ],
+     "¿Qué dice la guía sobre los antibióticos orales en fiebre sin causa aparente?",
+     "Los antibióticos orales no deben usarse en niños con fiebre sin causa aparente, y en el niño que luce bien no hay beneficio del antibiótico empírico.",
+     "4.3 Manejo médico",
+     24,
+     "Los antibióticos orales no deben ser usados en"
+    ],
+    [
+     "razonamiento",
+     "Concluye que el buen estado general excluye cualquier estudio y pasa por alto la infección urinaria oculta.",
+     [
+      "E"
+     ],
+     [
+      "luce bien",
+      "es viral",
+      "no necesita estudios",
+      "baños"
+     ],
+     "Sin foco aparente, ¿qué infección bacteriana frecuente puede presentarse solo con fiebre a esta edad?",
+     "La guía recomienda examen general de orina en todo niño con fiebre sin foco, independientemente del grupo de riesgo; además, no recomienda los baños de esponja con agua tibia.",
+     "4.2 Pruebas diagnósticas",
+     21,
+     "recomendable realizar un Examen General de Orina"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 10 meses con fiebre de 39.6 °C de 12 horas de evolución, sin foco aparente a la exploración. En urgencias está poco reactiva a estímulos, con llanto débil, piel moteada y llenado capilar de 4 segundos. FC 185 lpm. Sin petequias ni rigidez de nuca. Sin contraindicaciones para punción lumbar. Vacunación incompleta.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Manejo ambulatorio con signos de alarma y cita de revaloración en 24 horas",
+    "Amoxicilina con clavulanato por vía oral y revalorar en 48 horas",
+    "Hospitalizar, tomar hemocultivos y esperar su resultado antes de iniciar antibiótico",
+    "Hospitalizar, completar estudios e iniciar ceftriaxona intravenosa sin retraso",
+    "Baños de esponja con agua tibia y antipirético, y revalorar en 2 horas"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "En niños con apariencia tóxica, datos de choque o falta de respuesta a estímulos no se debe retrasar la hospitalización ni el antibiótico empírico; los de riesgo alto reciben ceftriaxona o cefotaxima intravenosa.",
+     "4.3 Manejo médico",
+     25,
+     "No se debe retrasar la hospitalización y el uso de"
+    ],
+    [
+     "En los niños de riesgo alto se recomienda punción lumbar (sin contraindicación), radiografía de tórax y hemocultivos.",
+     "4.2 Pruebas diagnósticas",
+     23,
+     "alto con fiebre sin foco infeccioso aparente realizar:"
+    ]
+   ],
+   "rub": [
+    [
+     "dato_omitido",
+     "Omite los datos de riesgo alto: hiporreactividad, piel moteada, llenado capilar prolongado y taquicardia.",
+     [
+      "A"
+     ],
+     [
+      "ambulatorio",
+      "signos de alarma",
+      "revalorar mañana"
+     ],
+     "¿Qué hallazgos de la exploración indican que esta niña no es de bajo riesgo?",
+     "No se debe retrasar la hospitalización ni el antibiótico en niños con choque, apariencia tóxica o falta de respuesta a estímulos.",
+     "4.3 Manejo médico",
+     25,
+     "No se debe retrasar la hospitalización y el uso de"
+    ],
+    [
+     "conocimiento",
+     "Elige antibiótico oral en un lactante de riesgo alto.",
+     [
+      "B"
+     ],
+     [
+      "vía oral",
+      "amoxicilina",
+      "clavulanato"
+     ],
+     "¿Qué vía y qué antibióticos recomienda la guía para el niño de riesgo alto?",
+     "Los niños de riesgo alto con bandera roja deben recibir antibióticos intravenosos: ceftriaxona o cefotaxima.",
+     "4.3 Manejo médico",
+     25,
+     "recibir antibióticos intravenosos profilácticos:"
+    ],
+    [
+     "razonamiento",
+     "Espera el hemocultivo antes de tratar, aunque su resultado tarda al menos un día.",
+     [
+      "C"
+     ],
+     [
+      "esperar cultivo",
+      "confirmar bacteremia",
+      "dirigido"
+     ],
+     "¿Cuánto tarda el hemocultivo y qué puede pasar con esta niña mientras tanto?",
+     "El hemocultivo no identifica de inmediato una infección bacteriana grave; su resultado requiere de 24 a 36 horas como mínimo.",
+     "4.2 Pruebas diagnósticas",
+     22,
+     "en forma inmediata, si el paciente tiene una IBG ya que"
+    ],
+    [
+     "conocimiento",
+     "Cree que los baños de esponja son parte del manejo de la fiebre.",
+     [
+      "E"
+     ],
+     [
+      "baños",
+      "agua tibia",
+      "medios físicos",
+      "bajar la fiebre"
+     ],
+     "¿Qué recomienda la guía sobre los baños de esponja con agua tibia?",
+     "Los baños de esponja con agua tibia no están recomendados para el tratamiento de la fiebre.",
+     "4.3 Manejo médico",
+     25,
+     "Los baños de esponja con agua tibia no están"
+    ]
+   ]
+  }
+ ]
+}

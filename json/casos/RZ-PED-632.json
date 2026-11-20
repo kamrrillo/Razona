@@ -1,0 +1,270 @@
+[
+  {
+    "id": "RZ-PED-632-I",
+    "version": "0.1.0",
+    "sindrome": "asfixia_neonatal_reanimacion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+      "clave": "IMSS-632-13",
+      "archivo": "632GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 40 semanas, peso 3,400 g, nacido por parto vaginal con líquido amniótico teñido de meconio. Al nacer está hipotónico y sin esfuerzo respiratorio. Se realizan los pasos iniciales (calor, secado, posición y estimulación) y a los 30 segundos persiste en apnea con frecuencia cardiaca de 80 lpm. Se cuenta con bolsa y mascarilla, mezclador de oxígeno y oxímetro de pulso.",
+    "pregunta": "¿Cuál es la conducta más adecuada en este momento?",
+    "opciones": {
+      "A": "Iniciar ventilación con presión positiva con oxígeno entre 30 y 90 %",
+      "B": "Iniciar ventilación con presión positiva con aire ambiente (21 %) y ajustar el oxígeno según la oximetría",
+      "C": "Aspirar nasofaringe y orofaringe de rutina por el meconio antes de ventilar",
+      "D": "Iniciar compresiones torácicas con relación 3:1",
+      "E": "Iniciar ventilación con presión positiva con oxígeno al 100 %"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "En el recién nacido de término que requiere ventilación con presión positiva se inicia con oxígeno a concentración ambiente (21 %); solo si no mejoran la frecuencia cardiaca o la oxemia con ventilación eficaz se aumenta la concentración.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 47,
+          "fragmento": "positiva, se recomienda iniciar con oxígeno a"
+        }
+      },
+      {
+        "texto": "En el recién nacido de término el oxígeno al 100 % no confiere ventaja sobre el 21 %, y los metanálisis muestran menor mortalidad con aire ambiente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la frecuencia cardiaca como menor de 60 lpm; es de 80 lpm.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "compresiones",
+          "masaje",
+          "bradicardia grave"
+        ],
+        "pregunta_socratica_semilla": "¿Qué frecuencia cardiaca tiene el paciente y qué intervención corresponde a ese valor?",
+        "explicacion": "Las compresiones y la epinefrina se consideran en recién nacidos que mantienen frecuencia cardiaca menor de 60 lpm a pesar de ventilación adecuada.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 49,
+          "fragmento": "que mantienen frecuencia cardiaca menor de 60"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa la concentración recomendada para prematuros de menos de 32 semanas en un recién nacido de término.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "30 a 90 %",
+          "oxígeno intermedio",
+          "guiado por saturación"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad gestacional tiene el paciente y a qué grupo corresponde iniciar con 30 a 90 %?",
+        "explicacion": "En prematuros de menos de 32 semanas se recomienda iniciar con oxígeno entre 30 y 90 %; en el de término se inicia con 21 %.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la aspiración de rutina es necesaria con meconio.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "aspirar",
+          "meconio",
+          "limpiar la vía aérea"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre la aspiración de rutina con líquido meconial?",
+        "explicacion": "No se recomienda la aspiración nasofaríngea y orofaríngea de rutina en presencia de líquido amniótico claro o manchado de meconio.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "No se recomienda la aspiración de nasofaríngea y"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que más oxígeno es mejor en un recién nacido hipóxico.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "100 %",
+          "más oxígeno",
+          "está hipóxico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué mostró la evidencia al comparar 100 % con 21 % en recién nacidos de término?",
+        "explicacion": "En el recién nacido de término el oxígeno al 100 % no confiere ventaja sobre el 21 %; los metanálisis muestran menor mortalidad con aire ambiente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-632-V1",
+    "version": "0.1.0",
+    "sindrome": "asfixia_neonatal_reanimacion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-632-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+      "clave": "IMSS-632-13",
+      "archivo": "632GER.pdf"
+    },
+    "vineta": "Recién nacida de 29 semanas de gestación, peso 1,150 g, nacida por cesárea por preeclampsia grave. Tras los pasos iniciales en bolsa de polietileno bajo calor radiante, continúa en apnea con frecuencia cardiaca de 90 lpm. Se dispone de pieza en T, mezclador de oxígeno y oxímetro de pulso en la mano derecha.",
+    "pregunta": "¿Cuál es la conducta más adecuada para iniciar la ventilación?",
+    "opciones": {
+      "A": "Ventilación con presión positiva con aire ambiente (21 %)",
+      "B": "Ventilación con presión positiva con oxígeno al 100 %",
+      "C": "VPP con oxígeno de 30 a 90 % con mezclador, guiado por oximetría",
+      "D": "Ventilación con presión inspiratoria inicial de 40 cm H2O",
+      "E": "Ventilación con presión positiva con oxígeno al 100 % si no hay mezclador"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "En prematuros de menos de 32 semanas es mejor iniciar la reanimación con oxígeno entre 30 y 90 %, guiándose por la saturación.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+        }
+      },
+      {
+        "texto": "En el prematuro de menos de 32 semanas el oxígeno se administra con mezclador, guiado por oximetría; si no hay mezclador, se inicia con oxígeno a concentración ambiente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 47,
+          "fragmento": "de gestación se administrara oxígeno con mezclador"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica la conducta del recién nacido de término sin considerar las 29 semanas.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "21 %",
+          "aire ambiente",
+          "como en el de término"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad gestacional tiene la paciente y qué produce el 21 % en ese grupo?",
+        "explicacion": "En prematuros de menos de 32 semanas, iniciar con 21 % o 100 % produce hipoxemia o hiperoxemia, respectivamente; es mejor iniciar con 30 a 90 %.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que el prematuro necesita la máxima concentración de oxígeno.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "100 %",
+          "inmaduro",
+          "más oxígeno"
+        ],
+        "pregunta_socratica_semilla": "¿Qué efecto tiene iniciar con oxígeno al 100 % en un prematuro de menos de 32 semanas?",
+        "explicacion": "En prematuros de menos de 32 semanas iniciar con oxígeno al 100 % produce generalmente hiperoxemia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 46,
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa presiones de inicio propias del recién nacido de término o mayores.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "40 cm H2O",
+          "presión alta",
+          "expandir"
+        ],
+        "pregunta_socratica_semilla": "¿Qué presión inicial suele ser eficaz en el prematuro?",
+        "explicacion": "En los prematuros una presión inicial de 20 cm H2O puede ser eficaz; los de término pueden requerir 30 a 40 cm H2O.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 48,
+          "fragmento": "Los recién nacidos prematuros una presión inicial de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce qué hacer cuando no hay mezclador.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "sin mezclador",
+          "100 %",
+          "lo que haya"
+        ],
+        "pregunta_socratica_semilla": "Si no se dispone de mezclador, ¿con qué concentración recomienda la guía iniciar?",
+        "explicacion": "En caso de no haber mezclador debe iniciarse la reanimación con oxígeno a concentración ambiente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
+          "clave": "IMSS-632-13",
+          "seccion": "4.2.1 Reanimación Neonatal",
+          "pagina": 47,
+          "fragmento": "de gestación se administrara oxígeno con mezclador"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

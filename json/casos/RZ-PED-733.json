@@ -1,0 +1,280 @@
+[
+  {
+    "id": "RZ-PED-733-I",
+    "version": "0.1.0",
+    "sindrome": "intolerancia_lactosa",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+      "clave": "IMSS-733-14",
+      "archivo": "733GER.pdf"
+    },
+    "vineta": "Masculino de 10 años que hasta los 9 años toleraba la leche sin problema. Desde hace un año presenta distensión abdominal, flatulencia, borborigmos y evacuaciones blandas 1 a 2 horas después de tomar leche o yogur; los síntomas desaparecieron durante 2 semanas sin lácteos y reaparecieron al reintroducirlos. Crecimiento normal, sin sangre en heces, sin lesiones cutáneas ni síntomas respiratorios. Síntomas leves.",
+    "pregunta": "¿Cuál es el manejo más adecuado?",
+    "opciones": {
+      "A": "Dieta sin lactosa de por vida por deficiencia congénita de lactasa",
+      "B": "Eliminar todos los lácteos de la dieta de por vida",
+      "C": "Solicitar ultrasonido abdominal para confirmar el diagnóstico",
+      "D": "Reducir la lactosa según tolerancia, asegurando el aporte de calcio",
+      "E": "Manejarlo como alergia a la proteína de la leche de vaca"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "Para determinar la lactosa tolerada se reduce su ingesta hasta la desaparición de los síntomas y cuatro semanas después se incrementa según tolerancia; en casos leves se prefiere dieta baja en lactosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 17,
+          "fragmento": "síntomas y cuatro semanas despues ir"
+        }
+      },
+      {
+        "texto": "Restringir en su totalidad los lácteos disminuye el aporte de calcio, fósforo y vitaminas; se asegura un aporte de calcio de 500 a 1000 mg al día.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 17,
+          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y"
+        }
+      },
+      {
+        "texto": "La prueba-contraprueba consiste en un régimen sin lactosa por 2 semanas con reintroducción paulatina, evaluando los síntomas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 14,
+          "fragmento": "Consiste en mantener un régimen estricto sin lactosa"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Clasifica el cuadro como congénito; la viñeta indica que toleraba la leche hasta los 9 años.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "congénita",
+          "desde el nacimiento",
+          "de por vida"
+        ],
+        "pregunta_socratica_semilla": "¿Desde cuándo tiene síntomas el paciente y qué característica tiene la deficiencia congénita?",
+        "explicacion": "La deficiencia congénita de lactasa se presenta desde el nacimiento y persiste toda la vida; este niño toleraba la leche hasta los 9 años.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "3.3 Definición",
+          "pagina": 10,
+          "fragmento": "se presenta desde el nacimiento y persiste durante"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Lo maneja como alergia sin considerar la edad de inicio, la relación con la lactosa y la ausencia de datos de afectación inmune.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "alergia",
+          "proteína de la leche",
+          "hidrolizado"
+        ],
+        "pregunta_socratica_semilla": "¿Qué diferencia a la intolerancia a la lactosa de la alergia a la proteína de la leche de vaca, y a qué edad suele presentarse esta última?",
+        "explicacion": "La intolerancia a la lactosa es distinta de la intolerancia a la proteína de la leche de vaca, en la que se afecta el sistema inmunológico; esta se presenta entre el 1 y 3 meses de vida.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.2 Diagnóstico Diferencial",
+          "pagina": 15,
+          "fragmento": "La intolerancia a la lactosa es una entidad distinta de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los estudios de imagen apoyan el diagnóstico de intolerancia primaria.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "ultrasonido",
+          "imagen",
+          "confirmar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué utilidad tienen los estudios de imagen en la intolerancia primaria a la lactosa?",
+        "explicacion": "Los estudios de imagen no son útiles para apoyar el diagnóstico de intolerancia a la lactosa primaria.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 14,
+          "fragmento": "Los estudios de imagen no son útiles para apoyar el"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que la exclusión total es más segura, sin ponderar el déficit nutricional ni que la intolerancia suele ser parcial.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "eliminar todo",
+          "nada de lácteos",
+          "de por vida"
+        ],
+        "pregunta_socratica_semilla": "¿Qué consecuencias nutricionales tiene retirar todos los lácteos y qué tan frecuente es la intolerancia parcial?",
+        "explicacion": "Restringir en su totalidad los lácteos puede disminuir el aporte de calcio, fósforo y vitaminas; la intolerancia suele ser parcial y se evalúa de forma individual.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 17,
+          "fragmento": "Restringir en su totalidad los productos lacteos de la"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-733-V1",
+    "version": "0.1.0",
+    "sindrome": "intolerancia_lactosa",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-733-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+      "clave": "IMSS-733-14",
+      "archivo": "733GER.pdf"
+    },
+    "vineta": "Femenino de 18 meses que hace 10 días tuvo gastroenteritis por rotavirus. La diarrea había cedido, pero al reintroducir la leche entera reaparecieron las evacuaciones líquidas explosivas, la distensión abdominal y el eritema perianal. pH fecal de 5.0. Hidratada, sin sangre en heces. Antes de la gastroenteritis toleraba la leche sin problemas.",
+    "pregunta": "¿Cuál es el manejo más adecuado respecto a la lactosa?",
+    "opciones": {
+      "A": "Excluir la lactosa solo 3 días",
+      "B": "Cambiar a fórmula extensamente hidrolizada por alergia a la proteína de la leche de vaca",
+      "C": "Continuar la leche entera sin cambios",
+      "D": "Excluir la lactosa de por vida",
+      "E": "Excluir la lactosa en promedio durante cuatro semanas y después reintroducirla poco a poco"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "En la deficiencia secundaria de lactasa el retiro o la disminución de la lactosa es temporal, hasta que se recupere el borde en cepillo del intestino delgado.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 16,
+          "fragmento": "retiro o disminución de alimentos con lactosa es"
+        }
+      },
+      {
+        "texto": "En la deficiencia secundaria la exclusión de lactosa dura en promedio cuatro semanas, y después se reintroducen poco a poco pequeñas cantidades.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 16,
+          "fragmento": "promedio por cuatro semanas"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Confunde la deficiencia secundaria con una deficiencia permanente.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "de por vida",
+          "permanente",
+          "definitivo"
+        ],
+        "pregunta_socratica_semilla": "¿Es temporal o permanente la exclusión de lactosa en la deficiencia secundaria?",
+        "explicacion": "En la deficiencia secundaria el retiro o la disminución de la lactosa es temporal, hasta que se recupere el borde en cepillo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 16,
+          "fragmento": "retiro o disminución de alimentos con lactosa es"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Atribuye la diarrea a la infección sin integrar la relación con la reintroducción de lactosa y el pH fecal ácido.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "es viral",
+          "se quitará",
+          "sin cambios"
+        ],
+        "pregunta_socratica_semilla": "¿Qué indica un pH fecal menor de 5.5 después de ingerir lactosa?",
+        "explicacion": "Un pH fecal menor de 5.5 al ingerir lactosa sugiere sustancias reductoras en heces por intolerancia a la lactosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 14,
+          "fragmento": "cuando el pH de las heces fecales es menor a 5.5"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Atribuye el cuadro a alergia sin considerar el antecedente inmediato de gastroenteritis y la tolerancia previa a la leche.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "alergia",
+          "hidrolizado",
+          "proteína"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente reciente explica la pérdida transitoria de la lactasa en esta paciente?",
+        "explicacion": "La deficiencia secundaria se presenta cuando una lesión de la mucosa intestinal, por ejemplo por infección, reduce la actividad de la lactasa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "3.3 Definición",
+          "pagina": 10,
+          "fragmento": "la mucosa intestinal ocasiona reducción de la actividad de la enzima lactasa"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la duración recomendada de la exclusión.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "3 días",
+          "breve",
+          "pocos días"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto dura en promedio la exclusión de lactosa en la deficiencia secundaria?",
+        "explicacion": "En la deficiencia secundaria la exclusión de lactosa dura en promedio cuatro semanas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 16,
+          "fragmento": "promedio por cuatro semanas"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

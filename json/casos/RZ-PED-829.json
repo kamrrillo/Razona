@@ -1,0 +1,280 @@
+[
+  {
+    "id": "RZ-PED-829-I",
+    "version": "0.1.0",
+    "sindrome": "tetanos_neonatal_prevencion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+      "clave": "GPC-IMSS-829-18",
+      "archivo": "829GER.pdf"
+    },
+    "vineta": "Femenino de 17 años, cursa embarazo de 20 semanas, primera consulta prenatal en su centro de salud rural. No tiene cartilla de vacunación y no recuerda haber recibido vacunas en la adolescencia. Planea atender su parto en casa con una partera de la comunidad, a 2 horas del hospital más cercano. Sin enfermedades crónicas.",
+    "pregunta": "¿Cuál es la conducta más adecuada para prevenir el tétanos neonatal?",
+    "opciones": {
+      "A": "Vacunar sin dar orientación sobre el parto, porque el lugar de atención no influye en el riesgo",
+      "B": "Aplicar una dosis de refuerzo, porque ya completó su serie primaria",
+      "C": "Diferir la vacunación al puerperio para no exponer al feto",
+      "D": "Td en 2 a 3 dosis durante el embarazo y orientación para un parto higiénico",
+      "E": "Aplicar una sola dosis de toxoide tetánico-diftérico"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "En la embarazada se recomienda un esquema de 2 a 3 dosis de inmunización contra tétanos; 1 dosis no es suficiente.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 27,
+          "fragmento": "que incluya de 2 a 3 dosis de inmunización contra tétanos para"
+        }
+      },
+      {
+        "texto": "La mujer no vacunada previamente inicia una serie de 5 dosis: 2 dosis con intervalo no menor de 4 semanas, la 3.ª entre 6 y 12 meses después, la 4.ª al año y la 5.ª al año siguiente.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo"
+        }
+      },
+      {
+        "texto": "Se recomienda la inmunización con toxoide tetánico de la mujer en edad fértil y la embarazada, así como higiene durante el parto con énfasis en el cuidado del cordón umbilical.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.1 Prevención y promoción a la salud",
+          "pagina": 18,
+          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Supone una serie primaria completa; la viñeta indica que no hay vacunación documentada.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "refuerzo",
+          "ya vacunada",
+          "serie completa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué se sabe del antecedente de vacunación de la paciente?",
+        "explicacion": "Basta un refuerzo cada 10 años solo si hay antecedente documentado de serie primaria completa; sin vacunación previa se inicia una serie de 5 dosis.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "documentados de haber completado su serie primaria de"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Omite el parto en domicilio con partera, que es un factor de riesgo de tétanos neonatal.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "solo vacuna",
+          "el parto no importa",
+          "partera"
+        ],
+        "pregunta_socratica_semilla": "¿Qué riesgo agrega el lugar y la forma de atención del parto?",
+        "explicacion": "Además del toxoide tetánico, se recomienda higiene durante el parto con énfasis en el cuidado adecuado del cordón umbilical.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.1 Prevención y promoción a la salud",
+          "pagina": 18,
+          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que una sola dosis protege al recién nacido.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "una dosis",
+          "basta",
+          "única"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántas dosis necesita la embarazada no vacunada para proteger al recién nacido?",
+        "explicacion": "Una dosis única de la vacuna antitetánica no es suficiente para prevenir las muertes por tétanos neonatal.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "Una dosis única de la vacuna antitetánica no es suficiente para"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Antepone un riesgo fetal no sustentado a la protección del recién nacido.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "puerperio",
+          "después del parto",
+          "proteger al feto"
+        ],
+        "pregunta_socratica_semilla": "Si la protección del recién nacido depende de los anticuerpos maternos, ¿qué pasa si vacunas después del parto?",
+        "explicacion": "En la embarazada se recomienda un esquema de 2 a 3 dosis contra tétanos para prevenir el tétanos neonatal y su mortalidad.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 27,
+          "fragmento": "En la embarazada se recomienda el esquema de vacunación"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-829-V1",
+    "version": "0.1.0",
+    "sindrome": "tetanos_neonatal_prevencion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-829-I",
+    "gpc_base": {
+      "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+      "clave": "GPC-IMSS-829-18",
+      "archivo": "829GER.pdf"
+    },
+    "vineta": "Femenino de 19 años con embarazo de 28 semanas, en control prenatal en su unidad de medicina familiar. Presenta cartilla con esquema completo de DPT en la infancia y 5 dosis documentadas de toxoide tetánico-diftérico; la última fue hace 3 años. Pregunta si necesita alguna vacuna en este embarazo para proteger a su bebé.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Esperar a que cumpla 10 años de su última dosis para aplicar un refuerzo",
+      "B": "Aplicar 2 dosis de toxoide tetánico-diftérico separadas 4 semanas",
+      "C": "Reiniciar la serie de 5 dosis de toxoide",
+      "D": "No aplicar ninguna vacuna, porque su esquema está completo",
+      "E": "Aplicar una dosis de Tdap en este embarazo, independientemente de su historia de vacunación"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "El personal de salud debe administrar una dosis de Tdap durante cada embarazo, independientemente de la historia previa de inmunización.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 27,
+          "fragmento": "El personal de salud debe administrar una dosis de Tdap"
+        }
+      },
+      {
+        "texto": "Las mujeres con serie primaria documentada solo requieren refuerzo cada 10 años para el tétanos.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "documentados de haber completado su serie primaria de"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Considera solo la protección contra tétanos y no la indicación de Tdap en cada embarazo.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "esquema completo",
+          "no necesita",
+          "protegida"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre la Tdap en cada embarazo, sin importar la historia previa?",
+        "explicacion": "El personal de salud debe administrar una dosis de Tdap durante cada embarazo, independientemente de la historia previa de inmunización.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 27,
+          "fragmento": "durante cada embarazo independientemente de la historia"
+        }
+      },
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Trata a la paciente como no vacunada; la cartilla documenta 5 dosis.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "reiniciar",
+          "no vacunada",
+          "serie de 5"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente de vacunación documenta la cartilla?",
+        "explicacion": "La serie de 5 dosis se indica a la mujer que no ha sido vacunada previamente.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "previamente, deben iniciar con una serie de 5 dosis de acuerdo"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Aplica el esquema de la embarazada no vacunada a una paciente con esquema completo.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "2 dosis",
+          "4 semanas",
+          "toxoide"
+        ],
+        "pregunta_socratica_semilla": "¿A quién se aplica el esquema de 2 dosis separadas 4 semanas?",
+        "explicacion": "Las 2 dosis con intervalo no menor de 4 semanas inician la serie de la mujer no vacunada previamente.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 26,
+          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la Tdap en el embarazo no depende del intervalo de refuerzo.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "10 años",
+          "refuerzo",
+          "esperar"
+        ],
+        "pregunta_socratica_semilla": "¿La dosis de Tdap del embarazo depende del tiempo desde el último refuerzo?",
+        "explicacion": "La Tdap se administra durante cada embarazo, independientemente de la historia previa de inmunización.",
+        "cita_gpc": {
+          "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+          "clave": "GPC-IMSS-829-18",
+          "seccion": "2.2 Prevención Primaria",
+          "pagina": 27,
+          "fragmento": "durante cada embarazo independientemente de la historia"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

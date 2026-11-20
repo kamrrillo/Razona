@@ -1,0 +1,283 @@
+[
+  {
+    "id": "RZ-PED-109-I",
+    "version": "0.1.0",
+    "sindrome": "sarampion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+      "clave": "IMSS-109-08",
+      "archivo": "109GER.pdf"
+    },
+    "vineta": "Masculino de 1 año 6 meses, sin vacuna triple viral por cambio de domicilio. Presenta fiebre de 39 °C desde hace 4 días, coriza, tos y conjuntivitis; hoy apareció exantema maculopapular que inició detrás de las orejas y se extiende al tronco. En la mucosa bucal se observan puntos blanquecinos sobre fondo eritematoso. Peso y talla normales para la edad. FR 30 rpm, campos pulmonares limpios, SpO2 97 %. Hidratado y alerta.",
+    "pregunta": "Además de las medidas generales, ¿cuál es el manejo más adecuado?",
+    "opciones": {
+      "A": "Vitamina A 200,000 UI por vía oral el primer y el segundo día",
+      "B": "Referir a pediatría de segundo nivel para su manejo",
+      "C": "Vitamina A 100,000 UI por vía oral el primer y el segundo día",
+      "D": "Amoxicilina profiláctica para prevenir neumonía",
+      "E": "Paracetamol; la vitamina A solo está indicada si hay desnutrición"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "La vitamina A se administra a todos los pacientes pediátricos con sarampión; reduce la gravedad y la letalidad.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos"
+        }
+      },
+      {
+        "texto": "En mayores de 12 meses la dosis es de 200,000 UI el primer día y 200,000 UI el segundo día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "Mayor a 12 meses 200,000 UI"
+        }
+      },
+      {
+        "texto": "A todo paciente pediátrico con enfermedad febril exantemática y sospecha de sarampión se le realiza estudio epidemiológico.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.4 Vigilancia y Seguimiento",
+          "pagina": 25,
+          "fragmento": "Todo paciente pediátrico de EFE con sospecha de sarampión"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la edad como si fuera menor de 12 meses y usa la dosis de 6 a 11 meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "100,000",
+          "lactante",
+          "menor de un año"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos meses tiene el paciente y qué dosis corresponde a esa edad en la tabla de la guía?",
+        "explicacion": "La tabla de la OMS que adopta la guía indica 100,000 UI de 6 a 11 meses y 200,000 UI en mayores de 12 meses; el paciente tiene 18 meses.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "De 6 a 11 meses 100,000 UI"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Refiere a segundo nivel sin considerar que el paciente es mayor de un año y no tiene complicaciones.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "referir",
+          "pediatra",
+          "es grave",
+          "hospital"
+        ],
+        "pregunta_socratica_semilla": "¿Qué criterios de referencia a pediatría lista la guía y cumple alguno este paciente?",
+        "explicacion": "La guía indica valorar atención especializada en menores de un año, mayores de un año con complicaciones infecciosas graves, desnutrición grado III o inmunodeficiencia.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
+          "pagina": 25,
+          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el antibiótico profiláctico previene la neumonía en sarampión sin signos de infección bacteriana.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "prevenir neumonía",
+          "profiláctico",
+          "sobreinfección",
+          "amoxicilina"
+        ],
+        "pregunta_socratica_semilla": "¿Qué indica la guía sobre el antibiótico profiláctico en sarampión sin neumonía ni sepsis?",
+        "explicacion": "El uso profiláctico de antibióticos no es útil en el sarampión sin signos de neumonía o sepsis y no se recomienda.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Razona que la vitamina A solo corrige una deficiencia, en lugar de verla como tratamiento del sarampión.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "solo si está desnutrido",
+          "no tiene deficiencia",
+          "es una vitamina",
+          "peso normal"
+        ],
+        "pregunta_socratica_semilla": "¿Qué efecto tiene la vitamina A sobre la gravedad y la letalidad del sarampión, independientemente del estado nutricional?",
+        "explicacion": "La administración de vitamina A en niños con sarampión reduce la gravedad y la letalidad, y la guía la indica en todos los pacientes pediátricos.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 23,
+          "fragmento": "reduce la gravedad de la enfermedad y también la tasa de letalidad"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-109-V1",
+    "version": "0.1.0",
+    "sindrome": "sarampion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-109-I",
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+      "clave": "IMSS-109-08",
+      "archivo": "109GER.pdf"
+    },
+    "vineta": "Femenino de 8 meses, aún sin edad para la vacuna triple viral. Su hermano de 5 años fue diagnosticado con sarampión hace 12 días. Presenta fiebre de 38.9 °C desde hace 3 días, rinorrea, conjuntivitis y tos, y hoy exantema maculopapular en cara y cuello. Hidratada, sin dificultad respiratoria, SpO2 96 %, sin diarrea. Peso en percentil 50. Es valorada en su unidad de medicina familiar.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Trimetoprim con sulfametoxazol profiláctico durante 7 días",
+      "B": "Vitamina A 100,000 UI por vía oral el primer y el segundo día, valoración por pediatría y estudio epidemiológico",
+      "C": "Vitamina A 50,000 UI por vía oral el primer y el segundo día",
+      "D": "Manejo ambulatorio en primer nivel, porque no tiene complicaciones",
+      "E": "Vitamina A 200,000 UI por vía oral el primer y el segundo día y manejo en domicilio"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "De 6 a 11 meses la dosis de vitamina A es de 100,000 UI el primer día y 100,000 UI el segundo día.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "De 6 a 11 meses 100,000 UI"
+        }
+      },
+      {
+        "texto": "Los niños menores de un año, aun sin complicaciones, se valoran para atención especializada por pediatría.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
+          "pagina": 25,
+          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa la dosis de mayores de 12 meses en una lactante de 8 meses.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "200,000",
+          "dosis estándar",
+          "la de siempre"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dosis indica la tabla para el grupo de 6 a 11 meses?",
+        "explicacion": "La guía indica 100,000 UI de 6 a 11 meses y reserva 200,000 UI para mayores de 12 meses.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "De 6 a 11 meses 100,000 UI"
+        }
+      },
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Clasifica a la paciente en el grupo de menores de 6 meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "50,000",
+          "lactante pequeña",
+          "menor de 6 meses"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad tiene la paciente y en qué renglón de la tabla queda?",
+        "explicacion": "La dosis de 50,000 UI corresponde a menores de 6 meses; la paciente tiene 8 meses.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "Menor 6 meses 50,000 UI"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Mantiene el manejo en primer nivel sin considerar que la paciente es menor de un año.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "sin complicaciones",
+          "ambulatorio",
+          "no necesita referencia"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la guía sobre los menores de un año aunque no tengan complicaciones?",
+        "explicacion": "La guía indica valorar atención especializada en niños menores de un año de edad, aun sin complicaciones.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
+          "pagina": 25,
+          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el antibiótico profiláctico está indicado en el lactante con sarampión sin neumonía ni sepsis.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "profilaxis",
+          "prevenir neumonía",
+          "es lactante"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre el antibiótico profiláctico sin signos de neumonía o sepsis?",
+        "explicacion": "El uso profiláctico de antibióticos no es útil en el sarampión sin signos de neumonía o sepsis y no se recomienda.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
+          "clave": "IMSS-109-08",
+          "seccion": "4.2.4.2 Tratamiento Farmacológico",
+          "pagina": 24,
+          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "RZ-PED-540-I",
+    "version": "0.1.0",
+    "sindrome": "anemia_del_prematuro",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Tratamiento de la Anemia del Prematuro",
+      "clave": "IMSS-540-12",
+      "archivo": "540GER.pdf"
+    },
+    "vineta": "Recién nacido femenino de 30 semanas de gestación, hoy con 5 semanas de vida y peso de 1,450 g. Recibe CPAP nasal con FiO2 de 28 % y cafeína a dosis terapéuticas. En las últimas 6 horas ha tenido 8 episodios de apnea con bradicardia que requirieron ventilación con bolsa y mascarilla. Hematocrito 26 %, reticulocitos 1.5 %. Hemodinámicamente estable, sin datos de sepsis.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la anemia?",
+    "opciones": {
+      "A": "No transfundir, porque la transfusión solo se indica con hematocrito menor de 20 %",
+      "B": "Aumentar la dosis de cafeína y repetir el hematocrito en una semana",
+      "C": "Transfundir 15 mL/kg en 30 minutos para corregir más rápido",
+      "D": "Solo hierro oral y vigilancia, porque las apneas no alcanzan el umbral de transfusión",
+      "E": "Transfundir concentrado eritrocitario 15 ± 5 mL/kg en 2 a 4 horas"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Con hematocrito entre 21 % y 30 % se transfunde si hay CPAP o FiO2 menor de 35 %, o eventos de apnea o bradicardia (más de seis en seis horas o dos en 24 horas que requieran bolsa y mascarilla) a pesar de metilxantinas.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+        }
+      },
+      {
+        "texto": "El volumen recomendado es de 15 ± 5 mL/kg en un periodo de infusión de 2 a 4 horas.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 16,
+          "fragmento": "durante un período de infusión de 2 a 4 horas"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Cuenta mal las apneas: tuvo 8 en 6 horas, por encima del umbral de más de seis.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "pocas apneas",
+          "no alcanza",
+          "vigilar"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántas apneas tuvo en las últimas 6 horas y cuál es el umbral de la guía?",
+        "explicacion": "Se transfunde con hematocrito de 21 a 30 % y más de seis episodios de apnea o bradicardia en seis horas que requieran bolsa y mascarilla.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Eventos de apnea o bradicardia (más de seis"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Ajusta la cafeína sin registrar que las apneas ocurren a pesar de dosis terapéuticas de metilxantinas.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "cafeína",
+          "metilxantinas",
+          "subir dosis"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la viñeta sobre la dosis actual de cafeína?",
+        "explicacion": "El criterio de transfusión incluye apneas o bradicardias a pesar de recibir dosis terapéuticas de metilxantinas.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "terapéuticas de metilxantinas)"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el único umbral de transfusión es el hematocrito menor de 20 %.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "menor de 20 %",
+          "umbral",
+          "aún no"
+        ],
+        "pregunta_socratica_semilla": "¿Qué criterios de transfusión tiene la guía para hematocritos de 21 a 30 %?",
+        "explicacion": "Con hematocrito de 21 a 30 % la guía indica transfusión ante CPAP, FiO2 menor de 35 %, apneas o bradicardias, taquicardia o taquipnea significativas o mala ganancia ponderal.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que transfundir más rápido es mejor, sin considerar el riesgo hemodinámico.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "rápido",
+          "30 minutos",
+          "corregir pronto"
+        ],
+        "pregunta_socratica_semilla": "¿En cuánto tiempo recomienda la guía pasar la transfusión y qué riesgo tiene hacerlo rápido?",
+        "explicacion": "Se recomiendan 15 ± 5 mL/kg en 2 a 4 horas; la administración rápida puede empeorar la hemodinamia y causar edema pulmonar en insuficiencia cardiaca por anemia.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 16,
+          "fragmento": "durante un período de infusión de 2 a 4 horas"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-540-V1",
+    "version": "0.1.0",
+    "sindrome": "anemia_del_prematuro",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-540-I",
+    "gpc_base": {
+      "guia": "Tratamiento de la Anemia del Prematuro",
+      "clave": "IMSS-540-12",
+      "archivo": "540GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 32 semanas de gestación, hoy con 6 semanas de vida y peso de 1,900 g. Respira al aire ambiente, sin apneas ni bradicardias, FC de 150 lpm y FR de 45 rpm. Gana 25 g al día con alimentación enteral completa. Hematocrito 28 %, reticulocitos 3 %. No ha recibido suplementación con hierro.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "No transfundir; vigilar e iniciar suplementación con hierro",
+      "B": "Transfundir, porque el hematocrito es menor de 30 %",
+      "C": "Transfundir por incremento ponderal menor de 10 g al día",
+      "D": "No transfundir y diferir el hierro hasta los 6 meses",
+      "E": "Transfundir, porque el hematocrito es menor de 35 %"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "Con hematocrito de 21 % a 30 % la transfusión se indica solo si se acompaña de los criterios clínicos que lista la guía (oxígeno, CPAP, apneas, taquicardia o taquipnea, mala ganancia ponderal).",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+        }
+      },
+      {
+        "texto": "Las recomendaciones actuales indican iniciar la suplementación con hierro desde las 4-8 semanas de edad.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.3 Tratamiento con hierro y ácido fólico",
+          "pagina": 25,
+          "fragmento": "iniciar la suplementación con hierro desde las 4-8"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Usa el hematocrito como criterio único, sin los datos clínicos que lo acompañan.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "menor de 30",
+          "hematocrito bajo",
+          "transfundir"
+        ],
+        "pregunta_socratica_semilla": "¿Qué condición clínica debe acompañar a un hematocrito de 21 a 30 % para transfundir? ¿Tiene alguna?",
+        "explicacion": "Con hematocrito de 21 a 30 % se transfunde ante FiO2, CPAP, apneas, taquicardia o taquipnea significativas o incremento ponderal menor de 10 g al día.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Aplica el umbral de 31-35 %, que exige FiO2 mayor de 35 % o CPAP con presión media mayor de 6 cm de H2O.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "menor de 35",
+          "umbral alto"
+        ],
+        "pregunta_socratica_semilla": "¿Qué soporte respiratorio exige la guía para transfundir con hematocrito de 31 a 35 %?",
+        "explicacion": "Con hematocrito de 31 a 35 % se transfunde a niños con FiO2 mayor de 35 % o CPAP o ventilación con presión media mayor de 6 cm de H2O.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Hematocrito entre 31% y 35% en niños con:"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce cuándo iniciar el hierro en el prematuro.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "6 meses",
+          "después",
+          "con la ablactación"
+        ],
+        "pregunta_socratica_semilla": "¿Desde qué edad recomienda la guía la suplementación con hierro?",
+        "explicacion": "Se recomienda iniciar la suplementación con hierro desde las 4-8 semanas de edad.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.3 Tratamiento con hierro y ácido fólico",
+          "pagina": 25,
+          "fragmento": "iniciar la suplementación con hierro desde las 4-8"
+        }
+      },
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la ganancia de peso como menor de 10 g al día; la viñeta dice 25 g.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "no gana peso",
+          "menos de 10 g",
+          "falla de medro"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos gramos al día gana el paciente y cuál es el umbral de la guía?",
+        "explicacion": "El criterio es un incremento ponderal menor de 10 g al día después de cuatro días con al menos 100 kcal/kg/día; el paciente gana 25 g al día.",
+        "cita_gpc": {
+          "guia": "Tratamiento de la Anemia del Prematuro",
+          "clave": "IMSS-540-12",
+          "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
+          "pagina": 15,
+          "fragmento": "Incremento ponderal menor de 10 gr por día,"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

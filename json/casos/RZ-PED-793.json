@@ -1,0 +1,269 @@
+[
+  {
+    "id": "RZ-PED-793-I",
+    "version": "0.1.0",
+    "sindrome": "alteraciones_visuales_recien_nacido_lactante",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+      "clave": "IMSS-793-16",
+      "archivo": "793GER.pdf"
+    },
+    "vineta": "Masculino de 2 meses llevado a su unidad de medicina familiar porque la madre notó en varias fotografías con flash un brillo blanco en el ojo derecho. En la exploración en cuarto oscuro con oftalmoscopio a 45 cm, el reflejo rojo del ojo izquierdo es normal y el del ojo derecho se observa blanco. Ambas pupilas son redondas y reaccionan a la luz. Sin antecedentes familiares oculares.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Repetir el reflejo rojo en la revisión de los 6 meses",
+      "B": "Enviar a oftalmología con cita ordinaria en los próximos meses",
+      "C": "Considerarlo normal, porque el reflejo pupilar es simétrico y reactivo",
+      "D": "Considerarlo normal, porque ambos reflejos son equivalentes",
+      "E": "Referir urgentemente para exploración oftalmológica especializada"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Si hay problema de la estructura ocular o un reflejo rojo anormal, el recién nacido o lactante debe ser referido urgentemente para exploración especializada.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+        }
+      },
+      {
+        "texto": "La leucocoria y la ausencia o asimetría del reflejo rojo son signos de alarma que requieren atención ocular inmediata.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.6 Criterios de referencia",
+          "pagina": 36,
+          "fragmento": "lactante que requiere una atención ocular inmediata"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee el reflejo como simétrico; la viñeta describe un reflejo blanco en el ojo derecho.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "equivalentes",
+          "simétrico",
+          "normal"
+        ],
+        "pregunta_socratica_semilla": "¿Cómo se describen los reflejos de cada ojo en la viñeta?",
+        "explicacion": "El reflejo rojo es normal cuando las reflexiones de ambos ojos son equivalentes en color, intensidad y claridad, sin opacidades ni manchas blancas (leucocoria).",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 27,
+          "fragmento": "cuando las reflexiones de los 2 ojos, tanto de forma"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Se tranquiliza por el reflejo pupilar normal y omite la leucocoria.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "pupilas normales",
+          "reacciona a la luz",
+          "ve bien"
+        ],
+        "pregunta_socratica_semilla": "Aunque las pupilas reaccionen, ¿qué hallazgo del reflejo rojo tiene el paciente y qué indica?",
+        "explicacion": "La alteración o ausencia del reflejo rojo, incluida la leucocoria, es signo de alarma que requiere atención ocular inmediata.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.6 Criterios de referencia",
+          "pagina": 36,
+          "fragmento": "lactante que requiere una atención ocular inmediata"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que el reflejo rojo anormal requiere referencia urgente.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "cita ordinaria",
+          "consulta externa",
+          "sin prisa"
+        ],
+        "pregunta_socratica_semilla": "¿Con qué prioridad indica la guía referir a un lactante con reflejo rojo anormal?",
+        "explicacion": "Si hay un reflejo rojo anormal, el recién nacido o lactante debe ser referido urgentemente para exploración especializada.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Difiere la evaluación a la revisión programada ante un hallazgo de alarma.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "esperar",
+          "6 meses",
+          "revalorar"
+        ],
+        "pregunta_socratica_semilla": "¿La revisión de los 6 meses es para un hallazgo anormal o para la evaluación de rutina?",
+        "explicacion": "A los 6 meses se reevalúan de rutina las estructuras, el alineamiento y la fijación; un reflejo rojo anormal se refiere de urgencia.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 27,
+          "fragmento": "A los 6 meses de edad, reevaluar:"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-793-V1",
+    "version": "0.1.0",
+    "sindrome": "alteraciones_visuales_recien_nacido_lactante",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-793-I",
+    "gpc_base": {
+      "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+      "clave": "IMSS-793-16",
+      "archivo": "793GER.pdf"
+    },
+    "vineta": "Recién nacida de término, 36 horas de vida, sana, en alojamiento conjunto, que será egresada hoy del cunero. El médico familiar en formación pregunta qué exploración visual debe hacerle antes del alta, ya que la paciente no tiene factores de riesgo ocular.",
+    "pregunta": "¿Cuál es la exploración visual más adecuada antes del egreso?",
+    "opciones": {
+      "A": "Estructuras oculares, reflejo rojo y reflejo pupilar, por su médico",
+      "B": "Ninguna; la primera exploración visual se realiza a los 6 meses",
+      "C": "Agudeza visual con optotipos",
+      "D": "Reflejo rojo con la luz de la habitación encendida y a 10 cm",
+      "E": "Diferirla para que la realice el oftalmólogo"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "El tamizaje en el recién nacido se orienta a identificar anormalidades estructurales del ojo y anexos, reflejo rojo y reflejo pupilar fotomotor directo.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 27,
+          "fragmento": "El tamizaje que debe realizarse en el recién nacido es"
+        }
+      },
+      {
+        "texto": "Todo recién nacido debe tener examen del reflejo rojo, realizado por un pediatra, médico familiar u otro médico de primer contacto capacitado, antes del alta y en las consultas de rutina.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "se realiza por un pediatra, médico familiar u otro"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que el tamizaje visual inicia antes del alta del cunero.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "6 meses",
+          "más adelante",
+          "no es necesario"
+        ],
+        "pregunta_socratica_semilla": "¿Cuándo debe hacerse el primer examen del reflejo rojo según la guía?",
+        "explicacion": "Todo recién nacido debe tener examen del reflejo rojo antes del alta del cunero o del servicio neonatal.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "Todo recién nacido y lactante deben tener un"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que solo el especialista puede explorar el reflejo rojo.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "oftalmólogo",
+          "especialista"
+        ],
+        "pregunta_socratica_semilla": "¿Quién puede realizar el examen del reflejo rojo según la guía?",
+        "explicacion": "El examen del reflejo rojo lo realiza un pediatra, médico familiar u otro médico de primer contacto capacitado.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "se realiza por un pediatra, médico familiar u otro"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Aplica una prueba que requiere cooperación verbal a una recién nacida.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "optotipos",
+          "agudeza visual",
+          "cartilla"
+        ],
+        "pregunta_socratica_semilla": "¿Puede una recién nacida identificar optotipos? ¿Qué se explora en la etapa preverbal?",
+        "explicacion": "En el recién nacido el tamizaje se orienta a anormalidades estructurales, reflejo rojo y reflejo pupilar fotomotor.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 27,
+          "fragmento": "El tamizaje que debe realizarse en el recién nacido es"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la técnica correcta del reflejo rojo.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "luz encendida",
+          "10 cm",
+          "cerca"
+        ],
+        "pregunta_socratica_semilla": "¿En qué condiciones de luz y a qué distancia se explora el reflejo rojo?",
+        "explicacion": "El reflejo rojo se explora en cuarto oscuro, con la luz del oftalmoscopio con lente en 0, a unos 45 cm de distancia.",
+        "cita_gpc": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "distancia aproximada de 45 cm"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

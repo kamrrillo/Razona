@@ -1,0 +1,273 @@
+[
+  {
+    "id": "RZ-PED-156-I",
+    "version": "0.1.0",
+    "sindrome": "diarrea_aguda",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+      "clave": "SSA-156-08",
+      "archivo": "156GER.pdf"
+    },
+    "vineta": "Masculino de 2 años, peso actual 12 kg, acude a urgencias de su hospital general de zona por 6 evacuaciones líquidas al día, sin moco ni sangre, de 2 días de evolución, y 2 vómitos al inicio del cuadro. A la exploración: alerta, irritable, con sed, mucosas secas, ojos hundidos y llanto con escasas lágrimas. FC 125 lpm, llenado capilar de 2 segundos, pulsos normales, sin taquipnea. Acepta con avidez sorbos de suero oral sin vomitar. No hay signos de alarma.",
+    "pregunta": "¿Cuál es el manejo de hidratación más adecuado?",
+    "opciones": {
+      "A": "Ofrecer jugo de manzana o refresco si rechaza el suero oral",
+      "B": "Antimicrobiano empírico junto con la solución de rehidratación oral",
+      "C": "Colocar sonda nasogástrica y administrar la solución de rehidratación oral por esa vía",
+      "D": "Solución intravenosa Hartmann para reponer el déficit en 4 horas",
+      "E": "Suero oral de baja osmolaridad, 600 mL en 4 horas, en tomas pequeñas y frecuentes"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "En el niño con deshidratación clínica se usan soluciones de baja osmolaridad (240-250 mOsm/L) y se dan 50 mL/kg en 4 horas para reponer el déficit, además de los líquidos de mantenimiento.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "Dar 50ml/kg para reponer el déficit de líquidos durante 4h"
+        }
+      },
+      {
+        "texto": "La solución de rehidratación oral se da frecuentemente y en pequeñas cantidades.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "Dar SRO frecuentemente y en pequeñas cantidades"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la diarrea como disentérica; la viñeta dice que las evacuaciones no tienen moco ni sangre.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "moco y sangre",
+          "disentería",
+          "bacteriana",
+          "antibiótico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué características tienen las evacuaciones según la viñeta?",
+        "explicacion": "En la gastroenteritis aguda muchos niños no ameritan tratamiento antimicrobiano; la diarrea acuosa sin sangre no es indicación de antibiótico empírico.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.1.3 Estudios de Laboratorio y Gabinete",
+          "pagina": 27,
+          "fragmento": "no ameritan tratamiento antimicrobiano"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica sonda nasogástrica sin registrar que el niño acepta y tolera el suero oral.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "sonda",
+          "asegurar el volumen",
+          "vomitó"
+        ],
+        "pregunta_socratica_semilla": "¿Qué hace el niño cuando se le ofrecen sorbos de suero oral?",
+        "explicacion": "La sonda nasogástrica se considera si el niño no puede beber o tiene vómito persistente; este paciente tolera la vía oral.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "Considerar dar SRO vía sonda nasogástrica si están"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los jugos o bebidas carbonatadas son una alternativa aceptable al suero oral.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "jugo",
+          "refresco",
+          "lo que acepte",
+          "electrolitos"
+        ],
+        "pregunta_socratica_semilla": "¿Qué líquidos excluye la guía si el niño rechaza el suero oral, y por qué?",
+        "explicacion": "Si el niño rechaza la SRO pueden considerarse sus líquidos habituales, como leche o agua, pero no jugos de frutas ni bebidas carbonatadas.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "pero no jugos de"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Equipara deshidratación con necesidad de vía intravenosa sin seguir la secuencia oral, nasogástrica e intravenosa.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "intravenosa",
+          "más rápido",
+          "está deshidratado",
+          "Hartmann"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situación indica la guía los líquidos intravenosos en deshidratación moderada?",
+        "explicacion": "Los líquidos intravenosos están indicados solo si el niño no tolera la rehidratación nasogástrica o esta falla, por ejemplo por vómito persistente o empeoramiento.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 38,
+          "fragmento": "están indicados solamente si el niño es inhábil para tolerar la"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-156-V1",
+    "version": "0.1.0",
+    "sindrome": "diarrea_aguda",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-156-I",
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+      "clave": "SSA-156-08",
+      "archivo": "156GER.pdf"
+    },
+    "vineta": "Femenino de 18 meses, peso 10 kg, con diarrea acuosa y vómitos desde hace un día. Presenta mucosas secas, ojos hundidos y sed. Se inició solución de rehidratación oral en la sala de hidratación; durante la última hora vomitó cada toma, aun en cucharaditas cada 5 minutos, y la madre refiere que está más decaída. Sigue alerta, FC 135 lpm, llenado capilar de 2 segundos, pulsos presentes. Recibe lactancia materna.",
+    "pregunta": "¿Cuál es la conducta más adecuada para continuar la rehidratación?",
+    "opciones": {
+      "A": "Solución de rehidratación oral por sonda nasogástrica",
+      "B": "Sustituir el suero por jugo de frutas diluido, que tolera mejor",
+      "C": "Pasar directamente a solución intravenosa",
+      "D": "Suspender la lactancia materna hasta que cedan los vómitos",
+      "E": "Insistir con la vía oral otras 4 horas antes de cambiar de vía"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "Si el niño no acepta los líquidos por vía oral durante una hora aproximadamente o su hidratación empeora, se usa la rehidratación por sonda nasogástrica.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "durante 1 h aproximadamente o su estado de hidratación empeora"
+        }
+      },
+      {
+        "texto": "La rehidratación por sonda nasogástrica puede hacerse en bolos o de forma continua.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "La rehidratación por SNG puede realizarse en bolos"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Salta a la vía intravenosa sin pasar por la sonda nasogástrica.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "intravenosa",
+          "vomita todo",
+          "vía segura"
+        ],
+        "pregunta_socratica_semilla": "Si la vía oral falla, ¿qué vía recomienda la guía antes de la intravenosa?",
+        "explicacion": "En deshidratación moderada, los líquidos intravenosos están indicados solo si el niño no tolera la rehidratación nasogástrica o esta falla.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 38,
+          "fragmento": "están indicados solamente si el niño es inhábil para tolerar la"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Omite que ya pasó una hora de intolerancia oral y que la niña empeora.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "seguir intentando",
+          "darle tiempo",
+          "más despacio"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tiempo lleva sin tolerar la vía oral y cómo ha evolucionado?",
+        "explicacion": "Si el niño no acepta los líquidos por vía oral durante aproximadamente una hora o su hidratación empeora, se usa la sonda nasogástrica.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 37,
+          "fragmento": "durante 1 h aproximadamente o su estado de hidratación empeora"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la lactancia debe suspenderse durante la rehidratación.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "suspender el pecho",
+          "reposo intestinal",
+          "ayuno"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre la lactancia durante la rehidratación?",
+        "explicacion": "Durante la rehidratación se recomienda continuar la lactancia y no dar alimentos sólidos.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 46,
+          "fragmento": "No dar alimentos sólidos"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el jugo de frutas es un sustituto aceptable del suero oral.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "jugo",
+          "le gusta más",
+          "lo tolera"
+        ],
+        "pregunta_socratica_semilla": "¿Por qué la guía excluye los jugos de frutas durante la rehidratación?",
+        "explicacion": "No se deben dar jugos de frutas ni bebidas carbonatadas por su alta osmolaridad y porque pueden agravar la diarrea.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Diarrea Aguda en Niños de Dos Meses a Cinco Años en el Primero y Segundo Nivel de Atención",
+          "clave": "SSA-156-08",
+          "seccion": "4.2.2.2.1 Farmacológico",
+          "pagina": 46,
+          "fragmento": "bebidas carbonatadas, por su alta osmolaridad"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "RZ-PED-466-I",
+    "version": "0.1.0",
+    "sindrome": "escarlatina",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+      "clave": "IMSS-466-11",
+      "archivo": "466GER.pdf"
+    },
+    "vineta": "Masculino de 6 años, peso 20 kg, sin alergias conocidas. Inició hace 2 días con fiebre de 39.8 °C, odinofagia, vómito y dolor abdominal; ayer apareció un exantema eritematoso, áspero al tacto, que inició en cuello y se extendió a tronco, más intenso en pliegues. A la exploración: faringe congestiva, petequias en paladar blando, lengua con papilas rojas y prominentes, y palidez alrededor de la boca. Su hermano tuvo faringitis estreptocócica la semana pasada.",
+    "pregunta": "¿Cuál es el tratamiento más adecuado en el primer nivel de atención?",
+    "opciones": {
+      "A": "Tratamiento sintomático, porque se trata de un exantema viral",
+      "B": "Amoxicilina por vía oral durante 10 días",
+      "C": "Trimetoprim con sulfametoxazol por vía oral durante 10 días",
+      "D": "Eritromicina por vía oral, por alergia a la penicilina",
+      "E": "Amoxicilina por vía oral durante 5 días, hasta que desaparezca la fiebre"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "El esquema en orden de preferencia es penicilina V (no disponible en el cuadro básico), amoxicilina y penicilina G benzatínica; la mayoría se administra por 10 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 21,
+          "fragmento": "se mencionaran en orden de preferencia de uso"
+        }
+      },
+      {
+        "texto": "El tratamiento contra el estreptococo beta hemolítico del grupo A debe iniciar tan pronto como sea posible para reducir la incidencia de fiebre reumática.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 22,
+          "fragmento": "sea posible para reducir la incidencia de fiebre"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Actúa como si el paciente fuera alérgico a la penicilina; la viñeta dice que no tiene alergias.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "alérgico",
+          "eritromicina",
+          "no puede penicilina"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la viñeta sobre las alergias del paciente?",
+        "explicacion": "La eritromicina se considera como alternativa en caso de reacción anafiláctica conocida a la penicilina; la penicilina sigue siendo el fármaco de elección.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "La penicilina sigue siendo el fármaco de elección"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Trata el exantema como viral sin integrar la faringitis, la lengua en frambuesa, las petequias en paladar y el contacto con estreptococo.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "viral",
+          "sintomático",
+          "exantema"
+        ],
+        "pregunta_socratica_semilla": "¿Qué hallazgos de boca y faringe tiene el paciente, y qué agente sugieren junto con el antecedente del hermano?",
+        "explicacion": "La escarlatina cursa con faringe congestiva, manchas de Forcheimer en paladar y lengua en frambuesa; requiere antibiótico para prevenir la fiebre reumática.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 13,
+          "fragmento": "al descubierto las papilas rojas (lengua"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que las sulfonamidas son útiles contra el estreptococo.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "trimetoprim",
+          "sulfa",
+          "bactrim"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antimicrobianos excluye la guía en la escarlatina?",
+        "explicacion": "Las tetraciclinas y las sulfonamidas no se deben usar en el tratamiento de la escarlatina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Ajusta la duración a la mejoría clínica y no al objetivo de erradicar el estreptococo.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hasta que mejore",
+          "5 días",
+          "sin fiebre"
+        ],
+        "pregunta_socratica_semilla": "Si el objetivo principal es prevenir la fiebre reumática, ¿basta con que ceda la fiebre?",
+        "explicacion": "El periodo de administración es de 10 días, excepto la azitromicina (5 días) y la penicilina G benzatínica (dosis única).",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 21,
+          "fragmento": "El periodo de administración es por 10 días, excepto"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-466-V1",
+    "version": "0.1.0",
+    "sindrome": "escarlatina",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-466-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+      "clave": "IMSS-466-11",
+      "archivo": "466GER.pdf"
+    },
+    "vineta": "Femenino de 8 años, peso 30 kg, con fiebre de 39 °C, odinofagia y exantema puntiforme áspero con acentuación en pliegues del codo (líneas de Pastia) y lengua en frambuesa. Hace 2 años presentó edema laríngeo y urticaria generalizada minutos después de una dosis de amoxicilina, que requirió epinefrina en urgencias.",
+    "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
+    "opciones": {
+      "A": "Penicilina G benzatínica en dosis única",
+      "B": "Cefadroxilo por vía oral durante 10 días",
+      "C": "Eritromicina por vía oral durante 10 días",
+      "D": "No dar antibiótico para evitar una reacción alérgica",
+      "E": "Tetraciclina por vía oral durante 10 días"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "En caso de reacción anafiláctica conocida a la penicilina, la eritromicina puede considerarse como alternativa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "penicilina, la eritromicina puede ser considerada como"
+        }
+      },
+      {
+        "texto": "Una cefalosporina de primera generación es alternativa eficaz siempre que el paciente no haya presentado reacción anafiláctica a la penicilina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "cuando el paciente no haya presentado reacción"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Elige cefalosporina sin considerar que la reacción previa fue anafiláctica.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "cefalosporina",
+          "cefadroxilo",
+          "alergia leve"
+        ],
+        "pregunta_socratica_semilla": "¿Qué tipo de reacción tuvo la paciente con la amoxicilina y qué condición pone la guía para usar cefalosporinas?",
+        "explicacion": "La cefalosporina de primera generación es alternativa solo si el paciente no ha presentado reacción anafiláctica a la penicilina.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "cuando el paciente no haya presentado reacción"
+        }
+      },
+      {
+        "tipo_error": "lectura",
+        "descripcion": "No registra el antecedente de anafilaxia a la amoxicilina.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "penicilina",
+          "dosis única",
+          "primera elección"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente alérgico refiere la viñeta?",
+        "explicacion": "En caso de reacción anafiláctica conocida a la penicilina, la eritromicina puede considerarse como alternativa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "penicilina, la eritromicina puede ser considerada como"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la tetraciclina es una alternativa válida.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "tetraciclina",
+          "alternativa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué grupos de antimicrobianos no deben usarse en la escarlatina?",
+        "explicacion": "Las tetraciclinas y las sulfonamidas no se deben usar.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Prioriza evitar una reacción alérgica sobre prevenir la fiebre reumática, cuando hay alternativas no betalactámicas.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "no dar antibiótico",
+          "riesgo de alergia",
+          "solo sintomático"
+        ],
+        "pregunta_socratica_semilla": "¿Qué complicación quieres prevenir con el antibiótico y hay alternativas para una paciente alérgica?",
+        "explicacion": "El tratamiento contra el estreptococo debe iniciar tan pronto como sea posible para reducir la fiebre reumática; en la alergia anafiláctica la eritromicina es una alternativa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 22,
+          "fragmento": "sea posible para reducir la incidencia de fiebre"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

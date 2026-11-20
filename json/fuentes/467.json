@@ -1,0 +1,201 @@
+{
+ "archivo": "467GER.pdf",
+ "clave": "IMSS-467-11",
+ "sindrome": "hipospadias",
+ "guia": "Diagnóstico y Tratamiento de Hipospadias",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de término, 2 días de vida, peso 3,300 g. En la exploración se encuentra el meato uretral en la cara ventral del glande, a nivel del surco coronal, con prepucio incompleto en la cara ventral. El pene mide 3.2 cm de longitud. Ambos testículos se palpan en bolsas escrotales bien desarrolladas, sin fusión labioescrotal. Micción con chorro adecuado. Sin otras malformaciones.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Cirugía electiva por urología pediátrica entre los 6 y 18 meses de edad",
+    "Referir urgentemente a endocrinología pediátrica porque el pene mide menos de 2 cm",
+    "Solicitar cariotipo y estudio de trastorno de la diferenciación sexual",
+    "Administrar testosterona exógena de rutina antes de la cirugía",
+    "Diferir la corrección hasta la edad escolar, cuando el pene haya crecido"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Se recomienda que los pacientes con hipospadias se intervengan después de los 6 meses de edad, idealmente entre los 6 y 18 meses.",
+     "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
+     15,
+     "intervengan quirúrgicamente después de los 6 meses de"
+    ],
+    [
+     "Se considera trastorno de la diferenciación sexual cuando el hipospadias se asocia a testículos no palpables, pene menor de 2 cm o fusión labioescrotal.",
+     "4.1.2 Diagnóstico Diferencial",
+     14,
+     "Se debe considerar el diagnóstico diferencial con un"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee la longitud del pene como menor de 2 cm; la viñeta dice 3.2 cm.",
+     [
+      "B"
+     ],
+     [
+      "micropene",
+      "menos de 2 cm",
+      "urgente"
+     ],
+     "¿Cuánto mide el pene y cuál es el límite que usa la guía en el recién nacido de término?",
+     "En el recién nacido de término el pene debe medir más de 2 cm; este paciente mide 3.2 cm.",
+     "4.1.1 Diagnóstico Clínico",
+     12,
+     "Medir el tamaño del pene (en el recién nacido"
+    ],
+    [
+     "dato_omitido",
+     "Pide estudio de diferenciación sexual sin registrar que ambos testículos se palpan, el pene es de tamaño normal y no hay fusión labioescrotal.",
+     [
+      "C"
+     ],
+     [
+      "cariotipo",
+      "genitales ambiguos",
+      "diferenciación sexual"
+     ],
+     "¿Qué hallazgos harían sospechar un trastorno de la diferenciación sexual? ¿Está presente alguno?",
+     "Se considera trastorno de la diferenciación sexual cuando el hipospadias se asocia a uno o ambos testículos no palpables, pene menor de 2 cm o fusión labioescrotal.",
+     "4.1.2 Diagnóstico Diferencial",
+     14,
+     "Se debe considerar el diagnóstico diferencial con un"
+    ],
+    [
+     "conocimiento",
+     "Cree que la testosterona preoperatoria es de rutina.",
+     [
+      "D"
+     ],
+     [
+      "testosterona",
+      "crecer el pene",
+      "mejores tejidos"
+     ],
+     "¿En qué situaciones considera la guía la testosterona antes de la cirugía?",
+     "La testosterona exógena se considera cuando el hipospadias se asocia a micropene o la piel es insuficiente para la reparación.",
+     "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
+     15,
+     "Cuando el hipospadias se asocia a micropene o cuando la"
+    ],
+    [
+     "razonamiento",
+     "Supone que esperar a que el pene crezca mejora el resultado, contra la evidencia que favorece la corrección temprana.",
+     [
+      "E"
+     ],
+     [
+      "esperar",
+      "edad escolar",
+      "cuando crezca"
+     ],
+     "¿Qué edad recomienda la guía para la corrección y qué ventajas tiene hacerla temprano?",
+     "Se recomienda intervenir después de los 6 meses, idealmente entre los 6 y 18 meses de edad.",
+     "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
+     15,
+     "edad, idealmente entre los 6 y 18 meses"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Recién nacido de término, 1 día de vida, con meato uretral en la unión penoescrotal y curvatura ventral del pene, que mide 2.5 cm. El testículo derecho se palpa en la bolsa escrotal; el izquierdo no se palpa en la bolsa ni en el canal inguinal. Escroto bífido sin fusión labioescrotal. Estable, con buena succión.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Programar la corrección electiva entre los 6 y 18 meses, sin otros estudios",
+    "Esperar a los 6 meses para ver si desciende el testículo antes de cualquier estudio",
+    "Referir urgentemente a endocrinología pediátrica de tercer nivel por hipospadias con un testículo no palpable",
+    "Administrar testosterona y revalorar en un mes",
+    "Considerarlo criptorquidia aislada, que es frecuente con el hipospadias, y vigilar"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Se refiere urgentemente a endocrinología pediátrica de tercer nivel al recién nacido con hipospadias y uno o ambos testículos no palpables, pene menor de 2 cm o fusión labioescrotal.",
+     "4.2.1 Criterios Técnico-Médicos de Referencia",
+     24,
+     "Referir urgentemente al servicio de endocrinología"
+    ],
+    [
+     "La ausencia de uno o ambos testículos puede traducir un trastorno de la diferenciación sexual, como disgenesia gonadal mixta o hiperplasia suprarrenal congénita.",
+     "4.1.2 Diagnóstico Diferencial",
+     13,
+     "La ausencia de uno o ambos testículos puede traducir la"
+    ]
+   ],
+   "rub": [
+    [
+     "dato_omitido",
+     "Planea la cirugía electiva sin considerar el testículo no palpable.",
+     [
+      "A"
+     ],
+     [
+      "cirugía electiva",
+      "6 a 18 meses",
+      "solo urología"
+     ],
+     "¿Qué hallazgo testicular tiene el paciente y qué indica la guía en ese caso?",
+     "El hipospadias con uno o ambos testículos no palpables se refiere urgentemente a endocrinología pediátrica de tercer nivel.",
+     "4.2.1 Criterios Técnico-Médicos de Referencia",
+     24,
+     "Referir urgentemente al servicio de endocrinología"
+    ],
+    [
+     "razonamiento",
+     "Pospone la evaluación esperando el descenso, sin considerar un posible trastorno de la diferenciación sexual.",
+     [
+      "B"
+     ],
+     [
+      "esperar descenso",
+      "6 meses",
+      "puede bajar"
+     ],
+     "¿Qué trastornos puede ocultar un hipospadias proximal con un testículo no palpable?",
+     "La ausencia de uno o ambos testículos puede traducir disgenesia gonadal mixta o hiperplasia suprarrenal congénita.",
+     "4.1.2 Diagnóstico Diferencial",
+     13,
+     "La ausencia de uno o ambos testículos puede traducir la"
+    ],
+    [
+     "conocimiento",
+     "Indica testosterona sin estudio previo y fuera de sus indicaciones.",
+     [
+      "D"
+     ],
+     [
+      "testosterona",
+      "estimular"
+     ],
+     "¿En qué situaciones considera la guía la testosterona en hipospadias?",
+     "La testosterona exógena se considera cuando el hipospadias se asocia a micropene o la piel es insuficiente para la reparación.",
+     "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
+     15,
+     "Cuando el hipospadias se asocia a micropene o cuando la"
+    ],
+    [
+     "razonamiento",
+     "Usa la frecuencia de la asociación para restarle importancia, cuando la guía la considera criterio de referencia urgente.",
+     [
+      "E"
+     ],
+     [
+      "es frecuente",
+      "criptorquidia",
+      "vigilar"
+     ],
+     "Aunque la criptorquidia acompañe al hipospadias en 8 a 10 % de los casos, ¿qué indica la guía cuando coinciden en un recién nacido?",
+     "Del 8 al 10 % de los niños con hipospadias tienen criptorquidia; aun así, el testículo no palpable es criterio de referencia urgente a endocrinología.",
+     "4.1.1 Diagnóstico Clínico",
+     12,
+     "hipospadias tienen criptorquidia y del 9 al 15% hernia"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "RZ-PED-459-I",
+    "version": "0.1.0",
+    "sindrome": "raquitismo_carencial_prevencion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+      "clave": "GPC-IMSS-459-19",
+      "archivo": "459GER.pdf"
+    },
+    "vineta": "Masculino de 2 meses, nacido a término con peso adecuado, acude a control del niño sano. Se alimenta con lactancia materna exclusiva y crece en el percentil 50. No tiene enfermedades ni toma medicamentos. La madre no toma suplementos. Pregunta si su hijo necesita alguna vitamina, porque su vecina le dijo que la leche materna \"trae todo\".",
+    "pregunta": "¿Cuál es la recomendación más adecuada sobre la vitamina D para el lactante?",
+    "opciones": {
+      "A": "Vitamina D 600 UI al día al lactante",
+      "B": "Medir 25(OH)D sérica y suplementar solo si está baja",
+      "C": "Iniciar vitamina D cuando comience la alimentación complementaria a los 6 meses",
+      "D": "No suplementar, porque la leche materna cubre sus requerimientos",
+      "E": "Vitamina D 400 UI al día desde ahora y durante todo el tiempo de lactancia"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Los lactantes alimentados al seno materno deben recibir un suplemento de 400 UI/día de vitamina D desde los primeros días de vida y durante todo el tiempo de lactancia.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "suplemento diario de 400 UI/día"
+        }
+      },
+      {
+        "texto": "La leche materna contiene de 5 a 80 UI/L de vitamina D, insuficiente para sostener el aporte mínimo del lactante.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 17,
+          "fragmento": "D, que es insuficiente para sostener un aporte"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Usa la dosis que la guía indica para la madre durante la gestación y la lactancia.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "600 UI",
+          "dosis de lactancia"
+        ],
+        "pregunta_socratica_semilla": "¿A quién se refiere la dosis de 600 UI en la guía?",
+        "explicacion": "La dosis de 600 UI de vitamina D se recomienda a la madre durante la gestación y la lactancia; el lactante recibe 400 UI/día.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "recomienda la administración de 600 UI de vitamina"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Pide 25(OH)D sin considerar que el lactante no pertenece a un grupo de riesgo; la profilaxis en él no depende del nivel sérico.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "medir niveles",
+          "confirmar deficiencia",
+          "laboratorio"
+        ],
+        "pregunta_socratica_semilla": "¿A qué niños recomienda la guía medir 25(OH)D? ¿Es este uno de ellos?",
+        "explicacion": "En los grupos de riesgo se recomienda evaluar la vitamina D con 25(OH)D; de 0 a 6 meses se dan 400 UI/día desde los primeros días de vida, independientemente de la forma de alimentación.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la leche materna aporta suficiente vitamina D.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "leche materna completa",
+          "no necesita",
+          "trae todo"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánta vitamina D contiene la leche materna y alcanza para el lactante?",
+        "explicacion": "La leche materna contiene de 5 a 80 UI/L de vitamina D, cantidad insuficiente para sostener el aporte mínimo del lactante.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 17,
+          "fragmento": "D, que es insuficiente para sostener un aporte"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Liga la suplementación al cambio de dieta y deja sin cubrir los primeros meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "a los 6 meses",
+          "con la papilla",
+          "más adelante"
+        ],
+        "pregunta_socratica_semilla": "¿Desde cuándo indica la guía la vitamina D al lactante amamantado?",
+        "explicacion": "El lactante alimentado al seno materno debe recibir 400 UI/día de vitamina D desde los primeros días de vida.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "D desde los primeros días de vida y deberá"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-459-V1",
+    "version": "0.1.0",
+    "sindrome": "raquitismo_carencial_prevencion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-459-I",
+    "gpc_base": {
+      "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+      "clave": "GPC-IMSS-459-19",
+      "archivo": "459GER.pdf"
+    },
+    "vineta": "Femenino de 3 años con epilepsia focal en tratamiento con carbamazepina desde hace 18 meses, con buen control de crisis. Se alimenta con dieta familiar, pasa la mayor parte del día en interiores y no recibe suplementos. Exploración sin deformidades óseas. Acude a revisión con pediatría.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la vitamina D?",
+    "opciones": {
+      "A": "Medir 25(OH)D sérica y dar vitamina D a dosis mayores de 400 UI al día según el resultado",
+      "B": "Indicar solo exposición al sol",
+      "C": "No suplementar mientras no tenga deformidades óseas",
+      "D": "Esperar a que aparezcan signos clínicos de raquitismo para medir 25(OH)D",
+      "E": "Vitamina D 400 UI al día, igual que en la población sin riesgo"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "Los niños que toman de manera permanente anticonvulsivos requieren dosis mayores de 400 UI/día de vitamina D para alcanzar un nivel normal.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 17,
+          "fragmento": "medicamentos anticonvulsivos requieren dosis"
+        }
+      },
+      {
+        "texto": "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D con niveles séricos de 25(OH)D.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa la dosis de la población general sin considerar el anticonvulsivo crónico.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "400 UI",
+          "dosis habitual",
+          "estándar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué medicamento toma la paciente y cómo modifica la dosis de vitamina D?",
+        "explicacion": "Los niños que toman anticonvulsivos de manera permanente requieren dosis mayores de 400 UI/día de vitamina D.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 17,
+          "fragmento": "medicamentos anticonvulsivos requieren dosis"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Condiciona la prevención a que ya exista daño óseo.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "sin deformidades",
+          "no hay raquitismo",
+          "está bien"
+        ],
+        "pregunta_socratica_semilla": "¿La suplementación busca tratar el raquitismo o prevenirlo en un grupo de riesgo?",
+        "explicacion": "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D con 25(OH)D, sin esperar manifestaciones clínicas.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la dosis profiláctica debe considerar factores como la exposición al sol y la terapia médica, no sustituirse por el sol.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "sol",
+          "exposición",
+          "natural"
+        ],
+        "pregunta_socratica_semilla": "¿Qué factores considera la guía para definir la dosis profiláctica de vitamina D?",
+        "explicacion": "La dosis profiláctica considera edad, peso, exposición al sol, hábitos alimentarios y estilo de vida; en grupos de riesgo depende de la 25(OH)D, la comorbilidad y la terapia médica.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "general debe considerar: la edad, el peso corporal, el"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pospone la evaluación hasta tener manifestaciones clínicas.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "esperar signos",
+          "cuando aparezca",
+          "vigilar"
+        ],
+        "pregunta_socratica_semilla": "En un grupo de riesgo, ¿cuándo recomienda la guía evaluar la vitamina D?",
+        "explicacion": "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D por medio de los niveles séricos de 25(OH)D.",
+        "cita_gpc": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

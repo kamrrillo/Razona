@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://razona.mx/esquema/caso.schema.json",
+  "title": "Caso clínico de Razona (reactivo tipo ENARM con rúbrica de errores)",
+  "description": "Un caso índice o su variante de transferencia. Toda afirmación clínica en puntos_clave y rubrica cita la GPC mexicana. 'pagina' es el número de página del archivo PDF, contado desde 1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "version", "sindrome", "tipo", "caso_indice_id", "gpc_base", "vineta", "pregunta",
+    "opciones", "respuesta_correcta", "puntos_clave", "rubrica", "autor", "estado", "fecha", "licencia"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^RZ-PED-[0-9]{3}-(I|V1)$"},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "sindrome": {"type": "string", "pattern": "^[a-z0-9_]+$", "description": "Tema clínico de la guía en snake_case (en este banco, uno por GPC)."},
+    "tipo": {"enum": ["indice", "variante"]},
+    "caso_indice_id": {"type": ["string", "null"]},
+    "gpc_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["guia", "clave", "archivo"],
+      "properties": {
+        "guia": {"type": "string", "minLength": 10},
+        "clave": {"type": "string", "pattern": "^(GPC-)?(IMSS|SSA)-[0-9]{3}-[0-9]{2}$"},
+        "archivo": {"type": "string", "pattern": "^[0-9]{3}GER(_0)?\\.pdf$"}
+      }
+    },
+    "vineta": {"type": "string", "minLength": 200, "maxLength": 1800},
+    "pregunta": {"type": "string", "minLength": 15, "maxLength": 300},
+    "opciones": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B", "C", "D", "E"],
+      "properties": {
+        "A": {"$ref": "#/$defs/opcion"}, "B": {"$ref": "#/$defs/opcion"}, "C": {"$ref": "#/$defs/opcion"},
+        "D": {"$ref": "#/$defs/opcion"}, "E": {"$ref": "#/$defs/opcion"}
+      }
+    },
+    "respuesta_correcta": {"enum": ["A", "B", "C", "D", "E"]},
+    "puntos_clave": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["texto", "cita_gpc"],
+        "properties": {"texto": {"type": "string", "minLength": 20}, "cita_gpc": {"$ref": "#/$defs/cita"}}
+      }
+    },
+    "rubrica": {
+      "type": "array", "minItems": 4,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["tipo_error", "descripcion", "opciones_asociadas", "senales_en_justificacion",
+                     "pregunta_socratica_semilla", "explicacion", "cita_gpc"],
+        "properties": {
+          "tipo_error": {"enum": ["lectura", "dato_omitido", "razonamiento", "conocimiento"]},
+          "descripcion": {"type": "string", "minLength": 20},
+          "opciones_asociadas": {"type": "array", "items": {"enum": ["A", "B", "C", "D", "E"]}, "minItems": 1, "uniqueItems": true},
+          "senales_en_justificacion": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 3}},
+          "pregunta_socratica_semilla": {"type": "string", "minLength": 15, "pattern": "\\?$"},
+          "explicacion": {"type": "string", "minLength": 40},
+          "cita_gpc": {"$ref": "#/$defs/cita"}
+        }
+      }
+    },
+    "autor": {"const": "claude"},
+    "estado": {"enum": ["borrador", "en_revision", "revisado_medico", "retirado"]},
+    "fecha": {"type": "string", "pattern": "^20[0-9]{2}-[01][0-9]-[0-3][0-9]$"},
+    "licencia": {"type": "string", "minLength": 10}
+  },
+  "allOf": [
+    {"if": {"properties": {"tipo": {"const": "indice"}}},
+     "then": {"properties": {"caso_indice_id": {"type": "null"}, "id": {"pattern": "-I$"}}}},
+    {"if": {"properties": {"tipo": {"const": "variante"}}},
+     "then": {"properties": {"caso_indice_id": {"type": "string", "pattern": "^RZ-PED-[0-9]{3}-I$"}, "id": {"pattern": "-V1$"}}}}
+  ],
+  "$defs": {
+    "opcion": {"type": "string", "minLength": 2, "maxLength": 250},
+    "cita": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["guia", "clave", "seccion", "pagina", "fragmento"],
+          "properties": {
+            "guia": {"type": "string", "minLength": 10},
+            "clave": {"type": "string", "pattern": "^(GPC-)?(IMSS|SSA)-[0-9]{3}-[0-9]{2}$"},
+            "seccion": {"type": "string", "minLength": 3},
+            "pagina": {"type": "integer", "minimum": 1},
+            "fragmento": {"type": "string", "minLength": 15, "maxLength": 220,
+                          "description": "Texto literal breve de la página citada; permite verificar la cita de forma automática."}
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["estado", "motivo"],
+          "properties": {"estado": {"const": "SIN_RESPALDO_GPC"}, "motivo": {"type": "string", "minLength": 10}}
+        }
+      ]
+    }
+  }
+}

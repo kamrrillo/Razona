@@ -1,0 +1,201 @@
+{
+ "archivo": "497GER.pdf",
+ "clave": "IMSS-497-11",
+ "sindrome": "tetralogia_fallot_crisis_hipoxia",
+ "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 7 meses con tetralogía de Fallot diagnosticada por ecocardiograma, en espera de cirugía, con SpO2 habitual de 85 %. Hoy, después de llorar de forma sostenida durante una toma de muestra en otro servicio, presenta cianosis intensa, taquipnea, irritabilidad y disminución del soplo. Llega a urgencias en brazos de su madre con SpO2 de 62 %. Sin fiebre.",
+   "pregunta": "¿Cuáles son las medidas iniciales más adecuadas?",
+   "op": [
+    "Calmarlo en brazos de su madre, posición genupectoral y oxígeno por mascarilla",
+    "Administrar digoxina intravenosa para mejorar la contractilidad",
+    "Canalizar una vía venosa y tomar gasometría antes de cualquier otra medida",
+    "Tomar radiografía de tórax y ecocardiograma urgentes para confirmar la causa",
+    "Vigilancia en sala, porque su saturación habitual es de 85 %"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "El manejo de la crisis de hipoxia inicia con tranquilizar al paciente, retirar los estímulos desencadenantes y colocarlo en posición genupectoral; en el hospital se da oxígeno por mascarilla y se evitan punciones de primera intención.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     15,
+     "oxigeno por mascarilla, evitar punciones de primera"
+    ],
+    [
+     "El llanto sostenido, el dolor, los estudios de gabinete y los inotrópicos-digitálicos pueden precipitar las crisis de hipoxia.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Toma la saturación habitual como si fuera la actual; hoy satura 62 %.",
+     [
+      "E"
+     ],
+     [
+      "satura 85",
+      "su basal",
+      "está como siempre"
+     ],
+     "¿Cuál es la saturación actual del paciente y cuál la habitual?",
+     "La crisis de hipoxia requiere manejo inmediato: tranquilizar, posición genupectoral y oxígeno por mascarilla.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     15,
+     "Sostenerlo por los brazos y colocándolo en posición de"
+    ],
+    [
+     "dato_omitido",
+     "Pide estudios para confirmar sin considerar que el diagnóstico ya se conoce y que los estudios pueden precipitar o agravar la crisis.",
+     [
+      "D"
+     ],
+     [
+      "confirmar",
+      "ecocardiograma",
+      "radiografía"
+     ],
+     "¿Qué se sabe ya del diagnóstico del paciente y qué efecto pueden tener los estudios durante una crisis?",
+     "Las crisis de hipoxia son frecuentemente precipitadas durante la toma de radiografía, electrocardiograma, ecocardiograma o exámenes de laboratorio.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Son frecuentemente precipitados en la toma o"
+    ],
+    [
+     "conocimiento",
+     "Cree que el inotrópico ayuda en la crisis de hipoxia.",
+     [
+      "B"
+     ],
+     [
+      "digoxina",
+      "contractilidad",
+      "insuficiencia cardiaca"
+     ],
+     "¿Qué efecto tienen los inotrópicos y digitálicos sobre la obstrucción del infundíbulo?",
+     "Los inotrópicos y digitálicos figuran entre los medicamentos que precipitan las crisis de hipoxia.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+    ],
+    [
+     "razonamiento",
+     "Prioriza la vía venosa y el laboratorio, que aumentan la agitación, sobre las medidas que reducen el cortocircuito.",
+     [
+      "C"
+     ],
+     [
+      "gasometría",
+      "canalizar",
+      "laboratorios"
+     ],
+     "¿Qué le pasa al infundíbulo cuando el niño se agita con una punción?",
+     "En el hospital se administra oxígeno por mascarilla y se evitan punciones de primera intención; la agitación aumenta la estimulación simpática del infundíbulo.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     15,
+     "oxigeno por mascarilla, evitar punciones de primera"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 4 meses, peso 6 kg, con tetralogía de Fallot. Ingresó a urgencias por crisis de hipoxia; se le calmó en brazos de su madre, se colocó en posición genupectoral y recibe oxígeno por mascarilla desde hace 10 minutos, pero persiste con cianosis intensa, taquipnea, irritabilidad y SpO2 de 58 %. Tiene vía venosa periférica permeable colocada por personal experto.",
+   "pregunta": "¿Cuál es el siguiente paso más adecuado?",
+   "op": [
+    "Captopril por vía oral",
+    "Morfina 1 mg/kg intravenosa en bolo rápido",
+    "Evitar la sedación, porque la morfina causa depresión respiratoria",
+    "Morfina 0.05-0.2 mg/kg intravenosa en bolos lentos, con monitoreo respiratorio continuo y oximetría",
+    "Digoxina intravenosa"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "La administración inicial de oxígeno y morfina se considera de primera línea en el manejo de las crisis de hipoxia.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     15,
+     "La administración inicial de oxígeno y morfina se"
+    ],
+    [
+     "La morfina se administra a 0.05-0.2 mg/kg IV o IM, sin exceder 15 mg, en bolos lentos a intervalos de 5 minutos; en menores de 6 meses se mantiene monitoreo respiratorio continuo y oximetría.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     16,
+     "0.05 – 0.2mg /kg dosis IV /IM"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Desconoce que los inhibidores de la ECA precipitan crisis de hipoxia.",
+     [
+      "A"
+     ],
+     [
+      "captopril",
+      "vasodilatador",
+      "IECA"
+     ],
+     "¿Qué efecto tienen los inhibidores de la ECA en un paciente con tetralogía de Fallot en crisis?",
+     "Los inhibidores de la enzima convertidora de angiotensina están entre los medicamentos que precipitan crisis de hipoxia.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+    ],
+    [
+     "conocimiento",
+     "Usa una dosis y una velocidad de administración inadecuadas.",
+     [
+      "B"
+     ],
+     [
+      "1 mg/kg",
+      "bolo rápido",
+      "dosis alta"
+     ],
+     "¿Qué dosis de morfina y qué forma de administración recomienda la guía?",
+     "La morfina se da a 0.05-0.2 mg/kg IV o IM, sin exceder 15 mg, en bolos lentos a intervalos de 5 minutos.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     16,
+     "0.05 – 0.2mg /kg dosis IV /IM"
+    ],
+    [
+     "razonamiento",
+     "Sobrevalora el riesgo de depresión respiratoria frente al beneficio de la sedación, que reduce la estimulación del infundíbulo.",
+     [
+      "C"
+     ],
+     [
+      "depresión respiratoria",
+      "no sedar",
+      "riesgo"
+     ],
+     "¿Cómo ayuda la sedación a revertir la crisis y cómo se maneja el riesgo de depresión respiratoria?",
+     "En menores de 6 meses hay mayor riesgo de depresión respiratoria, por lo que después de la morfina se mantiene monitoreo respiratorio continuo y oximetría.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     16,
+     "mayor de depresión respiratoria, por lo que posterior a"
+    ],
+    [
+     "conocimiento",
+     "Cree que el digitálico es útil en la crisis de hipoxia.",
+     [
+      "E"
+     ],
+     [
+      "digoxina",
+      "inotrópico"
+     ],
+     "¿Qué papel tienen los digitálicos como desencadenantes de la crisis de hipoxia?",
+     "Los inotrópicos y digitálicos figuran entre los medicamentos que precipitan crisis de hipoxia.",
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+    ]
+   ]
+  }
+ ]
+}

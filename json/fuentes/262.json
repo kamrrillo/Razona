@@ -1,0 +1,206 @@
+{
+ "archivo": "262GER.pdf",
+ "clave": "GPC-IMSS-262-19",
+ "sindrome": "ictericia_neonatal",
+ "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de 34 semanas de gestación, peso 2,250 g, en alojamiento conjunto con su madre, alimentado al seno materno. A las 20 horas de vida la enfermera observa coloración amarilla en cara y tórax. Activo, succión adecuada, sin hepatoesplenomegalia. Madre O positivo. El hospital cuenta con bilirrubinómetro transcutáneo y laboratorio las 24 horas.",
+   "pregunta": "¿Cuál es la conducta más adecuada en este momento?",
+   "op": [
+    "Medir la bilirrubina sérica en las siguientes 2 horas y repetirla cada 6 horas hasta que esté por debajo del umbral de tratamiento y en descenso",
+    "Estimar el nivel de bilirrubina con la escala de Kramer para decidir el tratamiento",
+    "Medir la bilirrubina con el bilirrubinómetro transcutáneo",
+    "Egresar con vigilancia de la coloración por los padres durante 72 horas, por tratarse de ictericia fisiológica",
+    "Iniciar fototerapia de inmediato sin esperar la medición de bilirrubinas"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Al recién nacido con ictericia visible dentro de las primeras 24 horas se le mide la bilirrubina sérica en las siguientes 2 horas y cada 6 horas hasta que esté por debajo del umbral y en descenso.",
+     "2.2 Auxiliares diagnósticos",
+     20,
+     "Mida y registre el nivel de bilirrubina sérica dentro de las"
+    ],
+    [
+     "En recién nacidos de 35 semanas o menos con ictericia siempre se miden bilirrubinas séricas.",
+     "2.2 Auxiliares diagnósticos",
+     20,
+     "En recién nacidos con ≤35 semanas de edad gestacional"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "No registra que la ictericia apareció a las 20 horas de vida y la trata como fisiológica.",
+     [
+      "D"
+     ],
+     [
+      "fisiológica",
+      "es normal",
+      "al tercer día",
+      "vigilar en casa"
+     ],
+     "¿A qué edad postnatal apareció la ictericia y qué implica eso según la guía?",
+     "La ictericia que se presenta dentro de las primeras 24 horas de vida obliga a medir y registrar la bilirrubina de forma urgente.",
+     "2.1 Diagnóstico",
+     17,
+     "dentro de las primeras 24 horas de vida se presente la"
+    ],
+    [
+     "dato_omitido",
+     "Elige la medición transcutánea omitiendo que el paciente tiene 34 semanas y menos de 24 horas de vida.",
+     [
+      "C"
+     ],
+     [
+      "transcutáneo",
+      "no invasivo",
+      "más rápido"
+     ],
+     "¿A qué recién nacidos limita la guía el uso del bilirrubinómetro transcutáneo?",
+     "El bilirrubinómetro transcutáneo se usa en recién nacidos de 35 semanas o más y con más de 24 horas de vida.",
+     "2.2 Auxiliares diagnósticos",
+     19,
+     "con edad gestacional de ≥35 semanas y edad postnatal"
+    ],
+    [
+     "conocimiento",
+     "Cree que la escala de Kramer permite estimar el nivel de bilirrubina.",
+     [
+      "B"
+     ],
+     [
+      "Kramer",
+      "zona",
+      "hasta el tórax",
+      "estimar"
+     ],
+     "¿Para qué recomienda la guía usar la escala de Kramer?",
+     "La escala de Kramer se usa solo para determinar ausencia o presencia de ictericia; si existe ictericia siempre se miden los niveles séricos.",
+     "2.1 Diagnóstico",
+     18,
+     "Se recomienda usar la escala de Kramer solo para determinar la"
+    ],
+    [
+     "razonamiento",
+     "Decide el tratamiento a partir de la apariencia visual, sin una cifra que interpretar por edad en horas.",
+     [
+      "E"
+     ],
+     [
+      "fototerapia ya",
+      "no esperar",
+      "está amarillo"
+     ],
+     "Sin una cifra de bilirrubina, ¿con qué umbral decidirías iniciar o suspender la fototerapia?",
+     "En caso de existir ictericia siempre se miden los niveles séricos de bilirrubina y, de acuerdo con ellos, se considera el tratamiento.",
+     "2.1 Diagnóstico",
+     18,
+     "En caso de existir ictericia siempre se medirán los niveles"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de 39 semanas de gestación, peso 3,300 g, alimentada con lactancia materna exclusiva. En su revisión a las 60 horas de vida, antes del egreso, se observa ictericia en cara, tórax y abdomen. Activa, con buena succión y sin pérdida de peso excesiva. Madre A positivo, sin antecedentes de hermanos con fototerapia. El hospital cuenta con bilirrubinómetro transcutáneo.",
+   "pregunta": "¿Cuál es la conducta más adecuada para valorar la ictericia?",
+   "op": [
+    "Egresarla sin mediciones, porque la ictericia del tercer día es fisiológica",
+    "Bilirrubina transcutánea en las siguientes 6 horas y sérica si supera 14.7 mg/dL",
+    "Medir la bilirrubina en las siguientes 24 horas",
+    "Solicitar prueba de Coombs directa en sangre de cordón para predecir hiperbilirrubinemia grave",
+    "Estimar el nivel de bilirrubina con la escala de Kramer"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Al recién nacido con ictericia visible después de las 24 horas de vida se le mide la bilirrubina dentro de las siguientes 6 horas.",
+     "2.2 Auxiliares diagnósticos",
+     21,
+     "dentro de las siguientes 6 horas de haberse detectado la"
+    ],
+    [
+     "El bilirrubinómetro transcutáneo se usa en recién nacidos de 35 semanas o más con más de 24 horas de vida; una cifra mayor de 14.7 mg/dL se verifica con bilirrubina sérica.",
+     "2.2 Auxiliares diagnósticos",
+     20,
+     "indica un nivel de bilirrubina mayor de 14.7 mg/dl"
+    ]
+   ],
+   "rub": [
+    [
+     "razonamiento",
+     "Da por fisiológica la ictericia del tercer día y renuncia a medirla.",
+     [
+      "A"
+     ],
+     [
+      "fisiológica",
+      "tercer día",
+      "lactancia",
+      "es normal"
+     ],
+     "¿Puedes saber si la cifra está por debajo del umbral de tratamiento sin medirla?",
+     "La guía recomienda no confiar solo en la inspección visual para estimar la bilirrubina; con ictericia visible se mide el nivel.",
+     "2.1 Diagnóstico",
+     17,
+     "No confíe solamente en la inspección visual para estimar el"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el plazo de medición para la ictericia que aparece después de las 24 horas.",
+     [
+      "C"
+     ],
+     [
+      "24 horas",
+      "mañana",
+      "sin prisa"
+     ],
+     "¿En qué plazo indica la guía medir la bilirrubina cuando la ictericia aparece después de las 24 horas de vida?",
+     "Se mide el nivel de bilirrubina dentro de las siguientes 6 horas de haberse detectado la ictericia.",
+     "2.2 Auxiliares diagnósticos",
+     21,
+     "dentro de las siguientes 6 horas de haberse detectado la"
+    ],
+    [
+     "conocimiento",
+     "Cree que la prueba de Coombs de cordón predice la hiperbilirrubinemia grave.",
+     [
+      "D"
+     ],
+     [
+      "Coombs",
+      "cordón",
+      "predecir",
+      "incompatibilidad"
+     ],
+     "¿Qué métodos para predecir hiperbilirrubinemia grave desaconseja la guía?",
+     "No se recomienda la prueba de antiglobulina directa en sangre de cordón, ni la bilirrubina de cordón ni el monóxido de carbono, para predecir hiperbilirrubinemia grave.",
+     "2.2 Auxiliares diagnósticos",
+     20,
+     "para predecir la hiperbilirrubinemia grave"
+    ],
+    [
+     "conocimiento",
+     "Usa la escala de Kramer para estimar la cifra.",
+     [
+      "E"
+     ],
+     [
+      "Kramer",
+      "hasta abdomen",
+      "zona 3"
+     ],
+     "¿Qué información da la escala de Kramer y cuál no?",
+     "La escala de Kramer solo determina la ausencia o presencia de ictericia y no debe usarse para predecir el nivel de bilirrubinas.",
+     "2.1 Diagnóstico",
+     18,
+     "Se recomienda usar la escala de Kramer solo para determinar la"
+    ]
+   ]
+  }
+ ]
+}

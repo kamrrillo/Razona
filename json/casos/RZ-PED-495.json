@@ -1,0 +1,267 @@
+[
+  {
+    "id": "RZ-PED-495-I",
+    "version": "0.1.0",
+    "sindrome": "alergia_alimentaria",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+      "clave": "IMSS-495-11",
+      "archivo": "495GER.pdf"
+    },
+    "vineta": "Masculino de 4 años que hace 2 meses, 10 minutos después de comer cacahuate, presentó urticaria generalizada, edema de labios, sibilancias e hipotensión, por lo que recibió epinefrina intramuscular en urgencias. Desde entonces no ha vuelto a comerlo y está asintomático. Los padres solicitan una prueba que confirme el diagnóstico antes de quitarle definitivamente el cacahuate.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Realizar prueba de reto oral doble ciego, por ser el estándar de oro",
+      "B": "Eliminar el cacahuate y sus reactivos cruzados de la dieta, sin reto oral",
+      "C": "Realizar pruebas intradérmicas con extracto de cacahuate",
+      "D": "Considerarla una reacción leve y reintroducir el cacahuate en casa",
+      "E": "Solicitar IgE sérica total para confirmar la alergia"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "La prueba de reto oral con alimentos está contraindicada en pacientes con reacciones anafilácticas previas por alimentos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "contraindicada en pacientes con reacciones"
+        }
+      },
+      {
+        "texto": "El tratamiento se basa en eliminar de la dieta el alimento específico y los que puedan dar reactividad cruzada, con valoración nutricional.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.4 Tratamiento",
+          "pagina": 17,
+          "fragmento": "eliminar el alimento específico de la dieta y aquellos"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee la reacción como leve; la viñeta describe sibilancias, hipotensión y uso de epinefrina.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "leve",
+          "reintroducir",
+          "probar en casa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué manifestaciones tuvo el niño y qué tratamiento requirió?",
+        "explicacion": "Los pacientes con antecedente de reacción anafiláctica por alimentos tienen alto riesgo de reacciones graves o muerte en nuevas exposiciones.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "anafiláctica por alimentos tienen alto riesgo de"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Elige el estándar de oro sin considerar que el antecedente de anafilaxia lo contraindica.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "estándar de oro",
+          "reto oral",
+          "doble ciego"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente del paciente contraindica la prueba de reto oral?",
+        "explicacion": "La prueba de reto oral con alimentos está contraindicada en pacientes con reacciones anafilácticas previas por alimentos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "contraindicada en pacientes con reacciones"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la IgE sérica total diagnostica la alergia alimentaria.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "IgE total",
+          "laboratorio",
+          "confirmar"
+        ],
+        "pregunta_socratica_semilla": "¿Para qué sirve la IgE sérica total según la guía?",
+        "explicacion": "Se recomienda no usar la IgE sérica total como diagnóstica de alergia a alimentos; solo orienta sobre atopia en correlación con la historia clínica.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "Se recomienda no usar la determinación de la IgE"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Busca una prueba más sensible sin ponderar el riesgo de anafilaxia y de falsos positivos.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "intradérmica",
+          "más sensible",
+          "piel"
+        ],
+        "pregunta_socratica_semilla": "¿Qué riesgos tienen las pruebas intradérmicas con alimentos?",
+        "explicacion": "Las pruebas intradérmicas no deben usarse para el diagnóstico de alergia a alimentos por el riesgo de anafilaxia y de falsos positivos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "intradermicas no sean usadas para el diagnóstico"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-495-V1",
+    "version": "0.1.0",
+    "sindrome": "alergia_alimentaria",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-495-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+      "clave": "IMSS-495-11",
+      "archivo": "495GER.pdf"
+    },
+    "vineta": "Femenino de 18 meses que en tres ocasiones, unos minutos después de comer huevo cocido, presentó ronchas alrededor de la boca y en mejillas que cedieron solas en una hora, sin dificultad respiratoria, vómito ni cambios de coloración. Nunca ha tenido anafilaxia. Tiene dermatitis atópica leve. Es referida a pediatría para confirmar el diagnóstico.",
+    "pregunta": "¿Qué prueba se considera el estándar de oro para confirmar la alergia alimentaria en esta paciente?",
+    "opciones": {
+      "A": "Pruebas intradérmicas con extracto de huevo",
+      "B": "Ninguna, porque cualquier reacción previa contraindica la prueba de reto",
+      "C": "Prueba de reto oral doble ciego con alimentos",
+      "D": "Prueba de parche atópico",
+      "E": "IgE sérica total"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "La prueba de reto oral doble ciego con alimentos es el estándar de oro en el diagnóstico de alergia alimentaria.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 15,
+          "fragmento": "como el estándar de oro en el diagnóstico de alergia"
+        }
+      },
+      {
+        "texto": "La prueba de reto oral está contraindicada solo en pacientes con reacciones anafilácticas previas por alimentos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "contraindicada en pacientes con reacciones"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la IgE total confirma la alergia.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "IgE total",
+          "atopia"
+        ],
+        "pregunta_socratica_semilla": "¿Qué valor diagnóstico le da la guía a la IgE total?",
+        "explicacion": "No se recomienda usar la IgE sérica total como diagnóstica de alergia a alimentos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "Se recomienda no usar la determinación de la IgE"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la prueba de parche es de rutina.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "parche",
+          "dermatitis"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situaciones sugiere la guía la prueba de parche atópico?",
+        "explicacion": "La prueba de parche atópico no se usa de rutina; solo en alergia mixta con dermatitis atópica, esofagitis eosinofílica o enterocolitis por proteínas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "Se sugiere que la prueba de parche atópico no sea"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que las pruebas intradérmicas son útiles para alergia a alimentos.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "intradérmica",
+          "piel"
+        ],
+        "pregunta_socratica_semilla": "¿Por qué desaconseja la guía las pruebas intradérmicas con alimentos?",
+        "explicacion": "Las pruebas intradérmicas no deben usarse por el riesgo de anafilaxia y de falsos positivos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "intradermicas no sean usadas para el diagnóstico"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Equipara cualquier reacción previa con anafilaxia.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "contraindicada",
+          "ya reaccionó",
+          "peligrosa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué tipo de reacción contraindica la prueba de reto, y la ha tenido esta paciente?",
+        "explicacion": "La prueba de reto oral está contraindicada en pacientes con reacciones anafilácticas previas; esta paciente solo ha tenido urticaria perioral autolimitada.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "contraindicada en pacientes con reacciones"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

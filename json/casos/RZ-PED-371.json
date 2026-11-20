@@ -1,0 +1,279 @@
+[
+  {
+    "id": "RZ-PED-371-I",
+    "version": "0.1.0",
+    "sindrome": "encefalopatia_hipoxico_isquemica",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+      "clave": "IMSS-371-10",
+      "archivo": "371GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 39 semanas, peso 3,200 g, nacido por parto vaginal con desprendimiento prematuro de placenta. Apgar 2, 4 y 5 a los 1, 5 y 10 minutos; requirió ventilación con presión positiva durante los primeros 10 minutos. Gasometría arterial a los 30 minutos: pH 6.92 y déficit de base de 16. A las 2 horas de vida está letárgico, hipotónico, con succión débil y reflejo de Moro incompleto (encefalopatía moderada de Sarnat). Sin malformaciones ni sangrado activo. El hospital cuenta con equipo de hipotermia.",
+    "pregunta": "¿Cuál es la conducta neuroprotectora más adecuada?",
+    "opciones": {
+      "A": "No indicar hipotermia, porque el pH de la gasometría fue mayor de 7.00",
+      "B": "Esperar la resonancia magnética cerebral para confirmar la lesión antes de decidir la hipotermia",
+      "C": "Usar solo enfriamiento cefálico selectivo, por ser superior al sistémico",
+      "D": "Dar solo medidas de soporte, porque la encefalopatía es leve",
+      "E": "Iniciar hipotermia terapéutica dentro de las primeras 6 horas de vida"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Son criterios de inclusión: 35 semanas o más, peso de 1,800 g o más, menos de 6 horas de vida y evidencia de asfixia con encefalopatía moderada a grave, entre otros.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "Menos de 6 horas de vida"
+        }
+      },
+      {
+        "texto": "La hipotermia terapéutica es un tratamiento sensible al tiempo y debe iniciarse en las primeras seis horas de vida.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 38,
+          "fragmento": "La hipotermia terapéutica es un tratamiento sensible"
+        }
+      },
+      {
+        "texto": "La hipotermia reduce la mortalidad y la discapacidad neurológica en los sobrevivientes.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 36,
+          "fragmento": "Se ha demostrado que la hipotermia reduce en forma"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee el pH de 6.92 como si fuera mayor de 7.00.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "pH normal",
+          "no hay acidosis",
+          "gasometría no cumple"
+        ],
+        "pregunta_socratica_semilla": "¿Qué pH y déficit de base tuvo la gasometría y cuál es el criterio de la guía?",
+        "explicacion": "Un criterio de asfixia es la gasometría en la primera hora con pH de 7.00 o menor o déficit de base de 12 o mayor; este paciente tiene pH 6.92 y déficit de 16.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "Gasometría en la primera hora con pH 7.00 o"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Clasifica la encefalopatía como leve sin considerar la letargia, la hipotonía y la succión débil.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "leve",
+          "soporte",
+          "observar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos neurológicos tiene el paciente y qué grado de Sarnat corresponden?",
+        "explicacion": "La evidencia de encefalopatía moderada a grave según Sarnat es criterio de inclusión para hipotermia terapéutica.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "moderada a grave (de acuerdo a la clasificación"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el enfriamiento cefálico es superior al sistémico.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "cefálico",
+          "selectivo",
+          "mejor"
+        ],
+        "pregunta_socratica_semilla": "¿Qué ha demostrado la evidencia al comparar ambos métodos?",
+        "explicacion": "Con la evidencia disponible no se puede recomendar un método de hipotermia sistémico o cefálico; la elección queda a consideración del médico tratante.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "un método de hipotermia sistémico o cefálico"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Busca confirmar la lesión antes de tratar y deja pasar la ventana terapéutica.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "resonancia",
+          "confirmar daño",
+          "primero imagen"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tiempo tienes para iniciar la hipotermia y cuánto tardarías en obtener la resonancia?",
+        "explicacion": "La hipotermia es un tratamiento sensible al tiempo que requiere identificación y referencia rápidas, y debe iniciarse en las primeras seis horas de vida.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 38,
+          "fragmento": "La hipotermia terapéutica es un tratamiento sensible"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  },
+  {
+    "id": "RZ-PED-371-V1",
+    "version": "0.1.0",
+    "sindrome": "encefalopatia_hipoxico_isquemica",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-371-I",
+    "gpc_base": {
+      "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+      "clave": "IMSS-371-10",
+      "archivo": "371GER.pdf"
+    },
+    "vineta": "Recién nacida de 34 semanas de gestación, peso 2,100 g, nacida por cesárea de urgencia por bradicardia fetal. Apgar 3 a los 10 minutos; requirió intubación en sala de partos. Gasometría a los 40 minutos: pH 6.95. A las 3 horas de vida presenta letargia, hipotonía y crisis convulsivas sutiles. Sin malformaciones. La unidad cuenta con equipo de hipotermia sistémica.",
+    "pregunta": "Respecto a la hipotermia terapéutica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "No indicarla, porque no cumple el criterio de inclusión de 35 semanas de gestación o más",
+      "B": "No indicarla, porque pesa menos de 2,500 g",
+      "C": "Iniciar hipotermia terapéutica de inmediato porque está dentro de las primeras 6 horas",
+      "D": "Iniciarla porque supera los 1,800 g de peso",
+      "E": "Diferirla hasta las 12 horas de vida para valorar la evolución"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "Los criterios de inclusión para hipotermia terapéutica incluyen 35 semanas de gestación o más y peso de 1,800 g o más.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "Recién nacidos de ≥35 semanas de gestación"
+        }
+      },
+      {
+        "texto": "Se consideran los criterios de inclusión y exclusión para seleccionar a los pacientes que recibirán hipotermia terapéutica.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 38,
+          "fragmento": "mencionados anteriormente para la selección de"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Revisa la ventana de tiempo y la encefalopatía, pero omite la edad gestacional.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "6 horas",
+          "ventana",
+          "encefalopatía moderada"
+        ],
+        "pregunta_socratica_semilla": "¿Cumple esta paciente todos los criterios de inclusión, incluida la edad gestacional?",
+        "explicacion": "Los criterios de inclusión exigen 35 semanas de gestación o más, además de peso, tiempo de vida y evidencia de asfixia con encefalopatía.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "Recién nacidos de ≥35 semanas de gestación"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Considera que cumplir un criterio basta, cuando deben cumplirse todos.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "pesa más de 1,800",
+          "cumple peso",
+          "suficiente"
+        ],
+        "pregunta_socratica_semilla": "¿Los criterios de inclusión son alternativos o deben cumplirse todos?",
+        "explicacion": "Los criterios de inclusión son 35 semanas o más, 1,800 g o más, menos de 6 horas de vida y evidencia de asfixia; se consideran en conjunto para seleccionar al paciente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 38,
+          "fragmento": "mencionados anteriormente para la selección de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la hipotermia debe iniciarse antes de las 6 horas.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "12 horas",
+          "valorar evolución",
+          "esperar"
+        ],
+        "pregunta_socratica_semilla": "¿Hasta qué hora de vida puede iniciarse la hipotermia según la guía?",
+        "explicacion": "La hipotermia terapéutica debe iniciarse en las primeras seis horas de vida.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 38,
+          "fragmento": "primeras seis horas de vida"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa un umbral de peso distinto al de la guía.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "2,500 g",
+          "bajo peso"
+        ],
+        "pregunta_socratica_semilla": "¿Qué peso mínimo exige la guía para la hipotermia terapéutica?",
+        "explicacion": "El criterio de peso para hipotermia terapéutica es de 1,800 g o más.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
+          "clave": "IMSS-371-10",
+          "seccion": "2.2.1.1 Hipotermia",
+          "pagina": 37,
+          "fragmento": "Peso de ≥1800 gramos"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-20",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+  }
+]

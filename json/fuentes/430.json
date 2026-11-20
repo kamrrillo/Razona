@@ -1,0 +1,207 @@
+{
+ "archivo": "430GER.pdf",
+ "clave": "IMSS-430-10",
+ "sindrome": "pelagra",
+ "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 9 años, peso 25 kg, originario de una comunidad rural donde la familia se alimenta casi solo de sorgo y tortilla desde hace un año. Presenta desde hace 2 meses lesiones hiperpigmentadas, descamativas y simétricas en dorso de manos, antebrazos y una banda alrededor del cuello, que empeoran con el sol. Además tiene evacuaciones líquidas 4 veces al día, glositis, irritabilidad y dificultad para concentrarse en la escuela.",
+   "pregunta": "¿Cuál es el tratamiento más adecuado?",
+   "op": [
+    "Nicotinamida 300 mg al día en dosis divididas por 3 a 4 semanas y fotoprotección",
+    "Esperar los niveles urinarios de N-metilnicotinamida para iniciar el tratamiento",
+    "Nicotinamida 300 mg en dosis única durante 3 días",
+    "Tratar la diarrea como infecciosa con antimicrobiano y valorar después la piel",
+    "Nicotinamida 300 mg/kg/día en dosis divididas durante 3 a 4 semanas"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La dosis diaria recomendada para el tratamiento de la pelagra es de 300 mg de nicotinamida en dosis divididas durante 3 a 4 semanas.",
+     "2.3 Tratamiento",
+     17,
+     "Pelagra es de 300 mg de nicotinamida en dosis"
+    ],
+    [
+     "Se recomiendan cremas de fotoprotección y emolientes para las lesiones de la piel mientras se normaliza la niacina.",
+     "2.3 Tratamiento",
+     18,
+     "cremas de foto protección y"
+    ],
+    [
+     "La ingestión prolongada de sorgo es un factor que favorece la pelagra.",
+     "2.1 Diagnóstico",
+     12,
+     "Ingestión por tiempo prolongado de sorgo"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee la dosis por kilogramo; la dosis de la guía es de 300 mg al día.",
+     [
+      "E"
+     ],
+     [
+      "mg/kg",
+      "por kilo",
+      "según peso"
+     ],
+     "¿La dosis de nicotinamida que indica la guía es por kilogramo o total al día?",
+     "La dosis recomendada es de 300 mg de nicotinamida al día en dosis divididas, durante 3 a 4 semanas.",
+     "2.3 Tratamiento",
+     17,
+     "Pelagra es de 300 mg de nicotinamida en dosis"
+    ],
+    [
+     "dato_omitido",
+     "Atribuye la diarrea a una infección sin integrarla con la dermatitis fotoexpuesta, la dieta y los cambios neurológicos.",
+     [
+      "D"
+     ],
+     [
+      "gastroenteritis",
+      "infección intestinal",
+      "antibiótico"
+     ],
+     "¿Qué otros hallazgos tiene el niño además de la diarrea y qué enfermedad los une?",
+     "La pelagra se manifiesta con dermatitis en zonas expuestas, como el collar de Casal y los guantes de pelagra, diarrea y alteraciones neurológicas.",
+     "2.1 Diagnóstico",
+     13,
+     "Cuello “Collar de Casal”"
+    ],
+    [
+     "conocimiento",
+     "Desconoce la duración del tratamiento.",
+     [
+      "C"
+     ],
+     [
+      "3 días",
+      "dosis única",
+      "corto"
+     ],
+     "¿Durante cuánto tiempo recomienda la guía la nicotinamida?",
+     "La nicotinamida se da en dosis divididas durante 3 a 4 semanas.",
+     "2.3 Tratamiento",
+     17,
+     "Pelagra es de 300 mg de nicotinamida en dosis"
+    ],
+    [
+     "razonamiento",
+     "Retrasa un tratamiento sencillo y eficaz en un cuadro clínico característico por esperar la confirmación de laboratorio.",
+     [
+      "B"
+     ],
+     [
+      "confirmar",
+      "esperar laboratorio",
+      "N-metilnicotinamida"
+     ],
+     "Con un cuadro clínico típico y un tratamiento eficaz por vía oral, ¿qué ganas al esperar el laboratorio?",
+     "La pelagra es una entidad fácilmente tratable; la nicotinamida o niacina por vía oral suele revertir sus manifestaciones.",
+     "2.3 Tratamiento",
+     17,
+     "siendo una entidad fácilmente tratable"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 14 años con tuberculosis pulmonar, en fase intensiva de tratamiento que incluye isoniazida desde hace 3 meses, sin suplementos vitamínicos. Presenta eritema y descamación simétrica en cara y dorso de manos que aparecieron después de exponerse al sol, evacuaciones líquidas y episodios de confusión. No tiene fiebre y la baciloscopia de control es negativa.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Pelagra por isoniazida: nicotinamida 300 mg al día en dosis divididas",
+    "Diagnosticar reacción alérgica a isoniazida y tratar con esteroide sistémico",
+    "Considerar gastroenteritis infecciosa e iniciar antimicrobiano",
+    "Nicotinamida 300 mg en dosis única",
+    "Solo cremas de fotoprotección, porque es una fotodermatitis"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La isoniazida, por su estructura análoga a la niacina, suprime la producción endógena y puede causar pelagra.",
+     "2.1 Diagnóstico",
+     12,
+     "Terapia con isoniazida que por su estructura"
+    ],
+    [
+     "La dosis recomendada es de 300 mg de nicotinamida en dosis divididas durante 3 a 4 semanas.",
+     "2.3 Tratamiento",
+     17,
+     "Pelagra es de 300 mg de nicotinamida en dosis"
+    ]
+   ],
+   "rub": [
+    [
+     "razonamiento",
+     "Atribuye el cuadro a hipersensibilidad sin considerar el mecanismo de la isoniazida sobre la niacina.",
+     [
+      "B"
+     ],
+     [
+      "alergia",
+      "reacción al fármaco",
+      "esteroide"
+     ],
+     "¿Qué relación estructural tiene la isoniazida con la niacina y qué consecuencia tiene?",
+     "La isoniazida, por su estructura análoga a la niacina, suprime la producción endógena de niacina.",
+     "2.1 Diagnóstico",
+     12,
+     "Terapia con isoniazida que por su estructura"
+    ],
+    [
+     "dato_omitido",
+     "Interpreta la diarrea de forma aislada, omitiendo la dermatitis fotoexpuesta y la confusión.",
+     [
+      "C"
+     ],
+     [
+      "infección",
+      "gastroenteritis",
+      "antibiótico"
+     ],
+     "¿Qué tres manifestaciones presenta la paciente y qué enfermedad las reúne?",
+     "La pelagra se caracteriza por dermatitis en zonas expuestas al sol, diarrea y alteraciones neurológicas.",
+     "2.1 Diagnóstico",
+     13,
+     "Cuello “Collar de Casal”"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el esquema de dosificación.",
+     [
+      "D"
+     ],
+     [
+      "dosis única",
+      "una vez"
+     ],
+     "¿Cómo se administra la nicotinamida y por cuánto tiempo?",
+     "La nicotinamida se da a 300 mg al día en dosis divididas durante 3 a 4 semanas.",
+     "2.3 Tratamiento",
+     17,
+     "Pelagra es de 300 mg de nicotinamida en dosis"
+    ],
+    [
+     "razonamiento",
+     "Trata solo la piel sin corregir la deficiencia sistémica.",
+     [
+      "E"
+     ],
+     [
+      "fotodermatitis",
+      "bloqueador",
+      "solo piel"
+     ],
+     "Si la causa es la deficiencia de niacina, ¿qué pasará con la diarrea y la confusión si solo tratas la piel?",
+     "La fotoprotección y los emolientes se indican mientras se normalizan los niveles de niacina, junto con la nicotinamida.",
+     "2.3 Tratamiento",
+     18,
+     "cremas de foto protección y"
+    ]
+   ]
+  }
+ ]
+}

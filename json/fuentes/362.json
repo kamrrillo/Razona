@@ -1,0 +1,202 @@
+{
+ "archivo": "362GER.pdf",
+ "clave": "GPC-IMSS-362-18",
+ "sindrome": "recien_nacido_prematuro_sano",
+ "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de 32 semanas de gestación, peso al nacer 1,650 g, Apgar 8/9. Tiene 10 horas de vida, está en cuidados intermedios con temperatura estable en incubadora, respira al aire ambiente con SpO2 de 95 % y tolera alimentación por sonda orogástrica. La madre no tuvo control prenatal y no se le realizó determinación de antígeno de superficie de hepatitis B (HBsAg).",
+   "pregunta": "En relación con la vacunación, ¿cuál es la conducta más adecuada?",
+   "op": [
+    "Hepatitis B ahora y BCG al alcanzar 2,000 g o más de 34 semanas",
+    "Diferir ambas vacunas hasta que alcance 2,000 g de peso",
+    "Aplicar hepatitis B y BCG ahora, porque ya tiene más de 34 semanas",
+    "Diferir la hepatitis B hasta conocer el resultado del HBsAg materno",
+    "Aplicar ambas vacunas al egreso, cuando pese más de 1,800 g"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Se recomienda administrar la vacuna de hepatitis B a todos los prematuros, al nacer o lo antes posible, independientemente de la edad gestacional y el peso.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "todos los niños, independientemente de la edad"
+    ],
+    [
+     "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee las 32 semanas como si fueran más de 34.",
+     [
+      "C"
+     ],
+     [
+      "más de 34 semanas",
+      "ya puede BCG",
+      "ambas"
+     ],
+     "¿Cuántas semanas de gestación tiene el paciente y qué umbral usa la guía para la BCG?",
+     "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas; el paciente tiene 32 semanas y 1,650 g.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ],
+    [
+     "dato_omitido",
+     "Retrasa la hepatitis B sin considerar que el HBsAg materno se desconoce, lo que obliga a vacunar en las primeras 12 horas.",
+     [
+      "E"
+     ],
+     [
+      "al egreso",
+      "cuando pese más",
+      "1,800 g"
+     ],
+     "¿Qué se sabe del HBsAg de la madre y qué indica la guía en ese caso?",
+     "Los prematuros de madres cuyo HBsAg no puede demostrarse negativo en las primeras 12 horas de vida deben recibir la vacuna de hepatitis B sin importar su peso.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "primeras 12 horas de vida también deben recibir la"
+    ],
+    [
+     "conocimiento",
+     "Cree que la vacuna de hepatitis B también depende del peso.",
+     [
+      "B"
+     ],
+     [
+      "esperar 2 kilos",
+      "muy pequeño",
+      "bajo peso"
+     ],
+     "¿El peso al nacer condiciona la vacuna de hepatitis B?",
+     "La vacuna de hepatitis B se administra al nacer o lo antes posible a todos los niños, independientemente de la edad gestacional y el peso.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "todos los niños, independientemente de la edad"
+    ],
+    [
+     "razonamiento",
+     "Condiciona la vacuna a un resultado que no existe, cuando la incertidumbre es justamente la indicación para vacunar.",
+     [
+      "D"
+     ],
+     [
+      "esperar HBsAg",
+      "si la mamá es positiva",
+      "confirmar primero"
+     ],
+     "Si no se puede demostrar que la madre es HBsAg negativa, ¿qué riesgo corre el recién nacido mientras esperas?",
+     "En prematuros de madres portadoras el riesgo de transmisión llega al 90 %, por lo que no hay razones para retrasar la vacuna; si el HBsAg no se demuestra negativo en 12 horas, se vacuna.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "primeras 12 horas de vida también deben recibir la"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de 30 semanas de gestación, peso al nacer 1,300 g, que recibió la vacuna de hepatitis B al nacimiento. Hoy tiene 5 semanas de vida (35 semanas de edad corregida), pesa 2,050 g, regula temperatura en cuna, respira al aire ambiente y se alimenta por succión. Se planea su egreso en los próximos días. Aún no ha recibido BCG.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto a la vacuna BCG?",
+   "op": [
+    "Diferirla hasta que pese 2,500 g",
+    "Diferirla hasta las 40 semanas de edad corregida",
+    "Aplicarla ahora, porque ya pesa más de 2,000 g y tiene más de 34 semanas",
+    "No aplicarla, porque la BCG está contraindicada en prematuros",
+    "Diferirla hasta su primera consulta de control después del egreso"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ],
+    [
+     "La BCG a las 34 semanas y con más de 2,000 g, o después, proporciona una buena respuesta inmune.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "inmunización con BCG a las 34 SDG y >2000 gr de"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Usa un umbral de peso mayor que el de la guía.",
+     [
+      "A"
+     ],
+     [
+      "2,500 g",
+      "bajo peso",
+      "más grande"
+     ],
+     "¿A partir de qué peso recomienda la guía la BCG en el prematuro?",
+     "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ],
+    [
+     "conocimiento",
+     "Usa como criterio el término corregido en lugar del peso o las 34 semanas.",
+     [
+      "B"
+     ],
+     [
+      "40 semanas",
+      "edad corregida",
+      "término"
+     ],
+     "¿Qué edad gestacional usa la guía como umbral para la BCG?",
+     "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ],
+    [
+     "conocimiento",
+     "Cree que la BCG está contraindicada por la prematurez.",
+     [
+      "D"
+     ],
+     [
+      "contraindicada",
+      "prematuro",
+      "inmadurez inmune"
+     ],
+     "¿Qué dice la evidencia sobre la respuesta inmune a la BCG en el prematuro de más de 34 semanas y 2,000 g?",
+     "La BCG a las 34 semanas y con más de 2,000 g, o después, proporciona una buena respuesta inmune.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "inmunización con BCG a las 34 SDG y >2000 gr de"
+    ],
+    [
+     "dato_omitido",
+     "Pospone la vacuna sin registrar que la paciente ya cumple el peso y la edad gestacional.",
+     [
+      "E"
+     ],
+     [
+      "después del egreso",
+      "en su clínica",
+      "más adelante"
+     ],
+     "¿Qué peso y edad corregida tiene hoy la paciente?",
+     "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas; la paciente pesa 2,050 g y tiene 35 semanas corregidas.",
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "archivo": "271GER.pdf",
+ "clave": "IMSS-271-13",
+ "sindrome": "sindrome_nefrotico_primario",
+ "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 4 años, peso 16 kg, superficie corporal 0.68 m², previamente sano. Presenta desde hace 5 días edema palpebral matutino que progresó a edema de miembros inferiores y escrotal. TA 95/60 mmHg. Sin artritis, exantema ni adenopatías. Examen general de orina con proteínas +++ y sin hematuria; índice proteína/creatinina urinaria de 4.5 mg/mg; albúmina sérica 1.8 g/dL; colesterol 380 mg/dL; creatinina sérica normal. Es su primer episodio.",
+   "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
+   "op": [
+    "Biopsia renal antes de iniciar corticosteroides",
+    "Prednisona 60 mg/m²/día por 4 a 6 semanas y luego 40 mg/m² en días alternos",
+    "Prednisona 60 mg/m²/día dividida en tres tomas para lograr una remisión más rápida",
+    "Prednisona 60 mg/m²/día solo hasta que la proteinuria se negativice y después 40 mg/m² en días alternos",
+    "Prednisona por 2 semanas y suspender al negativizarse la proteinuria"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "En el primer episodio se inicia prednisona 60 mg/m²/día o 2 mg/kg (máximo 60 mg) en una sola dosis diaria por 4 a 6 semanas, y después 40 mg/m² o 1.5 mg/kg (máximo 40 mg) en días alternos por 2 a 5 meses con disminución gradual.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+    ],
+    [
+     "No se recomienda biopsia renal de rutina en el primer evento, porque la mayoría corresponde a cambios mínimos con buena respuesta a corticosteroides.",
+     "4.1.1 Diagnóstico Clínico",
+     19,
+     "biopsia renal de rutina en el primer evento"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Aplica el esquema de recaída (hasta remisión) a un primer episodio.",
+     [
+      "D"
+     ],
+     [
+      "hasta remisión",
+      "hasta que se negativice",
+      "recaída"
+     ],
+     "¿Es su primer episodio o una recaída? ¿Qué esquema corresponde a cada uno?",
+     "En la recaída se da prednisona diaria hasta que el niño entre en remisión; en el primer episodio el periodo inicial es de 4 a 6 semanas.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     31,
+     "Después de lograr nuevamente la remisión"
+    ],
+    [
+     "dato_omitido",
+     "Indica biopsia sin considerar los datos típicos de cambios mínimos: edad, ausencia de hematuria, TA y función renal normales.",
+     [
+      "A"
+     ],
+     [
+      "biopsia",
+      "tipo histológico",
+      "confirmar lesión"
+     ],
+     "¿Qué datos de este niño apoyan una lesión de cambios mínimos, y cuándo indica la guía la biopsia?",
+     "No se recomienda biopsia de rutina en el primer evento; se indica ante corticorresistencia, recaídas, sospecha de otra patología renal o deterioro de la función renal con inhibidores de calcineurina.",
+     "4.1.1 Diagnóstico Clínico",
+     19,
+     "Falta de respuesta al tratamiento inicial"
+    ],
+    [
+     "conocimiento",
+     "Desconoce la duración mínima del tratamiento inicial.",
+     [
+      "E"
+     ],
+     [
+      "2 semanas",
+      "en cuanto responda",
+      "suspender pronto"
+     ],
+     "¿Cuál es la duración mínima del tratamiento inicial con prednisona según la guía?",
+     "Se recomienda un periodo mínimo de tratamiento inicial con prednisona de cuatro a seis semanas.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "Se recomienda un periodo mínimo del tratamiento"
+    ],
+    [
+     "razonamiento",
+     "Supone que dividir la dosis acelera la remisión.",
+     [
+      "C"
+     ],
+     [
+      "dividir",
+      "tres tomas",
+      "más efecto",
+      "niveles estables"
+     ],
+     "¿Qué mostraron los ensayos al comparar dosis única con dosis divididas?",
+     "No hubo diferencia en el tiempo de remisión entre dosis única y dividida; se recomienda dosis única matutina para mejorar el apego.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "no hubo diferencia significativa en el tiempo medio"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 6 años, peso 21 kg, superficie corporal 0.84 m², con primer episodio de síndrome nefrótico diagnosticado hace 6 semanas. Recibe prednisona 50 mg/día en dosis única matutina desde entonces. Desde la segunda semana las tiras reactivas de orina son negativas a proteínas y el edema desapareció. TA normal, creatinina normal. Los padres preguntan qué sigue.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto a la prednisona?",
+   "op": [
+    "Suspender la prednisona, porque ya está en remisión",
+    "Continuar con 60 mg/m²/día durante 3 meses más para evitar recaídas",
+    "Biopsia renal para definir la duración del tratamiento",
+    "Cambiar a 40 mg/m² (máximo 40 mg) en días alternos durante 2 a 5 meses con disminución gradual",
+    "Cambiar a 40 mg/m² diarios durante 2 semanas y suspender"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "Al término del periodo inicial se sigue con 40 mg/m² o 1.5 mg/kg en días alternos (máximo 40 mg).",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "Al término del periodo inicial, seguir con: 40 mg/m2"
+    ],
+    [
+     "Después del periodo inicial la prednisona se da en días alternos por dos a cinco meses con disminución gradual.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "periodo de dos a cinco meses con disminución"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Desconoce que el esquema continúa en días alternos tras el periodo inicial.",
+     [
+      "A"
+     ],
+     [
+      "suspender",
+      "ya remitió",
+      "ya no necesita"
+     ],
+     "¿Qué fase sigue al periodo inicial de 4 a 6 semanas?",
+     "Después del periodo inicial se recomienda prednisona en días alternos por dos a cinco meses con disminución gradual.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "periodo de dos a cinco meses con disminución"
+    ],
+    [
+     "razonamiento",
+     "Supone que mantener la dosis plena diaria más tiempo protege mejor.",
+     [
+      "B"
+     ],
+     [
+      "más tiempo",
+      "dosis plena",
+      "evitar recaídas"
+     ],
+     "¿Qué dosis y frecuencia indica la guía después del periodo inicial?",
+     "Al término del periodo inicial se sigue con 40 mg/m² o 1.5 mg/kg en días alternos, máximo 40 mg.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "Al término del periodo inicial, seguir con: 40 mg/m2"
+    ],
+    [
+     "conocimiento",
+     "Indica biopsia en una paciente con respuesta adecuada.",
+     [
+      "C"
+     ],
+     [
+      "biopsia",
+      "histología"
+     ],
+     "¿En qué situaciones indica la guía biopsia renal en síndrome nefrótico?",
+     "La biopsia se indica en corticorresistencia, recaídas, sospecha de otra patología renal o deterioro de la función renal con inhibidores de calcineurina.",
+     "4.1.1 Diagnóstico Clínico",
+     19,
+     "Falta de respuesta al tratamiento inicial"
+    ],
+    [
+     "dato_omitido",
+     "Acierta la dosis, pero omite que debe darse en días alternos y por 2 a 5 meses.",
+     [
+      "E"
+     ],
+     [
+      "40 mg/m²",
+      "reducir dosis",
+      "diario"
+     ],
+     "Además de la dosis, ¿qué frecuencia y duración indica la guía para esta fase?",
+     "Después del periodo inicial la prednisona se da en días alternos por dos a cinco meses con disminución gradual.",
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "periodo de dos a cinco meses con disminución"
+    ]
+   ]
+  }
+ ]
+}

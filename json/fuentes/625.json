@@ -1,0 +1,202 @@
+{
+ "archivo": "625GER.pdf",
+ "clave": "IMSS-625-13",
+ "sindrome": "malformaciones_vias_urinarias",
+ "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de término, 2 días de vida, asintomático y con micción espontánea. En el ultrasonido obstétrico del tercer trimestre se informó dilatación de la pelvis renal izquierda con diámetro anteroposterior de 12 mm. Exploración física normal, sin masas abdominales. La madre pregunta qué estudio se le hará antes de que lo den de alta y después.",
+   "pregunta": "¿Cuál es la conducta diagnóstica más adecuada?",
+   "op": [
+    "Ultrasonido renal y de vías urinarias a los 7 días de vida",
+    "Cistouretrografía miccional de rutina antes del egreso",
+    "Ultrasonido renal en las primeras 24 horas de vida",
+    "No realizar estudios, porque se trata de una hidronefrosis leve",
+    "Realizar ultrasonido solo si presenta una infección urinaria"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Los recién nacidos con hidronefrosis prenatal deben tener ultrasonido de seguimiento a los 7 días de nacidos, con seguimiento según los hallazgos.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "por USG prenatal deben tener seguimiento a los 7 dias"
+    ],
+    [
+     "El ultrasonido después de la primera semana de vida es el estudio inicial para clasificar el grado de hidronefrosis diagnosticada prenatalmente.",
+     "4.4 Pruebas diagnósticas",
+     21,
+     "El ultrasonido después de la 1er semana de vida, es el"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Clasifica como leve una dilatación de 12 mm en el tercer trimestre, que corresponde a moderada.",
+     [
+      "D"
+     ],
+     [
+      "leve",
+      "no requiere",
+      "fisiológica"
+     ],
+     "¿Qué grado corresponde a 12 mm de diámetro anteroposterior en el tercer trimestre?",
+     "En el tercer trimestre la hidronefrosis es leve con menos de 9 mm, moderada de 9 a 15 mm y severa con más de 15 mm; el riesgo de malformación en la moderada es de 45.1 %.",
+     "4.4 Pruebas diagnósticas",
+     21,
+     "Moderado 9-15mm Severo > de 15mm"
+    ],
+    [
+     "dato_omitido",
+     "Condiciona el estudio a una infección y omite que el antecedente prenatal ya obliga a seguimiento.",
+     [
+      "E"
+     ],
+     [
+      "si se infecta",
+      "esperar síntomas",
+      "asintomático"
+     ],
+     "¿Qué antecedente tiene el paciente y qué seguimiento indica la guía para él?",
+     "Los recién nacidos con hidronefrosis prenatal deben tener ultrasonido a los 7 días de nacidos.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "por USG prenatal deben tener seguimiento a los 7 dias"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el momento adecuado para el ultrasonido postnatal.",
+     [
+      "C"
+     ],
+     [
+      "primeras 24 horas",
+      "antes del alta",
+      "de inmediato"
+     ],
+     "¿Después de qué edad indica la guía el ultrasonido inicial para clasificar la hidronefrosis?",
+     "El ultrasonido después de la primera semana de vida es el estudio inicial para clasificar la hidronefrosis y diferenciar la uropatía obstructiva de la ectasia fisiológica.",
+     "4.4 Pruebas diagnósticas",
+     21,
+     "El ultrasonido después de la 1er semana de vida, es el"
+    ],
+    [
+     "razonamiento",
+     "Busca reflujo con un estudio invasivo antes de clasificar la dilatación con ultrasonido.",
+     [
+      "B"
+     ],
+     [
+      "cistograma",
+      "reflujo",
+      "descartar"
+     ],
+     "¿Qué estudio inicial indica la guía y cuándo se considera el cistograma?",
+     "La cistouretrografía no está indicada de rutina en lactantes con ultrasonido postnatal normal; ante anormalidad se interconsulta a urología para valorar el cistograma.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "De rutina no esta indicado la cistouretrografia"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Femenino de 3 semanas con antecedente de hidronefrosis prenatal derecha de 10 mm en el tercer trimestre. El ultrasonido renal y de vías urinarias realizado a los 8 días de vida no mostró hidronefrosis ni dilatación ureteral, con riñones de tamaño normal sin anormalidad cortical ni vesical. Asintomática, alimentada al seno materno, con buen crecimiento.",
+   "pregunta": "¿Cuál es el seguimiento más adecuado?",
+   "op": [
+    "Cistouretrografía miccional para descartar reflujo",
+    "Dar de alta sin más estudios, porque el ultrasonido fue normal",
+    "Repetir el ultrasonido entre las 4 y 6 semanas de edad; si es normal, vigilar y repetirlo al año",
+    "Repetir el ultrasonido hasta el año de edad",
+    "Referir urgentemente a urología pediátrica por el antecedente prenatal"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Con ultrasonido postnatal normal se repite el ultrasonido entre las 4 y 6 semanas; si es normal, se vigila y se realiza al año; si es anormal, se interconsulta a urología.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "Repetir el USG entre la 4 a 6 semanas de edad,"
+    ],
+    [
+     "No está indicada de rutina la cistouretrografía en lactantes con ultrasonido postnatal normal.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "De rutina no esta indicado la cistouretrografia"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Indica cistograma de rutina con ultrasonido normal.",
+     [
+      "A"
+     ],
+     [
+      "cistograma",
+      "reflujo",
+      "descartar"
+     ],
+     "¿Qué indica la guía sobre la cistouretrografía cuando el ultrasonido postnatal es normal?",
+     "No está indicada de rutina la cistouretrografía miccional en lactantes con ultrasonido postnatal normal.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "De rutina no esta indicado la cistouretrografia"
+    ],
+    [
+     "razonamiento",
+     "Da por resuelto el problema con un solo ultrasonido normal, sin considerar su baja sensibilidad para ectasias leves.",
+     [
+      "B"
+     ],
+     [
+      "normal",
+      "alta",
+      "ya se resolvió"
+     ],
+     "¿Qué limitación tiene un solo ultrasonido normal en la primera semana?",
+     "El ultrasonido renal tiene baja sensibilidad ante una ectasia leve, por lo que se repite entre las 4 y 6 semanas.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "Repetir el USG entre la 4 a 6 semanas de edad,"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el intervalo del segundo ultrasonido.",
+     [
+      "D"
+     ],
+     [
+      "al año",
+      "una vez más",
+      "más adelante"
+     ],
+     "¿Cuándo debe repetirse el ultrasonido tras uno normal en la primera semana?",
+     "Se repite el ultrasonido entre las 4 y 6 semanas de edad y, si es normal, se vigila y se realiza al año.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "si es normal, vigilar y realizar al año de edad,"
+    ],
+    [
+     "dato_omitido",
+     "Refiere de urgencia sin considerar que el ultrasonido postnatal fue normal.",
+     [
+      "E"
+     ],
+     [
+      "urología urgente",
+      "antecedente prenatal",
+      "cirugía"
+     ],
+     "¿Qué mostró el ultrasonido postnatal y en qué caso indica la guía interconsultar a urología?",
+     "Se interconsulta al urólogo en caso de anormalidad en el ultrasonido de seguimiento.",
+     "4.4 Pruebas diagnósticas",
+     22,
+     "si es normal, vigilar y realizar al año de edad,"
+    ]
+   ]
+  }
+ ]
+}
