@@ -2,21 +2,60 @@
 
 from __future__ import annotations
 
+from functools import lru_cache
+
 from google.adk.agents import BaseAgent
 from google.adk.runners import Runner
-from google.adk.sessions import InMemorySessionService
+from google.adk.sessions import BaseSessionService, InMemorySessionService
 from google.genai import types
 
-from .config import APP_NAME
+from .config import APP_NAME, get_settings
+
+ADK_SCHEMA = "adk"
+
+
+def _async_url(url: str) -> str:
+    """postgresql://… (as Supabase shows it) → postgresql+asyncpg://…"""
+    for prefix in ("postgresql+asyncpg://", "postgresql://", "postgres://"):
+        if url.startswith(prefix):
+            return "postgresql+asyncpg://" + url[len(prefix) :]
+    return url
+
+
+@lru_cache(maxsize=1)
+def session_service() -> BaseSessionService:
+    """ADK sessions: Postgres (schema ``adk``) if ADK_SESSIONS_DB_URL is set, otherwise in memory.
+
+    On serverless hosts (Vercel) consecutive requests can land on different instances, so the
+    in-memory store would lose the diagnostic between requests; there the database is required.
+    The ``adk`` schema is not exposed by Supabase's Data API (only ``public`` is).
+    """
+    url = get_settings().adk_sessions_db_url
+    if not url:
+        return InMemorySessionService()
+
+    from google.adk.sessions import DatabaseSessionService
+    from sqlalchemy.pool import NullPool
+
+    return DatabaseSessionService(
+        db_url=_async_url(url),
+        # Serverless: no idle pooled connections across frozen instances.
+        poolclass=NullPool,
+        connect_args={
+            "server_settings": {"search_path": ADK_SCHEMA},
+            # Supabase's pooler (Supavisor) does not support prepared statements in transaction mode.
+            "statement_cache_size": 0,
+        },
+    )
 
 
 def build_runner(agent: BaseAgent | None = None) -> Runner:
-    """Runner with in-memory ADK sessions (the source of truth is Supabase)."""
+    """Runner for an agent; ADK sessions come from ``session_service()`` (the source of truth is Supabase)."""
     if agent is None:
         from .agent import root_agent
 
         agent = root_agent
-    return Runner(app_name=APP_NAME, agent=agent, session_service=InMemorySessionService())
+    return Runner(app_name=APP_NAME, agent=agent, session_service=session_service())
 
 
 async def send_message(runner: Runner, user_id: str, session_id: str, text: str) -> list[dict]:

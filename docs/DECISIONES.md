@@ -87,3 +87,11 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - **Sin inventar contenido:** el prompt solo incluye viñeta, opciones, explicación y fragmento de GPC del ítem, y exige usar únicamente eso. El último paso (GPC) siempre lo pone la app con la cita real del ítem.
 - **Respaldo determinista** (`buildFallbackDiagram`) construido solo con los campos del ítem si no hay clave, si falla o si tarda más de 9 s. La UI indica si el diagrama fue generado con IA.
 - **`/api/explain` no filtra respuestas:** solo responde si el caso ya se resolvió o el examen ya terminó (409 si no).
+
+## Despliegue (iteración 5, 20 nov 2026)
+
+- **Dos proyectos de Vercel**: `razona` (Next.js) y `razona-agent` (FastAPI, raíz `agent/`, entrypoint `agent/index.py`). Se desplegaron con la CLI, sin integración de Git, porque el repo de GitHub está en otra cuenta; para redeploy: `vercel deploy --prod` en cada carpeta.
+- **Sesiones del agente en Postgres.** En Vercel las peticiones del mismo diagnóstico pueden ir a instancias distintas, así que `InMemorySessionService` perdía la sesión. Con `ADK_SESSIONS_DB_URL` se usa `DatabaseSessionService` (SQLAlchemy + asyncpg, `NullPool`, sin caché de *prepared statements*) en un esquema **`adk` privado**: no lo expone la Data API y `anon`/`authenticated` no tienen permisos (migración `20261121090000`). En local sigue en memoria.
+- **Supabase en la nube** `razona` (us-east-1, junto a `iad1` de Vercel). La configuración de Auth de producción se versiona en `[remotes.production]` de `config.toml`: solo cambia Site URL y redirect; la confirmación por email y MFA quedan con los valores por defecto de la nube.
+- La contraseña de Ana en producción es distinta a la local y vive solo en las variables de Vercel y en `.env.vercel.local`.
+- `NEXT_PUBLIC_ENABLE_GOOGLE=false` en producción (el proveedor de Google no está configurado en Supabase).

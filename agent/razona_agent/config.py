@@ -63,6 +63,8 @@ class Settings(BaseModel):
     supabase_url: str | None = None
     supabase_secret_key: str | None = None
     database_url: str | None = None
+    adk_sessions_db_url: str | None = None
+    """Postgres for ADK sessions (schema ``adk``). Without it, sessions live in memory (local only)."""
     google_api_key: str | None = None
     use_vertexai: bool = False
     model: str = DEFAULT_MODEL
@@ -114,6 +116,7 @@ def load_settings(
         supabase_url=get("SUPABASE_URL"),
         supabase_secret_key=get("SUPABASE_SECRET_KEY") or get("SUPABASE_SERVICE_ROLE_KEY"),
         database_url=get("DATABASE_URL"),
+        adk_sessions_db_url=get("ADK_SESSIONS_DB_URL"),
         google_api_key=None
         if any(k in env and not env[k] for k in _KEY_NAMES)
         else get("GOOGLE_API_KEY") or get("GOOGLE_GENAI_API_KEY") or get("GEMINI_API_KEY"),

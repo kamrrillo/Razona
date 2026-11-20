@@ -5,7 +5,8 @@ description = "Razona · sistema multiagente (Google ADK) para exámenes diagnó
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "google-adk>=2.15.0,<3",
+    "google-adk[db]>=2.15.0,<3",
+    "asyncpg>=0.30",
     "supabase>=2.34,<3",
     "pydantic>=2.11,<3",
     "python-dotenv>=1.1",

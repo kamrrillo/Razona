@@ -84,16 +84,25 @@ Edita `content/items.json` (casos), `content/exam.json` (10 reactivos + `demoAns
 
 ## Deploy (Vercel + Supabase)
 
-1. Crea el proyecto en Supabase y aplica migraciones: `supabase link --project-ref <ref> && supabase db push`.
-2. Importa el repo en Vercel y conecta la **integración Supabase–Vercel** (define `NEXT_PUBLIC_SUPABASE_URL`, las llaves públicas y la secreta).
-3. Agrega en Vercel: `AGENT_API_URL` y `AGENT_API_TOKEN` (si despliegas el agente de Python en un servidor aparte), `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_DEMO_MODE=true`, `DEMO_USER_EMAIL`, `DEMO_USER_PASSWORD`, `GOOGLE_GENAI_API_KEY` (opcional), `NEXT_PUBLIC_POSTHOG_KEY` (opcional).
-4. En Supabase → Auth → URL Configuration: Site URL = dominio de Vercel y `https://<dominio>/auth/callback` en Redirect URLs.
-5. Desde tu máquina, con las variables de producción en `.env.local`: `pnpm seed:demo`.
-6. Genera el QR apuntando a `https://<dominio>/login`.
+Producción actual (20 nov 2026):
+
+| Pieza | Dónde |
+|---|---|
+| App web | https://razona.vercel.app (proyecto Vercel `razona`, equipo MetricLabs) |
+| Agente Python | https://razona-agent.vercel.app (proyecto Vercel `razona-agent`, raíz `agent/`, FastAPI) |
+| Base de datos | Supabase `razona` (`qyuhajjhgtkrerauwpax`, us-east-1) |
+
+Las variables de producción viven en `.env.vercel.local` y `agent/.env.vercel.local` (ignorados por git) y ya están cargadas en cada proyecto de Vercel. Para repetir el despliegue:
+
+1. **Supabase**: `supabase link --project-ref <ref>` y `supabase db push --include-seed` (migraciones + especialidades). Las URLs de Auth están en `[remotes.production]` de `supabase/config.toml`: `supabase config push --project-ref <ref>`.
+2. **Agente** (`cd agent`): `vercel link --project razona-agent`, variables de `agent/.env.example` (incluida `ADK_SESSIONS_DB_URL`, el *session pooler* de Supabase) y `vercel deploy --prod`. Vercel detecta FastAPI por `agent/index.py`.
+3. **App web** (raíz): `vercel link --project razona`, variables de `.env.example` con `AGENT_API_URL=https://razona-agent.vercel.app` y el mismo `AGENT_API_TOKEN`, y `vercel deploy --prod`. `.vercelignore` deja fuera `agent/` y los `.env*`.
+4. **Ana en producción**: `pnpm seed:prod` (usa `.env.vercel.local`).
+5. Genera el QR apuntando a `https://razona.vercel.app/login`.
 
 ## Checklist del día del pitch
 
-- [ ] `pnpm seed:demo` contra producción justo antes de subir.
+- [ ] `pnpm seed:prod` la mañana del pitch: la racha cuenta días hasta *ayer*, así que hay que resembrar el mismo día.
 - [ ] Probar el guion completo una vez en el teléfono que se usará.
 - [ ] Con y sin `GOOGLE_GENAI_API_KEY` el guion funciona (sin clave usa el tutor de respaldo).
 - [ ] Si la red falla: el tutor de respaldo responde en <1 s.

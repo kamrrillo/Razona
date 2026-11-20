@@ -85,6 +85,7 @@ Las herramientas **nunca** reciben el id de la estudiante del LLM: lo leen de `t
 
 - **CLI / servidor**: `razona_agent.session.create_student_session(session_service, email=..., user_id=...)` resuelve a la estudiante (por defecto `DEMO_USER_EMAIL`, Ana) y crea la sesión ADK con `state={"razona_user_id", "razona_nombre", "razona_email"}`; el `user_id` de ADK es el uuid de la estudiante.
 - **`adk web` / `adk api_server`**: ADK crea sesiones sin ese estado, así que el `before_agent_callback` del coordinador (`ensure_student_in_state`) lo llena: si el user id de ADK es un uuid o un correo, lo busca; si no (la UI usa `user`) y `RAZONA_DEMO_FALLBACK` está activo (por defecto), usa a Ana. También puedes crear la sesión por la API de ADK con estado inicial `{"razona_user_id": "<uuid>"}`.
+- **Persistencia**: con `ADK_SESSIONS_DB_URL` (Postgres) las sesiones de ADK se guardan con `DatabaseSessionService` en el esquema privado `adk` de Supabase; sin ella, en memoria. En Vercel es obligatoria: dos peticiones del mismo diagnóstico pueden caer en instancias distintas.
 - Otras claves: `razona_diagnostico` (exam_id, item_ids, finalizado), `razona_examen_activo`, `razona_caso_activo`, `razona_casos_resueltos`.
 
 ## Estructura

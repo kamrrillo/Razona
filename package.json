@@ -9,6 +9,7 @@
     "lint": "biome check",
     "format": "biome format --write",
     "seed:demo": "tsx scripts/seed-demo.ts",
+    "seed:prod": "tsx --env-file=.env.vercel.local scripts/seed-demo.ts",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
