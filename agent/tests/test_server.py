@@ -1,13 +1,15 @@
 import pytest
 from fastapi.testclient import TestClient
 
+from razona_agent.config import get_settings
 from razona_agent.server import create_app
 
 pytestmark = pytest.mark.integration
 
 
 def test_server_sessions_and_missing_key(ana):
-    client = TestClient(create_app())
+    token = get_settings().agent_api_token
+    client = TestClient(create_app(), headers={"Authorization": f"Bearer {token}"} if token else {})
     health = client.get("/salud").json()
     assert health["ok"] and health["supabase"] and health["credenciales_gemini"] is False
 

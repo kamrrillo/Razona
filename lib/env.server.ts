@@ -8,6 +8,8 @@ const ServerEnvSchema = z.object({
   googleApiKey: z.string().optional(),
   geminiModel: z.string().min(1),
   tutorTimeoutMs: z.coerce.number().int().positive(),
+  agentApiUrl: z.url().optional(),
+  agentApiToken: z.string().optional(),
 });
 
 export const serverEnv = ServerEnvSchema.parse({
@@ -18,4 +20,6 @@ export const serverEnv = ServerEnvSchema.parse({
   googleApiKey: process.env.GOOGLE_GENAI_API_KEY || undefined,
   geminiModel: process.env.GEMINI_MODEL || "gemini-2.5-flash",
   tutorTimeoutMs: process.env.TUTOR_TIMEOUT_MS || 6000,
+  agentApiUrl: process.env.AGENT_API_URL || undefined,
+  agentApiToken: process.env.AGENT_API_TOKEN || undefined,
 });

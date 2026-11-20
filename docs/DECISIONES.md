@@ -63,3 +63,11 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - **Inicio como camino de objetivos**: una unidad por especialidad (con su % de aciertos = avance por especialidad) y un nodo por tema, en zigzag, con un nodo final de simulacro. Estados: dominado (≥3 respuestas y dominio ≥70 %), tema débil ("¡Empieza aquí!"), en progreso, nuevo. Los temas sin caso de práctica llevan al simulacro. La lógica es pura y está probada en `lib/learning/path.ts`.
 - **Meta diaria** fija de 5 respuestas (`DAILY_GOAL`), sin persistir.
 - "Salir" se movió a Progreso.
+
+## Diagnóstico con el agente de Python (iteración 3)
+
+- La app web habla con el servidor FastAPI de `agent/` desde route handlers (`/api/diagnostico/*`), nunca desde el navegador: el token (`AGENT_API_TOKEN`) y la URL (`AGENT_API_URL`) son solo de servidor, y el `user_id` sale de la sesión de Supabase.
+- Las respuestas del agente se validan con Zod (`lib/schemas/diagnostic.ts`); el reactivo actual llega sin respuesta correcta.
+- Flujo híbrido: crear, responder y calificar son deterministas; el agente narra. Sin clave de Gemini se muestra "Sin narración del agente" y todo lo demás funciona.
+- El diagnóstico queda en `exams`/`exam_answers` (`exam_key = 'diagnostico-adk'`), así que actualiza el progreso y el tema débil de la app.
+- El agente de Python no se despliega en Vercel en este demo; para producción habría que hospedarlo aparte (Cloud Run, por ejemplo) y definir `AGENT_API_URL`.

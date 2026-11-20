@@ -19,6 +19,7 @@ from .prompts import (
     DIAGNOSTIC_INSTRUCTION,
     PREP_INSTRUCTION,
     TUTOR_INSTRUCTION,
+    WEB_DIAGNOSTIC_NOTE,
 )
 from .tools import DIAGNOSTIC_TOOLS, PREP_TOOLS, TUTOR_TOOLS
 
@@ -27,32 +28,45 @@ def _config(temperature: float) -> types.GenerateContentConfig:
     return types.GenerateContentConfig(temperature=temperature)
 
 
-def build_root_agent(model: str | BaseLlm | None = None) -> LlmAgent:
-    """Builds the agent tree. ``model`` defaults to GEMINI_MODEL (or ADK's default flash model).
-
-    Pass a ``BaseLlm`` instance (e.g. a fake) to run without Gemini; the credentials
-    check is only attached when the model is a Gemini model name.
-    """
+def _common(model: str | BaseLlm | None) -> dict:
     model = model or get_settings().model
     before_model = [require_credentials] if isinstance(model, str) else []
-    common = {
+    return {
         "model": model,
         "before_model_callback": before_model,
         "after_model_callback": answer_guardrail,
     }
 
-    diagnostico = LlmAgent(
+
+def _diagnostic_agent(common: dict, instruction: str = DIAGNOSTIC_INSTRUCTION) -> LlmAgent:
+    return LlmAgent(
         name="agente_diagnostico",
         description=(
             "Aplica un examen diagnóstico balanceado por especialidad con reactivos de la base de "
             "datos, un reactivo a la vez y sin pistas; al final califica y muestra explicaciones y "
             "citas de la GPC."
         ),
-        instruction=DIAGNOSTIC_INSTRUCTION,
+        instruction=instruction,
         tools=DIAGNOSTIC_TOOLS,
         generate_content_config=_config(0.2),
         **common,
     )
+
+
+def build_web_diagnostic_agent(model: str | BaseLlm | None = None) -> LlmAgent:
+    """Standalone diagnostic agent for the web app (the UI renders items and records answers)."""
+    return _diagnostic_agent(_common(model), DIAGNOSTIC_INSTRUCTION + WEB_DIAGNOSTIC_NOTE)
+
+
+def build_root_agent(model: str | BaseLlm | None = None) -> LlmAgent:
+    """Builds the agent tree. ``model`` defaults to GEMINI_MODEL (or ADK's default flash model).
+
+    Pass a ``BaseLlm`` instance (e.g. a fake) to run without Gemini; the credentials
+    check is only attached when the model is a Gemini model name.
+    """
+    common = _common(model)
+
+    diagnostico = _diagnostic_agent(common)
     preparacion = LlmAgent(
         name="agente_preparacion",
         description=(

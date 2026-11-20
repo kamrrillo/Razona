@@ -30,13 +30,34 @@ Sin uv: `python3 -m venv .venv && .venv/bin/pip install -e . pytest` y usa `.ven
 ### Servidor FastAPI
 
 ```bash
-curl -s -X POST localhost:8080/sesiones -H 'content-type: application/json' -d '{}'
+TOKEN=...   # AGENT_API_TOKEN (en local se toma de ../.env.local)
+curl -s -X POST localhost:8080/sesiones -H "Authorization: Bearer $TOKEN" \
+  -H 'content-type: application/json' -d '{}'
 # → {"session_id": "...", "user_id": "<uuid de Ana>", "nombre": "Ana"}
-curl -s -X POST localhost:8080/sesiones/<session_id>/mensajes -H 'content-type: application/json' \
-  -d '{"user_id": "<uuid>", "texto": "Quiero hacer un diagnóstico"}'
+curl -s -X POST localhost:8080/sesiones/<session_id>/mensajes -H "Authorization: Bearer $TOKEN" \
+  -H 'content-type: application/json' -d '{"user_id": "<uuid>", "texto": "Quiero hacer un diagnóstico"}'
 ```
 
-También `GET /salud`. Es para la demo local: no tiene autenticación.
+También `GET /salud` (sin token). Si `AGENT_API_TOKEN` está definido, todos los demás endpoints exigen `Authorization: Bearer <token>`. El servidor arranca aunque falte la clave de Gemini (avisa en la terminal): el diagnóstico web funciona sin narración y los endpoints de chat devuelven 503.
+
+### Conexión con la app web (diagnóstico)
+
+La app de Next.js usa el **agente de diagnóstico** en `/diagnostico` (acceso desde la pestaña Examen). Sus rutas `POST /api/diagnostico/{start,answer,message,grade}` verifican la sesión de Supabase, ponen el `user_id` desde el servidor y llaman a estos endpoints con el token (`lib/agent/client.ts`):
+
+| Endpoint | Qué hace |
+|---|---|
+| `POST /diagnostico/sesiones` `{user_id, n_por_especialidad?}` | Crea el examen (determinista) y la sesión ADK; el agente saluda. |
+| `POST /diagnostico/sesiones/{id}/respuestas` `{user_id, item_id, opcion}` | Registra la respuesta (determinista, sin LLM). |
+| `POST /diagnostico/sesiones/{id}/mensajes` `{user_id, texto}` | Turno del agente (sin pistas mientras no se califica). |
+| `POST /diagnostico/sesiones/{id}/calificar` `{user_id}` | Califica (determinista) y el agente explica los resultados. |
+
+Todos devuelven `{session_id, agente_disponible, estado, respuestas}`; `estado` trae el progreso, el reactivo actual **sin respuesta** y, al calificar, el resultado con explicaciones y citas. Una sesión solo responde a la `user_id` que la creó (404 para cualquier otra). Para usarlo en local:
+
+```bash
+cd agent && uv run python -m razona_agent.server --port 8080   # en otra terminal: pnpm dev --port 3100
+```
+
+La app necesita `AGENT_API_URL` y `AGENT_API_TOKEN` en `.env.local` (ver `.env.example` del repo).
 
 ## Agentes
 
@@ -114,3 +135,6 @@ Las pruebas de integración se omiten (no fallan) si Supabase local no responde.
 - **Guardrail por texto, sin streaming**: la CLI y el servidor no usan streaming; en `adk web` con streaming SSE el callback ve fragmentos parciales y podría no detectar una revelación partida en dos fragmentos.
 - **`adk web` actúa como Ana** por defecto (`RAZONA_DEMO_FALLBACK=TRUE`) porque su UI usa el user id `user`. Desactívalo fuera de la demo local.
 - **Servidor propio delgado** en lugar de `get_fast_api_app`: así la sesión se crea siempre con la estudiante resuelta en el servidor. Para la API/UI completas de ADK están `adk api_server` / `adk web`.
+- **Diagnóstico web híbrido:** crear el examen, registrar respuestas y calificar son llamadas deterministas (no dependen de que el LLM elija la herramienta correcta); el agente (`build_web_diagnostic_agent`, con una instrucción extra para la UI) saluda, responde dudas sin dar pistas y explica los resultados. Sin clave de Gemini el flujo funciona igual, sin narración.
+- **Token compartido** (`AGENT_API_TOKEN`) entre la app y el servidor; la app lo envía solo desde el servidor. El `user_id` nunca viene del navegador: lo pone la ruta de Next.js a partir de la sesión de Supabase.
+- **Calificar antes de terminar** está permitido; los reactivos sin responder cuentan como incorrectos.

@@ -39,6 +39,7 @@ _REPO_FALLBACK_KEYS = {
     "SUPABASE_SECRET_KEY": ("SUPABASE_SECRET_KEY", "SUPABASE_SERVICE_ROLE_KEY"),
     "DEMO_USER_EMAIL": ("DEMO_USER_EMAIL",),
     "GOOGLE_GENAI_API_KEY": ("GOOGLE_GENAI_API_KEY",),
+    "AGENT_API_TOKEN": ("AGENT_API_TOKEN",),
 }
 
 MISSING_KEY_MESSAGE = (
@@ -62,6 +63,8 @@ class Settings(BaseModel):
     use_vertexai: bool = False
     model: str = DEFAULT_MODEL
     demo_user_email: str = DEFAULT_DEMO_EMAIL
+    agent_api_token: str | None = None
+    """Shared secret with the web app (Authorization: Bearer). If set, the server requires it."""
     demo_fallback: bool = True
     """If the ADK user id is not an email/uuid (e.g. `adk web` uses "user"), act as the demo user."""
 
@@ -107,6 +110,7 @@ def load_settings(
         use_vertexai=_truthy(get("GOOGLE_GENAI_USE_VERTEXAI")),
         model=get("GEMINI_MODEL") or DEFAULT_MODEL,
         demo_user_email=get("DEMO_USER_EMAIL") or DEFAULT_DEMO_EMAIL,
+        agent_api_token=get("AGENT_API_TOKEN"),
         demo_fallback=get("RAZONA_DEMO_FALLBACK") is None or _truthy(get("RAZONA_DEMO_FALLBACK")),
     )
 

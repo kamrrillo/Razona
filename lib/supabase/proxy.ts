@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { requireSupabasePublicEnv } from "@/lib/env";
 import type { Database } from "./database.types";
 
-const PROTECTED_PREFIXES = ["/inicio", "/practicar", "/examen", "/progreso"];
+const PROTECTED_PREFIXES = ["/inicio", "/practicar", "/examen", "/diagnostico", "/progreso"];
 
 /** Refresca la sesión de Supabase y protege las rutas de (app). */
 export async function updateSession(request: NextRequest) {

@@ -68,6 +68,14 @@ uv run python -m razona_agent.cli       # chat en la terminal como Ana
 uv run pytest                           # pruebas (sin clave)
 ```
 
+**Conectado a la app web:** la pestaña Examen tiene "Diagnóstico con IA" (`/diagnostico`). Para usarlo, corre el servidor del agente junto a la app y define `AGENT_API_URL` y `AGENT_API_TOKEN` en `.env.local`:
+
+```bash
+cd agent && uv run python -m razona_agent.server --port 8080
+```
+
+Sin clave de Gemini el diagnóstico funciona igual (sin la narración del agente).
+
 Detalles, arquitectura y decisiones: [agent/README.md](agent/README.md).
 
 ## Reemplazar el contenido
@@ -78,7 +86,7 @@ Edita `content/items.json` (casos), `content/exam.json` (10 reactivos + `demoAns
 
 1. Crea el proyecto en Supabase y aplica migraciones: `supabase link --project-ref <ref> && supabase db push`.
 2. Importa el repo en Vercel y conecta la **integración Supabase–Vercel** (define `NEXT_PUBLIC_SUPABASE_URL`, las llaves públicas y la secreta).
-3. Agrega en Vercel: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_DEMO_MODE=true`, `DEMO_USER_EMAIL`, `DEMO_USER_PASSWORD`, `GOOGLE_GENAI_API_KEY` (opcional), `NEXT_PUBLIC_POSTHOG_KEY` (opcional).
+3. Agrega en Vercel: `AGENT_API_URL` y `AGENT_API_TOKEN` (si despliegas el agente de Python en un servidor aparte), `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_DEMO_MODE=true`, `DEMO_USER_EMAIL`, `DEMO_USER_PASSWORD`, `GOOGLE_GENAI_API_KEY` (opcional), `NEXT_PUBLIC_POSTHOG_KEY` (opcional).
 4. En Supabase → Auth → URL Configuration: Site URL = dominio de Vercel y `https://<dominio>/auth/callback` en Redirect URLs.
 5. Desde tu máquina, con las variables de producción en `.env.local`: `pnpm seed:demo`.
 6. Genera el QR apuntando a `https://<dominio>/login`.
