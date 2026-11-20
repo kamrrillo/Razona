@@ -1,0 +1,65 @@
+{
+  "notice": "CONTENIDO DE EJEMPLO — reemplazar por los ítems validados",
+  "scripts": {
+    "caso-bronquiolitis-01": {
+      "byOption": {
+        "a": {
+          "question": "Elegiste salbutamol. Antes de seguir: en este lactante, ¿qué mecanismo produce las sibilancias? ¿Es un broncoespasmo como en el asma, o algo distinto que ocurre en la vía aérea pequeña? Piensa qué esperarías que haga un broncodilatador ahí.",
+          "hint": "Revisa qué dice la GPC sobre el uso rutinario de broncodilatadores en bronquiolitis leve."
+        },
+        "c": {
+          "question": "Elegiste un esteroide. ¿Qué componente inflamatorio esperas modificar en una infección viral de la vía aérea pequeña? ¿Qué datos de gravedad tiene este lactante que lo justifiquen?",
+          "hint": "Fíjate en la saturación, la frecuencia respiratoria y la alimentación: ¿es un cuadro leve o grave?"
+        },
+        "d": {
+          "question": "Elegiste un antibiótico. ¿Qué agente causa con más frecuencia este cuadro en invierno? ¿Hay algo en la viñeta que sugiera una sobreinfección bacteriana?",
+          "hint": "El paciente está afebril y el cuadro inició con rinorrea: piensa en la etiología más frecuente."
+        }
+      },
+      "followUp": [
+        "Buen razonamiento. Ahora, con los signos vitales de la viñeta (SatO2 95 %, FR 48, se alimenta bien), ¿clasificarías el cuadro como leve, moderado o grave? ¿Qué implica eso para el tratamiento?",
+        "Vas por buen camino. Si el tratamiento farmacológico no cambia el curso de una bronquiolitis leve, ¿qué medidas sí ayudan al lactante a respirar y alimentarse mejor?"
+      ]
+    },
+    "caso-hta-01": {
+      "byOption": {
+        "a": {
+          "question": "Elegiste un betabloqueador. ¿Qué hallazgo de laboratorio en la viñeta cambia la elección del antihipertensivo? ¿Qué órgano quieres proteger además de bajar la presión?",
+          "hint": "Revisa qué dice la GPC sobre pacientes con diabetes y albuminuria."
+        },
+        "b": {
+          "question": "Elegiste un diurético de asa. ¿Esta paciente tiene sobrecarga de volumen o insuficiencia renal avanzada? ¿Qué te dice la albuminuria?",
+          "hint": "Piensa en qué sistema hormonal favorece la progresión del daño renal en la diabetes."
+        },
+        "d": {
+          "question": "Elegiste un alfabloqueador. ¿Qué evidencia de protección renal tiene este grupo frente a otros? ¿Qué fármacos reducen la albuminuria?",
+          "hint": "La GPC prioriza fármacos con beneficio renal en esta población."
+        }
+      },
+      "followUp": [
+        "Bien. ¿Qué sistema hormonal está implicado en la hiperfiltración glomerular de la nefropatía diabética?",
+        "Correcto el enfoque. ¿Qué grupo de fármacos bloquea ese sistema y además reduce la albuminuria?"
+      ]
+    },
+    "caso-apendicitis-01": {
+      "byOption": {
+        "a": {
+          "question": "Elegiste analgesia y alta. Con fiebre, rebote y leucocitosis, ¿qué diagnóstico no puedes descartar? ¿Qué pasaría si lo dejas evolucionar?",
+          "hint": "Revisa la cronología del dolor: ¿dónde inició y hacia dónde migró?"
+        },
+        "b": {
+          "question": "Elegiste observación en domicilio. ¿Los signos peritoneales y la fiebre te permiten vigilar en casa? ¿Cuál es el riesgo de retrasar el diagnóstico?",
+          "hint": "Piensa en las complicaciones de un cuadro de 18 horas de evolución."
+        },
+        "d": {
+          "question": "Elegiste colonoscopia. ¿Es un estudio adecuado ante un abdomen agudo con signos peritoneales? ¿Qué riesgo tendría?",
+          "hint": "La GPC indica la conducta ante alta sospecha clínica; revisa ese apartado."
+        }
+      },
+      "followUp": [
+        "Bien. ¿Qué datos de la viñeta integran una alta sospecha clínica? Enuméralos.",
+        "Exacto. Con alta sospecha clínica, ¿qué especialista debe valorar al paciente y con qué urgencia?"
+      ]
+    }
+  }
+}
