@@ -13,7 +13,12 @@ export async function POST(request: Request) {
       throw new HttpError(400, "Opción no válida");
     }
 
-    const { isCorrect, attemptNumber } = await recordAttempt(supabase, userId, session, body.optionId);
+    const { isCorrect, attemptNumber } = await recordAttempt(
+      supabase,
+      userId,
+      session,
+      body.optionId,
+    );
     if (isCorrect) {
       return ok(AttemptResponseSchema, {
         isCorrect: true,

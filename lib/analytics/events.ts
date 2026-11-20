@@ -12,7 +12,10 @@ export type DemoEvent =
   | "practice_weak_topic";
 
 const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "";
-const HOST = (process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com").replace(/\/$/, "");
+const HOST = (process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com").replace(
+  /\/$/,
+  "",
+);
 const ID_STORAGE_KEY = "razona_distinct_id";
 
 function distinctId(): string {

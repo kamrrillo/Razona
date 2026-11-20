@@ -19,7 +19,10 @@ export async function requireAuth(): Promise<AuthedContext> {
   return ctx;
 }
 
-export async function parseJson<S extends z.ZodType>(request: Request, schema: S): Promise<z.output<S>> {
+export async function parseJson<S extends z.ZodType>(
+  request: Request,
+  schema: S,
+): Promise<z.output<S>> {
   let body: unknown;
   try {
     body = await request.json();

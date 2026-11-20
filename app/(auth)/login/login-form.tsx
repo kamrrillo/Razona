@@ -61,7 +61,14 @@ export function LoginForm({ demoMode, enableGoogle, initialError }: Props) {
       <form action={formAction} className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="email">Correo</Label>
-          <Input id="email" name="email" type="email" autoComplete="email" required className="h-11" />
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            className="h-11"
+          />
         </div>
         <div className="space-y-2">
           <Label htmlFor="password">Contraseña</Label>

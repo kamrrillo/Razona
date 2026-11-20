@@ -17,7 +17,10 @@
       "question": "¿Cuál es el manejo inicial más adecuado?",
       "options": [
         { "id": "a", "text": "Salbutamol nebulizado de forma rutinaria" },
-        { "id": "b", "text": "Medidas de soporte: aspiración de secreciones nasales, hidratación y vigilancia de datos de alarma" },
+        {
+          "id": "b",
+          "text": "Medidas de soporte: aspiración de secreciones nasales, hidratación y vigilancia de datos de alarma"
+        },
         { "id": "c", "text": "Prednisolona oral por 5 días" },
         { "id": "d", "text": "Amoxicilina oral por 7 días" }
       ],

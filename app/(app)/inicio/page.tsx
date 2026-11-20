@@ -48,7 +48,10 @@ export default async function InicioPage() {
         </CardContent>
       </Card>
 
-      <Link href="/examen" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full")}>
+      <Link
+        href="/examen"
+        className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full")}
+      >
         <Timer aria-hidden /> Examen simulado (10 reactivos)
       </Link>
     </div>

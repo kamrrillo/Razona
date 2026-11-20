@@ -39,7 +39,10 @@ export function getTutorEngine(): TutorEngine {
         fallback,
         serverEnv.tutorTimeoutMs,
         (reason) =>
-          console.warn("[tutor] usando respaldo:", reason instanceof Error ? reason.message : reason),
+          console.warn(
+            "[tutor] usando respaldo:",
+            reason instanceof Error ? reason.message : reason,
+          ),
       )
     : fallback;
   return cached;

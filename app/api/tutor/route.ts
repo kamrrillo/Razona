@@ -57,7 +57,10 @@ export async function POST(request: Request) {
               .limit(1)
               .maybeSingle();
             if (!data) return { ok: false };
-            const { error } = await supabase.from("attempts").update({ used_tutor: true }).eq("id", data.id);
+            const { error } = await supabase
+              .from("attempts")
+              .update({ used_tutor: true })
+              .eq("id", data.id);
             return { ok: !error };
           },
           nextCase: async () => {
@@ -90,7 +93,9 @@ export async function POST(request: Request) {
         send({
           type: "error",
           message:
-            error instanceof HttpError ? error.message : "El tutor no está disponible. Intenta de nuevo.",
+            error instanceof HttpError
+              ? error.message
+              : "El tutor no está disponible. Intenta de nuevo.",
         });
       } finally {
         controller.close();

@@ -15,7 +15,8 @@ import {
 // Se valida al cargar el módulo: si el equipo reemplaza el JSON con un error, falla el build/test.
 export const itemsFile: ItemsFile = ItemsFileSchema.parse(itemsJson);
 export const examFile: ExamFile = ExamFileSchema.parse(examJson);
-export const tutorFallbackFile: TutorFallbackFile = TutorFallbackFileSchema.parse(tutorFallbackJson);
+export const tutorFallbackFile: TutorFallbackFile =
+  TutorFallbackFileSchema.parse(tutorFallbackJson);
 
 export const specialties = itemsFile.specialties;
 export const cases: Item[] = itemsFile.items.filter((i) => i.kind === "case");

@@ -72,8 +72,11 @@ function mxDate(daysAgo: number, hour: number, minute: number): Date {
   return new Date(`${day}T${hh}:${mm}:00-06:00`);
 }
 
-async function must<T>(label: string, promise: PromiseLike<{ data: T; error: unknown }>): Promise<T> {
-  const { data, error } = await promise;
+async function must<T>(
+  label: string,
+  promise: PromiseLike<{ data: T; error: unknown } | { data: unknown; error: unknown }>,
+): Promise<T> {
+  const { data, error } = (await promise) as { data: T; error: unknown };
   if (error) {
     console.error(`✗ ${label}`, error);
     process.exit(1);
@@ -128,7 +131,7 @@ async function ensureAna(): Promise<string> {
     );
     console.log("✓ Ana ya existía (contraseña actualizada)");
   } else {
-    const created = await must(
+    const created = await must<{ user: { id: string } | null }>(
       "crear Ana",
       admin.auth.admin.createUser({
         email: target,
@@ -193,7 +196,7 @@ async function resetHistory(userId: string) {
     return { item, selected, isCorrect: selected === item.correctOptionId };
   });
   const correct = answers.filter((a) => a.isCorrect).length;
-  const exam = await must(
+  const exam = await must<{ id: string }>(
     "examen previo",
     admin
       .from("exams")

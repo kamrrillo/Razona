@@ -81,7 +81,10 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
       {progress.weakTopic && (
         <Link
           href="/practicar?topic=weak"
-          className={cn(buttonVariants({ size: "lg" }), "h-auto min-h-12 w-full whitespace-normal py-2")}
+          className={cn(
+            buttonVariants({ size: "lg" }),
+            "h-auto min-h-12 w-full whitespace-normal py-2",
+          )}
           data-testid="practice-weak-topic"
         >
           Practicar mi tema débil: {progress.weakTopic.topic}
@@ -104,7 +107,10 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
             >
               <summary className="flex min-h-12 cursor-pointer list-none items-center gap-3 p-3">
                 {ok ? (
-                  <CheckCircle2 className="size-5 shrink-0 text-emerald-600" aria-label="Correcto" />
+                  <CheckCircle2
+                    className="size-5 shrink-0 text-emerald-600"
+                    aria-label="Correcto"
+                  />
                 ) : (
                   <XCircle className="size-5 shrink-0 text-rose-500" aria-label="Incorrecto" />
                 )}
@@ -141,7 +147,10 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
         })}
       </section>
 
-      <Link href="/progreso" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full")}>
+      <Link
+        href="/progreso"
+        className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full")}
+      >
         Ver mi progreso
       </Link>
     </div>

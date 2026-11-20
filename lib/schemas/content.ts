@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-export const SAMPLE_NOTICE =
-  "CONTENIDO DE EJEMPLO — reemplazar por los ítems validados";
+export const SAMPLE_NOTICE = "CONTENIDO DE EJEMPLO — reemplazar por los ítems validados";
 
 export const SpecialtySchema = z.object({
   id: z.string().min(1),

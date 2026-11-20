@@ -16,7 +16,9 @@ export class FallbackTutorEngine implements TutorEngine {
 
     if (input.selectedOptionId) {
       const entry = script?.byOption[input.selectedOptionId];
-      await input.tools.registerAttempt({ optionId: input.selectedOptionId }).catch(() => undefined);
+      await input.tools
+        .registerAttempt({ optionId: input.selectedOptionId })
+        .catch(() => undefined);
       return {
         text: entry?.question ?? GENERIC_QUESTION,
         hint: entry?.hint ?? `${GENERIC_HINT} ${hintSuffix}`,

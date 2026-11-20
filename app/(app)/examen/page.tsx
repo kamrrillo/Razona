@@ -19,15 +19,16 @@ export default function ExamenPage() {
         <CardContent className="space-y-4">
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-3">
-              <ListChecks className="size-5 text-primary" aria-hidden /> {examFile.items.length} reactivos
-              de varias especialidades
+              <ListChecks className="size-5 text-primary" aria-hidden /> {examFile.items.length}{" "}
+              reactivos de varias especialidades
             </li>
             <li className="flex items-center gap-3">
-              <Clock className="size-5 text-primary" aria-hidden /> {examFile.durationMinutes} minutos con
-              cronómetro
+              <Clock className="size-5 text-primary" aria-hidden /> {examFile.durationMinutes}{" "}
+              minutos con cronómetro
             </li>
             <li className="flex items-center gap-3">
-              <MicOff className="size-5 text-primary" aria-hidden /> Tutor apagado: como el día del ENARM
+              <MicOff className="size-5 text-primary" aria-hidden /> Tutor apagado: como el día del
+              ENARM
             </li>
           </ul>
           <StartExamButton />

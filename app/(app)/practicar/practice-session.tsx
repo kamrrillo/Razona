@@ -47,31 +47,28 @@ export function PracticeSession({ topic }: { topic?: string }) {
   const chatEnd = useRef<HTMLDivElement>(null);
   const feedbackRef = useRef<HTMLDivElement>(null);
 
-  const loadSession = useCallback(
-    async (opts: { topic?: string; excludeItemId?: string }) => {
-      setLoadError(null);
-      setSession(null);
-      setSelected(null);
-      setWrong([]);
-      setSolved(null);
-      setMessages([]);
-      try {
-        const res = await fetch("/api/session", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(opts),
-        });
-        if (!res.ok) throw new Error(String(res.status));
-        const data = SessionResponseSchema.parse(await res.json());
-        setSession(data);
-        track("case_started", { itemId: data.item.id, topic: data.item.topic, reason: data.reason });
-        if (opts.topic === "weak") track("practice_weak_topic", { topic: data.item.topic });
-      } catch {
-        setLoadError("No se pudo cargar el caso. Intenta de nuevo.");
-      }
-    },
-    [],
-  );
+  const loadSession = useCallback(async (opts: { topic?: string; excludeItemId?: string }) => {
+    setLoadError(null);
+    setSession(null);
+    setSelected(null);
+    setWrong([]);
+    setSolved(null);
+    setMessages([]);
+    try {
+      const res = await fetch("/api/session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(opts),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      const data = SessionResponseSchema.parse(await res.json());
+      setSession(data);
+      track("case_started", { itemId: data.item.id, topic: data.item.topic, reason: data.reason });
+      if (opts.topic === "weak") track("practice_weak_topic", { topic: data.item.topic });
+    } catch {
+      setLoadError("No se pudo cargar el caso. Intenta de nuevo.");
+    }
+  }, []);
 
   useEffect(() => {
     if (started.current) return;
@@ -235,15 +232,21 @@ export function PracticeSession({ topic }: { topic?: string }) {
                   className={cn(
                     "flex min-h-12 w-full items-start gap-3 rounded-lg border bg-background p-3 text-left text-[15px] transition-colors",
                     isSelected && "border-primary bg-primary/5 ring-2 ring-primary/30",
-                    isWrong && "border-rose-300 bg-rose-50 text-rose-900 line-through decoration-rose-400",
+                    isWrong &&
+                      "border-rose-300 bg-rose-50 text-rose-900 line-through decoration-rose-400",
                     isCorrect && "border-emerald-400 bg-emerald-50 text-emerald-950",
                   )}
                 >
                   <span className="font-semibold uppercase">{option.id})</span>
                   <span className="flex-1">{option.text}</span>
-                  {isWrong && <XCircle className="size-5 shrink-0 text-rose-500" aria-label="Incorrecta" />}
+                  {isWrong && (
+                    <XCircle className="size-5 shrink-0 text-rose-500" aria-label="Incorrecta" />
+                  )}
                   {isCorrect && (
-                    <CheckCircle2 className="size-5 shrink-0 text-emerald-600" aria-label="Correcta" />
+                    <CheckCircle2
+                      className="size-5 shrink-0 text-emerald-600"
+                      aria-label="Correcta"
+                    />
                   )}
                 </button>
               );

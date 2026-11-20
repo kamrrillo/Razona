@@ -39,13 +39,15 @@ export const AttemptResponseSchema = z.discriminatedUnion("isCorrect", [
 export type AttemptResponse = z.infer<typeof AttemptResponseSchema>;
 
 // POST /api/tutor -----------------------------------------------------------
-export const TutorRequestSchema = z.object({
-  sessionId: z.uuid(),
-  /** Opción incorrecta recién elegida (dispara la pregunta socrática). */
-  optionId: OptionId.optional(),
-  /** Mensaje libre de la estudiante. */
-  message: z.string().trim().min(1).max(1000).optional(),
-}).refine((r) => r.optionId || r.message, { message: "optionId o message requerido" });
+export const TutorRequestSchema = z
+  .object({
+    sessionId: z.uuid(),
+    /** Opción incorrecta recién elegida (dispara la pregunta socrática). */
+    optionId: OptionId.optional(),
+    /** Mensaje libre de la estudiante. */
+    message: z.string().trim().min(1).max(1000).optional(),
+  })
+  .refine((r) => r.optionId || r.message, { message: "optionId o message requerido" });
 export type TutorRequest = z.infer<typeof TutorRequestSchema>;
 
 // POST /api/exam/start ------------------------------------------------------

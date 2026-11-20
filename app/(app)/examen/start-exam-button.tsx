@@ -33,7 +33,13 @@ export function StartExamButton() {
 
   return (
     <div className="space-y-2">
-      <Button size="lg" className="w-full" onClick={() => void start()} disabled={pending} data-testid="start-exam">
+      <Button
+        size="lg"
+        className="w-full"
+        onClick={() => void start()}
+        disabled={pending}
+        data-testid="start-exam"
+      >
         {pending && <Loader2 className="animate-spin" aria-hidden />}
         Comenzar examen
       </Button>

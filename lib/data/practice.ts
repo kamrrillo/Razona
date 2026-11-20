@@ -4,7 +4,7 @@ import { hashString } from "@/lib/learning/random";
 import { topicStats, weakestTopic } from "@/lib/learning/stats";
 import { chooseTopicThompson } from "@/lib/learning/thompson";
 import type { Item } from "@/lib/schemas/content";
-import { type ChatMessage, ChatHistorySchema } from "@/lib/schemas/tutor";
+import { ChatHistorySchema, type ChatMessage } from "@/lib/schemas/tutor";
 import type { ServerSupabase } from "@/lib/supabase/server";
 import { loadOutcomes } from "./progress";
 
@@ -93,10 +93,7 @@ export async function appendMessages(
   newMessages: ChatMessage[],
 ): Promise<void> {
   const messages = [...session.messages, ...newMessages];
-  const { error } = await supabase
-    .from("study_sessions")
-    .update({ messages })
-    .eq("id", session.id);
+  const { error } = await supabase.from("study_sessions").update({ messages }).eq("id", session.id);
   if (error) throw error;
   session.messages = messages;
 }
