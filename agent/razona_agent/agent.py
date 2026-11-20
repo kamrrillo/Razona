@@ -25,7 +25,13 @@ from .tools import DIAGNOSTIC_TOOLS, PREP_TOOLS, TUTOR_TOOLS
 
 
 def _config(temperature: float) -> types.GenerateContentConfig:
-    return types.GenerateContentConfig(temperature=temperature)
+    level = get_settings().thinking_level
+    thinking = (
+        types.ThinkingConfig(thinking_level=types.ThinkingLevel(level))
+        if level in types.ThinkingLevel.__members__
+        else None
+    )
+    return types.GenerateContentConfig(temperature=temperature, thinking_config=thinking)
 
 
 def _common(model: str | BaseLlm | None) -> dict:

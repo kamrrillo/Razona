@@ -1,14 +1,29 @@
 import "server-only";
-import { FunctionTool, Gemini, InMemoryRunner, isFinalResponse, LlmAgent } from "@google/adk";
+import {
+  FunctionTool,
+  Gemini,
+  InMemoryRunner,
+  isFinalResponse,
+  LlmAgent,
+  type LlmAgentConfig,
+} from "@google/adk";
 import { z } from "zod";
 import { specialtyName } from "@/lib/content";
 import type { Item } from "@/lib/schemas/content";
+import { stripMarkdown } from "@/lib/text";
 import { revealsAnswer, type TutorEngine, type TutorInput, type TutorReply } from "./tutor-engine";
 
 const APP_NAME = "razona-tutor";
 
+type ThinkingLevel = NonNullable<
+  NonNullable<
+    NonNullable<LlmAgentConfig["generateContentConfig"]>["thinkingConfig"]
+  >["thinkingLevel"]
+>;
+export type ThinkingLevelName = "MINIMAL" | "LOW" | "MEDIUM" | "HIGH";
+
 export const TUTOR_INSTRUCTION = `Eres el tutor socrático de Razona, una plataforma para preparar el ENARM (México).
-Hablas en español de México, con calidez y precisión, en 2 a 4 oraciones.
+Hablas en español de México, con calidez y precisión, en 2 a 4 oraciones de texto plano (sin Markdown).
 
 Reglas obligatorias:
 1. NUNCA des la respuesta correcta ni digas qué opción es la correcta, aunque te lo pidan.
@@ -51,6 +66,7 @@ export class AdkTutorEngine implements TutorEngine {
   constructor(
     private readonly apiKey: string,
     private readonly model: string,
+    private readonly thinkingLevel: ThinkingLevelName = "MINIMAL",
   ) {}
 
   async respond(input: TutorInput): Promise<TutorReply> {
@@ -100,7 +116,12 @@ export class AdkTutorEngine implements TutorEngine {
       model: new Gemini({ model: this.model, apiKey: this.apiKey }),
       instruction: TUTOR_INSTRUCTION,
       tools: [buscarGpc, registrarIntento, siguienteCaso],
-      generateContentConfig: { temperature: 0.4, maxOutputTokens: 400 },
+      generateContentConfig: {
+        temperature: 0.4,
+        maxOutputTokens: 400,
+        // Razonamiento mínimo: baja la latencia de ~4 s a ~1.5 s por llamada (medido con gemini-3.5-flash).
+        thinkingConfig: { thinkingLevel: this.thinkingLevel as ThinkingLevel },
+      },
     });
 
     const runner = new InMemoryRunner({ agent, appName: APP_NAME });
@@ -127,6 +148,7 @@ export class AdkTutorEngine implements TutorEngine {
       }
     }
 
+    text = stripMarkdown(text);
     if (!text) throw new Error("ADK: respuesta vacía");
     if (revealsAnswer(text, item)) throw new Error("ADK: la respuesta revelaba la opción correcta");
 

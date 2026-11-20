@@ -140,3 +140,14 @@ describe("contratos de API", () => {
     expect(TutorRequestSchema.safeParse({ sessionId, optionId: "z" }).success).toBe(false);
   });
 });
+
+describe("stripMarkdown", async () => {
+  const { stripMarkdown } = await import("@/lib/text");
+  it("quita negritas, cursivas, encabezados y viñetas", () => {
+    expect(stripMarkdown("Revisa la **GPC** (sección: *Tratamiento*).")).toBe(
+      "Revisa la GPC (sección: Tratamiento).",
+    );
+    expect(stripMarkdown("## Resultados\n- uno\n* dos")).toBe("Resultados\n• uno\n• dos");
+    expect(stripMarkdown("SatO2 95 % y 3 * 4")).toBe("SatO2 95 % y 3 * 4");
+  });
+});

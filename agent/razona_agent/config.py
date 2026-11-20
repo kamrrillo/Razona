@@ -40,6 +40,7 @@ _REPO_FALLBACK_KEYS = {
     "DEMO_USER_EMAIL": ("DEMO_USER_EMAIL",),
     "GOOGLE_GENAI_API_KEY": ("GOOGLE_GENAI_API_KEY",),
     "AGENT_API_TOKEN": ("AGENT_API_TOKEN",),
+    "GEMINI_THINKING_LEVEL": ("GEMINI_THINKING_LEVEL",),
 }
 
 MISSING_KEY_MESSAGE = (
@@ -49,6 +50,9 @@ MISSING_KEY_MESSAGE = (
     "Si usas Vertex AI, define GOOGLE_GENAI_USE_VERTEXAI=TRUE, "
     "GOOGLE_CLOUD_PROJECT y GOOGLE_CLOUD_LOCATION."
 )
+
+
+_KEY_NAMES = {"GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY", "GEMINI_API_KEY"}
 
 
 class MissingCredentialsError(RuntimeError):
@@ -62,6 +66,8 @@ class Settings(BaseModel):
     google_api_key: str | None = None
     use_vertexai: bool = False
     model: str = DEFAULT_MODEL
+    thinking_level: str = "MINIMAL"
+    """Gemini thinking level (MINIMAL | LOW | MEDIUM | HIGH). MINIMAL keeps turns fast."""
     demo_user_email: str = DEFAULT_DEMO_EMAIL
     agent_api_token: str | None = None
     """Shared secret with the web app (Authorization: Bearer). If set, the server requires it."""
@@ -94,6 +100,8 @@ def load_settings(
     repo_env = _read_env_file(repo_env_file) if repo_env_file else {}
 
     def get(name: str) -> str | None:
+        if name in _KEY_NAMES and name in env and not env[name]:
+            return None  # explicitly exported as empty: disables the key (used by the tests)
         value = env.get(name) or package_env.get(name)
         if value:
             return value
@@ -106,9 +114,12 @@ def load_settings(
         supabase_url=get("SUPABASE_URL"),
         supabase_secret_key=get("SUPABASE_SECRET_KEY") or get("SUPABASE_SERVICE_ROLE_KEY"),
         database_url=get("DATABASE_URL"),
-        google_api_key=get("GOOGLE_API_KEY") or get("GOOGLE_GENAI_API_KEY") or get("GEMINI_API_KEY"),
+        google_api_key=None
+        if any(k in env and not env[k] for k in _KEY_NAMES)
+        else get("GOOGLE_API_KEY") or get("GOOGLE_GENAI_API_KEY") or get("GEMINI_API_KEY"),
         use_vertexai=_truthy(get("GOOGLE_GENAI_USE_VERTEXAI")),
         model=get("GEMINI_MODEL") or DEFAULT_MODEL,
+        thinking_level=(get("GEMINI_THINKING_LEVEL") or "MINIMAL").upper(),
         demo_user_email=get("DEMO_USER_EMAIL") or DEFAULT_DEMO_EMAIL,
         agent_api_token=get("AGENT_API_TOKEN"),
         demo_fallback=get("RAZONA_DEMO_FALLBACK") is None or _truthy(get("RAZONA_DEMO_FALLBACK")),

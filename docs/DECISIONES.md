@@ -71,3 +71,11 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - Flujo híbrido: crear, responder y calificar son deterministas; el agente narra. Sin clave de Gemini se muestra "Sin narración del agente" y todo lo demás funciona.
 - El diagnóstico queda en `exams`/`exam_answers` (`exam_key = 'diagnostico-adk'`), así que actualiza el progreso y el tema débil de la app.
 - El agente de Python no se despliega en Vercel en este demo; para producción habría que hospedarlo aparte (Cloud Run, por ejemplo) y definir `AGENT_API_URL`.
+
+## Gemini en vivo (20 nov 2026, con la clave del equipo)
+
+- `gemini-2.5-flash` devuelve 404 para claves nuevas → por defecto `gemini-3.5-flash` en la app y en el agente.
+- Latencia medida con un prompt del tamaño del tutor: `gemini-3.5-flash` ~4.3 s con razonamiento por defecto y ~1.5 s con `thinking_level=MINIMAL`; los modelos *lite* < 1 s. Un turno del tutor ADK hace 2 llamadas (buscar_gpc + respuesta), así que se usa **MINIMAL** (`GEMINI_THINKING_LEVEL`) para quedar bajo el límite de 6 s: turnos medidos de 2.7–4.2 s en el tutor y 1–3.5 s en el diagnóstico.
+- El modelo a veces responde con Markdown; se pide texto plano y además se limpia (`lib/text.ts`).
+- Las pruebas de Python fuerzan la clave vacía para no llamar a Gemini aunque exista en `.env.local`.
+- Si la cuenta se queda sin créditos (402) o el modelo está saturado (503), el tutor cae al respaldo y el diagnóstico sigue sin narración.

@@ -1,5 +1,6 @@
 import "server-only";
 import { serverEnv } from "@/lib/env.server";
+import type { ThinkingLevelName } from "./adk-engine";
 import { FallbackTutorEngine } from "./fallback-engine";
 import { ResilientTutorEngine } from "./resilient-engine";
 import type { TutorEngine, TutorInput, TutorReply } from "./tutor-engine";
@@ -12,11 +13,12 @@ class LazyAdkTutorEngine implements TutorEngine {
   constructor(
     private readonly apiKey: string,
     private readonly model: string,
+    private readonly thinkingLevel: ThinkingLevelName,
   ) {}
 
   async respond(input: TutorInput): Promise<TutorReply> {
     this.engine ??= import("./adk-engine").then(
-      ({ AdkTutorEngine }) => new AdkTutorEngine(this.apiKey, this.model),
+      ({ AdkTutorEngine }) => new AdkTutorEngine(this.apiKey, this.model, this.thinkingLevel),
     );
     try {
       return await (await this.engine).respond(input);
@@ -35,7 +37,11 @@ export function getTutorEngine(): TutorEngine {
   const fallback = new FallbackTutorEngine();
   cached = serverEnv.googleApiKey
     ? new ResilientTutorEngine(
-        new LazyAdkTutorEngine(serverEnv.googleApiKey, serverEnv.geminiModel),
+        new LazyAdkTutorEngine(
+          serverEnv.googleApiKey,
+          serverEnv.geminiModel,
+          serverEnv.geminiThinkingLevel,
+        ),
         fallback,
         serverEnv.tutorTimeoutMs,
         (reason) =>

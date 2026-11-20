@@ -13,6 +13,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { type DiagnosticResponse, DiagnosticResponseSchema } from "@/lib/schemas/diagnostic";
+import { stripMarkdown } from "@/lib/text";
 import { cn } from "@/lib/utils";
 
 type ChatLine = { id: number; role: "agent" | "student"; text: string };
@@ -47,7 +48,7 @@ export function DiagnosticSession() {
     const lines: ChatLine[] = [];
     if (studentText) lines.push({ id: nextId.current++, role: "student", text: studentText });
     for (const r of response.respuestas) {
-      lines.push({ id: nextId.current++, role: "agent", text: r.texto });
+      lines.push({ id: nextId.current++, role: "agent", text: stripMarkdown(r.texto) });
     }
     setChat((prev) => [...prev, ...lines]);
   }

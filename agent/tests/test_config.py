@@ -56,3 +56,16 @@ def test_missing_key_message_is_spanish_and_names_the_variable():
 
 def test_vertex_does_not_need_key():
     assert load_settings({"GOOGLE_GENAI_USE_VERTEXAI": "TRUE"}, None, None).has_model_credentials
+
+
+def test_explicit_empty_key_disables_repo_fallback(tmp_path):
+    from razona_agent.config import load_settings
+
+    repo_env = tmp_path / ".env.local"
+    repo_env.write_text("GOOGLE_GENAI_API_KEY=clave-en-env-local\n")
+    with_key = load_settings(environ={}, package_env_file=None, repo_env_file=repo_env)
+    assert with_key.google_api_key == "clave-en-env-local"
+    disabled = load_settings(
+        environ={"GOOGLE_API_KEY": ""}, package_env_file=None, repo_env_file=repo_env
+    )
+    assert disabled.google_api_key is None and not disabled.has_model_credentials

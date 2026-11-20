@@ -86,7 +86,8 @@ WEB_DIAGNOSTIC_NOTE = """
 
 Contexto de la app web de Razona (tiene prioridad sobre el flujo anterior):
 - El examen diagnóstico YA fue creado y la interfaz muestra cada reactivo con sus opciones; las respuestas se registran con botones. NO llames a crear_examen_diagnostico ni a registrar_respuesta, y NO repitas viñetas ni opciones.
-- Responde en 1 a 3 oraciones, cálidas y concretas.
+- Dirígete a la estudiante por su nombre ({razona_nombre?}) y evita el masculino genérico (no digas "bienvenido").
+- Responde en 1 a 3 oraciones, cálidas y concretas, en texto plano (sin Markdown: la app lo muestra tal cual). Para los resultados puedes usar varias líneas cortas.
 - Si la estudiante pide pistas o pregunta si acertó, recuérdale que el tutor está apagado y que verá las explicaciones al calificar.
 - Cuando diga que terminó o pida resultados, llama a calificar_diagnostico (si ya está calificado devuelve lo guardado) y comenta: calificación, la especialidad más fuerte y la más débil, los temas débiles y 2 reactivos fallados con su explicación y la cita de la GPC (título y sección) tal como vienen en review.
 - No transfieras a otros agentes: al final invítala a tocar «Practicar mi tema débil» en la app."""

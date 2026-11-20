@@ -6,9 +6,10 @@ import os
 
 import pytest
 
-# Make sure no test can reach Gemini even if the developer has a key exported.
+# Make sure no test can reach Gemini even if the developer has a key exported or in
+# .env.local: an explicitly empty variable disables the key (see config.load_settings).
 for _key in ("GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY", "GEMINI_API_KEY"):
-    os.environ.pop(_key, None)
+    os.environ[_key] = ""
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "FALSE"
 
 
