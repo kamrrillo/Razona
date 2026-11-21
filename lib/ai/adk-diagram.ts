@@ -39,7 +39,7 @@ function buildPrompt(item: Item, wrongOptionIds: string[]): string {
   const wrong = wrongOptionIds
     .map((id) => `${id}) ${item.options.find((o) => o.id === id)?.text ?? ""}`)
     .join("; ");
-  return `Caso (${specialtyName(item.specialtyId)} · ${item.topic}):
+  return `Caso (${specialtyName(item)} · ${item.topic}):
 ${item.vignette}
 
 Pregunta: ${item.question}

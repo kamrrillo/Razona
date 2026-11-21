@@ -29,7 +29,8 @@ export const MASTERY_THRESHOLD = 0.7;
 export const MIN_ATTEMPTS_FOR_MASTERY = 3;
 
 /**
- * Ruta de aprendizaje estilo "camino": una unidad por especialidad y un nodo por tema.
+ * Ruta de aprendizaje estilo "camino": una unidad por especialidad (o por el agrupador
+ * que indique `unitOf`, p. ej. el grupo de temas) y un nodo por tema.
  * El tema débil es el nodo actual ("Empieza aquí").
  */
 export function buildLearningPath(opts: {
@@ -37,7 +38,10 @@ export function buildLearningPath(opts: {
   items: Item[];
   stats: TopicStat[];
   weakTopic: string | null;
+  /** A qué unidad pertenece cada ítem. Por defecto, su especialidad. */
+  unitOf?: (item: Item) => string;
 }): PathUnit[] {
+  const unitOf = opts.unitOf ?? ((i: Item) => i.specialtyId);
   const byTopic = new Map(opts.stats.map((s) => [s.topic, s]));
   const caseTopics = new Set(opts.items.filter((i) => i.kind === "case").map((i) => i.topic));
 
@@ -47,7 +51,7 @@ export function buildLearningPath(opts: {
       const topics = [
         ...new Set(
           opts.items
-            .filter((i) => i.specialtyId === specialty.id)
+            .filter((i) => unitOf(i) === specialty.id)
             .sort((a, b) => Number(b.kind === "case") - Number(a.kind === "case"))
             .map((i) => i.topic),
         ),

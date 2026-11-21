@@ -51,7 +51,18 @@ export const TutorRequestSchema = z
 export type TutorRequest = z.infer<typeof TutorRequestSchema>;
 
 // POST /api/exam/start ------------------------------------------------------
-export const ExamStartRequestSchema = z.object({}).strict();
+export const ExamStartRequestSchema = z
+  .object({
+    /** global: de todo el banco; grupo: de un área; tema: de un tema (1–2 reactivos). */
+    scope: z.enum(["global", "grupo", "tema"]).default("global"),
+    ref: z
+      .string()
+      .regex(/^[a-z0-9_]+$/)
+      .optional(),
+  })
+  .strict()
+  .refine((r) => r.scope === "global" || r.ref, { message: "ref requerido para grupo o tema" });
+export type ExamStartRequest = z.infer<typeof ExamStartRequestSchema>;
 export const ExamStartResponseSchema = z.object({
   examId: z.uuid(),
 });
@@ -70,7 +81,7 @@ export const ExamAnswerResponseSchema = z.object({
 // POST /api/exam/grade ------------------------------------------------------
 export const ExamGradeRequestSchema = z.object({
   examId: z.uuid(),
-  /** Completa los reactivos sin responder con las respuestas precargadas (demo). */
+  /** Solo modo demo: completa los reactivos sin responder para llegar a resultados. */
   fillDemo: z.boolean().default(false),
 });
 export const ExamGradeResponseSchema = z.object({

@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write",
+    "content:load": "uv run json/herramientas/cargar_supabase.py",
+    "content:load:prod": "uv run json/herramientas/cargar_supabase.py --env prod",
     "seed:demo": "tsx scripts/seed-demo.ts",
     "seed:prod": "tsx --env-file=.env.vercel.local scripts/seed-demo.ts",
     "typecheck": "next typegen && tsc --noEmit",

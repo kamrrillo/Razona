@@ -13,7 +13,7 @@ def obtener_caso(item_id: str, tool_context: ToolContext) -> dict:
     """Carga un caso de práctica por id (sin respuesta correcta) y lo deja como caso activo.
 
     Args:
-        item_id: Id del caso, por ejemplo 'caso-bronquiolitis-01'.
+        item_id: Id del caso, por ejemplo 'RZ-PED-032-I'.
 
     Returns:
         dict con `caso`: viñeta, pregunta y opciones.
@@ -23,15 +23,24 @@ def obtener_caso(item_id: str, tool_context: ToolContext) -> dict:
     )
 
 
-def buscar_gpc(item_id: str, tool_context: ToolContext) -> dict:
-    """Devuelve el fragmento de la Guía de Práctica Clínica (GPC) del caso: id, título, sección y texto.
+def buscar_gpc(item_id: str, tool_context: ToolContext, opcion: str = "") -> dict:
+    """Devuelve la cita de la Guía de Práctica Clínica (GPC) del caso: id, título, sección, página y texto.
+
+    Si la estudiante ya eligió una opción INCORRECTA, pásala en `opcion`: además de la cita
+    devuelve la guía de la rúbrica para esa opción (tipo de error, pregunta socrática sugerida
+    y concepto a descubrir). Úsala para guiar, no la leas literal.
 
     Args:
         item_id: Id del caso actual.
+        opcion: Letra de la opción incorrecta que eligió la estudiante (opcional).
 
     Returns:
-        dict con gpc_id, gpc_titulo, seccion y fragmento (tomados de la base de datos).
+        dict con gpc_id, gpc_titulo, seccion, pagina y fragmento (tomados del banco de casos).
     """
+    if opcion:
+        return run_tool(
+            tool_context, lambda repo, uid: services.search_gpc_for_option(repo, item_id, opcion)
+        )
     return run_tool(tool_context, lambda repo, uid: services.search_gpc(repo, item_id))
 
 

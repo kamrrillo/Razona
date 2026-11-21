@@ -42,7 +42,7 @@ from .models import (
 
 DIAGNOSTIC_EXAM_KEY = "diagnostico-adk"
 SECONDS_PER_ITEM = 90
-MAX_PER_SPECIALTY = 5
+MAX_PER_SPECIALTY = 5  # reactivos por área (grupo de temas) en el diagnóstico
 
 State = MutableMapping[str, Any]
 
@@ -118,18 +118,24 @@ def list_specialties(repo: RazonaRepository) -> dict[str, Any]:
                 "temas": sorted({i.topic for i in items if i.specialty_id == s.id}),
             }
             for s in repo.list_specialties()
+            if any(i.specialty_id == s.id for i in items)
         ],
         "aviso": SAMPLE_NOTICE,
     }
 
 
-def select_diagnostic_items(items: list[Item], specialty_ids: list[str], n: int) -> list[Item]:
-    """Up to ``n`` items per specialty: exam items first, distinct topics first, then by id."""
+def area_of(item: Item) -> str:
+    """Área del ítem: su grupo de temas del banco (o la especialidad si no tiene)."""
+    return item.group_id or item.specialty_id
+
+
+def select_diagnostic_items(items: list[Item], area_ids: list[str], n: int) -> list[Item]:
+    """Up to ``n`` items per area: index cases first, distinct topics first, then by id."""
     selected: list[Item] = []
-    for spec in specialty_ids:
+    for area in area_ids:
         pool = sorted(
-            (i for i in items if i.specialty_id == spec),
-            key=lambda i: (i.kind != "exam", i.id),
+            (i for i in items if area_of(i) == area),
+            key=lambda i: (i.tipo == "variante", i.kind != "exam", i.id),
         )
         picked: list[Item] = []
         seen_topics: set[str] = set()
@@ -147,11 +153,15 @@ def select_diagnostic_items(items: list[Item], specialty_ids: list[str], n: int)
 def create_diagnostic(
     repo: RazonaRepository, user_id: str, state: State, n_per_specialty: int = 2
 ) -> dict[str, Any]:
-    n = max(1, min(int(n_per_specialty or 2), MAX_PER_SPECIALTY))
-    specialty_ids = [s.id for s in repo.list_specialties()]
-    items = select_diagnostic_items(repo.list_items(), specialty_ids, n)
+    n = max(1, min(int(n_per_specialty or 1), MAX_PER_SPECIALTY))
+    all_items = repo.list_items()
+    area_ids = list(dict.fromkeys(area_of(i) for i in sorted(all_items, key=lambda i: i.id)))
+    items = select_diagnostic_items(all_items, area_ids, n)
     if not items:
-        return _error("No hay reactivos en la base de datos. Corre `pnpm seed:demo`.")
+        return _error(
+            "No hay casos en la base de datos. Carga el banco: "
+            "uv run json/herramientas/cargar_supabase.py"
+        )
 
     exam_id = repo.create_exam(user_id, DIAGNOSTIC_EXAM_KEY, SECONDS_PER_ITEM * len(items))
     state[st.DIAGNOSTIC] = {
@@ -424,6 +434,35 @@ def search_gpc(repo: RazonaRepository, item_id: str) -> dict[str, Any]:
         "gpc_id": c.gpc_id,
         "gpc_titulo": c.gpc_title,
         "seccion": c.section,
+        "pagina": c.page,
+        "fragmento": c.snippet,
+        "puntos_clave": [
+            {"texto": k.text, "seccion": k.citation.section, "pagina": k.citation.page}
+            for k in item.key_points
+        ],
+        "aviso": SAMPLE_NOTICE,
+    }
+
+
+def search_gpc_for_option(repo: RazonaRepository, item_id: str, option: str) -> dict[str, Any]:
+    """Guía de la rúbrica para una opción INCORRECTA ya elegida: tipo de error, pregunta
+    socrática semilla, concepto y su cita. Nunca revela la opción correcta."""
+    item = repo.get_item(item_id)
+    if item is None:
+        return _error(f"No existe el caso {item_id}.")
+    entry = item.rubric_for(normalize_option(option))
+    if entry is None:
+        return search_gpc(repo, item_id)
+    c = entry.citation
+    return {
+        "tipo_error": entry.error_type,
+        "que_suele_fallar": entry.description,
+        "pregunta_socratica_sugerida": entry.question,
+        "concepto": entry.explanation,
+        "gpc_id": c.gpc_id,
+        "gpc_titulo": c.gpc_title,
+        "seccion": c.section,
+        "pagina": c.page,
         "fragmento": c.snippet,
         "aviso": SAMPLE_NOTICE,
     }

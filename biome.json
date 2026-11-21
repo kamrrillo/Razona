@@ -18,7 +18,10 @@
       "!playwright-report",
       "!supabase/.temp",
       "!.claude",
-      "!agent/.venv"
+      "!agent/.venv",
+      "!json/casos",
+      "!json/fuentes",
+      "!json/esquema"
     ]
   },
   "formatter": {

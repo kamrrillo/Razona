@@ -1,5 +1,5 @@
 import "server-only";
-import { cases, getItem, practiceTopics, toPublicItem } from "@/lib/content";
+import { getCatalog, getItem, practiceTopics, toPublicItem } from "@/lib/content";
 import { hashString } from "@/lib/learning/random";
 import { topicStats, weakestTopic } from "@/lib/learning/stats";
 import { chooseTopicThompson } from "@/lib/learning/thompson";
@@ -15,7 +15,13 @@ export async function chooseCase(
   userId: string,
   opts: { topic?: string; excludeItemId?: string },
 ): Promise<CaseChoice> {
-  const outcomes = await loadOutcomes(supabase, userId);
+  const [outcomes, catalog] = await Promise.all([loadOutcomes(supabase, userId), getCatalog()]);
+  const { cases } = catalog;
+  if (cases.length === 0) {
+    throw new Error(
+      "No hay casos en la base. Carga el banco: uv run json/herramientas/cargar_supabase.py",
+    );
+  }
   const stats = topicStats(outcomes);
   const available = cases.filter((c) => c.id !== opts.excludeItemId);
   const pool = available.length > 0 ? available : cases;
@@ -24,7 +30,7 @@ export async function chooseCase(
   let reason: CaseChoice["reason"] = "thompson";
 
   if (opts.topic === "weak") {
-    topic = weakestTopic(stats.filter((s) => practiceTopics().includes(s.topic)))?.topic;
+    topic = weakestTopic(stats.filter((s) => practiceTopics(catalog).includes(s.topic)))?.topic;
     reason = "weak";
   } else if (opts.topic) {
     topic = opts.topic;
@@ -76,7 +82,7 @@ export async function loadStudySession(
     .maybeSingle();
   if (error) throw error;
   if (!data) return null;
-  const item = getItem(data.item_id);
+  const item = await getItem(data.item_id);
   if (!item) return null;
   const messages = ChatHistorySchema.safeParse(data.messages);
   return {

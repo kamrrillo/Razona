@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { buildFallbackDiagram, normalizeModelDiagram, wrapTitle } from "@/lib/ai/diagram";
-import { getAllItems, getItem } from "@/lib/content";
 import { ExplanationDiagramSchema } from "@/lib/schemas/diagram";
+import { BRONQUIOLITIS, fixtureCatalog, fixtureItem } from "../fixtures/catalog";
 
-const item = getItem("caso-bronquiolitis-01");
-if (!item) throw new Error("falta el caso");
+const item = fixtureItem(BRONQUIOLITIS);
+const getAllItems = () => fixtureCatalog().items;
 
 describe("diagrama de respaldo", () => {
   it("cumple el contrato para todos los ítems y termina en la GPC", () => {
@@ -39,9 +39,9 @@ describe("diagrama de respaldo", () => {
   });
 
   it("incluye la opción que eligió la estudiante como descarte", () => {
-    const d = buildFallbackDiagram(item, ["a", "b"]);
+    const d = buildFallbackDiagram(item, ["a", item.correctOptionId]);
     const descartes = d.steps.filter((s) => s.kind === "descarte");
-    expect(descartes).toHaveLength(1); // "b" es la correcta: no se descarta
+    expect(descartes).toHaveLength(1); // la correcta no se descarta
     expect(descartes[0].title).toContain("a)");
   });
 });

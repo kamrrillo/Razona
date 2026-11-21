@@ -1,6 +1,6 @@
 import "server-only";
-import { specialties, specialtyName } from "@/lib/content";
-import { type Outcome, specialtyStats, topicStats, weakestTopic } from "@/lib/learning/stats";
+import { getCatalog } from "@/lib/content";
+import { type Outcome, topicStats, weakestTopic } from "@/lib/learning/stats";
 import { computeStreak, localDay } from "@/lib/learning/streak";
 import type { Progress } from "@/lib/schemas/api";
 import type { ServerSupabase } from "@/lib/supabase/server";
@@ -44,7 +44,7 @@ export async function getProgress(
   userId: string,
   now = new Date(),
 ): Promise<Progress> {
-  const [outcomes, profile, exams] = await Promise.all([
+  const [outcomes, profile, exams, catalog] = await Promise.all([
     loadOutcomes(supabase, userId),
     supabase.from("profiles").select("display_name").eq("id", userId).maybeSingle(),
     supabase
@@ -54,20 +54,33 @@ export async function getProgress(
       .not("finished_at", "is", null)
       .order("finished_at", { ascending: false })
       .limit(5),
+    getCatalog(),
   ]);
   if (exams.error) throw exams.error;
+
+  // Avance por área: cada tema pertenece a un grupo del catálogo (json/temas.json).
+  const groupOfTopic = new Map(catalog.topics.map((t) => [t.name, t.groupId]));
+  const groupName = (id: string) => catalog.groups.find((g) => g.id === id)?.name ?? id;
+  const byGroup = new Map<string, { correct: number; total: number }>();
+  for (const o of outcomes) {
+    const g = groupOfTopic.get(o.topic);
+    if (!g) continue; // historial de contenido anterior al banco
+    const acc = byGroup.get(g) ?? { correct: 0, total: 0 };
+    acc.total += 1;
+    if (o.isCorrect) acc.correct += 1;
+    byGroup.set(g, acc);
+  }
 
   const today = localDay(now);
   const streak = computeStreak(
     outcomes.map((o) => new Date(o.at)),
     now,
   );
-  const stats = topicStats(outcomes);
+  const stats = topicStats(outcomes.filter((o) => groupOfTopic.has(o.topic)));
   const weak = weakestTopic(stats);
   const beforeToday = topicStats(outcomes.filter((o) => localDay(new Date(o.at)) !== today));
   const weakBefore = weak ? beforeToday.find((s) => s.topic === weak.topic) : undefined;
 
-  const bySpec = specialtyStats(outcomes);
   return {
     displayName: profile.data?.display_name ?? "",
     streak,
@@ -76,14 +89,14 @@ export async function getProgress(
       correct: outcomes.filter((o) => o.isCorrect).length,
       answeredToday: outcomes.filter((o) => localDay(new Date(o.at)) === today).length,
     },
-    bySpecialty: specialties.map((s) => {
-      const stat = bySpec.find((b) => b.specialtyId === s.id);
+    bySpecialty: catalog.groups.map((g) => {
+      const stat = byGroup.get(g.id);
       return {
-        specialtyId: s.id,
-        name: s.name,
+        specialtyId: g.id,
+        name: g.name,
         correct: stat?.correct ?? 0,
         total: stat?.total ?? 0,
-        accuracy: stat?.accuracy ?? 0,
+        accuracy: stat && stat.total > 0 ? stat.correct / stat.total : 0,
       };
     }),
     byTopic: stats,
@@ -91,7 +104,7 @@ export async function getProgress(
       ? {
           topic: weak.topic,
           specialtyId: weak.specialtyId,
-          specialtyName: specialtyName(weak.specialtyId),
+          specialtyName: groupName(groupOfTopic.get(weak.topic) ?? weak.specialtyId),
           correct: weak.correct,
           total: weak.total,
           mastery: weak.mastery,

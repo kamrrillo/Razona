@@ -11,6 +11,8 @@ Casos tipo ENARM generados a partir de 55 GPC pediátricas del CENETEC/IMSS: un 
 - `herramientas/validar_casos.py`: valida el esquema y las reglas R1–R6, y comprueba que cada cita exista en su página.
 - `herramientas/gpc.py`: consulta el texto de las guías por página (`toc`, `buscar`, `pag`, `seccion`).
 - `herramientas/test_validar.py`: pruebas (`python3 -m pytest herramientas -q`).
+- `herramientas/cargar_supabase.py`: valida y carga el banco en Supabase (ver abajo).
+- `temas.json`: catálogo de temas (nombre legible y área de cada `sindrome`). Cada síndrome del banco debe aparecer aquí.
 
 ## Uso
 
@@ -37,3 +39,15 @@ python3 herramientas/validar_casos.py casos --gpc gpc_paginas
 - `sindrome` contiene el tema de la guía (p. ej. `bronquiolitis_aguda`), porque ya no son solo los dos síndromes originales.
 
 `pagina` es la página del archivo PDF contada desde 1. En las guías revisadas coincide con el número impreso al pie.
+
+## Cargar en Supabase
+
+Desde la raíz del repo (requiere [uv](https://docs.astral.sh/uv/) y las migraciones aplicadas):
+
+```bash
+pnpm content:load                 # Supabase local (.env.local)
+pnpm content:load:prod            # producción (.env.vercel.local)
+uv run json/herramientas/cargar_supabase.py --dry-run   # solo valida
+```
+
+La carga es idempotente: actualiza solo lo que cambió y marca como `retirado` (no borra) un caso que ya no está en el banco. En la base, cada caso vive en `casos_clinicos.payload` tal cual; la vista `v_casos_app` lo traduce al formato que usan la app web y el agente.

@@ -45,7 +45,7 @@ class NewMessage(BaseModel):
 
 class DiagnosticStart(BaseModel):
     user_id: str
-    n_por_especialidad: int = Field(default=2, ge=1, le=5)
+    n_por_especialidad: int = Field(default=1, ge=1, le=5)  # por área
 
 
 class DiagnosticAnswer(BaseModel):

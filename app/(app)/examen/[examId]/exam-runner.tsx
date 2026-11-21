@@ -3,7 +3,6 @@
 import { ChevronLeft, ChevronRight, Clock, Loader2, MicOff, Wand2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -143,7 +142,6 @@ export function ExamRunner({ examId, title, items, initialAnswers, endsAt, demoM
 
       <Card>
         <CardHeader className="space-y-2">
-          <SampleContentBadge />
           <p className="text-xs text-muted-foreground">
             Reactivo {index + 1} de {items.length} · {item.specialtyName}
           </p>
