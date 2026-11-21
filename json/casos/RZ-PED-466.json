@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-466-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "escarlatina",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,168 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-466-I-R1",
+        "tipo": "flashcard",
+        "concepto": "duracion_antibiotico_escarlatina",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuánto dura el tratamiento antimicrobiano de la escarlatina?",
+        "reverso": "10 días, aunque ceda la fiebre. Excepciones: azitromicina 5 días y penicilina G benzatínica en dosis única.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 21,
+          "fragmento": "El periodo de administración es por 10 días, excepto"
+        }
+      },
+      {
+        "id": "RZ-PED-466-I-R2",
+        "tipo": "flashcard",
+        "concepto": "antimicrobianos_contraindicados",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué grupos de antimicrobianos no deben usarse en la escarlatina?",
+        "reverso": "Tetraciclinas y sulfonamidas, como el trimetoprim con sulfametoxazol.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 20,
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+        }
+      },
+      {
+        "id": "RZ-PED-466-I-R3",
+        "tipo": "flashcard",
+        "concepto": "signos_orales_escarlatina",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué signos en boca y faringe orientan a escarlatina?",
+        "reverso": "Faringe congestiva, máculas rojas puntiformes en úvula y paladar (manchas de Forcheimer) y lengua en frambuesa.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+          "clave": "IMSS-466-11",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 13,
+          "fragmento": "Maculas puntiformes rojas en la úvula y en el"
+        }
+      },
+      {
+        "id": "RZ-PED-466-I-R4",
+        "tipo": "diagrama",
+        "concepto": "eleccion_antimicrobiano_escarlatina",
+        "para_errores": [
+          "razonamiento",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con escarlatina\"] --> B{\"¿Alergia a la penicilina?\"}\n  B -->|\"No\"| C[\"Por preferencia: penicilina V si existe, amoxicilina o penicilina G benzatínica\"]\n  C --> D[\"Orales por 10 días; penicilina G benzatínica en una sola dosis\"]\n  B -->|\"Sí\"| E{\"¿La reacción fue anafiláctica?\"}\n  E -->|\"No\"| F[\"Cefalosporina de primera generación\"]\n  E -->|\"Sí\"| G[\"Eritromicina como alternativa\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+            "clave": "IMSS-466-11",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 21,
+            "fragmento": "se mencionaran en orden de preferencia de uso"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+            "clave": "IMSS-466-11",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 21,
+            "fragmento": "El periodo de administración es por 10 días, excepto"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+            "clave": "IMSS-466-11",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 20,
+            "fragmento": "cuando el paciente no haya presentado reacción"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+            "clave": "IMSS-466-11",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 20,
+            "fragmento": "penicilina, la eritromicina puede ser considerada como"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-466-I-R5",
+        "tipo": "resaltado",
+        "concepto": "sin_alergias",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "sin alergias conocidas",
+        "motivo": "Sin alergia a la penicilina no hay razón para usar alternativas: se elige un betalactámico de primera línea."
+      },
+      {
+        "id": "RZ-PED-466-I-R6",
+        "tipo": "resaltado",
+        "concepto": "lengua_frambuesa_palidez_peribucal",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "lengua con papilas rojas y prominentes, y palidez alrededor de la boca",
+        "motivo": "Lengua en frambuesa y palidez peribucal son signos de escarlatina, no de un exantema viral: requiere antibiótico."
+      },
+      {
+        "id": "RZ-PED-466-I-R7",
+        "tipo": "resaltado",
+        "concepto": "contacto_estreptococo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Su hermano tuvo faringitis estreptocócica la semana pasada",
+        "motivo": "El contacto con personas infectadas por estreptococo aumenta el riesgo de escarlatina y apoya el origen bacteriano."
+      },
+      {
+        "id": "RZ-PED-466-I-R8",
+        "tipo": "imagen",
+        "concepto": "exantema_escarlatiniforme",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Scarlet_fever_rash.jpg/960px-Scarlet_fever_rash.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Scarlet_fever_rash.jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Whispyhistory",
+        "licencia": "CC BY-SA 4.0",
+        "descripcion": "Exantema de escarlatina en cuello y tórax de un niño de 8 años de piel oscura, con faringitis estreptocócica: pápulas finas que dan aspecto de piel de gallina y textura áspera; en piel oscura el eritema casi no se ve.",
+        "archivo": "assets/RZ-PED-466-I-R8.jpg",
+        "sha256": "0541b39bdb7873b04b4db70a6774dc4a57b2c5aa9d4720e26a98e053da631514"
+      }
+    ]
   },
   {
     "id": "RZ-PED-466-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "escarlatina",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-466-I",
@@ -263,7 +419,34 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-466-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "anafilaxia_a_amoxicilina",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "edema laríngeo y urticaria generalizada minutos después de una dosis de amoxicilina, que requirió epinefrina en urgencias",
+        "motivo": "Fue una reacción anafiláctica: descarta penicilinas y también cefalosporinas; la alternativa es la eritromicina."
+      },
+      {
+        "id": "RZ-PED-466-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "signos_de_escarlatina",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "acentuación en pliegues del codo (líneas de Pastia) y lengua en frambuesa",
+        "motivo": "Son signos típicos de escarlatina: hay que tratar al estreptococo para prevenir la fiebre reumática, pese a la alergia."
+      }
+    ]
   }
 ]

@@ -16,7 +16,131 @@
    ["lectura", "Usa la dosis que la guía indica para la madre durante la gestación y la lactancia.", ["E"], ["600 UI", "dosis de lactancia"], "¿A quién se refiere la dosis de 600 UI en la guía?", "La dosis de 600 UI de vitamina D se recomienda a la madre durante la gestación y la lactancia; el lactante recibe 400 UI/día.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "recomienda la administración de 600 UI de vitamina"],
    ["dato_omitido", "Pide 25(OH)D sin considerar que el lactante no pertenece a un grupo de riesgo; la profilaxis en él no depende del nivel sérico.", ["D"], ["medir niveles", "confirmar deficiencia", "laboratorio"], "¿A qué niños recomienda la guía medir 25(OH)D? ¿Es este uno de ellos?", "En los grupos de riesgo se recomienda evaluar la vitamina D con 25(OH)D; de 0 a 6 meses se dan 400 UI/día desde los primeros días de vida, independientemente de la forma de alimentación.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "De 0 a 6 meses: 400 UI/día desde los primeros"],
    ["conocimiento", "Cree que la leche materna aporta suficiente vitamina D.", ["B"], ["leche materna completa", "no necesita", "trae todo"], "¿Cuánta vitamina D contiene la leche materna y alcanza para el lactante?", "La leche materna contiene de 5 a 80 UI/L de vitamina D, cantidad insuficiente para sostener el aporte mínimo del lactante.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 17, "D, que es insuficiente para sostener un aporte"],
-   ["razonamiento", "Liga la suplementación al cambio de dieta y deja sin cubrir los primeros meses.", ["C"], ["a los 6 meses", "con la papilla", "más adelante"], "¿Desde cuándo indica la guía la vitamina D al lactante amamantado?", "El lactante alimentado al seno materno debe recibir 400 UI/día de vitamina D desde los primeros días de vida.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "D desde los primeros días de vida y deberá"]]},
+   ["razonamiento", "Liga la suplementación al cambio de dieta y deja sin cubrir los primeros meses.", ["C"], ["a los 6 meses", "con la papilla", "más adelante"], "¿Desde cuándo indica la guía la vitamina D al lactante amamantado?", "El lactante alimentado al seno materno debe recibir 400 UI/día de vitamina D desde los primeros días de vida.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "D desde los primeros días de vida y deberá"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "vitamina_d_lactante_amamantado",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué dosis de vitamina D recibe el lactante alimentado al seno materno y desde cuándo?",
+    "reverso": "400 UI/día, iniciadas en los primeros días de vida y mantenidas mientras dure la lactancia.",
+    "cita": [
+     "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+     18,
+     "suplemento diario de 400 UI/día"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "contenido_vitamina_d_leche_materna",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Alcanza la vitamina D de la leche materna para cubrir al lactante?",
+    "reverso": "No. Contiene 5 a 80 UI/L, insuficiente para un aporte mínimo en el lactante.",
+    "cita": [
+     "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+     17,
+     "La leche materna contiene 5 a 80 UI /L de vitamina"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "dosis_600_ui_madre",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A quién recomienda la guía 600 UI de vitamina D durante la gestación y la lactancia?",
+    "reverso": "A la madre, para prevenir el raquitismo congénito. No es la dosis del lactante.",
+    "cita": [
+     "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+     18,
+     "recomienda la administración de 600 UI de vitamina"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "dosis_preventiva_vitamina_d_primer_anio",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Lactante: prevención de raquitismo carencial\"] --> B{\"¿Pertenece a un grupo de riesgo de deficiencia de vitamina D?\"}\n  B -->|\"Sí\"| C[\"Evaluar 25 OH D sérica y ajustar la dosis\"]\n  B -->|\"No\"| D{\"¿Nació prematuro de 32 semanas o menos?\"}\n  D -->|\"Sí\"| E[\"800 UI/día desde los primeros días de vida\"]\n  D -->|\"No\"| F{\"¿Edad de 0 a 6 meses?\"}\n  F -->|\"Sí\"| G[\"400 UI/día desde los primeros días, sin importar la alimentación\"]\n  F -->|\"No, 6 a 12 meses\"| H[\"400 a 600 UI/día según la vitamina D de la dieta\"]",
+    "citas": [
+     [
+      "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+      18,
+      "En los grupos de riesgo, se recomienda evaluar el"
+     ],
+     [
+      "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+      19,
+      "suplementación con 800 UI/día desde los"
+     ],
+     [
+      "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+      18,
+      "De 0 a 6 meses: 400 UI/día desde los primeros"
+     ],
+     [
+      "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+      18,
+      "De 6 a 12 meses: 400–600 UI/día, dependiendo"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "lactancia_materna_exclusiva",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Se alimenta con lactancia materna exclusiva",
+    "motivo": "Al ser amamantado de forma exclusiva, su aporte de vitamina D es insuficiente y necesita suplemento desde ya."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_factores_de_riesgo",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No tiene enfermedades ni toma medicamentos",
+    "motivo": "Sin comorbilidad ni fármacos no es grupo de riesgo: no necesita medir 25(OH)D antes de la profilaxis."
+   },
+   {
+    "n": 7,
+    "tipo": "imagen",
+    "concepto": "radiografia_raquitismo",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/RicketsXray.jpg/960px-RicketsXray.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:RicketsXray.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Frank Gaillard",
+    "licencia": "CC BY-SA 3.0",
+    "descripcion": "Radiografía de ambas manos y muñecas de un niño con raquitismo: en el borde inferior, los extremos distales de radio y cúbito se ven ensanchados y ahuecados (metáfisis en copa). Es el daño que busca prevenir la profilaxis con vitamina D.",
+    "archivo": "assets/RZ-PED-459-I-R7.jpg",
+    "sha256": "588897ae8d9ed56f953f3c0cd9c251e020f0388c113264bf757d99de7e8843cf"
+   }
+  ]},
  {"t": "V1",
   "vineta": "Femenino de 3 años con epilepsia focal en tratamiento con carbamazepina desde hace 18 meses, con buen control de crisis. Se alimenta con dieta familiar, pasa la mayor parte del día en interiores y no recibe suplementos. Exploración sin deformidades óseas. Acude a revisión con pediatría.",
   "pregunta": "¿Cuál es la conducta más adecuada respecto a la vitamina D?",
@@ -32,5 +156,41 @@
    ["dato_omitido", "Usa la dosis de la población general sin considerar el anticonvulsivo crónico.", ["A"], ["400 UI", "dosis habitual", "estándar"], "¿Qué medicamento toma la paciente y cómo modifica la dosis de vitamina D?", "Los niños que toman anticonvulsivos de manera permanente requieren dosis mayores de 400 UI/día de vitamina D.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 17, "medicamentos anticonvulsivos requieren dosis"],
    ["razonamiento", "Condiciona la prevención a que ya exista daño óseo.", ["B"], ["sin deformidades", "no hay raquitismo", "está bien"], "¿La suplementación busca tratar el raquitismo o prevenirlo en un grupo de riesgo?", "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D con 25(OH)D, sin esperar manifestaciones clínicas.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "En los grupos de riesgo, se recomienda evaluar el"],
    ["conocimiento", "Desconoce que la dosis profiláctica debe considerar factores como la exposición al sol y la terapia médica, no sustituirse por el sol.", ["D"], ["sol", "exposición", "natural"], "¿Qué factores considera la guía para definir la dosis profiláctica de vitamina D?", "La dosis profiláctica considera edad, peso, exposición al sol, hábitos alimentarios y estilo de vida; en grupos de riesgo depende de la 25(OH)D, la comorbilidad y la terapia médica.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "general debe considerar: la edad, el peso corporal, el"],
-   ["razonamiento", "Pospone la evaluación hasta tener manifestaciones clínicas.", ["E"], ["esperar signos", "cuando aparezca", "vigilar"], "En un grupo de riesgo, ¿cuándo recomienda la guía evaluar la vitamina D?", "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D por medio de los niveles séricos de 25(OH)D.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "En los grupos de riesgo, se recomienda evaluar el"]]}
+   ["razonamiento", "Pospone la evaluación hasta tener manifestaciones clínicas.", ["E"], ["esperar signos", "cuando aparezca", "vigilar"], "En un grupo de riesgo, ¿cuándo recomienda la guía evaluar la vitamina D?", "En los grupos de riesgo se recomienda evaluar el estado de la vitamina D por medio de los niveles séricos de 25(OH)D.", "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial", 18, "En los grupos de riesgo, se recomienda evaluar el"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "anticonvulsivo_cronico",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "epilepsia focal en tratamiento con carbamazepina desde hace 18 meses",
+    "motivo": "El anticonvulsivo permanente la pone en grupo de riesgo: requiere más de 400 UI/día y evaluar 25(OH)D."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "poca_exposicion_solar",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pasa la mayor parte del día en interiores y no recibe suplementos",
+    "motivo": "Casi no toma el sol y no recibe vitamina D: suma riesgo y el sol no basta como única medida."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_deformidades_no_descarta",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Exploración sin deformidades óseas",
+    "motivo": "Una exploración normal no excluye deficiencia: en grupos de riesgo se evalúa la 25(OH)D sin esperar signos."
+   }
+  ]}
  ]}
