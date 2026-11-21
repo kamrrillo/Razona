@@ -12,7 +12,18 @@ Formato compacto por guía:
   ]
 }
 Una cita sin respaldo se escribe como ["SIN_RESPALDO_GPC", motivo] en lugar de seccion, pagina, fragmento.
+
+Recursos de aprendizaje (opcional): cada caso puede llevar "rec", una lista de objetos
+{"n": 1, "tipo": ..., "concepto": ..., "para_errores": [...], "mostrar": "despues_de_responder", ...campos del tipo}
+con las citas en formato compacto [seccion, pagina, fragmento] ("cita" o, en diagramas, "citas").
+Se expanden a "recursos" con id <id del caso>-R<n> y estado "borrador"; esos casos pasan a la versión
+VERSION_REC con fecha FECHA_REC.
+
+Uso: construir_casos.py [--solo NNN ...] [--salida DIR]
+  --solo    escribe solo esas guías (la rotación de letras se sigue calculando con todas las fuentes)
+  --salida  directorio de salida (por omisión, casos/)
 """
+import argparse
 import glob
 import random
 import json
@@ -25,6 +36,15 @@ LICENCIA = ("Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido cl
             "CENETEC/IMSS, autorización de uso pendiente (H11)")
 FECHA = "2026-11-20"
 VERSION = "0.1.0"
+VERSION_REC = "0.2.0"
+FECHA_REC = "2026-11-21"
+CAMPOS_REC = {
+    "flashcard": ["frente", "reverso", "cita"],
+    "diagrama": ["codigo", "citas"],
+    "resaltado": ["fragmento", "motivo"],
+    "tabla": ["columnas", "filas", "cita"],
+    "imagen": ["url_imagen", "url_pagina", "fuente", "autor", "licencia", "descripcion", "archivo", "sha256"],
+}
 
 
 def cita(f, resto):
@@ -32,6 +52,23 @@ def cita(f, resto):
         return {"estado": "SIN_RESPALDO_GPC", "motivo": resto[1]}
     seccion, pagina, fragmento = resto
     return {"guia": f["guia"], "clave": f["clave"], "seccion": seccion, "pagina": pagina, "fragmento": fragmento}
+
+
+def recurso(f, caso_id, r):
+    """Expande un recurso compacto. Los campos que no pertenecen al tipo se conservan
+    para que el esquema (additionalProperties: false) los rechace en lugar de perderlos en silencio."""
+    out = {"id": f"{caso_id}-R{r['n']}", "tipo": r["tipo"], "concepto": r["concepto"],
+           "para_errores": r["para_errores"], "mostrar": r["mostrar"], "estado": "borrador"}
+    for k, v in r.items():
+        if k in ("n", "tipo", "concepto", "para_errores", "mostrar"):
+            continue
+        if k == "cita":
+            v = cita(f, v)
+        elif k == "citas" and isinstance(v, list):
+            v = [cita(f, x) for x in v]
+        out[k] = v
+    orden = list(out)[:6] + [k for k in CAMPOS_REC.get(r["tipo"], []) if k in out]
+    return {k: out[k] for k in orden + [k for k in out if k not in orden]}
 
 
 def baraja(c, semilla, destino):
@@ -58,9 +95,11 @@ def expande(f, contador):
         indice = c["t"] == "I"
         c = baraja(c, f"RZ-PED-{num}-{c['t']}", "ABCDE"[contador[0] % 5])
         contador[0] += 1
-        out.append({
-            "id": f"RZ-PED-{num}-{c['t']}",
-            "version": VERSION,
+        cid = f"RZ-PED-{num}-{c['t']}"
+        rec = c.get("rec")
+        caso = {
+            "id": cid,
+            "version": VERSION_REC if rec else VERSION,
             "sindrome": f["sindrome"],
             "tipo": "indice" if indice else "variante",
             "caso_indice_id": None if indice else f"RZ-PED-{num}-I",
@@ -76,13 +115,21 @@ def expande(f, contador):
                 "explicacion": r[5], "cita_gpc": cita(f, r[6:])} for r in c["rub"]],
             "autor": "claude",
             "estado": "borrador",
-            "fecha": FECHA,
+            "fecha": FECHA_REC if rec else FECHA,
             "licencia": LICENCIA,
-        })
+        }
+        if rec:
+            caso["recursos"] = [recurso(f, cid, r) for r in rec]
+        out.append(caso)
     return num, out
 
 
-def main(rutas):
+def main(argv):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--solo", nargs="*", default=None)
+    ap.add_argument("--salida", default=os.path.join(RAIZ, "casos"))
+    a = ap.parse_args(argv)
+    os.makedirs(a.salida, exist_ok=True)
     # Siempre se procesan todas las fuentes en orden, para que la letra correcta
     # de cada caso sea estable y quede repartida por igual entre A y E.
     rutas = sorted(glob.glob(os.path.join(RAIZ, "fuentes", "*.json")))
@@ -91,9 +138,13 @@ def main(rutas):
         with open(r, encoding="utf-8") as fh:
             f = json.load(fh)
         num, casos = expande(f, contador)
-        destino = os.path.join(RAIZ, "casos", f"RZ-PED-{num}.json")
-        with open(destino, "w", encoding="utf-8") as fh:
+        if a.solo and num not in a.solo:
+            continue
+        destino = os.path.join(a.salida, f"RZ-PED-{num}.json")
+        tmp = destino + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
             json.dump(casos, fh, ensure_ascii=False, indent=2)
+        os.replace(tmp, destino)
         print(f"{r} -> {destino} ({len(casos)} casos)")
 
 

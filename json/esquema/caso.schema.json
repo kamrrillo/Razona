@@ -64,16 +64,94 @@
     "autor": {"const": "claude"},
     "estado": {"enum": ["borrador", "en_revision", "revisado_medico", "retirado"]},
     "fecha": {"type": "string", "pattern": "^20[0-9]{2}-[01][0-9]-[0-3][0-9]$"},
-    "licencia": {"type": "string", "minLength": 10}
+    "licencia": {"type": "string", "minLength": 10},
+    "recursos": {
+      "type": "array", "minItems": 1,
+      "description": "Recursos de aprendizaje que se muestran después de responder y complementan la explicación del tutor.",
+      "items": {"$ref": "#/$defs/recurso"}
+    }
   },
   "allOf": [
     {"if": {"properties": {"tipo": {"const": "indice"}}},
-     "then": {"properties": {"caso_indice_id": {"type": "null"}, "id": {"pattern": "-I$"}}}},
+     "then": {"properties": {"caso_indice_id": {"type": "null"}, "id": {"pattern": "-I$"},
+       "recursos": {
+         "allOf": [
+           {"contains": {"properties": {"tipo": {"const": "flashcard"}}}, "minContains": 2, "maxContains": 3},
+           {"contains": {"properties": {"tipo": {"const": "diagrama"}}}, "minContains": 1, "maxContains": 1},
+           {"contains": {"properties": {"tipo": {"const": "resaltado"}}}, "minContains": 1, "maxContains": 3},
+           {"contains": {"properties": {"tipo": {"const": "imagen"}}}, "minContains": 0, "maxContains": 2},
+           {"contains": {"properties": {"tipo": {"const": "tabla"}}}, "minContains": 0, "maxContains": 1}
+         ]}}}},
     {"if": {"properties": {"tipo": {"const": "variante"}}},
-     "then": {"properties": {"caso_indice_id": {"type": "string", "pattern": "^RZ-PED-[0-9]{3}-I$"}, "id": {"pattern": "-V1$"}}}}
+     "then": {"properties": {"caso_indice_id": {"type": "string", "pattern": "^RZ-PED-[0-9]{3}-I$"}, "id": {"pattern": "-V1$"},
+       "recursos": {"maxItems": 3, "items": {"properties": {"tipo": {"const": "resaltado"}}}}}}}
   ],
   "$defs": {
     "opcion": {"type": "string", "minLength": 2, "maxLength": 250},
+    "rec_id": {"type": "string", "pattern": "^RZ-PED-[0-9]{3}-(I|V1)-R[0-9]+$"},
+    "rec_concepto": {"type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"},
+    "rec_errores": {"type": "array", "minItems": 1, "uniqueItems": true,
+                    "items": {"enum": ["lectura", "dato_omitido", "razonamiento", "conocimiento"]}},
+    "rec_mostrar": {"const": "despues_de_responder"},
+    "rec_estado": {"enum": ["borrador", "en_revision", "revisado_medico", "retirado"]},
+    "recurso": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false,
+         "required": ["id", "tipo", "concepto", "para_errores", "mostrar", "estado", "frente", "reverso", "cita"],
+         "properties": {
+           "id": {"$ref": "#/$defs/rec_id"}, "tipo": {"const": "flashcard"},
+           "concepto": {"$ref": "#/$defs/rec_concepto"}, "para_errores": {"$ref": "#/$defs/rec_errores"},
+           "mostrar": {"$ref": "#/$defs/rec_mostrar"}, "estado": {"$ref": "#/$defs/rec_estado"},
+           "frente": {"type": "string", "minLength": 10, "maxLength": 250},
+           "reverso": {"type": "string", "minLength": 5, "pattern": "^\\s*\\S+(\\s+\\S+){0,24}\\s*$",
+                       "description": "Máximo 25 palabras."},
+           "cita": {"$ref": "#/$defs/cita"}}},
+        {"type": "object", "additionalProperties": false,
+         "required": ["id", "tipo", "concepto", "para_errores", "mostrar", "estado", "codigo", "citas"],
+         "properties": {
+           "id": {"$ref": "#/$defs/rec_id"}, "tipo": {"const": "diagrama"},
+           "concepto": {"$ref": "#/$defs/rec_concepto"}, "para_errores": {"$ref": "#/$defs/rec_errores"},
+           "mostrar": {"$ref": "#/$defs/rec_mostrar"}, "estado": {"$ref": "#/$defs/rec_estado"},
+           "codigo": {"type": "string", "minLength": 20, "maxLength": 3000,
+                      "description": "Mermaid flowchart TD; máximo 12 nodos, texto de nodos entre comillas."},
+           "citas": {"type": "array", "minItems": 1, "maxItems": 4, "items": {"$ref": "#/$defs/cita"}}}},
+        {"type": "object", "additionalProperties": false,
+         "required": ["id", "tipo", "concepto", "para_errores", "mostrar", "estado", "fragmento", "motivo"],
+         "properties": {
+           "id": {"$ref": "#/$defs/rec_id"}, "tipo": {"const": "resaltado"},
+           "concepto": {"$ref": "#/$defs/rec_concepto"},
+           "para_errores": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["lectura", "dato_omitido"]}},
+           "mostrar": {"$ref": "#/$defs/rec_mostrar"}, "estado": {"$ref": "#/$defs/rec_estado"},
+           "fragmento": {"type": "string", "minLength": 3, "maxLength": 300,
+                         "description": "Texto literal de la viñeta del mismo caso."},
+           "motivo": {"type": "string", "minLength": 20, "maxLength": 400}}},
+        {"type": "object", "additionalProperties": false,
+         "required": ["id", "tipo", "concepto", "para_errores", "mostrar", "estado", "columnas", "filas", "cita"],
+         "properties": {
+           "id": {"$ref": "#/$defs/rec_id"}, "tipo": {"const": "tabla"},
+           "concepto": {"$ref": "#/$defs/rec_concepto"}, "para_errores": {"$ref": "#/$defs/rec_errores"},
+           "mostrar": {"$ref": "#/$defs/rec_mostrar"}, "estado": {"$ref": "#/$defs/rec_estado"},
+           "columnas": {"type": "array", "minItems": 2, "maxItems": 6, "items": {"type": "string", "minLength": 1}},
+           "filas": {"type": "array", "minItems": 2, "maxItems": 10,
+                     "items": {"type": "array", "minItems": 2, "maxItems": 6, "items": {"type": "string", "minLength": 1}}},
+           "cita": {"$ref": "#/$defs/cita"}}},
+        {"type": "object", "additionalProperties": false,
+         "required": ["id", "tipo", "concepto", "para_errores", "mostrar", "estado", "url_imagen", "url_pagina",
+                      "fuente", "autor", "licencia", "descripcion", "archivo", "sha256"],
+         "properties": {
+           "id": {"$ref": "#/$defs/rec_id"}, "tipo": {"const": "imagen"},
+           "concepto": {"$ref": "#/$defs/rec_concepto"}, "para_errores": {"$ref": "#/$defs/rec_errores"},
+           "mostrar": {"$ref": "#/$defs/rec_mostrar"}, "estado": {"$ref": "#/$defs/rec_estado"},
+           "url_imagen": {"type": "string", "pattern": "^https://"},
+           "url_pagina": {"type": "string", "pattern": "^https://"},
+           "fuente": {"type": "string", "minLength": 3},
+           "autor": {"type": "string", "minLength": 2},
+           "licencia": {"type": "string", "minLength": 3},
+           "descripcion": {"type": "string", "minLength": 20, "maxLength": 400},
+           "archivo": {"type": "string", "pattern": "^assets/RZ-PED-[0-9]{3}-(I|V1)-R[0-9]+\\.(png|jpg|jpeg|gif|webp|svg)$"},
+           "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+      ]
+    },
     "cita": {
       "oneOf": [
         {
