@@ -6,6 +6,7 @@ Para retomar: escribir `rec` de las guías pendientes, `python3 herramientas/con
 
 ## Terminadas
 - 032 (piloto)
+- 261 262 269 271 275
 
 ## En curso (repartidas en 11 grupos)
 029 044 062 109 137 · 156 230 244 248 258 · 261 262 269 271 275 · 334 350 361 362 366 ·

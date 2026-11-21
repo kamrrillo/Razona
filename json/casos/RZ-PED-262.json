@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-262-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "ictericia_neonatal",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -132,12 +132,138 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-262-I-R1",
+        "tipo": "flashcard",
+        "concepto": "uso_escala_kramer",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Para qué recomienda la guía usar la escala de Kramer en el recién nacido?",
+        "reverso": "Solo para saber si hay o no ictericia. No predice el nivel de bilirrubina; si hay ictericia se mide la sérica.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+          "clave": "GPC-IMSS-262-19",
+          "seccion": "2.1 Diagnóstico",
+          "pagina": 18,
+          "fragmento": "Se recomienda usar la escala de Kramer solo para determinar la"
+        }
+      },
+      {
+        "id": "RZ-PED-262-I-R2",
+        "tipo": "flashcard",
+        "concepto": "criterios_bilirrubinometro_transcutaneo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿En qué recién nacidos se puede usar el bilirrubinómetro transcutáneo?",
+        "reverso": "En los de 35 semanas de gestación o más y con más de 24 horas de vida.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+          "clave": "GPC-IMSS-262-19",
+          "seccion": "2.2 Auxiliares diagnósticos",
+          "pagina": 19,
+          "fragmento": "con edad gestacional de ≥35 semanas y edad postnatal"
+        }
+      },
+      {
+        "id": "RZ-PED-262-I-R3",
+        "tipo": "flashcard",
+        "concepto": "interpretar_por_edad_en_horas",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Con qué se decide el tratamiento de la hiperbilirrubinemia neonatal?",
+        "reverso": "Con la cifra de bilirrubina interpretada según la edad postnatal en horas, usando los cuadros de umbrales. No con la apariencia.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+          "clave": "GPC-IMSS-262-19",
+          "seccion": "2.2 Auxiliares diagnósticos",
+          "pagina": 20,
+          "fragmento": "interpretar de acuerdo a la edad postnatal en horas"
+        }
+      },
+      {
+        "id": "RZ-PED-262-I-R4",
+        "tipo": "diagrama",
+        "concepto": "medicion_bilirrubina_segun_edad",
+        "para_errores": [
+          "conocimiento",
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Recién nacido con ictericia visible\"] --> B{\"¿Apareció en las primeras 24 horas de vida?\"}\n  B -->|\"Sí\"| C[\"Bilirrubina sérica en menos de 2 horas; repetir cada 6 horas hasta bajar del umbral\"]\n  B -->|\"No\"| D[\"Medir bilirrubina dentro de las siguientes 6 horas\"]\n  D --> E{\"¿35 semanas o más y transcutáneo disponible?\"}\n  E -->|\"No\"| F[\"Bilirrubina sérica\"]\n  E -->|\"Sí\"| G{\"¿Transcutánea mayor de 14.7 mg/dL?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| H[\"Interpretar según edad en horas\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+            "clave": "GPC-IMSS-262-19",
+            "seccion": "2.2 Auxiliares diagnósticos",
+            "pagina": 20,
+            "fragmento": "Mida y registre el nivel de bilirrubina sérica dentro de las"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+            "clave": "GPC-IMSS-262-19",
+            "seccion": "2.2 Auxiliares diagnósticos",
+            "pagina": 21,
+            "fragmento": "dentro de las siguientes 6 horas de haberse detectado la"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+            "clave": "GPC-IMSS-262-19",
+            "seccion": "2.2 Auxiliares diagnósticos",
+            "pagina": 19,
+            "fragmento": "con edad gestacional de ≥35 semanas y edad postnatal"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Ictericia Neonatal",
+            "clave": "GPC-IMSS-262-19",
+            "seccion": "2.2 Auxiliares diagnósticos",
+            "pagina": 20,
+            "fragmento": "indica un nivel de bilirrubina mayor de 14.7 mg/dl"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-262-I-R5",
+        "tipo": "resaltado",
+        "concepto": "ictericia_antes_24_horas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "A las 20 horas de vida la enfermera observa coloración amarilla",
+        "motivo": "Ictericia en las primeras 24 horas: no es fisiológica y obliga a medir la bilirrubina sérica de forma urgente."
+      },
+      {
+        "id": "RZ-PED-262-I-R6",
+        "tipo": "resaltado",
+        "concepto": "prematuro_34_semanas",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "34 semanas de gestación",
+        "motivo": "Con menos de 35 semanas el transcutáneo no es confiable: siempre se mide la bilirrubina sérica."
+      }
+    ]
   },
   {
     "id": "RZ-PED-262-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "ictericia_neonatal",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-262-I",
@@ -268,7 +394,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-262-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "ictericia_despues_24_horas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "a las 60 horas de vida",
+        "motivo": "Ictericia visible después de las 24 horas: se mide la bilirrubina dentro de las siguientes 6 horas, sin egresar a ciegas."
+      },
+      {
+        "id": "RZ-PED-262-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "termino_39_semanas",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Recién nacida de 39 semanas de gestación",
+        "motivo": "Con 35 semanas o más y más de 24 horas de vida puede usarse el bilirrubinómetro transcutáneo."
+      },
+      {
+        "id": "RZ-PED-262-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "transcutaneo_disponible",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "El hospital cuenta con bilirrubinómetro transcutáneo",
+        "motivo": "Hay transcutáneo disponible; solo si marca más de 14.7 mg/dL se confirma con bilirrubina sérica."
+      }
+    ]
   }
 ]
