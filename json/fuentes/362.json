@@ -99,8 +99,125 @@
      44,
      "primeras 12 horas de vida también deben recibir la"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "hepatitis_b_sin_importar_peso",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿El peso o la edad gestacional condicionan la vacuna de hepatitis B en el prematuro?",
+    "reverso": "No. Se aplica al nacer o lo antes posible a todos, sin importar edad gestacional ni peso al nacer.",
+    "cita": [
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "todos los niños, independientemente de la edad"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "hbsag_materno_desconocido",
+    "para_errores": [
+     "dato_omitido",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué se hace si el HBsAg materno no puede demostrarse negativo en las primeras 12 horas de vida?",
+    "reverso": "Se vacuna contra hepatitis B sin importar el peso. En hijos de madres portadoras la transmisión llega a 90 %.",
+    "cita": [
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "primeras 12 horas de vida también deben recibir la"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "umbral_bcg_prematuro",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A partir de cuándo recomienda la guía aplicar la BCG al prematuro?",
+    "reverso": "A partir de 2,000 g de peso o con más de 34 semanas de gestación.",
+    "cita": [
+     "2.3 Tamizaje y Vacunación",
+     44,
+     "los 2000 gr de peso o > 34 SDG"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "vacunacion_del_prematuro",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Prematuro sano hospitalizado\"] --> B{\"¿HBsAg materno demostrado negativo en las primeras 12 horas?\"}\n  B -->|\"No o se desconoce\"| C[\"Vacuna de hepatitis B sin esperar, sin importar el peso\"]\n  B -->|\"Sí\"| D[\"Vacuna de hepatitis B al nacer o lo antes posible\"]\n  C --> E{\"¿Pesa 2,000 g o más, o tiene más de 34 semanas?\"}\n  D --> E\n  E -->|\"Sí\"| F[\"Aplicar BCG\"]\n  E -->|\"No\"| G[\"Diferir la BCG y revalorar peso y edad gestacional\"]",
+    "citas": [
+     [
+      "2.3 Tamizaje y Vacunación",
+      44,
+      "riesgo de transmisión de infección aumenta al 90%"
+     ],
+     [
+      "2.3 Tamizaje y Vacunación",
+      44,
+      "primeras 12 horas de vida también deben recibir la"
+     ],
+     [
+      "2.3 Tamizaje y Vacunación",
+      44,
+      "todos los niños, independientemente de la edad"
+     ],
+     [
+      "2.3 Tamizaje y Vacunación",
+      44,
+      "los 2000 gr de peso o > 34 SDG"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_gestacional_y_peso",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "32 semanas de gestación, peso al nacer 1,650 g",
+    "motivo": "No alcanza 2,000 g ni más de 34 semanas: la BCG se difiere. La hepatitis B no depende del peso."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "hbsag_no_realizado",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "no se le realizó determinación de antígeno de superficie de hepatitis B (HBsAg)",
+    "motivo": "Si el HBsAg materno no se demuestra negativo, la guía indica vacunar contra hepatitis B sin importar el peso."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "horas_de_vida",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Tiene 10 horas de vida",
+    "motivo": "Está dentro de las primeras 12 horas sin HBsAg materno negativo. Esperar un resultado retrasa la vacuna sin motivo."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Recién nacida de 30 semanas de gestación, peso al nacer 1,300 g, que recibió la vacuna de hepatitis B al nacimiento. Hoy tiene 5 semanas de vida (35 semanas de edad corregida), pesa 2,050 g, regula temperatura en cuna, respira al aire ambiente y se alimenta por succión. Se planea su egreso en los próximos días. Aún no ha recibido BCG.",
@@ -196,7 +313,41 @@
      44,
      "los 2000 gr de peso o > 34 SDG"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "peso_actual",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pesa 2,050 g",
+    "motivo": "Ya supera los 2,000 g que la guía fija para aplicar la BCG al prematuro."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "edad_corregida",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "35 semanas de edad corregida",
+    "motivo": "Tiene más de 34 semanas. A esa edad y con más de 2,000 g la BCG da buena respuesta inmune."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_bcg_antes_del_egreso",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Se planea su egreso en los próximos días. Aún no ha recibido BCG",
+    "motivo": "Ya cumple el criterio de la guía. No hay razón para posponer la vacuna hasta después del egreso."
+   }
+  ]}
  ]
 }
