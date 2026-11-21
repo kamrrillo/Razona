@@ -99,8 +99,182 @@
      22,
      "De rutina no esta indicado la cistouretrografia"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "momento_ultrasonido_postnatal",
+    "para_errores": [
+     "conocimiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Un recién nacido con hidronefrosis prenatal, ¿cuándo debe tener su ultrasonido de seguimiento?",
+    "reverso": "A los 7 días de nacido; después, el seguimiento depende de los hallazgos.",
+    "cita": [
+     "4.4 Pruebas diagnósticas",
+     22,
+     "por USG prenatal deben tener seguimiento a los 7 dias"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "cistouretrografia_no_rutina",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Está indicada la cistouretrografía miccional de rutina en un lactante con ultrasonido postnatal normal?",
+    "reverso": "No. Si el ultrasonido de seguimiento es anormal, se interconsulta a urología para valorar el cistograma.",
+    "cita": [
+     "4.4 Pruebas diagnósticas",
+     22,
+     "De rutina no esta indicado la cistouretrografia"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "riesgo_por_grado",
+    "para_errores": [
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué riesgo de malformación de vías urinarias tiene cada grado de hidronefrosis prenatal?",
+    "reverso": "Leve 11.9 %, moderada 45.1 % y grave 88.3 %, sin importar el trimestre.",
+    "cita": [
+     "4.4 Pruebas diagnósticas",
+     21,
+     "El riesgo para malformación de vías urinarias de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "seguimiento_hidronefrosis_prenatal",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido con hidronefrosis prenatal\"] --> B[\"Ultrasonido renal y vesical al cumplir 7 días\"]\n  B --> C{\"¿Hidronefrosis, dilatación ureteral o anormalidad renal o vesical?\"}\n  C -->|\"Sí\"| D[\"Seguimiento de acuerdo con los hallazgos\"]\n  C -->|\"No\"| E[\"Sin cistouretrografía de rutina\"]\n  E --> F[\"Nuevo ultrasonido a las 4 a 6 semanas\"]\n  F --> G{\"¿Ultrasonido normal?\"}\n  G -->|\"Sí\"| H[\"Vigilar y repetir al año de edad\"]\n  G -->|\"No\"| I[\"Interconsulta a urología para valorar cistograma\"]",
+    "citas": [
+     [
+      "4.4 Pruebas diagnósticas",
+      22,
+      "por USG prenatal deben tener seguimiento a los 7 dias"
+     ],
+     [
+      "4.4 Pruebas diagnósticas",
+      22,
+      "Considerar al USG renal y de vías urinarias (incluyendo"
+     ],
+     [
+      "4.4 Pruebas diagnósticas",
+      22,
+      "De rutina no esta indicado la cistouretrografia"
+     ],
+     [
+      "4.4 Pruebas diagnósticas",
+      22,
+      "Repetir el USG entre la 4 a 6 semanas de edad,"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "grado_hidronefrosis_prenatal",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Grado",
+     "Segundo trimestre",
+     "Tercer trimestre",
+     "Riesgo de malformación"
+    ],
+    "filas": [
+     [
+      "Leve",
+      "Menor de 7 mm",
+      "Menor de 9 mm",
+      "11.9 %"
+     ],
+     [
+      "Moderada",
+      "7 a 9 mm",
+      "9 a 15 mm",
+      "45.1 %"
+     ],
+     [
+      "Severa",
+      "Mayor de 10 mm",
+      "Mayor de 15 mm",
+      "88.3 %"
+     ]
+    ],
+    "cita": [
+     "4.4 Pruebas diagnósticas",
+     21,
+     "la medición del diámetro antero posterior de la pelvis"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "hidronefrosis_moderada",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "En el ultrasonido obstétrico del tercer trimestre se informó dilatación de la pelvis renal izquierda con diámetro anteroposterior de 12 mm",
+    "motivo": "En el tercer trimestre, 12 mm está entre 9 y 15 mm: es moderada, con riesgo de malformación de 45.1 %."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "edad_dos_dias",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "2 días de vida",
+    "motivo": "El ultrasonido inicial se hace a los 7 días de nacido, después de la primera semana; no antes del egreso."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "asintomatico_no_excluye",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "asintomático y con micción espontánea",
+    "motivo": "Estar asintomático no evita el estudio: el antecedente prenatal basta para indicar ultrasonido de seguimiento."
+   },
+   {
+    "n": 9,
+    "tipo": "imagen",
+    "concepto": "medicion_pelvis_renal_ultrasonido",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces%2C_along_with_cortical_atrophy_-_measurement.jpg/960px-Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces%2C_along_with_cortical_atrophy_-_measurement.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces,_along_with_cortical_atrophy_-_measurement.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen y Caroline Ewertsen",
+    "licencia": "CC BY 4.0",
+    "descripcion": "Ultrasonido renal con hidronefrosis: pelvis y cálices dilatados y anecoicos, con medición de la dilatación de la pelvis en el plano transversal.",
+    "archivo": "assets/RZ-PED-625-I-R9.jpg",
+    "sha256": "0f83b5700e57cc4d6d22bd6b98db7fbf37abfb0f0ea70490d2bbc4671d2ab3bf"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 3 semanas con antecedente de hidronefrosis prenatal derecha de 10 mm en el tercer trimestre. El ultrasonido renal y de vías urinarias realizado a los 8 días de vida no mostró hidronefrosis ni dilatación ureteral, con riñones de tamaño normal sin anormalidad cortical ni vesical. Asintomática, alimentada al seno materno, con buen crecimiento.",
@@ -196,7 +370,41 @@
      22,
      "si es normal, vigilar y realizar al año de edad,"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "ultrasonido_postnatal_normal",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "no mostró hidronefrosis ni dilatación ureteral",
+    "motivo": "Es un ultrasonido postnatal normal: no indica cistouretrografía de rutina ni referencia urgente."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "antecedente_prenatal_moderado",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "antecedente de hidronefrosis prenatal derecha de 10 mm en el tercer trimestre",
+    "motivo": "Fue moderada; un solo ultrasonido normal tiene baja sensibilidad para ectasia leve, por eso se repite a las 4 a 6 semanas."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "primer_ultrasonido_temprano",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "realizado a los 8 días de vida",
+    "motivo": "Solo hay un ultrasonido, de la primera semana; falta repetirlo entre las 4 y 6 semanas de edad."
+   }
+  ]}
  ]
 }
