@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-395-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "enfermedad_kawasaki",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -140,12 +140,168 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-395-I-R1",
+        "tipo": "flashcard",
+        "concepto": "criterios_diagnosticos_kawasaki",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué criterios clínicos permiten considerar el diagnóstico de enfermedad de Kawasaki?",
+        "reverso": "Fiebre de 5 días o más y al menos 4 de 5: cambios en extremidades, exantema, conjuntivitis, cambios orales y adenopatía cervical.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.1 Diagnóstico clínico",
+          "pagina": 19,
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+        }
+      },
+      {
+        "id": "RZ-PED-395-I-R2",
+        "tipo": "flashcard",
+        "concepto": "igiv_dosis_unica_vs_fraccionada",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué esquema de inmunoglobulina intravenosa redujo más las anormalidades coronarias?",
+        "reverso": "La dosis única de 2 g/kg, frente a 400 mg/kg/día durante cinco días.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 27,
+          "fragmento": "de la administración de IGIV en una sola dosis de 2"
+        }
+      },
+      {
+        "id": "RZ-PED-395-I-R3",
+        "tipo": "flashcard",
+        "concepto": "aas_no_protege_coronarias",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿El ácido acetilsalicílico, solo o con inmunoglobulina, reduce el riesgo de enfermedad cardiaca?",
+        "reverso": "No ha demostrado reducirlo. La inmunoglobulina es la que disminuye las anormalidades coronarias.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+          "clave": "IMSS-395-10",
+          "seccion": "4.1.4.1 Tratamiento Farmacológico",
+          "pagina": 26,
+          "fragmento": "normal no ha demostrado reducir el riesgo de"
+        }
+      },
+      {
+        "id": "RZ-PED-395-I-R4",
+        "tipo": "diagrama",
+        "concepto": "tratamiento_inicial_kawasaki",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Fiebre de 5 días o más\"] --> B{\"¿4 o más de los 5 criterios principales?\"}\n  B -->|\"Sí\"| C{\"¿10 días o menos de evolución?\"}\n  C -->|\"Sí\"| D[\"IGIV 2 g/kg al hacer el diagnóstico\"]\n  C -->|\"No, más de 10 días\"| E{\"¿Fiebre persistente, PCR o VSG altas, o aneurismas al diagnóstico?\"}\n  E -->|\"Sí\"| D\n  E -->|\"No\"| F[\"No es una de las situaciones en que la guía recomienda IGIV tardía\"]\n  D --> G[\"AAS 80 a 100 mg/kg/día en 4 tomas hasta 48 h sin fiebre\"]\n  G --> H[\"AAS 3 a 5 mg/kg/día en una toma por 6 a 8 semanas\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+            "clave": "IMSS-395-10",
+            "seccion": "4.1.1 Diagnóstico clínico",
+            "pagina": 19,
+            "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+            "clave": "IMSS-395-10",
+            "seccion": "4.1.4.1 Tratamiento Farmacológico",
+            "pagina": 28,
+            "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+            "clave": "IMSS-395-10",
+            "seccion": "4.1.4.1 Tratamiento Farmacológico",
+            "pagina": 28,
+            "fragmento": "pacientes con más de 10 días de evolución, en las"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+            "clave": "IMSS-395-10",
+            "seccion": "4.1.4.1 Tratamiento Farmacológico",
+            "pagina": 31,
+            "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-395-I-R5",
+        "tipo": "resaltado",
+        "concepto": "seis_dias_de_fiebre",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "fiebre de 39.5 °C de 6 días de evolución",
+        "motivo": "Lleva 6 días: cumple la fiebre de 5 días o más y está dentro de los 10 días en que se prefiere la inmunoglobulina."
+      },
+      {
+        "id": "RZ-PED-395-I-R6",
+        "tipo": "resaltado",
+        "concepto": "cambios_en_extremidades",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "edema indurado del dorso de manos y pies",
+        "motivo": "Es el criterio de cambios en extremidades; con conjuntivitis, labios, exantema y adenopatía suma los cinco: no es un cuadro incompleto."
+      },
+      {
+        "id": "RZ-PED-395-I-R7",
+        "tipo": "resaltado",
+        "concepto": "adenopatia_cervical",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Adenopatía cervical derecha de 2 cm",
+        "motivo": "Mide más de 1.5 cm y es unilateral: cumple el criterio de linfadenopatía cervical."
+      },
+      {
+        "id": "RZ-PED-395-I-R8",
+        "tipo": "imagen",
+        "concepto": "eritema_edema_manos",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kawasaki_symptoms_D.jpg/330px-Kawasaki_symptoms_D.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Kawasaki_symptoms_D.jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Dong Soo Kim (obra derivada: Natr)",
+        "licencia": "CC BY 2.0",
+        "descripcion": "Eritema de las palmas de ambas manos en un niño con enfermedad de Kawasaki, uno de los cambios en extremidades de las primeras dos semanas.",
+        "archivo": "assets/RZ-PED-395-I-R8.jpg",
+        "sha256": "67269a2b2b3a6f87be8b6e4f31b8069bc32307965f95d2bb4308fe3f32dcc780"
+      }
+    ]
   },
   {
     "id": "RZ-PED-395-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "enfermedad_kawasaki",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-395-I",
@@ -274,7 +430,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-395-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "fiebre_persistente_dia_12",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Persiste con fiebre de 39 °C",
+        "motivo": "Con más de 10 días de evolución, la fiebre persistente es una de las situaciones en que la guía recomienda inmunoglobulina 2 g/kg."
+      },
+      {
+        "id": "RZ-PED-395-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "reactantes_elevados",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "PCR 8 mg/dL y VSG 85 mm/h",
+        "motivo": "Los reactantes de fase aguda altos también justifican la inmunoglobulina después del día 10, sin esperar un aneurisma."
+      },
+      {
+        "id": "RZ-PED-395-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "dia_12_no_es_limite_absoluto",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "referida al día 12 de enfermedad",
+        "motivo": "Pasar de 10 días no excluye la inmunoglobulina: depende de la fiebre, los reactantes y los aneurismas."
+      }
+    ]
   }
 ]

@@ -17,7 +17,182 @@
    ["lectura", "Lee el pH de 6.92 como si fuera mayor de 7.00.", ["E"], ["pH normal", "no hay acidosis", "gasometría no cumple"], "¿Qué pH y déficit de base tuvo la gasometría y cuál es el criterio de la guía?", "Un criterio de asfixia es la gasometría en la primera hora con pH de 7.00 o menor o déficit de base de 12 o mayor; este paciente tiene pH 6.92 y déficit de 16.", "2.2.1.1 Hipotermia", 37, "Gasometría en la primera hora con pH 7.00 o"],
    ["dato_omitido", "Clasifica la encefalopatía como leve sin considerar la letargia, la hipotonía y la succión débil.", ["D"], ["leve", "soporte", "observar"], "¿Qué datos neurológicos tiene el paciente y qué grado de Sarnat corresponden?", "La evidencia de encefalopatía moderada a grave según Sarnat es criterio de inclusión para hipotermia terapéutica.", "2.2.1.1 Hipotermia", 37, "moderada a grave (de acuerdo a la clasificación"],
    ["conocimiento", "Cree que el enfriamiento cefálico es superior al sistémico.", ["C"], ["cefálico", "selectivo", "mejor"], "¿Qué ha demostrado la evidencia al comparar ambos métodos?", "Con la evidencia disponible no se puede recomendar un método de hipotermia sistémico o cefálico; la elección queda a consideración del médico tratante.", "2.2.1.1 Hipotermia", 37, "un método de hipotermia sistémico o cefálico"],
-   ["razonamiento", "Busca confirmar la lesión antes de tratar y deja pasar la ventana terapéutica.", ["B"], ["resonancia", "confirmar daño", "primero imagen"], "¿Cuánto tiempo tienes para iniciar la hipotermia y cuánto tardarías en obtener la resonancia?", "La hipotermia es un tratamiento sensible al tiempo que requiere identificación y referencia rápidas, y debe iniciarse en las primeras seis horas de vida.", "2.2.1.1 Hipotermia", 38, "La hipotermia terapéutica es un tratamiento sensible"]]},
+   ["razonamiento", "Busca confirmar la lesión antes de tratar y deja pasar la ventana terapéutica.", ["B"], ["resonancia", "confirmar daño", "primero imagen"], "¿Cuánto tiempo tienes para iniciar la hipotermia y cuánto tardarías en obtener la resonancia?", "La hipotermia es un tratamiento sensible al tiempo que requiere identificación y referencia rápidas, y debe iniciarse en las primeras seis horas de vida.", "2.2.1.1 Hipotermia", 38, "La hipotermia terapéutica es un tratamiento sensible"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "criterios_inclusion_hipotermia",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué edad gestacional, peso y tiempo de vida exige la guía para incluir a un recién nacido en hipotermia terapéutica?",
+    "reverso": "35 semanas o más, 1,800 g o más y menos de 6 horas de vida, además de evidencia de asfixia perinatal.",
+    "cita": [
+     "2.2.1.1 Hipotermia",
+     37,
+     "Recién nacidos de ≥35 semanas de gestación"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "criterio_gasometrico_asfixia",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué valores de la gasometría de la primera hora cuentan como evidencia de asfixia perinatal?",
+    "reverso": "pH de 7.00 o menor, o déficit de base de 12 o mayor.",
+    "cita": [
+     "2.2.1.1 Hipotermia",
+     37,
+     "Gasometría en la primera hora con pH 7.00 o"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "metodo_sistemico_o_cefalico",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Recomienda la guía el enfriamiento cefálico selectivo sobre el sistémico?",
+    "reverso": "No. La evidencia no permite recomendar un método sobre otro; lo decide el médico según el paciente y los recursos.",
+    "cita": [
+     "2.2.1.1 Hipotermia",
+     37,
+     "un método de hipotermia sistémico o cefálico"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "seleccion_hipotermia_terapeutica",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido con sospecha de encefalopatía hipóxico-isquémica\"] --> B{\"¿35 semanas o más y 1,800 g o más?\"}\n  B -->|\"No\"| X[\"No cumple criterios de inclusión\"]\n  B -->|\"Sí\"| C{\"¿Menos de 6 horas de vida?\"}\n  C -->|\"No\"| X\n  C -->|\"Sí\"| D{\"¿Al menos un criterio de asfixia: Apgar 5 o menor a los 10 min, ventilación en los primeros 10 min, pH 7.00 o menor o déficit de base 12 o mayor, encefalopatía moderada a grave o EEG anormal?\"}\n  D -->|\"No\"| X\n  D -->|\"Sí\"| E{\"¿Malformación mayor, coagulopatía con hemorragia activa o falta de equipo?\"}\n  E -->|\"Sí\"| X\n  E -->|\"No\"| F[\"Iniciar hipotermia sin demora, sin esperar estudios de imagen\"]\n  F --> G[\"Monitorizar FC, TA, ECG, laboratorios y EEG\"]",
+    "citas": [
+     [
+      "2.2.1.1 Hipotermia",
+      37,
+      "Evidencia de asfixia perinatal, con al menos uno"
+     ],
+     [
+      "2.2.1.1 Hipotermia",
+      38,
+      "Coagulopatía con hemorragia activa"
+     ],
+     [
+      "2.2.1.1 Hipotermia",
+      38,
+      "La hipotermia terapéutica es un tratamiento sensible"
+     ],
+     [
+      "2.2.1.1 Hipotermia",
+      40,
+      "Se deberá monitorizar en todo paciente bajo"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "escala_sarnat",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Parámetro",
+     "Etapa 1",
+     "Etapa 2",
+     "Etapa 3"
+    ],
+    "filas": [
+     [
+      "Nivel de conciencia",
+      "Hiperalerta",
+      "Letárgico u obnubilado",
+      "Estuporoso"
+     ],
+     [
+      "Tono muscular",
+      "Normal",
+      "Hipotonía leve",
+      "Flácido"
+     ],
+     [
+      "Succión",
+      "Débil",
+      "Débil o ausente",
+      "Ausente"
+     ],
+     [
+      "Moro",
+      "Fácil, umbral bajo",
+      "Débil, umbral alto",
+      "Ausente"
+     ],
+     [
+      "Convulsiones",
+      "No",
+      "Comunes: focales o multifocales",
+      "Infrecuentes"
+     ],
+     [
+      "Duración",
+      "Menos de 24 horas",
+      "2 a 14 días",
+      "Horas o semanas"
+     ]
+    ],
+    "cita": [
+     "3.2 Cuadros o figuras",
+     57,
+     "Escala de Sarnat para evaluar la encefalopatía hipóxico-isquémica"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "gasometria_acidosis_grave",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pH 6.92 y déficit de base de 16",
+    "motivo": "El pH es menor de 7.00 y el déficit de base mayor de 12: cumple el criterio gasométrico de asfixia."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "encefalopatia_moderada",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "letárgico, hipotónico, con succión débil y reflejo de Moro incompleto",
+    "motivo": "Letargia, hipotonía y succión débil corresponden a la etapa 2 de Sarnat: no es una encefalopatía leve."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "dentro_de_ventana",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A las 2 horas de vida",
+    "motivo": "Está dentro de las primeras 6 horas; esperar una resonancia haría perder la ventana terapéutica."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Recién nacida de 34 semanas de gestación, peso 2,100 g, nacida por cesárea de urgencia por bradicardia fetal. Apgar 3 a los 10 minutos; requirió intubación en sala de partos. Gasometría a los 40 minutos: pH 6.95. A las 3 horas de vida presenta letargia, hipotonía y crisis convulsivas sutiles. Sin malformaciones. La unidad cuenta con equipo de hipotermia sistémica.",
   "pregunta": "Respecto a la hipotermia terapéutica, ¿cuál es la conducta más adecuada?",
@@ -33,5 +208,30 @@
    ["dato_omitido", "Revisa la ventana de tiempo y la encefalopatía, pero omite la edad gestacional.", ["A"], ["6 horas", "ventana", "encefalopatía moderada"], "¿Cumple esta paciente todos los criterios de inclusión, incluida la edad gestacional?", "Los criterios de inclusión exigen 35 semanas de gestación o más, además de peso, tiempo de vida y evidencia de asfixia con encefalopatía.", "2.2.1.1 Hipotermia", 37, "Recién nacidos de ≥35 semanas de gestación"],
    ["razonamiento", "Considera que cumplir un criterio basta, cuando deben cumplirse todos.", ["B"], ["pesa más de 1,800", "cumple peso", "suficiente"], "¿Los criterios de inclusión son alternativos o deben cumplirse todos?", "Los criterios de inclusión son 35 semanas o más, 1,800 g o más, menos de 6 horas de vida y evidencia de asfixia; se consideran en conjunto para seleccionar al paciente.", "2.2.1.1 Hipotermia", 38, "mencionados anteriormente para la selección de"],
    ["conocimiento", "Desconoce que la hipotermia debe iniciarse antes de las 6 horas.", ["D"], ["12 horas", "valorar evolución", "esperar"], "¿Hasta qué hora de vida puede iniciarse la hipotermia según la guía?", "La hipotermia terapéutica debe iniciarse en las primeras seis horas de vida.", "2.2.1.1 Hipotermia", 38, "primeras seis horas de vida"],
-   ["conocimiento", "Usa un umbral de peso distinto al de la guía.", ["E"], ["2,500 g", "bajo peso"], "¿Qué peso mínimo exige la guía para la hipotermia terapéutica?", "El criterio de peso para hipotermia terapéutica es de 1,800 g o más.", "2.2.1.1 Hipotermia", 37, "Peso de ≥1800 gramos"]]}
+   ["conocimiento", "Usa un umbral de peso distinto al de la guía.", ["E"], ["2,500 g", "bajo peso"], "¿Qué peso mínimo exige la guía para la hipotermia terapéutica?", "El criterio de peso para hipotermia terapéutica es de 1,800 g o más.", "2.2.1.1 Hipotermia", 37, "Peso de ≥1800 gramos"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "edad_gestacional_menor_35",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recién nacida de 34 semanas de gestación",
+    "motivo": "La guía exige 35 semanas o más; con 34 semanas no cumple un criterio de inclusión, aunque cumpla los demás."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "peso_no_basta",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "peso 2,100 g",
+    "motivo": "Supera el mínimo de 1,800 g, pero el peso es solo uno de los criterios que deben cumplirse en conjunto."
+   }
+  ]}
  ]}
