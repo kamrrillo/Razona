@@ -23,7 +23,9 @@ RAIZ = os.path.join(AQUI, "..")
 sys.path.insert(0, AQUI)
 import poner_rec  # noqa: E402
 
-AGENTE = "Mozilla/5.0 (compatible; image-downloader/1.0; educational use)"
+# Wikimedia rechaza (HTTP 429) los agentes que imitan a un navegador; usar uno descriptivo.
+# upload.wikimedia.org también puede dar 429: usar la URL thumb.wikimedia.org que da la API de Commons.
+AGENTE = "edu-image-fetch/1.0 (python-urllib; educational use)"
 FIRMAS = {b"\x89PNG": "png", b"\xff\xd8\xff": "jpg", b"GIF8": "gif", b"RIFF": "webp", b"<svg": "svg", b"<?xm": "svg"}
 
 
