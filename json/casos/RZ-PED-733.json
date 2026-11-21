@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-733-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "intolerancia_lactosa",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -140,12 +140,190 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-733-I-R1",
+        "tipo": "flashcard",
+        "concepto": "imagen_no_util_primaria",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Sirven los estudios de imagen para apoyar el diagnóstico de intolerancia primaria a la lactosa?",
+        "reverso": "No. Solo pueden ser útiles en la intolerancia secundaria, para investigar la patología de fondo.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 14,
+          "fragmento": "Los estudios de imagen no son útiles para apoyar el"
+        }
+      },
+      {
+        "id": "RZ-PED-733-I-R2",
+        "tipo": "flashcard",
+        "concepto": "aporte_de_calcio",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Al reducir la lactosa en la dieta de un niño, ¿qué aporte de calcio diario debe asegurarse?",
+        "reverso": "Entre 500 y 1000 mg al día, equivalente a dos a cuatro porciones de lácteos.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.2 Tratamiento",
+          "pagina": 17,
+          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y"
+        }
+      },
+      {
+        "id": "RZ-PED-733-I-R3",
+        "tipo": "flashcard",
+        "concepto": "diferencia_con_alergia_proteina",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué distingue a la intolerancia a la proteína de la leche de vaca de la intolerancia a la lactosa?",
+        "reverso": "En la primera se afecta el sistema inmunológico y se lesiona la mucosa intestinal; no es un déficit de lactasa.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "4.1.2 Diagnóstico Diferencial",
+          "pagina": 15,
+          "fragmento": "La intolerancia a la lactosa es una entidad distinta de"
+        }
+      },
+      {
+        "id": "RZ-PED-733-I-R4",
+        "tipo": "diagrama",
+        "concepto": "diagnostico_y_manejo_intolerancia_lactosa",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Síntomas digestivos relacionados con la ingesta de lactosa\"] --> B[\"Prueba-contraprueba: 2 semanas sin lactosa y reintroducción paulatina\"]\n  B --> C{\"¿Ceden sin lactosa y reaparecen al reintroducirla?\"}\n  C -->|\"No\"| D[\"Diagnóstico diferencial: diarrea infecciosa, mala absorción, alergia a proteínas de la leche\"]\n  C -->|\"Sí\"| E{\"¿Lesión reciente de la mucosa, como gastroenteritis?\"}\n  E -->|\"Sí: secundaria\"| F[\"Excluir la lactosa en promedio 4 semanas y reintroducir poco a poco\"]\n  E -->|\"No: primaria\"| G[\"Reducir la lactosa hasta que cedan los síntomas\"]\n  G --> H[\"Cuatro semanas después, aumentar la cantidad según se tolere\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+            "clave": "IMSS-733-14",
+            "seccion": "4.1.1 Auxiliares Diagnósticos",
+            "pagina": 14,
+            "fragmento": "Consiste en mantener un régimen estricto sin lactosa"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+            "clave": "IMSS-733-14",
+            "seccion": "4.1.2 Diagnóstico Diferencial",
+            "pagina": 15,
+            "fragmento": "sospecha intolerancia a la lactosa, se deberá hacer"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+            "clave": "IMSS-733-14",
+            "seccion": "4.2 Tratamiento",
+            "pagina": 16,
+            "fragmento": "promedio por cuatro semanas"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+            "clave": "IMSS-733-14",
+            "seccion": "4.2 Tratamiento",
+            "pagina": 17,
+            "fragmento": "síntomas y cuatro semanas despues ir"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-733-I-R5",
+        "tipo": "tabla",
+        "concepto": "tipos_de_deficiencia_de_lactasa",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Tipo",
+          "Inicio",
+          "Evolución"
+        ],
+        "filas": [
+          [
+            "Primaria",
+            "Entre los 2 y 7 años; en ocasiones entre los 11 y 14 años",
+            "Sutil y progresiva; determinada genéticamente"
+          ],
+          [
+            "Secundaria",
+            "A cualquier edad, tras lesión de la mucosa por gastroenteritis, enfermedad celíaca u otras",
+            "Generalmente reversible al resolverse la causa"
+          ],
+          [
+            "Congénita",
+            "Desde el nacimiento; muy rara",
+            "Persiste toda la vida; suele ser grave"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
+          "clave": "IMSS-733-14",
+          "seccion": "3.3 Definición",
+          "pagina": 10,
+          "fragmento": "Se manifesta entre los 2 y los 7 años de vida"
+        }
+      },
+      {
+        "id": "RZ-PED-733-I-R6",
+        "tipo": "resaltado",
+        "concepto": "tolerancia_previa",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "hasta los 9 años toleraba la leche sin problema",
+        "motivo": "La deficiencia congénita se presenta desde el nacimiento; si toleraba la leche hasta los 9 años, no es congénita."
+      },
+      {
+        "id": "RZ-PED-733-I-R7",
+        "tipo": "resaltado",
+        "concepto": "prueba_contraprueba_positiva",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "los síntomas desaparecieron durante 2 semanas sin lácteos y reaparecieron al reintroducirlos",
+        "motivo": "Es una prueba-contraprueba positiva que apoya el diagnóstico; no hace falta un estudio de imagen."
+      },
+      {
+        "id": "RZ-PED-733-I-R8",
+        "tipo": "resaltado",
+        "concepto": "sintomas_leves",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Síntomas leves",
+        "motivo": "En casos leves la guía prefiere dieta baja en lactosa, no la exclusión total de los lácteos."
+      }
+    ]
   },
   {
     "id": "RZ-PED-733-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "intolerancia_lactosa",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-733-I",
@@ -274,7 +452,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-733-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "gastroenteritis_reciente",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "hace 10 días tuvo gastroenteritis por rotavirus",
+        "motivo": "La lesión de la mucosa por gastroenteritis causa deficiencia secundaria de lactasa, que es temporal."
+      },
+      {
+        "id": "RZ-PED-733-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "ph_fecal_acido",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "pH fecal de 5.0",
+        "motivo": "Un pH fecal menor de 5.5 al ingerir lactosa sugiere sustancias reductoras en heces por intolerancia a la lactosa."
+      },
+      {
+        "id": "RZ-PED-733-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "tolerancia_antes_de_la_infeccion",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Antes de la gastroenteritis toleraba la leche sin problemas",
+        "motivo": "La intolerancia apareció tras la infección: orienta a deficiencia secundaria y no a un problema permanente."
+      }
+    ]
   }
 ]

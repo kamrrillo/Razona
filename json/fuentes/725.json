@@ -17,7 +17,122 @@
    ["lectura", "Usa la dosis de 6 a 11 meses; el paciente tiene 36 meses.", ["B"], ["100,000", "dosis única", "lactante"], "¿Cuántos meses tiene el paciente y qué dosis corresponde a su grupo de edad?", "De 6 a 11 meses se administran 100,000 UI; de 12 a 59 meses, 200,000 UI cada 4 a 6 meses.", "4.2 Tratamiento", 17, "Se recomienda administrar vitamina A 200 000"],
    ["dato_omitido", "Indica solo dieta sin considerar que el niño ya tiene ceguera nocturna y manchas de Bitot.", ["E"], ["dieta", "alimentos", "hígado"], "¿Qué signos de deficiencia tiene ya el niño y qué recomienda la guía además de la alimentación?", "Se recomienda la suplementación con vitamina A a las dosis de cada grupo de edad, porque reduce la ceguera nocturna y la xeroftalmia.", "4.2 Tratamiento", 18, "A, a las dosis para su grupo de edad, ya que la"],
    ["conocimiento", "Usa la dosis de menores de 6 meses.", ["C"], ["50,000", "dosis baja"], "¿A qué grupo de edad corresponde la dosis de 50,000 UI?", "La dosis única de 50,000 UI corresponde a menores de 6 meses.", "4.2 Tratamiento", 18, "6 meses vitamina A vía oral Dosis única"],
-   ["razonamiento", "Prefiere dosis bajas diarias por temor a la toxicidad y usa un esquema de otra indicación.", ["D"], ["diaria", "evitar intoxicación", "dosis baja"], "¿Para qué pacientes indica la guía 5,000 UI diarias por 4 meses?", "El esquema de 5,000 UI/día por 4 meses corresponde a niños en tratamiento para tuberculosis; de 12 a 59 meses se usan 200,000 UI cada 4 a 6 meses.", "4.2 Tratamiento", 18, "5000IU/día por 4 meses"]]},
+   ["razonamiento", "Prefiere dosis bajas diarias por temor a la toxicidad y usa un esquema de otra indicación.", ["D"], ["diaria", "evitar intoxicación", "dosis baja"], "¿Para qué pacientes indica la guía 5,000 UI diarias por 4 meses?", "El esquema de 5,000 UI/día por 4 meses corresponde a niños en tratamiento para tuberculosis; de 12 a 59 meses se usan 200,000 UI cada 4 a 6 meses.", "4.2 Tratamiento", 18, "5000IU/día por 4 meses"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "espectro_xeroftalmia",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué lesiones oculares forman parte de la xeroftalmía por deficiencia de vitamina A?",
+    "reverso": "Ceguera nocturna, xerosis conjuntival, manchas de Bitot, xerosis corneal, ulceración o queratomalacia corneal y cicatrices corneales.",
+    "cita": [
+     "4.1.2 Signos y Síntomas",
+     14,
+     "Xeroftalmía en todos sus niveles de gravedad"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "esquema_diario_tuberculosis",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿En qué niños indica la guía vitamina A 5,000 UI al día durante 4 meses?",
+    "reverso": "Solo en niños en tratamiento para tuberculosis; no es el esquema para niños de áreas de riesgo.",
+    "cita": [
+     "4.2 Tratamiento",
+     18,
+     "5000IU/día por 4 meses"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "suplementacion_reduce_mortalidad",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué efecto tiene la suplementación con vitamina A sobre la mortalidad en niños de 1 a 59 meses?",
+    "reverso": "Reduce el riesgo global de muerte en 24 %.",
+    "cita": [
+     "4.2 Tratamiento",
+     17,
+     "edad la suplementación de Vitamina A reduce el"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "dosis_vitamina_a_por_edad",
+    "para_errores": [
+     "conocimiento",
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño de área de riesgo de mortalidad por enfermedades diarreicas\"] --> B{\"¿Está en tratamiento para tuberculosis?\"}\n  B -->|\"Sí\"| C[\"5,000 UI al día por 4 meses\"]\n  B -->|\"No\"| D{\"¿Qué edad tiene?\"}\n  D -->|\"Menos de 6 meses\"| E[\"50,000 UI vía oral, dosis única\"]\n  D -->|\"6 a 11 meses\"| F[\"100,000 UI vía oral, dosis única\"]\n  D -->|\"12 a 59 meses\"| G[\"200,000 UI vía oral cada 4 a 6 meses\"]\n  E --> H[\"Además: alimentos ricos en vitamina A, de preferencia de origen animal\"]\n  F --> H\n  G --> H",
+    "citas": [
+     [
+      "4.2 Tratamiento",
+      18,
+      "vitamina A vía oral cada 4 a 6"
+     ],
+     [
+      "4.2 Tratamiento",
+      18,
+      "5000IU/día por 4 meses"
+     ],
+     [
+      "4.2.1 Tratamiento Nutricional",
+      20,
+      "Se prefieren los de origen animal sobre"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_36_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 3 años (36 meses)",
+    "motivo": "Con 36 meses queda en el grupo de 12 a 59 meses, que recibe la dosis más alta de vitamina A."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "manchas_de_bitot",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "placas blanquecinas espumosas en la conjuntiva bulbar temporal de ambos ojos",
+    "motivo": "Son manchas de Bitot; con la ceguera nocturna indican xeroftalmía ya presente, así que la dieta sola no basta."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_tratamiento_tuberculosis",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No recibe tratamiento para tuberculosis",
+    "motivo": "El esquema diario de 5,000 UI por 4 meses es para niños en tratamiento para tuberculosis; este niño no lo recibe."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Femenino de 8 meses, originaria de un municipio considerado de alto riesgo de mortalidad infantil por enfermedades diarreicas. Acude durante la Semana Nacional de Salud. Está asintomática, con crecimiento en percentil 25, sin alteraciones oculares ni cutáneas, y no ha recibido vitamina A previamente.",
   "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -33,5 +148,40 @@
    ["conocimiento", "Usa la dosis de 12 a 59 meses en una lactante de 8 meses.", ["A"], ["200,000", "dosis alta"], "¿Qué dosis corresponde al grupo de 6 a 11 meses?", "De 6 a 11 meses se administran 100,000 UI; la dosis de 200,000 UI es para 12 a 59 meses.", "4.2 Tratamiento", 17, "Se recomienda administrar 100,000 UI, si"],
    ["lectura", "Clasifica a la paciente como menor de 6 meses.", ["B"], ["50,000", "menor de 6 meses"], "¿Cuántos meses tiene la paciente y en qué renglón de la tabla queda?", "La dosis de 50,000 UI corresponde a menores de 6 meses; la paciente tiene 8 meses.", "4.2 Tratamiento", 18, "6 meses vitamina A vía oral Dosis única"],
    ["razonamiento", "Considera la suplementación solo como tratamiento de la deficiencia clínica y no como prevención en áreas de riesgo.", ["C"], ["asintomática", "no tiene deficiencia", "no necesita"], "¿Qué efecto tiene la suplementación sobre la mortalidad en niños de áreas de riesgo, aunque estén asintomáticos?", "En niños de 1 a 59 meses la suplementación con vitamina A reduce el riesgo global de muerte en 24 %.", "4.2 Tratamiento", 17, "edad la suplementación de Vitamina A reduce el"],
-   ["conocimiento", "Usa el esquema de niños en tratamiento para tuberculosis.", ["E"], ["diaria", "5,000 UI"], "¿Para qué grupo indica la guía el esquema de 5,000 UI diarias?", "El esquema de 5,000 UI/día por 4 meses corresponde a niños en tratamiento para tuberculosis.", "4.2 Tratamiento", 18, "5000IU/día por 4 meses"]]}
+   ["conocimiento", "Usa el esquema de niños en tratamiento para tuberculosis.", ["E"], ["diaria", "5,000 UI"], "¿Para qué grupo indica la guía el esquema de 5,000 UI diarias?", "El esquema de 5,000 UI/día por 4 meses corresponde a niños en tratamiento para tuberculosis.", "4.2 Tratamiento", 18, "5000IU/día por 4 meses"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "edad_8_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 8 meses",
+    "motivo": "Con 8 meses está en el grupo de 6 a 11 meses: no le corresponde la dosis de menores de 6 meses ni la de 12 a 59 meses."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "area_de_alto_riesgo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "municipio considerado de alto riesgo de mortalidad infantil por enfermedades diarreicas",
+    "motivo": "En áreas de alto riesgo la guía indica suplementar aunque no haya signos de deficiencia."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "asintomatica",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Está asintomática, con crecimiento en percentil 25, sin alteraciones oculares ni cutáneas",
+    "motivo": "Estar asintomática no excluye la suplementación: en áreas de riesgo es preventiva y reduce la mortalidad."
+   }
+  ]}
  ]}

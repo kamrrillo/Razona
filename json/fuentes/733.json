@@ -105,8 +105,161 @@
      17,
      "Restringir en su totalidad los productos lacteos de la"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "imagen_no_util_primaria",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Sirven los estudios de imagen para apoyar el diagnóstico de intolerancia primaria a la lactosa?",
+    "reverso": "No. Solo pueden ser útiles en la intolerancia secundaria, para investigar la patología de fondo.",
+    "cita": [
+     "4.1.1 Auxiliares Diagnósticos",
+     14,
+     "Los estudios de imagen no son útiles para apoyar el"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "aporte_de_calcio",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Al reducir la lactosa en la dieta de un niño, ¿qué aporte de calcio diario debe asegurarse?",
+    "reverso": "Entre 500 y 1000 mg al día, equivalente a dos a cuatro porciones de lácteos.",
+    "cita": [
+     "4.2 Tratamiento",
+     17,
+     "Debe asegurarse aporte de calcio diario entre 500 y"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "diferencia_con_alergia_proteina",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué distingue a la intolerancia a la proteína de la leche de vaca de la intolerancia a la lactosa?",
+    "reverso": "En la primera se afecta el sistema inmunológico y se lesiona la mucosa intestinal; no es un déficit de lactasa.",
+    "cita": [
+     "4.1.2 Diagnóstico Diferencial",
+     15,
+     "La intolerancia a la lactosa es una entidad distinta de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "diagnostico_y_manejo_intolerancia_lactosa",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Síntomas digestivos relacionados con la ingesta de lactosa\"] --> B[\"Prueba-contraprueba: 2 semanas sin lactosa y reintroducción paulatina\"]\n  B --> C{\"¿Ceden sin lactosa y reaparecen al reintroducirla?\"}\n  C -->|\"No\"| D[\"Diagnóstico diferencial: diarrea infecciosa, mala absorción, alergia a proteínas de la leche\"]\n  C -->|\"Sí\"| E{\"¿Lesión reciente de la mucosa, como gastroenteritis?\"}\n  E -->|\"Sí: secundaria\"| F[\"Excluir la lactosa en promedio 4 semanas y reintroducir poco a poco\"]\n  E -->|\"No: primaria\"| G[\"Reducir la lactosa hasta que cedan los síntomas\"]\n  G --> H[\"Cuatro semanas después, aumentar la cantidad según se tolere\"]",
+    "citas": [
+     [
+      "4.1.1 Auxiliares Diagnósticos",
+      14,
+      "Consiste en mantener un régimen estricto sin lactosa"
+     ],
+     [
+      "4.1.2 Diagnóstico Diferencial",
+      15,
+      "sospecha intolerancia a la lactosa, se deberá hacer"
+     ],
+     [
+      "4.2 Tratamiento",
+      16,
+      "promedio por cuatro semanas"
+     ],
+     [
+      "4.2 Tratamiento",
+      17,
+      "síntomas y cuatro semanas despues ir"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "tipos_de_deficiencia_de_lactasa",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Tipo",
+     "Inicio",
+     "Evolución"
+    ],
+    "filas": [
+     [
+      "Primaria",
+      "Entre los 2 y 7 años; en ocasiones entre los 11 y 14 años",
+      "Sutil y progresiva; determinada genéticamente"
+     ],
+     [
+      "Secundaria",
+      "A cualquier edad, tras lesión de la mucosa por gastroenteritis, enfermedad celíaca u otras",
+      "Generalmente reversible al resolverse la causa"
+     ],
+     [
+      "Congénita",
+      "Desde el nacimiento; muy rara",
+      "Persiste toda la vida; suele ser grave"
+     ]
+    ],
+    "cita": [
+     "3.3 Definición",
+     10,
+     "Se manifesta entre los 2 y los 7 años de vida"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "tolerancia_previa",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "hasta los 9 años toleraba la leche sin problema",
+    "motivo": "La deficiencia congénita se presenta desde el nacimiento; si toleraba la leche hasta los 9 años, no es congénita."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "prueba_contraprueba_positiva",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "los síntomas desaparecieron durante 2 semanas sin lácteos y reaparecieron al reintroducirlos",
+    "motivo": "Es una prueba-contraprueba positiva que apoya el diagnóstico; no hace falta un estudio de imagen."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "sintomas_leves",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Síntomas leves",
+    "motivo": "En casos leves la guía prefiere dieta baja en lactosa, no la exclusión total de los lácteos."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 18 meses que hace 10 días tuvo gastroenteritis por rotavirus. La diarrea había cedido, pero al reintroducir la leche entera reaparecieron las evacuaciones líquidas explosivas, la distensión abdominal y el eritema perianal. pH fecal de 5.0. Hidratada, sin sangre en heces. Antes de la gastroenteritis toleraba la leche sin problemas.",
@@ -202,7 +355,41 @@
      16,
      "promedio por cuatro semanas"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "gastroenteritis_reciente",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "hace 10 días tuvo gastroenteritis por rotavirus",
+    "motivo": "La lesión de la mucosa por gastroenteritis causa deficiencia secundaria de lactasa, que es temporal."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "ph_fecal_acido",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pH fecal de 5.0",
+    "motivo": "Un pH fecal menor de 5.5 al ingerir lactosa sugiere sustancias reductoras en heces por intolerancia a la lactosa."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "tolerancia_antes_de_la_infeccion",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Antes de la gastroenteritis toleraba la leche sin problemas",
+    "motivo": "La intolerancia apareció tras la infección: orienta a deficiencia secundaria y no a un problema permanente."
+   }
+  ]}
  ]
 }
