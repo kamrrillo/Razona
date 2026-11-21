@@ -39,8 +39,20 @@ export type Database = {
       foreignKeyName: "attempts_item_id_fkey"
       columns: ["item_id"]
 isOneToOne: false
-      referencedRelation: "items"
+      referencedRelation: "casos_clinicos"
       referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_app"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "attempts_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_rubrica"
+      referencedColumns: ["caso_id"]
     },{
       foreignKeyName: "attempts_session_id_fkey"
       columns: ["session_id"]
@@ -53,6 +65,44 @@ isOneToOne: false
 isOneToOne: false
       referencedRelation: "specialties"
       referencedColumns: ["id"]
+    }
+                  ]
+                },"casos_clinicos": {
+                  Row: {
+                    "caso_indice_id": string | null,"estado": string | null,"gpc_clave": string | null,"id": string,"payload": NonNullable<Json>,"respuesta_correcta": string | null,"sindrome": string | null,"tipo": string | null,"updated_at": string,"version": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "caso_indice_id"?: never,"estado"?: never,"gpc_clave"?: never,"id": string,"payload": NonNullable<Json>,"respuesta_correcta"?: never,"sindrome"?: never,"tipo"?: never,"updated_at"?: string,"version"?: never
+                  }
+                  Update: {
+                    "caso_indice_id"?: never,"estado"?: never,"gpc_clave"?: never,"id"?: string,"payload"?: NonNullable<Json>,"respuesta_correcta"?: never,"sindrome"?: never,"tipo"?: never,"updated_at"?: string,"version"?: never
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "casos_clinicos"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_app"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_rubrica"
+      referencedColumns: ["caso_id"]
+    },{
+      foreignKeyName: "casos_clinicos_sindrome_fkey"
+      columns: ["sindrome"]
+isOneToOne: false
+      referencedRelation: "temas"
+      referencedColumns: ["sindrome"]
     }
                   ]
                 },"exam_answers": {
@@ -77,8 +127,20 @@ isOneToOne: false
       foreignKeyName: "exam_answers_item_id_fkey"
       columns: ["item_id"]
 isOneToOne: false
-      referencedRelation: "items"
+      referencedRelation: "casos_clinicos"
       referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exam_answers_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_app"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "exam_answers_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_rubrica"
+      referencedColumns: ["caso_id"]
     },{
       foreignKeyName: "exam_answers_specialty_id_fkey"
       columns: ["specialty_id"]
@@ -89,14 +151,14 @@ isOneToOne: false
                   ]
                 },"exams": {
                   Row: {
-                    "correct": number | null,"duration_seconds": number,"exam_key": string,"finished_at": string | null,"id": string,"score": number | null,"started_at": string,"total": number | null,"user_id": string
+                    "correct": number | null,"duration_seconds": number,"exam_key": string,"finished_at": string | null,"id": string,"item_ids": (string)[] | null,"scope": string,"scope_ref": string | null,"score": number | null,"started_at": string,"total": number | null,"user_id": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "correct"?: number | null,"duration_seconds": number,"exam_key": string,"finished_at"?: string | null,"id"?: string,"score"?: number | null,"started_at"?: string,"total"?: number | null,"user_id"?: string
+                    "correct"?: number | null,"duration_seconds": number,"exam_key": string,"finished_at"?: string | null,"id"?: string,"item_ids"?: (string)[] | null,"scope"?: string,"scope_ref"?: string | null,"score"?: number | null,"started_at"?: string,"total"?: number | null,"user_id"?: string
                   }
                   Update: {
-                    "correct"?: number | null,"duration_seconds"?: number,"exam_key"?: string,"finished_at"?: string | null,"id"?: string,"score"?: number | null,"started_at"?: string,"total"?: number | null,"user_id"?: string
+                    "correct"?: number | null,"duration_seconds"?: number,"exam_key"?: string,"finished_at"?: string | null,"id"?: string,"item_ids"?: (string)[] | null,"scope"?: string,"scope_ref"?: string | null,"score"?: number | null,"started_at"?: string,"total"?: number | null,"user_id"?: string
                   }
                   Relationships: [
                     
@@ -165,17 +227,131 @@ isOneToOne: false
       foreignKeyName: "study_sessions_item_id_fkey"
       columns: ["item_id"]
 isOneToOne: false
-      referencedRelation: "items"
+      referencedRelation: "casos_clinicos"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "study_sessions_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_app"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "study_sessions_item_id_fkey"
+      columns: ["item_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_rubrica"
+      referencedColumns: ["caso_id"]
+    }
+                  ]
+                },"temas": {
+                  Row: {
+                    "grupo_id": string,"nombre": string,"sindrome": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "grupo_id": string,"nombre": string,"sindrome": string
+                  }
+                  Update: {
+                    "grupo_id"?: string,"nombre"?: string,"sindrome"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "temas_grupo_id_fkey"
+      columns: ["grupo_id"]
+isOneToOne: false
+      referencedRelation: "temas_grupos"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"temas_grupos": {
+                  Row: {
+                    "especialidad_id": string,"id": string,"nombre": string,"orden": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "especialidad_id": string,"id": string,"nombre": string,"orden"?: number
+                  }
+                  Update: {
+                    "especialidad_id"?: string,"id"?: string,"nombre"?: string,"orden"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "temas_grupos_especialidad_id_fkey"
+      columns: ["especialidad_id"]
+isOneToOne: false
+      referencedRelation: "specialties"
       referencedColumns: ["id"]
     }
                   ]
                 }
           }
           Views: {
-            [_ in never]: never
+            "v_casos_app": {
+                  Row: {
+                    "caso_indice_id": string | null,"estado": string | null,"grupo_id": string,"id": string,"payload": Json | null,"sindrome": string | null,"specialty_id": string,"tipo": string | null,"topic": string
+                  }
+                  ComputedFields: never
+                  Relationships: [
+                    {
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "casos_clinicos"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_app"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "casos_clinicos_caso_indice_id_fkey"
+      columns: ["caso_indice_id"]
+isOneToOne: false
+      referencedRelation: "v_casos_rubrica"
+      referencedColumns: ["caso_id"]
+    },{
+      foreignKeyName: "casos_clinicos_sindrome_fkey"
+      columns: ["sindrome"]
+isOneToOne: false
+      referencedRelation: "temas"
+      referencedColumns: ["sindrome"]
+    },{
+      foreignKeyName: "temas_grupo_id_fkey"
+      columns: ["grupo_id"]
+isOneToOne: false
+      referencedRelation: "temas_grupos"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "temas_grupos_especialidad_id_fkey"
+      columns: ["specialty_id"]
+isOneToOne: false
+      referencedRelation: "specialties"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"v_casos_citas": {
+                  Row: {
+                    "caso_id": string | null,"fragmento": string | null,"gpc_clave": string | null,"guia": string | null,"orden": number | null,"origen": string | null,"pagina": number | null,"seccion": string | null,"texto": string | null
+                  }
+                  ComputedFields: never
+                  Relationships: [
+                    
+                  ]
+                },"v_casos_rubrica": {
+                  Row: {
+                    "caso_id": string,"descripcion": string | null,"explicacion": string | null,"fragmento": string | null,"gpc_clave": string | null,"opciones_asociadas": (string)[] | null,"orden": number | null,"pagina": number | null,"pregunta_socratica_semilla": string | null,"seccion": string | null,"senales_en_justificacion": (string)[] | null,"tipo_error": string | null
+                  }
+                  ComputedFields: never
+                  Relationships: [
+                    
+                  ]
+                }
           }
           Functions: {
-            [_ in never]: never
+            "cita_app":
+{ Args: { "cita": Json }; Returns: Json
+                           }
           }
           Enums: {
             [_ in never]: never

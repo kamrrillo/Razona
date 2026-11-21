@@ -6,7 +6,6 @@ import { useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
 import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
 import { LogoMark } from "@/components/app/logo";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -100,7 +99,6 @@ export function DiagnosticSession() {
         <h1 className="text-2xl font-extrabold text-brand-900">Diagnóstico con IA</h1>
         <Card>
           <CardHeader className="space-y-2">
-            <SampleContentBadge />
             <CardTitle className="flex items-center gap-2">
               <Bot className="size-5 text-primary" aria-hidden /> Agente de diagnóstico
             </CardTitle>
@@ -210,7 +208,6 @@ export function DiagnosticSession() {
       {item && (
         <Card data-testid="diagnostic-item">
           <CardHeader className="space-y-2">
-            {item.is_sample && <SampleContentBadge />}
             <p className="text-xs text-muted-foreground">
               Reactivo {item.numero} de {estado.total} · {item.specialty_name}
             </p>

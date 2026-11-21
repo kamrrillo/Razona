@@ -4,8 +4,9 @@ The service role key BYPASSES RLS, so every query on user data filters by
 ``user_id`` explicitly. Methods that touch user rows take ``user_id`` as their
 first argument and always add ``.eq("user_id", user_id)``.
 
-Items and specialties are global content; they are cached in-process because
-they only change when someone runs ``pnpm seed:demo``.
+Items and specialties are global content; they are cached in-process because they only
+change when someone reloads the case bank (``uv run json/herramientas/cargar_supabase.py``).
+Items come from the ``v_casos_app`` view (the case bank translated to ``Item``).
 """
 
 from __future__ import annotations
@@ -82,7 +83,7 @@ class RazonaRepository:
     def _load_items(self) -> dict[str, Item]:
         with self._lock:
             if self._items is None:
-                res = self._client.table("items").select("id, payload").order("id").execute()
+                res = self._client.table("v_casos_app").select("id, payload").order("id").execute()
                 items: dict[str, Item] = {}
                 for row in res.data:
                     try:

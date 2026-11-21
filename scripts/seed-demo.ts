@@ -3,11 +3,14 @@
  *
  *   pnpm seed:demo
  *
+ * Requiere el banco de casos cargado en Supabase:
+ *   uv run json/herramientas/cargar_supabase.py
+ *
  * Idempotente: se puede correr varias veces. Cada corrida:
- *  1. Sincroniza specialties e items desde content/*.json.
+ *  1. Lee los casos del banco (vista v_casos_app).
  *  2. Crea a Ana con correo confirmado (o actualiza su contraseña si ya existe).
  *  3. Borra su actividad previa y regenera la racha (6 días hasta ayer),
- *     intentos por tema (Bronquiolitis como tema débil) y un examen anterior.
+ *     intentos por tema (Bronquiolitis aguda como tema débil) y un examen anterior.
  *
  * Usa la service role: SOLO en local o en un entorno de confianza, nunca en el cliente.
  */
@@ -17,8 +20,8 @@ config({ path: ".env.local" });
 config();
 
 import { createClient } from "@supabase/supabase-js";
-import { examFile, examItems, getAllItems, getItem, specialties } from "@/lib/content";
 import { localDay } from "@/lib/learning/streak";
+import { type Item, ItemSchema } from "@/lib/schemas/content";
 import type { Database } from "@/lib/supabase/database.types";
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -37,29 +40,21 @@ const admin = createClient<Database>(url, secret, {
   auth: { autoRefreshToken: false, persistSession: false },
 });
 
-/** Historial sintético por tema: [aciertos, total]. Bronquiolitis queda como tema débil. */
+/** Historial sintético por tema del banco: aciertos y total. Bronquiolitis aguda queda como tema débil. */
 const SYNTHETIC_HISTORY: { topic: string; correct: number; total: number }[] = [
-  { topic: "Bronquiolitis", correct: 2, total: 9 },
-  { topic: "Hipertensión arterial", correct: 7, total: 9 },
-  { topic: "Apendicitis aguda", correct: 6, total: 8 },
-  { topic: "Diabetes mellitus tipo 2", correct: 5, total: 6 },
-  { topic: "Preeclampsia", correct: 4, total: 6 },
-  { topic: "Enfermedad diarreica aguda", correct: 3, total: 4 },
+  { topic: "Bronquiolitis aguda", correct: 2, total: 9 },
+  { topic: "Infección de vías urinarias", correct: 7, total: 9 },
+  { topic: "Otitis media aguda", correct: 6, total: 8 },
+  { topic: "Diarrea aguda", correct: 5, total: 6 },
+  { topic: "Ictericia neonatal", correct: 4, total: 6 },
+  { topic: "Laringotraqueítis aguda", correct: 3, total: 4 },
 ];
 const STREAK_DAYS = 6; // días consecutivos hasta ayer; hoy la demo la sube a 7
 const PREVIOUS_EXAM_DAYS_AGO = 3;
-const PREVIOUS_EXAM_ANSWERS: Record<string, string> = {
-  "ex-mi-01": "c",
-  "ex-mi-02": "b",
-  "ex-mi-03": "b",
-  "ex-ped-01": "b",
-  "ex-ped-02": "d",
-  "ex-ped-03": "b",
-  "ex-go-01": "b",
-  "ex-go-02": "c",
-  "ex-cg-01": "b",
-  "ex-cg-02": "a",
-};
+/** Reactivos del examen anterior que Ana falló (el resto, acertados). */
+const PREVIOUS_EXAM_WRONG_TOPICS = new Set(["Bronquiolitis aguda", "Ictericia neonatal"]);
+
+let items: Item[] = [];
 
 /** Fecha en Ciudad de México (UTC-6, sin horario de verano) `daysAgo` días atrás a la hora dada. */
 function mxDate(daysAgo: number, hour: number, minute: number): Date {
@@ -84,30 +79,18 @@ async function must<T>(
   return data;
 }
 
-async function syncContent() {
-  await must(
-    "specialties",
-    admin.from("specialties").upsert(
-      specialties.map((s, i) => ({ id: s.id, name: s.name, sort_order: i + 1 })),
-      { onConflict: "id" },
-    ),
-  );
-  await must(
-    "items",
-    admin.from("items").upsert(
-      getAllItems().map((item) => ({
-        id: item.id,
-        kind: item.kind,
-        specialty_id: item.specialtyId,
-        topic: item.topic,
-        payload: item,
-        is_sample: item.isSample,
-        updated_at: new Date().toISOString(),
-      })),
-      { onConflict: "id" },
-    ),
-  );
-  console.log(`✓ Contenido sincronizado (${getAllItems().length} ítems)`);
+async function loadBank() {
+  const { data, error } = await admin.from("v_casos_app").select("id, payload").order("id");
+  if (error) {
+    console.error("✗ No se pudo leer v_casos_app. ¿Aplicaste las migraciones?", error);
+    process.exit(1);
+  }
+  items = (data ?? []).map((row) => ItemSchema.parse(row.payload));
+  if (items.length === 0) {
+    console.error("✗ No hay casos. Carga el banco: uv run json/herramientas/cargar_supabase.py");
+    process.exit(1);
+  }
+  console.log(`✓ Banco de casos: ${items.length} casos`);
 }
 
 async function ensureAna(): Promise<string> {
@@ -153,9 +136,24 @@ async function ensureAna(): Promise<string> {
 }
 
 function itemForTopic(topic: string) {
-  const item = getAllItems().find((i) => i.topic === topic);
-  if (!item) throw new Error(`No hay ítem para el tema ${topic}`);
+  const item = items.find((i) => i.topic === topic && i.tipo !== "variante");
+  if (!item) throw new Error(`No hay caso índice para el tema ${topic}`);
   return item;
+}
+
+/** Examen anterior: el primer caso índice de cada área, más el tema débil. */
+function previousExamItems(): Item[] {
+  const indices = items.filter((i) => i.tipo !== "variante");
+  const picked = new Map<string, Item>();
+  for (const i of indices) {
+    const area = i.groupId ?? i.specialtyId;
+    if (!picked.has(area)) picked.set(area, i);
+  }
+  const list = [...picked.values()];
+  for (const topic of PREVIOUS_EXAM_WRONG_TOPICS) {
+    if (!list.some((i) => i.topic === topic)) list.push(itemForTopic(topic));
+  }
+  return list.slice(0, 10);
 }
 
 async function resetHistory(userId: string) {
@@ -191,8 +189,11 @@ async function resetHistory(userId: string) {
   // Examen anterior ya calificado.
   const startedAt = mxDate(PREVIOUS_EXAM_DAYS_AGO, 20, 0);
   const finishedAt = new Date(startedAt.getTime() + 13 * 60 * 1000);
+  const examItems = previousExamItems();
   const answers = examItems.map((item) => {
-    const selected = PREVIOUS_EXAM_ANSWERS[item.id] ?? item.correctOptionId;
+    const selected = PREVIOUS_EXAM_WRONG_TOPICS.has(item.topic)
+      ? (item.options.find((o) => o.id !== item.correctOptionId)?.id ?? "a")
+      : item.correctOptionId;
     return { item, selected, isCorrect: selected === item.correctOptionId };
   });
   const correct = answers.filter((a) => a.isCorrect).length;
@@ -202,8 +203,10 @@ async function resetHistory(userId: string) {
       .from("exams")
       .insert({
         user_id: userId,
-        exam_key: examFile.examKey,
-        duration_seconds: examFile.durationMinutes * 60,
+        exam_key: "simulacro-global",
+        scope: "global",
+        item_ids: examItems.map((i) => i.id),
+        duration_seconds: examItems.length * 90,
         started_at: startedAt.toISOString(),
         finished_at: finishedAt.toISOString(),
         total: answers.length,
@@ -235,8 +238,8 @@ async function resetHistory(userId: string) {
 }
 
 async function main() {
-  if (!getItem("caso-bronquiolitis-01")) throw new Error("Falta el caso del tema débil");
-  await syncContent();
+  await loadBank();
+  itemForTopic("Bronquiolitis aguda");
   const userId = await ensureAna();
   await resetHistory(userId);
   console.log(`✓ Demo lista: ${email}`);

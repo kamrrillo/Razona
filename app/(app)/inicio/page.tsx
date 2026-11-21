@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { LearningPath } from "@/components/app/learning-path";
 import { DAILY_GOAL, TopBar } from "@/components/app/top-bar";
 import { buttonVariants } from "@/components/ui/button";
-import { getAllItems, specialties } from "@/lib/content";
+import { getCatalog } from "@/lib/content";
 import { getAuthedContext } from "@/lib/data/auth";
 import { getProgress } from "@/lib/data/progress";
 import { buildLearningPath } from "@/lib/learning/path";
@@ -16,10 +16,15 @@ export const metadata: Metadata = { title: "Inicio" };
 export default async function InicioPage() {
   const ctx = await getAuthedContext();
   if (!ctx) redirect("/login");
-  const progress = await getProgress(ctx.supabase, ctx.userId);
+  const [progress, catalog] = await Promise.all([
+    getProgress(ctx.supabase, ctx.userId),
+    getCatalog(),
+  ]);
+  // Una unidad por área (grupo de temas) y solo los casos índice: son los que se practican.
   const units = buildLearningPath({
-    specialties,
-    items: getAllItems(),
+    specialties: catalog.groups,
+    items: catalog.cases,
+    unitOf: (i) => i.groupId ?? i.specialtyId,
     stats: progress.byTopic,
     weakTopic: progress.weakTopic?.topic ?? null,
   });
@@ -90,7 +95,7 @@ export default async function InicioPage() {
 
       <div className="flex items-baseline justify-between">
         <h2 className="text-lg font-extrabold text-brand-900">Tu ruta ENARM</h2>
-        <p className="text-xs text-muted-foreground">Avance por especialidad</p>
+        <p className="text-xs text-muted-foreground">Avance por área</p>
       </div>
 
       <LearningPath units={units} />

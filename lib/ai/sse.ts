@@ -31,7 +31,9 @@ export function replyToEvents(reply: TutorReply): TutorEvent[] {
   events.push({
     type: "citation",
     gpcId: reply.citation.gpcId,
+    gpcTitle: reply.citation.gpcTitle,
     section: reply.citation.section,
+    page: reply.citation.page,
     snippet: reply.citation.snippet,
   });
   events.push({ type: "done" });

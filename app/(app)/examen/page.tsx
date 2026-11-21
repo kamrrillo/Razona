@@ -1,38 +1,61 @@
 import { Bot, ChevronRight, Clock, ListChecks, MicOff } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { examFile } from "@/lib/content";
+import { getCatalog } from "@/lib/content";
+import { EXAM_SIZE, SECONDS_PER_ITEM } from "@/lib/data/exam";
 import { StartExamButton } from "./start-exam-button";
 
 export const metadata: Metadata = { title: "Examen simulado" };
 
-export default function ExamenPage() {
+export default async function ExamenPage() {
+  const catalog = await getCatalog();
+  const count = (pred: (i: (typeof catalog.items)[number]) => boolean) =>
+    catalog.items.filter(pred).length;
+  const groups = catalog.groups
+    .map((g) => ({
+      id: g.id,
+      name: g.name,
+      count: Math.min(
+        EXAM_SIZE,
+        count((i) => i.groupId === g.id),
+      ),
+    }))
+    .filter((g) => g.count > 0);
+  const groupName = new Map(catalog.groups.map((g) => [g.id, g.name]));
+  const topics = catalog.topics
+    .map((t) => ({
+      id: t.sindrome,
+      name: t.name,
+      groupName: groupName.get(t.groupId) ?? "",
+      count: count((i) => i.sindrome === t.sindrome),
+    }))
+    .filter((t) => t.count > 0);
+  const globalCount = Math.min(EXAM_SIZE, catalog.items.length);
+
   return (
     <div className="space-y-4 py-4">
-      <h1 className="text-2xl font-bold">Examen simulado</h1>
+      <h1 className="text-2xl font-bold">Examen</h1>
       <Card>
         <CardHeader className="space-y-2">
-          <SampleContentBadge />
-          <CardTitle>{examFile.title}</CardTitle>
+          <CardTitle>Examen simulado</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-3">
-              <ListChecks className="size-5 text-primary" aria-hidden /> {examFile.items.length}{" "}
-              reactivos de varias especialidades
+              <ListChecks className="size-5 text-primary" aria-hidden /> Hasta {EXAM_SIZE}{" "}
+              reactivos: global (todas las áreas), por área o por tema
             </li>
             <li className="flex items-center gap-3">
-              <Clock className="size-5 text-primary" aria-hidden /> {examFile.durationMinutes}{" "}
-              minutos con cronómetro
+              <Clock className="size-5 text-primary" aria-hidden /> {SECONDS_PER_ITEM} segundos por
+              reactivo, con cronómetro
             </li>
             <li className="flex items-center gap-3">
               <MicOff className="size-5 text-primary" aria-hidden /> Tutor apagado: como el día del
               ENARM
             </li>
           </ul>
-          <StartExamButton />
+          <StartExamButton groups={groups} topics={topics} globalCount={globalCount} />
         </CardContent>
       </Card>
       <Link

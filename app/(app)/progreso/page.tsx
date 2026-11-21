@@ -56,7 +56,7 @@ export default async function ProgresoPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Por especialidad</CardTitle>
+          <CardTitle className="text-base">Por área</CardTitle>
         </CardHeader>
         <CardContent>
           <SpecialtyBars items={progress.bySpecialty} />

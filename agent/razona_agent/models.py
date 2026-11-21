@@ -1,7 +1,7 @@
 """Pydantic models.
 
 ``Item`` mirrors the Zod ``ItemSchema`` in ``lib/schemas/content.ts`` (camelCase JSON in
-``items.payload``). Tool outputs are plain Pydantic models dumped to JSON-safe dicts.
+``v_casos_app.payload``: the case bank json/casos translated by the database view). Tool outputs are plain Pydantic models dumped to JSON-safe dicts.
 """
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 from pydantic.alias_generators import to_camel
 
-SAMPLE_NOTICE = "CONTENIDO DE EJEMPLO — reemplazar por los ítems validados"
+SAMPLE_NOTICE = "Uso educativo: no sustituye el criterio clínico."
 
 OptionId = str  # validated with the regex below where it matters
 _OPTION_PATTERN = r"^[a-e]$"
@@ -36,7 +36,24 @@ class Citation(_Camel):
     gpc_id: str = Field(min_length=1)
     gpc_title: str = Field(min_length=1)
     section: str = Field(min_length=1)
+    page: int | None = None
     snippet: str = Field(min_length=1)
+
+
+class RubricEntry(_Camel):
+    """Entrada de la rúbrica del banco. Revela la respuesta por descarte: solo servidor."""
+
+    error_type: Literal["lectura", "dato_omitido", "razonamiento", "conocimiento"]
+    description: str
+    option_ids: list[str]
+    question: str
+    explanation: str
+    citation: Citation
+
+
+class KeyPoint(_Camel):
+    text: str
+    citation: Citation
 
 
 class Item(_Camel):
@@ -54,6 +71,21 @@ class Item(_Camel):
     explanation: str = Field(min_length=1)
     citation: Citation
     is_sample: bool
+    # Campos del banco de casos (opcionales, como en Zod).
+    specialty_name: str | None = None
+    tipo: Literal["indice", "variante"] | None = None
+    caso_indice_id: str | None = None
+    sindrome: str | None = None
+    group_id: str | None = None
+    group_name: str | None = None
+    key_points: list[KeyPoint] = Field(default_factory=list)
+    rubric: list[RubricEntry] = Field(default_factory=list)
+
+    def rubric_for(self, option_id: str) -> RubricEntry | None:
+        """Entrada de la rúbrica de una opción incorrecta (nunca de la correcta)."""
+        if option_id == self.correct_option_id:
+            return None
+        return next((r for r in self.rubric if option_id in r.option_ids), None)
 
     @model_validator(mode="after")
     def _correct_option_exists(self) -> Item:

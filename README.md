@@ -3,29 +3,30 @@
 "El LeetCode del ENARM": casos clínicos tipo ENARM con un tutor socrático (Google ADK + Gemini) que cita las Guías de Práctica Clínica, examen simulado y progreso.
 
 > **Es un demo, no un producto.** Demo — uso educativo, no sustituye el criterio clínico.
-> Todo el contenido clínico es **CONTENIDO DE EJEMPLO — reemplazar por los ítems validados**.
+> El contenido clínico es el **banco de casos de pediatría** (`json/`): 110 casos tipo ENARM basados en 55 GPC del CENETEC/IMSS, con rúbrica de errores y citas con página.
 
 ## Guion (90 s)
 
 1. Escanear el QR → `/login` → **Entrar como Ana (demo)**.
-2. **Inicio**: racha, avance por especialidad y tema débil (Bronquiolitis).
-3. **Practicar mi tema débil** → elegir **a) Salbutamol** → el tutor pregunta y cita la GPC.
-4. Elegir **b)** → feedback con explicación y cita.
-5. **Examen** → Comenzar → responder 2 → **Completar examen (demo)**.
-6. **Resultados**: calificación, aciertos por especialidad, revisión con cita, **Practicar mi tema débil**.
+2. **Inicio**: racha, avance por área y tema débil (Bronquiolitis aguda).
+3. **Practicar mi tema débil** (caso RZ-PED-032-I) → elegir **a)** → el tutor pregunta y cita la GPC con página.
+4. Elegir **e)** → feedback con explicación y cita.
+5. **Examen** → global, por área o por tema → Comenzar → responder 2 → **Completar examen (demo)**.
+6. **Resultados**: calificación, aciertos por área, revisión con el tipo de error y su cita, **Practicar mi tema débil**.
 7. **Progreso**: la racha sube (6 → 7) y el tema débil mejora.
 
 Antes de cada ensayo o del pitch: `pnpm seed:demo` (reinicia a Ana).
 
 ## Desarrollo local
 
-Requisitos: Node 24, pnpm, Docker y Supabase CLI.
+Requisitos: Node 24, pnpm, Docker (o Podman con `DOCKER_HOST`), Supabase CLI y uv.
 
 ```bash
 pnpm install
 supabase start          # API en http://127.0.0.1:55321
 cp .env.example .env.local   # y completa con `supabase status`
-pnpm seed:demo          # crea a Ana + contenido
+pnpm content:load       # carga el banco de casos (json/) en Supabase
+pnpm seed:demo          # crea a Ana con historial sobre el banco
 pnpm dev --port 3100
 ```
 
@@ -33,7 +34,8 @@ pnpm dev --port 3100
 |---|---|
 | `pnpm verify` | typecheck + lint (Biome) + tests (Vitest) |
 | `pnpm test:e2e` | Guion completo en viewport de iPhone (Playwright; reinicia a Ana) |
-| `pnpm seed:demo` | Sincroniza contenido y reinicia a Ana (idempotente) |
+| `pnpm content:load` | Valida y carga `json/casos` + `json/temas.json` en Supabase (idempotente; `content:load:prod` para producción) |
+| `pnpm seed:demo` | Reinicia a Ana con historial sobre el banco (idempotente) |
 | `pnpm db:reset` | Reaplica migraciones y seed de especialidades |
 | `pnpm db:types` | Regenera `lib/supabase/database.types.ts` |
 
@@ -50,8 +52,8 @@ lib/learning              Racha, estadísticas, Thompson sampling
 lib/data                  Acceso a datos (RLS con la sesión de la usuaria)
 lib/supabase              Clientes server / proxy / admin (service role, server-only)
 lib/analytics/events.ts   PostHog (no hace nada sin clave)
-content/                  items.json, exam.json, tutor-fallback.json
-supabase/migrations       Esquema + RLS
+json/                     Banco de casos (fuente del contenido) y su catálogo de temas
+supabase/migrations       Esquema + RLS (banco: casos_clinicos, temas, vistas v_casos_*)
 scripts/seed-demo.ts      Ana y su historial sintético
 tests/{unit,e2e}
 docs/DECISIONES.md
@@ -80,7 +82,13 @@ Detalles, arquitectura y decisiones: [agent/README.md](agent/README.md).
 
 ## Reemplazar el contenido
 
-Edita `content/items.json` (casos), `content/exam.json` (10 reactivos + `demoAnswers`) y `content/tutor-fallback.json` (preguntas socráticas por opción incorrecta). No hay que tocar código: `pnpm test` valida los archivos con Zod y `pnpm seed:demo` los sincroniza a la tabla `items`. Si un caso nuevo usa otra especialidad, agrégala en `specialties` de `items.json`.
+El contenido es el banco de casos de `json/` (ver `json/README.md`). No hay que tocar código:
+
+1. Edita o agrega casos en `json/fuentes/` y reconstruye con `python3 json/herramientas/construir_casos.py`.
+2. Si hay un tema nuevo, agrégalo a `json/temas.json` (nombre y área).
+3. `pnpm content:load` valida y carga en Supabase. La app y el agente lo ven en unos minutos (caché de `CONTENT_CACHE_MS`, 5 min); el agente de Python, al reiniciarse.
+
+Cómo fluye: `json/casos` → `casos_clinicos.payload` (tal cual) → vista `v_casos_app` (formato `Item`) → app web y agente. La rúbrica solo se lee desde el servidor; el tutor de respaldo usa sus preguntas socráticas semilla. Una especialidad nueva se agrega en `supabase/seed/01_specialties.sql` y en los grupos de `json/temas.json`.
 
 ## Deploy (Vercel + Supabase)
 

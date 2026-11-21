@@ -6,7 +6,7 @@ Sistema multiagente con **Google ADK para Python** que (1) aplica **exámenes di
 
 ## Inicio rápido
 
-Requisitos: [uv](https://docs.astral.sh/uv/) (o Python ≥ 3.11 + pip), Supabase local corriendo (`supabase start`) y Ana sembrada (`pnpm seed:demo`).
+Requisitos: [uv](https://docs.astral.sh/uv/) (o Python ≥ 3.11 + pip), Supabase local corriendo (`supabase start`), el banco de casos cargado (`pnpm content:load`) y Ana sembrada (`pnpm seed:demo`).
 
 ```bash
 cd agent

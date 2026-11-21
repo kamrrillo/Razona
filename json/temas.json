@@ -1,0 +1,277 @@
+{
+  "descripcion": "Catálogo de temas del banco de casos. Cada 'sindrome' de json/casos debe aparecer aquí exactamente una vez. 'grupo' agrupa temas afines para el examen simulado por área y para el modelo adaptativo. Los grupos son una propuesta inicial: revisarlos con el equipo clínico.",
+  "grupos": [
+    { "id": "neonatologia", "nombre": "Neonatología", "especialidad": "pediatria", "orden": 1 },
+    {
+      "id": "respiratorio_orl",
+      "nombre": "Aparato respiratorio y otorrinolaringología",
+      "especialidad": "pediatria",
+      "orden": 2
+    },
+    { "id": "infectologia", "nombre": "Infectología", "especialidad": "pediatria", "orden": 3 },
+    {
+      "id": "gastro_nutricion",
+      "nombre": "Gastroenterología y nutrición",
+      "especialidad": "pediatria",
+      "orden": 4
+    },
+    {
+      "id": "crecimiento_desarrollo",
+      "nombre": "Crecimiento, desarrollo y tamizaje",
+      "especialidad": "pediatria",
+      "orden": 5
+    },
+    {
+      "id": "nefrourologia",
+      "nombre": "Nefrología y urología",
+      "especialidad": "pediatria",
+      "orden": 6
+    },
+    {
+      "id": "neurologia",
+      "nombre": "Neurología y columna",
+      "especialidad": "pediatria",
+      "orden": 7
+    },
+    { "id": "cardiologia", "nombre": "Cardiología", "especialidad": "pediatria", "orden": 8 },
+    {
+      "id": "endocrino_hemato_onco",
+      "nombre": "Endocrinología y hemato-oncología",
+      "especialidad": "pediatria",
+      "orden": 9
+    }
+  ],
+  "temas": [
+    {
+      "sindrome": "alimentacion_enteral_prematuro",
+      "nombre": "Alimentación enteral del prematuro",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "anemia_del_prematuro",
+      "nombre": "Anemia del prematuro",
+      "grupo": "neonatologia"
+    },
+    { "sindrome": "apnea_del_prematuro", "nombre": "Apnea del prematuro", "grupo": "neonatologia" },
+    {
+      "sindrome": "asfixia_neonatal_reanimacion",
+      "nombre": "Asfixia neonatal y reanimación",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "displasia_broncopulmonar",
+      "nombre": "Displasia broncopulmonar",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "encefalopatia_hipoxico_isquemica",
+      "nombre": "Encefalopatía hipóxico-isquémica",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "hipoglucemia_neonatal_transitoria",
+      "nombre": "Hipoglucemia neonatal transitoria",
+      "grupo": "neonatologia"
+    },
+    { "sindrome": "ictericia_neonatal", "nombre": "Ictericia neonatal", "grupo": "neonatologia" },
+    {
+      "sindrome": "liquidos_electrolitos_prematuro",
+      "nombre": "Líquidos y electrólitos en el prematuro",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "malformacion_anorrectal_neonatal",
+      "nombre": "Malformación anorrectal neonatal",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "recien_nacido_prematuro_sano",
+      "nombre": "Cuidados del recién nacido prematuro sano",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "sindrome_dificultad_respiratoria_recien_nacido",
+      "nombre": "Síndrome de dificultad respiratoria del recién nacido",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "taquipnea_transitoria_recien_nacido",
+      "nombre": "Taquipnea transitoria del recién nacido",
+      "grupo": "neonatologia"
+    },
+    {
+      "sindrome": "tetanos_neonatal_prevencion",
+      "nombre": "Prevención del tétanos neonatal",
+      "grupo": "neonatologia"
+    },
+
+    {
+      "sindrome": "amigdalectomia_indicaciones",
+      "nombre": "Indicaciones de amigdalectomía",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "bronquiolitis_aguda",
+      "nombre": "Bronquiolitis aguda",
+      "grupo": "respiratorio_orl"
+    },
+    { "sindrome": "epiglotitis_aguda", "nombre": "Epiglotitis aguda", "grupo": "respiratorio_orl" },
+    {
+      "sindrome": "fibrosis_quistica_diagnostico",
+      "nombre": "Diagnóstico de fibrosis quística",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "infeccion_aguda_vias_aereas_superiores",
+      "nombre": "Infección aguda de vías aéreas superiores",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "laringotraqueitis_aguda",
+      "nombre": "Laringotraqueítis aguda",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "neumonitis_aspiracion_alimento",
+      "nombre": "Neumonitis por aspiración de alimento",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "otitis_media_aguda",
+      "nombre": "Otitis media aguda",
+      "grupo": "respiratorio_orl"
+    },
+    {
+      "sindrome": "rinosinusitis_aguda",
+      "nombre": "Rinosinusitis aguda",
+      "grupo": "respiratorio_orl"
+    },
+    { "sindrome": "tos_cronica", "nombre": "Tos crónica", "grupo": "respiratorio_orl" },
+
+    { "sindrome": "escarlatina", "nombre": "Escarlatina", "grupo": "infectologia" },
+    {
+      "sindrome": "fiebre_sin_signos_focalizacion",
+      "nombre": "Fiebre sin signos de focalización",
+      "grupo": "infectologia"
+    },
+    { "sindrome": "pediculosis_capitis", "nombre": "Pediculosis capitis", "grupo": "infectologia" },
+    { "sindrome": "rubeola_vacunacion", "nombre": "Rubéola y vacunación", "grupo": "infectologia" },
+    { "sindrome": "sarampion", "nombre": "Sarampión", "grupo": "infectologia" },
+
+    {
+      "sindrome": "alergia_alimentaria",
+      "nombre": "Alergia alimentaria",
+      "grupo": "gastro_nutricion"
+    },
+    {
+      "sindrome": "deficiencia_vitamina_a",
+      "nombre": "Deficiencia de vitamina A",
+      "grupo": "gastro_nutricion"
+    },
+    { "sindrome": "diarrea_aguda", "nombre": "Diarrea aguda", "grupo": "gastro_nutricion" },
+    {
+      "sindrome": "estrenimiento_funcional",
+      "nombre": "Estreñimiento funcional",
+      "grupo": "gastro_nutricion"
+    },
+    {
+      "sindrome": "intolerancia_lactosa",
+      "nombre": "Intolerancia a la lactosa",
+      "grupo": "gastro_nutricion"
+    },
+    {
+      "sindrome": "lactancia_madre_con_enfermedad",
+      "nombre": "Lactancia en madre con enfermedad",
+      "grupo": "gastro_nutricion"
+    },
+    { "sindrome": "pelagra", "nombre": "Pelagra", "grupo": "gastro_nutricion" },
+    {
+      "sindrome": "raquitismo_carencial_prevencion",
+      "nombre": "Raquitismo carencial",
+      "grupo": "gastro_nutricion"
+    },
+
+    {
+      "sindrome": "alteraciones_visuales_preescolar",
+      "nombre": "Alteraciones visuales en el preescolar",
+      "grupo": "crecimiento_desarrollo"
+    },
+    {
+      "sindrome": "alteraciones_visuales_recien_nacido_lactante",
+      "nombre": "Alteraciones visuales en el recién nacido y lactante",
+      "grupo": "crecimiento_desarrollo"
+    },
+    {
+      "sindrome": "control_nino_sano_nutricion",
+      "nombre": "Control del niño sano",
+      "grupo": "crecimiento_desarrollo"
+    },
+    { "sindrome": "talla_baja", "nombre": "Talla baja", "grupo": "crecimiento_desarrollo" },
+    {
+      "sindrome": "trastorno_desarrollo_psicomotor",
+      "nombre": "Trastorno del desarrollo psicomotor",
+      "grupo": "crecimiento_desarrollo"
+    },
+
+    { "sindrome": "hipospadias", "nombre": "Hipospadias", "grupo": "nefrourologia" },
+    {
+      "sindrome": "infeccion_vias_urinarias",
+      "nombre": "Infección de vías urinarias",
+      "grupo": "nefrourologia"
+    },
+    {
+      "sindrome": "malformaciones_vias_urinarias",
+      "nombre": "Malformaciones de vías urinarias",
+      "grupo": "nefrourologia"
+    },
+    {
+      "sindrome": "sindrome_nefritico_postestreptococico",
+      "nombre": "Síndrome nefrítico postestreptocócico",
+      "grupo": "nefrourologia"
+    },
+    {
+      "sindrome": "sindrome_nefrotico_primario",
+      "nombre": "Síndrome nefrótico primario",
+      "grupo": "nefrourologia"
+    },
+
+    {
+      "sindrome": "dolor_lumbar_cronico_pediatrico",
+      "nombre": "Dolor lumbar crónico",
+      "grupo": "neurologia"
+    },
+    { "sindrome": "espina_bifida_prevencion", "nombre": "Espina bífida", "grupo": "neurologia" },
+    {
+      "sindrome": "hidrocefalia_menor_1_ano",
+      "nombre": "Hidrocefalia en menores de 1 año",
+      "grupo": "neurologia"
+    },
+    {
+      "sindrome": "primera_crisis_convulsiva",
+      "nombre": "Primera crisis convulsiva",
+      "grupo": "neurologia"
+    },
+
+    {
+      "sindrome": "enfermedad_kawasaki",
+      "nombre": "Enfermedad de Kawasaki",
+      "grupo": "cardiologia"
+    },
+    {
+      "sindrome": "tetralogia_fallot_crisis_hipoxia",
+      "nombre": "Tetralogía de Fallot",
+      "grupo": "cardiologia"
+    },
+
+    {
+      "sindrome": "hiperplasia_suprarrenal_congenita",
+      "nombre": "Hiperplasia suprarrenal congénita",
+      "grupo": "endocrino_hemato_onco"
+    },
+    {
+      "sindrome": "histiocitosis_celulas_langerhans",
+      "nombre": "Histiocitosis de células de Langerhans",
+      "grupo": "endocrino_hemato_onco"
+    }
+  ]
+}

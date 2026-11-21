@@ -11,6 +11,7 @@ import { z } from "zod";
 import { specialtyName } from "@/lib/content";
 import type { Item } from "@/lib/schemas/content";
 import { stripMarkdown } from "@/lib/text";
+import { rubricFor } from "./fallback-engine";
 import { revealsAnswer, type TutorEngine, type TutorInput, type TutorReply } from "./tutor-engine";
 
 const APP_NAME = "razona-tutor";
@@ -35,11 +36,25 @@ Reglas obligatorias:
 
 function formatCase(item: Item): string {
   const options = item.options.map((o) => `${o.id}) ${o.text}`).join("\n");
-  return `Caso (${specialtyName(item.specialtyId)} · ${item.topic}) [id: ${item.id}]
+  return `Caso (${specialtyName(item)} · ${item.topic}) [id: ${item.id}]
 ${item.vignette}
 
 Pregunta: ${item.question}
 ${options}`;
+}
+
+/** Contexto de la rúbrica del banco para la opción elegida (lo escribieron humanos, no el modelo). */
+function rubricContext(input: TutorInput): string {
+  if (!input.selectedOptionId) return "";
+  const entry = rubricFor(input.item, input.selectedOptionId);
+  if (!entry) return "";
+  return `Guía de la rúbrica para esta opción (úsala, no la copies literal ni la cites como rúbrica):
+- Tipo de error probable: ${entry.errorType}
+- Qué suele fallar: ${entry.description}
+- Pregunta socrática sugerida: ${entry.question}
+- Concepto que debe descubrir: ${entry.explanation}
+
+`;
 }
 
 function buildPrompt(input: TutorInput): string {
@@ -54,7 +69,7 @@ function buildPrompt(input: TutorInput): string {
 
   return `${formatCase(input.item)}
 
-${transcript ? `Conversación previa:\n${transcript}\n\n` : ""}${turn}
+${rubricContext(input)}${transcript ? `Conversación previa:\n${transcript}\n\n` : ""}${turn}
 
 Responde con una pregunta socrática y cita la GPC.`;
 }
@@ -72,6 +87,10 @@ export class AdkTutorEngine implements TutorEngine {
   async respond(input: TutorInput): Promise<TutorReply> {
     const { item } = input;
     let gpcConsulted = false;
+    // Cita de la entrada de la rúbrica de la opción elegida; si no hay, la del caso.
+    const citation =
+      (input.selectedOptionId && rubricFor(item, input.selectedOptionId)?.citation) ||
+      item.citation;
 
     const buscarGpc = new FunctionTool({
       name: "buscar_gpc",
@@ -83,10 +102,11 @@ export class AdkTutorEngine implements TutorEngine {
       execute: () => {
         gpcConsulted = true;
         return {
-          gpcId: item.citation.gpcId,
-          gpcTitle: item.citation.gpcTitle,
-          section: item.citation.section,
-          snippet: item.citation.snippet,
+          gpcId: citation.gpcId,
+          gpcTitle: citation.gpcTitle,
+          section: citation.section,
+          page: citation.page,
+          snippet: citation.snippet,
         };
       },
     });
@@ -155,9 +175,9 @@ export class AdkTutorEngine implements TutorEngine {
     return {
       text,
       hint: gpcConsulted
-        ? `Revisa ${item.citation.gpcTitle}, sección «${item.citation.section}».`
+        ? `Revisa ${citation.gpcTitle}, sección «${citation.section}»${citation.page ? `, p. ${citation.page}` : ""}.`
         : undefined,
-      citation: item.citation,
+      citation,
       engine: "adk",
     };
   }

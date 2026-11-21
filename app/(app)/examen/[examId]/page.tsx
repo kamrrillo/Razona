@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
-import { examFile, examItems, toPublicItem } from "@/lib/content";
+import { getCatalog, toPublicItem } from "@/lib/content";
 import { getAuthedContext } from "@/lib/data/auth";
-import { loadExam } from "@/lib/data/exam";
+import { examItemsFor, examTitle, loadExam } from "@/lib/data/exam";
 import { publicEnv } from "@/lib/env";
 import { ExamRunner } from "./exam-runner";
 
@@ -18,12 +18,13 @@ export default async function ExamRunPage({ params }: PageProps<"/examen/[examId
   const loaded = await loadExam(ctx.supabase, ctx.userId, examId);
   if (!loaded) notFound();
   if (loaded.exam.finishedAt) redirect(`/examen/${examId}/resultados`);
+  const [items, catalog] = await Promise.all([examItemsFor(loaded.exam), getCatalog()]);
 
   return (
     <ExamRunner
       examId={examId}
-      title={examFile.title}
-      items={examItems.map(toPublicItem)}
+      title={examTitle(catalog, loaded.exam.scope)}
+      items={items.map(toPublicItem)}
       initialAnswers={loaded.answers}
       endsAt={new Date(loaded.exam.startedAt).getTime() + loaded.exam.durationSeconds * 1000}
       demoMode={publicEnv.demoMode}
