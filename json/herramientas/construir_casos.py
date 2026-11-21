@@ -12,12 +12,24 @@ Formato compacto por guía:
   ]
 }
 Una cita sin respaldo se escribe como ["SIN_RESPALDO_GPC", motivo] en lugar de seccion, pagina, fragmento.
+
+Archivos que lee además de fuentes/:
+  letras.json      letra correcta fija por caso. Un caso nuevo recibe la letra menos usada
+                   y se agrega al archivo; las existentes nunca cambian (agregar una guía no
+                   mueve las respuestas de los casos que ya estaban).
+  revisiones.json  estado de revisión médica por caso (borrador si no aparece).
+
+Uso:
+  python3 herramientas/construir_casos.py           # escribe casos/ y actualiza letras.json
+  python3 herramientas/construir_casos.py --check   # no escribe; sale con 1 si casos/ no está al día
 """
+import argparse
 import glob
-import random
 import json
 import os
+import random
 import sys
+from collections import Counter
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.join(AQUI, "..")
@@ -50,16 +62,36 @@ def baraja(c, semilla, destino):
     return c
 
 
-def expande(f, contador):
+def lee_json(nombre, clave):
+    ruta = os.path.join(RAIZ, nombre)
+    if not os.path.exists(ruta):
+        return {}
+    with open(ruta, encoding="utf-8") as fh:
+        return json.load(fh)[clave]
+
+
+def letra_para(cid, letras):
+    """Letra fija del caso; uno nuevo recibe la menos usada (empate: orden A–E)."""
+    if cid not in letras:
+        uso = Counter(letras.values())
+        letras[cid] = min("ABCDE", key=lambda x: (uso[x], x))
+    return letras[cid]
+
+
+def estado_para(cid, revisiones):
+    return revisiones.get(cid, {}).get("estado", "borrador")
+
+
+def expande(f, letras, revisiones):
     num = f["archivo"][:3]
     base = {"guia": f["guia"], "clave": f["clave"], "archivo": f["archivo"]}
     out = []
     for c in f["casos"]:
         indice = c["t"] == "I"
-        c = baraja(c, f"RZ-PED-{num}-{c['t']}", "ABCDE"[contador[0] % 5])
-        contador[0] += 1
+        cid = f"RZ-PED-{num}-{c['t']}"
+        c = baraja(c, cid, letra_para(cid, letras))
         out.append({
-            "id": f"RZ-PED-{num}-{c['t']}",
+            "id": cid,
             "version": VERSION,
             "sindrome": f["sindrome"],
             "tipo": "indice" if indice else "variante",
@@ -75,27 +107,76 @@ def expande(f, contador):
                 "senales_en_justificacion": r[3], "pregunta_socratica_semilla": r[4],
                 "explicacion": r[5], "cita_gpc": cita(f, r[6:])} for r in c["rub"]],
             "autor": "claude",
-            "estado": "borrador",
+            "estado": estado_para(cid, revisiones),
             "fecha": FECHA,
             "licencia": LICENCIA,
         })
     return num, out
 
 
-def main(rutas):
-    # Siempre se procesan todas las fuentes en orden, para que la letra correcta
-    # de cada caso sea estable y quede repartida por igual entre A y E.
-    rutas = sorted(glob.glob(os.path.join(RAIZ, "fuentes", "*.json")))
-    contador = [0]
-    for r in rutas:
+def construye():
+    """Devuelve {ruta_destino: casos} y las letras (incluidas las de casos nuevos)."""
+    letras = dict(lee_json("letras.json", "letras"))
+    revisiones = lee_json("revisiones.json", "revisiones")
+    salida = {}
+    for r in sorted(glob.glob(os.path.join(RAIZ, "fuentes", "*.json"))):
         with open(r, encoding="utf-8") as fh:
             f = json.load(fh)
-        num, casos = expande(f, contador)
-        destino = os.path.join(RAIZ, "casos", f"RZ-PED-{num}.json")
+        num, casos = expande(f, letras, revisiones)
+        salida[os.path.join(RAIZ, "casos", f"RZ-PED-{num}.json")] = casos
+    return salida, letras
+
+
+def serializa(dato):
+    return json.dumps(dato, ensure_ascii=False, indent=2)
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Expande json/fuentes a json/casos.")
+    ap.add_argument("--check", action="store_true", help="no escribe; falla si casos/ no está al día")
+    args = ap.parse_args(argv)
+    salida, letras = construye()
+    letras_ruta = os.path.join(RAIZ, "letras.json")
+    letras_doc = {
+        "descripcion": (
+            "Letra de la respuesta correcta de cada caso. La asigna construir_casos.py la primera "
+            "vez y queda fija: cambiarla rompe el historial de respuestas de las alumnas. "
+            "No editar a mano."
+        ),
+        "letras": dict(sorted(letras.items())),
+    }
+
+    if args.check:
+        distintos = []
+        for destino, casos in salida.items():
+            actual = open(destino, encoding="utf-8").read() if os.path.exists(destino) else None
+            if actual != serializa(casos):
+                distintos.append(os.path.relpath(destino, RAIZ))
+        esperados = {os.path.normpath(d) for d in salida}
+        extra = sorted(
+            os.path.relpath(p, RAIZ)
+            for p in glob.glob(os.path.join(RAIZ, "casos", "*.json"))
+            if os.path.normpath(p) not in esperados
+        )
+        nuevos = sorted(set(letras) - set(lee_json("letras.json", "letras")))
+        for d in distintos:
+            print(f"DESACTUALIZADO {d}: corre python3 herramientas/construir_casos.py")
+        for e in extra:
+            print(f"SOBRANTE {e}: no tiene fuente en fuentes/")
+        if nuevos:
+            print(f"letras.json no tiene {len(nuevos)} casos nuevos: corre construir_casos.py")
+        ok = not (distintos or extra or nuevos)
+        print("OK: json/casos está al día" if ok else "json/casos no está al día")
+        return 0 if ok else 1
+
+    for destino, casos in salida.items():
         with open(destino, "w", encoding="utf-8") as fh:
-            json.dump(casos, fh, ensure_ascii=False, indent=2)
-        print(f"{r} -> {destino} ({len(casos)} casos)")
+            fh.write(serializa(casos))
+        print(f"-> {os.path.relpath(destino, RAIZ)} ({len(casos)} casos)")
+    with open(letras_ruta, "w", encoding="utf-8") as fh:
+        fh.write(serializa(letras_doc) + "\n")
+    return 0
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    sys.exit(main())

@@ -14,6 +14,9 @@ import construir_casos as cc  # noqa: E402
 import validar_casos as vc  # noqa: E402
 
 GPC = os.path.join(RAIZ, "gpc_paginas")
+HAY_GPC = os.path.isdir(GPC)
+# R5 necesita el texto de las GPC (json/gpc_paginas, no está en el repo).
+requiere_gpc = pytest.mark.skipif(not HAY_GPC, reason="falta json/gpc_paginas (texto de las GPC)")
 
 
 @pytest.fixture
@@ -22,14 +25,16 @@ def par():
         return json.load(fh)
 
 
-def corre(tmp_path, casos):
+def corre(tmp_path, casos, revisiones=None):
     (tmp_path / "x.json").write_text(json.dumps(casos, ensure_ascii=False), encoding="utf-8")
-    _, errores, avisos, _ = vc.valida(str(tmp_path), GPC)
+    _, errores, avisos, _ = vc.valida(
+        str(tmp_path), GPC if HAY_GPC else None, revisiones=revisiones or {}
+    )
     return errores, avisos
 
 
 def test_banco_actual_valido():
-    _, errores, _, _ = vc.valida(os.path.join(RAIZ, "casos"), GPC)
+    _, errores, _, _ = vc.valida(os.path.join(RAIZ, "casos"), GPC if HAY_GPC else None)
     assert errores == []
 
 
@@ -44,22 +49,55 @@ def test_indice_sin_cuatro_tipos(tmp_path, par):
     assert any("R2" in e for e in errores)
 
 
+@requiere_gpc
 def test_pagina_equivocada(tmp_path, par):
     par[0]["puntos_clave"][0]["cita_gpc"]["pagina"] = 40
     errores, _ = corre(tmp_path, par)
     assert any("R5" in e and "aparece en p[18]" in e for e in errores)
 
 
+@requiere_gpc
 def test_fragmento_inventado(tmp_path, par):
     par[0]["rubrica"][0]["cita_gpc"]["fragmento"] = "texto que no existe en ninguna guía"
     errores, _ = corre(tmp_path, par)
     assert any("no aparece en la guía" in e for e in errores)
 
 
-def test_estado_revisado_rechazado(tmp_path, par):
+def test_estado_revisado_sin_registro_rechazado(tmp_path, par):
     par[0]["estado"] = "revisado_medico"
     errores, _ = corre(tmp_path, par)
     assert any("R3" in e for e in errores)
+
+
+def test_estado_revisado_con_registro(tmp_path, par):
+    par[0]["estado"] = "revisado_medico"
+    rev = {par[0]["id"]: {"estado": "revisado_medico", "revisor": "Dra. X", "fecha": "2026-11-25"}}
+    errores, _ = corre(tmp_path, par, rev)
+    assert errores == []
+
+
+def test_revisado_sin_revisor_rechazado(tmp_path, par):
+    par[0]["estado"] = "revisado_medico"
+    errores, _ = corre(tmp_path, par, {par[0]["id"]: {"estado": "revisado_medico"}})
+    assert any("revisor y fecha" in e for e in errores)
+
+
+def test_letra_fija_al_agregar_guia():
+    letras = {"RZ-PED-001-I": "A", "RZ-PED-001-V1": "B", "RZ-PED-002-I": "C"}
+    antes = dict(letras)
+    nueva = cc.letra_para("RZ-PED-000-I", letras)  # una guía que se ordena antes que las demás
+    assert {k: letras[k] for k in antes} == antes  # las existentes no cambian
+    assert nueva in "DE"  # recibe una letra de las menos usadas
+    assert cc.letra_para("RZ-PED-000-I", letras) == nueva  # y queda fija
+
+
+def test_construccion_reproduce_el_banco():
+    assert cc.main(["--check"]) == 0
+
+
+def test_estado_viene_de_revisiones():
+    assert cc.estado_para("RZ-PED-027-I", {}) == "borrador"
+    assert cc.estado_para("X", {"X": {"estado": "en_revision"}}) == "en_revision"
 
 
 def test_variante_copiada(tmp_path, par):

@@ -13,6 +13,8 @@ Casos tipo ENARM generados a partir de 55 GPC pediátricas del CENETEC/IMSS: un 
 - `herramientas/test_validar.py`: pruebas (`python3 -m pytest herramientas -q`).
 - `herramientas/cargar_supabase.py`: valida y carga el banco en Supabase (ver abajo).
 - `temas.json`: catálogo de temas (nombre legible y área de cada `sindrome`). Cada síndrome del banco debe aparecer aquí.
+- `letras.json`: letra correcta fija de cada caso. La asigna el constructor la primera vez y no cambia (no editar a mano).
+- `revisiones.json`: estado de revisión médica por caso; el constructor lo aplica a `casos/`.
 
 ## Uso
 
@@ -51,3 +53,23 @@ uv run json/herramientas/cargar_supabase.py --dry-run   # solo valida
 ```
 
 La carga es idempotente: actualiza solo lo que cambió y marca como `retirado` (no borra) un caso que ya no está en el banco. En la base, cada caso vive en `casos_clinicos.payload` tal cual; la vista `v_casos_app` lo traduce al formato que usan la app web y el agente.
+
+## Agregar temas nuevos
+
+1. Texto de la GPC por página en `gpc_paginas/` (ver *Uso*).
+2. Escribe `fuentes/NNN.json` (formato compacto: índice + variante).
+3. Agrega el tema a `temas.json` (nombre y área; si es un área nueva, agrégala en `grupos`).
+4. `python3 herramientas/construir_casos.py`: genera `casos/RZ-PED-NNN.json` y le asigna a cada caso nuevo la letra menos usada en `letras.json`. Las letras de los casos existentes no cambian.
+5. `python3 herramientas/validar_casos.py casos --gpc gpc_paginas`.
+6. `python3 herramientas/construir_casos.py --check` confirma que `casos/` está al día con `fuentes/`.
+7. `pnpm content:load` (local) o `pnpm content:load:prod` (producción) valida y carga los casos nuevos; los existentes que no cambiaron no se tocan.
+
+## Revisión médica
+
+Registra cada revisión en `revisiones.json` y reconstruye; el estado pasa a `casos/` y a la base en la siguiente carga:
+
+```json
+"RZ-PED-032-I": { "estado": "revisado_medico", "revisor": "Dra. Nombre", "fecha": "2026-11-25", "notas": "" }
+```
+
+Estados: `en_revision`, `revisado_medico` (exige revisor y fecha) y `retirado`. Un caso que no aparece queda en `borrador`. El validador (R3) rechaza un caso cuyo estado no coincida con este archivo.

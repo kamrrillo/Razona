@@ -7,7 +7,8 @@ Uso:
 Reglas además del esquema:
   R1  ids únicos; cada variante apunta a un caso índice existente del mismo archivo de GPC.
   R2  cada caso índice cubre los 4 tipos de error en su rúbrica.
-  R3  estado inicial "borrador" (nunca "revisado_medico" desde este generador).
+  R3  el estado coincide con revisiones.json (borrador si el caso no aparece ahí);
+      "revisado_medico" exige revisor y fecha en revisiones.json.
   R4  la variante no se resuelve memorizando el índice: viñeta distinta (Jaccard < 0.5)
       y texto de la opción correcta distinto.
   R5  (con --gpc) cada cita existe: la página está dentro del PDF y el fragmento
@@ -84,8 +85,20 @@ def citas(caso):
         yield f"rubrica[{i}]", r.get("cita_gpc", {})
 
 
-def valida(dir_casos, dir_gpc=None, esquema=None):
+ESTADOS_REVISION = {"en_revision", "revisado_medico", "retirado"}
+
+
+def lee_revisiones(ruta=None):
+    ruta = ruta or os.path.join(AQUI, "..", "revisiones.json")
+    if not os.path.exists(ruta):
+        return {}
+    with open(ruta, encoding="utf-8") as fh:
+        return json.load(fh).get("revisiones", {})
+
+
+def valida(dir_casos, dir_gpc=None, esquema=None, revisiones=None):
     esquema = esquema or os.path.join(AQUI, "..", "esquema", "caso.schema.json")
+    revisiones = lee_revisiones() if revisiones is None else revisiones
     with open(esquema, encoding="utf-8") as fh:
         val = Draft202012Validator(json.load(fh))
     errores, avisos, casos = [], [], {}
@@ -106,8 +119,16 @@ def valida(dir_casos, dir_gpc=None, esquema=None):
             casos[cid] = caso
     pags = Paginas(dir_gpc) if dir_gpc else None
     for cid, c in casos.items():
-        if c.get("estado") != "borrador":
-            errores.append(f"{cid}: estado debe ser 'borrador' (R3)")
+        rev = revisiones.get(cid, {})
+        esperado = rev.get("estado", "borrador")
+        if rev and esperado not in ESTADOS_REVISION:
+            errores.append(f"{cid}: revisiones.json tiene un estado no válido: {esperado} (R3)")
+        elif c.get("estado") != esperado:
+            errores.append(
+                f"{cid}: estado '{c.get('estado')}' no coincide con revisiones.json ('{esperado}') (R3)"
+            )
+        if esperado == "revisado_medico" and not (rev.get("revisor") and rev.get("fecha")):
+            errores.append(f"{cid}: revisado_medico requiere revisor y fecha en revisiones.json (R3)")
         ops = list((c.get("opciones") or {}).values())
         if len({norm(o) for o in ops}) != len(ops):
             errores.append(f"{cid}: opciones repetidas (R6)")
@@ -155,6 +176,8 @@ def main():
     ap.add_argument("--gpc")
     ap.add_argument("--esquema")
     a = ap.parse_args()
+    if not a.gpc:
+        print("AVISO sin --gpc: no se verifican las citas contra el texto de las GPC (R5)")
     casos, errores, avisos, sr = valida(a.dir_casos, a.gpc, a.esquema)
     n_ind = sum(c.get("tipo") == "indice" for c in casos.values())
     print(f"Casos: {len(casos)} ({n_ind} índice, {len(casos) - n_ind} variante). Citas SIN_RESPALDO_GPC: {sr}")
