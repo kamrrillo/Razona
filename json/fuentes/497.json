@@ -99,8 +99,141 @@
      15,
      "oxigeno por mascarilla, evitar punciones de primera"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "farmacos_precipitantes_crisis",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué medicamentos pueden precipitar una crisis de hipoxia en la tetralogía de Fallot?",
+    "reverso": "Inotrópicos y digitálicos, inhibidores de la enzima convertidora de angiotensina, barbitúricos y cloropromacina.",
+    "cita": [
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "estudios_precipitan_crisis",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué procedimientos diagnósticos precipitan con frecuencia una crisis de hipoxia?",
+    "reverso": "La toma de radiografía de tórax, electrocardiograma, ecocardiograma y exámenes de laboratorio.",
+    "cita": [
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     14,
+     "Son frecuentemente precipitados en la toma o"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "agitacion_y_espasmo_infundibular",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué la agitación empeora una crisis de hipoxia?",
+    "reverso": "Aumenta la estimulación simpática del infundíbulo y con ello la obstrucción pulmonar; por eso sedar disminuye la cianosis.",
+    "cita": [
+     "4.1 Crisis de hipoxia en pacientes con TF",
+     15,
+     "estimulación simpática del infundíbulo incrementando"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_escalonado_crisis_hipoxia",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Crisis de hipoxia en tetralogía de Fallot\"] --> B[\"Tranquilizar, retirar estímulos y sostener en posición genupectoral\"]\n  B --> C[\"En el hospital: oxígeno por mascarilla; evitar punciones de primera intención\"]\n  C --> D{\"¿Persiste la crisis?\"}\n  D -->|\"No\"| E[\"Vigilar y evitar desencadenantes\"]\n  D -->|\"Sí\"| F[\"Sedación: morfina en bolos lentos cada 5 minutos, vigilando depresión respiratoria\"]\n  F --> G{\"¿Persiste la crisis?\"}\n  G -->|\"No\"| E\n  G -->|\"Sí\"| H[\"Vía venosa: vasoconstrictores, betabloqueadores, bicarbonato; valorar asistencia ventilatoria\"]",
+    "citas": [
+     [
+      "4.1 Crisis de hipoxia en pacientes con TF",
+      15,
+      "Sostenerlo por los brazos y colocándolo en posición de"
+     ],
+     [
+      "4.1 Crisis de hipoxia en pacientes con TF",
+      15,
+      "oxigeno por mascarilla, evitar punciones de primera"
+     ],
+     [
+      "4.1 Crisis de hipoxia en pacientes con TF",
+      16,
+      "La administración deberá ser lenta y en bolos a"
+     ],
+     [
+      "4.1 Crisis de hipoxia en pacientes con TF",
+      15,
+      "colocar vía venosa permeable para la administración de"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "saturacion_actual_62",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "con SpO2 de 62 %",
+    "motivo": "Su basal es 85 %; hoy satura 62 % con cianosis intensa y taquipnea: es una crisis de hipoxia que exige actuar ya."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "llanto_sostenido_desencadenante",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "después de llorar de forma sostenida durante una toma de muestra",
+    "motivo": "El llanto sostenido y los procedimientos desencadenan la crisis; nuevas punciones o estudios la perpetúan."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "diagnostico_ya_conocido",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "tetralogía de Fallot diagnosticada por ecocardiograma, en espera de cirugía",
+    "motivo": "El diagnóstico ya está establecido; repetir estudios no cambia el manejo y puede agravar la crisis."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "anatomia_tetralogia_fallot",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Tetralogy_of_Fallot.svg/960px-Tetralogy_of_Fallot.svg.png",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Tetralogy_of_Fallot.svg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Mariana Ruiz (LadyofHats)",
+    "licencia": "Dominio público",
+    "descripcion": "Esquema (rótulos en inglés) de un corazón normal junto a uno con tetralogía de Fallot: obstrucción del tracto de salida del ventrículo derecho, defecto septal interventricular, cabalgamiento aórtico e hipertrofia del ventrículo derecho. El espasmo del infundíbulo durante la crisis reduce aún más el flujo pulmonar.",
+    "archivo": "assets/RZ-PED-497-I-R8.png",
+    "sha256": "3d2030463fb7969a80432adaca2006313bfa028e34c5f0267bd662a8a5e55766"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 4 meses, peso 6 kg, con tetralogía de Fallot. Ingresó a urgencias por crisis de hipoxia; se le calmó en brazos de su madre, se colocó en posición genupectoral y recibe oxígeno por mascarilla desde hace 10 minutos, pero persiste con cianosis intensa, taquipnea, irritabilidad y SpO2 de 58 %. Tiene vía venosa periférica permeable colocada por personal experto.",
@@ -195,7 +328,41 @@
      14,
      "Medicamentos: inotrópicos-digitálicos, inhibidores de"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "falla_medidas_iniciales",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "recibe oxígeno por mascarilla desde hace 10 minutos, pero persiste con cianosis intensa",
+    "motivo": "Las medidas iniciales ya se aplicaron sin respuesta: el siguiente escalón es la sedación, junto con el oxígeno."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "edad_cuatro_meses_riesgo_respiratorio",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 4 meses, peso 6 kg",
+    "motivo": "Menor de 6 meses: la morfina conlleva mayor riesgo de depresión respiratoria y obliga a monitoreo continuo con oximetría."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "via_venosa_disponible",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Tiene vía venosa periférica permeable colocada por personal experto",
+    "motivo": "Con vía venosa ya disponible, la sedación puede darse por vía intravenosa sin nuevas punciones que agiten a la paciente."
+   }
+  ]}
  ]
 }
