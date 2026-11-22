@@ -268,24 +268,6 @@
         "estado": "borrador",
         "fragmento": "No ha recibido tratamiento",
         "motivo": "Sin tratamiento previo, se empieza por la vía oral; enemas y evacuación manual quedan para la falla oral."
-      },
-      {
-        "id": "RZ-PED-643-I-R8",
-        "tipo": "imagen",
-        "concepto": "impactacion_fecal_radiografia",
-        "para_errores": [
-          "dato_omitido"
-        ],
-        "mostrar": "despues_de_responder",
-        "estado": "borrador",
-        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Journal.pmed.1000092.g002_fecal_impaction.png/960px-Journal.pmed.1000092.g002_fecal_impaction.png",
-        "url_pagina": "https://commons.wikimedia.org/wiki/File:Journal.pmed.1000092.g002_fecal_impaction.png",
-        "fuente": "Wikimedia Commons (PLoS Medicine, Di Saverio S et al.)",
-        "autor": "Di Saverio S, Tugnoli G, Orlandi PE, Casali M, Catena F, et al.",
-        "licencia": "CC BY 2.5",
-        "descripcion": "Radiografía simple de abdomen de un adulto con gran impactación fecal: cantidad excesiva de heces en el colon, uno de los criterios de impactación de la guía.",
-        "archivo": "assets/RZ-PED-643-I-R8.png",
-        "sha256": "a6db0b0b7d754b1c8f5951bc3cbba08a569e9b8cbe9bd06dc8e5bf2460a96c4e"
       }
     ]
   },

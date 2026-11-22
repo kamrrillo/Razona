@@ -1,2 +1,17 @@
 id,caso,url_pagina,licencia,resultado
-RZ-PED-032-I-R8,RZ-PED-032-I,https://commons.wikimedia.org/wiki/File:Respiratory_syncytial_virus_01.jpg,Dominio público,descargado; sha256 escrito en la fuente
+RZ-PED-032-I-R8,RZ-PED-032-I,https://commons.wikimedia.org/wiki/File:Respiratory_syncytial_virus_01.jpg,Dominio público,ya existía; sha256 ok
+RZ-PED-062-I-R9,RZ-PED-062-I,https://commons.wikimedia.org/wiki/File:Strep_throat2010.JPG,CC BY-SA 3.0,ya existía; sha256 ok
+RZ-PED-109-I-R9,RZ-PED-109-I,"https://commons.wikimedia.org/wiki/File:Koplik_spots,_measles_2019.jpg",CC BY-SA 4.0,ya existía; sha256 ok
+RZ-PED-137-I-R8,RZ-PED-137-I,https://commons.wikimedia.org/wiki/File:X-ray_of_infant_respiratory_distress_syndrome_(IRDS).png,CC0,ya existía; sha256 ok
+RZ-PED-258-I-R9,RZ-PED-258-I,https://commons.wikimedia.org/wiki/File:Croup_steeple_sign.jpg,CC BY-SA 3.0,ya existía; sha256 ok
+RZ-PED-334-I-R8,RZ-PED-334-I,https://commons.wikimedia.org/wiki/File:Epiglottitis.jpg,CC0,ya existía; sha256 ok
+RZ-PED-366-I-R8,RZ-PED-366-I,https://commons.wikimedia.org/wiki/File:Langerhans_cell_histiocytosis_of_the_bone.jpg,CC BY 2.0,ya existía; sha256 ok
+RZ-PED-395-I-R8,RZ-PED-395-I,https://commons.wikimedia.org/wiki/File:Kawasaki_symptoms_D.jpg,CC BY 2.0,ya existía; sha256 ok
+RZ-PED-430-I-R8,RZ-PED-430-I,https://commons.wikimedia.org/wiki/File:Alcoholic_pellagra.jpg,Dominio público,ya existía; sha256 ok
+RZ-PED-459-I-R7,RZ-PED-459-I,https://commons.wikimedia.org/wiki/File:RicketsXray.jpg,CC BY-SA 3.0,ya existía; sha256 ok
+RZ-PED-466-I-R8,RZ-PED-466-I,https://commons.wikimedia.org/wiki/File:Scarlet_fever_rash.jpg,CC BY-SA 4.0,ya existía; sha256 ok
+RZ-PED-495-I-R8,RZ-PED-495-I,https://commons.wikimedia.org/wiki/File:Hives2018.png,CC BY-SA 4.0,ya existía; sha256 ok
+RZ-PED-496-I-R8,RZ-PED-496-I,https://commons.wikimedia.org/wiki/File:Acute_Otitis_Media_Stage_of_Resolution.jpg,CC BY 4.0,ya existía; sha256 ok
+RZ-PED-497-I-R8,RZ-PED-497-I,https://commons.wikimedia.org/wiki/File:Tetralogy_of_Fallot.svg,Dominio público,ya existía; sha256 ok
+RZ-PED-601-I-R8,RZ-PED-601-I,https://commons.wikimedia.org/wiki/File:Spondylolyse_L5S1_LWS_seitlich_001.jpg,CC BY-SA 3.0,ya existía; sha256 ok
+RZ-PED-602-I-R8,RZ-PED-602-I,https://commons.wikimedia.org/wiki/File:Peat%C3%A4i_muna_(ting).jpg,CC BY 4.0,ya existía; sha256 ok
