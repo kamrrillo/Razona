@@ -1,0 +1,399 @@
+{
+ "archivo": "734GER.pdf",
+ "clave": "IMSS-734-14",
+ "sindrome": "trastorno_desarrollo_psicomotor",
+ "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 6 meses, nacida a término sin complicaciones perinatales, acude a control del niño sano. Sostiene la cabeza desde los 4 meses, pero aún no se sienta con apoyo, no se rota sobre sí misma y no balbucea. Al explorar persiste la reacción de Moro. Perímetro cefálico en percentil 40, crecimiento adecuado. La madre comenta que su suegra le dijo que \"cada niño tiene su ritmo\".",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Referirla para evaluación con pruebas estandarizadas del desarrollo",
+    "Tranquilizar a la madre y revalorar en 6 meses",
+    "Solicitar radiografía y ultrasonido para apoyar el diagnóstico",
+    "Considerarla normal, porque debe evaluarse con edad corregida por prematurez",
+    "Considerarla normal, porque ya sostiene la cabeza"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "A los 6 meses son signos de alerta la hipertonía de miembros con hipotonía de cuello y tronco, no rotar sobre sí mismo, persistencia del Moro, no sedestación con apoyo, ausencia de prensión voluntaria y no balbucear.",
+     "4.1 Diagnóstico",
+     17,
+     "Persistencia de reacción de Moro"
+    ],
+    [
+     "La detección basada en el juicio clínico no es suficiente: se requieren pruebas de detección específicas aplicadas por médicos capacitados en ellas.",
+     "4.1 Diagnóstico",
+     15,
+     "Dado que la detección basada en el juicio clínico no es"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Aplica la edad corregida a una paciente que nació a término.",
+     [
+      "D"
+     ],
+     [
+      "edad corregida",
+      "prematura",
+      "ajustar edad"
+     ],
+     "¿A cuántas semanas nació la paciente? ¿Aplica corregir la edad?",
+     "A los 6 meses la falta de sedestación con apoyo, la persistencia del Moro y la ausencia de balbuceo son signos de alerta.",
+     "4.1 Diagnóstico",
+     17,
+     "Persistencia de reacción de Moro"
+    ],
+    [
+     "dato_omitido",
+     "Se queda con un hito logrado y omite los signos de alerta presentes a los 6 meses.",
+     [
+      "E"
+     ],
+     [
+      "sostiene la cabeza",
+      "va bien",
+      "logró hitos"
+     ],
+     "Además del sostén cefálico, ¿qué hitos esperados a los 6 meses no ha alcanzado y qué signo persiste?",
+     "No sedestación con apoyo, persistencia del Moro y no balbucear son signos de alerta a los 6 meses.",
+     "4.1 Diagnóstico",
+     17,
+     "No sedestación con apoyo"
+    ],
+    [
+     "conocimiento",
+     "Cree que la imagen apoya el diagnóstico del trastorno del desarrollo psicomotor.",
+     [
+      "C"
+     ],
+     [
+      "radiografía",
+      "ultrasonido",
+      "imagen"
+     ],
+     "¿Qué utilidad tienen la radiografía y el ultrasonido en el trastorno específico del desarrollo psicomotor?",
+     "Los estudios de rayos X y el ultrasonido no tienen utilidad para apoyar el diagnóstico de trastorno específico del desarrollo psicomotor.",
+     "4.1.1 Auxiliares Diagnósticos",
+     18,
+     "Los estudios de rayos X y el Ultrasonido no tienen"
+    ],
+    [
+     "razonamiento",
+     "Atribuye el retraso a la variabilidad normal y difiere la evaluación.",
+     [
+      "B"
+     ],
+     [
+      "cada niño tiene su ritmo",
+      "esperar",
+      "revalorar"
+     ],
+     "¿Qué se pierde al esperar 6 meses ante varios signos de alerta?",
+     "Las alteraciones del desarrollo son frecuentes y la evaluación sistemática debe incorporarse a la rutina del control del niño sano.",
+     "4.1 Diagnóstico",
+     16,
+     "evaluación sistemática la cual debe ser incorporada"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "juicio_clinico_insuficiente",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Basta el juicio clínico para detectar un trastorno del desarrollo psicomotor?",
+    "reverso": "No. Se requieren pruebas de detección específicas, estandarizadas y validadas, aplicadas por médicos capacitados en ellas.",
+    "cita": [
+     "4.1 Diagnóstico",
+     15,
+     "Dado que la detección basada en el juicio clínico no es"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "imagen_sin_utilidad",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué utilidad tienen la radiografía y el ultrasonido en el trastorno específico del desarrollo psicomotor?",
+    "reverso": "Ninguna para apoyar el diagnóstico; la detección se hace con pruebas específicas del desarrollo.",
+    "cita": [
+     "4.1.1 Auxiliares Diagnósticos",
+     18,
+     "Los estudios de rayos X y el Ultrasonido no tienen"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "signos_alarma_cualquier_edad",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué signos de alarma del desarrollo psicomotor valen a cualquier edad?",
+    "reverso": "Movilidad, tono o postura anormal; movimientos involuntarios u oculares anormales; retraso en hitos madurativos; macrocefalia, microcefalia o estancamiento del perímetro cefálico.",
+    "cita": [
+     "4.1 Diagnóstico",
+     18,
+     "Movilidad, tono o postura anormal"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "deteccion_y_referencia",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Control del niño sano de 0 a 3 años\"] --> B[\"Buscar de forma intencionada los signos de alerta para la edad\"]\n  B --> C{\"¿Hay signos de alerta?\"}\n  C -->|\"No\"| D[\"Continuar la evaluación sistemática en cada control\"]\n  C -->|\"Sí\"| E[\"Referir en cuanto se detecte a neuropsicólogo o pediatra capacitado en pruebas específicas\"]\n  E --> F[\"Pruebas estandarizadas y validadas del desarrollo\"]\n  F --> G[\"Diagnóstico diferencial: parálisis cerebral, retraso mental, trastornos metabólicos o genéticos, entre otros\"]\n  G --> H[\"Quien aplicó las pruebas valora envío a neuropediatría u otra subespecialidad\"]",
+    "citas": [
+     [
+      "4.1 Diagnóstico",
+      16,
+      "evaluación sistemática la cual debe ser incorporada"
+     ],
+     [
+      "4.3 Criterios de Referencia",
+      20,
+      "Desarrollo Psicomotor debera ser referido al"
+     ],
+     [
+      "4.2 Diagnóstico Diferencial",
+      19,
+      "Desarrollo Psicomotor se debera realizar diagnóstico"
+     ],
+     [
+      "4.3 Criterios de Referencia",
+      20,
+      "sea valorado por neuropediatria o por alguna otra"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "signos_alerta_por_edad",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Edad",
+     "Motricidad",
+     "Lenguaje y comprensión"
+    ],
+    "filas": [
+     [
+      "6 meses",
+      "No se sienta con apoyo, no rota sobre sí mismo, persiste el Moro, sin prensión voluntaria",
+      "No balbucea"
+     ],
+     [
+      "9 meses",
+      "No se desplaza de forma autónoma, no se mantiene sentado, sin pinza manipulativa",
+      "No emite bisílabos"
+     ],
+     [
+      "12 meses",
+      "Ausencia de bipedestación, reflejos anormales",
+      "Sin vocabulario de dos palabras; no entiende órdenes sencillas"
+     ],
+     [
+      "15 meses",
+      "No camina solo, sin pinza superior, no arroja objetos",
+      "Sin vocabulario de tres o cuatro palabras"
+     ],
+     [
+      "18 meses",
+      "No sube escaleras, no garabatea, no hace una torre de dos cubos",
+      "Sin vocabulario de 7 a 10 palabras"
+     ]
+    ],
+    "cita": [
+     "4.1 Diagnóstico",
+     17,
+     "Persistencia de reacción de Moro"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "nacida_a_termino",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "nacida a término sin complicaciones perinatales",
+    "motivo": "Nació a término: no hay prematurez que justifique corregir la edad; se evalúa con sus 6 meses cronológicos."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "hitos_no_logrados_6_meses",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "aún no se sienta con apoyo, no se rota sobre sí misma y no balbucea",
+    "motivo": "Son tres signos de alerta de los 6 meses; el sostén cefálico logrado no los compensa."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "persistencia_moro",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "persiste la reacción de Moro",
+    "motivo": "La persistencia del Moro a los 6 meses es otro signo de alerta: obliga a evaluar con pruebas específicas, no a esperar."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Masculino de 15 meses, de término, sin antecedentes perinatales. En su control la madre refiere que aún no camina solo (camina tomado de las dos manos), no tiene pinza fina y dice solo \"mamá\". Gatea desde los 10 meses. Exploración: tono y reflejos normales, perímetro cefálico en percentil 50, sin rasgos dismórficos.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Solicitar electroencefalograma para identificar la causa",
+    "Esperar hasta los 2 años, porque la marcha independiente puede retrasarse",
+    "Considerarlo normal, porque la marcha independiente se espera hasta los 18 meses",
+    "Considerarlo normal, porque ya dice \"mamá\"",
+    "Reconocer signos de alerta del desarrollo y referirlo para evaluación con pruebas estandarizadas"
+   ],
+   "rc": "E",
+   "pc": [
+    [
+     "A los 15 meses son signos de alerta no caminar solo, ausencia de pinza superior, no arrojar objetos y no tener vocabulario de tres o cuatro palabras.",
+     "4.1 Diagnóstico",
+     17,
+     "No camina solo Ausencia de pinza superior"
+    ],
+    [
+     "El niño con signos de alerta debe ser evaluado por médicos capacitados en la aplicación de pruebas de detección específicas.",
+     "4.1 Diagnóstico",
+     15,
+     "que deberá ser evaluado por medicos especializados"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que los estudios electrofisiológicos son útiles para identificar el trastorno.",
+     [
+      "A"
+     ],
+     [
+      "electroencefalograma",
+      "EEG",
+      "estudio neurológico"
+     ],
+     "¿Qué utilidad tienen los estudios electrofisiológicos en este trastorno?",
+     "Los estudios electrofisiológicos no son útiles para identificar o dar seguimiento a los niños pequeños con trastorno específico del desarrollo psicomotor.",
+     "4.1.1 Auxiliares Diagnósticos",
+     18,
+     "Los estudios electrofisiológicos no son útiles para"
+    ],
+    [
+     "razonamiento",
+     "Atribuye el retraso a la variabilidad normal y difiere la evaluación.",
+     [
+      "B"
+     ],
+     [
+      "esperar",
+      "2 años",
+      "variabilidad"
+     ],
+     "Si ya hay varios signos de alerta, ¿qué ganas al esperar?",
+     "La detección basada en el juicio clínico no es suficiente; se requieren pruebas de detección específicas.",
+     "4.1 Diagnóstico",
+     15,
+     "Dado que la detección basada en el juicio clínico no es"
+    ],
+    [
+     "conocimiento",
+     "Desconoce los signos de alerta de los 15 meses.",
+     [
+      "C"
+     ],
+     [
+      "18 meses",
+      "normal",
+      "aún no le toca"
+     ],
+     "¿Qué signos de alerta lista la guía a los 15 meses?",
+     "A los 15 meses son signos de alerta no caminar solo y no tener un vocabulario de tres o cuatro palabras.",
+     "4.1 Diagnóstico",
+     17,
+     "No tiene un vocabulario de tres o cuatro"
+    ],
+    [
+     "dato_omitido",
+     "Se tranquiliza por una palabra y omite que no tiene el vocabulario esperado, la marcha ni la pinza.",
+     [
+      "D"
+     ],
+     [
+      "dice mamá",
+      "ya habla",
+      "va bien"
+     ],
+     "¿Cuántas palabras debería tener a los 15 meses y qué otros hitos le faltan?",
+     "A los 15 meses es signo de alerta no tener un vocabulario de tres o cuatro palabras, además de no caminar solo y no tener pinza superior.",
+     "4.1 Diagnóstico",
+     17,
+     "No tiene un vocabulario de tres o cuatro"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "no_camina_ni_pinza",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "aún no camina solo (camina tomado de las dos manos), no tiene pinza fina",
+    "motivo": "A los 15 meses no caminar solo y no tener pinza superior son signos de alerta; no hay que esperar a los 18 meses."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "vocabulario_insuficiente",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "dice solo \"mamá\"",
+    "motivo": "Una sola palabra no basta: a los 15 meses es signo de alerta no tener un vocabulario de tres o cuatro palabras."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "edad_15_meses_termino",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 15 meses, de término",
+    "motivo": "Nació a término y tiene 15 meses: se comparan sus hitos con los signos de alerta de esa edad."
+   }
+  ]}
+ ]
+}

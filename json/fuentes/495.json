@@ -1,0 +1,379 @@
+{
+ "archivo": "495GER.pdf",
+ "clave": "IMSS-495-11",
+ "sindrome": "alergia_alimentaria",
+ "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 4 años que hace 2 meses, 10 minutos después de comer cacahuate, presentó urticaria generalizada, edema de labios, sibilancias e hipotensión, por lo que recibió epinefrina intramuscular en urgencias. Desde entonces no ha vuelto a comerlo y está asintomático. Los padres solicitan una prueba que confirme el diagnóstico antes de quitarle definitivamente el cacahuate.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Eliminar el cacahuate y sus reactivos cruzados de la dieta, sin reto oral",
+    "Realizar prueba de reto oral doble ciego, por ser el estándar de oro",
+    "Solicitar IgE sérica total para confirmar la alergia",
+    "Realizar pruebas intradérmicas con extracto de cacahuate",
+    "Considerarla una reacción leve y reintroducir el cacahuate en casa"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La prueba de reto oral con alimentos está contraindicada en pacientes con reacciones anafilácticas previas por alimentos.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "contraindicada en pacientes con reacciones"
+    ],
+    [
+     "El tratamiento se basa en eliminar de la dieta el alimento específico y los que puedan dar reactividad cruzada, con valoración nutricional.",
+     "4.4 Tratamiento",
+     17,
+     "eliminar el alimento específico de la dieta y aquellos"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee la reacción como leve; la viñeta describe sibilancias, hipotensión y uso de epinefrina.",
+     [
+      "E"
+     ],
+     [
+      "leve",
+      "reintroducir",
+      "probar en casa"
+     ],
+     "¿Qué manifestaciones tuvo el niño y qué tratamiento requirió?",
+     "Los pacientes con antecedente de reacción anafiláctica por alimentos tienen alto riesgo de reacciones graves o muerte en nuevas exposiciones.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "anafiláctica por alimentos tienen alto riesgo de"
+    ],
+    [
+     "dato_omitido",
+     "Elige el estándar de oro sin considerar que el antecedente de anafilaxia lo contraindica.",
+     [
+      "B"
+     ],
+     [
+      "estándar de oro",
+      "reto oral",
+      "doble ciego"
+     ],
+     "¿Qué antecedente del paciente contraindica la prueba de reto oral?",
+     "La prueba de reto oral con alimentos está contraindicada en pacientes con reacciones anafilácticas previas por alimentos.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "contraindicada en pacientes con reacciones"
+    ],
+    [
+     "conocimiento",
+     "Cree que la IgE sérica total diagnostica la alergia alimentaria.",
+     [
+      "C"
+     ],
+     [
+      "IgE total",
+      "laboratorio",
+      "confirmar"
+     ],
+     "¿Para qué sirve la IgE sérica total según la guía?",
+     "Se recomienda no usar la IgE sérica total como diagnóstica de alergia a alimentos; solo orienta sobre atopia en correlación con la historia clínica.",
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "Se recomienda no usar la determinación de la IgE"
+    ],
+    [
+     "razonamiento",
+     "Busca una prueba más sensible sin ponderar el riesgo de anafilaxia y de falsos positivos.",
+     [
+      "D"
+     ],
+     [
+      "intradérmica",
+      "más sensible",
+      "piel"
+     ],
+     "¿Qué riesgos tienen las pruebas intradérmicas con alimentos?",
+     "Las pruebas intradérmicas no deben usarse para el diagnóstico de alergia a alimentos por el riesgo de anafilaxia y de falsos positivos.",
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "intradermicas no sean usadas para el diagnóstico"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "manifestaciones_anafilaxia_alimentaria",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué manifestaciones componen una reacción anafiláctica por alimentos?",
+    "reverso": "Prurito y eritema generalizados, urticaria, disnea, obstrucción bronquial o de vía aérea alta e hipotensión; puede haber síntomas digestivos.",
+    "cita": [
+     "4.2.1 Manifestaciones Clínicas",
+     13,
+     "Las reacciones anafilácticas por alimentos consisten"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "riesgo_reexposicion_anafilaxia",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué riesgo tiene volver a exponer al alimento a un niño que ya tuvo anafilaxia por él?",
+    "reverso": "Alto riesgo de reacciones graves o muerte; por eso la prueba de reto oral está contraindicada.",
+    "cita": [
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "anafiláctica por alimentos tienen alto riesgo de"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "utilidad_pruebas_cutaneas",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué sensibilidad y especificidad tienen las pruebas cutáneas por punción con alimentos?",
+    "reverso": "Sensibilidad de 90 % y especificidad de 50 %; por eso se indican solo con los alimentos sospechosos.",
+    "cita": [
+     "4.2.2 Pruebas Diagnósticas",
+     14,
+     "tienen una sensibilidad de 90% y una especificidad"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "confirmacion_y_manejo_alergia_alimentaria",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Sospecha de alergia a un alimento\"] --> B{\"¿Reacción anafiláctica previa por ese alimento?\"}\n  B -->|\"Sí\"| C[\"Reto oral contraindicado: alto riesgo de reacción grave\"]\n  B -->|\"No\"| D[\"Reto oral doble ciego: estándar de oro\"]\n  D --> E{\"¿Se confirma la alergia?\"}\n  E -->|\"Sí\"| F[\"Retirar de la dieta el alimento y los que den reactividad cruzada, con valoración nutricional\"]\n  E -->|\"No\"| G[\"Buscar otro diagnóstico\"]\n  C --> F\n  C --> H[\"Referir a tercer nivel: gastroenterología pediátrica y alergología\"]",
+    "citas": [
+     [
+      "4.2.1.2 Prueba de reto oral con alimentos",
+      16,
+      "contraindicada en pacientes con reacciones"
+     ],
+     [
+      "4.2.1.2 Prueba de reto oral con alimentos",
+      15,
+      "como el estándar de oro en el diagnóstico de alergia"
+     ],
+     [
+      "4.4 Tratamiento",
+      17,
+      "eliminar el alimento específico de la dieta y aquellos"
+     ],
+     [
+      "4.5 Criterios de Referencia y Contrarreferencia",
+      19,
+      "Cuando existan manifestaciones graves de"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "datos_de_anafilaxia",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sibilancias e hipotensión, por lo que recibió epinefrina intramuscular",
+    "motivo": "Obstrucción bronquial e hipotensión que requirieron epinefrina: fue anafilaxia, no una reacción leve."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "solicitud_de_prueba_confirmatoria",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Los padres solicitan una prueba que confirme el diagnóstico",
+    "motivo": "Con anafilaxia previa el reto oral está contraindicado; la relación temporal clara con el alimento sostiene el diagnóstico."
+   },
+   {
+    "n": 7,
+    "tipo": "tabla",
+    "concepto": "pruebas_diagnosticas_alergia_alimentaria",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Prueba",
+     "Lo que indica la guía"
+    ],
+    "filas": [
+     [
+      "IgE sérica total",
+      "No es diagnóstica; solo orienta sobre atopia junto con la historia clínica"
+     ],
+     [
+      "Parche atópico",
+      "No es de rutina; solo en alergia mixta con dermatitis atópica, esofagitis eosinofílica o enterocolitis"
+     ],
+     [
+      "Pruebas intradérmicas",
+      "No usarlas: riesgo de anafilaxia y de falsos positivos"
+     ],
+     [
+      "Reto oral doble ciego",
+      "La más confiable: falsos positivos 0.7 % y falsos negativos 3.2 %"
+     ]
+    ],
+    "cita": [
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "Se recomienda no usar la determinación de la IgE"
+    ]
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "urticaria_aguda",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Hives2018.png/960px-Hives2018.png",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Hives2018.png",
+    "fuente": "Wikimedia Commons",
+    "autor": "James Heilman, MD",
+    "licencia": "CC BY-SA 4.0",
+    "descripcion": "Habones de urticaria aguda en la piel. La urticaria aguda y el angioedema son las manifestaciones más frecuentes de la alergia alimentaria.",
+    "archivo": "assets/RZ-PED-495-I-R8.png",
+    "sha256": "d3c0c6fdd8394ffe148a34773da30dd1bb0039cc9460c2f486c9e777729fc071"
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Femenino de 18 meses que en tres ocasiones, unos minutos después de comer huevo cocido, presentó ronchas alrededor de la boca y en mejillas que cedieron solas en una hora, sin dificultad respiratoria, vómito ni cambios de coloración. Nunca ha tenido anafilaxia. Tiene dermatitis atópica leve. Es referida a pediatría para confirmar el diagnóstico.",
+   "pregunta": "¿Qué prueba se considera el estándar de oro para confirmar la alergia alimentaria en esta paciente?",
+   "op": [
+    "IgE sérica total",
+    "Prueba de parche atópico",
+    "Pruebas intradérmicas con extracto de huevo",
+    "Ninguna, porque cualquier reacción previa contraindica la prueba de reto",
+    "Prueba de reto oral doble ciego con alimentos"
+   ],
+   "rc": "E",
+   "pc": [
+    [
+     "La prueba de reto oral doble ciego con alimentos es el estándar de oro en el diagnóstico de alergia alimentaria.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     15,
+     "como el estándar de oro en el diagnóstico de alergia"
+    ],
+    [
+     "La prueba de reto oral está contraindicada solo en pacientes con reacciones anafilácticas previas por alimentos.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "contraindicada en pacientes con reacciones"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que la IgE total confirma la alergia.",
+     [
+      "A"
+     ],
+     [
+      "IgE total",
+      "atopia"
+     ],
+     "¿Qué valor diagnóstico le da la guía a la IgE total?",
+     "No se recomienda usar la IgE sérica total como diagnóstica de alergia a alimentos.",
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "Se recomienda no usar la determinación de la IgE"
+    ],
+    [
+     "conocimiento",
+     "Cree que la prueba de parche es de rutina.",
+     [
+      "B"
+     ],
+     [
+      "parche",
+      "dermatitis"
+     ],
+     "¿En qué situaciones sugiere la guía la prueba de parche atópico?",
+     "La prueba de parche atópico no se usa de rutina; solo en alergia mixta con dermatitis atópica, esofagitis eosinofílica o enterocolitis por proteínas.",
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "Se sugiere que la prueba de parche atópico no sea"
+    ],
+    [
+     "conocimiento",
+     "Cree que las pruebas intradérmicas son útiles para alergia a alimentos.",
+     [
+      "C"
+     ],
+     [
+      "intradérmica",
+      "piel"
+     ],
+     "¿Por qué desaconseja la guía las pruebas intradérmicas con alimentos?",
+     "Las pruebas intradérmicas no deben usarse por el riesgo de anafilaxia y de falsos positivos.",
+     "4.2.2 Pruebas Diagnósticas",
+     15,
+     "intradermicas no sean usadas para el diagnóstico"
+    ],
+    [
+     "razonamiento",
+     "Equipara cualquier reacción previa con anafilaxia.",
+     [
+      "D"
+     ],
+     [
+      "contraindicada",
+      "ya reaccionó",
+      "peligrosa"
+     ],
+     "¿Qué tipo de reacción contraindica la prueba de reto, y la ha tenido esta paciente?",
+     "La prueba de reto oral está contraindicada en pacientes con reacciones anafilácticas previas; esta paciente solo ha tenido urticaria perioral autolimitada.",
+     "4.2.1.2 Prueba de reto oral con alimentos",
+     16,
+     "contraindicada en pacientes con reacciones"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "nunca_anafilaxia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Nunca ha tenido anafilaxia",
+    "motivo": "Solo la anafilaxia previa contraindica el reto oral; sin ella, la prueba confirmatoria de referencia sí puede hacerse."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "reaccion_cutanea_autolimitada",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "cedieron solas en una hora, sin dificultad respiratoria, vómito ni cambios de coloración",
+    "motivo": "Fue urticaria perioral autolimitada, sin datos respiratorios ni hipotensión: no es una reacción anafiláctica."
+   }
+  ]}
+ ]
+}

@@ -1,0 +1,363 @@
+{
+ "archivo": "044GER.pdf",
+ "clave": "IMSS-044-08",
+ "sindrome": "taquipnea_transitoria_recien_nacido",
+ "guia": "Diagnóstico y Tratamiento de la Taquipnea Transitoria del Recién Nacido",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de 39 semanas de gestación, obtenido por cesárea electiva sin trabajo de parto; madre con diabetes mellitus gestacional. Apgar 8/9, peso 3,950 g. A las 2 horas de vida presenta FR de 78 rpm, quejido intermitente leve y Silverman-Anderson de 2. Campos pulmonares sin estertores. SpO2 86 % al aire ambiente. Glucemia capilar 62 mg/dL. Temperatura 36.8 °C.",
+   "pregunta": "¿Cuál es la conducta más adecuada en este momento?",
+   "op": [
+    "Furosemida intravenosa para favorecer la reabsorción del líquido pulmonar",
+    "Oxígeno con la FiO2 mínima para SpO2 de 88-95 % y radiografía de tórax",
+    "Colocar CPAP nasal de inmediato",
+    "Solo vigilancia clínica, ya que el cuadro se autolimita en 24 a 72 horas",
+    "Iniciar ventilación mecánica asistida porque la taquipnea no ha remitido"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Los recién nacidos con taquipnea transitoria reciben la FiO2 mínima indispensable para mantener la saturación entre 88 y 95 %.",
+     "4.2.1 Asistencia Ventilatoria",
+     17,
+     "deberán recibir la FiO2 mínima indispensable para"
+    ],
+    [
+     "Ante la sospecha de taquipnea transitoria se solicita radiografía de tórax y se vigila la saturación de forma continua con oximetría de pulso.",
+     "4.1.3 Auxiliares Diagnósticos",
+     15,
+     "se deberá solicitar radiografía de tórax"
+    ],
+    [
+     "Los signos suelen aparecer en las primeras 6 horas de vida e incluyen FR mayor de 60 rpm, campos pulmonares sin estertores y saturación menor de 88 %.",
+     "4.1.2 Signos y Síntomas",
+     14,
+     "Saturación de O2 menor de 88% por"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee las 2 horas de vida como si la taquipnea llevara días sin remitir.",
+     [
+      "E"
+     ],
+     [
+      "no ha remitido",
+      "persiste",
+      "ya lleva mucho",
+      "intubar"
+     ],
+     "¿Cuántas horas de vida tiene el paciente y en qué plazo se espera que remita la taquipnea transitoria?",
+     "La ventilación mecánica se considera cuando la taquipnea no remite de forma progresiva dentro de las 48 a 72 horas, hay dificultad respiratoria moderada a grave o gases alterados; este paciente tiene 2 horas de vida.",
+     "4.2.1 Asistencia Ventilatoria",
+     20,
+     "La taquipnea no remite en forma progresiva de"
+    ],
+    [
+     "dato_omitido",
+     "Elige la conducta expectante sin tomar en cuenta la SpO2 de 86 %.",
+     [
+      "D"
+     ],
+     [
+      "se autolimita",
+      "es benigna",
+      "solo observar",
+      "se quita sola"
+     ],
+     "¿Qué saturación tiene el paciente y cuál es la meta de saturación en taquipnea transitoria?",
+     "Aunque el cuadro suele autolimitarse entre las 24 y 72 horas, el oxígeno se administra para mantener la saturación entre 88 y 95 %; con 86 % el paciente está por debajo de la meta.",
+     "4.1.2 Signos y Síntomas",
+     14,
+     "ocasiones se autolimita entre las 24 y 72 horas"
+    ],
+    [
+     "conocimiento",
+     "Cree que el diurético acelera la resolución.",
+     [
+      "A"
+     ],
+     [
+      "diurético",
+      "sacar el líquido",
+      "furosemida",
+      "reabsorción"
+     ],
+     "¿Qué mostraron los estudios con furosemida sobre el requerimiento de oxígeno y la estancia?",
+     "La furosemida no disminuyó el requerimiento de oxígeno ni el tiempo de hospitalización, y sí produjo pérdida de peso importante.",
+     "4.2.2 Tratamiento Farmacológico",
+     21,
+     "su uso no disminuyo el requerimiento de"
+    ],
+    [
+     "razonamiento",
+     "Escala a CPAP sin probar antes el oxígeno suplementario.",
+     [
+      "C"
+     ],
+     [
+      "CPAP",
+      "presión positiva",
+      "abrir alveolos",
+      "quejido"
+     ],
+     "¿Qué debe ocurrir con el oxígeno suplementario para que la guía indique CPAP?",
+     "El CPAP se usa cuando la sola administración de FiO2 no logra mantener la saturación entre 88 y 95 %, o cuando aparece dificultad respiratoria sin lograr esa meta.",
+     "4.2.1 Asistencia Ventilatoria",
+     19,
+     "La sola administración FiO2 no logre"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "meta_saturacion_fio2_minima",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En taquipnea transitoria del recién nacido, ¿qué meta de saturación y qué FiO2 indica la guía?",
+    "reverso": "La FiO2 mínima indispensable para mantener la saturación entre 88 y 95 %. Habitualmente no requiere más de 40 %.",
+    "cita": [
+     "4.2.1 Asistencia Ventilatoria",
+     17,
+     "deberán recibir la FiO2 mínima indispensable para"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "furosemida_sin_beneficio",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué mostraron los estudios con furosemida en taquipnea transitoria del recién nacido?",
+    "reverso": "No disminuyó el requerimiento de oxígeno ni la estancia hospitalaria. Sí causó pérdida de peso importante.",
+    "cita": [
+     "4.2.2 Tratamiento Farmacológico",
+     21,
+     "su uso no disminuyo el requerimiento de"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "criterios_cpap",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo indica la guía usar CPAP en taquipnea transitoria del recién nacido?",
+    "reverso": "Cuando la sola FiO2 no mantiene la saturación entre 88 y 95 %, o aparece dificultad respiratoria sin lograr esa meta.",
+    "cita": [
+     "4.2.1 Asistencia Ventilatoria",
+     19,
+     "La sola administración FiO2 no logre"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "escalamiento_asistencia_ventilatoria",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido con sospecha de taquipnea transitoria\"] --> B[\"Radiografía de tórax y oximetría de pulso continua\"]\n  B --> C{\"¿Saturación por debajo de 88 %?\"}\n  C -->|\"Sí\"| D[\"Oxígeno con la FiO2 mínima para saturación de 88 a 95 %\"]\n  C -->|\"No\"| E[\"Vigilancia estrecha y continua\"]\n  D --> F{\"¿La sola FiO2 no mantiene la meta o aparece dificultad respiratoria sin lograrla?\"}\n  F -->|\"No\"| G[\"Mantener la FiO2 mínima y vigilar\"]\n  F -->|\"Sí\"| H[\"CPAP nasal\"]\n  H --> I{\"¿Sin remisión a las 48 a 72 horas, dificultad moderada a grave o gases alterados?\"}\n  I -->|\"Sí\"| J[\"Ventilación mecánica\"]\n  I -->|\"No\"| G",
+    "citas": [
+     [
+      "4.1.3 Auxiliares Diagnósticos",
+      15,
+      "se deberá solicitar radiografía de tórax"
+     ],
+     [
+      "4.2.1 Asistencia Ventilatoria",
+      17,
+      "deberán recibir la FiO2 mínima indispensable para"
+     ],
+     [
+      "4.2.1 Asistencia Ventilatoria",
+      19,
+      "La sola administración FiO2 no logre"
+     ],
+     [
+      "4.2.1 Asistencia Ventilatoria",
+      20,
+      "La taquipnea no remite en forma progresiva de"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "dos_horas_de_vida",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A las 2 horas de vida",
+    "motivo": "El cuadro apenas inicia. La ventilación mecánica se considera si la taquipnea no remite en 48 a 72 horas, entre otros criterios."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "saturacion_bajo_meta",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "SpO2 86 % al aire ambiente",
+    "motivo": "Está por debajo de la meta de 88 a 95 %: requiere oxígeno, no solo vigilancia."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "factores_de_riesgo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "cesárea electiva sin trabajo de parto; madre con diabetes mellitus gestacional",
+    "motivo": "Nacer sin trabajo de parto y la diabetes materna son factores de riesgo de taquipnea transitoria que apoyan el diagnóstico."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de 37 semanas, parto vaginal precipitado. Desde la primera hora de vida presentó taquipnea de 80 rpm sin estertores; la radiografía de tórax mostró cisuritis y congestión parahiliar simétrica. Se colocó casco cefálico con FiO2 de 40 %. A las 30 horas de vida: FR 62 rpm, Silverman-Anderson de 1, SpO2 97 % con FiO2 de 40 %. Tolera la alimentación. Biometría hemática previa normal.",
+   "pregunta": "¿Cuál es la conducta más adecuada en este momento?",
+   "op": [
+    "Agregar salbutamol inhalado para acelerar la mejoría",
+    "Iniciar CPAP nasal para acortar la evolución",
+    "Disminuir la FiO2 a la mínima necesaria para mantener SpO2 entre 88 y 95 % y continuar la vigilancia",
+    "Aumentar la FiO2 a 60 % para acelerar la reabsorción del líquido pulmonar",
+    "Nebulizar epinefrina racémica"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "El oxígeno tiene como objetivo mantener la saturación entre 88 y 95 %, con la FiO2 mínima indispensable.",
+     "4.2.1 Asistencia Ventilatoria",
+     17,
+     "deberán recibir la FiO2 mínima indispensable para"
+    ],
+    [
+     "El recién nacido con taquipnea transitoria habitualmente no requiere FiO2 mayor de 40 %.",
+     "4.2.1 Asistencia Ventilatoria",
+     17,
+     "habitualmente no requiere FiO2 mayor del 40%"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que el salbutamol inhalado es un tratamiento recomendado.",
+     [
+      "A"
+     ],
+     [
+      "broncodilatador",
+      "salbutamol",
+      "mejora saturación"
+     ],
+     "¿Qué calidad tienen los estudios de salbutamol en taquipnea transitoria y qué concluye la guía?",
+     "El salbutamol inhalado no puede recomendarse como tratamiento y no debe usarse mientras no haya estudios de buena calidad que sustenten su efectividad y seguridad.",
+     "4.2.2 Tratamiento Farmacológico",
+     21,
+     "El salbutamol inhalado no puede recomendarse como"
+    ],
+    [
+     "dato_omitido",
+     "Indica CPAP sin ver que la paciente satura por encima de la meta y mejora.",
+     [
+      "B"
+     ],
+     [
+      "CPAP",
+      "acortar",
+      "taquipnea persistente"
+     ],
+     "Con SpO2 de 97 % y Silverman de 1, ¿se cumple alguno de los criterios de CPAP?",
+     "El CPAP se usa cuando la sola FiO2 no mantiene la saturación entre 88 y 95 % o aparece dificultad respiratoria sin lograr esa meta; esta paciente está sobre la meta y mejorando.",
+     "4.2.1 Asistencia Ventilatoria",
+     19,
+     "La sola administración FiO2 no logre"
+    ],
+    [
+     "razonamiento",
+     "Supone que más oxígeno acelera la resolución, en lugar de ajustar a la meta de saturación.",
+     [
+      "D"
+     ],
+     [
+      "más oxígeno",
+      "acelerar",
+      "60 %"
+     ],
+     "Si la saturación ya es de 97 %, ¿qué beneficio adicional esperas de subir la FiO2?",
+     "La guía indica la FiO2 mínima indispensable para mantener la saturación entre 88 y 95 %; la paciente ya está por encima de ese rango.",
+     "4.2.1 Asistencia Ventilatoria",
+     17,
+     "mantener la saturación de oxigeno entre 88 y 95%"
+    ],
+    [
+     "conocimiento",
+     "Cree que la epinefrina racémica acorta la evolución.",
+     [
+      "E"
+     ],
+     [
+      "epinefrina",
+      "reabsorción",
+      "nebulizar"
+     ],
+     "¿Qué evidencia hay de que la epinefrina racémica acorte la evolución?",
+     "La epinefrina racémica no puede recomendarse como tratamiento de la taquipnea transitoria del recién nacido.",
+     "4.2.2 Tratamiento Farmacológico",
+     21,
+     "La epinefrina racémica no puede recomendarse como"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "saturacion_sobre_meta",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "SpO2 97 % con FiO2 de 40 %",
+    "motivo": "Satura por encima de 88 a 95 %: la guía indica la FiO2 mínima para esa meta, así que se debe bajar, no subir."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "evolucion_favorable",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A las 30 horas de vida: FR 62 rpm, Silverman-Anderson de 1",
+    "motivo": "La taquipnea va en remisión y casi no hay dificultad respiratoria: no cumple criterios de CPAP."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "radiografia_tipica",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "la radiografía de tórax mostró cisuritis y congestión parahiliar simétrica",
+    "motivo": "Son hallazgos radiográficos descritos en la taquipnea transitoria; apoyan el diagnóstico y no otra enfermedad."
+   }
+  ]}
+ ]
+}

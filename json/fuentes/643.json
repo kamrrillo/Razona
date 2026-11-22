@@ -1,0 +1,350 @@
+{
+ "archivo": "643GER.pdf",
+ "clave": "GPC-IMSS-643-18",
+ "sindrome": "estrenimiento_funcional",
+ "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 8 años, peso 26 kg, con evacuaciones duras y dolorosas cada 5 a 6 días desde hace 8 meses, conductas de retención y manchado de la ropa interior. Cumple criterios de Roma para estreñimiento funcional. A la exploración se palpa masa fecal en hipogastrio y fosa iliaca izquierda. Crecimiento normal, sin distensión abdominal importante, sin alteraciones neurológicas ni en la región lumbosacra, sin sangrado. No ha recibido tratamiento.",
+   "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
+   "op": [
+    "Polietilenglicol 3350 por vía oral en dosis creciente, iniciando con 1 a 1.5 g/kg al día durante 3 a 6 días",
+    "Enema de fosfato",
+    "Evacuación manual bajo anestesia para resolver la impactación de inmediato",
+    "Aumentar la fibra y los líquidos en la dieta como única medida",
+    "Referir a gastroenterología pediátrica por datos de alarma"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Si el paciente está impactado se inicia la desimpactación por vía oral durante 3 a 7 días según el acúmulo fecal.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     15,
+     "Si el paciente está impactado se recomienda iniciar"
+    ],
+    [
+     "En el escolar y adolescente con impactación sin datos de alarma, el tratamiento de primera línea es polietilenglicol 3350, con o sin electrolitos, en dosis creciente iniciando con 1-1.5 g/kg por 3-6 días.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     15,
+     "gradual: iniciar 1-1.5 g/ kg por 3-6 días es la"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Atribuye datos de alarma que la viñeta descarta (crecimiento normal, sin alteraciones neurológicas, lumbosacras ni sangrado).",
+     [
+      "E"
+     ],
+     [
+      "datos de alarma",
+      "referir",
+      "banderas rojas"
+     ],
+     "¿Qué datos de alarma tiene el paciente según la viñeta?",
+     "El médico de primer contacto identifica los datos de alarma; sin ellos, el estreñimiento funcional con impactación se trata con polietilenglicol 3350 por vía oral.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     12,
+     "oportunamente los datos de alarma (conocidas como"
+    ],
+    [
+     "dato_omitido",
+     "Indica solo medidas dietéticas sin considerar la masa fecal palpable, que indica impactación.",
+     [
+      "D"
+     ],
+     [
+      "fibra",
+      "agua",
+      "dieta"
+     ],
+     "¿Qué hallazgo de la exploración obliga a desimpactar primero?",
+     "Si el paciente está impactado se inicia la fase de desimpactación por vía oral.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     15,
+     "Si el paciente está impactado se recomienda iniciar"
+    ],
+    [
+     "conocimiento",
+     "Cree que el enema de fosfato es apropiado como manejo inicial.",
+     [
+      "B"
+     ],
+     [
+      "enema",
+      "fosfato",
+      "vía rectal"
+     ],
+     "¿En qué circunstancias admite la guía el enema de fosfato?",
+     "No se aconseja el enema de fosfato salvo bajo supervisión de un especialista en hospital y tras falla del tratamiento oral y de los enemas de citrato.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     16,
+     "No se aconseja el uso de enemas de fosfato, a menos"
+    ],
+    [
+     "razonamiento",
+     "Busca la resolución más rápida sin ponderar la invasividad ni la secuencia de tratamiento.",
+     [
+      "C"
+     ],
+     [
+      "anestesia",
+      "manual",
+      "rápido"
+     ],
+     "¿Cuándo considera la guía la evacuación manual bajo anestesia?",
+     "No se recomienda la evacuación manual bajo anestesia; solo se evalúa ante la falla del tratamiento oral y rectal.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     17,
+     "No se recomienda realizar la evacuación manual del"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "definicion_impactacion_fecal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué hallazgos definen la impactación fecal en el paciente estreñido?",
+    "reverso": "Masa fecal grande y dura a la exploración abdominal, recto dilatado y ocupado, o exceso de heces en radiografía simple.",
+    "cita": [
+     "2.1 Tratamiento médico para la impactación fecal",
+     12,
+     "presencia de una masa fecal grande y dura"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "enema_fosfato_restringido",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo admite la guía el enema de fosfato en la impactación fecal?",
+    "reverso": "Solo en hospital, supervisado por especialista, tras falla del tratamiento oral y de los enemas de citrato de sodio.",
+    "cita": [
+     "2.1 Tratamiento médico para la impactación fecal",
+     16,
+     "No se aconseja el uso de enemas de fosfato, a menos"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "evacuacion_manual_ultimo_recurso",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Se recomienda la evacuación manual bajo anestesia para resolver rápido una impactación?",
+    "reverso": "No. Solo se evalúa cuando ya fallaron el tratamiento oral y el rectal.",
+    "cita": [
+     "2.1 Tratamiento médico para la impactación fecal",
+     17,
+     "No se recomienda realizar la evacuación manual del"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "secuencia_desimpactacion",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Escolar o adolescente con estreñimiento funcional\"] --> B{\"¿Banderas rojas?\"}\n  B -->|\"Sí\"| C[\"Referir al gastroenterólogo pediatra\"]\n  B -->|\"No\"| D{\"¿Datos de impactación fecal?\"}\n  D -->|\"No\"| E[\"Tratamiento de mantenimiento\"]\n  D -->|\"Sí\"| F[\"Desimpactación oral inmediata con PEG 3350 en dosis creciente\"]\n  F --> G{\"¿Desimpactación y buena tolerancia en 2 semanas?\"}\n  G -->|\"Sí\"| E\n  G -->|\"No\"| H[\"Valorar laxante estimulante: hidróxido de magnesio, con o sin lactulosa\"]\n  H --> I{\"¿Fallaron todos los medicamentos orales?\"}\n  I -->|\"Sí\"| J[\"Enema de citrato; fosfato solo en hospital con especialista\"]\n  J --> K[\"Evacuación manual bajo anestesia solo si falla oral y rectal\"]",
+    "citas": [
+     [
+      "2.1 Tratamiento médico para la impactación fecal",
+      12,
+      "considerados de alarma, no deben ser tratados"
+     ],
+     [
+      "2.1 Tratamiento médico para la impactación fecal",
+      15,
+      "desimpactación o intolerancia dentro de las 2"
+     ],
+     [
+      "2.1 Tratamiento médico para la impactación fecal",
+      16,
+      "No se aconseja el uso de enemas de fosfato, a menos"
+     ],
+     [
+      "2.1 Tratamiento médico para la impactación fecal",
+      17,
+      "No se recomienda realizar la evacuación manual del"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "masa_fecal_palpable",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "se palpa masa fecal en hipogastrio y fosa iliaca izquierda",
+    "motivo": "La masa fecal palpable define impactación: hay que desimpactar de inmediato; solo dieta o mantenimiento puede empeorar los síntomas."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_banderas_rojas",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Crecimiento normal, sin distensión abdominal importante, sin alteraciones neurológicas ni en la región lumbosacra, sin sangrado",
+    "motivo": "No hay banderas rojas: no requiere envío urgente y se trata en primer contacto."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_tratamiento_previo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No ha recibido tratamiento",
+    "motivo": "Sin tratamiento previo, se empieza por la vía oral; enemas y evacuación manual quedan para la falla oral."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Femenino de 10 años, peso 32 kg, con estreñimiento funcional e impactación fecal, sin datos de alarma. Hace 2 semanas inició polietilenglicol 3350 en dosis creciente, que ha tomado de forma correcta y tolera bien. Persiste la masa fecal palpable y no ha logrado la desimpactación.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Enema de fosfato en el consultorio",
+    "Evacuación manual bajo anestesia",
+    "Evaluar leche de magnesia, sola o con lactulosa",
+    "Aceite mineral y senósidos a dosis altas",
+    "Continuar el polietilenglicol sin cambios otras 4 semanas"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Si no se logra la desimpactación en 2 semanas con polietilenglicol 3350, o no se tolera, se evalúa un laxante estimulante como la leche de magnesia, solo o combinado con un osmótico como lactulosa.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     15,
+     "desimpactación o intolerancia dentro de las 2"
+    ],
+    [
+     "La desimpactación oral con dosis altas de aceite mineral, lactulosa y senósidos no se recomienda por la baja calidad de los estudios.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     16,
+     "dosis altas de aceite mineral, lactulosa y senósidos,"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Salta a un enema de fosfato fuera del hospital y antes de agotar la vía oral.",
+     [
+      "A"
+     ],
+     [
+      "enema",
+      "fosfato"
+     ],
+     "¿En qué condiciones admite la guía el enema de fosfato?",
+     "No se aconseja el enema de fosfato salvo bajo supervisión de un especialista en hospital y tras falla del tratamiento oral y de los enemas de citrato.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     16,
+     "No se aconseja el uso de enemas de fosfato, a menos"
+    ],
+    [
+     "conocimiento",
+     "Indica evacuación manual antes de agotar el tratamiento oral y rectal.",
+     [
+      "B"
+     ],
+     [
+      "anestesia",
+      "manual"
+     ],
+     "¿Cuándo se evalúa la evacuación manual bajo anestesia?",
+     "No se recomienda la evacuación manual bajo anestesia; solo se evalúa ante la falla del tratamiento oral y rectal.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     17,
+     "No se recomienda realizar la evacuación manual del"
+    ],
+    [
+     "conocimiento",
+     "Usa esquemas de desimpactación que la guía no recomienda.",
+     [
+      "D"
+     ],
+     [
+      "aceite mineral",
+      "senósidos",
+      "dosis altas"
+     ],
+     "¿Qué dice la guía sobre la desimpactación oral con aceite mineral y senósidos a dosis altas?",
+     "Los reportes de desimpactación oral con dosis altas de aceite mineral, lactulosa y senósidos son de baja calidad, por lo que no es posible recomendarlos.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     16,
+     "dosis altas de aceite mineral, lactulosa y senósidos,"
+    ],
+    [
+     "dato_omitido",
+     "Mantiene el esquema sin reconocer que ya pasaron 2 semanas sin desimpactación.",
+     [
+      "E"
+     ],
+     [
+      "seguir igual",
+      "dar tiempo",
+      "más semanas"
+     ],
+     "¿Cuánto tiempo lleva con polietilenglicol y qué indica la guía si no hay efecto en ese plazo?",
+     "Si no se consigue la desimpactación en 2 semanas con polietilenglicol 3350, se evalúa un laxante estimulante como la leche de magnesia.",
+     "2.1 Tratamiento médico para la impactación fecal",
+     15,
+     "desimpactación o intolerancia dentro de las 2"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "dos_semanas_sin_desimpactar",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Hace 2 semanas inició polietilenglicol 3350",
+    "motivo": "Sin desimpactación a las 2 semanas de PEG 3350, la guía indica valorar un laxante estimulante en lugar de seguir igual."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "adherencia_correcta",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "que ha tomado de forma correcta y tolera bien",
+    "motivo": "Tomó bien el medicamento: es falta de respuesta, no mala adherencia, y obliga a cambiar el esquema."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_datos_alarma_v1",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin datos de alarma",
+    "motivo": "Sin banderas rojas y con un solo fármaco oral probado, aún no corresponden enemas ni evacuación manual."
+   }
+  ]}
+ ]
+}

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "RZ-PED-350-I",
+    "version": "0.2.0",
+    "sindrome": "fiebre_sin_signos_focalizacion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+      "clave": "IMSS-350-13",
+      "archivo": "350GER.pdf"
+    },
+    "vineta": "Masculino de 18 meses con esquema de vacunación completo para la edad. Presenta fiebre de 39.2 °C de 24 horas de evolución. Sin tos, rinorrea, vómito ni diarrea. En la consulta está alerta, sonríe, juega con los juguetes de la sala, tiene mucosas húmedas, llenado capilar de 2 segundos y FR de 28 rpm. Oídos, faringe, campos pulmonares, abdomen y piel sin alteraciones; sin rigidez de nuca. Los padres viven cerca de la unidad y entienden las indicaciones.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Hospitalizar y aplicar ceftriaxona intravenosa",
+      "B": "Examen general de orina y manejo ambulatorio sin antibiótico",
+      "C": "Punción lumbar, radiografía de tórax y hemocultivos",
+      "D": "Amoxicilina por vía oral de forma empírica durante 7 días",
+      "E": "Paracetamol y baños con agua tibia, sin estudios, porque luce bien"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "En niños con fiebre sin foco se recomienda examen general de orina, independientemente del grupo de riesgo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 21,
+          "fragmento": "recomendable realizar un Examen General de Orina"
+        }
+      },
+      {
+        "texto": "Los niños de bajo riesgo pueden manejarse en forma ambulatoria, con información de signos de alarma y una cita de revaloración.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 24,
+          "fragmento": "Los niños con bajo riesgo podrán manejarse en forma"
+        }
+      },
+      {
+        "texto": "Los antibióticos orales no deben usarse en niños con fiebre sin causa aparente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 24,
+          "fragmento": "Los antibióticos orales no deben ser usados en"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Clasifica al niño como de riesgo alto; la viñeta lo describe alerta, jugando e hidratado.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "riesgo alto",
+          "tóxico",
+          "bacteremia",
+          "ceftriaxona"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de la viñeta describen el estado general del niño?",
+        "explicacion": "Los antibióticos intravenosos se indican en niños de riesgo alto o con bandera roja; en el niño que luce bien no hay beneficio del antibiótico empírico.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 25,
+          "fragmento": "recibir antibióticos intravenosos profilácticos:"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica el estudio completo del niño de riesgo alto sin considerar que este paciente es de bajo riesgo.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "punción lumbar",
+          "descartar meningitis",
+          "hemocultivo",
+          "estudio completo"
+        ],
+        "pregunta_socratica_semilla": "¿A qué grupo de riesgo corresponde este niño y a quiénes recomienda la guía punción lumbar, radiografía y hemocultivos?",
+        "explicacion": "Por consenso, la punción lumbar, la radiografía de tórax y los hemocultivos se recomiendan en los niños de riesgo alto con fiebre sin foco aparente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el antibiótico oral empírico es apropiado en fiebre sin foco.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "amoxicilina",
+          "por si es bacteriana",
+          "cubrir"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la guía sobre los antibióticos orales en fiebre sin causa aparente?",
+        "explicacion": "Los antibióticos orales no deben usarse en niños con fiebre sin causa aparente, y en el niño que luce bien no hay beneficio del antibiótico empírico.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 24,
+          "fragmento": "Los antibióticos orales no deben ser usados en"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Concluye que el buen estado general excluye cualquier estudio y pasa por alto la infección urinaria oculta.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "luce bien",
+          "es viral",
+          "no necesita estudios",
+          "baños"
+        ],
+        "pregunta_socratica_semilla": "Sin foco aparente, ¿qué infección bacteriana frecuente puede presentarse solo con fiebre a esta edad?",
+        "explicacion": "La guía recomienda examen general de orina en todo niño con fiebre sin foco, independientemente del grupo de riesgo; además, no recomienda los baños de esponja con agua tibia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 21,
+          "fragmento": "recomendable realizar un Examen General de Orina"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-350-I-R1",
+        "tipo": "flashcard",
+        "concepto": "ego_en_todo_grupo_de_riesgo",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué estudio recomienda la guía en todo niño con fiebre sin foco, sin importar su grupo de riesgo?",
+        "reverso": "Examen general de orina. La fiebre es el signo más frecuente de infección de vías urinarias.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 21,
+          "fragmento": "recomendable realizar un Examen General de Orina"
+        }
+      },
+      {
+        "id": "RZ-PED-350-I-R2",
+        "tipo": "flashcard",
+        "concepto": "sin_antibiotico_oral_empirico",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Se indica antibiótico oral empírico al niño con fiebre sin causa aparente que luce bien?",
+        "reverso": "No. No hay beneficio del antibiótico empírico y su uso inapropiado aumenta la resistencia bacteriana.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 24,
+          "fragmento": "Los antibióticos orales no deben ser usados en"
+        }
+      },
+      {
+        "id": "RZ-PED-350-I-R3",
+        "tipo": "flashcard",
+        "concepto": "semaforo_riesgo_bajo",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué datos clasifican a un niño febril en riesgo bajo (verde) del semáforo?",
+        "reverso": "Coloración normal, responde a órdenes, sonríe, se mantiene despierto, llanto normal, mucosas húmedas y ningún signo amarillo o rojo.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.1 Manifestaciones clínicas y factores de riesgos",
+          "pagina": 14,
+          "fragmento": "Coloración normal de piel, labios y lengua"
+        }
+      },
+      {
+        "id": "RZ-PED-350-I-R4",
+        "tipo": "diagrama",
+        "concepto": "conducta_por_grupo_de_riesgo",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño de 3 meses a 5 años con fiebre sin foco\"] --> B{\"¿Algún signo rojo del semáforo?\"}\n  B -->|\"Sí\"| C[\"Riesgo alto: punción lumbar si no hay contraindicación, radiografía de tórax y hemocultivos\"]\n  C --> D[\"Antibiótico intravenoso: ceftriaxona o cefotaxima\"]\n  B -->|\"No\"| E{\"¿Algún signo amarillo?\"}\n  E -->|\"Sí\"| F[\"Riesgo intermedio: indicaciones específicas a los padres o referir al pediatra\"]\n  E -->|\"No\"| G[\"Riesgo bajo: manejo ambulatorio con signos de alarma y cita de revaloración\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+            "clave": "IMSS-350-13",
+            "seccion": "4.2 Pruebas diagnósticas",
+            "pagina": 23,
+            "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+            "clave": "IMSS-350-13",
+            "seccion": "4.3 Manejo médico",
+            "pagina": 25,
+            "fragmento": "recibir antibióticos intravenosos profilácticos:"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+            "clave": "IMSS-350-13",
+            "seccion": "4.4 Criterios de Referencia",
+            "pagina": 27,
+            "fragmento": "proveer a los padres o cuidadores indicaciones"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+            "clave": "IMSS-350-13",
+            "seccion": "4.3 Manejo médico",
+            "pagina": 24,
+            "fragmento": "Los niños con bajo riesgo podrán manejarse en forma"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-350-I-R5",
+        "tipo": "resaltado",
+        "concepto": "aspecto_de_bajo_riesgo",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "está alerta, sonríe, juega con los juguetes de la sala, tiene mucosas húmedas",
+        "motivo": "Son datos verdes del semáforo: riesgo bajo. No corresponden hospitalización, antibiótico intravenoso ni punción lumbar."
+      },
+      {
+        "id": "RZ-PED-350-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sin_foco_aparente",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Sin tos, rinorrea, vómito ni diarrea",
+        "motivo": "Sin foco aparente, la infección urinaria puede manifestarse solo con fiebre. Por eso se pide orina aunque luzca bien."
+      },
+      {
+        "id": "RZ-PED-350-I-R7",
+        "tipo": "resaltado",
+        "concepto": "padres_comprenden_indicaciones",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Los padres viven cerca de la unidad y entienden las indicaciones",
+        "motivo": "El manejo ambulatorio exige corroborar que los padres comprenden los signos de alarma. Las circunstancias familiares pesan al decidir hospitalizar."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-350-V1",
+    "version": "0.2.0",
+    "sindrome": "fiebre_sin_signos_focalizacion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-350-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+      "clave": "IMSS-350-13",
+      "archivo": "350GER.pdf"
+    },
+    "vineta": "Femenino de 10 meses con fiebre de 39.6 °C de 12 horas de evolución, sin foco aparente a la exploración. En urgencias está poco reactiva a estímulos, con llanto débil, piel moteada y llenado capilar de 4 segundos. FC 185 lpm. Sin petequias ni rigidez de nuca. Sin contraindicaciones para punción lumbar. Vacunación incompleta.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Amoxicilina con clavulanato por vía oral y revalorar en 48 horas",
+      "B": "Baños de esponja con agua tibia y antipirético, y revalorar en 2 horas",
+      "C": "Hospitalizar, completar estudios e iniciar ceftriaxona intravenosa sin retraso",
+      "D": "Manejo ambulatorio con signos de alarma y cita de revaloración en 24 horas",
+      "E": "Hospitalizar, tomar hemocultivos y esperar su resultado antes de iniciar antibiótico"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "En niños con apariencia tóxica, datos de choque o falta de respuesta a estímulos no se debe retrasar la hospitalización ni el antibiótico empírico; los de riesgo alto reciben ceftriaxona o cefotaxima intravenosa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 25,
+          "fragmento": "No se debe retrasar la hospitalización y el uso de"
+        }
+      },
+      {
+        "texto": "En los niños de riesgo alto se recomienda punción lumbar (sin contraindicación), radiografía de tórax y hemocultivos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Omite los datos de riesgo alto: hiporreactividad, piel moteada, llenado capilar prolongado y taquicardia.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "ambulatorio",
+          "signos de alarma",
+          "revalorar mañana"
+        ],
+        "pregunta_socratica_semilla": "¿Qué hallazgos de la exploración indican que esta niña no es de bajo riesgo?",
+        "explicacion": "No se debe retrasar la hospitalización ni el antibiótico en niños con choque, apariencia tóxica o falta de respuesta a estímulos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 25,
+          "fragmento": "No se debe retrasar la hospitalización y el uso de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Elige antibiótico oral en un lactante de riesgo alto.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "vía oral",
+          "amoxicilina",
+          "clavulanato"
+        ],
+        "pregunta_socratica_semilla": "¿Qué vía y qué antibióticos recomienda la guía para el niño de riesgo alto?",
+        "explicacion": "Los niños de riesgo alto con bandera roja deben recibir antibióticos intravenosos: ceftriaxona o cefotaxima.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 25,
+          "fragmento": "recibir antibióticos intravenosos profilácticos:"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Espera el hemocultivo antes de tratar, aunque su resultado tarda al menos un día.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "esperar cultivo",
+          "confirmar bacteremia",
+          "dirigido"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tarda el hemocultivo y qué puede pasar con esta niña mientras tanto?",
+        "explicacion": "El hemocultivo no identifica de inmediato una infección bacteriana grave; su resultado requiere de 24 a 36 horas como mínimo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 22,
+          "fragmento": "en forma inmediata, si el paciente tiene una IBG ya que"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los baños de esponja son parte del manejo de la fiebre.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "baños",
+          "agua tibia",
+          "medios físicos",
+          "bajar la fiebre"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre los baños de esponja con agua tibia?",
+        "explicacion": "Los baños de esponja con agua tibia no están recomendados para el tratamiento de la fiebre.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
+          "clave": "IMSS-350-13",
+          "seccion": "4.3 Manejo médico",
+          "pagina": 25,
+          "fragmento": "Los baños de esponja con agua tibia no están"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-350-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "signos_rojos",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "poco reactiva a estímulos, con llanto débil, piel moteada y llenado capilar de 4 segundos",
+        "motivo": "Son signos rojos del semáforo: riesgo alto. No se retrasan la hospitalización ni el antibiótico intravenoso empírico."
+      },
+      {
+        "id": "RZ-PED-350-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "puncion_lumbar_posible",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Sin contraindicaciones para punción lumbar",
+        "motivo": "En riesgo alto la guía indica punción lumbar si no hay contraindicación, además de radiografía de tórax y hemocultivos."
+      },
+      {
+        "id": "RZ-PED-350-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "vacunacion_incompleta",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Vacunación incompleta",
+        "motivo": "La frecuencia de meningitis varía con la vacunación contra Hib y neumococo; ante sospecha, se evalúa la punción lumbar."
+      }
+    ]
+  }
+]

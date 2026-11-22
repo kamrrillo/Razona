@@ -1,0 +1,470 @@
+[
+  {
+    "id": "RZ-PED-334-I",
+    "version": "0.2.0",
+    "sindrome": "epiglotitis_aguda",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+      "clave": "IMSS-334-09",
+      "archivo": "334GER.pdf"
+    },
+    "vineta": "Masculino de 4 años, con esquema de vacunación incompleto (no recibió vacuna contra Haemophilus influenzae tipo b). Inicia hace 6 horas con fiebre de 39.8 °C, odinofagia intensa y dificultad para deglutir. Llega a urgencias de segundo nivel sentado en brazos de su madre, inclinado hacia adelante con el cuello extendido, babeando y con voz apagada. Presenta estridor inspiratorio, FR de 36 rpm, ansiedad marcada y SpO2 de 93 %. Sin tos.",
+    "pregunta": "¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Canalizar una vena periférica e iniciar ceftriaxona antes de manejar la vía aérea",
+      "B": "Nebulizar epinefrina, administrar dexametasona y observar 4 horas",
+      "C": "Recostarlo en decúbito supino para tomar radiografía lateral de cuello",
+      "D": "Explorar la orofaringe con abatelenguas para confirmar el diagnóstico",
+      "E": "Dejarlo en brazos de su madre y en la posición que elija, sin abatelenguas ni punciones"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "En la epiglotitis aguda se asegura la vía aérea y se evita agitar al niño: se prescinde del abatelenguas, de las venopunciones, de separarlo de su familiar y de posturas no elegidas, y se le permite la posición que escoja.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+          "pagina": 28,
+          "fragmento": "prescindir de la visualización directa"
+        }
+      },
+      {
+        "texto": "La estabilización de la vía aérea y el inicio temprano de antibióticos son la piedra angular del manejo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 38,
+          "fragmento": "infecciosa es la estabilización de la vía"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Trata el cuadro como laringotraqueítis; la viñeta describe sialorrea, voz apagada, disfagia, fiebre alta súbita y ausencia de tos.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "crup",
+          "laringotraqueítis",
+          "epinefrina",
+          "dexametasona"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de la viñeta corresponden a las 4 D de la epiglotitis y cuáles faltan para pensar en crup?",
+        "explicacion": "Blackstock describió las 4 D de la epiglotitis: sialorrea, disfagia, disfonía y disnea; la voz apagada y la fiebre alta orientan a epiglotitis.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.3.1 Diagnóstico Clínico y Diagnóstico Diferencial",
+          "pagina": 17,
+          "fragmento": "Blackstock describió las 4"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Omite los signos de obstrucción inminente (posición elegida, babeo, estridor) y fuerza el decúbito supino.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "radiografía",
+          "signo del pulgar",
+          "acostarlo"
+        ],
+        "pregunta_socratica_semilla": "¿Por qué el niño eligió esa posición y qué podría pasar si lo acuestas?",
+        "explicacion": "No se debe forzar al niño a adoptar la posición supina; se le permite una posición libremente escogida hasta asegurar la vía aérea, para evitar la obstrucción completa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+          "pagina": 28,
+          "fragmento": "adopción de una posición libremente"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que debe visualizarse la epiglotis con abatelenguas.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "abatelenguas",
+          "ver la epiglotis",
+          "confirmar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué puede desencadenar el abatelenguas en un niño con epiglotitis?",
+        "explicacion": "La guía recomienda prescindir de la visualización directa con abatelenguas por el riesgo de ansiedad y obstrucción completa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+          "pagina": 28,
+          "fragmento": "con abate lenguas"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Prioriza el antibiótico sobre la vía aérea y realiza una venopunción que puede precipitar la obstrucción.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "antibiótico temprano",
+          "canalizar",
+          "ceftriaxona ya"
+        ],
+        "pregunta_socratica_semilla": "¿En qué momento indica la guía iniciar el antibiótico intravenoso?",
+        "explicacion": "El antibiótico intravenoso debe iniciarse tan pronto como se asegure la vía aérea; antes, las venopunciones se evitan.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "betalactamasa debe ser iniciado tan"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-334-I-R1",
+        "tipo": "flashcard",
+        "concepto": "cuatro_d_epiglotitis",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuáles son las 4 D de la epiglotitis descritas por Blackstock?",
+        "reverso": "Sialorrea, disfagia, disfonía y disnea. No siempre están todas presentes.",
+        "cita": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.3.1 Diagnóstico Clínico y Diagnóstico Diferencial",
+          "pagina": 17,
+          "fragmento": "Blackstock describió las 4"
+        }
+      },
+      {
+        "id": "RZ-PED-334-I-R2",
+        "tipo": "flashcard",
+        "concepto": "evitar_agitar_al_nino",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Por qué se evitan el abatelenguas y las venopunciones antes de asegurar la vía aérea en epiglotitis?",
+        "reverso": "Porque aumentan la ansiedad y la dificultad respiratoria, con riesgo de progresar a obstrucción completa.",
+        "cita": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+          "pagina": 28,
+          "fragmento": "evitar ansiedad e incremento de la dificultad respiratoria"
+        }
+      },
+      {
+        "id": "RZ-PED-334-I-R3",
+        "tipo": "flashcard",
+        "concepto": "radiografia_lateral_no_recomendada",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Recomienda la guía la radiografía lateral de cuello ante sospecha clínica de epiglotitis?",
+        "reverso": "No: tiene baja utilidad diagnóstica y puede retrasar la intervención terapéutica.",
+        "cita": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.3.2 Pruebas Diagnósticas",
+          "pagina": 25,
+          "fragmento": "no se recomienda la realización de la radiografía lateral de"
+        }
+      },
+      {
+        "id": "RZ-PED-334-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_inicial_via_aerea_epiglotitis",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con sospecha de epiglotitis aguda\"] --> B[\"No agitarlo: sin abatelenguas, sin venopunciones, junto a su familiar y en la postura que adopte\"]\n  B --> C{\"¿Inestable: obnubilado, cianótico o bradicárdico?\"}\n  C -->|\"Sí\"| D[\"Bolsa y mascarilla con oxígeno al 100 %, laringoscopia e intubación de urgencia\"]\n  C -->|\"No\"| E[\"Traslado inmediato a quirófano con material de vía aérea\"]\n  E --> F[\"Laringoscopia directa e intubación endotraqueal\"]\n  D --> G{\"¿Se logra intubar?\"}\n  G -->|\"No\"| H[\"Cricotirotomía urgente\"]\n  G -->|\"Sí\"| I[\"Vía aérea asegurada\"]\n  F --> I\n  H --> I\n  I --> J[\"Iniciar antibiótico intravenoso contra productores de betalactamasa\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+            "clave": "IMSS-334-09",
+            "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+            "pagina": 28,
+            "fragmento": "prescindir de la visualización directa"
+          },
+          {
+            "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+            "clave": "IMSS-334-09",
+            "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+            "pagina": 32,
+            "fragmento": "laringoscopia e intubación de urgencia. Si esta no es posible, se realiza cricotirotomía urgente"
+          },
+          {
+            "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+            "clave": "IMSS-334-09",
+            "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
+            "pagina": 32,
+            "fragmento": "traslado inmediato a quirófano con el material de vía aérea necesario"
+          },
+          {
+            "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+            "clave": "IMSS-334-09",
+            "seccion": "4.4.1 Tratamiento Farmacológico",
+            "pagina": 39,
+            "fragmento": "betalactamasa debe ser iniciado tan pronto como se asegure la vía aérea"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-334-I-R5",
+        "tipo": "resaltado",
+        "concepto": "posicion_elegida_sialorrea",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "inclinado hacia adelante con el cuello extendido, babeando y con voz apagada",
+        "motivo": "Postura elegida, sialorrea y voz apagada orientan a epiglotitis. Se respeta su posición y no se le fuerza a decúbito supino."
+      },
+      {
+        "id": "RZ-PED-334-I-R6",
+        "tipo": "resaltado",
+        "concepto": "estridor_ansiedad",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Presenta estridor inspiratorio, FR de 36 rpm, ansiedad marcada",
+        "motivo": "Estridor y ansiedad indican obstrucción de la vía aérea. Se asegura la vía aérea antes de explorarlo o hacer maniobras invasivas."
+      },
+      {
+        "id": "RZ-PED-334-I-R7",
+        "tipo": "resaltado",
+        "concepto": "sin_vacuna_hib",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "no recibió vacuna contra Haemophilus influenzae tipo b",
+        "motivo": "No estar inmunizado contra Hib es factor de riesgo de epiglotitis aguda ante una obstrucción de vía aérea superior."
+      },
+      {
+        "id": "RZ-PED-334-I-R8",
+        "tipo": "imagen",
+        "concepto": "signo_del_pulgar",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Epiglottitis.jpg/330px-Epiglottitis.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Epiglottitis.jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Med Chaos",
+        "licencia": "CC0",
+        "descripcion": "Radiografía lateral de cuello con el «signo del pulgar» por edema de la epiglotis. La guía no la recomienda ante sospecha clínica: baja sensibilidad y riesgo de retrasar el manejo.",
+        "archivo": "assets/RZ-PED-334-I-R8.jpg",
+        "sha256": "6e1be820470b6d2055a0f896d0cd42d01674008f04cd64931eb56eb73ba4264e"
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-334-V1",
+    "version": "0.2.0",
+    "sindrome": "epiglotitis_aguda",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-334-I",
+    "gpc_base": {
+      "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+      "clave": "IMSS-334-09",
+      "archivo": "334GER.pdf"
+    },
+    "vineta": "Femenino de 5 años, peso 18 kg, con epiglotitis aguda. Fue intubada en quirófano por anestesiología bajo anestesia inhalatoria; se tomó muestra supraglótica para cultivo y hemocultivo. Está en la unidad de cuidados intensivos pediátricos con vía aérea asegurada, hemodinámicamente estable, con acceso venoso. No tiene alergias conocidas.",
+    "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
+    "opciones": {
+      "A": "Ceftriaxona intravenosa 50-75 mg/kg/día durante 7 a 10 días",
+      "B": "Amoxicilina por vía oral durante 10 días",
+      "C": "Trimetoprim con sulfametoxazol como primera elección",
+      "D": "Ceftriaxona intravenosa durante 3 días",
+      "E": "Esperar el resultado del cultivo para iniciar antibiótico dirigido"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En la epiglotitis aguda se recomienda una cefalosporina de segunda o tercera generación durante 7 a 10 días; la ceftriaxona es de primera elección.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "segunda o tercera generación durante"
+        }
+      },
+      {
+        "texto": "El tratamiento intravenoso de amplio espectro contra productores de betalactamasa se inicia tan pronto como se asegura la vía aérea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "betalactamasa debe ser iniciado tan"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Elige un antibiótico oral sin cobertura contra productores de betalactamasa.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "amoxicilina",
+          "vía oral",
+          "tolera"
+        ],
+        "pregunta_socratica_semilla": "¿Qué vía y qué espectro recomienda la guía para el antibiótico en epiglotitis?",
+        "explicacion": "Se usan antibióticos intravenosos de amplio espectro contra patógenos productores de betalactamasa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "intravenosos de amplio espectro"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Pospone el antibiótico hasta tener el cultivo.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "esperar cultivo",
+          "dirigido",
+          "antibiograma"
+        ],
+        "pregunta_socratica_semilla": "Una vez asegurada la vía aérea, ¿cuándo indica la guía iniciar el antibiótico?",
+        "explicacion": "El antibiótico debe iniciarse tan pronto como se asegure la vía aérea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "betalactamasa debe ser iniciado tan"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la duración recomendada del tratamiento.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "3 días",
+          "corto",
+          "mientras está intubada"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos días de cefalosporina recomienda la guía?",
+        "explicacion": "Se recomienda cefalosporina de segunda o tercera generación durante un periodo de 7 a 10 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "un periodo de 7 a 10 días"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Confunde la alternativa con la primera elección.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "trimetoprim",
+          "sulfametoxazol",
+          "más barato"
+        ],
+        "pregunta_socratica_semilla": "¿Qué fármacos son de primera elección y cuáles son alternativas?",
+        "explicacion": "La primera elección son cefalosporinas como ceftriaxona, cefotaxima o cefuroxima; el trimetoprim con sulfametoxazol es una alternativa terapéutica.",
+        "cita_gpc": {
+          "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
+          "clave": "IMSS-334-09",
+          "seccion": "4.4.1 Tratamiento Farmacológico",
+          "pagina": 39,
+          "fragmento": "Las alternativas terapéuticas son:"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-334-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "via_aerea_asegurada",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "con vía aérea asegurada, hemodinámicamente estable, con acceso venoso",
+        "motivo": "Asegurada la vía aérea, el antibiótico intravenoso se inicia de inmediato, sin esperar el cultivo."
+      },
+      {
+        "id": "RZ-PED-334-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "sin_alergias",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "No tiene alergias conocidas",
+        "motivo": "Nada impide usar la primera elección: cefalosporina de segunda o tercera generación por 7 a 10 días, no una alternativa."
+      },
+      {
+        "id": "RZ-PED-334-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "peso_para_dosis",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "peso 18 kg",
+        "motivo": "La dosis de ceftriaxona se calcula por kilo de peso: en lactantes a escolares, 50 a 75 mg/kg/día sin exceder 2 g/día."
+      }
+    ]
+  }
+]

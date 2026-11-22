@@ -1,0 +1,375 @@
+{
+ "archivo": "395GER.pdf",
+ "clave": "IMSS-395-10",
+ "sindrome": "enfermedad_kawasaki",
+ "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 2 años, peso 12 kg, con fiebre de 39.5 °C de 6 días de evolución que no cede con antipiréticos. Presenta hiperemia conjuntival bilateral sin secreción, labios rojos y agrietados, lengua en fresa, exantema maculopapular en tronco y edema indurado del dorso de manos y pies. Adenopatía cervical derecha de 2 cm. PCR 9 mg/dL y VSG 70 mm/h. El ecocardiograma inicial no muestra aneurismas.",
+   "pregunta": "¿Cuál es el tratamiento más adecuado?",
+   "op": [
+    "Inmunoglobulina intravenosa 2 g/kg en dosis única y ácido acetilsalicílico a dosis altas",
+    "Inmunoglobulina intravenosa 400 mg/kg/día durante 5 días",
+    "Ácido acetilsalicílico a dosis altas como único tratamiento",
+    "Esperar un nuevo ecocardiograma antes de tratar, por tratarse de un cuadro incompleto",
+    "Solo ácido acetilsalicílico, porque la inmunoglobulina no es útil después de 10 días de enfermedad"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "En la enfermedad de Kawasaki se administra inmunoglobulina intravenosa 2 g/kg al hacer el diagnóstico, preferentemente antes de los 10 días de evolución.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     28,
+     "de 2gr/kg al realizarse el diagnóstico y"
+    ],
+    [
+     "El ácido acetilsalicílico se da a 80-100 mg/kg/día en cuatro tomas hasta 48 horas después de ceder la fiebre, y luego a 3-5 mg/kg/día en una toma por 6 a 8 semanas.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     31,
+     "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+    ],
+    [
+     "Se considera el diagnóstico con fiebre de 5 días o más y cuatro o más de los cinco criterios principales.",
+     "4.1.1 Diagnóstico clínico",
+     19,
+     "Presencia de cuatro o más de los siguientes cinco"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee la evolución como si tuviera más de 10 días; la viñeta dice 6 días.",
+     [
+      "E"
+     ],
+     [
+      "más de 10 días",
+      "tarde",
+      "ya no sirve"
+     ],
+     "¿Cuántos días de fiebre tiene el paciente y hasta cuándo es más eficaz la inmunoglobulina?",
+     "La inmunoglobulina se administra preferentemente antes de los 10 días; el paciente lleva 6 días.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     28,
+     "de 2gr/kg al realizarse el diagnóstico y"
+    ],
+    [
+     "dato_omitido",
+     "Clasifica el cuadro como incompleto omitiendo criterios presentes (conjuntivitis, cambios en labios, exantema, cambios en extremidades y adenopatía).",
+     [
+      "D"
+     ],
+     [
+      "incompleto",
+      "faltan criterios",
+      "esperar eco"
+     ],
+     "¿Cuántos de los cinco criterios principales tiene el paciente?",
+     "Se considera el diagnóstico con fiebre de 5 días o más y cuatro o más de los cinco criterios principales; este paciente tiene los cinco.",
+     "4.1.1 Diagnóstico clínico",
+     19,
+     "Presencia de cuatro o más de los siguientes cinco"
+    ],
+    [
+     "conocimiento",
+     "Usa el esquema de dosis fraccionada de inmunoglobulina.",
+     [
+      "B"
+     ],
+     [
+      "400 mg/kg",
+      "5 días",
+      "dosis fraccionada"
+     ],
+     "¿Qué esquema de inmunoglobulina redujo más las anormalidades coronarias?",
+     "La dosis única de 2 g/kg redujo significativamente las anormalidades coronarias frente a 400 mg/kg/día por cinco días.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     27,
+     "de la administración de IGIV en una sola dosis de 2"
+    ],
+    [
+     "razonamiento",
+     "Supone que el antiinflamatorio basta para proteger las coronarias.",
+     [
+      "C"
+     ],
+     [
+      "aspirina sola",
+      "antiinflamatorio",
+      "bajar la fiebre"
+     ],
+     "¿Qué desenlace previene la inmunoglobulina que no previene el ácido acetilsalicílico solo?",
+     "El ácido acetilsalicílico no ha demostrado reducir el riesgo de enfermedad cardiaca; la inmunoglobulina disminuye significativamente las anormalidades coronarias.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     26,
+     "normal no ha demostrado reducir el riesgo de"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "criterios_diagnosticos_kawasaki",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué criterios clínicos permiten considerar el diagnóstico de enfermedad de Kawasaki?",
+    "reverso": "Fiebre de 5 días o más y al menos 4 de 5: cambios en extremidades, exantema, conjuntivitis, cambios orales y adenopatía cervical.",
+    "cita": [
+     "4.1.1 Diagnóstico clínico",
+     19,
+     "Presencia de cuatro o más de los siguientes cinco"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "igiv_dosis_unica_vs_fraccionada",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué esquema de inmunoglobulina intravenosa redujo más las anormalidades coronarias?",
+    "reverso": "La dosis única de 2 g/kg, frente a 400 mg/kg/día durante cinco días.",
+    "cita": [
+     "4.1.4.1 Tratamiento Farmacológico",
+     27,
+     "de la administración de IGIV en una sola dosis de 2"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "aas_no_protege_coronarias",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿El ácido acetilsalicílico, solo o con inmunoglobulina, reduce el riesgo de enfermedad cardiaca?",
+    "reverso": "No ha demostrado reducirlo. La inmunoglobulina es la que disminuye las anormalidades coronarias.",
+    "cita": [
+     "4.1.4.1 Tratamiento Farmacológico",
+     26,
+     "normal no ha demostrado reducir el riesgo de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "tratamiento_inicial_kawasaki",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Fiebre de 5 días o más\"] --> B{\"¿4 o más de los 5 criterios principales?\"}\n  B -->|\"Sí\"| C{\"¿10 días o menos de evolución?\"}\n  C -->|\"Sí\"| D[\"IGIV 2 g/kg al hacer el diagnóstico\"]\n  C -->|\"No, más de 10 días\"| E{\"¿Fiebre persistente, PCR o VSG altas, o aneurismas al diagnóstico?\"}\n  E -->|\"Sí\"| D\n  E -->|\"No\"| F[\"No es una de las situaciones en que la guía recomienda IGIV tardía\"]\n  D --> G[\"AAS 80 a 100 mg/kg/día en 4 tomas hasta 48 h sin fiebre\"]\n  G --> H[\"AAS 3 a 5 mg/kg/día en una toma por 6 a 8 semanas\"]",
+    "citas": [
+     [
+      "4.1.1 Diagnóstico clínico",
+      19,
+      "Presencia de cuatro o más de los siguientes cinco"
+     ],
+     [
+      "4.1.4.1 Tratamiento Farmacológico",
+      28,
+      "de 2gr/kg al realizarse el diagnóstico y"
+     ],
+     [
+      "4.1.4.1 Tratamiento Farmacológico",
+      28,
+      "pacientes con más de 10 días de evolución, en las"
+     ],
+     [
+      "4.1.4.1 Tratamiento Farmacológico",
+      31,
+      "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "seis_dias_de_fiebre",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "fiebre de 39.5 °C de 6 días de evolución",
+    "motivo": "Lleva 6 días: cumple la fiebre de 5 días o más y está dentro de los 10 días en que se prefiere la inmunoglobulina."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "cambios_en_extremidades",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "edema indurado del dorso de manos y pies",
+    "motivo": "Es el criterio de cambios en extremidades; con conjuntivitis, labios, exantema y adenopatía suma los cinco: no es un cuadro incompleto."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "adenopatia_cervical",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Adenopatía cervical derecha de 2 cm",
+    "motivo": "Mide más de 1.5 cm y es unilateral: cumple el criterio de linfadenopatía cervical."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "eritema_edema_manos",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kawasaki_symptoms_D.jpg/330px-Kawasaki_symptoms_D.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Kawasaki_symptoms_D.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Dong Soo Kim (obra derivada: Natr)",
+    "licencia": "CC BY 2.0",
+    "descripcion": "Eritema de las palmas de ambas manos en un niño con enfermedad de Kawasaki, uno de los cambios en extremidades de las primeras dos semanas.",
+    "archivo": "assets/RZ-PED-395-I-R8.jpg",
+    "sha256": "67269a2b2b3a6f87be8b6e4f31b8069bc32307965f95d2bb4308fe3f32dcc780"
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Femenino de 4 años, peso 16 kg, referida al día 12 de enfermedad con diagnóstico de enfermedad de Kawasaki. Persiste con fiebre de 39 °C y descamación periungueal de los dedos. PCR 8 mg/dL y VSG 85 mm/h. El ecocardiograma muestra dilatación leve de la arteria coronaria derecha. No ha recibido inmunoglobulina.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto a la inmunoglobulina intravenosa?",
+   "op": [
+    "No administrarla, porque ya pasaron más de 10 días",
+    "Administrar inmunoglobulina 2 g/kg, porque persiste la fiebre y los reactantes de fase aguda están elevados",
+    "Administrar solo ácido acetilsalicílico a 3-5 mg/kg/día",
+    "Iniciar metilprednisolona de forma rutinaria en lugar de inmunoglobulina",
+    "Administrarla solo si el siguiente ecocardiograma muestra un aneurisma"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Se recomienda inmunoglobulina 2 g/kg en pacientes con más de 10 días de evolución si persiste la fiebre, hay reactantes de fase aguda elevados o aneurismas al diagnóstico.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     28,
+     "pacientes con más de 10 días de evolución, en las"
+    ],
+    [
+     "Se evita el uso de esteroides de forma rutinaria en el tratamiento inicial.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     29,
+     "Evitar el uso de esteroides de forma rutinaria en el"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Aplica el límite de 10 días como absoluto.",
+     [
+      "A"
+     ],
+     [
+      "más de 10 días",
+      "ya no sirve",
+      "fuera de tiempo"
+     ],
+     "¿En qué situaciones recomienda la guía inmunoglobulina después de 10 días?",
+     "Se recomienda inmunoglobulina en pacientes con más de 10 días de evolución si persiste la fiebre, hay reactantes elevados o aneurismas.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     28,
+     "pacientes con más de 10 días de evolución, en las"
+    ],
+    [
+     "razonamiento",
+     "Pasa a la fase antiagregante sin haber controlado la inflamación activa.",
+     [
+      "C"
+     ],
+     [
+      "dosis baja",
+      "antiagregante",
+      "solo aspirina"
+     ],
+     "¿La dosis de 3-5 mg/kg/día corresponde a la fase con fiebre o a la fase posterior?",
+     "La dosis de 3-5 mg/kg/día se usa después de la remisión de la fiebre; esta paciente sigue febril.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     31,
+     "de 3 a 5 mg/kg/día (en una sola toma) por 6 a 8"
+    ],
+    [
+     "conocimiento",
+     "Cree que el esteroide sustituye a la inmunoglobulina en el tratamiento inicial.",
+     [
+      "D"
+     ],
+     [
+      "esteroide",
+      "metilprednisolona",
+      "pulsos"
+     ],
+     "¿Qué dice la guía del uso rutinario de esteroides en el tratamiento inicial?",
+     "Se recomienda evitar el uso de esteroides de forma rutinaria en el tratamiento inicial de la enfermedad de Kawasaki.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     29,
+     "Evitar el uso de esteroides de forma rutinaria en el"
+    ],
+    [
+     "dato_omitido",
+     "Condiciona el tratamiento al aneurisma y omite la fiebre persistente y los reactantes elevados.",
+     [
+      "E"
+     ],
+     [
+      "esperar aneurisma",
+      "nuevo eco",
+      "si hay lesión"
+     ],
+     "Además del aneurisma, ¿qué otras condiciones justifican la inmunoglobulina después de 10 días? ¿Las tiene?",
+     "La persistencia de la fiebre y las titulaciones altas de PCR o VSG justifican la inmunoglobulina después de 10 días, aun sin aneurisma.",
+     "4.1.4.1 Tratamiento Farmacológico",
+     28,
+     "pacientes con más de 10 días de evolución, en las"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "fiebre_persistente_dia_12",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Persiste con fiebre de 39 °C",
+    "motivo": "Con más de 10 días de evolución, la fiebre persistente es una de las situaciones en que la guía recomienda inmunoglobulina 2 g/kg."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "reactantes_elevados",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "PCR 8 mg/dL y VSG 85 mm/h",
+    "motivo": "Los reactantes de fase aguda altos también justifican la inmunoglobulina después del día 10, sin esperar un aneurisma."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "dia_12_no_es_limite_absoluto",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "referida al día 12 de enfermedad",
+    "motivo": "Pasar de 10 días no excluye la inmunoglobulina: depende de la fiebre, los reactantes y los aneurismas."
+   }
+  ]}
+ ]
+}

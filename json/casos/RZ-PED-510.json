@@ -1,0 +1,492 @@
+[
+  {
+    "id": "RZ-PED-510-I",
+    "version": "0.2.0",
+    "sindrome": "talla_baja",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+      "clave": "IMSS-510-11",
+      "archivo": "510GER.pdf"
+    },
+    "vineta": "Masculino de 9 años referido a pediatría por talla por debajo del percentil 3. Nació de término con peso y talla normales. Sin enfermedades crónicas, con alimentación adecuada; peso para la talla en percentil 50. Proporciones corporales normales. Velocidad de crecimiento de 5.5 cm/año en el último año. Talla del padre 160 cm y de la madre 148 cm; su talla actual se encuentra dentro del rango de la talla blanco familiar. Edad ósea concordante con la cronológica. Sin datos de pubertad.",
+    "pregunta": "¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Displasia esquelética",
+      "B": "Talla baja nutricional",
+      "C": "Talla baja familiar",
+      "D": "Retraso constitucional del crecimiento",
+      "E": "Deficiencia de hormona de crecimiento"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "La talla baja familiar se reconoce en niños con talla acorde a la talla blanco familiar, edad ósea acorde a la cronológica y desarrollo puberal a edad normal.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+        }
+      },
+      {
+        "texto": "La talla blanco familiar en niños es [(talla paterna + talla materna)/2] + 6.5 cm, con un rango de más menos 5 cm.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
+          "pagina": 19,
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+        }
+      },
+      {
+        "texto": "Las variantes normales (talla baja familiar y retraso constitucional) cumplen talla normal al nacer, proporciones corporales normales, ausencia de enfermedades crónicas y nutrición adecuada.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 26,
+          "fragmento": "Proporciones corporales normales"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Clasifica la talla baja como nutricional; la viñeta indica peso para la talla en percentil 50.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "desnutrición",
+          "nutricional",
+          "peso bajo"
+        ],
+        "pregunta_socratica_semilla": "¿Qué percentil tiene el peso para la talla del paciente?",
+        "explicacion": "La talla baja se clasifica como nutricional cuando se encuentra un peso bajo para la talla.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 28,
+          "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Diagnostica retraso constitucional sin considerar que la edad ósea es concordante con la cronológica.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "retraso constitucional",
+          "va a dar el estirón",
+          "maduración lenta"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad ósea esperarías en el retraso constitucional y qué edad ósea tiene este niño?",
+        "explicacion": "En el retraso constitucional la maduración ósea es más lenta que el resto y hay retraso puberal; en la talla baja familiar la edad ósea es acorde a la cronológica.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "que tienen un ritmo de maduración ósea más lento que"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que las displasias son alteraciones intrínsecas de la placa de crecimiento, poco frecuentes, y que las variantes normales tienen proporciones normales.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "displasia",
+          "hueso",
+          "placa de crecimiento"
+        ],
+        "pregunta_socratica_semilla": "¿Qué grupo etiopatogénico ocupan las displasias y qué proporciones corporales tiene este niño?",
+        "explicacion": "Las displasias pertenecen a los padecimientos por desorden intrínseco de la placa de crecimiento; las variantes normales tienen proporciones corporales normales.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 26,
+          "fragmento": "intrínseco de la placa de crecimiento:"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Equipara talla baja con deficiencia hormonal sin considerar la talla de los padres ni la velocidad de crecimiento normal.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hormona de crecimiento",
+          "endocrino",
+          "deficiencia"
+        ],
+        "pregunta_socratica_semilla": "¿Qué porcentaje de las tallas bajas son de causa endocrina y qué característica suelen tener?",
+        "explicacion": "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso; las variantes normales corresponden al 80 %.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "suele asociarse a un cierto grado de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-510-I-R1",
+        "tipo": "flashcard",
+        "concepto": "formula_talla_blanco_familiar",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cómo se calcula la talla blanco familiar de un niño varón?",
+        "reverso": "(Talla paterna + talla materna) / 2 + 6.5 cm; se toman ±5 cm como rango del potencial genético.",
+        "cita": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
+          "pagina": 19,
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+        }
+      },
+      {
+        "id": "RZ-PED-510-I-R2",
+        "tipo": "flashcard",
+        "concepto": "edad_osea_retrasada",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo se considera retrasada la edad ósea respecto a la cronológica?",
+        "reverso": "Cuando difiere al menos 6 meses en preescolares y al menos 2 años en escolares o adolescentes.",
+        "cita": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.3 Diagnóstico paraclínico",
+          "pagina": 25,
+          "fragmento": "difiera al menos en 6 meses en caso de pre-escolares y"
+        }
+      },
+      {
+        "id": "RZ-PED-510-I-R3",
+        "tipo": "flashcard",
+        "concepto": "criterios_variantes_normales",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué criterios reúnen las variantes normales del crecimiento?",
+        "reverso": "Talla normal al nacer, proporciones corporales normales, ausencia de enfermedades crónicas y nutrición adecuada.",
+        "cita": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 26,
+          "fragmento": "Proporciones corporales normales"
+        }
+      },
+      {
+        "id": "RZ-PED-510-I-R4",
+        "tipo": "diagrama",
+        "concepto": "clasificacion_talla_baja",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con talla por debajo del percentil 3\"] --> B{\"¿Peso bajo para la talla?\"}\n  B -->|\"Sí\"| C[\"Talla baja nutricional\"]\n  B -->|\"No\"| D{\"¿Peso alto para la talla en rango de obesidad?\"}\n  D -->|\"Sí\"| E[\"Sospechar hipotiroidismo, exceso de glucocorticoides o deficiencia de hormona de crecimiento: referir a endocrinología pediátrica\"]\n  D -->|\"No\"| F{\"¿Talla normal al nacer, proporciones normales, sin enfermedad crónica y bien nutrido?\"}\n  F -->|\"No\"| G[\"Buscar desorden de la placa de crecimiento u otra causa secundaria\"]\n  F -->|\"Sí\"| H{\"¿Talla dentro de la talla blanco familiar y edad ósea acorde a la cronológica?\"}\n  H -->|\"Sí\"| I[\"Variante familiar\"]\n  H -->|\"No: bajo la talla genética, edad ósea retrasada y pubertad tardía\"| J[\"Retraso constitucional\"]",
+        "citas": [
+          {
+            "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+            "clave": "IMSS-510-11",
+            "seccion": "4.1.4 Clasificación",
+            "pagina": 28,
+            "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+          },
+          {
+            "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+            "clave": "IMSS-510-11",
+            "seccion": "4.2.2 Criterios de referencia de segundo a tercer nivel",
+            "pagina": 31,
+            "fragmento": "para la talla en rango obesidad se debe sospechar"
+          },
+          {
+            "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+            "clave": "IMSS-510-11",
+            "seccion": "4.1.4 Clasificación",
+            "pagina": 26,
+            "fragmento": "Proporciones corporales normales"
+          },
+          {
+            "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+            "clave": "IMSS-510-11",
+            "seccion": "4.1.4 Clasificación",
+            "pagina": 27,
+            "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-510-I-R5",
+        "tipo": "resaltado",
+        "concepto": "peso_talla_normal",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "peso para la talla en percentil 50",
+        "motivo": "Solo un peso bajo para la talla permite clasificarla como nutricional; percentil 50 lo descarta."
+      },
+      {
+        "id": "RZ-PED-510-I-R6",
+        "tipo": "resaltado",
+        "concepto": "edad_osea_concordante",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Edad ósea concordante con la cronológica",
+        "motivo": "En el retraso constitucional la maduración ósea es más lenta; una edad ósea acorde orienta a la variante familiar."
+      },
+      {
+        "id": "RZ-PED-510-I-R7",
+        "tipo": "resaltado",
+        "concepto": "talla_dentro_de_rango_familiar",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "su talla actual se encuentra dentro del rango de la talla blanco familiar",
+        "motivo": "Con padres de baja estatura, su talla corresponde a su potencial genético: (160 + 148)/2 + 6.5 = 160.5 cm ±5 cm."
+      },
+      {
+        "id": "RZ-PED-510-I-R8",
+        "tipo": "tabla",
+        "concepto": "variantes_normales_del_crecimiento",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Variante normal",
+          "Talla frente a la talla blanco familiar",
+          "Edad ósea",
+          "Pubertad"
+        ],
+        "filas": [
+          [
+            "Familiar",
+            "Acorde a la talla blanco familiar",
+            "Acorde a la cronológica",
+            "A edad normal"
+          ],
+          [
+            "Retraso constitucional",
+            "Por debajo de la talla genética",
+            "Maduración más lenta",
+            "Retrasada"
+          ]
+        ],
+        "cita": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+        }
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-510-V1",
+    "version": "0.2.0",
+    "sindrome": "talla_baja",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-510-I",
+    "gpc_base": {
+      "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+      "clave": "IMSS-510-11",
+      "archivo": "510GER.pdf"
+    },
+    "vineta": "Masculino de 13 años con talla por debajo del percentil 3, sano y bien nutrido, con proporciones corporales normales y talla normal al nacer. Su padre mide 175 cm y su madre 162 cm; el padre refiere que \"dio el estirón\" hasta los 16 años. Velocidad de crecimiento de 4.5 cm/año. Tanner 1. La edad ósea corresponde a 10 años 6 meses.",
+    "pregunta": "¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Talla baja familiar",
+      "B": "Talla baja secundaria a endocrinopatía",
+      "C": "Talla baja nutricional",
+      "D": "Retraso constitucional del crecimiento",
+      "E": "Deficiencia de hormona de crecimiento"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "El retraso constitucional del crecimiento se presenta en niños sanos con talla por debajo de su talla genética, maduración ósea más lenta y retraso puberal.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "Retraso constitucional de crecimiento: son niños sanos"
+        }
+      },
+      {
+        "texto": "La talla blanco familiar en niños es [(talla paterna + talla materna)/2] + 6.5 cm.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
+          "pagina": 19,
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Diagnostica talla baja familiar sin considerar que los padres tienen talla normal y que la edad ósea está retrasada.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "familiar",
+          "genética",
+          "padres"
+        ],
+        "pregunta_socratica_semilla": "¿Cuál es la talla blanco familiar de este niño y cómo se compara con su talla actual?",
+        "explicacion": "En la talla baja familiar la talla es acorde a la talla blanco familiar y la edad ósea a la cronológica; aquí la talla queda por debajo de la talla genética y la edad ósea está retrasada.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "ambos padres) con edad ósea acorde a la cronológica y"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Atribuye la talla baja a una deficiencia hormonal sin integrar el patrón familiar de maduración tardía.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hormona de crecimiento",
+          "deficiencia",
+          "endocrino"
+        ],
+        "pregunta_socratica_semilla": "¿Qué datos de la historia familiar y de la edad ósea apuntan a una variante normal?",
+        "explicacion": "El retraso constitucional se presenta en niños sanos con maduración ósea más lenta y retraso puberal; es una variante normal del crecimiento.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "Retraso constitucional de crecimiento: son niños sanos"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Clasifica como nutricional a un niño bien nutrido.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "nutricional",
+          "desnutrición"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dato antropométrico define la talla baja nutricional?",
+        "explicacion": "La talla baja se clasifica como nutricional cuando hay peso bajo para la talla.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 28,
+          "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la frecuencia y las características de la talla baja endocrina.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "endocrinopatía",
+          "tiroides",
+          "hormonal"
+        ],
+        "pregunta_socratica_semilla": "¿Con qué frecuencia y con qué característica de peso se presenta la talla baja por endocrinopatía?",
+        "explicacion": "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso.",
+        "cita_gpc": {
+          "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
+          "clave": "IMSS-510-11",
+          "seccion": "4.1.4 Clasificación",
+          "pagina": 27,
+          "fragmento": "suele asociarse a un cierto grado de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-510-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "padres_talla_normal",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Su padre mide 175 cm y su madre 162 cm",
+        "motivo": "Talla blanco familiar: (175 + 162)/2 + 6.5 = 175 cm ±5 cm; un niño bajo el percentil 3 queda por debajo de su talla genética."
+      },
+      {
+        "id": "RZ-PED-510-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "edad_osea_retrasada_variante",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "La edad ósea corresponde a 10 años 6 meses",
+        "motivo": "A los 13 años, una edad ósea de 10 años 6 meses difiere más de 2 años: está retrasada, como en el retraso constitucional."
+      },
+      {
+        "id": "RZ-PED-510-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "sin_desarrollo_puberal",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Tanner 1",
+        "motivo": "Sin desarrollo puberal a los 13 años: el retraso puberal acompaña a la maduración ósea lenta del retraso constitucional."
+      }
+    ]
+  }
+]

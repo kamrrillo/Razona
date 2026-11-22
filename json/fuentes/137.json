@@ -1,0 +1,367 @@
+{
+ "archivo": "137GER.pdf",
+ "clave": "IMSS-137-08",
+ "sindrome": "sindrome_dificultad_respiratoria_recien_nacido",
+ "guia": "Diagnóstico y Tratamiento de Síndrome de Dificultad Respiratoria en el Recién Nacido",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Recién nacido masculino de 28 semanas de gestación por fecha de última menstruación y Capurro, peso 1,050 g, producto de parto vaginal precipitado. La madre llegó en periodo expulsivo y no recibió esteroides prenatales. Al nacer presentó esfuerzo respiratorio débil y frecuencia cardiaca de 80 lpm que no mejoró con ventilación con bolsa y mascarilla, por lo que fue intubado en la sala de partos. A los 15 minutos de vida está en ventilación mecánica con FiO2 de 35 % y SpO2 91 %.",
+   "pregunta": "En relación con el surfactante exógeno, ¿cuál es la conducta más adecuada?",
+   "op": [
+    "Administrarlo ahora como surfactante profiláctico",
+    "Esperar la radiografía de tórax para confirmar el síndrome de dificultad respiratoria antes de administrarlo",
+    "Administrarlo solo si llega a requerir una FiO2 mayor de 50 %",
+    "Extubar a presión positiva continua nasal y administrarlo solo si falla",
+    "Esperar más de 2 horas para observar la evolución y evitar una dosis innecesaria"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Se administra surfactante profiláctico a todo prematuro de menos de 30 semanas que requiere intubación traqueal en la sala de partos o cuya madre no recibió esteroides prenatales.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     17,
+     "profiláctico a todos los recién nacidos"
+    ],
+    [
+     "En menores de 30 semanas, la administración profiláctica reduce la mortalidad y el síndrome de fuga de aire frente al rescate.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     17,
+     "surfactante profiláctico y de rescate en"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "No registra la negación en la viñeta y actúa como si la madre hubiera recibido esteroides prenatales.",
+     [
+      "D"
+     ],
+     [
+      "recibió esteroides",
+      "pulmón maduro",
+      "probar PPC primero",
+      "extubar"
+     ],
+     "¿Qué dice exactamente la viñeta sobre los esteroides prenatales?",
+     "La guía indica surfactante profiláctico en prematuros de menos de 30 semanas cuyas madres no hayan recibido esteroides prenatales, como en este caso.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     17,
+     "madres no hayan recibido esteroides"
+    ],
+    [
+     "dato_omitido",
+     "Omite que el paciente ya fue intubado en la sala de partos, lo que por sí solo cumple el criterio de profilaxis sin esperar estudios.",
+     [
+      "B"
+     ],
+     [
+      "radiografía",
+      "confirmar",
+      "vidrio despulido",
+      "primero diagnóstico"
+     ],
+     "¿Qué procedimiento se le hizo en la sala de partos y qué indica la guía en ese caso?",
+     "Se administra surfactante profiláctico a los prematuros de menos de 30 semanas que requieren intubación traqueal en la sala de partos.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     17,
+     "gestacional que requieran intubación"
+    ],
+    [
+     "conocimiento",
+     "Aplica a la primera dosis el criterio de FiO2 mayor de 50 % que la guía usa para la segunda y la tercera dosis.",
+     [
+      "C"
+     ],
+     [
+      "FiO2 mayor de 50",
+      "si empeora",
+      "solo si lo necesita"
+     ],
+     "¿Para qué dosis de surfactante usa la guía el criterio de FiO2 mayor de 50 %?",
+     "La FiO2 mayor de 50 % es criterio para una segunda y hasta una tercera dosis en el prematuro con SDR establecido, no para la primera.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     19,
+     "Una fracción de oxígeno mayor del"
+    ],
+    [
+     "razonamiento",
+     "Prioriza evitar una dosis posiblemente innecesaria sobre el beneficio de la administración temprana.",
+     [
+      "E"
+     ],
+     [
+      "esperar evolución",
+      "no dar de más",
+      "ver cómo responde",
+      "observar"
+     ],
+     "¿Qué desenlaces empeoran cuando el surfactante se da de forma tardía en lugar de temprana?",
+     "La administración temprana, frente a la tardía, disminuye el riesgo de muerte, neumotórax, enfisema intersticial y displasia broncopulmonar.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "administración tardía disminuye el"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "factores_riesgo_sdr",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Según la guía, ¿qué antecedentes incrementan la incidencia de síndrome de dificultad respiratoria?",
+    "reverso": "Hipotermia, asfixia perinatal, fetopatía diabética, no haber recibido esteroides prenatales y sexo masculino.",
+    "cita": [
+     "4.1 Diagnóstico",
+     11,
+     "incrementan la incidencia de SDR"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "temprano_frente_a_tardio",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué riesgos disminuye la administración temprana de surfactante frente a la tardía?",
+    "reverso": "Muerte, neumotórax, enfisema pulmonar intersticial y displasia broncopulmonar.",
+    "cita": [
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "administración tardía disminuye el"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "criterio_fio2_dosis_adicionales",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Para qué usa la guía el criterio de FiO2 mayor de 50 % en relación con el surfactante?",
+    "reverso": "Para dar una segunda y hasta una tercera dosis en el prematuro con SDR establecido. No es el criterio para la primera dosis.",
+    "cita": [
+     "4.2.2 Administración de Surfactante Exógeno",
+     19,
+     "Una fracción de oxígeno mayor del"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "surfactante_temprano_y_redosis",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Prematuro con antecedentes de riesgo y signos clínicos sugestivos de SDR\"] --> B[\"Surfactante temprano dentro de las primeras 2 horas de vida\"]\n  B --> C{\"¿Es posible extubar tras una breve asistencia mecánica?\"}\n  C -->|\"Sí\"| D[\"Extubación rápida y paso a PPC nasal\"]\n  C -->|\"No\"| E[\"Continuar la asistencia mecánica a la ventilación\"]\n  D --> F{\"¿SDR establecido con FiO2 mayor de 50 %, presión media mayor de 7 cm H2O o PPC mayor de 6 cm H2O?\"}\n  E --> F\n  F -->|\"Sí\"| G[\"Segunda y hasta tercera dosis de surfactante\"]\n  F -->|\"No\"| H[\"Continuar soporte y vigilancia\"]",
+    "citas": [
+     [
+      "4.2.2 Administración de Surfactante Exógeno",
+      18,
+      "primeras 2 horas después del"
+     ],
+     [
+      "4.2.2 Administración de Surfactante Exógeno",
+      18,
+      "extubación rápida tras una breve"
+     ],
+     [
+      "4.2.2 Administración de Surfactante Exógeno",
+      19,
+      "Una fracción de oxígeno mayor del"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "sin_esteroides_prenatales",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "no recibió esteroides prenatales",
+    "motivo": "La viñeta niega los esteroides prenatales. No haberlos recibido aumenta la incidencia de SDR."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "quince_minutos_de_vida",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A los 15 minutos de vida",
+    "motivo": "Está dentro de las primeras 2 horas: la guía muestra peores desenlaces cuando el surfactante se retrasa."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "intubado_en_sala",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "fue intubado en la sala de partos",
+    "motivo": "Ya tiene vía aérea artificial. La radiografía se pide dentro de las primeras 8 horas; no hay que esperarla para decidir."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "radiografia_sdr",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/X-ray_of_infant_respiratory_distress_syndrome_%28IRDS%29.png/500px-X-ray_of_infant_respiratory_distress_syndrome_%28IRDS%29.png",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:X-ray_of_infant_respiratory_distress_syndrome_(IRDS).png",
+    "fuente": "Wikimedia Commons",
+    "autor": "Mikael Häggström, M.D.",
+    "licencia": "CC0",
+    "descripcion": "Radiografía de tórax al día de vida de un prematuro de 29 semanas con SDR: opacidad granular fina difusa con broncograma aéreo y disminución del volumen pulmonar. Se ven catéteres umbilicales y sonda nasogástrica.",
+    "archivo": "assets/RZ-PED-137-I-R8.png",
+    "sha256": "a7e856697bbd1a74dcb8563e74f36fe30e695abb067cbae7731b185e3202be05"
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de 32 semanas de gestación, peso 1,700 g, nacida por cesárea por preeclampsia grave. La madre recibió esquema completo de esteroides prenatales. Respiró al nacer y no requirió intubación. A los 40 minutos de vida presenta quejido, aleteo nasal, retracción xifoidea, Silverman-Anderson de 6 y cianosis que requiere FiO2 de 45 % para SpO2 de 90 %. Se intuba para estabilizarla.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto al surfactante y el soporte ventilatorio?",
+   "op": [
+    "No administrar surfactante porque la madre recibió esteroides prenatales",
+    "Esperar a las 6 horas de vida para valorar la evolución antes de decidir",
+    "Surfactante temprano antes de las 2 horas y extubación rápida a CPAP nasal",
+    "Surfactante y mantener la ventilación mecánica al menos 72 horas",
+    "Surfactante solo si requiere más de 50 % de FiO2"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Se administra surfactante temprano (rescate) dentro de las primeras 2 horas en todo prematuro con antecedentes de riesgo y signos sugestivos de SDR.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "primeras 2 horas después del"
+    ],
+    [
+     "Tras el surfactante temprano se intenta extubación rápida después de una breve ventilación mecánica y se pasa a PPC nasal siempre que sea posible.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "extubación rápida tras una breve"
+    ]
+   ],
+   "rub": [
+    [
+     "razonamiento",
+     "Supone que los esteroides prenatales excluyen el SDR aun con signos clínicos francos.",
+     [
+      "A"
+     ],
+     [
+      "recibió esteroides",
+      "pulmón maduro",
+      "no lo necesita"
+     ],
+     "Si la paciente tiene quejido, Silverman de 6 y requiere 45 % de oxígeno, ¿qué te dice eso sobre su surfactante endógeno?",
+     "La guía indica surfactante temprano en todo prematuro con antecedentes de riesgo y signos clínicos sugestivos de SDR.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "primeras 2 horas después del"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el beneficio del rescate temprano frente al tardío.",
+     [
+      "B"
+     ],
+     [
+      "esperar",
+      "6 horas",
+      "valorar evolución"
+     ],
+     "¿Qué pasa con el riesgo de muerte y de neumotórax cuando el surfactante se retrasa?",
+     "La administración temprana, frente a la tardía, disminuye el riesgo de muerte, neumotórax, enfisema intersticial y displasia broncopulmonar.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "administración tardía disminuye el"
+    ],
+    [
+     "conocimiento",
+     "Cree que tras el surfactante debe mantenerse la ventilación mecánica de forma prolongada.",
+     [
+      "D"
+     ],
+     [
+      "72 horas",
+      "dejar intubada",
+      "asegurar"
+     ],
+     "¿Qué recomienda la guía hacer con la ventilación mecánica después del surfactante temprano?",
+     "Se recomienda intentar extubación rápida tras una breve asistencia mecánica y pasar a PPC nasal; esto disminuye días de ventilación, fuga de aire y displasia broncopulmonar.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     18,
+     "extubación rápida tras una breve"
+    ],
+    [
+     "dato_omitido",
+     "Usa un umbral de FiO2 de redosificación y omite que la paciente ya tiene signos de SDR y requiere 45 % de FiO2.",
+     [
+      "E"
+     ],
+     [
+      "más de 50 %",
+      "todavía no",
+      "si sube el oxígeno"
+     ],
+     "¿Qué signos y requerimiento de oxígeno tiene ya la paciente?",
+     "El umbral de FiO2 mayor de 50 % corresponde a la segunda o tercera dosis; la primera se da de forma temprana ante signos sugestivos de SDR.",
+     "4.2.2 Administración de Surfactante Exógeno",
+     19,
+     "Una fracción de oxígeno mayor del"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "signos_de_sdr",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A los 40 minutos de vida presenta quejido, aleteo nasal, retracción xifoidea, Silverman-Anderson de 6",
+    "motivo": "Tiene signos clínicos de SDR dentro de las primeras 2 horas: es el momento del surfactante temprano."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "esteroides_no_excluyen_sdr",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "La madre recibió esquema completo de esteroides prenatales",
+    "motivo": "Los esteroides prenatales reducen la incidencia de SDR, pero no la eliminan; con signos francos, el SDR está presente."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "fio2_45",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "requiere FiO2 de 45 % para SpO2 de 90 %",
+    "motivo": "El umbral de FiO2 mayor de 50 % es para dosis adicionales; la primera dosis no espera a ese valor."
+   }
+  ]}
+ ]
+}

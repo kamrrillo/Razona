@@ -1,0 +1,213 @@
+{
+ "archivo": "027GER.pdf",
+ "clave": "IMSS-027-08",
+ "sindrome": "infeccion_vias_urinarias",
+ "guia": "Prevención, Diagnóstico y Tratamiento de la Infección de Vías Urinarias No Complicada en Menores de 18 años en el Primero y Segundo Nivel de Atención",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 10 meses de edad, llevada a urgencias de segundo nivel por fiebre de 39.4 °C de dos días de evolución, irritabilidad y rechazo parcial al alimento. Sin tos, rinorrea ni evacuaciones diarreicas. Aún usa pañal. A la exploración: FC 140 lpm, FR 32 rpm, mucosas húmedas, llenado capilar de 2 segundos, sin exantema; faringe, oídos y campos pulmonares sin alteraciones. Tolera la vía oral. El médico sospecha infección de vías urinarias y decide iniciar antimicrobiano de inmediato, en cuanto obtenga la muestra.",
+   "pregunta": "¿Cuál es la forma más adecuada de obtener la muestra de orina para urocultivo en esta paciente?",
+   "op": [
+    "Bolsa colectora perineal, cambiándola cada 20 minutos hasta obtener la muestra",
+    "Cateterismo vesical con técnica estéril",
+    "Chorro medio previa limpieza de genitales externos",
+    "Tira reactiva con esterasa leucocitaria y nitritos; si es positiva, iniciar antimicrobiano sin urocultivo",
+    "Iniciar el antimicrobiano y tomar urocultivo a las 48 a 72 horas si no hay mejoría"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "En todos los niños menores de 6 meses y en todas las niñas menores de 2 años que deban recibir antimicrobianos, la muestra se obtiene por catéter.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     18,
+     "todas las niñas menores de 2 años"
+    ],
+    [
+     "Si se requiere iniciar antibioticoterapia de inmediato, se usa de entrada una técnica estéril (cateterismo vesical o punción suprapúbica), en segundo o tercer nivel.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     20,
+     "inmediato de antibioticoterapia debe"
+    ],
+    [
+     "Por cateterismo vesical, el urocultivo es positivo con más de 10,000 UFC/mL.",
+     "4.2.2.4 Estudios de Laboratorio",
+     22,
+     "Caterismo vesical:> 10,000 UFC/mL"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Trata a la paciente como si controlara esfínteres; no registra que tiene 10 meses y usa pañal.",
+     [
+      "C"
+     ],
+     [
+      "chorro medio",
+      "con buen aseo basta",
+      "que orine en un frasco",
+      "orina limpia"
+     ],
+     "¿Puede una niña de 10 meses que usa pañal dar una muestra de la mitad del chorro?",
+     "El chorro medio se recomienda en el niño continente. Una lactante de 10 meses no controla esfínteres, así que esta técnica no es aplicable.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     19,
+     "En el niño continente se recomienda"
+    ],
+    [
+     "dato_omitido",
+     "Elige la bolsa colectora sin tomar en cuenta que el antimicrobiano se iniciará de inmediato; la bolsa solo se justifica en niños de bajo riesgo que no requieren tratamiento inmediato.",
+     [
+      "A"
+     ],
+     [
+      "bolsa",
+      "no invasiva",
+      "menos dolorosa",
+      "es más fácil en lactantes"
+     ],
+     "¿Qué decisión tomó ya el médico sobre el antimicrobiano y cómo cambia eso la técnica que conviene?",
+     "La bolsa adhesiva solo está justificada en niños de bajo riesgo en quienes no se requiere diagnóstico o tratamiento inmediato; su resultado positivo debe confirmarse con cateterismo. Aquí el tratamiento empieza en cuanto se tome la muestra.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     20,
+     "justificado el empleo de técnicas no"
+    ],
+    [
+     "conocimiento",
+     "Cree que la tira reactiva puede sustituir al urocultivo.",
+     [
+      "D"
+     ],
+     [
+      "tira reactiva",
+      "nitritos positivos confirman",
+      "no hace falta cultivo",
+      "más rápido"
+     ],
+     "¿Qué te daría la tira reactiva que no te da el urocultivo, y qué perderías al omitir el cultivo?",
+     "Esterasa y nitritos orientan el diagnóstico, pero en ningún caso debe dejar de enviarse muestra para urocultivo; en menores de 3 años la muestra para urocultivo se toma de inmediato.",
+     "4.2.2.4 Estudios de Laboratorio",
+     21,
+     "ningún caso se debe dejar de enviar"
+    ],
+    [
+     "razonamiento",
+     "Prioriza tratar antes de cultivar y pospone el urocultivo, lo que impide un diagnóstico confiable.",
+     [
+      "E"
+     ],
+     [
+      "primero el antibiótico",
+      "si no mejora cultivo",
+      "cultivo de control",
+      "no retrasar el tratamiento"
+     ],
+     "Si el urocultivo se toma después de iniciar el antimicrobiano, ¿qué tan confiable será su resultado?",
+     "En menores de 3 años con sospecha de IVU la muestra para urocultivo se toma de inmediato, antes del antimicrobiano. El urocultivo a las 48-72 h es un control en IVU complicada, no el diagnóstico inicial.",
+     "4.2.2.4 Estudios de Laboratorio",
+     22,
+     "años con sospecha de IVU debe"
+    ]
+   ]
+  },
+  {
+   "t": "V1",
+   "vineta": "Masculino de 6 años, previamente sano, acude a consulta de medicina familiar por ardor al orinar, urgencia urinaria y dolor suprapúbico de un día de evolución. Controla esfínteres desde los 3 años y orina de forma voluntaria. Niega fiebre, vómito y dolor lumbar. Temperatura 36.8 °C, buen estado general, abdomen blando con molestia leve en hipogastrio, puño percusión negativa. No está circuncidado. Es su primer episodio.",
+   "pregunta": "¿Cuál es la forma más adecuada de obtener la muestra de orina para urocultivo en este paciente?",
+   "op": [
+    "Punción suprapúbica, por ser la técnica con menor contaminación",
+    "Bolsa colectora perineal durante un máximo de 20 minutos",
+    "Cateterismo vesical con técnica estéril",
+    "Orina de la mitad del chorro, con limpieza de genitales y el prepucio retraído",
+    "Solo tira reactiva; el urocultivo se reserva para la falla al tratamiento"
+   ],
+   "rc": "D",
+   "pc": [
+    [
+     "En el niño continente se recomienda recolectar orina limpia de la mitad del chorro; en varones, con el prepucio retirado lo más posible.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     19,
+     "recogerse con el prepucio retirado todo"
+    ],
+    [
+     "Por chorro medio, el urocultivo es positivo con 100,000 UFC/mL para gramnegativos.",
+     "4.2.2.4 Estudios de Laboratorio",
+     22,
+     "100,000 UFC/mL en caso de"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "No registra que el paciente controla esfínteres y elige una técnica pensada para quien no puede orinar a voluntad.",
+     [
+      "B"
+     ],
+     [
+      "bolsa",
+      "es niño pequeño",
+      "no coopera"
+     ],
+     "¿Qué dice la viñeta sobre el control de esfínteres de este niño?",
+     "La bolsa colectora tiene una tasa de contaminación del 30 al 85 % y no es idónea para cultivo; en un niño con micción voluntaria se usa el chorro medio.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     19,
+     "Alta tasa de contaminación (30-85%)"
+    ],
+    [
+     "dato_omitido",
+     "Indica cateterismo sin considerar que el niño orina de forma voluntaria; aun si se requiriera tratamiento inmediato, en el niño con micción voluntaria puede usarse el chorro medio.",
+     [
+      "C"
+     ],
+     [
+      "cateterismo",
+      "técnica estéril",
+      "es lo más confiable"
+     ],
+     "¿Qué dato de la viñeta hace innecesaria una técnica invasiva en este niño?",
+     "La guía indica que en el niño con micción voluntaria podría recogerse orina limpia de la mitad del chorro miccional.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     20,
+     "En el niño con micción voluntaria"
+    ],
+    [
+     "razonamiento",
+     "Elige la técnica más estéril sin ponderar el contexto (primer nivel, niño continente, buen estado).",
+     [
+      "A"
+     ],
+     [
+      "punción",
+      "menos contaminación",
+      "más específica"
+     ],
+     "¿Qué ganas y qué arriesgas con una punción en un niño que puede orinar en un frasco?",
+     "Las técnicas estériles (cateterismo o punción suprapúbica) se reservan para quien requiere inicio inmediato de antibioticoterapia y se realizan en segundo o tercer nivel; en el niño con micción voluntaria basta el chorro medio.",
+     "4.2.2.2.1 Métodos de colección de orina",
+     20,
+     "en segundo o tercer nivel de atención"
+    ],
+    [
+     "conocimiento",
+     "Cree que en el niño mayor la tira reactiva sustituye al urocultivo.",
+     [
+      "E"
+     ],
+     [
+      "tira",
+      "nitritos",
+      "es cistitis simple",
+      "no necesita cultivo"
+     ],
+     "En niños mayores de 3 años, ¿la tira reactiva se usa en lugar del urocultivo o junto con él?",
+     "En mayores de 3 años pueden usarse de primera instancia nitritos, esterasa leucocitaria, estudio microscópico y urocultivo; en ningún caso se deja de enviar urocultivo.",
+     "4.2.2.4 Estudios de Laboratorio",
+     22,
+     "En niños mayores de 3 años puede"
+    ]
+   ]
+  }
+ ]
+}

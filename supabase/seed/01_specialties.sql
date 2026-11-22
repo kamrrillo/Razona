@@ -1,4 +1,4 @@
--- Especialidades del demo (catálogo). El contenido clínico vive en content/*.json.
+-- Especialidades (catálogo). El contenido clínico es el banco json/casos (pnpm content:load).
 insert into public.specialties (id, name, sort_order) values
   ('medicina-interna', 'Medicina interna', 1),
   ('pediatria', 'Pediatría', 2),

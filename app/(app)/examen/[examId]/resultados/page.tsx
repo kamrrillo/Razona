@@ -3,18 +3,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CitationCard } from "@/components/app/citation-card";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
+import { LearningResources } from "@/components/app/learning-resources";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
 import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { examItems, specialties } from "@/lib/content";
+import { rubricFor } from "@/lib/ai/fallback-engine";
 import { getAuthedContext } from "@/lib/data/auth";
-import { loadExam } from "@/lib/data/exam";
+import { examItemsFor, loadExam } from "@/lib/data/exam";
 import { getProgress } from "@/lib/data/progress";
+import { orderResources } from "@/lib/learning/resources";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = { title: "Resultados" };
+
+const ERROR_LABEL = {
+  lectura: "error de lectura",
+  dato_omitido: "dato omitido",
+  razonamiento: "error de razonamiento",
+  conocimiento: "error de conocimiento",
+} as const;
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
@@ -31,20 +39,25 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
   if (!loaded.exam.finishedAt) redirect(`/examen/${examId}`);
 
   const { answers, exam } = loaded;
+  const examItems = await examItemsFor(exam);
   const score = exam.score ?? 0;
-  const bySpecialty = specialties
-    .map((s) => {
-      const its = examItems.filter((i) => i.specialtyId === s.id);
-      const correct = its.filter((i) => answers[i.id] === i.correctOptionId).length;
-      return {
-        specialtyId: s.id,
-        name: s.name,
-        correct,
-        total: its.length,
-        accuracy: its.length === 0 ? 0 : correct / its.length,
-      };
-    })
-    .filter((s) => s.total > 0);
+  // Aciertos por área (grupo de temas); si el examen es de una sola área, por tema.
+  const areaIds = new Set(examItems.map((i) => i.groupId ?? i.specialtyId));
+  const keyOf = (i: (typeof examItems)[number]) =>
+    areaIds.size > 1 ? (i.groupId ?? i.specialtyId) : i.topic;
+  const nameOf = (i: (typeof examItems)[number]) =>
+    areaIds.size > 1 ? (i.groupName ?? i.specialtyId) : i.topic;
+  const byArea = [...new Set(examItems.map(keyOf))].map((key) => {
+    const its = examItems.filter((i) => keyOf(i) === key);
+    const correct = its.filter((i) => answers[i.id] === i.correctOptionId).length;
+    return {
+      specialtyId: key,
+      name: nameOf(its[0]),
+      correct,
+      total: its.length,
+      accuracy: its.length === 0 ? 0 : correct / its.length,
+    };
+  });
 
   return (
     <div className="space-y-4 py-4">
@@ -72,10 +85,12 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Aciertos por especialidad</CardTitle>
+          <CardTitle className="text-base">
+            {areaIds.size > 1 ? "Aciertos por área" : "Aciertos por tema"}
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <SpecialtyBars items={bySpecialty} />
+          <SpecialtyBars items={byArea} />
         </CardContent>
       </Card>
 
@@ -94,12 +109,12 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
 
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Revisión de reactivos</h2>
-        <SampleContentBadge />
         {examItems.map((item, i) => {
           const chosen = answers[item.id];
           const ok = chosen === item.correctOptionId;
           const chosenText = item.options.find((o) => o.id === chosen)?.text;
           const correctText = item.options.find((o) => o.id === item.correctOptionId)?.text;
+          const error = chosen && !ok ? rubricFor(item, chosen) : undefined;
           return (
             <details
               key={item.id}
@@ -135,16 +150,36 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                     </span>
                   </p>
                 )}
+                {error && (
+                  <div className="space-y-2 rounded-lg bg-amber-50 p-3" data-testid="error-type">
+                    <p className="font-semibold text-amber-950">
+                      Por qué te desviaste · {ERROR_LABEL[error.errorType]}
+                    </p>
+                    <p className="text-amber-950">{error.explanation}</p>
+                    <CitationCard
+                      gpcId={error.citation.gpcId}
+                      gpcTitle={error.citation.gpcTitle}
+                      section={error.citation.section}
+                      page={error.citation.page}
+                      snippet={error.citation.snippet}
+                    />
+                  </div>
+                )}
                 <p className="leading-relaxed">{item.explanation}</p>
                 <CitationCard
                   gpcId={item.citation.gpcId}
                   gpcTitle={item.citation.gpcTitle}
                   section={item.citation.section}
+                  page={item.citation.page}
                   snippet={item.citation.snippet}
                 />
                 <TutorExplanation
                   request={{ examId, itemId: item.id }}
                   correctLabel={`${item.correctOptionId}) ${correctText}`}
+                />
+                <LearningResources
+                  resources={orderResources(item.resources ?? [], error ? [error.errorType] : [])}
+                  errorTypes={error ? [error.errorType] : []}
                 />
               </div>
             </details>

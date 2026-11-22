@@ -5,11 +5,13 @@ type Props = {
   gpcId: string;
   gpcTitle?: string;
   section: string;
+  /** Página del PDF de la GPC. */
+  page?: number;
   snippet: string;
   className?: string;
 };
 
-export function CitationCard({ gpcId, gpcTitle, section, snippet, className }: Props) {
+export function CitationCard({ gpcId, gpcTitle, section, page, snippet, className }: Props) {
   return (
     <figure
       data-testid="citation"
@@ -21,10 +23,11 @@ export function CitationCard({ gpcId, gpcTitle, section, snippet, className }: P
           {gpcTitle ?? "Guía de Práctica Clínica"}
           <span className="block text-xs font-normal text-muted-foreground">
             {gpcId} · {section}
+            {page ? ` · p. ${page}` : ""}
           </span>
         </span>
       </figcaption>
-      <blockquote className="text-foreground/90">{snippet}</blockquote>
+      <blockquote className="text-foreground/90">«{snippet}»</blockquote>
     </figure>
   );
 }

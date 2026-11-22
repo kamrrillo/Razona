@@ -12,16 +12,16 @@ import {
   type LearnerContext,
   normalizeModelExplanation,
 } from "@/lib/ai/feedback";
-import { getAllItems, getItem } from "@/lib/content";
 import { layoutCompare, layoutFlow, layoutScale, layoutTree, MIN_W } from "@/lib/diagram-layout";
 import {
   ConceptDiagramSchema,
   type ModelExplanation,
   TutorExplanationSchema,
 } from "@/lib/schemas/explanation";
+import { BRONQUIOLITIS, fixtureCatalog, fixtureItem } from "../fixtures/catalog";
 
-const item = getItem("caso-bronquiolitis-01");
-if (!item) throw new Error("falta el caso");
+const item = fixtureItem(BRONQUIOLITIS);
+const getAllItems = () => fixtureCatalog().items;
 
 const ctx: LearnerContext = {
   name: "Ana García",

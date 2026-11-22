@@ -1,0 +1,4 @@
+{
+  "descripcion": "Estado de revisión médica por caso. construir_casos.py lo aplica al generar json/casos; un caso que no aparece aquí queda en 'borrador'. Estados: en_revision, revisado_medico, retirado. 'revisado_medico' requiere revisor y fecha (AAAA-MM-DD).",
+  "revisiones": {}
+}

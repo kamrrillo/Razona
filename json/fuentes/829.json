@@ -1,0 +1,400 @@
+{
+ "archivo": "829GER.pdf",
+ "clave": "GPC-IMSS-829-18",
+ "sindrome": "tetanos_neonatal_prevencion",
+ "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 17 años, cursa embarazo de 20 semanas, primera consulta prenatal en su centro de salud rural. No tiene cartilla de vacunación y no recuerda haber recibido vacunas en la adolescencia. Planea atender su parto en casa con una partera de la comunidad, a 2 horas del hospital más cercano. Sin enfermedades crónicas.",
+   "pregunta": "¿Cuál es la conducta más adecuada para prevenir el tétanos neonatal?",
+   "op": [
+    "Td en 2 a 3 dosis durante el embarazo y orientación para un parto higiénico",
+    "Aplicar una sola dosis de toxoide tetánico-diftérico",
+    "Diferir la vacunación al puerperio para no exponer al feto",
+    "Aplicar una dosis de refuerzo, porque ya completó su serie primaria",
+    "Vacunar sin dar orientación sobre el parto, porque el lugar de atención no influye en el riesgo"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "En la embarazada se recomienda un esquema de 2 a 3 dosis de inmunización contra tétanos; 1 dosis no es suficiente.",
+     "2.2 Prevención Primaria",
+     27,
+     "que incluya de 2 a 3 dosis de inmunización contra tétanos para"
+    ],
+    [
+     "La mujer no vacunada previamente inicia una serie de 5 dosis: 2 dosis con intervalo no menor de 4 semanas, la 3.ª entre 6 y 12 meses después, la 4.ª al año y la 5.ª al año siguiente.",
+     "2.2 Prevención Primaria",
+     26,
+     "2 dosis de toxoide tetánico aplicadas con un intervalo"
+    ],
+    [
+     "Se recomienda la inmunización con toxoide tetánico de la mujer en edad fértil y la embarazada, así como higiene durante el parto con énfasis en el cuidado del cordón umbilical.",
+     "2.1 Prevención y promoción a la salud",
+     18,
+     "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Supone una serie primaria completa; la viñeta indica que no hay vacunación documentada.",
+     [
+      "D"
+     ],
+     [
+      "refuerzo",
+      "ya vacunada",
+      "serie completa"
+     ],
+     "¿Qué se sabe del antecedente de vacunación de la paciente?",
+     "Basta un refuerzo cada 10 años solo si hay antecedente documentado de serie primaria completa; sin vacunación previa se inicia una serie de 5 dosis.",
+     "2.2 Prevención Primaria",
+     26,
+     "documentados de haber completado su serie primaria de"
+    ],
+    [
+     "dato_omitido",
+     "Omite el parto en domicilio con partera, que es un factor de riesgo de tétanos neonatal.",
+     [
+      "E"
+     ],
+     [
+      "solo vacuna",
+      "el parto no importa",
+      "partera"
+     ],
+     "¿Qué riesgo agrega el lugar y la forma de atención del parto?",
+     "Además del toxoide tetánico, se recomienda higiene durante el parto con énfasis en el cuidado adecuado del cordón umbilical.",
+     "2.1 Prevención y promoción a la salud",
+     18,
+     "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+    ],
+    [
+     "conocimiento",
+     "Cree que una sola dosis protege al recién nacido.",
+     [
+      "B"
+     ],
+     [
+      "una dosis",
+      "basta",
+      "única"
+     ],
+     "¿Cuántas dosis necesita la embarazada no vacunada para proteger al recién nacido?",
+     "Una dosis única de la vacuna antitetánica no es suficiente para prevenir las muertes por tétanos neonatal.",
+     "2.2 Prevención Primaria",
+     26,
+     "Una dosis única de la vacuna antitetánica no es suficiente para"
+    ],
+    [
+     "razonamiento",
+     "Antepone un riesgo fetal no sustentado a la protección del recién nacido.",
+     [
+      "C"
+     ],
+     [
+      "puerperio",
+      "después del parto",
+      "proteger al feto"
+     ],
+     "Si la protección del recién nacido depende de los anticuerpos maternos, ¿qué pasa si vacunas después del parto?",
+     "En la embarazada se recomienda un esquema de 2 a 3 dosis contra tétanos para prevenir el tétanos neonatal y su mortalidad.",
+     "2.2 Prevención Primaria",
+     27,
+     "En la embarazada se recomienda el esquema de vacunación"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "dosis_multiples_toxoide",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Basta una sola dosis de toxoide tetánico en la embarazada para prevenir el tétanos neonatal?",
+    "reverso": "No. Se requieren dosis múltiples: con 2 a 3 dosis la vacuna es efectiva hasta en 98 %.",
+    "cita": [
+     "2.2 Prevención Primaria",
+     25,
+     "dosis múltiples de 2 a 3, es efectiva hasta el 98% en la"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "proteccion_pasiva_transplacentaria",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cómo protege al recién nacido la vacunación antitetánica de la madre durante el embarazo?",
+    "reverso": "Los anticuerpos IgG maternos pasan por la placenta al feto y le dan protección pasiva transitoria en el periodo neonatal.",
+    "cita": [
+     "2.2 Prevención Primaria",
+     25,
+     "una protección pasiva transitoria durante el periodo"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "factores_riesgo_tetanos_neonatal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué factores de riesgo de tétanos neonatal señala la guía?",
+    "reverso": "Control prenatal deficiente, vacunación antitetánica materna inadecuada, partos inseguros fuera del hospital y baja escolaridad materna.",
+    "cita": [
+     "2.1 Prevención y promoción a la salud",
+     18,
+     "controles prenatales deficientes, falta de vacunas"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "vacunacion_antitetanica_embarazada",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Embarazada en su primera consulta prenatal\"] --> B{\"¿Esquema antitetánico completo y documentado?\"}\n  B -->|\"Sí\"| C[\"Una dosis de Tdap, de preferencia entre las semanas 27 y 36\"]\n  B -->|\"No\"| D[\"1.ª dosis el día 0 en la primera consulta\"]\n  D --> E[\"2.ª dosis a las 4 semanas; incluir Tdap entre las semanas 27 y 36\"]\n  E --> F[\"3.ª dosis a los 6 a 12 meses\"]\n  C --> G[\"Higiene en el parto y cuidado del cordón umbilical\"]\n  F --> G\n  G --> H{\"¿Parto fuera del hospital?\"}\n  H -->|\"Sí\"| I[\"Clorhexidina en el cordón; sin antiséptico, parto higiénico y sin remedios caseros\"]",
+    "citas": [
+     [
+      "3.2 Cuadros o figuras",
+      43,
+      "Aplicar una dosis de Tdap durante cada embarazo"
+     ],
+     [
+      "3.2 Cuadros o figuras",
+      43,
+      "1ª dosis día 0 en primer consulta prenatal"
+     ],
+     [
+      "2.1 Prevención y promoción a la salud",
+      18,
+      "higiene durante el parto, con énfasis particular en el"
+     ],
+     [
+      "2.1 Prevención y promoción a la salud",
+      23,
+      "recomienda el uso de clorhexidina en el cordón"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "eficacia_por_dosis_toxoide",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Dosis",
+     "Intervalo mínimo",
+     "Protección",
+     "Duración"
+    ],
+    "filas": [
+     [
+      "TT1",
+      "-",
+      "-",
+      "-"
+     ],
+     [
+      "TT2",
+      "4 semanas",
+      "80 %",
+      "3 años"
+     ],
+     [
+      "TT3",
+      "6 meses",
+      "95 %",
+      "5 años"
+     ],
+     [
+      "TT4",
+      "1 año",
+      "99 %",
+      "10 años"
+     ],
+     [
+      "TT5",
+      "1 año",
+      "99 %",
+      "Probablemente toda la vida"
+     ]
+    ],
+    "cita": [
+     "3.2 Cuadros o figuras",
+     44,
+     "Cuadro 3. Eficacia de la vacuna con toxoide tetánico"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_vacunacion_documentada",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No tiene cartilla de vacunación y no recuerda haber recibido vacunas en la adolescencia",
+    "motivo": "Sin serie primaria documentada no aplica un simple refuerzo: se trata como no vacunada y se inicia el esquema de dosis múltiples."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "parto_domiciliario",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Planea atender su parto en casa con una partera de la comunidad",
+    "motivo": "El parto fuera del hospital es factor de riesgo; además de vacunar hay que orientar sobre parto limpio y cuidado del cordón."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "edad_gestacional_permite_esquema",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "cursa embarazo de 20 semanas",
+    "motivo": "A las 20 semanas hay tiempo de aplicar 2 dosis separadas 4 semanas antes del parto, una de ellas Tdap entre las semanas 27 y 36."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Femenino de 19 años con embarazo de 28 semanas, en control prenatal en su unidad de medicina familiar. Presenta cartilla con esquema completo de DPT en la infancia y 5 dosis documentadas de toxoide tetánico-diftérico; la última fue hace 3 años. Pregunta si necesita alguna vacuna en este embarazo para proteger a su bebé.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "No aplicar ninguna vacuna, porque su esquema está completo",
+    "Aplicar una dosis de Tdap en este embarazo, independientemente de su historia de vacunación",
+    "Reiniciar la serie de 5 dosis de toxoide",
+    "Aplicar 2 dosis de toxoide tetánico-diftérico separadas 4 semanas",
+    "Esperar a que cumpla 10 años de su última dosis para aplicar un refuerzo"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "El personal de salud debe administrar una dosis de Tdap durante cada embarazo, independientemente de la historia previa de inmunización.",
+     "2.2 Prevención Primaria",
+     27,
+     "El personal de salud debe administrar una dosis de Tdap"
+    ],
+    [
+     "Las mujeres con serie primaria documentada solo requieren refuerzo cada 10 años para el tétanos.",
+     "2.2 Prevención Primaria",
+     26,
+     "documentados de haber completado su serie primaria de"
+    ]
+   ],
+   "rub": [
+    [
+     "razonamiento",
+     "Considera solo la protección contra tétanos y no la indicación de Tdap en cada embarazo.",
+     [
+      "A"
+     ],
+     [
+      "esquema completo",
+      "no necesita",
+      "protegida"
+     ],
+     "¿Qué recomienda la guía sobre la Tdap en cada embarazo, sin importar la historia previa?",
+     "El personal de salud debe administrar una dosis de Tdap durante cada embarazo, independientemente de la historia previa de inmunización.",
+     "2.2 Prevención Primaria",
+     27,
+     "durante cada embarazo independientemente de la historia"
+    ],
+    [
+     "lectura",
+     "Trata a la paciente como no vacunada; la cartilla documenta 5 dosis.",
+     [
+      "C"
+     ],
+     [
+      "reiniciar",
+      "no vacunada",
+      "serie de 5"
+     ],
+     "¿Qué antecedente de vacunación documenta la cartilla?",
+     "La serie de 5 dosis se indica a la mujer que no ha sido vacunada previamente.",
+     "2.2 Prevención Primaria",
+     26,
+     "previamente, deben iniciar con una serie de 5 dosis de acuerdo"
+    ],
+    [
+     "conocimiento",
+     "Aplica el esquema de la embarazada no vacunada a una paciente con esquema completo.",
+     [
+      "D"
+     ],
+     [
+      "2 dosis",
+      "4 semanas",
+      "toxoide"
+     ],
+     "¿A quién se aplica el esquema de 2 dosis separadas 4 semanas?",
+     "Las 2 dosis con intervalo no menor de 4 semanas inician la serie de la mujer no vacunada previamente.",
+     "2.2 Prevención Primaria",
+     26,
+     "2 dosis de toxoide tetánico aplicadas con un intervalo"
+    ],
+    [
+     "conocimiento",
+     "Desconoce que la Tdap en el embarazo no depende del intervalo de refuerzo.",
+     [
+      "E"
+     ],
+     [
+      "10 años",
+      "refuerzo",
+      "esperar"
+     ],
+     "¿La dosis de Tdap del embarazo depende del tiempo desde el último refuerzo?",
+     "La Tdap se administra durante cada embarazo, independientemente de la historia previa de inmunización.",
+     "2.2 Prevención Primaria",
+     27,
+     "durante cada embarazo independientemente de la historia"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "esquema_completo_documentado",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "5 dosis documentadas de toxoide tetánico-diftérico; la última fue hace 3 años",
+    "motivo": "No es una paciente sin vacunar: no se reinicia la serie. Aun con esquema completo, la Tdap se aplica en cada embarazo."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "ventana_tdap",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "embarazo de 28 semanas",
+    "motivo": "Está dentro de la ventana preferente para la Tdap, entre las semanas 27 y 36 de gestación."
+   }
+  ]}
+ ]
+}

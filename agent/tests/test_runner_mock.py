@@ -53,7 +53,7 @@ def _system_instruction(req: LlmRequest) -> str:
 
 
 def test_coordinator_transfers_to_tutor_and_guardrail_blocks_answer(repo, ana):
-    item = repo.get_item("caso-bronquiolitis-01")
+    item = repo.get_item("RZ-PED-032-I")
     llm = ScriptedLlm(
         model="fake-llm",
         script=[

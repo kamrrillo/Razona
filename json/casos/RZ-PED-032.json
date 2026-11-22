@@ -1,0 +1,469 @@
+[
+  {
+    "id": "RZ-PED-032-I",
+    "version": "0.2.0",
+    "sindrome": "bronquiolitis_aguda",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+      "clave": "IMSS-032-08",
+      "archivo": "032GER.pdf"
+    },
+    "vineta": "Masculino de 5 meses de edad, sin antecedentes de atopia en él ni en la familia, llevado a su unidad de medicina familiar por rinorrea hialina y tos de 3 días, a la que se agregaron sibilancias. Temperatura 38.2 °C, FR 44 rpm, SpO2 96 % al aire ambiente, sin tiraje ni aleteo nasal. Se alimenta bien al seno materno y moja pañales con normalidad. A la auscultación: sibilancias espiratorias y estertores finos bilaterales. Hermano de 4 años con resfriado.",
+    "pregunta": "¿Cuál es el manejo más adecuado?",
+    "opciones": {
+      "A": "Amoxicilina y prednisolona por vía oral",
+      "B": "Oxígeno por puntas nasales para mantener la saturación entre 90 y 94 %",
+      "C": "Salbutamol nebulizado cada 4 horas durante 5 días",
+      "D": "Radiografía de tórax y biometría hemática para confirmar el diagnóstico",
+      "E": "Manejo en domicilio con hidratación, medidas generales y signos de alarma"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "La mayoría de los niños con bronquiolitis leve se manejan en domicilio con seguimiento en primer nivel, porque la enfermedad se resuelve de forma espontánea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.2.1 Tratamiento no farmacológico",
+          "pagina": 27,
+          "fragmento": "bronquiolitis leve pueden recibir el manejo en su domicilio"
+        }
+      },
+      {
+        "texto": "El diagnóstico es clínico; en pacientes ambulatorios no se realiza ningún estudio para confirmarlo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.2 Pruebas de diagnóstico",
+          "pagina": 22,
+          "fragmento": "Se sugiere no realizar ningún estudio para confirmar el"
+        }
+      },
+      {
+        "texto": "Puede usarse paracetamol para la fiebre cuando la temperatura axilar es igual o mayor a 38 °C.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 25,
+          "fragmento": "Puede prescribir paracetamol para el control de la fiebre"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Interpreta la SpO2 de 96 % como hipoxemia.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "satura bajo",
+          "necesita oxígeno",
+          "hipoxemia",
+          "desatura"
+        ],
+        "pregunta_socratica_semilla": "¿Cuál es la saturación del paciente y a partir de qué cifra indica la guía administrar oxígeno?",
+        "explicacion": "La guía indica oxígeno cuando la saturación es menor de 90 %; este paciente satura 96 % al aire ambiente.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 27,
+          "fragmento": "En saturaciones de oxigeno menor de 90% administrar"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica salbutamol sin considerar que el paciente no tiene antecedente de atopia, asma ni alergia.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "broncodilatador",
+          "sibilancias",
+          "abrir los bronquios",
+          "salbutamol"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedente debe tener el niño para que la guía considere útil el salbutamol?",
+        "explicacion": "No se ha demostrado que el salbutamol disminuya la duración de la enfermedad en pacientes sin antecedente de asma; la guía lo reserva, en dosis única, para quienes tienen atopia, asma o alergia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 24,
+          "fragmento": "salbutamol disminuya la duración de la enfermedad en"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la bronquiolitis requiere estudios de imagen o laboratorio para confirmarse.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "confirmar con placa",
+          "descartar neumonía",
+          "biometría",
+          "radiografía"
+        ],
+        "pregunta_socratica_semilla": "En un lactante ambulatorio con cuadro típico, ¿qué cambiaría en tu manejo una radiografía normal?",
+        "explicacion": "El diagnóstico de bronquiolitis es clínico; en pacientes ambulatorios la guía sugiere no realizar estudios para confirmarlo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.2 Pruebas de diagnóstico",
+          "pagina": 22,
+          "fragmento": "Se sugiere no realizar ningún estudio para confirmar el"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Infiere de la fiebre y los estertores una infección bacteriana o inflamación que requiere antibiótico y esteroide.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "tiene fiebre",
+          "infección",
+          "estertores",
+          "desinflamar"
+        ],
+        "pregunta_socratica_semilla": "Si la causa de la bronquiolitis es viral, ¿qué beneficio esperas de un antibiótico?",
+        "explicacion": "La guía recomienda no utilizar corticoesteroides, montelukast, antihistamínicos, descongestionantes, vasoconstrictores nasales ni antibióticos; los antibióticos no muestran utilidad por la etiología y la baja ocurrencia de infecciones agregadas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 25,
+          "fragmento": "Los antibióticos no muestran utilidad en el manejo de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-032-I-R1",
+        "tipo": "flashcard",
+        "concepto": "diagnostico_clinico_ambulatorio",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En un lactante ambulatorio con cuadro típico de bronquiolitis, ¿qué estudios se necesitan para confirmar el diagnóstico?",
+        "reverso": "Ninguno: el diagnóstico es clínico, con la historia clínica y la exploración física.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.2 Pruebas de diagnóstico",
+          "pagina": 22,
+          "fragmento": "diagnóstico de bronquiolitis en pacientes ambulatorios"
+        }
+      },
+      {
+        "id": "RZ-PED-032-I-R2",
+        "tipo": "flashcard",
+        "concepto": "umbral_saturacion_oxigeno",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Con qué saturación de oxígeno indica la guía administrar oxígeno en bronquiolitis?",
+        "reverso": "Con saturación menor de 90 %, para mantenerla entre 90 y 94 %.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 27,
+          "fragmento": "En saturaciones de oxigeno menor de 90% administrar"
+        }
+      },
+      {
+        "id": "RZ-PED-032-I-R3",
+        "tipo": "flashcard",
+        "concepto": "farmacos_no_recomendados",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué fármacos recomienda la guía no utilizar en el tratamiento de la bronquiolitis?",
+        "reverso": "Corticoesteroides, montelukast, antihistamínicos, descongestionantes, vasoconstrictores nasales y antibióticos.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 25,
+          "fragmento": "Se recomienda no utilizar corticoesteroides, inhibidores"
+        }
+      },
+      {
+        "id": "RZ-PED-032-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_primer_nivel_bronquiolitis",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Menor de 2 años con bronquiolitis en primer nivel\"] --> B{\"¿Prematurez, menor de 3 meses, SpO2 menor de 90 %, intolerancia a la vía oral o bronquiolitis moderada o grave?\"}\n  B -->|\"Sí\"| C[\"Referir a segundo nivel o urgencias\"]\n  B -->|\"No\"| D{\"¿Antecedente de atopia, asma o alergia?\"}\n  D -->|\"Sí\"| E[\"Una sola dosis de salbutamol y evaluar la respuesta\"]\n  D -->|\"No\"| F[\"Manejo en domicilio con medidas generales y signos de alarma\"]\n  E --> G{\"¿Disminuyen las sibilancias y mejora la escala de gravedad?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| C\n  F --> H[\"Revalorar a las 24 a 48 horas\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+            "clave": "IMSS-032-08",
+            "seccion": "4.3 Criterios de referencia",
+            "pagina": 29,
+            "fragmento": "Considerar criterios de referencia al segundo nivel"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+            "clave": "IMSS-032-08",
+            "seccion": "4.2.1.3 Tratamiento farmacológico",
+            "pagina": 24,
+            "fragmento": "se recomienda aplicar una sola dosis de salbutamol en"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+            "clave": "IMSS-032-08",
+            "seccion": "4.2.2.1 Tratamiento no farmacológico",
+            "pagina": 28,
+            "fragmento": "siguientes medidas para el manejo ambulatorio"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+            "clave": "IMSS-032-08",
+            "seccion": "4.4 Vigilancia y Seguimiento",
+            "pagina": 30,
+            "fragmento": "Se recomienda realizar una revaloración a las 24 o 48"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-032-I-R5",
+        "tipo": "resaltado",
+        "concepto": "saturacion_normal",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "SpO2 96 % al aire ambiente",
+        "motivo": "La guía indica oxígeno solo con saturación menor de 90 %; con 96 % al aire ambiente no hay hipoxemia que tratar."
+      },
+      {
+        "id": "RZ-PED-032-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sin_atopia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "sin antecedentes de atopia en él ni en la familia",
+        "motivo": "La guía reserva la dosis única de salbutamol para niños con atopia, asma o alergia; sin esos antecedentes no está indicada."
+      },
+      {
+        "id": "RZ-PED-032-I-R7",
+        "tipo": "resaltado",
+        "concepto": "tolera_via_oral",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Se alimenta bien al seno materno y moja pañales con normalidad",
+        "motivo": "Tolera la vía oral y no hay datos de deshidratación: no cumple esos criterios de referencia y puede manejarse en domicilio."
+      },
+      {
+        "id": "RZ-PED-032-I-R8",
+        "tipo": "imagen",
+        "concepto": "etiologia_viral",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Respiratory_syncytial_virus_01.jpg/960px-Respiratory_syncytial_virus_01.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Respiratory_syncytial_virus_01.jpg",
+        "fuente": "Wikimedia Commons (CDC Public Health Image Library)",
+        "autor": "CDC / Dr. Erskine Palmer",
+        "licencia": "Dominio público",
+        "descripcion": "Micrografía electrónica de transmisión (tinción negativa) del virus sincitial respiratorio, el agente viral más frecuente de la bronquiolitis aguda.",
+        "archivo": "assets/RZ-PED-032-I-R8.jpg",
+        "sha256": "0bccaa4d27fcfd4d003d59c7c060e2551f7c2bb487eb2d7459ddd6aa072fa4b9"
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-032-V1",
+    "version": "0.2.0",
+    "sindrome": "bronquiolitis_aguda",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-032-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+      "clave": "IMSS-032-08",
+      "archivo": "032GER.pdf"
+    },
+    "vineta": "Femenino de 14 meses de edad con dermatitis atópica desde los 3 meses; su madre tiene asma. Presenta desde hace 2 días rinorrea, tos y sibilancias. Afebril, FR 46 rpm, tiraje intercostal leve, SpO2 93 % al aire ambiente. Tolera la vía oral. Es atendida en su unidad de medicina familiar, que cuenta con salbutamol en aerosol con espaciador.",
+    "pregunta": "¿Cuál es la conducta terapéutica más adecuada en este momento?",
+    "opciones": {
+      "A": "Una dosis de salbutamol en aerosol y evaluar la respuesta",
+      "B": "Budesonida inhalada cada 12 horas",
+      "C": "Ribavirina nebulizada",
+      "D": "Nebulizar solución salina hipertónica al 3 % en la unidad",
+      "E": "Solo medidas generales en domicilio, sin medicamentos"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En pacientes con antecedente de atopia, asma o alergia se recomienda una sola dosis de salbutamol en aerosol o nebulizado.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 24,
+          "fragmento": "se recomienda aplicar una sola dosis de salbutamol en"
+        }
+      },
+      {
+        "texto": "Tras el salbutamol se evalúa la respuesta por disminución de sibilancias y cambio en la escala de gravedad para decidir si continúa en domicilio.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 24,
+          "fragmento": "examinar la respuesta clínica con base en la disminución"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica el manejo sin fármacos de la bronquiolitis sin atopia y omite la dermatitis atópica y el asma materna.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "es viral",
+          "no necesita medicamentos",
+          "medidas generales",
+          "se resuelve sola"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedentes personales y familiares tiene la niña y cómo cambian la indicación de broncodilatador?",
+        "explicacion": "Con antecedente de atopia, asma o alergia, la guía recomienda una sola dosis de salbutamol y evaluar la respuesta.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 24,
+          "fragmento": "se recomienda aplicar una sola dosis de salbutamol en"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el corticoesteroide inhalado es útil en bronquiolitis.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "esteroide",
+          "inflamación",
+          "budesonida",
+          "atópica"
+        ],
+        "pregunta_socratica_semilla": "¿Qué efecto clínico demostró el esteroide inhalado en bronquiolitis aguda?",
+        "explicacion": "El uso de corticoesteroides inhalados no proporciona beneficios clínicos en el niño con bronquiolitis aguda.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 24,
+          "fragmento": "El uso de corticoesteroides inhalado no proporciona"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Elige la solución hipertónica sin considerar que la atopia la contraindica y que debe aplicarse en el siguiente nivel.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "hipertónica",
+          "moviliza secreciones",
+          "acorta estancia"
+        ],
+        "pregunta_socratica_semilla": "¿Qué debe descartarse antes de nebulizar solución hipertónica al 3 %, y qué tiene esta paciente?",
+        "explicacion": "Antes de indicar solución salina hipertónica al 3 % debe descartarse historia de atopia o asma; si se considera, se envía al siguiente nivel.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 23,
+          "fragmento": "hipertónica al 3% debe descartarse historia de atopia"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el antiviral está indicado.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "antiviral",
+          "ribavirina",
+          "virus sincitial"
+        ],
+        "pregunta_socratica_semilla": "¿Qué mostraron las revisiones sobre ribavirina frente a placebo?",
+        "explicacion": "La ribavirina no está recomendada para el tratamiento de la bronquiolitis aguda.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención",
+          "clave": "IMSS-032-08",
+          "seccion": "4.2.1.3 Tratamiento farmacológico",
+          "pagina": 26,
+          "fragmento": "La Ribavirina no está recomendada para el tratamiento"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-032-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "antecedente_atopia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "dermatitis atópica desde los 3 meses; su madre tiene asma",
+        "motivo": "Con antecedente de atopia o asma la guía recomienda una sola dosis de salbutamol y evaluar la respuesta, en lugar de solo medidas generales."
+      },
+      {
+        "id": "RZ-PED-032-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "atopia_contraindica_hipertonica",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Es atendida en su unidad de medicina familiar",
+        "motivo": "La solución hipertónica al 3 % exige descartar atopia y se aplica en el siguiente nivel; en primer nivel y con atopia no corresponde."
+      }
+    ]
+  }
+]

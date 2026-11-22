@@ -1,7 +1,6 @@
 import { BookOpenCheck, MessageCircleQuestion, Route } from "lucide-react";
 import type { Metadata } from "next";
 import { LogoMark } from "@/components/app/logo";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
 import { publicEnv } from "@/lib/env";
 import { LoginForm } from "./login-form";
 
@@ -53,7 +52,6 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
 
         <footer className="space-y-2 py-6 text-center text-xs text-muted-foreground">
           <p>Demo — uso educativo, no sustituye el criterio clínico.</p>
-          <SampleContentBadge />
         </footer>
       </div>
     </main>

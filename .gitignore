@@ -48,3 +48,6 @@ next-env.d.ts
 
 # QR locales (IP de la red de cada máquina)
 /docs/qr/
+
+# python
+__pycache__/

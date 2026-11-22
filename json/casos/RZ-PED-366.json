@@ -1,0 +1,489 @@
+[
+  {
+    "id": "RZ-PED-366-I",
+    "version": "0.2.0",
+    "sindrome": "histiocitosis_celulas_langerhans",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+      "clave": "IMSS-366-16",
+      "archivo": "366GER.pdf"
+    },
+    "vineta": "Masculino de 7 años con dolor en la cadera derecha de 6 semanas de evolución. La radiografía y la tomografía muestran una lesión lítica única de 3.5 cm en el ala iliaca derecha. La biopsia por aspiración con aguja fina sugiere histiocitosis de células de Langerhans. La estadificación (serie ósea, biometría hemática, pruebas de función hepática, radiografía de tórax y osmolaridad urinaria) es normal: se clasifica como enfermedad unisistémica ósea unifocal. No hay afectación de columna.",
+    "pregunta": "¿Cuál es el tratamiento local más adecuado de la lesión?",
+    "opciones": {
+      "A": "Escisión ósea completa de la lesión",
+      "B": "Metotrexate oral 20 mg/m² por semana durante 6 meses",
+      "C": "Biopsia y curetaje parcial de la lesión",
+      "D": "Infiltración intralesional de metilprednisolona sin biopsia",
+      "E": "Vinblastina con prednisona por tratarse de enfermedad multisistémica"
+    },
+    "respuesta_correcta": "C",
+    "puntos_clave": [
+      {
+        "texto": "En lesiones óseas menores de 2 cm se realiza escisión completa; de 2 a 5 cm, biopsia y curetaje parcial; y mayores de 5 cm, solo biopsia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+        }
+      },
+      {
+        "texto": "En lesiones grandes la escisión completa no está indicada porque puede aumentar el defecto óseo, prolongar la cicatrización y dejar secuelas permanentes.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "no está indicada porque puede incrementar el"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Trata la lesión como enfermedad multisistémica; la estadificación la clasificó como unisistémica unifocal.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "multisistémica",
+          "terapia sistémica",
+          "vinblastina"
+        ],
+        "pregunta_socratica_semilla": "¿Cómo quedó clasificada la enfermedad después de la estadificación?",
+        "explicacion": "La combinación de prednisona y vinblastina es el tratamiento de la enfermedad multisistémica; esta lesión ósea unifocal recibe terapia local.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
+          "pagina": 31,
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica escisión completa sin considerar que la lesión mide 3.5 cm.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "escisión completa",
+          "quitar todo",
+          "resecar"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto mide la lesión y para qué tamaño reserva la guía la escisión completa?",
+        "explicacion": "La escisión completa está indicada en lesiones menores de 2 cm; de 2 a 5 cm la opción es biopsia y curetaje parcial.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "La escisión completa, está indicada en lesiones < de 2"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Confunde el tratamiento de la afectación cutánea con el de la lesión ósea.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "metotrexate",
+          "dosis bajas",
+          "6 meses"
+        ],
+        "pregunta_socratica_semilla": "¿Para qué tipo de afectación propone la guía metotrexate oral a dosis bajas?",
+        "explicacion": "El metotrexate oral a 20 mg/m² semanal por 6 meses se propone para la enfermedad cutánea sintomática o extensa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 30,
+          "fragmento": "metotrexate oral (20 mg/m2/ semanal durante 6"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Sustituye la terapia local por una medida de eficacia no probada y omite la confirmación histológica.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "esteroide intralesional",
+          "sin cirugía",
+          "menos invasivo"
+        ],
+        "pregunta_socratica_semilla": "¿Qué evidencia hay de la eficacia del esteroide intralesional y qué procedimiento forma parte siempre de la terapia local?",
+        "explicacion": "La terapia local de la lesión ósea unifocal consiste en biopsia y curetaje; el esteroide intralesional no se ha evaluado en ensayos clínicos aleatorizados.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-366-I-R1",
+        "tipo": "flashcard",
+        "concepto": "escision_completa_solo_lesiones_pequenas",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿En qué lesiones óseas unifocales de HCL está indicada la escisión completa, y por qué no en las grandes?",
+        "reverso": "En menores de 2 cm. En lesiones grandes aumenta el defecto óseo, prolonga la cicatrización y deja secuelas.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "no está indicada porque puede incrementar el"
+        }
+      },
+      {
+        "id": "RZ-PED-366-I-R2",
+        "tipo": "flashcard",
+        "concepto": "tratamiento_estandar_multisistemica",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuál es la terapia estándar de la HCL multisistémica?",
+        "reverso": "Prednisona con vinblastina: eficaz y con mínima toxicidad. No es el manejo de la lesión ósea unifocal.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
+          "pagina": 31,
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+        }
+      },
+      {
+        "id": "RZ-PED-366-I-R3",
+        "tipo": "flashcard",
+        "concepto": "esteroide_intralesional_sin_evidencia",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué evidencia respalda la metilprednisolona intralesional en la lesión ósea de HCL?",
+        "reverso": "Se sugiere para acelerar la curación, pero su eficacia no se ha evaluado en ensayos clínicos aleatorizados.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos"
+        }
+      },
+      {
+        "id": "RZ-PED-366-I-R4",
+        "tipo": "diagrama",
+        "concepto": "tratamiento_segun_extension",
+        "para_errores": [
+          "razonamiento",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"HCL confirmada\"] --> B[\"Estadificar antes de iniciar el tratamiento\"]\n  B --> C{\"¿Multisistémica, ósea multifocal o en sitios especiales?\"}\n  C -->|\"Sí\"| D[\"Tratamiento sistémico: prednisona con vinblastina\"]\n  C -->|\"No: ósea unifocal\"| E{\"¿Tamaño de la lesión?\"}\n  E -->|\"Menor de 2 cm\"| F[\"Escisión completa\"]\n  E -->|\"De 2 a 5 cm\"| G[\"Biopsia con curetaje parcial\"]\n  E -->|\"Mayor de 5 cm\"| H[\"Solo biopsia\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+            "clave": "IMSS-366-16",
+            "seccion": "4.2.7 Estratificación",
+            "pagina": 26,
+            "fragmento": "estadifique adecuadamente antes de iniciar el"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+            "clave": "IMSS-366-16",
+            "seccion": "4.3.1.1 Consideraciones Generales",
+            "pagina": 28,
+            "fragmento": "MS con o sin afección de órganos de riesgo y en enfermedad US con lesiones localizadas en sitios especiales y en las multifocales óseas"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+            "clave": "IMSS-366-16",
+            "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
+            "pagina": 31,
+            "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+            "clave": "IMSS-366-16",
+            "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+            "pagina": 29,
+            "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-366-I-R5",
+        "tipo": "resaltado",
+        "concepto": "tamano_lesion",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "lesión lítica única de 3.5 cm en el ala iliaca derecha",
+        "motivo": "Mide entre 2 y 5 cm: la guía indica biopsia con curetaje parcial, no escisión completa, que se reserva para menos de 2 cm."
+      },
+      {
+        "id": "RZ-PED-366-I-R6",
+        "tipo": "resaltado",
+        "concepto": "unisistemica_unifocal",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "se clasifica como enfermedad unisistémica ósea unifocal",
+        "motivo": "La lesión ósea unifocal recibe terapia local. El tratamiento sistémico es para la enfermedad multisistémica o multifocal ósea."
+      },
+      {
+        "id": "RZ-PED-366-I-R7",
+        "tipo": "tabla",
+        "concepto": "terapia_local_por_tamano",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Tamaño de la lesión ósea unifocal",
+          "Terapia local recomendada"
+        ],
+        "filas": [
+          [
+            "Menor de 2 cm",
+            "Escisión completa"
+          ],
+          [
+            "De 2 a 5 cm",
+            "Biopsia con curetaje parcial"
+          ],
+          [
+            "Mayor de 5 cm",
+            "Solo biopsia; la escisión completa aumentaría el defecto óseo"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+        }
+      },
+      {
+        "id": "RZ-PED-366-I-R8",
+        "tipo": "imagen",
+        "concepto": "histologia_hcl_osea",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Langerhans_cell_histiocytosis_of_the_bone.jpg/960px-Langerhans_cell_histiocytosis_of_the_bone.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Langerhans_cell_histiocytosis_of_the_bone.jpg",
+        "fuente": "Wikimedia Commons (Sarmadi et al., Journal of Medical Case Reports 2009)",
+        "autor": "Soheila Sarmadi, Amir B Heidari, Amir H Sina y Mohammad A Ehsani",
+        "licencia": "CC BY 2.0",
+        "descripcion": "Biopsia de histiocitosis de células de Langerhans en hueso, tinción de hematoxilina y eosina: células de Langerhans mononucleares y eosinófilos. La guía basa el diagnóstico definitivo en la biopsia con inmunofenotipo CD1a y langerina.",
+        "archivo": "assets/RZ-PED-366-I-R8.jpg",
+        "sha256": "ffcab242cbbc3d3d29b5a3fe2353f333947a22d64c91619c3bf479f5b0914bf6"
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-366-V1",
+    "version": "0.2.0",
+    "sindrome": "histiocitosis_celulas_langerhans",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-366-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+      "clave": "IMSS-366-16",
+      "archivo": "366GER.pdf"
+    },
+    "vineta": "Femenino de 10 años con aumento de volumen doloroso en la sexta costilla izquierda. La tomografía muestra una lesión lítica única de 1.5 cm. La estadificación completa es normal y se clasifica como histiocitosis de células de Langerhans unisistémica ósea unifocal. Sin otras lesiones en la serie ósea y sin afectación de columna.",
+    "pregunta": "¿Cuál es el tratamiento local más adecuado?",
+    "opciones": {
+      "A": "Observación sin biopsia",
+      "B": "Solo biopsia, sin manipular el resto de la lesión",
+      "C": "Prednisona con vinblastina",
+      "D": "Escisión completa de la lesión",
+      "E": "Biopsia y curetaje parcial"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "En lesiones óseas menores de 2 cm se recomienda la escisión completa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "La escisión completa, está indicada en lesiones < de 2"
+        }
+      },
+      {
+        "texto": "La terapia local de la lesión ósea unifocal consiste en biopsia de la lesión y curetaje.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "consiste en biopsia de la lesión y curetage"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica la conducta de lesiones de 2 a 5 cm sin notar que esta mide 1.5 cm.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "curetaje parcial",
+          "conservador"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto mide la lesión y qué indica la guía para ese tamaño?",
+        "explicacion": "Se recomienda escisión completa en lesiones menores de 2 cm y biopsia con curetaje parcial en las de 2 a 5 cm.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Aplica la conducta de lesiones mayores de 5 cm.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "solo biopsia",
+          "no tocar",
+          "evitar defecto"
+        ],
+        "pregunta_socratica_semilla": "¿En qué tamaño de lesión recomienda la guía solo biopsia?",
+        "explicacion": "La biopsia sola se reserva para lesiones mayores de 5 cm, en las que la escisión completa aumentaría el defecto óseo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "no está indicada porque puede incrementar el"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa el tratamiento de la enfermedad multisistémica en una lesión unifocal.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "quimioterapia",
+          "vinblastina",
+          "sistémico"
+        ],
+        "pregunta_socratica_semilla": "¿En qué forma de la enfermedad se usa la combinación de prednisona y vinblastina?",
+        "explicacion": "La combinación de prednisona y vinblastina es el tratamiento de la enfermedad multisistémica.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
+          "pagina": 31,
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Prefiere no intervenir en una lesión sintomática y sin confirmación histológica.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "observar",
+          "se resuelve sola",
+          "vigilar"
+        ],
+        "pregunta_socratica_semilla": "Sin biopsia, ¿cómo confirmarías el diagnóstico y descartarías otra lesión lítica?",
+        "explicacion": "La terapia local de la lesión ósea unifocal consiste en biopsia de la lesión y curetaje, con escisión completa si mide menos de 2 cm.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
+          "clave": "IMSS-366-16",
+          "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
+          "pagina": 29,
+          "fragmento": "consiste en biopsia de la lesión y curetage"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-366-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "lesion_menor_2cm",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "lesión lítica única de 1.5 cm",
+        "motivo": "Mide menos de 2 cm: es el único tamaño en que la guía indica resecar toda la lesión."
+      },
+      {
+        "id": "RZ-PED-366-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "unifocal_sin_columna",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "unisistémica ósea unifocal. Sin otras lesiones en la serie ósea",
+        "motivo": "Enfermedad ósea unifocal: corresponde terapia local, no quimioterapia sistémica."
+      },
+      {
+        "id": "RZ-PED-366-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "lesion_sintomatica",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "aumento de volumen doloroso en la sexta costilla izquierda",
+        "motivo": "La observación depende de la presencia de síntomas; esta lesión duele y además requiere confirmación histológica."
+      }
+    ]
+  }
+]

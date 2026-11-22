@@ -24,7 +24,7 @@ def crear_examen_diagnostico(n_por_especialidad: int, tool_context: ToolContext)
     correctas, explicaciones ni citas. Presenta un reactivo a la vez, en el orden recibido.
 
     Args:
-        n_por_especialidad: Reactivos por especialidad (1 a 5; usa 2 si la estudiante no pide otro número).
+        n_por_especialidad: Reactivos por área (1 a 5; usa 1 si la estudiante no pide otro número).
 
     Returns:
         dict con exam_id, total, duracion_minutos y la lista ordenada `reactivos`.

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "RZ-PED-637-I",
+    "version": "0.2.0",
+    "sindrome": "lactancia_madre_con_enfermedad",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+      "clave": "IMSS-637-13",
+      "archivo": "637GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de término, 2 horas de vida, peso 3,200 g, sano. Su madre tiene hepatitis B crónica (HBsAg positivo), sin tratamiento antiviral, y desea amamantar. A la exploración de la madre, ambos pezones están íntegros, sin grietas ni sangrado. En la unidad se dispone de vacuna contra hepatitis B e inmunoglobulina específica.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Indicar lactancia sin vacuna ni inmunoglobulina, porque el riesgo es igual que con sucedáneo",
+      "B": "Suspender la lactancia y alimentar con sucedáneo de leche humana",
+      "C": "Iniciar la lactancia hasta que el niño complete el esquema de tres dosis",
+      "D": "Indicar lactancia materna, aplicar la vacuna contra hepatitis B en las primeras 24 horas y la inmunoglobulina en las primeras 12 horas",
+      "E": "Aplazar el amamantamiento por grietas y sangrado en los pezones"
+    },
+    "respuesta_correcta": "D",
+    "puntos_clave": [
+      {
+        "texto": "Las madres con hepatitis B pueden amamantar; deben aplazarlo solo si hay lesiones, grietas o sangrado en la mama o los pezones.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+        }
+      },
+      {
+        "texto": "El niño recibe la primera vacuna contra hepatitis B en las primeras 24 horas y dos dosis más en los primeros 6 meses, y la inmunoglobulina en las primeras 12 horas de vida.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Atribuye a la madre lesiones en los pezones que la viñeta descarta.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "grietas",
+          "sangrado",
+          "aplazar"
+        ],
+        "pregunta_socratica_semilla": "¿Cómo están los pezones de la madre según la viñeta?",
+        "explicacion": "La lactancia se aplaza solo si hay lesiones, grietas o sangrado en la mama o pezones; esta madre tiene pezones íntegros.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "hijos. Sin embargo, las madres deben aplazar el"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Indica lactancia pero omite la profilaxis del recién nacido.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "sin vacuna",
+          "no necesita",
+          "mismo riesgo"
+        ],
+        "pregunta_socratica_semilla": "Además de la lactancia, ¿qué debe recibir el hijo de una madre con hepatitis B para prevenir la transmisión perinatal?",
+        "explicacion": "El niño debe recibir la vacuna contra hepatitis B con la inmunoglobulina específica para prevenir la transmisión perinatal.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la lactancia aumenta el riesgo de transmisión de hepatitis B.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "sucedáneo",
+          "suspender",
+          "contagio por leche"
+        ],
+        "pregunta_socratica_semilla": "¿Qué riesgo de hepatitis B tienen los niños amamantados frente a los alimentados con sucedáneo?",
+        "explicacion": "El riesgo de infectarse de hepatitis B es similar en niños alimentados con leche de su madre y con sucedáneos de leche humana.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "con los niños que se alimentan con sucedáneos de"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que la protección solo existe al completar el esquema y difiere la lactancia meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "completar esquema",
+          "esperar",
+          "seis meses"
+        ],
+        "pregunta_socratica_semilla": "Si la inmunoglobulina y la primera vacuna se aplican al nacer, ¿qué gana el niño al retrasar la lactancia?",
+        "explicacion": "Las madres con hepatitis B pueden amamantar; la vacuna se aplica en las primeras 24 horas y la inmunoglobulina en las primeras 12 horas, sin necesidad de esperar al esquema completo.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-637-I-R1",
+        "tipo": "flashcard",
+        "concepto": "riesgo_hepatitis_b_leche_vs_sucedaneo",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿El hijo de madre con hepatitis B amamantado tiene más riesgo de infectarse que el alimentado con sucedáneo?",
+        "reverso": "No. El riesgo de infectarse es similar con leche de su madre y con sucedáneo de leche humana.",
+        "cita": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "con los niños que se alimentan con sucedáneos de"
+        }
+      },
+      {
+        "id": "RZ-PED-637-I-R2",
+        "tipo": "flashcard",
+        "concepto": "profilaxis_recien_nacido_hepatitis_b",
+        "para_errores": [
+          "dato_omitido",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué profilaxis recibe el hijo de madre con hepatitis B y en qué plazos?",
+        "reverso": "Inmunoglobulina antes de 12 horas; primera vacuna HBV antes de 24 horas y dos dosis más en los primeros 6 meses.",
+        "cita": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera"
+        }
+      },
+      {
+        "id": "RZ-PED-637-I-R3",
+        "tipo": "flashcard",
+        "concepto": "aplazar_amamantamiento_lesiones_pezon",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En la madre con hepatitis B, ¿cuándo debe aplazarse el amamantamiento?",
+        "reverso": "Solo si hay lesiones, grietas o sangrado en la piel de la mama o los pezones, hasta que sanen.",
+        "cita": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 22,
+          "fragmento": "hijos. Sin embargo, las madres deben aplazar el"
+        }
+      },
+      {
+        "id": "RZ-PED-637-I-R4",
+        "tipo": "diagrama",
+        "concepto": "lactancia_madre_con_hepatitis_b_o_c",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Madre con hepatitis viral que desea amamantar\"] --> B{\"¿Hepatitis B o C?\"}\n  B -->|\"Hepatitis B\"| C{\"¿Lesiones, grietas o sangrado en mama o pezones?\"}\n  C -->|\"Sí\"| D[\"Aplazar el amamantamiento hasta que sanen\"]\n  C -->|\"No\"| E[\"Puede amamantar\"]\n  D --> F[\"Niño: inmunoglobulina antes de 12 h y vacuna HBV antes de 24 h\"]\n  E --> F\n  B -->|\"Hepatitis C\"| G{\"¿Recibe ribavirina o interferón?\"}\n  G -->|\"Sí\"| H[\"Contraindicar la lactancia y considerar sucedáneo\"]\n  G -->|\"No\"| I[\"Indicar lactancia materna\"]",
+        "citas": [
+          {
+            "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+            "clave": "IMSS-637-13",
+            "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+            "pagina": 22,
+            "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+          },
+          {
+            "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+            "clave": "IMSS-637-13",
+            "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+            "pagina": 22,
+            "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas"
+          },
+          {
+            "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+            "clave": "IMSS-637-13",
+            "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+            "pagina": 23,
+            "fragmento": "Se contraindica la lactancia si la madre tiene"
+          },
+          {
+            "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+            "clave": "IMSS-637-13",
+            "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+            "pagina": 23,
+            "fragmento": "Indicar lactancia materna en caso de madre con"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-637-I-R5",
+        "tipo": "resaltado",
+        "concepto": "pezones_integros",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "ambos pezones están íntegros, sin grietas ni sangrado",
+        "motivo": "Sin lesiones, grietas ni sangrado no hay motivo para aplazar el amamantamiento."
+      },
+      {
+        "id": "RZ-PED-637-I-R6",
+        "tipo": "resaltado",
+        "concepto": "profilaxis_disponible_a_tiempo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "En la unidad se dispone de vacuna contra hepatitis B e inmunoglobulina específica",
+        "motivo": "Con 2 horas de vida aún está en plazo para la inmunoglobulina y la vacuna; la lactancia no sustituye la profilaxis."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-637-V1",
+    "version": "0.2.0",
+    "sindrome": "lactancia_madre_con_enfermedad",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-637-I",
+    "gpc_base": {
+      "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+      "clave": "IMSS-637-13",
+      "archivo": "637GER.pdf"
+    },
+    "vineta": "Femenino de 2 semanas, de término, sana, alimentada con lactancia materna exclusiva. Su madre tiene hepatitis C crónica y su hepatólogo le acaba de iniciar tratamiento con interferón pegilado y ribavirina. La madre no tiene VIH y sus pezones están íntegros. Pregunta si puede seguir amamantando.",
+    "pregunta": "¿Cuál es la recomendación más adecuada?",
+    "opciones": {
+      "A": "Continuar la lactancia, porque está indicada en la madre con hepatitis C crónica",
+      "B": "Continuar la lactancia y aplazarla solo si aparecen grietas en los pezones",
+      "C": "Continuar la lactancia materna exclusiva, porque la hepatitis C no se transmite por la leche",
+      "D": "Continuar la lactancia y vigilar anemia en la niña",
+      "E": "Contraindicar la lactancia mientras reciba ribavirina e interferón, y alimentar con sucedáneo de leche humana"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Se contraindica la lactancia si la madre recibe tratamiento para hepatitis C con ribavirina o interferón, y se considera el uso de sucedáneos de leche humana.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "Se contraindica la lactancia si la madre tiene"
+        }
+      },
+      {
+        "texto": "La ribavirina es un potente teratógeno y podría ocasionar anemia hemolítica.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "La ribavirina es un potente teratógeno y podría"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Evalúa solo el riesgo del virus y no el del medicamento que recibe la madre.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "no se transmite",
+          "leche segura",
+          "virus"
+        ],
+        "pregunta_socratica_semilla": "Si el virus no se transmite por la leche, ¿qué otro riesgo hay para la niña en este caso?",
+        "explicacion": "No hay evidencia de transmisión de hepatitis C por amamantamiento, pero la lactancia se contraindica si la madre recibe ribavirina o interferón.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "Se contraindica la lactancia si la madre tiene"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que basta vigilar al lactante cuando la madre recibe ribavirina.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "vigilar",
+          "anemia",
+          "biometría"
+        ],
+        "pregunta_socratica_semilla": "¿Qué efectos tiene la ribavirina y qué indica la guía sobre la lactancia con este fármaco?",
+        "explicacion": "La ribavirina es un potente teratógeno y podría ocasionar anemia hemolítica; con ribavirina o interferón se contraindica la lactancia.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "La ribavirina es un potente teratógeno y podría"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica la regla de la hepatitis B sobre los pezones y omite el tratamiento antiviral de la madre.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "grietas",
+          "pezones",
+          "aplazar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué tratamiento recibe la madre y cómo cambia eso la recomendación?",
+        "explicacion": "Se contraindica la lactancia si la madre tiene tratamiento para hepatitis C con ribavirina o interferón.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "Se contraindica la lactancia si la madre tiene"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Aplica la recomendación para la hepatitis C sin tratamiento a una madre que sí lo recibe.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "indicada",
+          "hepatitis C crónica",
+          "sin riesgo"
+        ],
+        "pregunta_socratica_semilla": "¿La recomendación de lactancia en hepatitis C crónica aplica a madres con o sin tratamiento antiviral?",
+        "explicacion": "Se indica lactancia en la madre con hepatitis C subclínica o crónica sin tratamiento antiviral.",
+        "cita_gpc": {
+          "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
+          "clave": "IMSS-637-13",
+          "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
+          "pagina": 23,
+          "fragmento": "Indicar lactancia materna en caso de madre con"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-637-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "tratamiento_antiviral_materno",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "le acaba de iniciar tratamiento con interferón pegilado y ribavirina",
+        "motivo": "El riesgo aquí es el fármaco, no el virus: con ribavirina o interferón la guía contraindica la lactancia."
+      },
+      {
+        "id": "RZ-PED-637-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "hepatitis_c_cronica_con_tratamiento",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Su madre tiene hepatitis C crónica",
+        "motivo": "La lactancia se indica en hepatitis C crónica solo si la madre no recibe tratamiento antiviral."
+      }
+    ]
+  }
+]

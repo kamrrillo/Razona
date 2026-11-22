@@ -4,7 +4,7 @@ import { CheckCircle2, Lightbulb, Loader2, Send, Sparkles, XCircle } from "lucid
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
-import { SampleContentBadge } from "@/components/app/sample-content-badge";
+import { LearningResources } from "@/components/app/learning-resources";
 import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -26,7 +26,7 @@ type TutorMessage = {
   role: "student" | "tutor";
   text: string;
   hint?: string;
-  citation?: { gpcId: string; section: string; snippet: string };
+  citation?: { gpcId: string; gpcTitle?: string; section: string; page?: number; snippet: string };
   error?: string;
   streaming?: boolean;
 };
@@ -107,7 +107,13 @@ export function PracticeSession({ topic }: { topic?: string }) {
             case "citation":
               update((m) => ({
                 ...m,
-                citation: { gpcId: event.gpcId, section: event.section, snippet: event.snippet },
+                citation: {
+                  gpcId: event.gpcId,
+                  gpcTitle: event.gpcTitle,
+                  section: event.section,
+                  page: event.page,
+                  snippet: event.snippet,
+                },
               }));
               break;
             case "error":
@@ -208,7 +214,6 @@ export function PracticeSession({ topic }: { topic?: string }) {
 
       <Card>
         <CardHeader className="space-y-2">
-          {item.isSample && <SampleContentBadge />}
           <CardTitle className="text-lg" data-testid="case-title">
             {item.title}
           </CardTitle>
@@ -306,7 +311,9 @@ export function PracticeSession({ topic }: { topic?: string }) {
                   {m.citation && (
                     <CitationCard
                       gpcId={m.citation.gpcId}
+                      gpcTitle={m.citation.gpcTitle}
                       section={m.citation.section}
+                      page={m.citation.page}
                       snippet={m.citation.snippet}
                     />
                   )}
@@ -371,8 +378,10 @@ export function PracticeSession({ topic }: { topic?: string }) {
                 gpcId={solved.citation.gpcId}
                 gpcTitle={solved.citation.gpcTitle}
                 section={solved.citation.section}
+                page={solved.citation.page}
                 snippet={solved.citation.snippet}
               />
+              <LearningResources resources={solved.resources} errorTypes={solved.errorTypes} />
               <p className="text-xs text-muted-foreground">
                 {solved.attemptNumber === 1
                   ? "Lo resolviste al primer intento."

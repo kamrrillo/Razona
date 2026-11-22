@@ -1,0 +1,379 @@
+{
+ "archivo": "602GER.pdf",
+ "clave": "IMSS-602-13",
+ "sindrome": "pediculosis_capitis",
+ "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 8 años con prurito en cuero cabelludo de 2 semanas. Con peine de dientes finos se observan piojos vivos y liendres adheridas al tallo en las regiones occipital y retroauricular, con excoriaciones leves. No ha recibido tratamiento. Su hermana de 6 años, con quien comparte cama y cepillo, también se rasca la cabeza desde hace unos días. Sin alergias.",
+   "pregunta": "¿Cuál es el manejo más adecuado?",
+   "op": [
+    "Permetrina al 1 % por 10 minutos, repetir a los 7-10 días y revisar a los convivientes",
+    "Lindano al 1 % como tratamiento de primera elección",
+    "Ivermectina oral de entrada por ser más eficaz",
+    "Tratar solo a la paciente, porque es el caso confirmado",
+    "No usar pediculicidas, porque solo se recomiendan a partir de los 10 años"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La permetrina al 1 % en loción o crema es el tratamiento de elección por su eficacia y ausencia de toxicidad.",
+     "4.5 Tratamiento",
+     20,
+     "La permetrina al 1% en loción o crema, es el"
+    ],
+    [
+     "Se lava el cabello con champú común, se seca con toalla, se aplica la permetrina 10 minutos, se enjuaga y se repite a los 7 a 10 días.",
+     "4.5 Tratamiento",
+     21,
+     "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+    ],
+    [
+     "Se examina a los miembros de la familia que están en contacto con el caso índice.",
+     "4.3 Medidas de Prevención",
+     18,
+     "Examinar a los miembros de la familia que estén"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Aplica un límite de edad que no corresponde; la guía recomienda pediculicidas en mayores de 5 años y la paciente tiene 8.",
+     [
+      "E"
+     ],
+     [
+      "muy pequeña",
+      "edad",
+      "no usar químicos"
+     ],
+     "¿Qué edad tiene la paciente y a partir de qué edad recomienda la guía los pediculicidas?",
+     "Los pediculicidas son recomendables en niños mayores de 5 años, adolescentes y adultos.",
+     "4.5 Tratamiento",
+     21,
+     "Los pediculicidas, son recomendables en niños"
+    ],
+    [
+     "dato_omitido",
+     "Trata solo a la paciente sin considerar a la hermana con prurito, que comparte cama y cepillo.",
+     [
+      "D"
+     ],
+     [
+      "solo a ella",
+      "caso confirmado",
+      "individual"
+     ],
+     "¿Quién más en la casa tiene síntomas y comparte objetos con la paciente?",
+     "Ante un caso índice se examina a los miembros de la familia en contacto con él.",
+     "4.3 Medidas de Prevención",
+     18,
+     "Examinar a los miembros de la familia que estén"
+    ],
+    [
+     "conocimiento",
+     "Desconoce la toxicidad del lindano y su lugar en el tratamiento.",
+     [
+      "B"
+     ],
+     [
+      "lindano",
+      "champú",
+      "más fuerte"
+     ],
+     "¿Qué toxicidad tiene el lindano en niños y cuándo lo aconseja la guía?",
+     "El lindano puede causar convulsiones en niños y solo se aconseja cuando no se tolera el tratamiento de primera línea o este ha fallado.",
+     "4.5 Tratamiento",
+     21,
+     "pacientes que no toleran el tratamiento de primera"
+    ],
+    [
+     "razonamiento",
+     "Elige el tratamiento de mayor potencia para un primer episodio no complicado.",
+     [
+      "C"
+     ],
+     [
+      "ivermectina",
+      "oral",
+      "más eficaz"
+     ],
+     "¿En qué situaciones reserva la guía la ivermectina?",
+     "La ivermectina se recomienda en infestaciones masivas y en casos de resistencia.",
+     "4.6 Tratamiento en resistencia",
+     23,
+     "Su uso se recomienda en infestaciones masivas, con una"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "tecnica_permetrina",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cómo se aplica la crema de enjuague de permetrina al 1 %?",
+    "reverso": "Lavar con champú común, secar con toalla, aplicar, dejar actuar 10 minutos, enjuagar y repetir a los 7 a 10 días.",
+    "cita": [
+     "4.5 Tratamiento",
+     21,
+     "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "toxicidad_lindano",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué el lindano no es de primera elección en niños?",
+    "reverso": "Es tóxico para el sistema nervioso y puede causar convulsiones; se reserva para intolerancia o falla del tratamiento de primera línea.",
+    "cita": [
+     "4.5 Tratamiento",
+     21,
+     "pacientes que no toleran el tratamiento de primera"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "indicacion_ivermectina",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿En qué situaciones se reserva la ivermectina en pediculosis?",
+    "reverso": "En infestaciones masivas y en casos de resistencia, no en un primer episodio sin tratamiento previo.",
+    "cita": [
+     "4.6 Tratamiento en resistencia",
+     23,
+     "Su uso se recomienda en infestaciones masivas, con una"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_pediculosis_capitis",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Liendres o piojos vivos en piel cabelluda\"] --> B[\"Permetrina al 1 %: 10 minutos, enjuagar y segunda aplicación a los 7 a 10 días\"]\n  A --> C[\"Examinar a los familiares en contacto con el caso índice\"]\n  B --> D[\"Evaluar a los 15 días del inicio del tratamiento\"]\n  D --> E{\"¿Se corrobora la curación?\"}\n  E -->|\"Sí\"| F[\"Curación confirmada\"]\n  E -->|\"No\"| G[\"Manejo de resistencia o falla terapéutica\"]\n  G --> H{\"¿Infestación masiva o resistencia?\"}\n  H -->|\"Sí\"| I[\"Considerar ivermectina\"]",
+    "citas": [
+     [
+      "4.5 Tratamiento",
+      21,
+      "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+     ],
+     [
+      "4.3 Medidas de Prevención",
+      18,
+      "Examinar a los miembros de la familia que estén"
+     ],
+     [
+      "4.5 Tratamiento",
+      22,
+      "evaluados a los 15 días del inicio del tratamiento con el"
+     ],
+     [
+      "4.6 Tratamiento en resistencia",
+      23,
+      "Su uso se recomienda en infestaciones masivas, con una"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_permite_pediculicida",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 8 años",
+    "motivo": "Los pediculicidas se recomiendan en mayores de 5 años; con 8 años no hay razón para evitarlos."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "hermana_sintomatica",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Su hermana de 6 años, con quien comparte cama y cepillo, también se rasca la cabeza",
+    "motivo": "Hay que examinar a los familiares en contacto con el caso índice; la hermana tiene prurito y comparte objetos."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_tratamiento_previo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No ha recibido tratamiento",
+    "motivo": "Es un primer episodio sin falla previa ni infestación masiva: no hay indicación de terapia para resistencia."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "liendre_adherida_al_pelo",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Peat%C3%A4i_muna_%28ting%29.jpg/960px-Peat%C3%A4i_muna_%28ting%29.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Peat%C3%A4i_muna_(ting).jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Janek Lass",
+    "licencia": "CC BY 4.0",
+    "descripcion": "Liendre de Pediculus humanus capitis firmemente adherida al tallo del pelo, vista al microscopio.",
+    "archivo": "assets/RZ-PED-602-I-R8.jpg",
+    "sha256": "4e3c0304594a2519c4a5be5ae6de1067d5705930f3b130a13e3c8d4623231586"
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Masculino de 11 años con diagnóstico de pediculosis capitis; hoy se le aplicó la primera dosis de permetrina al 1 %. La madre pregunta qué hacer con la ropa de cama, los peluches, la gorra, los audífonos y los peines del niño para que no se vuelva a infestar.",
+   "pregunta": "¿Cuál es la recomendación más adecuada?",
+   "op": [
+    "Guardar los objetos en una bolsa sellada durante 48 horas",
+    "Lavar ropa y peluches a 50 °C y aislar peines y gorra en bolsa sellada 2 semanas",
+    "Lavar la ropa con agua fría sin necesidad de calor",
+    "No es necesaria ninguna medida con los objetos, porque basta la permetrina",
+    "Revisar al niño hasta que vuelva a tener prurito"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "La ropa de uso personal, de cama, los peluches y los juguetes de tela se lavan con detergente y después a 50 °C durante 30 minutos por día, en 2 ocasiones.",
+     "4.5 Tratamiento",
+     22,
+     "detergente y posteriormente hervir a 50°C, durante 30"
+    ],
+    [
+     "Los sombreros, peines y auriculares se limpian con alcohol isopropílico o se guardan en bolsa de plástico sellada por dos semanas para interrumpir el ciclo del piojo.",
+     "4.5 Tratamiento",
+     22,
+     "plástico sellada, por dos semanas en busca de"
+    ],
+    [
+     "Se recomienda evaluar al paciente a los 15 días del inicio del tratamiento para corroborar la curación.",
+     "4.5 Tratamiento",
+     22,
+     "evaluados a los 15 días del inicio del tratamiento con el"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Desconoce el tiempo necesario para interrumpir el ciclo del piojo.",
+     [
+      "A"
+     ],
+     [
+      "48 horas",
+      "dos días",
+      "poco tiempo"
+     ],
+     "¿Cuánto tiempo deben permanecer los objetos en bolsa sellada según la guía?",
+     "Los sombreros, peines y auriculares se guardan en bolsa de plástico sellada por dos semanas para interrumpir el ciclo biológico del piojo.",
+     "4.5 Tratamiento",
+     22,
+     "plástico sellada, por dos semanas en busca de"
+    ],
+    [
+     "conocimiento",
+     "Desconoce que la ropa debe someterse a calor después del lavado.",
+     [
+      "C"
+     ],
+     [
+      "agua fría",
+      "solo lavar"
+     ],
+     "¿Qué temperatura y tiempo indica la guía para la ropa de cama?",
+     "La ropa se lava con detergente y después se somete a 50 °C durante 30 minutos por día, en 2 ocasiones.",
+     "4.5 Tratamiento",
+     22,
+     "detergente y posteriormente hervir a 50°C, durante 30"
+    ],
+    [
+     "razonamiento",
+     "Supone que el pediculicida basta y descuida la reinfestación por objetos.",
+     [
+      "D"
+     ],
+     [
+      "basta el medicamento",
+      "no hace falta",
+      "solo la cabeza"
+     ],
+     "Si quedan piojos o liendres en la gorra y la almohada, ¿qué pasará después del tratamiento?",
+     "La desinfección de ropa y objetos busca interrumpir el ciclo biológico del piojo.",
+     "4.5 Tratamiento",
+     22,
+     "plástico sellada, por dos semanas en busca de"
+    ],
+    [
+     "dato_omitido",
+     "Condiciona la revisión a los síntomas en lugar de programar la evaluación de curación.",
+     [
+      "E"
+     ],
+     [
+      "cuando tenga comezón",
+      "si vuelve",
+      "sin cita"
+     ],
+     "¿Cuándo recomienda la guía reevaluar al paciente para confirmar la curación?",
+     "Se recomienda evaluar a los pacientes a los 15 días del inicio del tratamiento para corroborar la curación o indicar manejo de resistencia.",
+     "4.5 Tratamiento",
+     22,
+     "evaluados a los 15 días del inicio del tratamiento con el"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "objetos_distintos_medidas",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "la ropa de cama, los peluches, la gorra, los audífonos y los peines",
+    "motivo": "Son dos grupos: la ropa y los peluches se lavan y se someten a calor; gorra, audífonos y peines se limpian o se guardan sellados."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "primera_dosis",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "hoy se le aplicó la primera dosis de permetrina al 1 %",
+    "motivo": "Falta la segunda aplicación a los 7 a 10 días y la evaluación de curación a los 15 días del inicio."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "evitar_reinfestacion",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "para que no se vuelva a infestar",
+    "motivo": "Desinfectar ropa y objetos busca interrumpir el ciclo biológico del piojo; el pediculicida solo no lo garantiza."
+   }
+  ]}
+ ]
+}

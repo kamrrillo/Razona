@@ -15,7 +15,7 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 ## Arquitectura
 
 - **`cacheComponents` desactivado.** `create-next-app` 16 lo activa por defecto; toda la app depende de la sesión (cookies), así que se desactivó para evitar `Suspense` obligatorio y validaciones de navegación instantánea. Todas las rutas de `(app)` son dinámicas.
-- **El contenido vive en JSON, no en la base.** `content/items.json`, `content/exam.json` y `content/tutor-fallback.json` se validan con Zod al cargar el módulo (si el equipo los rompe, fallan `pnpm test` y el build). La tabla `items` es un espejo que sincroniza `pnpm seed:demo`, para integridad referencial y para cumplir "los ítems los leen solo usuarios autenticados". El cliente nunca recibe la respuesta correcta ni la explicación hasta que acierta (`PublicItemSchema`).
+- ~~**El contenido vive en JSON, no en la base.**~~ Reemplazado en la iteración 6 (banco de casos en Supabase). Texto original: `content/items.json`, `content/exam.json` y `content/tutor-fallback.json` se validan con Zod al cargar el módulo (si el equipo los rompe, fallan `pnpm test` y el build). La tabla `items` es un espejo que sincroniza `pnpm seed:demo`, para integridad referencial y para cumplir "los ítems los leen solo usuarios autenticados". El cliente nunca recibe la respuesta correcta ni la explicación hasta que acierta (`PublicItemSchema`).
 - **El historial del tutor** se guarda en `study_sessions.messages` (jsonb). No se agregó una tabla extra para no salirnos de las 7 tablas pedidas.
 - **Intentos sintéticos sin sesión.** El historial precargado de Ana tiene `attempts.session_id = null`.
 - **Progreso = intentos de práctica + respuestas de exámenes terminados.** Racha, avance por especialidad y tema débil usan ambas fuentes.
@@ -96,3 +96,19 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - **Supabase en la nube** `razona` (us-east-1, junto a `iad1` de Vercel). La configuración de Auth de producción se versiona en `[remotes.production]` de `config.toml`: solo cambia Site URL y redirect; la confirmación por email y MFA quedan con los valores por defecto de la nube.
 - La contraseña de Ana en producción es distinta a la local y vive solo en las variables de Vercel y en `.env.vercel.local`.
 - `NEXT_PUBLIC_ENABLE_GOOGLE=false` en producción (el proveedor de Google no está configurado en Supabase).
+
+## Banco de casos en Supabase (iteración 6, 22 nov 2026)
+
+- **Fuente única: `json/casos` (110 casos de pediatría) + `json/temas.json`.** Se eliminaron `content/*.json` (contenido de ejemplo) y la etiqueta "contenido de ejemplo".
+- **Carga:** `json/herramientas/cargar_supabase.py` (`pnpm content:load`) valida con `validar_casos.py` (sin R3, que es regla del generador) y hace upsert de grupos → temas → índices → variantes. Nunca borra: un caso que sale del banco queda `retirado`.
+- **`casos_clinicos.payload` guarda el caso tal cual**; `sindrome`, `tipo`, `caso_indice_id`, `estado`, etc. son **columnas generadas** del payload, así que no hay datos duplicados que puedan divergir.
+- **Una sola traducción banco → app:** la vista `v_casos_app` produce el `Item` (opciones A–E → a–e, puntos clave → explicación, primera cita → `citation` con página, más `rubric` y `keyPoints`). La app web (`lib/content`) y el agente de Python leen de ahí.
+- **Solo servidor:** RLS sin políticas y permisos revocados para `anon`/`authenticated` en tablas y vistas (la rúbrica revela la respuesta por descarte). Las vistas usan `security_invoker`. La app lee con la service role y nunca envía `rubric`/`keyPoints` al cliente (`PublicItemSchema`).
+- **`attempts`, `exam_answers` y `study_sessions` apuntan a `casos_clinicos`** (llaves `NOT VALID`: el historial anterior con ítems de ejemplo no se toca). La tabla `items` queda sin uso; se elimina en la fase 3.
+- **Práctica = casos índice**; las variantes se reservan para el examen y, después, para medir transferencia.
+- **Examen simulado por alcance:** global (10, repartidos entre áreas), por área (hasta 10) o por tema (índice + variante). `exams` guarda `scope`, `scope_ref` e `item_ids`. Duración: 90 s por reactivo. "Completar examen (demo)" llena lo que falte con la respuesta correcta.
+- **Áreas:** los 55 temas se agrupan en 9 áreas (`json/temas.json`, propuesta para revisar con el equipo clínico). Inicio y Progreso muestran el avance por área.
+- **Tutor:** con un error, el tutor (ADK y respaldo) usa la entrada de la rúbrica de esa opción: tipo de error, pregunta socrática semilla y su cita con página. `rubricFor` nunca devuelve la opción correcta.
+- **Resultados del examen:** cada reactivo fallado muestra "Por qué te desviaste" con el tipo de error y la explicación de la rúbrica.
+- **Agente de Python:** lee `v_casos_app`; el diagnóstico reparte por área (1 por área por defecto) y `buscar_gpc(item_id, opcion)` devuelve la guía de la rúbrica para una opción incorrecta.
+- **Lint:** Biome excluye `json/casos`, `json/fuentes` y `json/esquema` (datos que generan las herramientas de Python).

@@ -1,0 +1,195 @@
+{"archivo": "466GER.pdf", "clave": "IMSS-466-11", "sindrome": "escarlatina",
+ "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
+ "casos": [
+ {"t": "I",
+  "vineta": "Masculino de 6 años, peso 20 kg, sin alergias conocidas. Inició hace 2 días con fiebre de 39.8 °C, odinofagia, vómito y dolor abdominal; ayer apareció un exantema eritematoso, áspero al tacto, que inició en cuello y se extendió a tronco, más intenso en pliegues. A la exploración: faringe congestiva, petequias en paladar blando, lengua con papilas rojas y prominentes, y palidez alrededor de la boca. Su hermano tuvo faringitis estreptocócica la semana pasada.",
+  "pregunta": "¿Cuál es el tratamiento más adecuado en el primer nivel de atención?",
+  "op": ["Amoxicilina por vía oral durante 10 días",
+         "Eritromicina por vía oral, por alergia a la penicilina",
+         "Tratamiento sintomático, porque se trata de un exantema viral",
+         "Trimetoprim con sulfametoxazol por vía oral durante 10 días",
+         "Amoxicilina por vía oral durante 5 días, hasta que desaparezca la fiebre"],
+  "rc": "A",
+  "pc": [["El esquema en orden de preferencia es penicilina V (no disponible en el cuadro básico), amoxicilina y penicilina G benzatínica; la mayoría se administra por 10 días.", "4.2.1 Tratamiento Farmacológico", 21, "se mencionaran en orden de preferencia de uso"],
+         ["El tratamiento contra el estreptococo beta hemolítico del grupo A debe iniciar tan pronto como sea posible para reducir la incidencia de fiebre reumática.", "4.2.1 Tratamiento Farmacológico", 22, "sea posible para reducir la incidencia de fiebre"]],
+  "rub": [
+   ["lectura", "Actúa como si el paciente fuera alérgico a la penicilina; la viñeta dice que no tiene alergias.", ["B"], ["alérgico", "eritromicina", "no puede penicilina"], "¿Qué dice la viñeta sobre las alergias del paciente?", "La eritromicina se considera como alternativa en caso de reacción anafiláctica conocida a la penicilina; la penicilina sigue siendo el fármaco de elección.", "4.2.1 Tratamiento Farmacológico", 20, "La penicilina sigue siendo el fármaco de elección"],
+   ["dato_omitido", "Trata el exantema como viral sin integrar la faringitis, la lengua en frambuesa, las petequias en paladar y el contacto con estreptococo.", ["C"], ["viral", "sintomático", "exantema"], "¿Qué hallazgos de boca y faringe tiene el paciente, y qué agente sugieren junto con el antecedente del hermano?", "La escarlatina cursa con faringe congestiva, manchas de Forcheimer en paladar y lengua en frambuesa; requiere antibiótico para prevenir la fiebre reumática.", "4.1.1 Diagnóstico Clínico", 13, "al descubierto las papilas rojas (lengua"],
+   ["conocimiento", "Cree que las sulfonamidas son útiles contra el estreptococo.", ["D"], ["trimetoprim", "sulfa", "bactrim"], "¿Qué antimicrobianos excluye la guía en la escarlatina?", "Las tetraciclinas y las sulfonamidas no se deben usar en el tratamiento de la escarlatina.", "4.2.1 Tratamiento Farmacológico", 20, "La tetraciclinas y las sulfonamidas no se deben usar"],
+   ["razonamiento", "Ajusta la duración a la mejoría clínica y no al objetivo de erradicar el estreptococo.", ["E"], ["hasta que mejore", "5 días", "sin fiebre"], "Si el objetivo principal es prevenir la fiebre reumática, ¿basta con que ceda la fiebre?", "El periodo de administración es de 10 días, excepto la azitromicina (5 días) y la penicilina G benzatínica (dosis única).", "4.2.1 Tratamiento Farmacológico", 21, "El periodo de administración es por 10 días, excepto"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "duracion_antibiotico_escarlatina",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuánto dura el tratamiento antimicrobiano de la escarlatina?",
+    "reverso": "10 días, aunque ceda la fiebre. Excepciones: azitromicina 5 días y penicilina G benzatínica en dosis única.",
+    "cita": [
+     "4.2.1 Tratamiento Farmacológico",
+     21,
+     "El periodo de administración es por 10 días, excepto"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "antimicrobianos_contraindicados",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué grupos de antimicrobianos no deben usarse en la escarlatina?",
+    "reverso": "Tetraciclinas y sulfonamidas, como el trimetoprim con sulfametoxazol.",
+    "cita": [
+     "4.2.1 Tratamiento Farmacológico",
+     20,
+     "La tetraciclinas y las sulfonamidas no se deben usar"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "signos_orales_escarlatina",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué signos en boca y faringe orientan a escarlatina?",
+    "reverso": "Faringe congestiva, máculas rojas puntiformes en úvula y paladar (manchas de Forcheimer) y lengua en frambuesa.",
+    "cita": [
+     "4.1.1 Diagnóstico Clínico",
+     13,
+     "Maculas puntiformes rojas en la úvula y en el"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "eleccion_antimicrobiano_escarlatina",
+    "para_errores": [
+     "razonamiento",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con escarlatina\"] --> B{\"¿Alergia a la penicilina?\"}\n  B -->|\"No\"| C[\"Por preferencia: penicilina V si existe, amoxicilina o penicilina G benzatínica\"]\n  C --> D[\"Orales por 10 días; penicilina G benzatínica en una sola dosis\"]\n  B -->|\"Sí\"| E{\"¿La reacción fue anafiláctica?\"}\n  E -->|\"No\"| F[\"Cefalosporina de primera generación\"]\n  E -->|\"Sí\"| G[\"Eritromicina como alternativa\"]",
+    "citas": [
+     [
+      "4.2.1 Tratamiento Farmacológico",
+      21,
+      "se mencionaran en orden de preferencia de uso"
+     ],
+     [
+      "4.2.1 Tratamiento Farmacológico",
+      21,
+      "El periodo de administración es por 10 días, excepto"
+     ],
+     [
+      "4.2.1 Tratamiento Farmacológico",
+      20,
+      "cuando el paciente no haya presentado reacción"
+     ],
+     [
+      "4.2.1 Tratamiento Farmacológico",
+      20,
+      "penicilina, la eritromicina puede ser considerada como"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "sin_alergias",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin alergias conocidas",
+    "motivo": "Sin alergia a la penicilina no hay razón para usar alternativas: se elige un betalactámico de primera línea."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "lengua_frambuesa_palidez_peribucal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "lengua con papilas rojas y prominentes, y palidez alrededor de la boca",
+    "motivo": "Lengua en frambuesa y palidez peribucal son signos de escarlatina, no de un exantema viral: requiere antibiótico."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "contacto_estreptococo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Su hermano tuvo faringitis estreptocócica la semana pasada",
+    "motivo": "El contacto con personas infectadas por estreptococo aumenta el riesgo de escarlatina y apoya el origen bacteriano."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "exantema_escarlatiniforme",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Scarlet_fever_rash.jpg/960px-Scarlet_fever_rash.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Scarlet_fever_rash.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Whispyhistory",
+    "licencia": "CC BY-SA 4.0",
+    "descripcion": "Exantema de escarlatina en cuello y tórax de un niño de 8 años de piel oscura, con faringitis estreptocócica: pápulas finas que dan aspecto de piel de gallina y textura áspera; en piel oscura el eritema casi no se ve.",
+    "archivo": "assets/RZ-PED-466-I-R8.jpg",
+    "sha256": "0541b39bdb7873b04b4db70a6774dc4a57b2c5aa9d4720e26a98e053da631514"
+   }
+  ]},
+ {"t": "V1",
+  "vineta": "Femenino de 8 años, peso 30 kg, con fiebre de 39 °C, odinofagia y exantema puntiforme áspero con acentuación en pliegues del codo (líneas de Pastia) y lengua en frambuesa. Hace 2 años presentó edema laríngeo y urticaria generalizada minutos después de una dosis de amoxicilina, que requirió epinefrina en urgencias.",
+  "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
+  "op": ["Eritromicina por vía oral durante 10 días",
+         "Cefadroxilo por vía oral durante 10 días",
+         "Penicilina G benzatínica en dosis única",
+         "Tetraciclina por vía oral durante 10 días",
+         "No dar antibiótico para evitar una reacción alérgica"],
+  "rc": "A",
+  "pc": [["En caso de reacción anafiláctica conocida a la penicilina, la eritromicina puede considerarse como alternativa.", "4.2.1 Tratamiento Farmacológico", 20, "penicilina, la eritromicina puede ser considerada como"],
+         ["Una cefalosporina de primera generación es alternativa eficaz siempre que el paciente no haya presentado reacción anafiláctica a la penicilina.", "4.2.1 Tratamiento Farmacológico", 20, "cuando el paciente no haya presentado reacción"]],
+  "rub": [
+   ["dato_omitido", "Elige cefalosporina sin considerar que la reacción previa fue anafiláctica.", ["B"], ["cefalosporina", "cefadroxilo", "alergia leve"], "¿Qué tipo de reacción tuvo la paciente con la amoxicilina y qué condición pone la guía para usar cefalosporinas?", "La cefalosporina de primera generación es alternativa solo si el paciente no ha presentado reacción anafiláctica a la penicilina.", "4.2.1 Tratamiento Farmacológico", 20, "cuando el paciente no haya presentado reacción"],
+   ["lectura", "No registra el antecedente de anafilaxia a la amoxicilina.", ["C"], ["penicilina", "dosis única", "primera elección"], "¿Qué antecedente alérgico refiere la viñeta?", "En caso de reacción anafiláctica conocida a la penicilina, la eritromicina puede considerarse como alternativa.", "4.2.1 Tratamiento Farmacológico", 20, "penicilina, la eritromicina puede ser considerada como"],
+   ["conocimiento", "Cree que la tetraciclina es una alternativa válida.", ["D"], ["tetraciclina", "alternativa"], "¿Qué grupos de antimicrobianos no deben usarse en la escarlatina?", "Las tetraciclinas y las sulfonamidas no se deben usar.", "4.2.1 Tratamiento Farmacológico", 20, "La tetraciclinas y las sulfonamidas no se deben usar"],
+   ["razonamiento", "Prioriza evitar una reacción alérgica sobre prevenir la fiebre reumática, cuando hay alternativas no betalactámicas.", ["E"], ["no dar antibiótico", "riesgo de alergia", "solo sintomático"], "¿Qué complicación quieres prevenir con el antibiótico y hay alternativas para una paciente alérgica?", "El tratamiento contra el estreptococo debe iniciar tan pronto como sea posible para reducir la fiebre reumática; en la alergia anafiláctica la eritromicina es una alternativa.", "4.2.1 Tratamiento Farmacológico", 22, "sea posible para reducir la incidencia de fiebre"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "anafilaxia_a_amoxicilina",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "edema laríngeo y urticaria generalizada minutos después de una dosis de amoxicilina, que requirió epinefrina en urgencias",
+    "motivo": "Fue una reacción anafiláctica: descarta penicilinas y también cefalosporinas; la alternativa es la eritromicina."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "signos_de_escarlatina",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "acentuación en pliegues del codo (líneas de Pastia) y lengua en frambuesa",
+    "motivo": "Son signos típicos de escarlatina: hay que tratar al estreptococo para prevenir la fiebre reumática, pese a la alergia."
+   }
+  ]}
+ ]}

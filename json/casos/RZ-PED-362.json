@@ -1,0 +1,447 @@
+[
+  {
+    "id": "RZ-PED-362-I",
+    "version": "0.2.0",
+    "sindrome": "recien_nacido_prematuro_sano",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+      "clave": "GPC-IMSS-362-18",
+      "archivo": "362GER.pdf"
+    },
+    "vineta": "Recién nacido masculino de 32 semanas de gestación, peso al nacer 1,650 g, Apgar 8/9. Tiene 10 horas de vida, está en cuidados intermedios con temperatura estable en incubadora, respira al aire ambiente con SpO2 de 95 % y tolera alimentación por sonda orogástrica. La madre no tuvo control prenatal y no se le realizó determinación de antígeno de superficie de hepatitis B (HBsAg).",
+    "pregunta": "En relación con la vacunación, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Hepatitis B ahora y BCG al alcanzar 2,000 g o más de 34 semanas",
+      "B": "Diferir ambas vacunas hasta que alcance 2,000 g de peso",
+      "C": "Aplicar hepatitis B y BCG ahora, porque ya tiene más de 34 semanas",
+      "D": "Aplicar ambas vacunas al egreso, cuando pese más de 1,800 g",
+      "E": "Diferir la hepatitis B hasta conocer el resultado del HBsAg materno"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "Se recomienda administrar la vacuna de hepatitis B a todos los prematuros, al nacer o lo antes posible, independientemente de la edad gestacional y el peso.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "todos los niños, independientemente de la edad"
+        }
+      },
+      {
+        "texto": "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee las 32 semanas como si fueran más de 34.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "más de 34 semanas",
+          "ya puede BCG",
+          "ambas"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántas semanas de gestación tiene el paciente y qué umbral usa la guía para la BCG?",
+        "explicacion": "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas; el paciente tiene 32 semanas y 1,650 g.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Retrasa la hepatitis B sin considerar que el HBsAg materno se desconoce, lo que obliga a vacunar en las primeras 12 horas.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "al egreso",
+          "cuando pese más",
+          "1,800 g"
+        ],
+        "pregunta_socratica_semilla": "¿Qué se sabe del HBsAg de la madre y qué indica la guía en ese caso?",
+        "explicacion": "Los prematuros de madres cuyo HBsAg no puede demostrarse negativo en las primeras 12 horas de vida deben recibir la vacuna de hepatitis B sin importar su peso.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "primeras 12 horas de vida también deben recibir la"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la vacuna de hepatitis B también depende del peso.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "esperar 2 kilos",
+          "muy pequeño",
+          "bajo peso"
+        ],
+        "pregunta_socratica_semilla": "¿El peso al nacer condiciona la vacuna de hepatitis B?",
+        "explicacion": "La vacuna de hepatitis B se administra al nacer o lo antes posible a todos los niños, independientemente de la edad gestacional y el peso.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "todos los niños, independientemente de la edad"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Condiciona la vacuna a un resultado que no existe, cuando la incertidumbre es justamente la indicación para vacunar.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "esperar HBsAg",
+          "si la mamá es positiva",
+          "confirmar primero"
+        ],
+        "pregunta_socratica_semilla": "Si no se puede demostrar que la madre es HBsAg negativa, ¿qué riesgo corre el recién nacido mientras esperas?",
+        "explicacion": "En prematuros de madres portadoras el riesgo de transmisión llega al 90 %, por lo que no hay razones para retrasar la vacuna; si el HBsAg no se demuestra negativo en 12 horas, se vacuna.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "primeras 12 horas de vida también deben recibir la"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-362-I-R1",
+        "tipo": "flashcard",
+        "concepto": "hepatitis_b_sin_importar_peso",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿El peso o la edad gestacional condicionan la vacuna de hepatitis B en el prematuro?",
+        "reverso": "No. Se aplica al nacer o lo antes posible a todos, sin importar edad gestacional ni peso al nacer.",
+        "cita": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "todos los niños, independientemente de la edad"
+        }
+      },
+      {
+        "id": "RZ-PED-362-I-R2",
+        "tipo": "flashcard",
+        "concepto": "hbsag_materno_desconocido",
+        "para_errores": [
+          "dato_omitido",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué se hace si el HBsAg materno no puede demostrarse negativo en las primeras 12 horas de vida?",
+        "reverso": "Se vacuna contra hepatitis B sin importar el peso. En hijos de madres portadoras la transmisión llega a 90 %.",
+        "cita": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "primeras 12 horas de vida también deben recibir la"
+        }
+      },
+      {
+        "id": "RZ-PED-362-I-R3",
+        "tipo": "flashcard",
+        "concepto": "umbral_bcg_prematuro",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿A partir de cuándo recomienda la guía aplicar la BCG al prematuro?",
+        "reverso": "A partir de 2,000 g de peso o con más de 34 semanas de gestación.",
+        "cita": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      },
+      {
+        "id": "RZ-PED-362-I-R4",
+        "tipo": "diagrama",
+        "concepto": "vacunacion_del_prematuro",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Prematuro sano hospitalizado\"] --> B{\"¿HBsAg materno demostrado negativo en las primeras 12 horas?\"}\n  B -->|\"No o se desconoce\"| C[\"Vacuna de hepatitis B sin esperar, sin importar el peso\"]\n  B -->|\"Sí\"| D[\"Vacuna de hepatitis B al nacer o lo antes posible\"]\n  C --> E{\"¿Pesa 2,000 g o más, o tiene más de 34 semanas?\"}\n  D --> E\n  E -->|\"Sí\"| F[\"Aplicar BCG\"]\n  E -->|\"No\"| G[\"Diferir la BCG y revalorar peso y edad gestacional\"]",
+        "citas": [
+          {
+            "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+            "clave": "GPC-IMSS-362-18",
+            "seccion": "2.3 Tamizaje y Vacunación",
+            "pagina": 44,
+            "fragmento": "riesgo de transmisión de infección aumenta al 90%"
+          },
+          {
+            "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+            "clave": "GPC-IMSS-362-18",
+            "seccion": "2.3 Tamizaje y Vacunación",
+            "pagina": 44,
+            "fragmento": "primeras 12 horas de vida también deben recibir la"
+          },
+          {
+            "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+            "clave": "GPC-IMSS-362-18",
+            "seccion": "2.3 Tamizaje y Vacunación",
+            "pagina": 44,
+            "fragmento": "todos los niños, independientemente de la edad"
+          },
+          {
+            "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+            "clave": "GPC-IMSS-362-18",
+            "seccion": "2.3 Tamizaje y Vacunación",
+            "pagina": 44,
+            "fragmento": "los 2000 gr de peso o > 34 SDG"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-362-I-R5",
+        "tipo": "resaltado",
+        "concepto": "edad_gestacional_y_peso",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "32 semanas de gestación, peso al nacer 1,650 g",
+        "motivo": "No alcanza 2,000 g ni más de 34 semanas: la BCG se difiere. La hepatitis B no depende del peso."
+      },
+      {
+        "id": "RZ-PED-362-I-R6",
+        "tipo": "resaltado",
+        "concepto": "hbsag_no_realizado",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "no se le realizó determinación de antígeno de superficie de hepatitis B (HBsAg)",
+        "motivo": "Si el HBsAg materno no se demuestra negativo, la guía indica vacunar contra hepatitis B sin importar el peso."
+      },
+      {
+        "id": "RZ-PED-362-I-R7",
+        "tipo": "resaltado",
+        "concepto": "horas_de_vida",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Tiene 10 horas de vida",
+        "motivo": "Está dentro de las primeras 12 horas sin HBsAg materno negativo. Esperar un resultado retrasa la vacuna sin motivo."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-362-V1",
+    "version": "0.2.0",
+    "sindrome": "recien_nacido_prematuro_sano",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-362-I",
+    "gpc_base": {
+      "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+      "clave": "GPC-IMSS-362-18",
+      "archivo": "362GER.pdf"
+    },
+    "vineta": "Recién nacida de 30 semanas de gestación, peso al nacer 1,300 g, que recibió la vacuna de hepatitis B al nacimiento. Hoy tiene 5 semanas de vida (35 semanas de edad corregida), pesa 2,050 g, regula temperatura en cuna, respira al aire ambiente y se alimenta por succión. Se planea su egreso en los próximos días. Aún no ha recibido BCG.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la vacuna BCG?",
+    "opciones": {
+      "A": "Diferirla hasta las 40 semanas de edad corregida",
+      "B": "Aplicarla ahora, porque ya pesa más de 2,000 g y tiene más de 34 semanas",
+      "C": "Diferirla hasta su primera consulta de control después del egreso",
+      "D": "Diferirla hasta que pese 2,500 g",
+      "E": "No aplicarla, porque la BCG está contraindicada en prematuros"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      },
+      {
+        "texto": "La BCG a las 34 semanas y con más de 2,000 g, o después, proporciona una buena respuesta inmune.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa un umbral de peso mayor que el de la guía.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "2,500 g",
+          "bajo peso",
+          "más grande"
+        ],
+        "pregunta_socratica_semilla": "¿A partir de qué peso recomienda la guía la BCG en el prematuro?",
+        "explicacion": "Se recomienda administrar la BCG a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Usa como criterio el término corregido en lugar del peso o las 34 semanas.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "40 semanas",
+          "edad corregida",
+          "término"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad gestacional usa la guía como umbral para la BCG?",
+        "explicacion": "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas de gestación.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la BCG está contraindicada por la prematurez.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "contraindicada",
+          "prematuro",
+          "inmadurez inmune"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la evidencia sobre la respuesta inmune a la BCG en el prematuro de más de 34 semanas y 2,000 g?",
+        "explicacion": "La BCG a las 34 semanas y con más de 2,000 g, o después, proporciona una buena respuesta inmune.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Pospone la vacuna sin registrar que la paciente ya cumple el peso y la edad gestacional.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "después del egreso",
+          "en su clínica",
+          "más adelante"
+        ],
+        "pregunta_socratica_semilla": "¿Qué peso y edad corregida tiene hoy la paciente?",
+        "explicacion": "La BCG se recomienda a partir de los 2,000 g de peso o más de 34 semanas; la paciente pesa 2,050 g y tiene 35 semanas corregidas.",
+        "cita_gpc": {
+          "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
+          "clave": "GPC-IMSS-362-18",
+          "seccion": "2.3 Tamizaje y Vacunación",
+          "pagina": 44,
+          "fragmento": "los 2000 gr de peso o > 34 SDG"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-362-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "peso_actual",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "pesa 2,050 g",
+        "motivo": "Ya supera los 2,000 g que la guía fija para aplicar la BCG al prematuro."
+      },
+      {
+        "id": "RZ-PED-362-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "edad_corregida",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "35 semanas de edad corregida",
+        "motivo": "Tiene más de 34 semanas. A esa edad y con más de 2,000 g la BCG da buena respuesta inmune."
+      },
+      {
+        "id": "RZ-PED-362-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "sin_bcg_antes_del_egreso",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Se planea su egreso en los próximos días. Aún no ha recibido BCG",
+        "motivo": "Ya cumple el criterio de la guía. No hay razón para posponer la vacuna hasta después del egreso."
+      }
+    ]
+  }
+]

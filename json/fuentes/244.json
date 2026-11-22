@@ -1,0 +1,193 @@
+{"archivo": "244GER.pdf", "clave": "IMSS-244-09", "sindrome": "primera_crisis_convulsiva",
+ "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
+ "casos": [
+ {"t": "I",
+  "vineta": "Femenino de 7 años, previamente sana, con desarrollo psicomotor normal y sin antecedentes familiares de epilepsia. Hace 3 horas, estando despierta y jugando, presentó pérdida del estado de alerta con movimientos tónico-clónicos generalizados de 2 minutos de duración, sin desencadenante identificado. Hoy no ha tenido vómito, diarrea ni fiebre. A su llegada a urgencias está completamente recuperada: temperatura 36.7 °C, sin rigidez de nuca, exploración neurológica normal.",
+  "pregunta": "¿Cuál es la conducta más adecuada?",
+  "op": ["Impregnación con fenitoína intravenosa",
+         "Tomografía computada de cráneo de urgencia",
+         "Solicitar electroencefalograma, no iniciar antiepiléptico y enviar a valoración por pediatría",
+         "Punción lumbar para descartar neuroinfección",
+         "Iniciar valproato de magnesio para disminuir el riesgo de una segunda crisis"],
+  "rc": "C",
+  "pc": [["Se recomienda EEG en quienes presentaron una crisis convulsiva de primera vez no provocada, para establecer un diagnóstico temprano.", "4.5 Exámenes de gabinete", 22, "una CC de primera vez no provocada"],
+         ["Se recomienda evitar los estudios de imagen rutinarios en quien presentó una crisis convulsiva no provocada de primera vez.", "4.5 Exámenes de gabinete", 23, "estudios de imágen en las personas que presentaron"],
+         ["Se recomienda evitar el uso de antiepilépticos después de una primera crisis convulsiva.", "4.6.2 Tratamiento anticonvulsivo después de la primera crisis", 28, "Se recomienda evitar el uso de antiepilépticos"],
+         ["Toda persona con sospecha de crisis convulsiva de primera vez se refiere a segundo nivel para valoración por pediatría.", "4.7 Criterios de referencia y contrarreferencia", 29, "Toda persona en la que se sospecha CC de"]],
+  "rub": [
+   ["lectura", "Actúa como si hubiera fiebre o datos meníngeos; la viñeta los descarta.", ["D"], ["neuroinfección", "meningitis", "punción", "descartar infección"], "¿Qué datos de la viñeta te harían sospechar infección del sistema nervioso central? ¿Están presentes?", "En la primera crisis convulsiva la punción lumbar se realiza exclusivamente ante sospecha de infección del sistema nervioso central.", "4.4 Pruebas diagnósticas", 20, "de sospecha de infección del Sistema Nervioso"],
+   ["dato_omitido", "Indica imagen urgente sin considerar que la crisis fue generalizada, la niña es mayor de 2 años y su exploración neurológica es normal.", ["B"], ["tomografía", "descartar tumor", "lesión", "sangrado"], "¿En qué pacientes pediátricos fue más útil la imagen tras una primera crisis? ¿Cumple esta niña alguna de esas condiciones?", "La imagen es de mayor utilidad en menores de 2 años o con crisis focales o prolongadas; en crisis generalizadas no provocadas los estudios de imagen no muestran alteraciones.", "4.5 Exámenes de gabinete", 22, "vez que sean menores de 2 años, o que hayan tenido"],
+   ["conocimiento", "Cree que debe impregnarse con fenitoína a quien ya se recuperó de una primera crisis.", ["A"], ["impregnar", "fenitoína", "prevenir otra crisis"], "Si la niña ya se recuperó por completo, ¿qué objetivo tendría la impregnación?", "No se recomienda la impregnación con fenitoína ni con otro antiepiléptico en quien presentó un primer evento convulsivo y se recuperó por completo.", "4.6.2 Tratamiento anticonvulsivo después de la primera crisis", 29, "impregnación con fenitoína, ni tampaco con otro"],
+   ["razonamiento", "Inicia tratamiento crónico porque reduce la recurrencia, sin ponderar que no cambia la remisión a largo plazo y tiene efectos adversos.", ["E"], ["evitar recurrencia", "segunda crisis", "prevención", "valproato"], "Si el antiepiléptico reduce una segunda crisis pero no cambia la remisión a largo plazo, ¿qué gana y qué arriesga esta niña sin factores de riesgo?", "Iniciar antiepilépticos tras una primera crisis disminuye el riesgo de una segunda, pero no modifica la remisión a largo plazo; la guía recomienda evitarlos salvo factores de riesgo.", "4.6.2 Tratamiento anticonvulsivo después de la primera crisis", 28, "disminuye el riesgo de una segunda crisis, pero no"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "eeg_primera_crisis",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Tras una primera crisis convulsiva no provocada, ¿qué estudio de gabinete recomienda la guía y para qué?",
+    "reverso": "Un electroencefalograma, para establecer un diagnóstico temprano.",
+    "cita": [
+     "4.5 Exámenes de gabinete",
+     22,
+     "para establecer un diagnóstico temprano"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "utilidad_estudio_imagen",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿En qué niños con primera crisis convulsiva es más útil un estudio de imagen?",
+    "reverso": "En menores de 2 años o con crisis focales o de larga duración. En crisis generalizadas no provocadas no suele mostrar alteraciones.",
+    "cita": [
+     "4.5 Exámenes de gabinete",
+     22,
+     "vez que sean menores de 2 años, o que hayan tenido"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "antiepileptico_no_cambia_remision",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué efecto tiene iniciar antiepiléptico después de una primera crisis?",
+    "reverso": "Baja el riesgo de una segunda crisis, pero no cambia la remisión a largo plazo y expone a efectos adversos.",
+    "cita": [
+     "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
+     28,
+     "modifica el porcentaje de remisión de las crisis a largo"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "abordaje_primera_crisis_recuperado",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Primera crisis convulsiva, paciente recuperado\"] --> B{\"¿Sospecha de infección del sistema nervioso central?\"}\n  B -->|\"Sí\"| C[\"Punción lumbar\"]\n  B -->|\"No\"| D[\"EEG para diagnóstico temprano\"]\n  D --> E{\"¿Menor de 2 años, crisis focal o de larga duración?\"}\n  E -->|\"Sí\"| F[\"Valorar estudio de imagen\"]\n  E -->|\"No\"| G[\"Sin imagen rutinaria\"]\n  F --> H{\"¿Factores de riesgo: crisis focal, durante el sueño, lesión previa, examen neurológico o EEG anormal, entre otros?\"}\n  G --> H\n  H -->|\"Sí\"| I[\"Personal calificado valora iniciar antiepiléptico\"]\n  H -->|\"No\"| J[\"Evitar antiepiléptico\"]\n  I --> K[\"Referir a segundo nivel para valoración por pediatría\"]\n  J --> K",
+    "citas": [
+     [
+      "4.4 Pruebas diagnósticas",
+      20,
+      "de sospecha de infección del Sistema Nervioso"
+     ],
+     [
+      "4.5 Exámenes de gabinete",
+      22,
+      "vez que sean menores de 2 años, o que hayan tenido"
+     ],
+     [
+      "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
+      28,
+      "Se recomienda el inicio de tratamiento antiepiléptico"
+     ],
+     [
+      "4.7 Criterios de referencia y contrarreferencia",
+      29,
+      "Toda persona en la que se sospecha CC de"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "sin_datos_infeccion",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Hoy no ha tenido vómito, diarrea ni fiebre",
+    "motivo": "Sin fiebre no hay sospecha de infección del sistema nervioso central, única indicación de punción lumbar. Sin vómito ni diarrea tampoco se piden laboratorios."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "crisis_generalizada_breve",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "movimientos tónico-clónicos generalizados de 2 minutos de duración",
+    "motivo": "Crisis generalizada y breve en una niña mayor de 2 años: la imagen no aporta y no se pide de rutina."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_factores_riesgo",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "estando despierta y jugando",
+    "motivo": "No fue durante el sueño. Con desarrollo y exploración normales y sin historia familiar, no tiene factores de riesgo para iniciar antiepiléptico."
+   }
+  ]},
+ {"t": "V1",
+  "vineta": "Masculino de 10 años, sin antecedentes patológicos ni familiares de epilepsia. Mientras desayunaba presentó movimientos clónicos del brazo y la hemicara derechos, de 3 minutos de duración, sin generalización. No hubo fiebre, vómito ni traumatismo. Una hora después está alerta, orientado, afebril y con exploración neurológica normal. Es valorado en urgencias de pediatría de un hospital general.",
+  "pregunta": "¿Cuál es el abordaje más adecuado?",
+  "op": ["Electroencefalograma, resonancia magnética de cráneo y valorar con el especialista el inicio de antiepiléptico por tratarse de una crisis focal",
+         "Electroencefalograma sin estudio de imagen, porque la imagen rutinaria no se recomienda tras una primera crisis",
+         "Tomografía de cráneo como estudio de elección para detectar lesión estructural",
+         "Citometría hemática, calcio y magnesio séricos",
+         "Punción lumbar"],
+  "rc": "A",
+  "pc": [["En crisis focales de primera vez, cerca de 50 % de los pacientes presentan alteraciones estructurales en TC o RM.", "4.5 Exámenes de gabinete", 23, "50% de las personas con crisis focales de primera vez"],
+         ["La RM es la modalidad de elección entre los estudios de imagen para detectar trastornos estructurales.", "4.5 Exámenes de gabinete", 23, "La RM constituye la modalidad de elección, entre los"],
+         ["Las crisis convulsivas focales son uno de los factores de riesgo para iniciar antiepiléptico, decisión que valora personal calificado de forma individual.", "4.6.2 Tratamiento anticonvulsivo después de la primera crisis", 28, "crisis convulsivas focales"]],
+  "rub": [
+   ["dato_omitido", "Aplica la regla de no hacer imagen rutinaria sin notar que la crisis fue focal.", ["B"], ["no imagen", "no es rutinaria", "solo EEG"], "¿Qué tipo de crisis tuvo el paciente y cómo cambia eso el rendimiento de la imagen?", "En crisis focales de primera vez cerca de la mitad presenta alteraciones estructurales; la imagen es de mayor utilidad en crisis focales o prolongadas.", "4.5 Exámenes de gabinete", 23, "50% de las personas con crisis focales de primera vez"],
+   ["conocimiento", "Cree que la tomografía es el estudio de imagen de elección.", ["C"], ["tomografía", "más rápida", "es más accesible"], "¿Qué estudio de imagen tiene mejor sensibilidad y especificidad para lesiones estructurales en epilepsia?", "La RM es la modalidad de elección y tiene mejor sensibilidad y especificidad que la TC.", "4.5 Exámenes de gabinete", 23, "La RM constituye la modalidad de elección, entre los"],
+   ["conocimiento", "Cree que los electrolitos y la biometría están indicados de rutina en el paciente recuperado.", ["D"], ["calcio", "magnesio", "descartar metabólica"], "¿Qué datos clínicos justificarían laboratorios en una primera crisis? ¿Los tiene?", "Se recomienda evitar la citometría hemática, el calcio y el magnesio de rutina en quien está totalmente recuperado de la primera crisis.", "4.4 Pruebas diagnósticas", 20, "citometría hemática, calcio y magnesio en la persona"],
+   ["razonamiento", "Busca infección del sistema nervioso central sin datos que la sugieran.", ["E"], ["punción", "neuroinfección", "encefalitis"], "¿Qué hallazgo tendría que estar presente para indicar punción lumbar?", "La punción lumbar se realiza exclusivamente ante sospecha de infección del sistema nervioso central.", "4.4 Pruebas diagnósticas", 20, "de sospecha de infección del Sistema Nervioso"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "crisis_focal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "movimientos clónicos del brazo y la hemicara derechos, de 3 minutos de duración, sin generalización",
+    "motivo": "Es una crisis focal: cerca de la mitad tiene alteraciones estructurales en la imagen, y es factor de riesgo para valorar antiepiléptico."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_fiebre_ni_traumatismo",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No hubo fiebre, vómito ni traumatismo",
+    "motivo": "No hay sospecha de infección del sistema nervioso central ni datos que justifiquen laboratorios."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "recuperacion_completa",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "está alerta, orientado, afebril y con exploración neurológica normal",
+    "motivo": "Totalmente recuperado: la guía recomienda evitar citometría, calcio y magnesio de rutina."
+   }
+  ]}
+ ]}

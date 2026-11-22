@@ -1,0 +1,434 @@
+[
+  {
+    "id": "RZ-PED-469-I",
+    "version": "0.2.0",
+    "sindrome": "rubeola_vacunacion",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+      "clave": "IMSS-469-11",
+      "archivo": "469GER.pdf"
+    },
+    "vineta": "Masculino de 12 meses acude a su unidad de medicina familiar para aplicarse la vacuna triple viral (SRP). Es la primera dosis; no ha recibido otras vacunas con virus vivos aparte de las de su esquema. A los 10 meses presentó urticaria generalizada minutos después de comer huevo revuelto, que cedió con antihistamínico. Hoy tiene rinorrea hialina leve desde ayer, sin fiebre, come bien y está activo. Sin otras enfermedades.",
+    "pregunta": "¿Cuál es la conducta más adecuada respecto a la vacuna triple viral?",
+    "opciones": {
+      "A": "Aplicarla hoy, porque la alergia al huevo no es contraindicación",
+      "B": "No aplicarla, porque presentó una reacción alérgica a una dosis previa de la vacuna",
+      "C": "Diferirla hasta que deje de ser alérgico al huevo",
+      "D": "Diferirla hasta que se recupere de su enfermedad",
+      "E": "No aplicarla, porque la alergia al huevo la contraindica"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "La alergia al huevo no es contraindicación para la vacuna triple viral.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La alergia al huevo no es contraindicación para la"
+        }
+      },
+      {
+        "texto": "La vacuna triple viral no se administra a quien tuvo reacciones alérgicas a una dosis previa o a algún componente de la vacuna.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "que han experimentado reacciones alérgicas a una dosis"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Confunde la reacción al huevo con una reacción a una dosis previa de la vacuna; es la primera dosis.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "reacción previa",
+          "dosis anterior",
+          "ya reaccionó"
+        ],
+        "pregunta_socratica_semilla": "¿La reacción alérgica del niño fue a una vacuna o a un alimento?",
+        "explicacion": "La triple viral no se administra a quien tuvo reacción alérgica a una dosis previa o a un componente de la vacuna; esta es la primera dosis y la reacción fue al huevo.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "que han experimentado reacciones alérgicas a una dosis"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Difiere la vacuna sin considerar que el cuadro actual es leve, afebril y con buen estado general.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "está enfermo",
+          "esperar a que se cure",
+          "gripa"
+        ],
+        "pregunta_socratica_semilla": "¿Qué tipo de enfermedad indica la guía como motivo para diferir la vacuna, y es el caso de este niño?",
+        "explicacion": "Los niños con enfermedad grave no deben vacunarse hasta que se recuperen; una rinorrea leve sin fiebre no es enfermedad grave.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "Niños con enfermedad grave no deben ser vacunados"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la alergia al huevo contraindica la triple viral.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "huevo",
+          "contraindicada",
+          "alergia"
+        ],
+        "pregunta_socratica_semilla": "¿Qué dice la guía sobre la alergia al huevo y la triple viral?",
+        "explicacion": "La alergia al huevo no es contraindicación para la vacuna triple viral.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La alergia al huevo no es contraindicación para la"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Condiciona la vacuna a la resolución de una alergia que no la contraindica, y deja al niño sin protección.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "esperar",
+          "cuando tolere huevo",
+          "más grande"
+        ],
+        "pregunta_socratica_semilla": "Si la alergia al huevo no es contraindicación, ¿qué gana el niño al retrasar la vacuna y qué arriesga?",
+        "explicacion": "La alergia al huevo no es contraindicación para la vacuna triple viral, por lo que no hay motivo para diferirla.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La alergia al huevo no es contraindicación para la"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-469-I-R1",
+        "tipo": "flashcard",
+        "concepto": "contraindicacion_alergica_srp",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué antecedente alérgico sí impide aplicar la vacuna triple viral?",
+        "reverso": "Una reacción alérgica a una dosis previa de la vacuna o a alguno de sus componentes, como la neomicina.",
+        "cita": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "previa de vacuna de rubéola o algún componente de ésta"
+        }
+      },
+      {
+        "id": "RZ-PED-469-I-R2",
+        "tipo": "flashcard",
+        "concepto": "enfermedad_que_difiere_vacuna",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué tipo de enfermedad aguda obliga a diferir la triple viral?",
+        "reverso": "La enfermedad grave: se vacuna al recuperarse. Un cuadro leve sin fiebre no la difiere.",
+        "cita": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "Niños con enfermedad grave no deben ser vacunados"
+        }
+      },
+      {
+        "id": "RZ-PED-469-I-R3",
+        "tipo": "flashcard",
+        "concepto": "esquema_srp_mexico",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿A qué edades se aplican las dos dosis de triple viral en el esquema mexicano?",
+        "reverso": "Primera dosis a los 12 meses y segunda dosis a los 6 años.",
+        "cita": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.2 Vacunación",
+          "pagina": 15,
+          "fragmento": "Primera dosis a los 12 meses"
+        }
+      },
+      {
+        "id": "RZ-PED-469-I-R4",
+        "tipo": "diagrama",
+        "concepto": "decision_aplicar_triple_viral",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño que acude por triple viral\"] --> B{\"¿Reacción alérgica a una dosis previa o a un componente de la vacuna?\"}\n  B -->|\"Sí\"| C[\"No aplicar\"]\n  B -->|\"No\"| D{\"¿Inmunodeficiencia grave?\"}\n  D -->|\"Sí\"| C\n  D -->|\"No\"| E{\"¿Enfermedad grave en este momento?\"}\n  E -->|\"Sí\"| F[\"Diferir hasta que se recupere\"]\n  E -->|\"No\"| G[\"Vacunar en esta visita\"]\n  H[\"Alergia al huevo\"] -->|\"No contraindica\"| G",
+        "citas": [
+          {
+            "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+            "clave": "IMSS-469-11",
+            "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+            "pagina": 17,
+            "fragmento": "previa de vacuna de rubéola o algún componente de ésta"
+          },
+          {
+            "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+            "clave": "IMSS-469-11",
+            "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+            "pagina": 18,
+            "fragmento": "con inmunodeficiencia grave por cualquier causa"
+          },
+          {
+            "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+            "clave": "IMSS-469-11",
+            "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+            "pagina": 17,
+            "fragmento": "Niños con enfermedad grave no deben ser vacunados"
+          },
+          {
+            "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+            "clave": "IMSS-469-11",
+            "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+            "pagina": 17,
+            "fragmento": "La alergia al huevo no es contraindicación para la"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-469-I-R5",
+        "tipo": "resaltado",
+        "concepto": "primera_dosis",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Es la primera dosis",
+        "motivo": "Nunca ha recibido la vacuna, así que no puede haber reaccionado a una dosis previa."
+      },
+      {
+        "id": "RZ-PED-469-I-R6",
+        "tipo": "resaltado",
+        "concepto": "reaccion_fue_al_huevo",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "urticaria generalizada minutos después de comer huevo revuelto",
+        "motivo": "La reacción fue a un alimento, no a la vacuna; la alergia al huevo no impide la triple viral."
+      },
+      {
+        "id": "RZ-PED-469-I-R7",
+        "tipo": "resaltado",
+        "concepto": "cuadro_leve_afebril",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "rinorrea hialina leve desde ayer, sin fiebre, come bien y está activo",
+        "motivo": "Es un cuadro leve, sin fiebre y con buen estado general: no es la enfermedad grave que obliga a diferir."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-469-V1",
+    "version": "0.2.0",
+    "sindrome": "rubeola_vacunacion",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-469-I",
+    "gpc_base": {
+      "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+      "clave": "IMSS-469-11",
+      "archivo": "469GER.pdf"
+    },
+    "vineta": "Femenino de 16 años recibió la vacuna triple viral en una campaña escolar hace 2 semanas. Hoy acude porque tiene una prueba de embarazo positiva; por fecha de última menstruación cursa 3 semanas desde la concepción, que ocurrió unos días después de la vacunación. Está asintomática y muy angustiada; pregunta si debe interrumpir el embarazo.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Recomendar la interrupción del embarazo por el riesgo de síndrome de rubéola congénita",
+      "B": "Asesorarla y explicar que la vacunación no es motivo para interrumpir el embarazo",
+      "C": "Indicar que no existe ningún riesgo y que no requiere asesoría",
+      "D": "Aplicar una segunda dosis de triple viral para completar el esquema",
+      "E": "Tranquilizarla porque la vacuna se aplicó hace más de 3 meses"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "Si una mujer queda embarazada dentro de las 3 semanas después de recibir la vacuna, debe asesorarse sobre los posibles daños al feto; la vacunación no debe ser motivo para considerar la terminación del embarazo.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La aplicación de la vacuna durante el embarazo no debe"
+        }
+      },
+      {
+        "texto": "No se han documentado casos de síndrome de rubéola congénita en mujeres vacunadas inadvertidamente al inicio del embarazo o que se embarazaron después de la vacunación.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "No se han documentado casos de síndrome de rubéola"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee el intervalo como si hubieran pasado más de 3 meses; la vacuna se aplicó hace 2 semanas.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "más de 3 meses",
+          "ya pasó el tiempo",
+          "no aplica"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tiempo pasó entre la vacuna y la concepción?",
+        "explicacion": "Se orienta a evitar el embarazo durante 3 meses tras la vacuna; si se embaraza dentro de las 3 semanas siguientes debe recibir asesoría sobre los posibles daños.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "embarazada dentro de las 3 semanas después de recibir"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Equipara un riesgo teórico con el de la infección natural y propone interrumpir.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "interrumpir",
+          "riesgo para el bebé",
+          "rubéola congénita"
+        ],
+        "pregunta_socratica_semilla": "¿Se han documentado casos de síndrome de rubéola congénita tras la vacunación inadvertida? ¿Qué dice la guía sobre interrumpir?",
+        "explicacion": "La aplicación de la vacuna durante el embarazo no debe ser motivo para considerar la terminación del embarazo.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La aplicación de la vacuna durante el embarazo no debe"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la guía indica asesorar a la paciente.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "sin riesgo",
+          "no pasa nada",
+          "no requiere"
+        ],
+        "pregunta_socratica_semilla": "¿Qué indica la guía hacer cuando el embarazo ocurre dentro de las 3 semanas después de la vacuna?",
+        "explicacion": "Si una mujer se embaraza dentro de las 3 semanas después de recibir la vacuna, debe ser asesorada sobre los posibles daños al feto.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "embarazada dentro de las 3 semanas después de recibir"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la triple viral no se aplica durante el embarazo.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "segunda dosis",
+          "completar esquema",
+          "refuerzo"
+        ],
+        "pregunta_socratica_semilla": "¿Puede aplicarse la triple viral a una mujer que se sabe embarazada?",
+        "explicacion": "La vacuna triple viral no debe administrarse a mujeres que se sabe que están embarazadas.",
+        "cita_gpc": {
+          "guia": "Prevención, Diagnóstico y Tratamiento de la Rubéola en Primer Nivel de Atención",
+          "clave": "IMSS-469-11",
+          "seccion": "4.1.3 Efectos secundarios, Precauciones y Contraindicaciones de la vacuna contra la Rubéola",
+          "pagina": 17,
+          "fragmento": "La vacuna triple viral no debe administrarse a mujeres"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-469-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "vacuna_hace_dos_semanas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "recibió la vacuna triple viral en una campaña escolar hace 2 semanas",
+        "motivo": "Pasaron 2 semanas, no 3 meses: está dentro del periodo en que la guía pide asesorar sobre posibles daños al feto."
+      },
+      {
+        "id": "RZ-PED-469-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "concepcion_tras_vacuna",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "la concepción, que ocurrió unos días después de la vacunación",
+        "motivo": "Se embarazó en las 3 semanas siguientes: requiere asesoría, pero la vacunación no justifica interrumpir el embarazo."
+      }
+    ]
+  }
+]

@@ -1,0 +1,473 @@
+[
+  {
+    "id": "RZ-PED-627-I",
+    "version": "0.2.0",
+    "sindrome": "fibrosis_quistica_diagnostico",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+      "clave": "IMSS-627-13",
+      "archivo": "627GER.pdf"
+    },
+    "vineta": "Masculino de 2 meses, peso 4.8 kg, con tamiz neonatal positivo por tripsinógeno inmunorreactivo elevado. Asintomático, con buena ganancia ponderal y evacuaciones normales. Se le realizó una cuantificación de cloruros en sudor por iontoforesis con pilocarpina (método de Gibson-Cooke) con muestra adecuada de 90 mg; el resultado fue de 72 mmol/L. Es la primera determinación.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Confirmar el diagnóstico con este resultado e iniciar el manejo de fibrosis quística",
+      "B": "Considerar confirmado el diagnóstico desde el tamiz neonatal positivo",
+      "C": "Descartar fibrosis quística, porque el cloro en sudor es menor de 40 mmol/L",
+      "D": "Solicitar solo estudio molecular, porque es más preciso que la prueba de sudor",
+      "E": "Repetir la cuantificación de cloruros en sudor; dos determinaciones mayores de 60 mmol/L confirman el diagnóstico"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Con el método de Gibson-Cooke, el cloro menor de 40 mmol/L descarta el diagnóstico, de 40 a 60 mmol/L es dudoso y mayor de 60 mmol/L en 2 determinaciones distintas lo confirma.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "distintas confirman el diagnóstico"
+        }
+      },
+      {
+        "texto": "La cuantificación de cloruro en sudor por iontoforesis con pilocarpina es el estándar de oro para el diagnóstico de fibrosis quística, aun con pruebas genéticas disponibles.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee el valor de cloro como menor de 40 mmol/L; el resultado es de 72 mmol/L.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "descarta",
+          "normal",
+          "negativo"
+        ],
+        "pregunta_socratica_semilla": "¿Cuál fue el valor de cloro en sudor y en qué rango cae según la guía?",
+        "explicacion": "Un cloro menor de 40 mmol/L descarta el diagnóstico; mayor de 60 mmol/L en 2 determinaciones lo confirma.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "determinación de cloro < 40 mmo/L descarta"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Confirma el diagnóstico sin considerar que solo hay una determinación.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "ya está confirmado",
+          "mayor de 60",
+          "iniciar tratamiento"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántas determinaciones de cloro en sudor tiene el paciente y cuántas exige la guía?",
+        "explicacion": "Todo resultado positivo debe confirmarse con la repetición de la cuantificación de cloruros en sudor en otro momento u otra prueba diagnóstica disponible.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 26,
+          "fragmento": "confirmados con la repetición de la Prueba de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que el tamiz neonatal confirma el diagnóstico.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "tamiz positivo",
+          "tripsinógeno",
+          "ya se sabe"
+        ],
+        "pregunta_socratica_semilla": "¿Qué mide el tamiz neonatal y qué prueba se requiere después de un tamiz positivo?",
+        "explicacion": "El tamiz neonatal identifica valores altos de tripsinógeno inmunorreactivo; en todo neonato con tamiz positivo debe realizarse cloro en sudor.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que la prueba genética desplaza a la prueba de sudor como estándar.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "molecular",
+          "genética",
+          "más preciso"
+        ],
+        "pregunta_socratica_semilla": "¿Qué prueba considera la guía el estándar de oro para confirmar fibrosis quística?",
+        "explicacion": "A pesar de la disponibilidad de pruebas genéticas, la cuantificación de cloruro en sudor por iontoforesis con pilocarpina es el estándar de oro.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-627-I-R1",
+        "tipo": "flashcard",
+        "concepto": "tamiz_neonatal_no_confirma",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Un tamiz neonatal positivo para fibrosis quística confirma el diagnóstico?",
+        "reverso": "No. Todo neonato con tamiz positivo requiere cuantificación de cloro en sudor.",
+        "cita": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+        }
+      },
+      {
+        "id": "RZ-PED-627-I-R2",
+        "tipo": "flashcard",
+        "concepto": "estandar_de_oro_prueba_sudor",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuál es el estándar de oro para el diagnóstico de fibrosis quística, aun con pruebas genéticas disponibles?",
+        "reverso": "La cuantificación de cloruro en sudor por iontoforesis con pilocarpina.",
+        "cita": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+        }
+      },
+      {
+        "id": "RZ-PED-627-I-R3",
+        "tipo": "flashcard",
+        "concepto": "confirmacion_resultado_positivo",
+        "para_errores": [
+          "dato_omitido",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Ante una prueba cuantitativa de cloruro en sudor positiva, ¿cómo se obtiene el diagnóstico de certeza?",
+        "reverso": "Repitiendo la prueba en un tiempo diferente, o con 2 mutaciones CFTR conocidas o diferencia de potencial nasal anormal.",
+        "cita": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 28,
+          "fragmento": "confirmar por la identificación de 2"
+        }
+      },
+      {
+        "id": "RZ-PED-627-I-R4",
+        "tipo": "diagrama",
+        "concepto": "interpretacion_cloro_en_sudor",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Tamiz neonatal positivo para FQ\"] --> B[\"Cloro en sudor por Gibson-Cooke con muestra adecuada\"]\n  B --> C{\"¿Valor de cloro?\"}\n  C -->|\"Menor de 40 mmol/L\"| D[\"Descarta el diagnóstico\"]\n  C -->|\"40 a 60 mmol/L\"| E[\"Dudoso: repetir la prueba\"]\n  C -->|\"Mayor de 60 mmol/L\"| F{\"¿Hay 2 determinaciones distintas mayores de 60 mmol/L?\"}\n  F -->|\"No\"| G[\"Repetir en otro momento o confirmar con 2 mutaciones CFTR o DPN\"]\n  F -->|\"Sí\"| H[\"Diagnóstico confirmado\"]\n  G --> F\n  E --> I{\"¿Persiste limítrofe?\"}\n  I -->|\"Sí\"| J[\"Genotipo, función pancreática y otras pruebas auxiliares\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+            "clave": "IMSS-627-13",
+            "seccion": "4.2 Pruebas diagnósticas",
+            "pagina": 23,
+            "fragmento": "tamiz neonatal positivo para FQ, deberá"
+          },
+          {
+            "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+            "clave": "IMSS-627-13",
+            "seccion": "4.2 Pruebas diagnósticas",
+            "pagina": 24,
+            "fragmento": "distintas confirman el diagnóstico"
+          },
+          {
+            "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+            "clave": "IMSS-627-13",
+            "seccion": "4.2 Pruebas diagnósticas",
+            "pagina": 28,
+            "fragmento": "confirmar por la identificación de 2"
+          },
+          {
+            "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+            "clave": "IMSS-627-13",
+            "seccion": "4.2 Pruebas diagnósticas",
+            "pagina": 29,
+            "fragmento": "Todos los resultados dudosos de prueba del sudor"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-627-I-R5",
+        "tipo": "tabla",
+        "concepto": "valores_cloro_gibson_cooke",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Cloro en sudor (Gibson-Cooke)",
+          "Interpretación"
+        ],
+        "filas": [
+          [
+            "Menor de 40 mmol/L",
+            "Descarta el diagnóstico"
+          ],
+          [
+            "40 a 60 mmol/L",
+            "Dudoso"
+          ],
+          [
+            "Mayor de 60 mmol/L en 2 determinaciones distintas",
+            "Confirma el diagnóstico"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 24,
+          "fragmento": "resultado 40-60 mmol/L de cloro es dudoso"
+        }
+      },
+      {
+        "id": "RZ-PED-627-I-R6",
+        "tipo": "resaltado",
+        "concepto": "valor_cloro_72",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "el resultado fue de 72 mmol/L",
+        "motivo": "Un valor mayor de 60 mmol/L está en rango positivo; no descarta la enfermedad."
+      },
+      {
+        "id": "RZ-PED-627-I-R7",
+        "tipo": "resaltado",
+        "concepto": "primera_determinacion",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Es la primera determinación",
+        "motivo": "La confirmación exige 2 determinaciones distintas mayores de 60 mmol/L; con una sola todavía no hay diagnóstico de certeza."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-627-V1",
+    "version": "0.2.0",
+    "sindrome": "fibrosis_quistica_diagnostico",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-627-I",
+    "gpc_base": {
+      "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+      "clave": "IMSS-627-13",
+      "archivo": "627GER.pdf"
+    },
+    "vineta": "Recién nacida de término, 5 días de vida, peso 3,400 g, con tamiz neonatal positivo por tripsinógeno inmunorreactivo elevado. Asintomática, alimentada al seno materno, sin edema, sin ictericia ni distensión abdominal. Los padres preguntan cuándo se le hará la prueba de sudor.",
+    "pregunta": "¿Cuál es el momento más adecuado para realizar la cuantificación de cloruros en sudor?",
+    "opciones": {
+      "A": "A partir de las 2 semanas de vida, estando hidratada y sin enfermedad sistémica significativa",
+      "B": "A los 6 meses de edad, cuando produzca suficiente sudor",
+      "C": "Sustituirla por una prueba de conductividad en sudor en este momento",
+      "D": "Solo si presenta síntomas respiratorios o digestivos",
+      "E": "Hoy mismo, para no retrasar el diagnóstico"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En neonatos asintomáticos con tamiz positivo, el cloro en sudor se realiza a partir de las 2 semanas de vida y con más de 2 kg; hidratados y sin enfermedad sistémica significativa.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "semanas de vida y con un peso > 2 kg"
+        }
+      },
+      {
+        "texto": "En recién nacidos de término el sodio y el cloruro de sudor pueden estar elevados en los primeros 7 días, sobre todo en las primeras 48 horas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 26,
+          "fragmento": "de sodio y cloruro de sudor puede ser elevada"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que en los primeros días el cloro en sudor puede estar elevado.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "hoy",
+          "de inmediato",
+          "no esperar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué pasa con el cloruro en sudor en los primeros 7 días de vida?",
+        "explicacion": "En recién nacidos de término el sodio y el cloruro de sudor pueden estar elevados en los primeros 7 días, especialmente en las primeras 48 horas.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 26,
+          "fragmento": "de sodio y cloruro de sudor puede ser elevada"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Retrasa la prueba más de lo necesario.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "6 meses",
+          "más grande",
+          "esperar"
+        ],
+        "pregunta_socratica_semilla": "¿A partir de qué edad indica la guía la prueba de sudor en el neonato asintomático con tamiz positivo?",
+        "explicacion": "En neonatos asintomáticos con tamiz positivo el cloro en sudor se realiza a partir de las 2 semanas de vida y con peso mayor de 2 kg.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "semanas de vida y con un peso > 2 kg"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Condiciona la confirmación a la aparición de síntomas y pierde la ventaja del diagnóstico por tamiz.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "si tiene síntomas",
+          "asintomática",
+          "esperar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué beneficio se pierde si se espera a que aparezcan síntomas?",
+        "explicacion": "En todos los neonatos asintomáticos con tamiz positivo debe realizarse cloro en sudor a partir de las 2 semanas de vida.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 23,
+          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Elige la conductividad sin considerar que es solo de escrutinio y que la paciente aún no tiene la edad adecuada.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "conductividad",
+          "Macroduct",
+          "más fácil"
+        ],
+        "pregunta_socratica_semilla": "¿Para qué se aprobó la prueba de conductividad y qué se hace con un resultado elevado?",
+        "explicacion": "La conductividad (Wescor Macroduct) se aprobó como escrutinio; un resultado de 50 mmol/L obliga a remitir a un centro con prueba cuantitativa de cloruros en sudor.",
+        "cita_gpc": {
+          "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
+          "clave": "IMSS-627-13",
+          "seccion": "4.2 Pruebas diagnósticas",
+          "pagina": 25,
+          "fragmento": "50mmol / L, debe ser remitidos a un centro de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-627-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "edad_cinco_dias",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "5 días de vida",
+        "motivo": "En el neonato asintomático la prueba se hace a partir de las 2 semanas; en los primeros 7 días el cloro en sudor puede salir elevado."
+      },
+      {
+        "id": "RZ-PED-627-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "neonata_asintomatica",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Asintomática, alimentada al seno materno",
+        "motivo": "Aunque no tenga síntomas, todo neonato con tamiz positivo requiere cloro en sudor; no se espera a que aparezcan."
+      },
+      {
+        "id": "RZ-PED-627-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "sin_edema",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "sin edema",
+        "motivo": "El edema o los esteroides sistémicos obligan a retrasar la prueba; esta niña no tiene ese motivo de retraso."
+      }
+    ]
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "RZ-PED-602-I",
+    "version": "0.2.0",
+    "sindrome": "pediculosis_capitis",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+      "clave": "IMSS-602-13",
+      "archivo": "602GER.pdf"
+    },
+    "vineta": "Femenino de 8 años con prurito en cuero cabelludo de 2 semanas. Con peine de dientes finos se observan piojos vivos y liendres adheridas al tallo en las regiones occipital y retroauricular, con excoriaciones leves. No ha recibido tratamiento. Su hermana de 6 años, con quien comparte cama y cepillo, también se rasca la cabeza desde hace unos días. Sin alergias.",
+    "pregunta": "¿Cuál es el manejo más adecuado?",
+    "opciones": {
+      "A": "Permetrina al 1 % por 10 minutos, repetir a los 7-10 días y revisar a los convivientes",
+      "B": "Lindano al 1 % como tratamiento de primera elección",
+      "C": "No usar pediculicidas, porque solo se recomiendan a partir de los 10 años",
+      "D": "Ivermectina oral de entrada por ser más eficaz",
+      "E": "Tratar solo a la paciente, porque es el caso confirmado"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "La permetrina al 1 % en loción o crema es el tratamiento de elección por su eficacia y ausencia de toxicidad.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 20,
+          "fragmento": "La permetrina al 1% en loción o crema, es el"
+        }
+      },
+      {
+        "texto": "Se lava el cabello con champú común, se seca con toalla, se aplica la permetrina 10 minutos, se enjuaga y se repite a los 7 a 10 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 21,
+          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+        }
+      },
+      {
+        "texto": "Se examina a los miembros de la familia que están en contacto con el caso índice.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.3 Medidas de Prevención",
+          "pagina": 18,
+          "fragmento": "Examinar a los miembros de la familia que estén"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Aplica un límite de edad que no corresponde; la guía recomienda pediculicidas en mayores de 5 años y la paciente tiene 8.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "muy pequeña",
+          "edad",
+          "no usar químicos"
+        ],
+        "pregunta_socratica_semilla": "¿Qué edad tiene la paciente y a partir de qué edad recomienda la guía los pediculicidas?",
+        "explicacion": "Los pediculicidas son recomendables en niños mayores de 5 años, adolescentes y adultos.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 21,
+          "fragmento": "Los pediculicidas, son recomendables en niños"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Trata solo a la paciente sin considerar a la hermana con prurito, que comparte cama y cepillo.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "solo a ella",
+          "caso confirmado",
+          "individual"
+        ],
+        "pregunta_socratica_semilla": "¿Quién más en la casa tiene síntomas y comparte objetos con la paciente?",
+        "explicacion": "Ante un caso índice se examina a los miembros de la familia en contacto con él.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.3 Medidas de Prevención",
+          "pagina": 18,
+          "fragmento": "Examinar a los miembros de la familia que estén"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce la toxicidad del lindano y su lugar en el tratamiento.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "lindano",
+          "champú",
+          "más fuerte"
+        ],
+        "pregunta_socratica_semilla": "¿Qué toxicidad tiene el lindano en niños y cuándo lo aconseja la guía?",
+        "explicacion": "El lindano puede causar convulsiones en niños y solo se aconseja cuando no se tolera el tratamiento de primera línea o este ha fallado.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 21,
+          "fragmento": "pacientes que no toleran el tratamiento de primera"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Elige el tratamiento de mayor potencia para un primer episodio no complicado.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "ivermectina",
+          "oral",
+          "más eficaz"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situaciones reserva la guía la ivermectina?",
+        "explicacion": "La ivermectina se recomienda en infestaciones masivas y en casos de resistencia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.6 Tratamiento en resistencia",
+          "pagina": 23,
+          "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-602-I-R1",
+        "tipo": "flashcard",
+        "concepto": "tecnica_permetrina",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cómo se aplica la crema de enjuague de permetrina al 1 %?",
+        "reverso": "Lavar con champú común, secar con toalla, aplicar, dejar actuar 10 minutos, enjuagar y repetir a los 7 a 10 días.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 21,
+          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+        }
+      },
+      {
+        "id": "RZ-PED-602-I-R2",
+        "tipo": "flashcard",
+        "concepto": "toxicidad_lindano",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Por qué el lindano no es de primera elección en niños?",
+        "reverso": "Es tóxico para el sistema nervioso y puede causar convulsiones; se reserva para intolerancia o falla del tratamiento de primera línea.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 21,
+          "fragmento": "pacientes que no toleran el tratamiento de primera"
+        }
+      },
+      {
+        "id": "RZ-PED-602-I-R3",
+        "tipo": "flashcard",
+        "concepto": "indicacion_ivermectina",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿En qué situaciones se reserva la ivermectina en pediculosis?",
+        "reverso": "En infestaciones masivas y en casos de resistencia, no en un primer episodio sin tratamiento previo.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.6 Tratamiento en resistencia",
+          "pagina": 23,
+          "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+        }
+      },
+      {
+        "id": "RZ-PED-602-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_pediculosis_capitis",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Liendres o piojos vivos en piel cabelluda\"] --> B[\"Permetrina al 1 %: 10 minutos, enjuagar y segunda aplicación a los 7 a 10 días\"]\n  A --> C[\"Examinar a los familiares en contacto con el caso índice\"]\n  B --> D[\"Evaluar a los 15 días del inicio del tratamiento\"]\n  D --> E{\"¿Se corrobora la curación?\"}\n  E -->|\"Sí\"| F[\"Curación confirmada\"]\n  E -->|\"No\"| G[\"Manejo de resistencia o falla terapéutica\"]\n  G --> H{\"¿Infestación masiva o resistencia?\"}\n  H -->|\"Sí\"| I[\"Considerar ivermectina\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+            "clave": "IMSS-602-13",
+            "seccion": "4.5 Tratamiento",
+            "pagina": 21,
+            "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+            "clave": "IMSS-602-13",
+            "seccion": "4.3 Medidas de Prevención",
+            "pagina": 18,
+            "fragmento": "Examinar a los miembros de la familia que estén"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+            "clave": "IMSS-602-13",
+            "seccion": "4.5 Tratamiento",
+            "pagina": 22,
+            "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+            "clave": "IMSS-602-13",
+            "seccion": "4.6 Tratamiento en resistencia",
+            "pagina": 23,
+            "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-602-I-R5",
+        "tipo": "resaltado",
+        "concepto": "edad_permite_pediculicida",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Femenino de 8 años",
+        "motivo": "Los pediculicidas se recomiendan en mayores de 5 años; con 8 años no hay razón para evitarlos."
+      },
+      {
+        "id": "RZ-PED-602-I-R6",
+        "tipo": "resaltado",
+        "concepto": "hermana_sintomatica",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Su hermana de 6 años, con quien comparte cama y cepillo, también se rasca la cabeza",
+        "motivo": "Hay que examinar a los familiares en contacto con el caso índice; la hermana tiene prurito y comparte objetos."
+      },
+      {
+        "id": "RZ-PED-602-I-R7",
+        "tipo": "resaltado",
+        "concepto": "sin_tratamiento_previo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "No ha recibido tratamiento",
+        "motivo": "Es un primer episodio sin falla previa ni infestación masiva: no hay indicación de terapia para resistencia."
+      },
+      {
+        "id": "RZ-PED-602-I-R8",
+        "tipo": "imagen",
+        "concepto": "liendre_adherida_al_pelo",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Peat%C3%A4i_muna_%28ting%29.jpg/960px-Peat%C3%A4i_muna_%28ting%29.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Peat%C3%A4i_muna_(ting).jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Janek Lass",
+        "licencia": "CC BY 4.0",
+        "descripcion": "Liendre de Pediculus humanus capitis firmemente adherida al tallo del pelo, vista al microscopio.",
+        "archivo": "assets/RZ-PED-602-I-R8.jpg",
+        "sha256": "4e3c0304594a2519c4a5be5ae6de1067d5705930f3b130a13e3c8d4623231586"
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-602-V1",
+    "version": "0.2.0",
+    "sindrome": "pediculosis_capitis",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-602-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+      "clave": "IMSS-602-13",
+      "archivo": "602GER.pdf"
+    },
+    "vineta": "Masculino de 11 años con diagnóstico de pediculosis capitis; hoy se le aplicó la primera dosis de permetrina al 1 %. La madre pregunta qué hacer con la ropa de cama, los peluches, la gorra, los audífonos y los peines del niño para que no se vuelva a infestar.",
+    "pregunta": "¿Cuál es la recomendación más adecuada?",
+    "opciones": {
+      "A": "Lavar la ropa con agua fría sin necesidad de calor",
+      "B": "Lavar ropa y peluches a 50 °C y aislar peines y gorra en bolsa sellada 2 semanas",
+      "C": "Revisar al niño hasta que vuelva a tener prurito",
+      "D": "Guardar los objetos en una bolsa sellada durante 48 horas",
+      "E": "No es necesaria ninguna medida con los objetos, porque basta la permetrina"
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "La ropa de uso personal, de cama, los peluches y los juguetes de tela se lavan con detergente y después a 50 °C durante 30 minutos por día, en 2 ocasiones.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30"
+        }
+      },
+      {
+        "texto": "Los sombreros, peines y auriculares se limpian con alcohol isopropílico o se guardan en bolsa de plástico sellada por dos semanas para interrumpir el ciclo del piojo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "plástico sellada, por dos semanas en busca de"
+        }
+      },
+      {
+        "texto": "Se recomienda evaluar al paciente a los 15 días del inicio del tratamiento para corroborar la curación.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce el tiempo necesario para interrumpir el ciclo del piojo.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "48 horas",
+          "dos días",
+          "poco tiempo"
+        ],
+        "pregunta_socratica_semilla": "¿Cuánto tiempo deben permanecer los objetos en bolsa sellada según la guía?",
+        "explicacion": "Los sombreros, peines y auriculares se guardan en bolsa de plástico sellada por dos semanas para interrumpir el ciclo biológico del piojo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "plástico sellada, por dos semanas en busca de"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce que la ropa debe someterse a calor después del lavado.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "agua fría",
+          "solo lavar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué temperatura y tiempo indica la guía para la ropa de cama?",
+        "explicacion": "La ropa se lava con detergente y después se somete a 50 °C durante 30 minutos por día, en 2 ocasiones.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Supone que el pediculicida basta y descuida la reinfestación por objetos.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "basta el medicamento",
+          "no hace falta",
+          "solo la cabeza"
+        ],
+        "pregunta_socratica_semilla": "Si quedan piojos o liendres en la gorra y la almohada, ¿qué pasará después del tratamiento?",
+        "explicacion": "La desinfección de ropa y objetos busca interrumpir el ciclo biológico del piojo.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "plástico sellada, por dos semanas en busca de"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Condiciona la revisión a los síntomas en lugar de programar la evaluación de curación.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "cuando tenga comezón",
+          "si vuelve",
+          "sin cita"
+        ],
+        "pregunta_socratica_semilla": "¿Cuándo recomienda la guía reevaluar al paciente para confirmar la curación?",
+        "explicacion": "Se recomienda evaluar a los pacientes a los 15 días del inicio del tratamiento para corroborar la curación o indicar manejo de resistencia.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
+          "clave": "IMSS-602-13",
+          "seccion": "4.5 Tratamiento",
+          "pagina": 22,
+          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-602-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "objetos_distintos_medidas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "la ropa de cama, los peluches, la gorra, los audífonos y los peines",
+        "motivo": "Son dos grupos: la ropa y los peluches se lavan y se someten a calor; gorra, audífonos y peines se limpian o se guardan sellados."
+      },
+      {
+        "id": "RZ-PED-602-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "primera_dosis",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "hoy se le aplicó la primera dosis de permetrina al 1 %",
+        "motivo": "Falta la segunda aplicación a los 7 a 10 días y la evaluación de curación a los 15 días del inicio."
+      },
+      {
+        "id": "RZ-PED-602-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "evitar_reinfestacion",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "para que no se vuelva a infestar",
+        "motivo": "Desinfectar ropa y objetos busca interrumpir el ciclo biológico del piojo; el pediculicida solo no lo garantiza."
+      }
+    ]
+  }
+]

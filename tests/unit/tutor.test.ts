@@ -3,12 +3,11 @@ import { FallbackTutorEngine } from "@/lib/ai/fallback-engine";
 import { ResilientTutorEngine } from "@/lib/ai/resilient-engine";
 import { chunkText, createSseParser, encodeSse, replyToEvents } from "@/lib/ai/sse";
 import { revealsAnswer, type TutorEngine, type TutorInput } from "@/lib/ai/tutor-engine";
-import { getItem } from "@/lib/content";
 import { TutorRequestSchema } from "@/lib/schemas/api";
 import { TutorEventSchema } from "@/lib/schemas/tutor";
+import { BRONQUIOLITIS, fixtureItem } from "../fixtures/catalog";
 
-const item = getItem("caso-bronquiolitis-01");
-if (!item) throw new Error("falta el caso");
+const item = fixtureItem(BRONQUIOLITIS);
 
 function input(overrides: Partial<TutorInput> = {}): TutorInput {
   return {
@@ -17,7 +16,7 @@ function input(overrides: Partial<TutorInput> = {}): TutorInput {
     selectedOptionId: "a",
     tools: {
       registerAttempt: vi.fn(async () => ({ ok: true })),
-      nextCase: vi.fn(async () => ({ topic: "Bronquiolitis", title: "x" })),
+      nextCase: vi.fn(async () => ({ topic: "Bronquiolitis aguda", title: "x" })),
     },
     ...overrides,
   };
@@ -92,12 +91,8 @@ describe("salvaguarda de respuesta", () => {
   it("detecta cuando se revela la opción correcta", () => {
     const it_ = item as NonNullable<typeof item>;
     expect(revealsAnswer("La respuesta correcta es la b.", it_)).toBe(true);
-    expect(
-      revealsAnswer(
-        "Deberías elegir medidas de soporte: aspiración de secreciones nasales, hidratación y vigilancia de datos de alarma",
-        it_,
-      ),
-    ).toBe(true);
+    const correctText = it_.options.find((o) => o.id === it_.correctOptionId)?.text ?? "";
+    expect(revealsAnswer(`Deberías elegir: ${correctText}`, it_)).toBe(true);
     expect(revealsAnswer("¿Qué mecanismo produce las sibilancias?", it_)).toBe(false);
   });
 });

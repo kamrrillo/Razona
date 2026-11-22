@@ -5,8 +5,12 @@ import { ExamStartRequestSchema, ExamStartResponseSchema } from "@/lib/schemas/a
 export async function POST(request: Request) {
   try {
     const { supabase, userId } = await requireAuth();
-    await parseJson(request, ExamStartRequestSchema);
-    const examId = await startExam(supabase, userId);
+    const body = await parseJson(request, ExamStartRequestSchema);
+    const scope =
+      body.scope === "global" || !body.ref
+        ? ({ kind: "global" } as const)
+        : { kind: body.scope, ref: body.ref };
+    const examId = await startExam(supabase, userId, scope);
     return ok(ExamStartResponseSchema, { examId });
   } catch (error) {
     return handleError(error);

@@ -1,0 +1,460 @@
+[
+  {
+    "id": "RZ-PED-261-I",
+    "version": "0.2.0",
+    "sindrome": "rinosinusitis_aguda",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+      "clave": "IMSS-261-10",
+      "archivo": "261GER.pdf"
+    },
+    "vineta": "Femenino de 6 años, peso 20 kg, cursa primer año de primaria. Presenta rinorrea mucopurulenta, obstrucción nasal y tos diurna desde hace 12 días, sin ninguna mejoría. Temperatura máxima de 37.8 °C. No ha recibido antibióticos en el último año y no tiene enfermedades crónicas. A la exploración: descarga posterior purulenta, sin edema periorbitario, sin alteraciones neurológicas ni oculares. Sin alergia a la penicilina.",
+    "pregunta": "¿Cuál es el manejo más adecuado?",
+    "opciones": {
+      "A": "Amoxicilina con clavulanato 80-90 mg/kg/día en dos dosis durante 10 a 14 días",
+      "B": "Solo tratamiento sintomático, porque no se debe dar antibiótico antes de 10 días de evolución",
+      "C": "Amoxicilina 45 mg/kg/día en dos dosis durante 5 días",
+      "D": "Radiografía simple de senos paranasales antes de iniciar el tratamiento",
+      "E": "Amoxicilina 45 mg/kg/día en dos dosis durante 10 a 14 días"
+    },
+    "respuesta_correcta": "E",
+    "puntos_clave": [
+      {
+        "texto": "Se recomienda tratamiento antimicrobiano ante la sospecha de rinosinusitis bacteriana; no antes de 10 días de evolución salvo presentación grave.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 30,
+          "fragmento": "antes de los 10 días de evolución, a"
+        }
+      },
+      {
+        "texto": "En sinusitis aguda bacteriana de bajo riesgo se recomienda amoxicilina o amoxicilina con clavulanato a 45 mg/kg/día en dos dosis por 10 a 14 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 32,
+          "fragmento": "clavulanato 45 MG/Kg./día en"
+        }
+      },
+      {
+        "texto": "Los niños que acuden a guardería y los que recibieron antibiótico previo son población en riesgo de cepas resistentes.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+          "pagina": 14,
+          "fragmento": "niños que acuden a guarderías"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Lee mal la duración: la paciente lleva 12 días, más del umbral de 10.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "menos de 10 días",
+          "esperar",
+          "es viral",
+          "solo síntomas"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántos días de evolución tiene el cuadro y cuál es el umbral de la guía para el antibiótico?",
+        "explicacion": "No se recomienda antibiótico antes de 10 días de evolución salvo datos de infección bacteriana grave; esta paciente lleva 12 días sin mejoría.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 30,
+          "fragmento": "antes de los 10 días de evolución, a"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa la dosis alta de alto riesgo sin notar que la paciente no va a guardería ni recibió antibióticos recientes.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "dosis alta",
+          "resistencia",
+          "clavulanato",
+          "neumococo resistente"
+        ],
+        "pregunta_socratica_semilla": "¿Qué factores de riesgo de cepas resistentes tiene esta niña?",
+        "explicacion": "La población en riesgo de cepas resistentes son los niños que acuden a guardería o con manejo previo con antibiótico; sin ellos, se elige la dosis baja.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+          "pagina": 14,
+          "fragmento": "niños que acuden a guarderías"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la radiografía de senos paranasales es necesaria para el diagnóstico inicial.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "radiografía",
+          "Waters",
+          "niveles hidroaéreos",
+          "confirmar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué recomienda la guía sobre las radiografías simples en la etapa inicial sin complicaciones?",
+        "explicacion": "No se recomiendan las radiografías simples de senos paranasales para el diagnóstico de rinosinusitis bacteriana en etapa inicial y sin datos de complicación.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.3 Pruebas Diagnósticas",
+          "pagina": 28,
+          "fragmento": "No se recomiendan las radiografías simples"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Concluye que, si el esquema corto es igual de eficaz, es preferible, sin ponderar el riesgo de portación de cepas resistentes.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "5 días",
+          "menos días",
+          "misma eficacia",
+          "esquema corto"
+        ],
+        "pregunta_socratica_semilla": "Si los esquemas corto y largo tienen eficacia similar, ¿qué otro desenlace los diferencia?",
+        "explicacion": "Los tratamientos de 5 días y de 10 a 14 días tienen eficacia similar, pero con los cortos aumenta el riesgo de portadores asintomáticos de cepas resistentes; la duración recomendada es de 10 a 14 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 31,
+          "fragmento": "incrementa el riesgo de portadores"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-261-I-R1",
+        "tipo": "flashcard",
+        "concepto": "umbral_10_dias_antibiotico",
+        "para_errores": [
+          "lectura",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En rinosinusitis aguda sin presentación grave, ¿desde cuántos días de evolución se recomienda iniciar antibiótico?",
+        "reverso": "Después de 10 días de evolución. Antes de ese plazo solo si hay infección bacteriana con presentación grave.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 30,
+          "fragmento": "antes de los 10 días de evolución, a"
+        }
+      },
+      {
+        "id": "RZ-PED-261-I-R2",
+        "tipo": "flashcard",
+        "concepto": "riesgo_cepas_resistentes",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué niños se consideran población en riesgo de cepas resistentes en rinosinusitis aguda?",
+        "reverso": "Los que acuden a guardería y los que recibieron manejo previo con antibiótico.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+          "pagina": 14,
+          "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+        }
+      },
+      {
+        "id": "RZ-PED-261-I-R3",
+        "tipo": "flashcard",
+        "concepto": "duracion_tratamiento",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Si 5 días y 10 a 14 días de antibiótico tienen eficacia similar, ¿por qué se recomienda el esquema largo?",
+        "reverso": "Porque el esquema corto incrementa el riesgo de portadores asintomáticos de cepas resistentes.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 31,
+          "fragmento": "incrementa el riesgo de portadores asintomáticos de cepas resistentes"
+        }
+      },
+      {
+        "id": "RZ-PED-261-I-R4",
+        "tipo": "diagrama",
+        "concepto": "eleccion_antibiotico_por_riesgo",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con sospecha de rinosinusitis aguda\"] --> B{\"¿Más de 10 días de evolución o presentación grave?\"}\n  B -->|\"No\"| C[\"No iniciar antibiótico y revalorar\"]\n  B -->|\"Sí\"| D[\"Iniciar tratamiento antimicrobiano\"]\n  D --> E{\"¿Acude a guardería o recibió antibiótico previo?\"}\n  E -->|\"No\"| F[\"Bajo riesgo: amoxicilina o amoxicilina-clavulanato a 45 mg/kg/día, 10 a 14 días\"]\n  E -->|\"Sí\"| G[\"Alto riesgo: amoxicilina-clavulanato a 80-90 mg/kg/día, 10 a 14 días\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+            "clave": "IMSS-261-10",
+            "seccion": "4.2 Tratamiento Farmacológico",
+            "pagina": 30,
+            "fragmento": "antes de los 10 días de evolución, a"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+            "clave": "IMSS-261-10",
+            "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+            "pagina": 14,
+            "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+            "clave": "IMSS-261-10",
+            "seccion": "4.2 Tratamiento Farmacológico",
+            "pagina": 32,
+            "fragmento": "clavulanato 45 MG/Kg./día en dos dosis por 10 a 14 días"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+            "clave": "IMSS-261-10",
+            "seccion": "4.2 Tratamiento Farmacológico",
+            "pagina": 33,
+            "fragmento": "aguda bacteriana de alto riesgo,"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-261-I-R5",
+        "tipo": "resaltado",
+        "concepto": "evolucion_mayor_10_dias",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "desde hace 12 días, sin ninguna mejoría",
+        "motivo": "Lleva más de 10 días sin mejoría: ya se recomienda tratamiento antimicrobiano por sospecha de causa bacteriana."
+      },
+      {
+        "id": "RZ-PED-261-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sin_antibiotico_previo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "No ha recibido antibióticos en el último año",
+        "motivo": "Sin antibiótico previo no tiene ese factor de riesgo de cepas resistentes; corresponde la dosis baja."
+      },
+      {
+        "id": "RZ-PED-261-I-R7",
+        "tipo": "resaltado",
+        "concepto": "no_acude_guarderia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "cursa primer año de primaria",
+        "motivo": "Va a la primaria, no a guardería: no es población en riesgo de cepas resistentes."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-261-V1",
+    "version": "0.2.0",
+    "sindrome": "rinosinusitis_aguda",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-261-I",
+    "gpc_base": {
+      "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+      "clave": "IMSS-261-10",
+      "archivo": "261GER.pdf"
+    },
+    "vineta": "Masculino de 3 años, peso 15 kg, que asiste a guardería. Hace 3 semanas recibió amoxicilina por otitis media aguda. Desde hace 11 días presenta rinorrea purulenta, tos de predominio nocturno y halitosis, sin mejoría. Temperatura 38 °C. Sin edema palpebral, sin cefalea intensa ni alteración del estado de alerta. Sin alergia a la penicilina.",
+    "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
+    "opciones": {
+      "A": "Amoxicilina con clavulanato 80-90 mg/kg/día en dos dosis durante 10 a 14 días",
+      "B": "Amoxicilina 45 mg/kg/día en dos dosis durante 10 a 14 días",
+      "C": "Cefuroxima como tratamiento de primera línea",
+      "D": "Ningún antimicrobiano, porque la mayoría de las rinosinusitis son virales",
+      "E": "Tomografía de nariz y senos paranasales antes de decidir el antibiótico"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "En sinusitis aguda bacteriana de alto riesgo se recomienda amoxicilina con clavulanato a 80-90 mg/kg/día en dos dosis por 10 a 14 días.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 33,
+          "fragmento": "aguda bacteriana de alto riesgo,"
+        }
+      },
+      {
+        "texto": "Asistir a guardería y haber recibido antibiótico previo confieren riesgo de cepas resistentes.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+          "pagina": 14,
+          "fragmento": "con manejo previo con antibiótico"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Usa la dosis de bajo riesgo sin considerar la guardería y la amoxicilina de hace 3 semanas.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "dosis habitual",
+          "45 mg",
+          "primera línea"
+        ],
+        "pregunta_socratica_semilla": "¿Qué antecedentes del niño aumentan el riesgo de cepas resistentes?",
+        "explicacion": "Los niños que acuden a guardería y los que recibieron antibiótico previo son población en riesgo de cepas resistentes; en alto riesgo se usa amoxicilina con clavulanato a dosis alta.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
+          "pagina": 14,
+          "fragmento": "con manejo previo con antibiótico"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Ubica a las cefalosporinas como primera línea.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "cefuroxima",
+          "cefalosporina",
+          "más amplio"
+        ],
+        "pregunta_socratica_semilla": "¿En qué lugar del esquema sitúa la guía a la cefuroxima?",
+        "explicacion": "La cefuroxima, el cefpodoxime o el cefdinir se recomiendan como tratamiento de segunda línea.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 33,
+          "fragmento": "o cefdinir (cuadro 2)"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la tomografía es necesaria antes de tratar un cuadro no complicado.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "tomografía",
+          "confirmar",
+          "ver senos"
+        ],
+        "pregunta_socratica_semilla": "¿En qué situaciones indica la guía tomografía de senos paranasales?",
+        "explicacion": "No se recomienda la TC de rutina para el diagnóstico; se reserva para duda diagnóstica, síntomas unilaterales, recurrencia o persistencia y sospecha de complicación.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.1.3 Pruebas Diagnósticas",
+          "pagina": 29,
+          "fragmento": "No se recomienda utilizar de rutina TC de"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Generaliza que las infecciones de vías aéreas son virales sin tomar en cuenta la persistencia de más de 10 días.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "es viral",
+          "se quita sola",
+          "no dar antibiótico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué cambia en la probabilidad de causa bacteriana cuando el cuadro persiste más de 10 días sin mejoría?",
+        "explicacion": "Se recomienda tratamiento antimicrobiano ante la sospecha de rinosinusitis bacteriana; se evita solo antes de los 10 días de evolución sin datos de gravedad.",
+        "cita_gpc": {
+          "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
+          "clave": "IMSS-261-10",
+          "seccion": "4.2 Tratamiento Farmacológico",
+          "pagina": 30,
+          "fragmento": "antimicrobiano ante la sospecha de"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-261-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "acude_guarderia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "que asiste a guardería",
+        "motivo": "Los niños que asisten a guardería se consideran de alto riesgo de cepas resistentes y requieren dosis alta."
+      },
+      {
+        "id": "RZ-PED-261-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "antibiotico_reciente",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Hace 3 semanas recibió amoxicilina por otitis media aguda",
+        "motivo": "Antibiótico en las últimas seis semanas: la guía recomienda dosis altas por riesgo de cepas resistentes."
+      },
+      {
+        "id": "RZ-PED-261-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "persistencia_mayor_10_dias",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Desde hace 11 días presenta rinorrea purulenta",
+        "motivo": "Persiste más de 10 días sin mejoría: está indicado el tratamiento antimicrobiano, no solo vigilar."
+      }
+    ]
+  }
+]

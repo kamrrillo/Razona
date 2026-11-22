@@ -6,7 +6,9 @@ export const TutorEventSchema = z.discriminatedUnion("type", [
   z.object({
     type: z.literal("citation"),
     gpcId: z.string(),
+    gpcTitle: z.string().optional(),
     section: z.string(),
+    page: z.number().int().positive().optional(),
     snippet: z.string(),
   }),
   z.object({ type: z.literal("done") }),

@@ -1,0 +1,216 @@
+{"archivo": "248GER.pdf", "clave": "IMSS-248-09", "sindrome": "hidrocefalia_menor_1_ano",
+ "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+ "casos": [
+ {"t": "I",
+  "vineta": "Masculino de 4 meses de edad corregida, nacido a las 29 semanas, con hemorragia intraventricular durante su estancia en la unidad de cuidados intensivos neonatales. Acude a control mensual en su unidad de medicina familiar. Perímetro cefálico: percentil 50 al mes, percentil 75 a los 2 meses, percentil 90 a los 3 meses y hoy por arriba del percentil 97. La madre refiere irritabilidad y que en la última semana vomita después de algunas tomas. Fontanela anterior amplia y tensa, suturas abiertas.",
+  "pregunta": "¿Cuál es la conducta más adecuada?",
+  "op": ["Repetir la medición en un mes, ya que 5 % de los niños normales tienen perímetro cefálico mayor del percentil 95",
+         "Enviar a pediatría de segundo o tercer nivel; la ultrasonografía transfontanelar es el estudio de imagen preferido",
+         "Iniciar acetazolamida y furosemida para disminuir la producción de líquido cefalorraquídeo",
+         "Solicitar tomografía computarizada de cráneo como estudio preferido",
+         "Considerarlo normal mientras el perímetro cefálico se mantenga entre los percentiles 3 y 97"],
+  "rc": "B",
+  "pc": [["Se infiere alteración si el perímetro cefálico queda fuera de los percentiles 3 y 97 o cambia 2 canales percentilares; ambas condiciones ameritan envío a pediatría de segundo o tercer nivel.", "4.2.1 Diagnóstico Clínico", 20, "ameritan envío a pediatría de un"],
+         ["En neonatos y lactantes con suturas abiertas se prefiere la ultrasonografía transfontanelar.", "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia", 25, "Se prefiere en neonatos y lactantes con suturas"]],
+  "rub": [
+   ["lectura", "Lee el perímetro cefálico como si estuviera dentro del rango normal; la viñeta dice que hoy está por arriba del percentil 97.", ["E"], ["dentro de percentiles", "es normal", "percentil 97 está bien"], "¿En qué percentil está hoy el perímetro cefálico y cuál es el rango normal?", "El perímetro cefálico entre los percentiles 3 y 97 se considera normal; fuera de ese rango se envía a una unidad especializada.", "4.2.1 Diagnóstico Clínico", 20, "el perímetro cefálico se sitúa por fuera de los"],
+   ["dato_omitido", "Se queda con la cifra aislada y omite la tendencia ascendente y los datos de hipertensión endocraneana (vómito, irritabilidad, fontanela tensa).", ["A"], ["5 % normales", "cabeza grande familiar", "volver a medir", "esperar"], "¿Qué ha hecho el perímetro cefálico mes con mes y qué otros datos presenta el niño?", "El 5 % de los niños normales tienen perímetro cefálico mayor del percentil 95, pero se investiga cuando hay incremento longitudinal o datos de hipertensión endocraneana, como en este caso.", "4.2.1 Diagnóstico Clínico", 19, "No se recomienda la investigación adicional a menos"],
+   ["conocimiento", "Cree que los diuréticos son tratamiento de la hidrocefalia post hemorragia.", ["C"], ["acetazolamida", "furosemida", "bajar la presión", "menos líquido"], "¿Qué mostraron la acetazolamida y la furosemida en mortalidad, necesidad de derivación y desarrollo psicomotor?", "La acetazolamida y la furosemida no han mostrado mejoría en mortalidad, tipo de tratamiento ni pronóstico, por lo que no se recomiendan en la hidrocefalia post hemorragia.", "4.3.2 Tratamiento Médico", 37, "Por lo que no se recomienda su uso para el manejo de"],
+   ["razonamiento", "Elige el estudio de mayor resolución sin ponderar que el lactante tiene suturas abiertas y que la tomografía expone a radiación.", ["D"], ["tomografía", "mejor imagen", "más precisa"], "Con la fontanela abierta, ¿qué estudio puede hacerse a la cama del paciente y sin radiación?", "En neonatos y lactantes con suturas abiertas se prefiere la ultrasonografía transfontanelar: se realiza a la cama del paciente, sin radiación ionizante y está disponible.", "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia", 25, "Se prefiere en neonatos y lactantes con suturas"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "criterios_alteracion_perimetro_cefalico",
+    "para_errores": [
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo se infiere alteración del perímetro cefálico en el seguimiento del lactante?",
+    "reverso": "Si queda fuera de los percentiles 3 y 97, o si cambia 2 canales percentilares hacia arriba o hacia abajo.",
+    "cita": [
+     "4.2.1 Diagnóstico Clínico",
+     20,
+     "presenta cambios de 2 canales percentilares"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "ventajas_usg_transfontanelar",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En un lactante con suturas abiertas, ¿qué ventajas tiene la ultrasonografía transfontanelar?",
+    "reverso": "Se hace junto a la cama, incluso en cuidados intensivos, sin radiación ionizante y con disponibilidad inmediata.",
+    "cita": [
+     "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
+     25,
+     "sin exposición a la radiación ionizante"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "diureticos_no_recomendados",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Se recomiendan la acetazolamida y la furosemida en la hidrocefalia posthemorragia?",
+    "reverso": "No. No son efectivas ni seguras: no mejoran mortalidad, derivación ni desarrollo, y causan trastornos hidroelectrolíticos y nefrocalcinosis.",
+    "cita": [
+     "4.3.2 Tratamiento Médico",
+     37,
+     "La terapia con acetazolamida y con furosemida no es"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "seguimiento_perimetro_cefalico",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Lactante: medir perímetro cefálico cada mes y valorar su tendencia\"] --> B{\"¿Fuera de los percentiles 3 y 97 o cambio de 2 canales percentilares?\"}\n  B -->|\"No\"| C{\"¿Datos de hipertensión endocraneana?\"}\n  C -->|\"No\"| D[\"Continuar control mensual\"]\n  C -->|\"Sí\"| E[\"Envío a pediatría de segundo o tercer nivel\"]\n  B -->|\"Sí\"| E\n  E --> G[\"Imagen: ultrasonografía transfontanelar si las suturas están abiertas\"]\n  E --> H{\"¿Signos de aumento de la presión intracraneal?\"}\n  H -->|\"Sí\"| F[\"Valoración urgente por neurocirugía\"]",
+    "citas": [
+     [
+      "4.2.1 Diagnóstico Clínico",
+      20,
+      "presenta cambios de 2 canales percentilares"
+     ],
+     [
+      "4.2.1 Diagnóstico Clínico",
+      19,
+      "No se recomienda la investigación adicional a menos"
+     ],
+     [
+      "4.2.2 Signos de Alarma para daño neurológico",
+      21,
+      "intracraneal son indicaciones de valoración urgente"
+     ],
+     [
+      "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
+      25,
+      "Se prefiere en neonatos y lactantes con suturas"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "tendencia_ascendente_pc",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "percentil 50 al mes, percentil 75 a los 2 meses, percentil 90 a los 3 meses y hoy por arriba del percentil 97",
+    "motivo": "Hoy está fuera del percentil 97 y además subió más de 2 canales percentilares. Cualquiera de las dos amerita envío."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sintomas_hipertension_endocraneana",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "irritabilidad y que en la última semana vomita después de algunas tomas",
+    "motivo": "Vómito e irritabilidad son signos de hidrocefalia en el lactante; con macrocefalia sugieren hipertensión endocraneana. No es momento de esperar."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "suturas_abiertas",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Fontanela anterior amplia y tensa, suturas abiertas",
+    "motivo": "La fontanela tensa apoya hipertensión endocraneana. Con suturas abiertas el ultrasonido transfontanelar es el estudio preferido."
+   },
+   {
+    "n": 8,
+    "tipo": "tabla",
+    "concepto": "riesgo_hidrocefalia_por_grado_hiv",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Grado de hemorragia intraventricular (prematuro menor de 1.5 kg)",
+     "Riesgo de hidrocefalia"
+    ],
+    "filas": [
+     [
+      "Grado I",
+      "5 %"
+     ],
+     [
+      "Grado II",
+      "15 %"
+     ],
+     [
+      "Grado III",
+      "35 %"
+     ],
+     [
+      "Grado IV",
+      "90 %"
+     ]
+    ],
+    "cita": [
+     "4.2.1 Diagnóstico Clínico",
+     21,
+     "grado de severidad de la HIV"
+    ]
+   }
+  ]},
+ {"t": "V1",
+  "vineta": "Femenino de 7 meses, de término, sin antecedentes perinatales relevantes. En su control de niña sana el perímetro cefálico está en el percentil 90; en los controles mensuales previos se mantuvo en el percentil 25 hasta los 4 meses y en el percentil 50 a los 5 meses. Desarrollo psicomotor acorde con la edad, fontanela anterior normotensa, sin vómito ni irritabilidad. Los padres tienen perímetro cefálico normal.",
+  "pregunta": "¿Cuál es la conducta más adecuada?",
+  "op": ["Considerarla normal porque su perímetro cefálico está entre los percentiles 3 y 97",
+         "Volver a medir el perímetro cefálico en 3 meses",
+         "Solicitar tomografía computarizada de cráneo en primer nivel antes de decidir el envío",
+         "Enviar a pediatría de segundo nivel porque el perímetro cefálico cambió dos canales percentilares",
+         "Tranquilizar a los padres porque no hay datos de hipertensión endocraneana"],
+  "rc": "D",
+  "pc": [["El cambio de 2 canales percentilares hacia arriba o hacia abajo indica alteración y amerita envío a pediatría de segundo o tercer nivel.", "4.2.1 Diagnóstico Clínico", 20, "presenta cambios de 2 canales percentilares"],
+         ["El perímetro cefálico se mide mensualmente desde el nacimiento hasta los 2 años y se valora de forma longitudinal.", "4.2.1 Diagnóstico Clínico", 20, "el PC desde el nacimiento hasta los 2 años de edad"]],
+  "rub": [
+   ["razonamiento", "Evalúa la cifra aislada y no la tendencia longitudinal.", ["A"], ["dentro de lo normal", "percentil 90 es normal", "rango 3 a 97"], "¿Qué ha hecho el perímetro cefálico entre los 4 y los 7 meses?", "Además de quedar fuera de los percentiles 3 y 97, se infiere alteración cuando el perímetro cefálico cambia 2 canales percentilares hacia arriba o hacia abajo.", "4.2.1 Diagnóstico Clínico", 20, "presenta cambios de 2 canales percentilares"],
+   ["conocimiento", "Desconoce la periodicidad de medición del perímetro cefálico.", ["B"], ["en 3 meses", "más adelante", "próxima cita"], "¿Con qué frecuencia recomienda la guía medir el perímetro cefálico a esta edad?", "Se recomienda que el médico de primer contacto mida el perímetro cefálico mensualmente desde el nacimiento hasta los 2 años.", "4.2.1 Diagnóstico Clínico", 20, "el PC desde el nacimiento hasta los 2 años de edad"],
+   ["conocimiento", "Cree que la tomografía es el estudio de primera elección en el lactante.", ["C"], ["tomografía", "confirmar antes de enviar"], "¿Qué estudio de imagen prefiere la guía en lactantes con suturas abiertas?", "En neonatos y lactantes con suturas abiertas se prefiere la ultrasonografía transfontanelar.", "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia", 25, "Se prefiere en neonatos y lactantes con suturas"],
+   ["dato_omitido", "Se tranquiliza por la ausencia de síntomas y omite el ascenso de dos canales percentilares.", ["E"], ["sin síntomas", "fontanela normal", "está bien"], "Aunque no tenga síntomas, ¿qué hallazgo de la somatometría amerita envío por sí solo?", "El cambio de 2 canales percentilares amerita envío a pediatría de segundo o tercer nivel, según la sospecha diagnóstica.", "4.2.1 Diagnóstico Clínico", 20, "ameritan envío a pediatría de un"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "cambio_dos_canales",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "en los controles mensuales previos se mantuvo en el percentil 25 hasta los 4 meses",
+    "motivo": "Del percentil 25 al 90 en tres meses: cambió 2 canales percentilares, lo que amerita envío aunque la cifra actual esté entre 3 y 97."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_sintomas_no_descarta",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "fontanela anterior normotensa, sin vómito ni irritabilidad",
+    "motivo": "La ausencia de síntomas no anula el criterio: el cambio de canales percentilares por sí solo amerita envío."
+   }
+  ]}
+ ]}

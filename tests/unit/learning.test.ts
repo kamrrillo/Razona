@@ -88,33 +88,48 @@ describe("estadísticas", () => {
 
 describe("ruta de aprendizaje", async () => {
   const { buildLearningPath } = await import("@/lib/learning/path");
-  const { getAllItems, specialties } = await import("@/lib/content");
+  const { fixtureCatalog } = await import("../fixtures/catalog");
+  const catalog = fixtureCatalog();
 
   const stats = topicStats([
-    ...outcomes("Bronquiolitis", "pediatria", 2, 9),
-    ...outcomes("Hipertensión arterial", "medicina-interna", 8, 9),
-    ...outcomes("Preeclampsia", "ginecologia-obstetricia", 1, 2),
+    ...outcomes("Bronquiolitis aguda", "pediatria", 2, 9),
+    ...outcomes("Infección de vías urinarias", "pediatria", 8, 9),
+    ...outcomes("Ictericia neonatal", "pediatria", 1, 2),
   ]);
   const path = buildLearningPath({
-    specialties,
-    items: getAllItems(),
+    specialties: catalog.groups,
+    items: catalog.cases,
     stats,
-    weakTopic: "Bronquiolitis",
+    weakTopic: "Bronquiolitis aguda",
+    unitOf: (i) => i.groupId ?? i.specialtyId,
   });
   const nodes = path.flatMap((u) => u.nodes);
 
-  it("tiene una unidad por especialidad y cubre todos los temas", () => {
-    expect(path).toHaveLength(specialties.length);
-    expect(new Set(nodes.map((n) => n.topic))).toEqual(new Set(getAllItems().map((i) => i.topic)));
+  it("tiene una unidad por área con casos y cubre todos los temas de práctica", () => {
+    expect(path.map((u) => u.specialtyId)).toEqual([
+      "neonatologia",
+      "respiratorio_orl",
+      "nefrourologia",
+    ]);
+    expect(new Set(nodes.map((n) => n.topic))).toEqual(new Set(catalog.cases.map((i) => i.topic)));
   });
 
   it("marca estados", () => {
     const by = (t: string) => nodes.find((n) => n.topic === t);
-    expect(by("Bronquiolitis")?.state).toBe("current");
-    expect(by("Bronquiolitis")?.href).toBe("/practicar?topic=weak");
-    expect(by("Hipertensión arterial")?.state).toBe("mastered");
-    expect(by("Preeclampsia")?.state).toBe("in-progress");
-    expect(by("Colecistitis aguda")?.state).toBe("new");
-    expect(by("Colecistitis aguda")?.href).toBe("/examen");
+    expect(by("Bronquiolitis aguda")?.state).toBe("current");
+    expect(by("Bronquiolitis aguda")?.href).toBe("/practicar?topic=weak");
+    expect(by("Infección de vías urinarias")?.state).toBe("mastered");
+    expect(by("Ictericia neonatal")?.state).toBe("in-progress");
+  });
+
+  it("sin agrupador usa la especialidad", () => {
+    const bySpecialty = buildLearningPath({
+      specialties: catalog.specialties,
+      items: catalog.cases,
+      stats,
+      weakTopic: null,
+    });
+    expect(bySpecialty).toHaveLength(1);
+    expect(bySpecialty[0].nodes).toHaveLength(3);
   });
 });

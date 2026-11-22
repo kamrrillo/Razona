@@ -1,0 +1,496 @@
+[
+  {
+    "id": "RZ-PED-734-I",
+    "version": "0.2.0",
+    "sindrome": "trastorno_desarrollo_psicomotor",
+    "tipo": "indice",
+    "caso_indice_id": null,
+    "gpc_base": {
+      "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+      "clave": "IMSS-734-14",
+      "archivo": "734GER.pdf"
+    },
+    "vineta": "Femenino de 6 meses, nacida a término sin complicaciones perinatales, acude a control del niño sano. Sostiene la cabeza desde los 4 meses, pero aún no se sienta con apoyo, no se rota sobre sí misma y no balbucea. Al explorar persiste la reacción de Moro. Perímetro cefálico en percentil 40, crecimiento adecuado. La madre comenta que su suegra le dijo que \"cada niño tiene su ritmo\".",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Referirla para evaluación con pruebas estandarizadas del desarrollo",
+      "B": "Tranquilizar a la madre y revalorar en 6 meses",
+      "C": "Considerarla normal, porque ya sostiene la cabeza",
+      "D": "Solicitar radiografía y ultrasonido para apoyar el diagnóstico",
+      "E": "Considerarla normal, porque debe evaluarse con edad corregida por prematurez"
+    },
+    "respuesta_correcta": "A",
+    "puntos_clave": [
+      {
+        "texto": "A los 6 meses son signos de alerta la hipertonía de miembros con hipotonía de cuello y tronco, no rotar sobre sí mismo, persistencia del Moro, no sedestación con apoyo, ausencia de prensión voluntaria y no balbucear.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "Persistencia de reacción de Moro"
+        }
+      },
+      {
+        "texto": "La detección basada en el juicio clínico no es suficiente: se requieren pruebas de detección específicas aplicadas por médicos capacitados en ellas.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 15,
+          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "lectura",
+        "descripcion": "Aplica la edad corregida a una paciente que nació a término.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "edad corregida",
+          "prematura",
+          "ajustar edad"
+        ],
+        "pregunta_socratica_semilla": "¿A cuántas semanas nació la paciente? ¿Aplica corregir la edad?",
+        "explicacion": "A los 6 meses la falta de sedestación con apoyo, la persistencia del Moro y la ausencia de balbuceo son signos de alerta.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "Persistencia de reacción de Moro"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Se queda con un hito logrado y omite los signos de alerta presentes a los 6 meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "sostiene la cabeza",
+          "va bien",
+          "logró hitos"
+        ],
+        "pregunta_socratica_semilla": "Además del sostén cefálico, ¿qué hitos esperados a los 6 meses no ha alcanzado y qué signo persiste?",
+        "explicacion": "No sedestación con apoyo, persistencia del Moro y no balbucear son signos de alerta a los 6 meses.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "No sedestación con apoyo"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que la imagen apoya el diagnóstico del trastorno del desarrollo psicomotor.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "radiografía",
+          "ultrasonido",
+          "imagen"
+        ],
+        "pregunta_socratica_semilla": "¿Qué utilidad tienen la radiografía y el ultrasonido en el trastorno específico del desarrollo psicomotor?",
+        "explicacion": "Los estudios de rayos X y el ultrasonido no tienen utilidad para apoyar el diagnóstico de trastorno específico del desarrollo psicomotor.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 18,
+          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Atribuye el retraso a la variabilidad normal y difiere la evaluación.",
+        "opciones_asociadas": [
+          "B"
+        ],
+        "senales_en_justificacion": [
+          "cada niño tiene su ritmo",
+          "esperar",
+          "revalorar"
+        ],
+        "pregunta_socratica_semilla": "¿Qué se pierde al esperar 6 meses ante varios signos de alerta?",
+        "explicacion": "Las alteraciones del desarrollo son frecuentes y la evaluación sistemática debe incorporarse a la rutina del control del niño sano.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 16,
+          "fragmento": "evaluación sistemática la cual debe ser incorporada"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-734-I-R1",
+        "tipo": "flashcard",
+        "concepto": "juicio_clinico_insuficiente",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Basta el juicio clínico para detectar un trastorno del desarrollo psicomotor?",
+        "reverso": "No. Se requieren pruebas de detección específicas, estandarizadas y validadas, aplicadas por médicos capacitados en ellas.",
+        "cita": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 15,
+          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+        }
+      },
+      {
+        "id": "RZ-PED-734-I-R2",
+        "tipo": "flashcard",
+        "concepto": "imagen_sin_utilidad",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué utilidad tienen la radiografía y el ultrasonido en el trastorno específico del desarrollo psicomotor?",
+        "reverso": "Ninguna para apoyar el diagnóstico; la detección se hace con pruebas específicas del desarrollo.",
+        "cita": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 18,
+          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen"
+        }
+      },
+      {
+        "id": "RZ-PED-734-I-R3",
+        "tipo": "flashcard",
+        "concepto": "signos_alarma_cualquier_edad",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué signos de alarma del desarrollo psicomotor valen a cualquier edad?",
+        "reverso": "Movilidad, tono o postura anormal; movimientos involuntarios u oculares anormales; retraso en hitos madurativos; macrocefalia, microcefalia o estancamiento del perímetro cefálico.",
+        "cita": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 18,
+          "fragmento": "Movilidad, tono o postura anormal"
+        }
+      },
+      {
+        "id": "RZ-PED-734-I-R4",
+        "tipo": "diagrama",
+        "concepto": "deteccion_y_referencia",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Control del niño sano de 0 a 3 años\"] --> B[\"Buscar de forma intencionada los signos de alerta para la edad\"]\n  B --> C{\"¿Hay signos de alerta?\"}\n  C -->|\"No\"| D[\"Continuar la evaluación sistemática en cada control\"]\n  C -->|\"Sí\"| E[\"Referir en cuanto se detecte a neuropsicólogo o pediatra capacitado en pruebas específicas\"]\n  E --> F[\"Pruebas estandarizadas y validadas del desarrollo\"]\n  F --> G[\"Diagnóstico diferencial: parálisis cerebral, retraso mental, trastornos metabólicos o genéticos, entre otros\"]\n  G --> H[\"Quien aplicó las pruebas valora envío a neuropediatría u otra subespecialidad\"]",
+        "citas": [
+          {
+            "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+            "clave": "IMSS-734-14",
+            "seccion": "4.1 Diagnóstico",
+            "pagina": 16,
+            "fragmento": "evaluación sistemática la cual debe ser incorporada"
+          },
+          {
+            "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+            "clave": "IMSS-734-14",
+            "seccion": "4.3 Criterios de Referencia",
+            "pagina": 20,
+            "fragmento": "Desarrollo Psicomotor debera ser referido al"
+          },
+          {
+            "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+            "clave": "IMSS-734-14",
+            "seccion": "4.2 Diagnóstico Diferencial",
+            "pagina": 19,
+            "fragmento": "Desarrollo Psicomotor se debera realizar diagnóstico"
+          },
+          {
+            "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+            "clave": "IMSS-734-14",
+            "seccion": "4.3 Criterios de Referencia",
+            "pagina": 20,
+            "fragmento": "sea valorado por neuropediatria o por alguna otra"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-734-I-R5",
+        "tipo": "tabla",
+        "concepto": "signos_alerta_por_edad",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Edad",
+          "Motricidad",
+          "Lenguaje y comprensión"
+        ],
+        "filas": [
+          [
+            "6 meses",
+            "No se sienta con apoyo, no rota sobre sí mismo, persiste el Moro, sin prensión voluntaria",
+            "No balbucea"
+          ],
+          [
+            "9 meses",
+            "No se desplaza de forma autónoma, no se mantiene sentado, sin pinza manipulativa",
+            "No emite bisílabos"
+          ],
+          [
+            "12 meses",
+            "Ausencia de bipedestación, reflejos anormales",
+            "Sin vocabulario de dos palabras; no entiende órdenes sencillas"
+          ],
+          [
+            "15 meses",
+            "No camina solo, sin pinza superior, no arroja objetos",
+            "Sin vocabulario de tres o cuatro palabras"
+          ],
+          [
+            "18 meses",
+            "No sube escaleras, no garabatea, no hace una torre de dos cubos",
+            "Sin vocabulario de 7 a 10 palabras"
+          ]
+        ],
+        "cita": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "Persistencia de reacción de Moro"
+        }
+      },
+      {
+        "id": "RZ-PED-734-I-R6",
+        "tipo": "resaltado",
+        "concepto": "nacida_a_termino",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "nacida a término sin complicaciones perinatales",
+        "motivo": "Nació a término: no hay prematurez que justifique corregir la edad; se evalúa con sus 6 meses cronológicos."
+      },
+      {
+        "id": "RZ-PED-734-I-R7",
+        "tipo": "resaltado",
+        "concepto": "hitos_no_logrados_6_meses",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "aún no se sienta con apoyo, no se rota sobre sí misma y no balbucea",
+        "motivo": "Son tres signos de alerta de los 6 meses; el sostén cefálico logrado no los compensa."
+      },
+      {
+        "id": "RZ-PED-734-I-R8",
+        "tipo": "resaltado",
+        "concepto": "persistencia_moro",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "persiste la reacción de Moro",
+        "motivo": "La persistencia del Moro a los 6 meses es otro signo de alerta: obliga a evaluar con pruebas específicas, no a esperar."
+      }
+    ]
+  },
+  {
+    "id": "RZ-PED-734-V1",
+    "version": "0.2.0",
+    "sindrome": "trastorno_desarrollo_psicomotor",
+    "tipo": "variante",
+    "caso_indice_id": "RZ-PED-734-I",
+    "gpc_base": {
+      "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+      "clave": "IMSS-734-14",
+      "archivo": "734GER.pdf"
+    },
+    "vineta": "Masculino de 15 meses, de término, sin antecedentes perinatales. En su control la madre refiere que aún no camina solo (camina tomado de las dos manos), no tiene pinza fina y dice solo \"mamá\". Gatea desde los 10 meses. Exploración: tono y reflejos normales, perímetro cefálico en percentil 50, sin rasgos dismórficos.",
+    "pregunta": "¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Solicitar electroencefalograma para identificar la causa",
+      "B": "Reconocer signos de alerta del desarrollo y referirlo para evaluación con pruebas estandarizadas",
+      "C": "Considerarlo normal, porque la marcha independiente se espera hasta los 18 meses",
+      "D": "Esperar hasta los 2 años, porque la marcha independiente puede retrasarse",
+      "E": "Considerarlo normal, porque ya dice \"mamá\""
+    },
+    "respuesta_correcta": "B",
+    "puntos_clave": [
+      {
+        "texto": "A los 15 meses son signos de alerta no caminar solo, ausencia de pinza superior, no arrojar objetos y no tener vocabulario de tres o cuatro palabras.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "No camina solo Ausencia de pinza superior"
+        }
+      },
+      {
+        "texto": "El niño con signos de alerta debe ser evaluado por médicos capacitados en la aplicación de pruebas de detección específicas.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 15,
+          "fragmento": "que deberá ser evaluado por medicos especializados"
+        }
+      }
+    ],
+    "rubrica": [
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Cree que los estudios electrofisiológicos son útiles para identificar el trastorno.",
+        "opciones_asociadas": [
+          "A"
+        ],
+        "senales_en_justificacion": [
+          "electroencefalograma",
+          "EEG",
+          "estudio neurológico"
+        ],
+        "pregunta_socratica_semilla": "¿Qué utilidad tienen los estudios electrofisiológicos en este trastorno?",
+        "explicacion": "Los estudios electrofisiológicos no son útiles para identificar o dar seguimiento a los niños pequeños con trastorno específico del desarrollo psicomotor.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1.1 Auxiliares Diagnósticos",
+          "pagina": 18,
+          "fragmento": "Los estudios electrofisiológicos no son útiles para"
+        }
+      },
+      {
+        "tipo_error": "razonamiento",
+        "descripcion": "Atribuye el retraso a la variabilidad normal y difiere la evaluación.",
+        "opciones_asociadas": [
+          "D"
+        ],
+        "senales_en_justificacion": [
+          "esperar",
+          "2 años",
+          "variabilidad"
+        ],
+        "pregunta_socratica_semilla": "Si ya hay varios signos de alerta, ¿qué ganas al esperar?",
+        "explicacion": "La detección basada en el juicio clínico no es suficiente; se requieren pruebas de detección específicas.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 15,
+          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+        }
+      },
+      {
+        "tipo_error": "conocimiento",
+        "descripcion": "Desconoce los signos de alerta de los 15 meses.",
+        "opciones_asociadas": [
+          "C"
+        ],
+        "senales_en_justificacion": [
+          "18 meses",
+          "normal",
+          "aún no le toca"
+        ],
+        "pregunta_socratica_semilla": "¿Qué signos de alerta lista la guía a los 15 meses?",
+        "explicacion": "A los 15 meses son signos de alerta no caminar solo y no tener un vocabulario de tres o cuatro palabras.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "No tiene un vocabulario de tres o cuatro"
+        }
+      },
+      {
+        "tipo_error": "dato_omitido",
+        "descripcion": "Se tranquiliza por una palabra y omite que no tiene el vocabulario esperado, la marcha ni la pinza.",
+        "opciones_asociadas": [
+          "E"
+        ],
+        "senales_en_justificacion": [
+          "dice mamá",
+          "ya habla",
+          "va bien"
+        ],
+        "pregunta_socratica_semilla": "¿Cuántas palabras debería tener a los 15 meses y qué otros hitos le faltan?",
+        "explicacion": "A los 15 meses es signo de alerta no tener un vocabulario de tres o cuatro palabras, además de no caminar solo y no tener pinza superior.",
+        "cita_gpc": {
+          "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
+          "clave": "IMSS-734-14",
+          "seccion": "4.1 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "No tiene un vocabulario de tres o cuatro"
+        }
+      }
+    ],
+    "autor": "claude",
+    "estado": "borrador",
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-734-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "no_camina_ni_pinza",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "aún no camina solo (camina tomado de las dos manos), no tiene pinza fina",
+        "motivo": "A los 15 meses no caminar solo y no tener pinza superior son signos de alerta; no hay que esperar a los 18 meses."
+      },
+      {
+        "id": "RZ-PED-734-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "vocabulario_insuficiente",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "dice solo \"mamá\"",
+        "motivo": "Una sola palabra no basta: a los 15 meses es signo de alerta no tener un vocabulario de tres o cuatro palabras."
+      },
+      {
+        "id": "RZ-PED-734-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "edad_15_meses_termino",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Masculino de 15 meses, de término",
+        "motivo": "Nació a término y tiene 15 meses: se comparan sus hitos con los signos de alerta de esa edad."
+      }
+    ]
+  }
+]

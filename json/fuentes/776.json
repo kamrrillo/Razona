@@ -1,0 +1,346 @@
+{
+ "archivo": "776GER.pdf",
+ "clave": "IMSS-776-15",
+ "sindrome": "displasia_broncopulmonar",
+ "guia": "Prevención, Diagnóstico y Tratamiento de la Displasia Broncopulmonar en niñas/niños menores de 2 años en el segundo y tercer nivel de atención",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino nacido a las 28 semanas de gestación, que recibió surfactante y ventilación mecánica 5 días y después CPAP nasal. Hoy tiene 8 semanas de vida (36 semanas de edad corregida) y continúa requiriendo oxígeno suplementario por puntas nasales para mantener SpO2 en la meta; ha recibido oxígeno de forma continua desde el nacimiento. Gana peso de forma adecuada.",
+   "pregunta": "¿Cuál es la interpretación más adecuada?",
+   "op": [
+    "Displasia broncopulmonar, evaluada a las 36 semanas corregidas",
+    "No es displasia broncopulmonar, porque ya no está en ventilación mecánica",
+    "Tiene displasia broncopulmonar leve, porque ya no requiere oxígeno",
+    "Debe evaluarse hasta los 56 días de edad",
+    "Solo puede diagnosticarse si la radiografía muestra cambios quísticos"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "La displasia broncopulmonar se diagnostica cuando el lactante necesita oxígeno suplementario por más de 28 días; en menores de 32 semanas la evaluación se hace a las 36 semanas corregidas y en mayores de 32 semanas a los 56 días de edad.",
+     "3.4 Definición",
+     11,
+     "semanas de gestación con evaluación diagnóstica a las 36 SDG corregidas"
+    ],
+    [
+     "Si al momento de la evaluación ya no requiere oxígeno suplementario, se considera displasia broncopulmonar leve.",
+     "3.4 Definición",
+     11,
+     "ya no requiere oxigeno suplementario se considera"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee que ya no requiere oxígeno; la viñeta dice que continúa con puntas nasales.",
+     [
+      "C"
+     ],
+     [
+      "leve",
+      "sin oxígeno",
+      "ya no requiere"
+     ],
+     "¿Requiere hoy oxígeno el paciente? ¿Qué define la forma leve?",
+     "Se considera displasia leve si al momento de la evaluación ya no requiere oxígeno; este paciente aún lo requiere.",
+     "3.4 Definición",
+     11,
+     "ya no requiere oxigeno suplementario se considera"
+    ],
+    [
+     "dato_omitido",
+     "Usa el momento de evaluación de los mayores de 32 semanas sin considerar que nació a las 28.",
+     [
+      "D"
+     ],
+     [
+      "56 días",
+      "esperar",
+      "edad cronológica"
+     ],
+     "¿A qué edad gestacional nació y qué momento de evaluación le corresponde?",
+     "Los menores de 32 semanas se evalúan a las 36 semanas corregidas; los mayores de 32 semanas, a los 56 días de edad.",
+     "3.4 Definición",
+     11,
+     "semanas de gestación con evaluación a los 56 días de edad"
+    ],
+    [
+     "conocimiento",
+     "Cree que el diagnóstico exige ventilación mecánica actual.",
+     [
+      "B"
+     ],
+     [
+      "ventilación mecánica",
+      "intubado",
+      "ya se extubó"
+     ],
+     "¿Qué criterio usa la guía para definir la displasia broncopulmonar?",
+     "La displasia se diagnostica cuando el lactante necesita oxígeno suplementario por más de 28 días posteriores al nacimiento.",
+     "3.4 Definición",
+     11,
+     "necesita oxigeno suplementario por más de 28 días"
+    ],
+    [
+     "razonamiento",
+     "Condiciona un diagnóstico clínico a un hallazgo radiológico.",
+     [
+      "E"
+     ],
+     [
+      "radiografía",
+      "quistes",
+      "imagen"
+     ],
+     "¿El diagnóstico de displasia en la guía se basa en la imagen o en el requerimiento de oxígeno?",
+     "La displasia broncopulmonar se diagnostica por la necesidad de oxígeno suplementario por más de 28 días posteriores al nacimiento.",
+     "3.4 Definición",
+     11,
+     "necesita oxigeno suplementario por más de 28 días"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "definicion_dbp",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Con qué criterio se diagnostica la displasia broncopulmonar?",
+    "reverso": "Necesidad de oxígeno suplementario por más de 28 días posteriores al nacimiento; no exige ventilación mecánica actual.",
+    "cita": [
+     "3.4 Definición",
+     11,
+     "necesita oxigeno suplementario por más de 28 días"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "momento_de_evaluacion",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo se evalúa la displasia broncopulmonar según la edad gestacional al nacer?",
+    "reverso": "Si nació con menos de 32 semanas, a las 36 semanas corregidas; si nació con más de 32, a los 56 días de edad.",
+    "cita": [
+     "3.4 Definición",
+     11,
+     "semanas de gestación con evaluación a los 56 días de edad"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "radiografia_no_necesaria",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Se requiere radiografía de tórax para diagnosticar o clasificar la displasia broncopulmonar?",
+    "reverso": "No. El diagnóstico es clínico y basado en los antecedentes; no se necesita la radiografía ni para clasificar la gravedad.",
+    "cita": [
+     "4.3.1.2 Pruebas diagnósticas",
+     23,
+     "antecedentes. No se requiere de la radiografía de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "diagnostico_y_gravedad_dbp",
+    "para_errores": [
+     "lectura",
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Prematuro con oxígeno suplementario\"] --> B{\"¿Más de 28 días con oxígeno?\"}\n  B -->|\"No\"| C[\"No cumple la definición de displasia broncopulmonar\"]\n  B -->|\"Sí\"| D{\"¿Edad gestacional al nacer?\"}\n  D -->|\"Menos de 32 semanas\"| E[\"Evaluar a las 36 semanas de edad corregida o al egreso\"]\n  D -->|\"Más de 32 semanas\"| F[\"Evaluar a los 56 días de vida o al egreso\"]\n  E --> G{\"¿Requiere oxígeno en esa evaluación?\"}\n  F --> G\n  G -->|\"No\"| H[\"Displasia leve\"]\n  G -->|\"Sí\"| I{\"¿FiO2 de 30 % o más, presión positiva o CPAP nasal?\"}\n  I -->|\"No\"| J[\"Displasia moderada\"]\n  I -->|\"Sí\"| K[\"Displasia grave\"]",
+    "citas": [
+     [
+      "3.4 Definición",
+      11,
+      "necesita oxigeno suplementario por más de 28 días"
+     ],
+     [
+      "3.4 Definición",
+      11,
+      "semanas de gestación con evaluación a los 56 días de edad"
+     ],
+     [
+      "5.3 Clasificación o Escalas de la Enfermedad",
+      37,
+      "Clasificación de la Gravedad de la Displasia Broncopulmonar"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "nacio_28_semanas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "nacido a las 28 semanas de gestación",
+    "motivo": "Nació con menos de 32 semanas: la evaluación corresponde a las 36 semanas corregidas, no a los 56 días."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "aun_requiere_oxigeno",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "continúa requiriendo oxígeno suplementario por puntas nasales",
+    "motivo": "Sigue con oxígeno en la evaluación: no es la forma leve, que se define por no requerirlo."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "oxigeno_mas_de_28_dias",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "ha recibido oxígeno de forma continua desde el nacimiento",
+    "motivo": "Con 8 semanas de vida lleva más de 28 días con oxígeno: cumple la definición aunque ya no esté en ventilación mecánica."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Recién nacida de 26 semanas de gestación, peso 850 g, cuya madre recibió esteroides prenatales completos. A los 10 minutos de vida respira espontáneamente con quejido y retracciones; requiere FiO2 de 30 % para SpO2 de 90 %. FC 150 lpm, sin inestabilidad hemodinámica. La unidad cuenta con CPAP nasal y surfactante.",
+   "pregunta": "¿Cuál es la estrategia más adecuada para reducir el riesgo de displasia broncopulmonar?",
+   "op": [
+    "Intubar y administrar surfactante porque ya cumple el criterio de falla a CPAP",
+    "Intubación electiva con surfactante profiláctico en todos los casos",
+    "CPAP nasal temprano de 5 a 6 cm H2O, con surfactante si falla el CPAP, y saturación entre 88 y 95 %",
+    "Salbutamol inhalado para prevenir la displasia",
+    "Mantener la saturación entre 98 y 100 % para evitar la hipoxemia"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Se recomienda usar en forma temprana CPAP nasal de 5 a 6 cm H2O en niños con riesgo de displasia y surfactante temprano cuando falla el CPAP.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     14,
+     "nasales de 5 a 6 cm H2O en niños con riesgo de"
+    ],
+    [
+     "En menores de 30 semanas se recomiendan surfactante temprano, CPAP nasal, control estricto de la saturación entre 88 y 95 % y aporte temprano de aminoácidos.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     15,
+     "estricto de la saturación periférica de O2 entre 88 y"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Lee la FiO2 como si superara el 50 %; la paciente requiere 30 %.",
+     [
+      "A"
+     ],
+     [
+      "falla de CPAP",
+      "intubar",
+      "FiO2 alta"
+     ],
+     "¿Qué FiO2 requiere la paciente y cuál es el criterio de falla del CPAP?",
+     "El criterio de falla a CPAP es necesitar FiO2 mayor de 50 % para saturar 88 %, PaCO2 mayor de 65 mmHg o inestabilidad hemodinámica.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     14,
+     "oxígeno con Fi02> 50% para mantener saturación"
+    ],
+    [
+     "conocimiento",
+     "Cree que el surfactante profiláctico con intubación electiva es mejor que la estrategia selectiva.",
+     [
+      "B"
+     ],
+     [
+      "profiláctico",
+      "intubación electiva",
+      "todos"
+     ],
+     "¿Qué mostró el metaanálisis al comparar surfactante profiláctico con CPAP inicial y surfactante selectivo?",
+     "En el metaanálisis, el riesgo de displasia o muerte fue mayor con surfactante profiláctico que con CPAP inicial y surfactante electivo.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     15,
+     "surfactante electivo) el riesgo de DBP o muerte fue"
+    ],
+    [
+     "conocimiento",
+     "Cree que el broncodilatador previene la displasia.",
+     [
+      "D"
+     ],
+     [
+      "salbutamol",
+      "broncodilatador"
+     ],
+     "¿Qué efecto tiene el salbutamol sobre la frecuencia de displasia broncopulmonar?",
+     "El uso de broncodilatadores como el salbutamol no disminuye la frecuencia de displasia broncopulmonar.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     15,
+     "El uso de broncodilatadores como salbutamol no"
+    ],
+    [
+     "razonamiento",
+     "Supone que una saturación más alta protege mejor, sin considerar la meta que reduce la displasia.",
+     [
+      "E"
+     ],
+     [
+      "98 %",
+      "más oxígeno",
+      "evitar hipoxia"
+     ],
+     "¿Qué rango de saturación recomienda la guía en prematuros de riesgo?",
+     "Se recomienda control estricto de la saturación periférica de oxígeno entre 88 y 95 % en menores de 30 semanas.",
+     "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
+     15,
+     "estricto de la saturación periférica de O2 entre 88 y"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "fio2_30",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "requiere FiO2 de 30 % para SpO2 de 90 %",
+    "motivo": "La falla a CPAP requiere FiO2 mayor de 50 % para saturar 88 %; con 30 % no se cumple ese criterio."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_inestabilidad",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin inestabilidad hemodinámica",
+    "motivo": "La inestabilidad hemodinámica es otro criterio de falla a CPAP; su ausencia apoya iniciar o continuar CPAP nasal temprano."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "respira_espontaneamente",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "respira espontáneamente con quejido y retracciones",
+    "motivo": "Una prematura con dificultad respiratoria que respira sola es candidata a CPAP nasal temprano de 5 a 6 cm H2O."
+   }
+  ]}
+ ]
+}

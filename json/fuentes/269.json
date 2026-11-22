@@ -1,0 +1,189 @@
+{"archivo": "269GER.pdf", "clave": "IMSS-269-13", "sindrome": "espina_bifida_prevencion",
+ "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
+ "casos": [
+ {"t": "I",
+  "vineta": "Masculino de 2 años con mielomeningocele lumbosacro operado al nacer acude a su control con pediatría. Su madre, de 28 años, sana, comenta que desean otro hijo y que planea suspender el método anticonceptivo en los próximos meses. Desea saber qué puede hacer para disminuir el riesgo de que su siguiente hijo tenga el mismo problema. Su dieta incluye tortillas y pan elaborados con harinas comerciales.",
+  "pregunta": "¿Cuál es la recomendación más adecuada para la madre?",
+  "op": ["Ácido fólico 0.4 mg al día desde tres meses antes del embarazo",
+         "Ácido fólico 4 mg al día desde tres meses antes del embarazo y durante el periodo periconcepcional",
+         "Ácido fólico 4 mg al día a partir de que se confirme el embarazo",
+         "No es necesario suplementar, porque las harinas comerciales ya están fortificadas con ácido fólico",
+         "Ácido fólico 0.4 mg al día para el niño, para prevenir complicaciones de su mielomeningocele"],
+  "rc": "B",
+  "pc": [["Con antecedente de un hijo con defecto del tubo neural, la dosis de ácido fólico aumenta a 4.0 mg al día.", "4.1 Prevención", 14, "dosis debe aumentar a 4.0 mg/día"],
+         ["El periodo periconcepcional va desde tres meses antes hasta tres meses después de la gestación.", "4.1 Prevención", 14, "periconcepcional (desde tres meses antes hasta tres"],
+         ["El riesgo de espina bífida se reduce hasta 70 % si la madre ingiere ácido fólico diariamente desde antes del embarazo.", "4.1 Prevención", 13, "un 70% si antes del embarazo la madre ingiere"]],
+  "rub": [
+   ["lectura", "Responde sobre el niño cuando la pregunta es sobre la madre que planea un embarazo.", ["E"], ["al niño", "para el paciente", "sus complicaciones"], "¿A quién se refiere la pregunta y qué quiere prevenir?", "La suplementación con ácido fólico es periconcepcional y la toma la mujer que puede embarazarse; con antecedente de un hijo con defecto del tubo neural la dosis es de 4.0 mg al día.", "4.1 Prevención", 14, "dosis debe aumentar a 4.0 mg/día"],
+   ["dato_omitido", "Usa la dosis para la población general sin considerar el antecedente de un hijo con mielomeningocele.", ["A"], ["0.4 mg", "dosis habitual", "400 microgramos"], "¿Qué antecedente tiene esta mujer y cómo modifica la dosis recomendada?", "La dosis general es de 0.4 mg al día; con antecedente de un hijo con defecto del tubo neural debe aumentarse a 4.0 mg al día.", "4.1 Prevención", 14, "dosis debe aumentar a 4.0 mg/día"],
+   ["conocimiento", "Sobreestima el aporte de las harinas fortificadas.", ["D"], ["harinas fortificadas", "ya lo come", "dieta"], "¿Cuánto ácido fólico añade la fortificación de harinas a la dieta diaria?", "La fortificación de harinas añade alrededor de 0.1 mg al día a la dieta, por debajo de la ingesta recomendada de 0.4 mg en la etapa periconcepcional.", "4.1 Prevención", 13, "añade 0.1 mg/ día a la dieta normal"],
+   ["razonamiento", "Pospone el suplemento hasta confirmar el embarazo, sin considerar que su efecto preventivo depende de tomarlo desde antes de la concepción.", ["C"], ["cuando se embarace", "al confirmar", "prueba positiva"], "Si el tubo neural se cierra en las primeras semanas de gestación, ¿cuándo debe empezar el suplemento para que proteja?", "La reducción del riesgo se logra si la madre ingiere ácido fólico desde antes del embarazo; la guía indica tomarlo desde tres meses antes de la gestación.", "4.1 Prevención", 13, "un 70% si antes del embarazo la madre ingiere"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "dosis_alto_riesgo_acido_folico",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué dosis diaria de ácido fólico indica la guía a una mujer que ya tuvo un hijo con defecto del tubo neural?",
+    "reverso": "4.0 mg al día. La dosis para las demás mujeres que pueden embarazarse es de 0.4 mg al día.",
+    "cita": [
+     "4.1 Prevención",
+     14,
+     "dosis debe aumentar a 4.0 mg/día"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "aporte_harinas_fortificadas",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuánto ácido fólico añade a la dieta diaria la fortificación de harinas comerciales?",
+    "reverso": "Alrededor de 0.1 mg al día, por debajo de la ingesta recomendada de 0.4 mg.",
+    "cita": [
+     "4.1 Prevención",
+     13,
+     "añade 0.1 mg/ día a la dieta normal"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "inicio_preconcepcional",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué el ácido fólico debe iniciarse antes de que se confirme el embarazo?",
+    "reverso": "Porque la reducción del riesgo de espina bífida, hasta 70 %, se logra cuando la madre lo toma desde antes del embarazo.",
+    "cita": [
+     "4.1 Prevención",
+     13,
+     "un 70% si antes del embarazo la madre ingiere"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "suplementacion_periconcepcional",
+    "para_errores": [
+     "conocimiento",
+     "dato_omitido",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Mujer con posibilidad de embarazarse\"] --> B{\"¿Antecedente de un hijo con defecto del tubo neural?\"}\n  B -->|\"No\"| C[\"Ácido fólico 0.4 mg al día\"]\n  B -->|\"Sí\"| D[\"Ácido fólico 4.0 mg al día\"]\n  C --> E[\"Periodo periconcepcional: de tres meses antes a tres meses después de la gestación\"]\n  D --> E\n  E --> F[\"Además, alimentos con alto contenido de ácido fólico\"]",
+    "citas": [
+     [
+      "4.1 Prevención",
+      14,
+      "0.4mg de ácido fólico por día durante el período"
+     ],
+     [
+      "4.1 Prevención",
+      14,
+      "dosis debe aumentar a 4.0 mg/día"
+     ],
+     [
+      "4.1 Prevención",
+      14,
+      "periconcepcional (desde tres meses antes hasta tres"
+     ],
+     [
+      "4.1 Prevención",
+      15,
+      "alto contenido de ácido fólico listados en la tabla"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "pregunta_sobre_siguiente_hijo",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Desea saber qué puede hacer para disminuir el riesgo de que su siguiente hijo tenga el mismo problema",
+    "motivo": "La recomendación es para la madre antes de un nuevo embarazo, no un tratamiento para el niño."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "hijo_con_mielomeningocele",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 2 años con mielomeningocele lumbosacro",
+    "motivo": "Tener un hijo con defecto del tubo neural aumenta la dosis de ácido fólico de 0.4 a 4.0 mg al día."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "embarazo_planeado",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "planea suspender el método anticonceptivo en los próximos meses",
+    "motivo": "El embarazo aún no ocurre: hay tiempo de iniciar el suplemento tres meses antes de la concepción."
+   }
+  ]},
+ {"t": "V1",
+  "vineta": "Femenino de 22 años acude con su hija de 3 años a consulta de control. Comenta que ella y su pareja buscarán un embarazo en los próximos meses. No tiene enfermedades crónicas, no toma medicamentos y no hay antecedentes familiares ni personales de defectos del tubo neural. Pregunta si debe tomar algún suplemento o si basta con comer más verduras.",
+  "pregunta": "¿Cuál es la recomendación más adecuada?",
+  "op": ["Ácido fólico 4 mg al día, porque una dosis mayor protege más",
+         "Basta una dieta rica en folatos, como espinacas y avena",
+         "Ácido fólico 0.4 mg al día a partir de que se confirme el embarazo",
+         "No suplementar, porque no tiene antecedentes de defectos del tubo neural",
+         "Ácido fólico 0.4 mg al día desde tres meses antes del embarazo y durante el periodo periconcepcional"],
+  "rc": "E",
+  "pc": [["Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.", "4.1 Prevención", 14, "0.4mg de ácido fólico por día durante el período"],
+         ["La dosis de 4 mg se reserva para mujeres de alto riesgo, como las que tienen antecedente de un hijo con defecto del tubo neural.", "4.1 Prevención", 14, "dosis debe aumentar a 4.0 mg/día"]],
+  "rub": [
+   ["razonamiento", "Supone que más dosis es mejor, sin considerar que la de 4 mg se reserva para alto riesgo.", ["A"], ["más protege", "dosis alta", "4 mg"], "¿Qué condición indica la guía para usar 4 mg en lugar de 0.4 mg?", "La dosis de 4.0 mg al día se indica con antecedente de un hijo con defecto del tubo neural; para las demás mujeres que pueden embarazarse es de 0.4 mg al día.", "4.1 Prevención", 14, "dosis debe aumentar a 4.0 mg/día"],
+   ["conocimiento", "Cree que la dieta sola alcanza la ingesta recomendada.", ["B"], ["verduras", "dieta", "espinacas", "natural"], "¿Qué recomienda la guía a toda mujer con posibilidad de embarazarse, además de la alimentación?", "Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.", "4.1 Prevención", 14, "0.4mg de ácido fólico por día durante el período"],
+   ["conocimiento", "Desconoce que el suplemento debe iniciarse antes de la concepción.", ["C"], ["al embarazarse", "prueba positiva", "cuando confirme"], "¿Desde cuándo debe tomarse el ácido fólico según la guía?", "El periodo periconcepcional va desde tres meses antes hasta tres meses después de la gestación.", "4.1 Prevención", 14, "periconcepcional (desde tres meses antes hasta tres"],
+   ["razonamiento", "Restringe la prevención a mujeres con antecedentes.", ["D"], ["sin antecedentes", "bajo riesgo", "no lo necesita"], "¿La recomendación de 0.4 mg es solo para mujeres con antecedentes?", "Toda mujer con posibilidad de embarazarse debe ingerir 0.4 mg de ácido fólico al día durante el periodo periconcepcional.", "4.1 Prevención", 14, "0.4mg de ácido fólico por día durante el período"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "sin_antecedente_dtn",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "no hay antecedentes familiares ni personales de defectos del tubo neural",
+    "motivo": "Sin ese antecedente corresponde la dosis general de 0.4 mg al día; la de 4.0 mg se reserva para alto riesgo."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "embarazo_en_proximos_meses",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "buscarán un embarazo en los próximos meses",
+    "motivo": "Toda mujer con posibilidad de embarazarse debe suplementarse, y desde antes de concebir."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "dieta_no_basta",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "si basta con comer más verduras",
+    "motivo": "La guía recomienda alimentos ricos en ácido fólico además del suplemento diario, no en su lugar."
+   }
+  ]}
+ ]}

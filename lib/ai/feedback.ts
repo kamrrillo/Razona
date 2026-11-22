@@ -69,7 +69,7 @@ export function buildExplanationPrompt(item: Item, ctx: LearnerContext): string 
         ? `En el ${ctx.mode === "examen" ? "simulacro" : "diagnóstico"} acertó.`
         : `En el ${ctx.mode === "examen" ? "simulacro" : "diagnóstico"} eligió ${wrong || "nada (lo dejó sin responder)"}, que es incorrecta.`;
 
-  return `Caso (${specialtyName(item.specialtyId)} · ${item.topic}):
+  return `Caso (${specialtyName(item)} · ${item.topic}):
 ${item.vignette}
 
 Pregunta: ${item.question}

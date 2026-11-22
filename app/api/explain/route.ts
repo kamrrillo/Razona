@@ -1,6 +1,6 @@
 import { explainForLearner } from "@/lib/ai/explain";
 import { HttpError, handleError, ok, parseJson, requireAuth } from "@/lib/api";
-import { examItems, getItem } from "@/lib/content";
+import { getItem } from "@/lib/content";
 import { loadExam } from "@/lib/data/exam";
 import { loadLearnerContext } from "@/lib/data/learner";
 import { loadStudySession } from "@/lib/data/practice";
@@ -49,8 +49,8 @@ export async function POST(request: Request) {
     if (!loaded) throw new HttpError(404, "Examen no encontrado");
     if (!loaded.exam.finishedAt)
       throw new HttpError(409, "Termina el examen para ver la explicación");
-    const item = getItem(body.itemId);
-    const inExam = body.itemId in loaded.answers || examItems.some((i) => i.id === body.itemId);
+    const item = await getItem(body.itemId);
+    const inExam = body.itemId in loaded.answers || loaded.exam.itemIds.includes(body.itemId);
     if (!item || !inExam) throw new HttpError(404, "Reactivo no encontrado");
     const chosen = loaded.answers[body.itemId];
     const ctx = await loadLearnerContext(supabase, userId, item, {

@@ -1,0 +1,355 @@
+{
+ "archivo": "029GER.pdf",
+ "clave": "IMSS-029-08",
+ "sindrome": "control_nino_sano_nutricion",
+ "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Masculino de 4 meses de edad acude a consulta de control del niño sano en su unidad de medicina familiar. Se alimenta con lactancia materna exclusiva a libre demanda. Peso y talla en percentil 50 para la edad, con ganancia ponderal adecuada desde la última consulta. Exploración física normal. La madre refiere que en ocasiones llora después de las tomas y que la abuela le recomienda empezar a darle caldo de frijol, jugos de fruta y papillas \"para que se llene\".",
+   "pregunta": "¿Cuál es la recomendación más adecuada sobre su alimentación?",
+   "op": [
+    "Iniciar papillas de verduras, frutas y cereales sin gluten de forma progresiva",
+    "Continuar con lactancia materna exclusiva hasta los 6 meses de edad",
+    "Agregar fórmula de inicio después de cada toma, ya que el llanto indica hambre",
+    "Iniciar caldos y jugos de fruta para asegurar el aporte de micronutrientes",
+    "Planear el destete progresivo a partir de los 6 meses, cuando inicie otros alimentos"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Se indica lactancia materna exclusiva durante los primeros 6 meses de vida.",
+     "4.1.1 Nutrición",
+     16,
+     "Indicar lactancia materna exclusiva durante los"
+    ],
+    [
+     "La introducción de alimentos distintos a la leche materna inicia a partir de los 6 meses.",
+     "4.1.1 Nutrición",
+     16,
+     "se inicia a partir de los 6 meses"
+    ],
+    [
+     "El estado nutricional se valora en cada consulta.",
+     "4.1.1 Nutrición",
+     15,
+     "Valorar el estado nutricional de la niña o del niño"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Aplica la recomendación de los 6 meses a un lactante de 4 meses; no registró la edad.",
+     [
+      "A"
+     ],
+     [
+      "ya le toca papilla",
+      "a esta edad se inicia",
+      "sexto mes",
+      "verduras y frutas primero"
+     ],
+     "¿Qué edad tiene el paciente y a partir de qué edad recomienda la guía otros alimentos?",
+     "La guía recomienda incorporar alimentos distintos a la leche materna a partir del sexto mes; a los 4 meses corresponde lactancia materna exclusiva.",
+     "4.1.1 Nutrición",
+     17,
+     "alimentación diferente a la lactancia a partir del sexto"
+    ],
+    [
+     "dato_omitido",
+     "Interpreta el llanto como hambre y omite que el crecimiento es adecuado (percentil 50, buena ganancia).",
+     [
+      "C"
+     ],
+     [
+      "llora de hambre",
+      "no se llena",
+      "la leche no le alcanza",
+      "complementar con fórmula"
+     ],
+     "Si el niño no recibiera suficiente leche, ¿qué esperarías ver en su peso y su curva de crecimiento?",
+     "El estado nutricional se valora en cada consulta; con crecimiento adecuado no hay motivo para suspender la lactancia materna exclusiva antes de los 6 meses.",
+     "4.1.1 Nutrición",
+     16,
+     "Indicar lactancia materna exclusiva durante los"
+    ],
+    [
+     "conocimiento",
+     "Cree que los micronutrientes requieren alimentos distintos a la leche antes de los 6 meses.",
+     [
+      "D"
+     ],
+     [
+      "vitaminas",
+      "jugos",
+      "hierro de los caldos",
+      "micronutrientes"
+     ],
+     "¿A partir de qué edad la leche materna deja de cubrir por sí sola el aporte de micronutrientes, según la guía?",
+     "La introducción de otros alimentos se inicia a partir de los 6 meses, precisamente para asegurar el aporte suficiente de micronutrientes; antes de esa edad se indica lactancia exclusiva.",
+     "4.1.1 Nutrición",
+     16,
+     "se inicia a partir de los 6 meses"
+    ],
+    [
+     "razonamiento",
+     "Confunde complementar con sustituir: supone que al iniciar otros alimentos debe retirarse la leche materna.",
+     [
+      "E"
+     ],
+     [
+      "destete a los 6 meses",
+      "ya no necesitará pecho",
+      "cambiar a papillas",
+      "dejar la leche"
+     ],
+     "Si a los 6 meses los alimentos se llaman complementarios, ¿qué complementan?",
+     "Se recomienda continuar la leche materna entre los 6 y 23 meses de edad; el destete se recomienda a los 2 años.",
+     "4.1.1 Nutrición",
+     17,
+     "El destete se recomienda a la edad de los 2 años"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "edad_inicio_otros_alimentos",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A partir de qué edad indica la guía introducir alimentos distintos a la leche materna?",
+    "reverso": "A partir de los 6 meses, para asegurar el aporte suficiente de micronutrientes. Antes de esa edad, solo leche materna.",
+    "cita": [
+     "4.1.1 Nutrición",
+     16,
+     "se inicia a partir de los 6 meses"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "continuar_leche_y_destete",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Al iniciar otros alimentos, ¿qué pasa con la leche materna y a qué edad se recomienda el destete?",
+    "reverso": "Se continúa la leche materna entre los 6 y 23 meses junto con los otros alimentos. El destete se recomienda a los 2 años.",
+    "cita": [
+     "4.1.1 Nutrición",
+     17,
+     "El destete se recomienda a la edad de los 2 años"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "valoracion_estado_nutricional",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo debe valorarse el estado nutricional del niño menor de 5 años?",
+    "reverso": "En cada consulta. Desde la primera, también se investigan los factores que pueden influir en él.",
+    "cita": [
+     "4.1.1 Nutrición",
+     15,
+     "Valorar el estado nutricional de la niña o del niño"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "alimentacion_por_edad",
+    "para_errores": [
+     "lectura",
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Consulta de control del niño sano\"] --> B[\"Valorar el estado nutricional\"]\n  B --> C{\"¿Tiene menos de 6 meses?\"}\n  C -->|\"Sí\"| D[\"Solo leche materna, sin otros alimentos\"]\n  C -->|\"No\"| E[\"Incorporar lenta y progresivamente papillas de verduras, frutas y cereales sin gluten\"]\n  E --> F[\"Continuar la leche materna entre los 6 y 23 meses\"]\n  F --> G[\"Integrar a la dieta familiar en el primer año\"]\n  G --> H[\"Destete a los 2 años\"]",
+    "citas": [
+     [
+      "4.1.1 Nutrición",
+      15,
+      "Valorar el estado nutricional de la niña o del niño"
+     ],
+     [
+      "4.1.1 Nutrición",
+      16,
+      "Indicar lactancia materna exclusiva durante los"
+     ],
+     [
+      "4.1.1 Nutrición",
+      17,
+      "Se recomienda incorporar lenta y progresivamente la"
+     ],
+     [
+      "4.1.1 Nutrición",
+      17,
+      "El destete se recomienda a la edad de los 2 años"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_cuatro_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 4 meses de edad",
+    "motivo": "Tiene 4 meses. La guía inicia otros alimentos a partir de los 6 meses; a esta edad aún no corresponden."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "crecimiento_adecuado",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Peso y talla en percentil 50 para la edad, con ganancia ponderal adecuada desde la última consulta",
+    "motivo": "El estado nutricional es adecuado. El llanto no indica que la leche materna sea insuficiente."
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Femenino de 7 meses de edad, acude a consulta de control. Recibe únicamente leche materna; aún no ha probado otros alimentos. Se mantiene sentada con apoyo, lleva objetos a la boca y muestra interés cuando la familia come. Peso en percentil 25, sin cambios respecto a la consulta previa. La madre leyó en internet que retrasar los alimentos hasta el año evita alergias y prefiere esperar.",
+   "pregunta": "¿Cuál es la recomendación más adecuada sobre su alimentación?",
+   "op": [
+    "Mantener lactancia materna exclusiva hasta los 12 meses para prevenir alergias",
+    "Suspender la leche materna e iniciar fórmula de continuación junto con papillas",
+    "Introducir papillas en forma lenta y progresiva sin suspender la lactancia materna",
+    "Integrarla desde hoy a todos los alimentos de la dieta familiar",
+    "Iniciar alimentación complementaria y programar el destete a los 12 meses"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "Se recomienda incorporar lenta y progresivamente la alimentación distinta a la lactancia a partir del sexto mes, con papillas de verduras, frutas y cereales sin gluten.",
+     "4.1.1 Nutrición",
+     17,
+     "Se recomienda incorporar lenta y progresivamente la"
+    ],
+    [
+     "Se continúa la leche materna entre los 6 y 23 meses de edad.",
+     "4.1.1 Nutrición",
+     17,
+     "los 6 y 23 meses de edad"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que la lactancia exclusiva debe extenderse hasta el año.",
+     [
+      "A"
+     ],
+     [
+      "hasta el año",
+      "previene alergias",
+      "esperar",
+      "todavía no"
+     ],
+     "¿Qué recomienda la guía sobre la edad de inicio de otros alimentos, y por qué?",
+     "La introducción de alimentos distintos a la leche materna se inicia a partir de los 6 meses para asegurar el aporte de micronutrientes.",
+     "4.1.1 Nutrición",
+     16,
+     "se inicia a partir de los 6 meses"
+    ],
+    [
+     "razonamiento",
+     "Supone que iniciar otros alimentos implica retirar la leche materna.",
+     [
+      "B"
+     ],
+     [
+      "fórmula",
+      "ya no pecho",
+      "sustituir",
+      "leche de continuación"
+     ],
+     "¿Qué papel tiene la leche materna después de los 6 meses según la guía?",
+     "Se recomienda continuar con la leche materna entre los 6 y 23 meses de edad.",
+     "4.1.1 Nutrición",
+     17,
+     "los 6 y 23 meses de edad"
+    ],
+    [
+     "dato_omitido",
+     "Omite que la niña nunca ha recibido otros alimentos, por lo que la introducción debe ser lenta y progresiva.",
+     [
+      "D"
+     ],
+     [
+      "dieta familiar",
+      "lo que coma la familia",
+      "ya va tarde",
+      "todo de una vez"
+     ],
+     "Si nunca ha probado otro alimento, ¿conviene introducir todo a la vez?",
+     "La guía recomienda incorporar lenta y progresivamente los alimentos, iniciando con papillas de verduras, frutas y cereales sin gluten; la integración a la dieta familiar ocurre en el primer año.",
+     "4.1.1 Nutrición",
+     17,
+     "frutas y cereales sin gluten"
+    ],
+    [
+     "conocimiento",
+     "Cree que el destete se recomienda al año de edad.",
+     [
+      "E"
+     ],
+     [
+      "destete al año",
+      "12 meses",
+      "dejar el pecho"
+     ],
+     "¿A qué edad recomienda la guía el destete?",
+     "El destete se recomienda a la edad de los 2 años.",
+     "4.1.1 Nutrición",
+     17,
+     "El destete se recomienda a la edad de los 2 años"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "edad_siete_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 7 meses de edad",
+    "motivo": "Ya pasó los 6 meses: la guía indica iniciar otros alimentos a partir de esa edad, no esperar al año."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "nunca_ha_probado_alimentos",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recibe únicamente leche materna; aún no ha probado otros alimentos",
+    "motivo": "Nunca ha recibido otros alimentos: la incorporación debe ser lenta y progresiva, y la leche materna continúa."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "madurez_para_comer",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Se mantiene sentada con apoyo, lleva objetos a la boca",
+    "motivo": "La guía describe que hacia los 6 meses la masticación y la capacidad de sentarse favorecen deglutir alimentos espesos."
+   }
+  ]}
+ ]
+}

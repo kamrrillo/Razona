@@ -1,0 +1,390 @@
+{
+ "archivo": "361GER.pdf",
+ "clave": "IMSS-361-12",
+ "sindrome": "amigdalectomia_indicaciones",
+ "guia": "Amigdalectomía en Niños",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 7 años, peso 22 kg. En los últimos 12 meses ha tenido 8 episodios de faringoamigdalitis con fiebre mayor de 38.3 °C, exudado amigdalino y adenopatías cervicales dolorosas; en tres de ellos el cultivo fue positivo para estreptococo beta hemolítico del grupo A. Todos fueron tratados con esquemas completos de antibiótico. Ha faltado 20 días a la escuela. Sin ronquido ni apneas. Exploración actual: amígdalas grado II, sin exudado.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Indicar amigdalectomía, porque cumple los criterios de recurrencia de Paradise",
+    "Observación, porque las infecciones de vía aérea superior se manejan de forma conservadora",
+    "Indicar amigdalectomía con antibiótico perioperatorio de rutina para evitar complicaciones",
+    "Esperar a completar 3 años con episodios recurrentes antes de decidir la cirugía",
+    "Diferir la cirugía hasta que tenga más edad y peso, por riesgo de hipovolemia"
+   ],
+   "rc": "A",
+   "pc": [
+    [
+     "Los criterios de Paradise establecen un mínimo de 7 o más episodios en el año anterior, 5 o más en cada uno de los últimos 2 años o 3 o más en cada uno de los últimos 3 años.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     12,
+     "establece un minimo de 7 o más episodios en el"
+    ],
+    [
+     "Las infecciones recurrentes de vía aérea superior son una de las únicas indicaciones absolutas de amigdalectomía, siempre que los episodios hayan sido tratados con antibioticoterapia adecuada.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "tratados con antibioticoterapia adecuada, siempre"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Aplica la restricción de edad y peso sin registrar que la paciente tiene 7 años y 22 kg.",
+     [
+      "E"
+     ],
+     [
+      "muy pequeña",
+      "hipovolemia",
+      "esperar a que crezca"
+     ],
+     "¿Qué edad y peso tiene la paciente, y a quiénes aplica la restricción de la guía?",
+     "Solo de forma muy selectiva se aplican las indicaciones en niños menores de 3-4 años o con menos de 12 kg, por el riesgo de hipovolemia; esta paciente no está en ese grupo.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "debajo de los 3-4 años de edad, o con menos de 12"
+    ],
+    [
+     "dato_omitido",
+     "Indica observación sin contar los 8 episodios documentados en el último año.",
+     [
+      "B"
+     ],
+     [
+      "observar",
+      "conservador",
+      "son infecciones leves"
+     ],
+     "¿Cuántos episodios tuvo en el último año y qué número exigen los criterios de Paradise?",
+     "La observación es más apropiada en niños con infecciones leves de vía aérea superior; esta paciente tiene 8 episodios en un año, por encima del criterio de 7.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "La conducta de observación, es más apropiada que"
+    ],
+    [
+     "conocimiento",
+     "Cree que el antibiótico perioperatorio de rutina reduce las complicaciones.",
+     [
+      "C"
+     ],
+     [
+      "antibiótico profiláctico",
+      "evitar infección",
+      "perioperatorio"
+     ],
+     "¿Qué encontró la revisión Cochrane sobre el antibiótico perioperatorio en amigdalectomía?",
+     "No se recomienda administrar de manera rutinaria antibióticos perioperatorios en amigdalectomía.",
+     "4.5.1 Uso de antibióticos perioperatorios",
+     18,
+     "No se recomienda administrar de manera rutinaria"
+    ],
+    [
+     "razonamiento",
+     "Interpreta los criterios de Paradise como acumulativos y exige el de 3 años, cuando basta cumplir uno de ellos.",
+     [
+      "D"
+     ],
+     [
+      "3 años",
+      "más tiempo",
+      "comprobar recurrencia"
+     ],
+     "Los criterios de Paradise, ¿se cumplen todos a la vez o basta con uno?",
+     "Los criterios de Paradise son alternativos: 7 o más episodios en el año anterior, 5 o más en cada uno de los últimos 2 años o 3 o más en cada uno de los últimos 3 años.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     12,
+     "establece un minimo de 7 o más episodios en el"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "frecuencia_paradise",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué frecuencia de episodios de faringoamigdalitis exigen los criterios de Paradise?",
+    "reverso": "Basta una: 7 o más en un año, 5 o más anuales por 2 años, o 3 o más anuales por 3 años.",
+    "cita": [
+     "4.1 Indicaciones para amigdalectomía en niños",
+     12,
+     "establece un minimo de 7 o más episodios en el"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "restriccion_edad_peso",
+    "para_errores": [
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿En qué niños se aplican las indicaciones de amigdalectomía solo de forma muy selectiva, y por qué?",
+    "reverso": "En menores de 3-4 años o con menos de 12 kg: la hemorragia conlleva gran riesgo de hipovolemia.",
+    "cita": [
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "debajo de los 3-4 años de edad, o con menos de 12"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "sin_antibiotico_perioperatorio",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Se recomienda antibiótico perioperatorio de rutina en la amigdalectomía?",
+    "reverso": "No. Una revisión Cochrane no mostró reducción consistente de los eventos mórbidos posoperatorios.",
+    "cita": [
+     "4.5.1 Uso de antibióticos perioperatorios",
+     18,
+     "No se recomienda administrar de manera rutinaria"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "indicaciones_absolutas_amigdalectomia",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño valorado para amigdalectomía\"] --> B{\"¿Datos de obstrucción: ronquido con apneas, sueño intranquilo, enuresis, somnolencia diurna o crecimiento insuficiente?\"}\n  B -->|\"Sí\"| C[\"Indicación absoluta de amigdalectomía\"]\n  B -->|\"No\"| D{\"¿Cumple algún criterio de frecuencia de Paradise?\"}\n  D -->|\"Sí\"| C\n  D -->|\"No\"| E[\"Observación si las infecciones de vía aérea superior son leves\"]",
+    "citas": [
+     [
+      "4.1 Indicaciones para amigdalectomía en niños",
+      13,
+      "práctica es suficiente la observación de las pautas"
+     ],
+     [
+      "4.1 Indicaciones para amigdalectomía en niños",
+      13,
+      "Las únicas indicaciones absolutas de"
+     ],
+     [
+      "4.1 Indicaciones para amigdalectomía en niños",
+      12,
+      "establece un minimo de 7 o más episodios en el"
+     ],
+     [
+      "4.1 Indicaciones para amigdalectomía en niños",
+      13,
+      "La conducta de observación, es más apropiada que"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "ocho_episodios_un_ano",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "En los últimos 12 meses ha tenido 8 episodios de faringoamigdalitis",
+    "motivo": "Ocho episodios en un año superan el mínimo de 7 del criterio de Paradise. No son infecciones leves para solo observar."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "edad_y_peso_suficientes",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 7 años, peso 22 kg",
+    "motivo": "La restricción por riesgo de hipovolemia aplica a menores de 3-4 años o con menos de 12 kg. Ella no está en ese grupo."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "antibioticoterapia_adecuada",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Todos fueron tratados con esquemas completos de antibiótico",
+    "motivo": "Para aplicar el criterio quirúrgico se exige que los episodios se hayan tratado con antibioticoterapia adecuada. Aquí se cumple."
+   },
+   {
+    "n": 8,
+    "tipo": "tabla",
+    "concepto": "criterios_paradise",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Criterio de Paradise",
+     "Qué se requiere"
+    ],
+    "filas": [
+     [
+      "Frecuencia mínima",
+      "7 o más episodios en el año anterior, o 5 o más en cada uno de 2 años, o 3 o más en cada uno de 3 años"
+     ],
+     [
+      "Características clínicas",
+      "Dolor de garganta más temperatura mayor de 38.3 °C, adenopatías cervicales dolorosas o mayores de 2 cm, exudado amigdalino o cultivo positivo para estreptococo del grupo A"
+     ],
+     [
+      "Tratamiento",
+      "Antibiótico a dosis convencionales en los episodios probados o sospechosos de estreptococo"
+     ],
+     [
+      "Documentación",
+      "Cada episodio registrado en la historia clínica, o 2 episodios observados por el clínico con hallazgos consistentes"
+     ]
+    ],
+    "cita": [
+     "5.3 Clasificación o Escalas de la Enfermedad",
+     27,
+     "Criterios de elección de pacientes candidatos a amigdalectomía"
+    ]
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Masculino de 5 años, peso 15 kg (por debajo del percentil 3 para la edad). Desde hace un año ronca todas las noches y sus padres han observado pausas respiratorias durante el sueño; duerme intranquilo, volvió a mojar la cama y la maestra refiere somnolencia en clase. Solo ha tenido 2 episodios de faringoamigdalitis en el último año. Amígdalas grado IV que casi contactan en la línea media. En su hospital no se dispone de polisomnografía.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Diferir la decisión hasta contar con polisomnografía",
+    "Observación, porque no cumple los criterios de Paradise",
+    "Indicar amigdalectomía por obstrucción de la vía aérea superior",
+    "Indicar amigdalectomía con antibiótico perioperatorio de rutina",
+    "Diferir la cirugía porque tiene menos de 6 años"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "La obstrucción de la vía aérea superior es una de las únicas indicaciones absolutas de amigdalectomía.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "Las únicas indicaciones absolutas de"
+    ],
+    [
+     "Aunque el diagnóstico de apnea obstructiva del sueño exige polisomnografía, en la práctica basta observar las pautas de sueño y las condiciones clínicas secundarias: ronquido con apneas, sueño intranquilo, enuresis, somnolencia diurna y crecimiento insuficiente.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "práctica es suficiente la observación de las pautas"
+    ]
+   ],
+   "rub": [
+    [
+     "conocimiento",
+     "Cree que la polisomnografía es indispensable para indicar la cirugía.",
+     [
+      "A"
+     ],
+     [
+      "polisomnografía",
+      "confirmar apnea",
+      "estudio de sueño"
+     ],
+     "¿Qué datos clínicos considera suficientes la guía en la práctica cuando no hay polisomnografía?",
+     "En la práctica es suficiente observar las pautas de sueño y las condiciones clínicas secundarias a la apnea obstructiva del sueño.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "práctica es suficiente la observación de las pautas"
+    ],
+    [
+     "dato_omitido",
+     "Evalúa solo las infecciones y omite los datos de obstrucción de la vía aérea.",
+     [
+      "B"
+     ],
+     [
+      "pocas infecciones",
+      "no cumple Paradise",
+      "observar"
+     ],
+     "Además de las infecciones recurrentes, ¿qué otra indicación absoluta de amigdalectomía reconoce la guía?",
+     "Las únicas indicaciones absolutas son la obstrucción de vía aérea superior y las infecciones recurrentes de vía aérea superior.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "Las únicas indicaciones absolutas de"
+    ],
+    [
+     "conocimiento",
+     "Cree que el antibiótico perioperatorio de rutina está indicado.",
+     [
+      "D"
+     ],
+     [
+      "antibiótico",
+      "profilaxis"
+     ],
+     "¿Qué recomienda la guía sobre el antibiótico perioperatorio?",
+     "No se recomienda administrar de manera rutinaria antibióticos perioperatorios en amigdalectomía.",
+     "4.5.1 Uso de antibióticos perioperatorios",
+     18,
+     "No se recomienda administrar de manera rutinaria"
+    ],
+    [
+     "razonamiento",
+     "Sobreextiende la restricción por edad a un niño de 5 años.",
+     [
+      "E"
+     ],
+     [
+      "muy chico",
+      "esperar",
+      "6 años"
+     ],
+     "¿A partir de qué edad y peso aplica la guía la restricción selectiva?",
+     "La restricción selectiva aplica a niños menores de 3-4 años o con menos de 12 kg de peso.",
+     "4.1 Indicaciones para amigdalectomía en niños",
+     13,
+     "debajo de los 3-4 años de edad, o con menos de 12"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "ronquido_con_apneas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "ronca todas las noches y sus padres han observado pausas respiratorias durante el sueño",
+    "motivo": "Ronquido con apneas indica obstrucción de vía aérea superior, indicación absoluta aunque no cumpla criterios de infección."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "enuresis_somnolencia",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "volvió a mojar la cama y la maestra refiere somnolencia en clase",
+    "motivo": "Enuresis y somnolencia diurna son condiciones secundarias a la apnea obstructiva. En la práctica bastan sin polisomnografía."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "crecimiento_insuficiente",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "peso 15 kg (por debajo del percentil 3 para la edad)",
+    "motivo": "El crecimiento insuficiente es otra consecuencia de la apnea obstructiva. Con 5 años y 15 kg no aplica la restricción por hipovolemia."
+   }
+  ]}
+ ]
+}

@@ -35,7 +35,8 @@ def test_tools_require_user_in_state():
 
 def test_listar_especialidades(repo):
     data = listar_especialidades()
-    assert [e["id"] for e in data["especialidades"]] == [s.id for s in repo.list_specialties()]
+    # Solo especialidades con casos en el banco (hoy, pediatría).
+    assert [e["id"] for e in data["especialidades"]] == ["pediatria"]
     assert all(e["reactivos_disponibles"] > 0 for e in data["especialidades"])
 
 
@@ -45,9 +46,9 @@ def test_full_diagnostic_flow(repo, ana, ana_state, snapshot):
     exam_id = created["exam_id"]
     try:
         items = created["reactivos"]
-        specialties = {s.id for s in repo.list_specialties()}
-        assert created["total"] == len(items) == 2 * len(specialties)
-        assert {i["specialty_id"] for i in items} == specialties
+        areas = {i.group_id for i in repo.list_items()}
+        assert created["total"] == len(items) == 2 * len(areas)
+        assert {repo.get_item(i["id"]).group_id for i in items} == areas
         assert all("correct_option_id" not in i and "explanation" not in i for i in items)
         exam = repo.get_exam(ana.id, exam_id)
         assert exam.exam_key == "diagnostico-adk" and exam.finished_at is None
@@ -65,7 +66,7 @@ def test_full_diagnostic_flow(repo, ana, ana_state, snapshot):
         assert "error" in registrar_respuesta(second.id, "z", ctx)
         assert "error" in registrar_respuesta("no-existe", "a", ctx)
         # tutor is off while the diagnostic is open
-        assert "error" in registrar_intento("caso-bronquiolitis-01", "a", ctx)
+        assert "error" in registrar_intento("RZ-PED-032-I", "a", ctx)
 
         graded = calificar_diagnostico(ctx)
         assert (graded["correct"], graded["answered"], graded["total"]) == (1, 2, len(items))
@@ -91,40 +92,49 @@ def test_progress_and_weak_topic_for_ana(ana_state):
     assert progress["nombre"] == "Ana"
     assert progress["totals_answered"] >= 50
     assert progress["streak"]["current"] >= 1
-    assert len(progress["by_specialty"]) == 4
+    assert len(progress["by_specialty"]) >= 1
     weak = obtener_tema_debil(ctx)["tema_debil"]
-    assert weak["topic"] == "Bronquiolitis" and weak["has_case"] is True
+    assert weak["topic"] == "Bronquiolitis aguda" and weak["has_case"] is True
 
 
 def test_recommend_case_weak_and_thompson(ana_state):
     ctx = Ctx(ana_state)
     weak = recomendar_siguiente_caso("debil", ctx)
-    assert weak["motivo"] == "debil" and weak["caso"]["topic"] == "Bronquiolitis"
+    assert weak["motivo"] == "debil" and weak["caso"]["topic"] == "Bronquiolitis aguda"
     assert ctx.state[st.ACTIVE_CASE] == weak["caso"]["id"]
     assert "correct_option_id" not in weak["caso"]
     a = recomendar_siguiente_caso("", ctx)
     b = recomendar_siguiente_caso("", ctx)
     assert a["motivo"] == "thompson" and a["caso"]["id"] == b["caso"]["id"]  # deterministic seed
-    assert recomendar_siguiente_caso("Apendicitis aguda", ctx)["motivo"] == "tema"
+    assert recomendar_siguiente_caso("Otitis media aguda", ctx)["motivo"] == "tema"
 
 
 def test_study_plan_from_db(ana_state):
     plan = generar_plan_estudio(5, Ctx(ana_state))
     assert plan["days"] == 5 and len(plan["schedule"]) == 5
-    assert plan["weak_topic"] == "Bronquiolitis"
-    assert plan["schedule"][0]["topic"] == "Bronquiolitis"
-    assert plan["schedule"][0]["practice_case_id"] == "caso-bronquiolitis-01"
-    assert plan["schedule"][0]["gpc_readings"][0]["gpc_id"].startswith("EJEMPLO-GPC")
+    assert plan["weak_topic"] == "Bronquiolitis aguda"
+    assert plan["schedule"][0]["topic"] == "Bronquiolitis aguda"
+    assert plan["schedule"][0]["practice_case_id"] == "RZ-PED-032-I"
+    assert plan["schedule"][0]["gpc_readings"][0]["gpc_id"] == "IMSS-032-08"
     assert plan["schedule"][-1]["is_mock_exam"]
 
 
 def test_tutor_tools_write_attempts(repo, ana, ana_state, snapshot):
     ctx = Ctx(ana_state)
-    item = repo.get_item("caso-bronquiolitis-01")
+    item = repo.get_item("RZ-PED-032-I")
     assert obtener_caso(item.id, ctx)["caso"]["id"] == item.id
     gpc = buscar_gpc(item.id, ctx)
     assert gpc["gpc_id"] == item.citation.gpc_id and gpc["fragmento"] == item.citation.snippet
+    assert gpc["pagina"] == item.citation.page and len(gpc["puntos_clave"]) >= 2
     wrong_letter = next(o.id for o in item.options if o.id != item.correct_option_id)
+    # Con la opción incorrecta, la herramienta devuelve la guía de la rúbrica.
+    entry = item.rubric_for(wrong_letter)
+    guided = buscar_gpc(item.id, ctx, opcion=wrong_letter)
+    assert guided["tipo_error"] == entry.error_type
+    assert guided["pregunta_socratica_sugerida"] == entry.question
+    assert item.correct_option.text not in str(guided)
+    # Con la correcta, solo la cita (nunca la rúbrica).
+    assert "tipo_error" not in buscar_gpc(item.id, ctx, opcion=item.correct_option_id)
     ids = []
     try:
         wrong = registrar_intento(item.id, wrong_letter, ctx)

@@ -1,0 +1,386 @@
+{
+ "archivo": "230GER.pdf",
+ "clave": "IMSS-230-16",
+ "sindrome": "alteraciones_visuales_preescolar",
+ "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
+ "casos": [
+  {
+   "t": "I",
+   "vineta": "Femenino de 5 años (60 meses) acude a su revisión anual en la unidad de medicina familiar. Sin antecedentes perinatales ni familiares de alteraciones oculares. Coopera bien con la prueba. Se evalúa la agudeza visual de forma monocular con cartilla HOTV: con el ojo derecho identifica tres de cuatro optotipos en el nivel 20/40; con el ojo izquierdo identifica tres de cuatro en el nivel 20/50, pero solo uno de cuatro en el nivel 20/40. Reflejo rojo presente y simétrico, sin estrabismo aparente.",
+   "pregunta": "¿Cuál es la conducta más adecuada?",
+   "op": [
+    "Considerarla normal, porque con el ojo derecho cumple el criterio",
+    "Referirla a segundo nivel para examen completo de la vista",
+    "Considerarla normal, porque identifica 20/50 con el ojo izquierdo, lo esperado para su edad",
+    "Repetir la prueba con ambos ojos abiertos para confirmar el resultado",
+    "Repetir la evaluación en su próximo control anual"
+   ],
+   "rc": "B",
+   "pc": [
+    [
+     "Entre los 48 y 72 meses el niño debe identificar tres de tres o tres de cuatro optotipos en el nivel 20/40 con cada ojo; si no cumple, se remite a segundo nivel para examen completo.",
+     "4.4 Criterios de referencia",
+     44,
+     "tres de tres o tres de cuatro en el nivel 20/40"
+    ],
+    [
+     "La agudeza visual se evalúa en forma monocular, cada ojo de forma independiente.",
+     "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
+     24,
+     "agudeza visual en forma monocular, esto es en forma"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Usa el criterio de 36 a 47 meses (20/50) en una niña de 60 meses.",
+     [
+      "C"
+     ],
+     [
+      "20/50 es normal",
+      "esperado para su edad",
+      "preescolar"
+     ],
+     "¿Cuántos meses tiene la paciente y qué nivel debe alcanzar a esa edad?",
+     "El nivel 20/50 corresponde a los 36 a 47 meses; de los 48 a 72 meses el criterio es 20/40 en cada ojo.",
+     "4.4 Criterios de referencia",
+     44,
+     "de tres o tres de cuatro en el nivel 20/50"
+    ],
+    [
+     "dato_omitido",
+     "Pospone la reevaluación sin registrar que la niña sí cooperó y completó la prueba; la reevaluación se reserva para quien no pudo completarla.",
+     [
+      "E"
+     ],
+     [
+      "repetir el próximo año",
+      "control anual",
+      "vigilar"
+     ],
+     "¿Pudo la niña completar la prueba? ¿A quién indica la guía reevaluar en lugar de referir?",
+     "Se reevalúa, el mismo día o dentro de 6 meses, al niño que no pudo realizar la prueba; quien la realiza y no cumple el criterio se remite a segundo nivel.",
+     "4.4 Criterios de referencia",
+     44,
+     "prueba, deben ser reevaluados el mismo día, si es"
+    ],
+    [
+     "conocimiento",
+     "Cree que la agudeza visual puede evaluarse con ambos ojos abiertos.",
+     [
+      "D"
+     ],
+     [
+      "ambos ojos",
+      "binocular",
+      "confirmar"
+     ],
+     "¿Qué se pierde al evaluar con los dos ojos abiertos cuando solo uno ve mal?",
+     "La guía recalca evaluar la agudeza visual en forma monocular, cada ojo de forma independiente.",
+     "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
+     24,
+     "agudeza visual en forma monocular, esto es en forma"
+    ],
+    [
+     "razonamiento",
+     "Juzga la visión como un todo en lugar de aplicar el criterio a cada ojo.",
+     [
+      "A"
+     ],
+     [
+      "un ojo bien",
+      "ve bien con uno",
+      "compensa"
+     ],
+     "Si un ojo ve bien y el otro no, ¿qué trastorno de la infancia temes que pase inadvertido?",
+     "Los criterios son específicos para la edad y para cada ojo; el niño que no los cumple se remite para examen completo de la vista.",
+     "4.4 Criterios de referencia",
+     44,
+     "deben ser remitidos para un examen completo de la"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "criterio_48_72_meses",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Con cartilla HOTV o símbolos de Lea, ¿qué nivel debe alcanzar un niño de 48 a 72 meses?",
+    "reverso": "Identificar tres de tres o tres de cuatro optotipos en el nivel 20/40, con cada ojo. A los 36-47 meses basta 20/50.",
+    "cita": [
+     "4.3.1 Exploración en el niños verbal o Preescolar",
+     34,
+     "niños entre 48 a 72 meses, deben identificar"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "criterio_por_cada_ojo",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿El criterio aprobatorio de agudeza visual se aplica a la visión global o a cada ojo?",
+    "reverso": "A cada ojo, derecho e izquierdo, evaluado por separado. Si un ojo no cumple, la prueba no se aprueba.",
+    "cita": [
+     "4.3.1 Exploración en el niños verbal o Preescolar",
+     34,
+     "edad y debe ser cumplido por ambos ojos derecho e"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "objetivo_deteccion_ambliopia",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuál es el objetivo principal de detectar alteraciones visuales en el preescolar?",
+    "reverso": "Reducir la ambliopía con referencia oportuna, mientras todavía es susceptible de tratamiento.",
+    "cita": [
+     "4.3.1 Exploración en el niños verbal o Preescolar",
+     25,
+     "reducir la prevalencia de la ambliopía con una referencia oportuna"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "tamizaje_agudeza_visual_preescolar",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Preescolar de 36 a 72 meses: agudeza visual monocular con HOTV o símbolos de Lea\"] --> B{\"¿Logró realizar la prueba?\"}\n  B -->|\"No\"| C[\"Reevaluar el mismo día si es factible o dentro de 6 meses\"]\n  C --> D{\"¿No se puede reevaluar o hay dudas en la interpretación?\"}\n  D -->|\"Sí\"| R[\"Referir al oftalmólogo en segundo nivel\"]\n  D -->|\"No\"| B\n  B -->|\"Sí\"| E{\"¿Edad?\"}\n  E -->|\"36 a 47 meses\"| F{\"¿Cada ojo identifica 3 de 3 o 3 de 4 en 20/50?\"}\n  E -->|\"48 a 72 meses\"| G{\"¿Cada ojo identifica 3 de 3 o 3 de 4 en 20/40?\"}\n  F -->|\"No\"| R\n  G -->|\"No\"| R\n  F -->|\"Sí\"| N[\"Aprueba el tamizaje\"]\n  G -->|\"Sí\"| N",
+    "citas": [
+     [
+      "4.4 Criterios de referencia",
+      44,
+      "de tres o tres de cuatro en el nivel 20/50"
+     ],
+     [
+      "4.4 Criterios de referencia",
+      44,
+      "tres de tres o tres de cuatro en el nivel 20/40"
+     ],
+     [
+      "4.4 Criterios de referencia",
+      44,
+      "brevedad (dentro de los próximos 6 meses)"
+     ],
+     [
+      "4.4 Criterios de referencia",
+      44,
+      "la agudeza visual en una segunda ocasión, o existen"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_60_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 5 años (60 meses)",
+    "motivo": "A los 60 meses el criterio es 20/40 en cada ojo; el nivel 20/50 solo vale de 36 a 47 meses."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "ojo_izquierdo_no_cumple",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pero solo uno de cuatro en el nivel 20/40",
+    "motivo": "El ojo izquierdo no alcanza el criterio de su edad. Basta un ojo que no cumpla para referir."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "prueba_completada",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Coopera bien con la prueba",
+    "motivo": "Sí completó la prueba. La reevaluación es para quien no pudo realizarla; quien la hace y no cumple se refiere."
+   },
+   {
+    "n": 8,
+    "tipo": "tabla",
+    "concepto": "criterios_agudeza_visual_por_edad",
+    "para_errores": [
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Edad",
+     "Qué debe identificar cada ojo con HOTV o Lea",
+     "Si no cumple"
+    ],
+    "filas": [
+     [
+      "36 a 47 meses",
+      "Tres de tres o tres de cuatro optotipos en el nivel 20/50",
+      "Remitir al oftalmólogo para examen completo"
+     ],
+     [
+      "48 a 72 meses",
+      "El mismo número de optotipos en el nivel 20/40",
+      "Remitir al oftalmólogo para examen completo"
+     ]
+    ],
+    "cita": [
+     "4.3.1 Exploración en el niños verbal o Preescolar",
+     34,
+     "Se interpreta en la siguiente forma"
+    ]
+   }
+  ]},
+  {
+   "t": "V1",
+   "vineta": "Masculino de 4 años 2 meses (50 meses) acude a su primera evaluación visual en la unidad de medicina familiar. Sin antecedentes familiares de estrabismo, ambliopía ni uso de lentes. Al intentar la evaluación monocular con símbolos de Lea, llora, se niega a la oclusión y no logra señalar los símbolos con ninguno de los dos ojos; la madre comenta que hoy no durmió siesta. Reflejo rojo presente y simétrico, prueba de Hirschberg con reflejo corneal centrado.",
+   "pregunta": "¿Cuál es la conducta más adecuada respecto a la agudeza visual?",
+   "op": [
+    "Referirlo a oftalmología porque no cumplió el criterio de agudeza visual",
+    "Registrar la agudeza visual como normal porque el reflejo rojo es simétrico",
+    "Reevaluarlo el mismo día o, si no es posible, dentro de los próximos 6 meses",
+    "Reevaluarlo hasta que cumpla 6 años, cuando coopere mejor",
+    "Evaluar la agudeza visual con ambos ojos abiertos para lograr su cooperación"
+   ],
+   "rc": "C",
+   "pc": [
+    [
+     "El niño que no logra realizar la prueba se reevalúa el mismo día si es factible o, si no, a la brevedad, dentro de los próximos 6 meses.",
+     "4.4 Criterios de referencia",
+     44,
+     "brevedad (dentro de los próximos 6 meses)"
+    ],
+    [
+     "Si no es posible reevaluar en una segunda ocasión o hay dudas en la interpretación, se refiere al oftalmólogo.",
+     "4.4 Criterios de referencia",
+     44,
+     "la agudeza visual en una segunda ocasión, o existen"
+    ]
+   ],
+   "rub": [
+    [
+     "lectura",
+     "Interpreta la falta de cooperación como si el niño hubiera fallado el criterio de agudeza visual.",
+     [
+      "A"
+     ],
+     [
+      "no cumplió",
+      "falló la prueba",
+      "no ve"
+     ],
+     "¿El niño identificó mal los símbolos o no logró hacer la prueba?",
+     "Quien no logra realizar la prueba se reevalúa; la referencia procede si no puede reevaluarse en una segunda ocasión o hay dudas en la interpretación.",
+     "4.4 Criterios de referencia",
+     44,
+     "prueba, deben ser reevaluados el mismo día, si es"
+    ],
+    [
+     "razonamiento",
+     "Infiere buena agudeza visual a partir de un reflejo rojo normal.",
+     [
+      "B"
+     ],
+     [
+      "reflejo rojo normal",
+      "no hay catarata",
+      "ojos sanos"
+     ],
+     "¿El reflejo rojo mide la agudeza visual de cada ojo?",
+     "La agudeza visual debe medirse en forma monocular; el reflejo rojo normal no la sustituye.",
+     "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
+     24,
+     "agudeza visual en forma monocular, esto es en forma"
+    ],
+    [
+     "conocimiento",
+     "Desconoce el intervalo para reevaluar y la edad recomendada de evaluación.",
+     [
+      "D"
+     ],
+     [
+      "a los 6 años",
+      "cuando coopere",
+      "esperar"
+     ],
+     "¿En qué plazo recomienda la guía reevaluar, y en qué rango de edad debe evaluarse la agudeza visual?",
+     "Todo niño de 36 a 72 meses debe evaluarse anualmente o al menos una vez en ese intervalo; si no pudo hacer la prueba, se reevalúa dentro de los próximos 6 meses.",
+     "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
+     24,
+     "todo niño entre los 36 a 72 meses de edad, debe ser"
+    ],
+    [
+     "conocimiento",
+     "Cree que la evaluación binocular es una alternativa válida.",
+     [
+      "E"
+     ],
+     [
+      "ambos ojos",
+      "más fácil",
+      "sin tapar"
+     ],
+     "¿Qué alteración no detectarías si mides con los dos ojos abiertos?",
+     "La guía indica evaluar la agudeza visual de forma monocular, cada ojo de manera independiente.",
+     "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
+     24,
+     "agudeza visual en forma monocular, esto es en forma"
+    ]
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "no_logro_la_prueba",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "llora, se niega a la oclusión y no logra señalar los símbolos con ninguno de los dos ojos",
+    "motivo": "No falló el criterio: no logró hacer la prueba. En ese caso la guía indica reevaluar, no referir de entrada."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "causa_transitoria",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "la madre comenta que hoy no durmió siesta",
+    "motivo": "Explica la falta de cooperación de hoy. Conviene repetir la prueba el mismo día si se puede, o en menos de 6 meses."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "reflejo_rojo_no_mide_agudeza",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Reflejo rojo presente y simétrico",
+    "motivo": "Un reflejo rojo normal no sustituye la medición monocular de la agudeza visual."
+   }
+  ]}
+ ]
+}
