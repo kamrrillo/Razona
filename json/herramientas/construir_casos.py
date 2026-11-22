@@ -13,6 +13,12 @@ Formato compacto por guía:
 }
 Una cita sin respaldo se escribe como ["SIN_RESPALDO_GPC", motivo] en lugar de seccion, pagina, fragmento.
 
+Recursos de aprendizaje (opcional): cada caso puede llevar "rec", una lista de objetos
+{"n": 1, "tipo": ..., "concepto": ..., "para_errores": [...], "mostrar": "despues_de_responder", ...campos del tipo}
+con las citas en formato compacto [seccion, pagina, fragmento] ("cita" o, en diagramas, "citas").
+Se expanden a "recursos" con id <id del caso>-R<n> y estado "borrador"; esos casos pasan a la versión
+VERSION_REC con fecha FECHA_REC.
+
 Archivos que lee además de fuentes/:
   letras.json      letra correcta fija por caso. Un caso nuevo recibe la letra menos usada
                    y se agrega al archivo; las existentes nunca cambian (agregar una guía no
@@ -20,8 +26,10 @@ Archivos que lee además de fuentes/:
   revisiones.json  estado de revisión médica por caso (borrador si no aparece).
 
 Uso:
-  python3 herramientas/construir_casos.py           # escribe casos/ y actualiza letras.json
-  python3 herramientas/construir_casos.py --check   # no escribe; sale con 1 si casos/ no está al día
+  python3 herramientas/construir_casos.py                 # escribe casos/ y actualiza letras.json
+  python3 herramientas/construir_casos.py --check         # no escribe; sale con 1 si casos/ no está al día
+  python3 herramientas/construir_casos.py --solo 032 062  # escribe solo esas guías
+  python3 herramientas/construir_casos.py --salida DIR    # escribe en otro directorio (por omisión, casos/)
 """
 import argparse
 import glob
@@ -37,6 +45,15 @@ LICENCIA = ("Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido cl
             "CENETEC/IMSS, autorización de uso pendiente (H11)")
 FECHA = "2026-11-20"
 VERSION = "0.1.0"
+VERSION_REC = "0.2.0"
+FECHA_REC = "2026-11-21"
+CAMPOS_REC = {
+    "flashcard": ["frente", "reverso", "cita"],
+    "diagrama": ["codigo", "citas"],
+    "resaltado": ["fragmento", "motivo"],
+    "tabla": ["columnas", "filas", "cita"],
+    "imagen": ["url_imagen", "url_pagina", "fuente", "autor", "licencia", "descripcion", "archivo", "sha256"],
+}
 
 
 def cita(f, resto):
@@ -44,6 +61,23 @@ def cita(f, resto):
         return {"estado": "SIN_RESPALDO_GPC", "motivo": resto[1]}
     seccion, pagina, fragmento = resto
     return {"guia": f["guia"], "clave": f["clave"], "seccion": seccion, "pagina": pagina, "fragmento": fragmento}
+
+
+def recurso(f, caso_id, r):
+    """Expande un recurso compacto. Los campos que no pertenecen al tipo se conservan
+    para que el esquema (additionalProperties: false) los rechace en lugar de perderlos en silencio."""
+    out = {"id": f"{caso_id}-R{r['n']}", "tipo": r["tipo"], "concepto": r["concepto"],
+           "para_errores": r["para_errores"], "mostrar": r["mostrar"], "estado": "borrador"}
+    for k, v in r.items():
+        if k in ("n", "tipo", "concepto", "para_errores", "mostrar"):
+            continue
+        if k == "cita":
+            v = cita(f, v)
+        elif k == "citas" and isinstance(v, list):
+            v = [cita(f, x) for x in v]
+        out[k] = v
+    orden = list(out)[:6] + [k for k in CAMPOS_REC.get(r["tipo"], []) if k in out]
+    return {k: out[k] for k in orden + [k for k in out if k not in orden]}
 
 
 def baraja(c, semilla, destino):
@@ -90,9 +124,10 @@ def expande(f, letras, revisiones):
         indice = c["t"] == "I"
         cid = f"RZ-PED-{num}-{c['t']}"
         c = baraja(c, cid, letra_para(cid, letras))
-        out.append({
+        rec = c.get("rec")
+        caso = {
             "id": cid,
-            "version": VERSION,
+            "version": VERSION_REC if rec else VERSION,
             "sindrome": f["sindrome"],
             "tipo": "indice" if indice else "variante",
             "caso_indice_id": None if indice else f"RZ-PED-{num}-I",
@@ -108,14 +143,19 @@ def expande(f, letras, revisiones):
                 "explicacion": r[5], "cita_gpc": cita(f, r[6:])} for r in c["rub"]],
             "autor": "claude",
             "estado": estado_para(cid, revisiones),
-            "fecha": FECHA,
+            "fecha": FECHA_REC if rec else FECHA,
             "licencia": LICENCIA,
-        })
+        }
+        if rec:
+            caso["recursos"] = [recurso(f, cid, r) for r in rec]
+        out.append(caso)
     return num, out
 
 
-def construye():
-    """Devuelve {ruta_destino: casos} y las letras (incluidas las de casos nuevos)."""
+def construye(salida_dir=None, solo=None):
+    """Devuelve {ruta_destino: casos} y las letras (incluidas las de casos nuevos).
+    Siempre recorre todas las fuentes para asignar letras; `solo` filtra lo que se devuelve."""
+    salida_dir = salida_dir or os.path.join(RAIZ, "casos")
     letras = dict(lee_json("letras.json", "letras"))
     revisiones = lee_json("revisiones.json", "revisiones")
     salida = {}
@@ -123,7 +163,9 @@ def construye():
         with open(r, encoding="utf-8") as fh:
             f = json.load(fh)
         num, casos = expande(f, letras, revisiones)
-        salida[os.path.join(RAIZ, "casos", f"RZ-PED-{num}.json")] = casos
+        if solo and num not in solo:
+            continue
+        salida[os.path.join(salida_dir, f"RZ-PED-{num}.json")] = casos
     return salida, letras
 
 
@@ -134,8 +176,10 @@ def serializa(dato):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Expande json/fuentes a json/casos.")
     ap.add_argument("--check", action="store_true", help="no escribe; falla si casos/ no está al día")
+    ap.add_argument("--solo", nargs="*", default=None, help="escribe solo esas guías (NNN)")
+    ap.add_argument("--salida", default=None, help="directorio de salida (por omisión, casos/)")
     args = ap.parse_args(argv)
-    salida, letras = construye()
+    salida, letras = construye(args.salida, args.solo)
     letras_ruta = os.path.join(RAIZ, "letras.json")
     letras_doc = {
         "descripcion": (
@@ -153,9 +197,9 @@ def main(argv=None):
             if actual != serializa(casos):
                 distintos.append(os.path.relpath(destino, RAIZ))
         esperados = {os.path.normpath(d) for d in salida}
-        extra = sorted(
+        extra = [] if args.solo else sorted(
             os.path.relpath(p, RAIZ)
-            for p in glob.glob(os.path.join(RAIZ, "casos", "*.json"))
+            for p in glob.glob(os.path.join(args.salida or os.path.join(RAIZ, "casos"), "*.json"))
             if os.path.normpath(p) not in esperados
         )
         nuevos = sorted(set(letras) - set(lee_json("letras.json", "letras")))
@@ -169,9 +213,13 @@ def main(argv=None):
         print("OK: json/casos está al día" if ok else "json/casos no está al día")
         return 0 if ok else 1
 
+    for destino in {os.path.dirname(d) for d in salida}:
+        os.makedirs(destino, exist_ok=True)
     for destino, casos in salida.items():
-        with open(destino, "w", encoding="utf-8") as fh:
+        tmp = destino + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
             fh.write(serializa(casos))
+        os.replace(tmp, destino)
         print(f"-> {os.path.relpath(destino, RAIZ)} ({len(casos)} casos)")
     with open(letras_ruta, "w", encoding="utf-8") as fh:
         fh.write(serializa(letras_doc) + "\n")

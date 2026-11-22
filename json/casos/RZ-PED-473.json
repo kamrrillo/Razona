@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-473-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "neumonitis_aspiracion_alimento",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,177 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-473-I-R1",
+        "tipo": "flashcard",
+        "concepto": "sin_antimicrobiano_profilactico",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Se indican antimicrobianos, incluso profilácticos, en la neumonitis por aspiración de alimento?",
+        "reverso": "No. No es un proceso infeccioso, y usarlos sin justificación favorece la resistencia bacteriana.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+          "clave": "IMSS-473-11",
+          "seccion": "4.2.2 Tratamiento Farmacológico",
+          "pagina": 18,
+          "fragmento": "No deben indicarse antimicrobianos por que la"
+        }
+      },
+      {
+        "id": "RZ-PED-473-I-R2",
+        "tipo": "flashcard",
+        "concepto": "corticosteroides_sin_evidencia",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Recomienda la guía corticosteroides para la neumonitis por aspiración de alimento?",
+        "reverso": "No. Su papel es controvertido y no hay evidencia suficiente para recomendarlos.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+          "clave": "IMSS-473-11",
+          "seccion": "4.2.2 Tratamiento Farmacológico",
+          "pagina": 19,
+          "fragmento": "recomendar el uso de corticosteroides para el"
+        }
+      },
+      {
+        "id": "RZ-PED-473-I-R3",
+        "tipo": "flashcard",
+        "concepto": "criterios_terapia_intensiva",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué datos definen la dificultad respiratoria grave que amerita terapia intensiva?",
+        "reverso": "Hipoxemia que aumenta, por clínica y gasometría, con alteraciones del estado de conciencia.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+          "clave": "IMSS-473-11",
+          "seccion": "4.2.1 Tratamiento No Farmacológico",
+          "pagina": 17,
+          "fragmento": "Enviar al niño a la unidad de cuidados"
+        }
+      },
+      {
+        "id": "RZ-PED-473-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_segun_gravedad",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con neumonitis por aspiración de alimento\"] --> B{\"¿Hipoxemia en aumento con alteración de la conciencia?\"}\n  B -->|\"Sí, grave\"| C[\"Unidad de cuidados intensivos: puede requerir intubación\"]\n  B -->|\"No\"| D{\"¿Signos y gasometría de hipoxemia, con conciencia normal?\"}\n  D -->|\"Sí, moderada\"| E[\"Oxígeno al 40 a 50 %\"]\n  D -->|\"No, leve\"| F[\"Vigilar 24 a 48 horas\"]\n  F --> G{\"¿Mejora?\"}\n  G -->|\"Sí\"| H[\"Egreso; estudios de factores predisponentes como externo\"]\n  G -->|\"No\"| I{\"¿Sin resolución en 48 horas y con infección confirmada?\"}\n  I -->|\"Sí\"| J[\"Valorar antimicrobiano\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+            "clave": "IMSS-473-11",
+            "seccion": "4.2.1 Tratamiento No Farmacológico",
+            "pagina": 17,
+            "fragmento": "Enviar al niño a la unidad de cuidados"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+            "clave": "IMSS-473-11",
+            "seccion": "4.2.1 Tratamiento No Farmacológico",
+            "pagina": 17,
+            "fragmento": "Administrar oxigeno entre 40 y 50%, en"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+            "clave": "IMSS-473-11",
+            "seccion": "4.2.1 Tratamiento No Farmacológico",
+            "pagina": 17,
+            "fragmento": "Vigilancia durante 24 a 48hrs"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+            "clave": "IMSS-473-11",
+            "seccion": "4.2.2 Tratamiento Farmacológico",
+            "pagina": 18,
+            "fragmento": "las primeras 48 horas y se confirma proceso"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-473-I-R5",
+        "tipo": "tabla",
+        "concepto": "taquipnea_por_edad",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Edad",
+          "Taquipnea: frecuencia respiratoria"
+        ],
+        "filas": [
+          [
+            "0 a 5 meses",
+            "Más de 60 por minuto"
+          ],
+          [
+            "6 a 12 meses",
+            "Más de 50 por minuto"
+          ],
+          [
+            "1 a 4 años",
+            "Más de 40 por minuto"
+          ],
+          [
+            "Más de 5 años",
+            "Más de 30 por minuto"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
+          "clave": "IMSS-473-11",
+          "seccion": "4.1.1 Diagnóstico Clínico",
+          "pagina": 12,
+          "fragmento": "6 a 12 meses · > 50 por minuto"
+        }
+      },
+      {
+        "id": "RZ-PED-473-I-R6",
+        "tipo": "resaltado",
+        "concepto": "saturacion_y_conciencia_normales",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "SpO2 de 95 % al aire ambiente, temperatura 37.3 °C, alerta y reactiva",
+        "motivo": "Sin hipoxemia y con conciencia normal no cumple datos de dificultad moderada ni grave: no requiere oxígeno ni terapia intensiva."
+      },
+      {
+        "id": "RZ-PED-473-I-R7",
+        "tipo": "resaltado",
+        "concepto": "frecuencia_respiratoria_8_meses",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "FR de 42 rpm, tiraje intercostal leve",
+        "motivo": "A los 8 meses la taquipnea empieza en más de 50 por minuto; 42 rpm con tiraje leve corresponde a dificultad leve."
+      }
+    ]
   },
   {
     "id": "RZ-PED-473-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "neumonitis_aspiracion_alimento",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-473-I",
@@ -263,7 +428,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-473-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "sin_resolucion_72_horas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "hospitalizado hace 72 horas",
+        "motivo": "Ya pasaron más de 48 horas sin resolución, uno de los requisitos para valorar antimicrobiano."
+      },
+      {
+        "id": "RZ-PED-473-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "deterioro_febril",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "En lugar de mejorar, hoy presenta fiebre de 39.2 °C, aumento de la dificultad respiratoria y leucocitosis con neutrofilia",
+        "motivo": "Empeora con fiebre y neutrofilia: no procede el egreso y sugiere neumonía como complicación."
+      },
+      {
+        "id": "RZ-PED-473-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "infeccion_confirmada",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "consolidación del lóbulo inferior derecho que no existía al ingreso y el cultivo de secreción bronquial reporta crecimiento bacteriano",
+        "motivo": "La consolidación nueva y el cultivo positivo confirman el proceso infeccioso que exige la guía para valorar antimicrobiano."
+      }
+    ]
   }
 ]

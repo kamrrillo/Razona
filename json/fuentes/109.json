@@ -108,8 +108,177 @@
      23,
      "reduce la gravedad de la enfermedad y también la tasa de letalidad"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "vitamina_a_en_todos",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A qué pacientes pediátricos con sarampión indica la guía vitamina A y con qué fin?",
+    "reverso": "A todos los pacientes pediátricos, no solo a los desnutridos. Reduce la gravedad de la enfermedad y la letalidad.",
+    "cita": [
+     "4.2.4.2 Tratamiento Farmacológico",
+     24,
+     "La vitamina A se debe administrar en todos los pacientes pediátricos"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "sin_antibiotico_profilactico",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Recomienda la guía antibiótico profiláctico en el sarampión sin signos de neumonía o sepsis?",
+    "reverso": "No. El uso profiláctico de antibióticos no es útil en ese grupo de pacientes.",
+    "cita": [
+     "4.2.4.2 Tratamiento Farmacológico",
+     24,
+     "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "criterios_valoracion_pediatria",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué niños con sarampión deben valorarse por pediatría en segundo nivel?",
+    "reverso": "Menores de un año aun sin complicaciones; mayores de un año con complicaciones infecciosas graves; desnutrición grado III; inmunodeficiencia.",
+    "cita": [
+     "4.3 Criterios de Referencia a Segundo Nivel",
+     25,
+     "Niños menores de un año de edad, sin complicaciones"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_caso_sospechoso_sarampion",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con enfermedad febril exantemática y sospecha de sarampión\"] --> B[\"Estudio epidemiológico para confirmación\"]\n  B --> C[\"Vitamina A a todos, con dosis según la edad\"]\n  C --> D{\"¿Menor de un año, complicaciones infecciosas graves, desnutrición grado III o inmunodeficiencia?\"}\n  D -->|\"Sí\"| E[\"Valoración por pediatría\"]\n  D -->|\"No\"| F[\"Manejo de apoyo y vigilancia\"]\n  F --> G{\"¿Signos de neumonía o sepsis?\"}\n  G -->|\"No\"| H[\"Sin antibiótico profiláctico\"]\n  G -->|\"Sí\"| E",
+    "citas": [
+     [
+      "4.4 Vigilancia y Seguimiento",
+      25,
+      "Todo paciente pediátrico de EFE con sospecha de sarampión"
+     ],
+     [
+      "4.2.4.2 Tratamiento Farmacológico",
+      24,
+      "La vitamina A se debe administrar en todos los pacientes pediátricos"
+     ],
+     [
+      "4.3 Criterios de Referencia a Segundo Nivel",
+      25,
+      "Niños menores de un año de edad, sin complicaciones"
+     ],
+     [
+      "4.2.4.2 Tratamiento Farmacológico",
+      24,
+      "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "dosis_vitamina_a_por_edad",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Grupo de edad",
+     "Primer día",
+     "Segundo día"
+    ],
+    "filas": [
+     [
+      "Menor de 6 meses",
+      "50,000 UI",
+      "50,000 UI"
+     ],
+     [
+      "De 6 a 11 meses",
+      "100,000 UI",
+      "100,000 UI"
+     ],
+     [
+      "Mayor de 12 meses",
+      "200,000 UI",
+      "200,000 UI"
+     ]
+    ],
+    "cita": [
+     "4.2.4.2 Tratamiento Farmacológico",
+     24,
+     "De 6 a 11 meses 100,000 UI"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "edad_18_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 1 año 6 meses",
+    "motivo": "Tiene 18 meses: le toca la dosis de vitamina A de mayores de 12 meses y no cumple el criterio de referencia por edad."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "estado_nutricional_normal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Peso y talla normales para la edad",
+    "motivo": "Un buen estado nutricional no quita la indicación: la guía da vitamina A a todos los niños con sarampión."
+   },
+   {
+    "n": 8,
+    "tipo": "resaltado",
+    "concepto": "sin_neumonia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "FR 30 rpm, campos pulmonares limpios, SpO2 97 %",
+    "motivo": "No hay signos de neumonía: no se indica antibiótico profiláctico ni hay complicación grave que obligue a referir."
+   },
+   {
+    "n": 9,
+    "tipo": "imagen",
+    "concepto": "manchas_de_koplik",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Koplik_spots%2C_measles_2019.jpg/960px-Koplik_spots%2C_measles_2019.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Koplik_spots,_measles_2019.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Dctrzl",
+    "licencia": "CC BY-SA 4.0",
+    "descripcion": "Manchas de Koplik en la mucosa bucal de un paciente con sarampión: puntos blanquecinos sobre fondo enrojecido, aparecidos antes del exantema.",
+    "archivo": "assets/RZ-PED-109-I-R9.jpg",
+    "sha256": "02c06b746e3fae9106892087525ed729065e7fd5cab85e8d9eb9feb63403d007"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 8 meses, aún sin edad para la vacuna triple viral. Su hermano de 5 años fue diagnosticado con sarampión hace 12 días. Presenta fiebre de 38.9 °C desde hace 3 días, rinorrea, conjuntivitis y tos, y hoy exantema maculopapular en cara y cuello. Hidratada, sin dificultad respiratoria, SpO2 96 %, sin diarrea. Peso en percentil 50. Es valorada en su unidad de medicina familiar.",
@@ -205,7 +374,41 @@
      24,
      "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "edad_8_meses",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Femenino de 8 meses",
+    "motivo": "Está en el grupo de 6 a 11 meses: dosis intermedia de vitamina A, ni la de menores de 6 meses ni la de mayores de 12."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "menor_de_un_ano",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Es valorada en su unidad de medicina familiar",
+    "motivo": "Al ser menor de un año, la guía indica valoración por pediatría aunque no tenga complicaciones."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_datos_de_neumonia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Hidratada, sin dificultad respiratoria, SpO2 96 %, sin diarrea",
+    "motivo": "Sin signos de neumonía o sepsis, la guía no recomienda antibiótico profiláctico."
+   }
+  ]}
  ]
 }

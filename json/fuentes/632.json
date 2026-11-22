@@ -99,8 +99,120 @@
      46,
      "de oxígeno al 100% no confiere ventaja sobre la"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "oxigeno_100_vs_21_termino",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En el recién nacido de término que requiere ventilación con presión positiva, ¿el oxígeno al 100 % ofrece ventaja sobre el 21 %?",
+    "reverso": "No. Además, los metanálisis muestran menor mortalidad con reanimación a concentración ambiente.",
+    "cita": [
+     "4.2.1 Reanimación Neonatal",
+     46,
+     "de oxígeno al 100% no confiere ventaja sobre la"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "no_aspiracion_rutina_meconio",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Se recomienda aspirar nasofaringe y orofaringe de rutina cuando el líquido amniótico está manchado de meconio?",
+    "reverso": "No. La guía no la recomienda de rutina, con líquido claro ni con líquido meconial.",
+    "cita": [
+     "4.2.1 Reanimación Neonatal",
+     46,
+     "No se recomienda la aspiración de nasofaríngea y"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "umbral_fc_reanimacion_avanzada",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A partir de qué frecuencia cardiaca, pese a ventilación y masaje adecuados, se usa epinefrina?",
+    "reverso": "Cuando la frecuencia cardiaca se mantiene por debajo de 60 lpm a pesar de ventilación adecuada y masaje cardiaco.",
+    "cita": [
+     "4.2.1 Reanimación Neonatal",
+     51,
+     "Si la frecuencia cardiaca se mantiene por debajo"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "concentracion_oxigeno_inicial_vpp",
+    "para_errores": [
+     "dato_omitido",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido en apnea tras pasos iniciales: requiere VPP\"] --> B{\"¿Edad gestacional?\"}\n  B -->|\"Término\"| C[\"Iniciar con concentración ambiente 21 %\"]\n  B -->|\"Prematuro menor de 32 semanas\"| D{\"¿Hay mezclador?\"}\n  D -->|\"Sí\"| E[\"Oxígeno entre 30 y 90 % guiado por saturación\"]\n  D -->|\"No\"| F[\"Iniciar con concentración ambiente\"]\n  C --> G{\"¿Mejoran FC u oxemia con ventilación eficaz?\"}\n  G -->|\"Sí\"| H[\"Continuar con la concentración guiada por oximetría\"]\n  G -->|\"No\"| I[\"Considerar mayor concentración de oxígeno\"]",
+    "citas": [
+     [
+      "4.2.1 Reanimación Neonatal",
+      47,
+      "positiva, se recomienda iniciar con oxígeno a"
+     ],
+     [
+      "4.2.1 Reanimación Neonatal",
+      47,
+      "de gestación se administrara oxígeno con mezclador"
+     ],
+     [
+      "4.2.1 Reanimación Neonatal",
+      46,
+      "reanimación con oxígeno entre el 30% y el 90%,"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "recien_nacido_termino",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recién nacido masculino de 40 semanas",
+    "motivo": "Es de término: la ventilación se inicia con 21 %; el rango de 30 a 90 % es para prematuros de menos de 32 semanas."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "fc_80",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "frecuencia cardiaca de 80 lpm",
+    "motivo": "No es menor de 60 lpm tras ventilación adecuada; lo que corresponde ahora es ventilar, no la reanimación avanzada."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "liquido_meconial",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "líquido amniótico teñido de meconio",
+    "motivo": "El meconio no justifica aspirar naso y orofaringe de rutina ni retrasar la ventilación."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Recién nacida de 29 semanas de gestación, peso 1,150 g, nacida por cesárea por preeclampsia grave. Tras los pasos iniciales en bolsa de polietileno bajo calor radiante, continúa en apnea con frecuencia cardiaca de 90 lpm. Se dispone de pieza en T, mezclador de oxígeno y oxímetro de pulso en la mano derecha.",
@@ -196,7 +308,42 @@
      47,
      "de gestación se administrara oxígeno con mezclador"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "prematura_29_semanas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "29 semanas de gestación",
+    "motivo": "Menor de 32 semanas: iniciar con 21 % o 100 % produce hipoxemia o hiperoxemia; cambia la concentración inicial."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "mezclador_y_oximetro_preductal",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "mezclador de oxígeno y oxímetro de pulso en la mano derecha",
+    "motivo": "Con mezclador disponible, el oxígeno se regula y se guía por oximetría; la mano derecha da la lectura preductal."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "fc_90",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "continúa en apnea con frecuencia cardiaca de 90 lpm",
+    "motivo": "La apnea indica ventilación con presión positiva; la frecuencia no está por debajo de 60 lpm."
+   }
+  ]}
  ]
 }

@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-459-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "raquitismo_carencial_prevencion",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -129,12 +129,157 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-459-I-R1",
+        "tipo": "flashcard",
+        "concepto": "vitamina_d_lactante_amamantado",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué dosis de vitamina D recibe el lactante alimentado al seno materno y desde cuándo?",
+        "reverso": "400 UI/día, iniciadas en los primeros días de vida y mantenidas mientras dure la lactancia.",
+        "cita": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "suplemento diario de 400 UI/día"
+        }
+      },
+      {
+        "id": "RZ-PED-459-I-R2",
+        "tipo": "flashcard",
+        "concepto": "contenido_vitamina_d_leche_materna",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Alcanza la vitamina D de la leche materna para cubrir al lactante?",
+        "reverso": "No. Contiene 5 a 80 UI/L, insuficiente para un aporte mínimo en el lactante.",
+        "cita": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 17,
+          "fragmento": "La leche materna contiene 5 a 80 UI /L de vitamina"
+        }
+      },
+      {
+        "id": "RZ-PED-459-I-R3",
+        "tipo": "flashcard",
+        "concepto": "dosis_600_ui_madre",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿A quién recomienda la guía 600 UI de vitamina D durante la gestación y la lactancia?",
+        "reverso": "A la madre, para prevenir el raquitismo congénito. No es la dosis del lactante.",
+        "cita": {
+          "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+          "clave": "GPC-IMSS-459-19",
+          "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+          "pagina": 18,
+          "fragmento": "recomienda la administración de 600 UI de vitamina"
+        }
+      },
+      {
+        "id": "RZ-PED-459-I-R4",
+        "tipo": "diagrama",
+        "concepto": "dosis_preventiva_vitamina_d_primer_anio",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Lactante: prevención de raquitismo carencial\"] --> B{\"¿Pertenece a un grupo de riesgo de deficiencia de vitamina D?\"}\n  B -->|\"Sí\"| C[\"Evaluar 25 OH D sérica y ajustar la dosis\"]\n  B -->|\"No\"| D{\"¿Nació prematuro de 32 semanas o menos?\"}\n  D -->|\"Sí\"| E[\"800 UI/día desde los primeros días de vida\"]\n  D -->|\"No\"| F{\"¿Edad de 0 a 6 meses?\"}\n  F -->|\"Sí\"| G[\"400 UI/día desde los primeros días, sin importar la alimentación\"]\n  F -->|\"No, 6 a 12 meses\"| H[\"400 a 600 UI/día según la vitamina D de la dieta\"]",
+        "citas": [
+          {
+            "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+            "clave": "GPC-IMSS-459-19",
+            "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+            "pagina": 18,
+            "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+          },
+          {
+            "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+            "clave": "GPC-IMSS-459-19",
+            "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+            "pagina": 19,
+            "fragmento": "suplementación con 800 UI/día desde los"
+          },
+          {
+            "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+            "clave": "GPC-IMSS-459-19",
+            "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+            "pagina": 18,
+            "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros"
+          },
+          {
+            "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
+            "clave": "GPC-IMSS-459-19",
+            "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
+            "pagina": 18,
+            "fragmento": "De 6 a 12 meses: 400–600 UI/día, dependiendo"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-459-I-R5",
+        "tipo": "resaltado",
+        "concepto": "lactancia_materna_exclusiva",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Se alimenta con lactancia materna exclusiva",
+        "motivo": "Al ser amamantado de forma exclusiva, su aporte de vitamina D es insuficiente y necesita suplemento desde ya."
+      },
+      {
+        "id": "RZ-PED-459-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sin_factores_de_riesgo",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "No tiene enfermedades ni toma medicamentos",
+        "motivo": "Sin comorbilidad ni fármacos no es grupo de riesgo: no necesita medir 25(OH)D antes de la profilaxis."
+      },
+      {
+        "id": "RZ-PED-459-I-R7",
+        "tipo": "imagen",
+        "concepto": "radiografia_raquitismo",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/RicketsXray.jpg/960px-RicketsXray.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:RicketsXray.jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Frank Gaillard",
+        "licencia": "CC BY-SA 3.0",
+        "descripcion": "Radiografía de ambas manos y muñecas de un niño con raquitismo: en el borde inferior, los extremos distales de radio y cúbito se ven ensanchados y ahuecados (metáfisis en copa). Es el daño que busca prevenir la profilaxis con vitamina D.",
+        "archivo": "assets/RZ-PED-459-I-R7.jpg",
+        "sha256": "588897ae8d9ed56f953f3c0cd9c251e020f0388c113264bf757d99de7e8843cf"
+      }
+    ]
   },
   {
     "id": "RZ-PED-459-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "raquitismo_carencial_prevencion",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-459-I",
@@ -263,7 +408,46 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-459-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "anticonvulsivo_cronico",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "epilepsia focal en tratamiento con carbamazepina desde hace 18 meses",
+        "motivo": "El anticonvulsivo permanente la pone en grupo de riesgo: requiere más de 400 UI/día y evaluar 25(OH)D."
+      },
+      {
+        "id": "RZ-PED-459-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "poca_exposicion_solar",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "pasa la mayor parte del día en interiores y no recibe suplementos",
+        "motivo": "Casi no toma el sol y no recibe vitamina D: suma riesgo y el sol no basta como única medida."
+      },
+      {
+        "id": "RZ-PED-459-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "sin_deformidades_no_descarta",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Exploración sin deformidades óseas",
+        "motivo": "Una exploración normal no excluye deficiencia: en grupos de riesgo se evalúa la 25(OH)D sin esperar signos."
+      }
+    ]
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-495-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alergia_alimentaria",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,194 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-495-I-R1",
+        "tipo": "flashcard",
+        "concepto": "manifestaciones_anafilaxia_alimentaria",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué manifestaciones componen una reacción anafiláctica por alimentos?",
+        "reverso": "Prurito y eritema generalizados, urticaria, disnea, obstrucción bronquial o de vía aérea alta e hipotensión; puede haber síntomas digestivos.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1 Manifestaciones Clínicas",
+          "pagina": 13,
+          "fragmento": "Las reacciones anafilácticas por alimentos consisten"
+        }
+      },
+      {
+        "id": "RZ-PED-495-I-R2",
+        "tipo": "flashcard",
+        "concepto": "riesgo_reexposicion_anafilaxia",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué riesgo tiene volver a exponer al alimento a un niño que ya tuvo anafilaxia por él?",
+        "reverso": "Alto riesgo de reacciones graves o muerte; por eso la prueba de reto oral está contraindicada.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+          "pagina": 16,
+          "fragmento": "anafiláctica por alimentos tienen alto riesgo de"
+        }
+      },
+      {
+        "id": "RZ-PED-495-I-R3",
+        "tipo": "flashcard",
+        "concepto": "utilidad_pruebas_cutaneas",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué sensibilidad y especificidad tienen las pruebas cutáneas por punción con alimentos?",
+        "reverso": "Sensibilidad de 90 % y especificidad de 50 %; por eso se indican solo con los alimentos sospechosos.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 14,
+          "fragmento": "tienen una sensibilidad de 90% y una especificidad"
+        }
+      },
+      {
+        "id": "RZ-PED-495-I-R4",
+        "tipo": "diagrama",
+        "concepto": "confirmacion_y_manejo_alergia_alimentaria",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Sospecha de alergia a un alimento\"] --> B{\"¿Reacción anafiláctica previa por ese alimento?\"}\n  B -->|\"Sí\"| C[\"Reto oral contraindicado: alto riesgo de reacción grave\"]\n  B -->|\"No\"| D[\"Reto oral doble ciego: estándar de oro\"]\n  D --> E{\"¿Se confirma la alergia?\"}\n  E -->|\"Sí\"| F[\"Retirar de la dieta el alimento y los que den reactividad cruzada, con valoración nutricional\"]\n  E -->|\"No\"| G[\"Buscar otro diagnóstico\"]\n  C --> F\n  C --> H[\"Referir a tercer nivel: gastroenterología pediátrica y alergología\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+            "clave": "IMSS-495-11",
+            "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+            "pagina": 16,
+            "fragmento": "contraindicada en pacientes con reacciones"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+            "clave": "IMSS-495-11",
+            "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
+            "pagina": 15,
+            "fragmento": "como el estándar de oro en el diagnóstico de alergia"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+            "clave": "IMSS-495-11",
+            "seccion": "4.4 Tratamiento",
+            "pagina": 17,
+            "fragmento": "eliminar el alimento específico de la dieta y aquellos"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+            "clave": "IMSS-495-11",
+            "seccion": "4.5 Criterios de Referencia y Contrarreferencia",
+            "pagina": 19,
+            "fragmento": "Cuando existan manifestaciones graves de"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-495-I-R5",
+        "tipo": "resaltado",
+        "concepto": "datos_de_anafilaxia",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "sibilancias e hipotensión, por lo que recibió epinefrina intramuscular",
+        "motivo": "Obstrucción bronquial e hipotensión que requirieron epinefrina: fue anafilaxia, no una reacción leve."
+      },
+      {
+        "id": "RZ-PED-495-I-R6",
+        "tipo": "resaltado",
+        "concepto": "solicitud_de_prueba_confirmatoria",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Los padres solicitan una prueba que confirme el diagnóstico",
+        "motivo": "Con anafilaxia previa el reto oral está contraindicado; la relación temporal clara con el alimento sostiene el diagnóstico."
+      },
+      {
+        "id": "RZ-PED-495-I-R7",
+        "tipo": "tabla",
+        "concepto": "pruebas_diagnosticas_alergia_alimentaria",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Prueba",
+          "Lo que indica la guía"
+        ],
+        "filas": [
+          [
+            "IgE sérica total",
+            "No es diagnóstica; solo orienta sobre atopia junto con la historia clínica"
+          ],
+          [
+            "Parche atópico",
+            "No es de rutina; solo en alergia mixta con dermatitis atópica, esofagitis eosinofílica o enterocolitis"
+          ],
+          [
+            "Pruebas intradérmicas",
+            "No usarlas: riesgo de anafilaxia y de falsos positivos"
+          ],
+          [
+            "Reto oral doble ciego",
+            "La más confiable: falsos positivos 0.7 % y falsos negativos 3.2 %"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
+          "clave": "IMSS-495-11",
+          "seccion": "4.2.2 Pruebas Diagnósticas",
+          "pagina": 15,
+          "fragmento": "Se recomienda no usar la determinación de la IgE"
+        }
+      },
+      {
+        "id": "RZ-PED-495-I-R8",
+        "tipo": "imagen",
+        "concepto": "urticaria_aguda",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Hives2018.png/960px-Hives2018.png",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Hives2018.png",
+        "fuente": "Wikimedia Commons",
+        "autor": "James Heilman, MD",
+        "licencia": "CC BY-SA 4.0",
+        "descripcion": "Habones de urticaria aguda en la piel. La urticaria aguda y el angioedema son las manifestaciones más frecuentes de la alergia alimentaria.",
+        "archivo": "assets/RZ-PED-495-I-R8.png",
+        "sha256": "d3c0c6fdd8394ffe148a34773da30dd1bb0039cc9460c2f486c9e777729fc071"
+      }
+    ]
   },
   {
     "id": "RZ-PED-495-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alergia_alimentaria",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-495-I",
@@ -261,7 +443,33 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-495-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "nunca_anafilaxia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Nunca ha tenido anafilaxia",
+        "motivo": "Solo la anafilaxia previa contraindica el reto oral; sin ella, la prueba confirmatoria de referencia sí puede hacerse."
+      },
+      {
+        "id": "RZ-PED-495-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "reaccion_cutanea_autolimitada",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "cedieron solas en una hora, sin dificultad respiratoria, vómito ni cambios de coloración",
+        "motivo": "Fue urticaria perioral autolimitada, sin datos respiratorios ni hipotensión: no es una reacción anafiláctica."
+      }
+    ]
   }
 ]

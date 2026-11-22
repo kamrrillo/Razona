@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-271-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "sindrome_nefrotico_primario",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -131,12 +131,150 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-271-I-R1",
+        "tipo": "flashcard",
+        "concepto": "duracion_periodo_inicial",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En el primer episodio de síndrome nefrótico, ¿cuál es el periodo mínimo de prednisona diaria?",
+        "reverso": "De cuatro a seis semanas.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "Se recomienda un periodo mínimo del tratamiento"
+        }
+      },
+      {
+        "id": "RZ-PED-271-I-R2",
+        "tipo": "flashcard",
+        "concepto": "esquema_recaida_hasta_remision",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En una recaída poco frecuente, ¿hasta cuándo se da la prednisona diaria?",
+        "reverso": "Hasta la remisión completa: tres días sin proteinuria. Ese esquema es para recaídas, no para el primer episodio.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 31,
+          "fragmento": "niño entre en remisión completa (tres días sin proteinuria)"
+        }
+      },
+      {
+        "id": "RZ-PED-271-I-R3",
+        "tipo": "flashcard",
+        "concepto": "dosis_unica_matutina",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Dividir la dosis diaria de prednisona acelera la remisión?",
+        "reverso": "No. No hubo diferencia en el tiempo de remisión; se da en dosis única matutina para mejorar el apego.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+          "clave": "IMSS-271-13",
+          "seccion": "4.2.4 Tratamiento con Corticosteroides",
+          "pagina": 28,
+          "fragmento": "no hubo diferencia significativa en el tiempo medio"
+        }
+      },
+      {
+        "id": "RZ-PED-271-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_primer_evento",
+        "para_errores": [
+          "conocimiento",
+          "dato_omitido",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño con primer evento de síndrome nefrótico\"] --> B{\"¿Artritis, adenopatías, eritema malar u otros signos además del edema?\"}\n  B -->|\"Sí\"| C[\"Considerar causa no primaria y buscarla\"]\n  B -->|\"No\"| D[\"Sin biopsia renal de rutina\"]\n  D --> E[\"Prednisona 60 mg/m²/día o 2 mg/kg, máximo 60 mg, una dosis al día\"]\n  E --> F[\"Mantener la dosis diaria 4 a 6 semanas\"]\n  F --> G[\"Seguir en días alternos 2 a 5 meses con disminución gradual\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+            "clave": "IMSS-271-13",
+            "seccion": "4.1.2 Diagnóstico Diferencial",
+            "pagina": 19,
+            "fragmento": "Se deberá considerar la posibilidad que el origen del"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+            "clave": "IMSS-271-13",
+            "seccion": "4.1.1 Diagnóstico Clínico",
+            "pagina": 19,
+            "fragmento": "biopsia renal de rutina en el primer evento"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+            "clave": "IMSS-271-13",
+            "seccion": "4.2.4 Tratamiento con Corticosteroides",
+            "pagina": 28,
+            "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
+            "clave": "IMSS-271-13",
+            "seccion": "4.2.4 Tratamiento con Corticosteroides",
+            "pagina": 28,
+            "fragmento": "periodo de dos a cinco meses con disminución"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-271-I-R5",
+        "tipo": "resaltado",
+        "concepto": "primer_episodio",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Es su primer episodio.",
+        "motivo": "En el primer episodio el periodo diario dura 4 a 6 semanas; el esquema hasta la remisión es de recaídas."
+      },
+      {
+        "id": "RZ-PED-271-I-R6",
+        "tipo": "resaltado",
+        "concepto": "datos_de_cambios_minimos",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Sin artritis, exantema ni adenopatías",
+        "motivo": "Sin signos de causa no primaria, lo más probable es cambios mínimos: no se toma biopsia de rutina."
+      },
+      {
+        "id": "RZ-PED-271-I-R7",
+        "tipo": "resaltado",
+        "concepto": "sin_hematuria_creatinina_normal",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "sin hematuria",
+        "motivo": "No hay datos de otra patología renal ni deterioro de la función: no cumple indicaciones de biopsia."
+      }
+    ]
   },
   {
     "id": "RZ-PED-271-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "sindrome_nefrotico_primario",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-271-I",
@@ -264,7 +402,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-271-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "periodo_inicial_completo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "diagnosticado hace 6 semanas",
+        "motivo": "Ya cumplió el periodo inicial de 4 a 6 semanas: toca pasar a la fase en días alternos."
+      },
+      {
+        "id": "RZ-PED-271-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "remision_no_es_suspender",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Desde la segunda semana las tiras reactivas de orina son negativas a proteínas",
+        "motivo": "Estar en remisión no significa suspender: después del periodo inicial sigue prednisona en días alternos por 2 a 5 meses."
+      },
+      {
+        "id": "RZ-PED-271-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "respuesta_adecuada_sin_biopsia",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "TA normal, creatinina normal",
+        "motivo": "Responde al tratamiento y conserva la función renal: no hay indicación de biopsia."
+      }
+    ]
   }
 ]

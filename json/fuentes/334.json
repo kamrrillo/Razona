@@ -100,8 +100,145 @@
      39,
      "betalactamasa debe ser iniciado tan"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "cuatro_d_epiglotitis",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuáles son las 4 D de la epiglotitis descritas por Blackstock?",
+    "reverso": "Sialorrea, disfagia, disfonía y disnea. No siempre están todas presentes.",
+    "cita": [
+     "4.3.1 Diagnóstico Clínico y Diagnóstico Diferencial",
+     17,
+     "Blackstock describió las 4"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "evitar_agitar_al_nino",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué se evitan el abatelenguas y las venopunciones antes de asegurar la vía aérea en epiglotitis?",
+    "reverso": "Porque aumentan la ansiedad y la dificultad respiratoria, con riesgo de progresar a obstrucción completa.",
+    "cita": [
+     "4.4.2 Tratamiento Inicial y no Farmacológico",
+     28,
+     "evitar ansiedad e incremento de la dificultad respiratoria"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "radiografia_lateral_no_recomendada",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Recomienda la guía la radiografía lateral de cuello ante sospecha clínica de epiglotitis?",
+    "reverso": "No: tiene baja utilidad diagnóstica y puede retrasar la intervención terapéutica.",
+    "cita": [
+     "4.3.2 Pruebas Diagnósticas",
+     25,
+     "no se recomienda la realización de la radiografía lateral de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_inicial_via_aerea_epiglotitis",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con sospecha de epiglotitis aguda\"] --> B[\"No agitarlo: sin abatelenguas, sin venopunciones, junto a su familiar y en la postura que adopte\"]\n  B --> C{\"¿Inestable: obnubilado, cianótico o bradicárdico?\"}\n  C -->|\"Sí\"| D[\"Bolsa y mascarilla con oxígeno al 100 %, laringoscopia e intubación de urgencia\"]\n  C -->|\"No\"| E[\"Traslado inmediato a quirófano con material de vía aérea\"]\n  E --> F[\"Laringoscopia directa e intubación endotraqueal\"]\n  D --> G{\"¿Se logra intubar?\"}\n  G -->|\"No\"| H[\"Cricotirotomía urgente\"]\n  G -->|\"Sí\"| I[\"Vía aérea asegurada\"]\n  F --> I\n  H --> I\n  I --> J[\"Iniciar antibiótico intravenoso contra productores de betalactamasa\"]",
+    "citas": [
+     [
+      "4.4.2 Tratamiento Inicial y no Farmacológico",
+      28,
+      "prescindir de la visualización directa"
+     ],
+     [
+      "4.4.2 Tratamiento Inicial y no Farmacológico",
+      32,
+      "laringoscopia e intubación de urgencia. Si esta no es posible, se realiza cricotirotomía urgente"
+     ],
+     [
+      "4.4.2 Tratamiento Inicial y no Farmacológico",
+      32,
+      "traslado inmediato a quirófano con el material de vía aérea necesario"
+     ],
+     [
+      "4.4.1 Tratamiento Farmacológico",
+      39,
+      "betalactamasa debe ser iniciado tan pronto como se asegure la vía aérea"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "posicion_elegida_sialorrea",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "inclinado hacia adelante con el cuello extendido, babeando y con voz apagada",
+    "motivo": "Postura elegida, sialorrea y voz apagada orientan a epiglotitis. Se respeta su posición y no se le fuerza a decúbito supino."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "estridor_ansiedad",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Presenta estridor inspiratorio, FR de 36 rpm, ansiedad marcada",
+    "motivo": "Estridor y ansiedad indican obstrucción de la vía aérea. Se asegura la vía aérea antes de explorarlo o hacer maniobras invasivas."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_vacuna_hib",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "no recibió vacuna contra Haemophilus influenzae tipo b",
+    "motivo": "No estar inmunizado contra Hib es factor de riesgo de epiglotitis aguda ante una obstrucción de vía aérea superior."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "signo_del_pulgar",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Epiglottitis.jpg/330px-Epiglottitis.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Epiglottitis.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Med Chaos",
+    "licencia": "CC0",
+    "descripcion": "Radiografía lateral de cuello con el «signo del pulgar» por edema de la epiglotis. La guía no la recomienda ante sospecha clínica: baja sensibilidad y riesgo de retrasar el manejo.",
+    "archivo": "assets/RZ-PED-334-I-R8.jpg",
+    "sha256": "6e1be820470b6d2055a0f896d0cd42d01674008f04cd64931eb56eb73ba4264e"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 5 años, peso 18 kg, con epiglotitis aguda. Fue intubada en quirófano por anestesiología bajo anestesia inhalatoria; se tomó muestra supraglótica para cultivo y hemocultivo. Está en la unidad de cuidados intensivos pediátricos con vía aérea asegurada, hemodinámicamente estable, con acceso venoso. No tiene alergias conocidas.",
@@ -197,7 +334,42 @@
      39,
      "Las alternativas terapéuticas son:"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "via_aerea_asegurada",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "con vía aérea asegurada, hemodinámicamente estable, con acceso venoso",
+    "motivo": "Asegurada la vía aérea, el antibiótico intravenoso se inicia de inmediato, sin esperar el cultivo."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_alergias",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No tiene alergias conocidas",
+    "motivo": "Nada impide usar la primera elección: cefalosporina de segunda o tercera generación por 7 a 10 días, no una alternativa."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "peso_para_dosis",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "peso 18 kg",
+    "motivo": "La dosis de ceftriaxona se calcula por kilo de peso: en lactantes a escolares, 50 a 75 mg/kg/día sin exceder 2 g/día."
+   }
+  ]}
  ]
 }

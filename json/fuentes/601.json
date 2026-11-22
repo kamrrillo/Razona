@@ -99,8 +99,141 @@
      18,
      "Las radiografías simples son usualmente"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "datos_de_alarma_lumbalgia",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué datos de alarma del dolor lumbar en niños sugieren una investigación específica o urgente?",
+    "reverso": "Dolor persistente, en aumento o nocturno; síntomas radiculares o neurológicos; fiebre; pérdida de peso; edad menor de 4 años.",
+    "cita": [
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "Dolor persistente o en aumento,"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "clinica_espondilolisis",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué cuadro clínico orienta a espondilólisis o espondilolistesis?",
+    "reverso": "Dolor ligado a la actividad física que aumenta al hiperextender la columna con la pierna estirada, e hiperlordosis.",
+    "cita": [
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "de la columna lumbar mientras se tiene la"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "radiografia_suficiente",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué estudio suele bastar para diagnosticar espondilólisis y espondilolistesis?",
+    "reverso": "Las radiografías simples; no hace falta empezar con estudios de mayor resolución.",
+    "cita": [
+     "4.2 Cuadro clínico y Diagnóstico diferencial",
+     18,
+     "Las radiografías simples son usualmente"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "abordaje_dolor_lumbar_cronico",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con dolor lumbar de 3 meses de evolución\"] --> B{\"¿Datos de alarma: dolor nocturno o en aumento, síntomas neurológicos, fiebre, pérdida de peso o menor de 4 años?\"}\n  B -->|\"Sí\"| C[\"Evaluación integral por pediatría\"]\n  B -->|\"No\"| D{\"¿Dolor con la actividad que aumenta a la hiperextensión, con hiperlordosis?\"}\n  D -->|\"Sí\"| E[\"Radiografías PA y lateral y envío a ortopedia\"]\n  D -->|\"No\"| F{\"¿Rigidez matutina que mejora con la actividad o dolor sacroiliaco?\"}\n  F -->|\"Sí\"| G[\"Envío a reumatología; si es posible, reactantes de fase aguda y biometría\"]\n  F -->|\"No\"| H[\"Sin hallazgos relevantes y dolor esporádico: inespecífico, sin estudios\"]",
+    "citas": [
+     [
+      "4.2 Cuadro clínico y Diagnóstico diferencial",
+      18,
+      "caso de estar presentes se requiere una evaluación"
+     ],
+     [
+      "4.2 Cuadro clínico y Diagnóstico diferencial",
+      18,
+      "espondilólisis, por lo que está indicado solicitar"
+     ],
+     [
+      "4.2 Cuadro clínico y Diagnóstico diferencial",
+      19,
+      "Sospechar de enfermedades autoinmunes como"
+     ],
+     [
+      "4.2 Cuadro clínico y Diagnóstico diferencial",
+      17,
+      "inespecífico y por consenso de expertos se"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "dolor_con_hiperextension",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "aparece con el entrenamiento y aumenta al arquear la espalda hacia atrás",
+    "motivo": "Dolor ligado a la actividad física que aumenta con la hiperextensión: orienta a espondilólisis, no a dolor inespecífico."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_datos_alarma",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Niega fiebre, pérdida de peso, dolor nocturno, rigidez matutina y síntomas en piernas",
+    "motivo": "No hay datos de alarma ni datos de causa inflamatoria: no requiere evaluación urgente ni estudios reumatológicos."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "exploracion_orienta_espondilolisis",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "hiperlordosis lumbar, dolor a la hiperextensión de la columna con la pierna estirada",
+    "motivo": "Son los hallazgos de exploración que la guía describe en espondilólisis y espondilolistesis."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "espondilolisis_radiografia_lateral",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Spondylolyse_L5S1_LWS_seitlich_001.jpg/500px-Spondylolyse_L5S1_LWS_seitlich_001.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Spondylolyse_L5S1_LWS_seitlich_001.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Hellerhoff",
+    "licencia": "CC BY-SA 3.0",
+    "descripcion": "Radiografía lateral de columna lumbar con espondilólisis L5/S1: la radiografía simple suele bastar para el diagnóstico.",
+    "archivo": "assets/RZ-PED-601-I-R8.jpg",
+    "sha256": "35fc938100d86266f8bd7d9650e7ded35fcc740a2d8fe13715467ebfba43f3e4"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Masculino de 10 años con dolor lumbar de 3 meses de evolución que en las últimas semanas lo despierta por la noche y va en aumento. Ha perdido 2 kg y tiene fiebre intermitente de 38 °C. Sin antecedente de traumatismo ni actividad deportiva intensa. A la exploración: dolor a la palpación de apófisis espinosas lumbares, fuerza y reflejos normales. Acude a su unidad de medicina familiar.",
@@ -196,7 +329,42 @@
      18,
      "dolor lumbar que sugieren una investigación"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "dolor_nocturno_en_aumento",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "lo despierta por la noche y va en aumento",
+    "motivo": "El dolor nocturno o en aumento es dato de alarma: obliga a evaluación integral por pediatría."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "fiebre_y_perdida_de_peso",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Ha perdido 2 kg y tiene fiebre intermitente de 38 °C",
+    "motivo": "Fiebre y pérdida de peso son datos de alarma y orientan a causa infecciosa; no se debe vigilar ni esperar."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_actividad_deportiva",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Sin antecedente de traumatismo ni actividad deportiva intensa",
+    "motivo": "La espondilólisis se relaciona con la actividad física; sin ese antecedente y con datos de alarma no es la sospecha principal."
+   }
+  ]}
  ]
 }

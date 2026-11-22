@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-029-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "control_nino_sano_nutricion",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -144,12 +144,139 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-029-I-R1",
+        "tipo": "flashcard",
+        "concepto": "edad_inicio_otros_alimentos",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿A partir de qué edad indica la guía introducir alimentos distintos a la leche materna?",
+        "reverso": "A partir de los 6 meses, para asegurar el aporte suficiente de micronutrientes. Antes de esa edad, solo leche materna.",
+        "cita": {
+          "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+          "clave": "IMSS-029-08",
+          "seccion": "4.1.1 Nutrición",
+          "pagina": 16,
+          "fragmento": "se inicia a partir de los 6 meses"
+        }
+      },
+      {
+        "id": "RZ-PED-029-I-R2",
+        "tipo": "flashcard",
+        "concepto": "continuar_leche_y_destete",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Al iniciar otros alimentos, ¿qué pasa con la leche materna y a qué edad se recomienda el destete?",
+        "reverso": "Se continúa la leche materna entre los 6 y 23 meses junto con los otros alimentos. El destete se recomienda a los 2 años.",
+        "cita": {
+          "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+          "clave": "IMSS-029-08",
+          "seccion": "4.1.1 Nutrición",
+          "pagina": 17,
+          "fragmento": "El destete se recomienda a la edad de los 2 años"
+        }
+      },
+      {
+        "id": "RZ-PED-029-I-R3",
+        "tipo": "flashcard",
+        "concepto": "valoracion_estado_nutricional",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo debe valorarse el estado nutricional del niño menor de 5 años?",
+        "reverso": "En cada consulta. Desde la primera, también se investigan los factores que pueden influir en él.",
+        "cita": {
+          "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+          "clave": "IMSS-029-08",
+          "seccion": "4.1.1 Nutrición",
+          "pagina": 15,
+          "fragmento": "Valorar el estado nutricional de la niña o del niño"
+        }
+      },
+      {
+        "id": "RZ-PED-029-I-R4",
+        "tipo": "diagrama",
+        "concepto": "alimentacion_por_edad",
+        "para_errores": [
+          "lectura",
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Consulta de control del niño sano\"] --> B[\"Valorar el estado nutricional\"]\n  B --> C{\"¿Tiene menos de 6 meses?\"}\n  C -->|\"Sí\"| D[\"Solo leche materna, sin otros alimentos\"]\n  C -->|\"No\"| E[\"Incorporar lenta y progresivamente papillas de verduras, frutas y cereales sin gluten\"]\n  E --> F[\"Continuar la leche materna entre los 6 y 23 meses\"]\n  F --> G[\"Integrar a la dieta familiar en el primer año\"]\n  G --> H[\"Destete a los 2 años\"]",
+        "citas": [
+          {
+            "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+            "clave": "IMSS-029-08",
+            "seccion": "4.1.1 Nutrición",
+            "pagina": 15,
+            "fragmento": "Valorar el estado nutricional de la niña o del niño"
+          },
+          {
+            "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+            "clave": "IMSS-029-08",
+            "seccion": "4.1.1 Nutrición",
+            "pagina": 16,
+            "fragmento": "Indicar lactancia materna exclusiva durante los"
+          },
+          {
+            "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+            "clave": "IMSS-029-08",
+            "seccion": "4.1.1 Nutrición",
+            "pagina": 17,
+            "fragmento": "Se recomienda incorporar lenta y progresivamente la"
+          },
+          {
+            "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
+            "clave": "IMSS-029-08",
+            "seccion": "4.1.1 Nutrición",
+            "pagina": 17,
+            "fragmento": "El destete se recomienda a la edad de los 2 años"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-029-I-R5",
+        "tipo": "resaltado",
+        "concepto": "edad_cuatro_meses",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Masculino de 4 meses de edad",
+        "motivo": "Tiene 4 meses. La guía inicia otros alimentos a partir de los 6 meses; a esta edad aún no corresponden."
+      },
+      {
+        "id": "RZ-PED-029-I-R6",
+        "tipo": "resaltado",
+        "concepto": "crecimiento_adecuado",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Peso y talla en percentil 50 para la edad, con ganancia ponderal adecuada desde la última consulta",
+        "motivo": "El estado nutricional es adecuado. El llanto no indica que la leche materna sea insuficiente."
+      }
+    ]
   },
   {
     "id": "RZ-PED-029-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "control_nino_sano_nutricion",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-029-I",
@@ -281,7 +408,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-029-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "edad_siete_meses",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Femenino de 7 meses de edad",
+        "motivo": "Ya pasó los 6 meses: la guía indica iniciar otros alimentos a partir de esa edad, no esperar al año."
+      },
+      {
+        "id": "RZ-PED-029-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "nunca_ha_probado_alimentos",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Recibe únicamente leche materna; aún no ha probado otros alimentos",
+        "motivo": "Nunca ha recibido otros alimentos: la incorporación debe ser lenta y progresiva, y la leche materna continúa."
+      },
+      {
+        "id": "RZ-PED-029-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "madurez_para_comer",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Se mantiene sentada con apoyo, lleva objetos a la boca",
+        "motivo": "La guía describe que hacia los 6 meses la masticación y la capacidad de sentarse favorecen deglutir alimentos espesos."
+      }
+    ]
   }
 ]

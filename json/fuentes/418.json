@@ -16,7 +16,125 @@
    ["lectura", "Actúa como si la paciente estuviera inestable; la viñeta dice que está estable y sin sepsis.", ["E"], ["inestable", "esperar estabilidad", "todavía no"], "¿Qué dice la viñeta sobre el estado hemodinámico de la paciente?", "La vía enteral se inicia en las primeras 48 horas en prematuros hemodinámica y fisiológicamente estables, como esta paciente.", "4.1 Edad de Inicio de la Alimentación Enteral", 13, "inicie la vía oral en las primeras 48 horas de vida"],
    ["dato_omitido", "Elige sucedáneo sin considerar que la madre ya tiene leche disponible.", ["D"], ["fórmula de prematuro", "sucedáneo", "más calorías"], "¿Qué leche hay disponible para esta paciente y cuál prefiere la guía?", "Se inicia con leche materna no fortificada; el sucedáneo de leche humana de pretérmino se usa solo si no se dispone de leche materna.", "4.2 Tipo de Leche para Iniciar la Alimentación Enteral", 15, "semanas. En caso de no disponer de ella, se puede"],
    ["conocimiento", "Cree que el CPAP y el catéter umbilical contraindican el inicio de la vía enteral.", ["B"], ["CPAP", "catéter umbilical", "ayuno"], "¿Qué situaciones menciona la guía como no contraindicaciones para iniciar la vía enteral?", "El inicio de la vía enteral en las primeras 48 horas no está contraindicado con soporte ventilatorio (ventilación mecánica o CPAP) ni con cateterismo umbilical.", "4.1 Edad de Inicio de la Alimentación Enteral", 14, "extrauterina no está contraindicado en las siguientes"],
-   ["razonamiento", "Supone que una fórmula diluida o glucosada madura el intestino antes de la leche.", ["C"], ["diluida", "glucosada", "preparar", "probar tolerancia"], "¿Qué efecto tienen las fórmulas diluidas y las soluciones glucosadas sobre la motilidad intestinal?", "Ni las fórmulas maternizadas diluidas ni las soluciones glucosadas inducen maduración de los patrones de motilidad intestinal.", "4.2 Tipo de Leche para Iniciar la Alimentación Enteral", 15, "Ni las formulas maternizadas diluidas ni las"]]},
+   ["razonamiento", "Supone que una fórmula diluida o glucosada madura el intestino antes de la leche.", ["C"], ["diluida", "glucosada", "preparar", "probar tolerancia"], "¿Qué efecto tienen las fórmulas diluidas y las soluciones glucosadas sobre la motilidad intestinal?", "Ni las fórmulas maternizadas diluidas ni las soluciones glucosadas inducen maduración de los patrones de motilidad intestinal.", "4.2 Tipo de Leche para Iniciar la Alimentación Enteral", 15, "Ni las formulas maternizadas diluidas ni las"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "no_contraindicaciones_inicio_enteral",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿El soporte ventilatorio o el catéter umbilical contraindican iniciar la vía enteral en las primeras 48 horas?",
+    "reverso": "No. Tampoco la ausencia o flujo reverso diastólico en la arteria umbilical.",
+    "cita": [
+     "4.1 Edad de Inicio de la Alimentación Enteral",
+     14,
+     "extrauterina no está contraindicado en las siguientes"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "leche_de_inicio",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Con qué leche se inicia la alimentación enteral en el prematuro de 32 semanas o menos?",
+    "reverso": "Con leche materna sin fortificar, si no hay contraindicación. Solo si no se dispone de ella, sucedáneo de leche humana de pretérmino.",
+    "cita": [
+     "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+     15,
+     "Se recomienda iniciar la alimentación enteral con"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "diluidas_no_maduran_intestino",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Las fórmulas diluidas o las soluciones glucosadas preparan el intestino antes de dar leche?",
+    "reverso": "No. Ninguna induce maduración de los patrones de motilidad intestinal.",
+    "cita": [
+     "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+     15,
+     "Ni las formulas maternizadas diluidas ni las"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "inicio_alimentacion_enteral_prematuro",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Prematuro de 32 semanas o menos\"] --> B{\"¿Hemodinámica y fisiológicamente estable?\"}\n  B -->|\"No\"| C[\"Lograr estabilidad antes de iniciar\"]\n  B -->|\"Sí\"| D{\"¿Sepsis o asfixia documentada?\"}\n  D -->|\"Sí\"| E[\"Iniciar después de las primeras 48 horas\"]\n  D -->|\"No\"| F[\"Iniciar en las primeras 48 horas; CPAP, ventilación o catéter umbilical no lo contraindican\"]\n  F --> G{\"¿Hay leche materna sin contraindicación?\"}\n  G -->|\"Sí\"| H[\"Leche materna sin fortificar\"]\n  G -->|\"No\"| I[\"Sucedáneo de leche humana de pretérmino\"]",
+    "citas": [
+     [
+      "4.1 Edad de Inicio de la Alimentación Enteral",
+      13,
+      "inicie la vía oral en las primeras 48 horas de vida"
+     ],
+     [
+      "4.1 Edad de Inicio de la Alimentación Enteral",
+      14,
+      "En caso de sepsis o de asfixia documentada se"
+     ],
+     [
+      "4.1 Edad de Inicio de la Alimentación Enteral",
+      14,
+      "extrauterina no está contraindicado en las siguientes"
+     ],
+     [
+      "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+      15,
+      "Se recomienda iniciar la alimentación enteral con"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "paciente_estable",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Está hemodinámicamente estable, sin datos de sepsis",
+    "motivo": "Cumple la condición de estabilidad y no tiene sepsis: no hay motivo para diferir el inicio más allá de 48 horas."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "leche_materna_disponible",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "La madre se extrae leche y ya llevó calostro a la unidad",
+    "motivo": "Hay leche materna disponible; el sucedáneo de pretérmino solo se usa si no se dispone de ella."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "cpap_y_cateter_no_contraindican",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Se encuentra en CPAP nasal con FiO2 de 25 %, tiene catéter venoso umbilical",
+    "motivo": "El CPAP y el catéter umbilical no contraindican iniciar la vía enteral en las primeras 48 horas."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Recién nacido masculino de 31 semanas de gestación, peso 1,500 g, con 3 días de vida. Ha tolerado alimentación enteral mínima con leche materna, sin residuo gástrico significativo, evacuaciones presentes y abdomen blando. Respira al aire ambiente y está estable. El equipo decide avanzar la alimentación enteral.",
   "pregunta": "¿Cuál es el esquema más adecuado para iniciar e incrementar la alimentación enteral?",
@@ -32,5 +150,29 @@
    ["conocimiento", "Fortifica antes de alcanzar el volumen enteral que indica la guía.", ["B"], ["fortificador", "más calorías", "crecer"], "¿Con qué tolerancia enteral recomienda la guía iniciar el fortificador?", "Se recomienda diferir los fortificadores hasta que el recién nacido tenga una tolerancia enteral de 100 mL/kg/día.", "4.6 Indicaciones de los Suplementos y Fortificadores de la Alimentación Enteral", 24, "tolerancia enteral de 100 ml/kg/día"],
    ["conocimiento", "Usa incrementos mayores que los que la guía considera seguros.", ["C"], ["50 mL/kg", "rápido", "volumen total pronto"], "¿Qué incremento diario considera seguro la guía?", "El incremento diario de 10 a 35 mL/kg/día se considera seguro.", "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral", 19, "10 a 35 ml/kg/día se considera seguro"],
    ["razonamiento", "Supone que avanzar despacio protege contra enterocolitis.", ["D"], ["más lento", "evitar enterocolitis", "esperar"], "¿Qué mostró la comparación entre incremento lento y rápido en la frecuencia de enterocolitis?", "El incremento lento frente al rápido no tuvo efecto significativo sobre enterocolitis necrosante ni sobre la estancia; el rápido redujo los días para recuperar el peso y alcanzar el volumen total.", "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral", 19, "significativo en cuanto a enterocolitis necrosante ni"],
-   ["conocimiento", "Propone libre demanda sin evidencia en este grupo.", ["E"], ["libre demanda", "lo que quiera"], "¿Qué datos hay sobre la alimentación a libre demanda en menores de 32 semanas?", "No existen datos disponibles sobre la alimentación a libre demanda en recién nacidos menores de 32 semanas.", "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral", 19, "alimentación a libre demanda en los recién nacidos"]]}
+   ["conocimiento", "Propone libre demanda sin evidencia en este grupo.", ["E"], ["libre demanda", "lo que quiera"], "¿Qué datos hay sobre la alimentación a libre demanda en menores de 32 semanas?", "No existen datos disponibles sobre la alimentación a libre demanda en recién nacidos menores de 32 semanas.", "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral", 19, "alimentación a libre demanda en los recién nacidos"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "tolera_enteral_minima",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Ha tolerado alimentación enteral mínima con leche materna, sin residuo gástrico significativo",
+    "motivo": "Tolera la vía enteral: se avanza con 10 a 20 mL/kg/día y aumentos diarios seguros de 10 a 35 mL/kg/día; el fortificador espera a tolerar 100 mL/kg/día."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "estable_para_avanzar",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Respira al aire ambiente y está estable",
+    "motivo": "Está estable y sin datos de intolerancia; mantener el volumen mínimo no reduce la enterocolitis y retrasa el volumen total."
+   }
+  ]}
  ]}

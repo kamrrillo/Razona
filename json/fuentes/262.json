@@ -101,8 +101,113 @@
      18,
      "En caso de existir ictericia siempre se medirán los niveles"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "uso_escala_kramer",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Para qué recomienda la guía usar la escala de Kramer en el recién nacido?",
+    "reverso": "Solo para saber si hay o no ictericia. No predice el nivel de bilirrubina; si hay ictericia se mide la sérica.",
+    "cita": [
+     "2.1 Diagnóstico",
+     18,
+     "Se recomienda usar la escala de Kramer solo para determinar la"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "criterios_bilirrubinometro_transcutaneo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿En qué recién nacidos se puede usar el bilirrubinómetro transcutáneo?",
+    "reverso": "En los de 35 semanas de gestación o más y con más de 24 horas de vida.",
+    "cita": [
+     "2.2 Auxiliares diagnósticos",
+     19,
+     "con edad gestacional de ≥35 semanas y edad postnatal"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "interpretar_por_edad_en_horas",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Con qué se decide el tratamiento de la hiperbilirrubinemia neonatal?",
+    "reverso": "Con la cifra de bilirrubina interpretada según la edad postnatal en horas, usando los cuadros de umbrales. No con la apariencia.",
+    "cita": [
+     "2.2 Auxiliares diagnósticos",
+     20,
+     "interpretar de acuerdo a la edad postnatal en horas"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "medicion_bilirrubina_segun_edad",
+    "para_errores": [
+     "conocimiento",
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido con ictericia visible\"] --> B{\"¿Apareció en las primeras 24 horas de vida?\"}\n  B -->|\"Sí\"| C[\"Bilirrubina sérica en menos de 2 horas; repetir cada 6 horas hasta bajar del umbral\"]\n  B -->|\"No\"| D[\"Medir bilirrubina dentro de las siguientes 6 horas\"]\n  D --> E{\"¿35 semanas o más y transcutáneo disponible?\"}\n  E -->|\"No\"| F[\"Bilirrubina sérica\"]\n  E -->|\"Sí\"| G{\"¿Transcutánea mayor de 14.7 mg/dL?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| H[\"Interpretar según edad en horas\"]",
+    "citas": [
+     [
+      "2.2 Auxiliares diagnósticos",
+      20,
+      "Mida y registre el nivel de bilirrubina sérica dentro de las"
+     ],
+     [
+      "2.2 Auxiliares diagnósticos",
+      21,
+      "dentro de las siguientes 6 horas de haberse detectado la"
+     ],
+     [
+      "2.2 Auxiliares diagnósticos",
+      19,
+      "con edad gestacional de ≥35 semanas y edad postnatal"
+     ],
+     [
+      "2.2 Auxiliares diagnósticos",
+      20,
+      "indica un nivel de bilirrubina mayor de 14.7 mg/dl"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "ictericia_antes_24_horas",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "A las 20 horas de vida la enfermera observa coloración amarilla",
+    "motivo": "Ictericia en las primeras 24 horas: no es fisiológica y obliga a medir la bilirrubina sérica de forma urgente."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "prematuro_34_semanas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "34 semanas de gestación",
+    "motivo": "Con menos de 35 semanas el transcutáneo no es confiable: siempre se mide la bilirrubina sérica."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Recién nacida de 39 semanas de gestación, peso 3,300 g, alimentada con lactancia materna exclusiva. En su revisión a las 60 horas de vida, antes del egreso, se observa ictericia en cara, tórax y abdomen. Activa, con buena succión y sin pérdida de peso excesiva. Madre A positivo, sin antecedentes de hermanos con fototerapia. El hospital cuenta con bilirrubinómetro transcutáneo.",
@@ -200,7 +305,41 @@
      18,
      "Se recomienda usar la escala de Kramer solo para determinar la"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "ictericia_despues_24_horas",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "a las 60 horas de vida",
+    "motivo": "Ictericia visible después de las 24 horas: se mide la bilirrubina dentro de las siguientes 6 horas, sin egresar a ciegas."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "termino_39_semanas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recién nacida de 39 semanas de gestación",
+    "motivo": "Con 35 semanas o más y más de 24 horas de vida puede usarse el bilirrubinómetro transcutáneo."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "transcutaneo_disponible",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "El hospital cuenta con bilirrubinómetro transcutáneo",
+    "motivo": "Hay transcutáneo disponible; solo si marca más de 14.7 mg/dL se confirma con bilirrubina sérica."
+   }
+  ]}
  ]
 }

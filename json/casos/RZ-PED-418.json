@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-418-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alimentacion_enteral_prematuro",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -131,12 +131,151 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-418-I-R1",
+        "tipo": "flashcard",
+        "concepto": "no_contraindicaciones_inicio_enteral",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿El soporte ventilatorio o el catéter umbilical contraindican iniciar la vía enteral en las primeras 48 horas?",
+        "reverso": "No. Tampoco la ausencia o flujo reverso diastólico en la arteria umbilical.",
+        "cita": {
+          "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+          "clave": "IMSS-418-11",
+          "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
+          "pagina": 14,
+          "fragmento": "extrauterina no está contraindicado en las siguientes"
+        }
+      },
+      {
+        "id": "RZ-PED-418-I-R2",
+        "tipo": "flashcard",
+        "concepto": "leche_de_inicio",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Con qué leche se inicia la alimentación enteral en el prematuro de 32 semanas o menos?",
+        "reverso": "Con leche materna sin fortificar, si no hay contraindicación. Solo si no se dispone de ella, sucedáneo de leche humana de pretérmino.",
+        "cita": {
+          "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+          "clave": "IMSS-418-11",
+          "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+          "pagina": 15,
+          "fragmento": "Se recomienda iniciar la alimentación enteral con"
+        }
+      },
+      {
+        "id": "RZ-PED-418-I-R3",
+        "tipo": "flashcard",
+        "concepto": "diluidas_no_maduran_intestino",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Las fórmulas diluidas o las soluciones glucosadas preparan el intestino antes de dar leche?",
+        "reverso": "No. Ninguna induce maduración de los patrones de motilidad intestinal.",
+        "cita": {
+          "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+          "clave": "IMSS-418-11",
+          "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+          "pagina": 15,
+          "fragmento": "Ni las formulas maternizadas diluidas ni las"
+        }
+      },
+      {
+        "id": "RZ-PED-418-I-R4",
+        "tipo": "diagrama",
+        "concepto": "inicio_alimentacion_enteral_prematuro",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Prematuro de 32 semanas o menos\"] --> B{\"¿Hemodinámica y fisiológicamente estable?\"}\n  B -->|\"No\"| C[\"Lograr estabilidad antes de iniciar\"]\n  B -->|\"Sí\"| D{\"¿Sepsis o asfixia documentada?\"}\n  D -->|\"Sí\"| E[\"Iniciar después de las primeras 48 horas\"]\n  D -->|\"No\"| F[\"Iniciar en las primeras 48 horas; CPAP, ventilación o catéter umbilical no lo contraindican\"]\n  F --> G{\"¿Hay leche materna sin contraindicación?\"}\n  G -->|\"Sí\"| H[\"Leche materna sin fortificar\"]\n  G -->|\"No\"| I[\"Sucedáneo de leche humana de pretérmino\"]",
+        "citas": [
+          {
+            "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+            "clave": "IMSS-418-11",
+            "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
+            "pagina": 13,
+            "fragmento": "inicie la vía oral en las primeras 48 horas de vida"
+          },
+          {
+            "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+            "clave": "IMSS-418-11",
+            "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
+            "pagina": 14,
+            "fragmento": "En caso de sepsis o de asfixia documentada se"
+          },
+          {
+            "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+            "clave": "IMSS-418-11",
+            "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
+            "pagina": 14,
+            "fragmento": "extrauterina no está contraindicado en las siguientes"
+          },
+          {
+            "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
+            "clave": "IMSS-418-11",
+            "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
+            "pagina": 15,
+            "fragmento": "Se recomienda iniciar la alimentación enteral con"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-418-I-R5",
+        "tipo": "resaltado",
+        "concepto": "paciente_estable",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Está hemodinámicamente estable, sin datos de sepsis",
+        "motivo": "Cumple la condición de estabilidad y no tiene sepsis: no hay motivo para diferir el inicio más allá de 48 horas."
+      },
+      {
+        "id": "RZ-PED-418-I-R6",
+        "tipo": "resaltado",
+        "concepto": "leche_materna_disponible",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "La madre se extrae leche y ya llevó calostro a la unidad",
+        "motivo": "Hay leche materna disponible; el sucedáneo de pretérmino solo se usa si no se dispone de ella."
+      },
+      {
+        "id": "RZ-PED-418-I-R7",
+        "tipo": "resaltado",
+        "concepto": "cpap_y_cateter_no_contraindican",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Se encuentra en CPAP nasal con FiO2 de 25 %, tiene catéter venoso umbilical",
+        "motivo": "El CPAP y el catéter umbilical no contraindican iniciar la vía enteral en las primeras 48 horas."
+      }
+    ]
   },
   {
     "id": "RZ-PED-418-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alimentacion_enteral_prematuro",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-418-I",
@@ -264,7 +403,33 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-418-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "tolera_enteral_minima",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Ha tolerado alimentación enteral mínima con leche materna, sin residuo gástrico significativo",
+        "motivo": "Tolera la vía enteral: se avanza con 10 a 20 mL/kg/día y aumentos diarios seguros de 10 a 35 mL/kg/día; el fortificador espera a tolerar 100 mL/kg/día."
+      },
+      {
+        "id": "RZ-PED-418-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "estable_para_avanzar",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Respira al aire ambiente y está estable",
+        "motivo": "Está estable y sin datos de intolerancia; mantener el volumen mínimo no reduce la enterocolitis y retrasa el volumen total."
+      }
+    ]
   }
 ]

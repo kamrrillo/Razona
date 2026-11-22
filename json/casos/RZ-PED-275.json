@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-275-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "malformacion_anorrectal_neonatal",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,199 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-275-I-R1",
+        "tipo": "flashcard",
+        "concepto": "meconio_perineal_tardio",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En la fístula recto-perineal, ¿hasta cuándo puede tardar en verse el meconio en el periné?",
+        "reverso": "Hasta las 16 a 24 horas de vida. Su ausencia en las primeras horas no descarta la fístula.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+          "clave": "IMSS-275-10",
+          "seccion": "4.2 Diagnóstico",
+          "pagina": 19,
+          "fragmento": "en el periné hasta las 16 a 24 horas"
+        }
+      },
+      {
+        "id": "RZ-PED-275-I-R2",
+        "tipo": "flashcard",
+        "concepto": "clasificacion_pena_varones",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Según la clasificación de Peña, ¿qué variantes de malformación anorrectal hay en niños varones?",
+        "reverso": "Fístula recto-perineal, recto-uretro bulbar, recto-uretro prostática, recto-cuello vesical y ano imperforado sin fístula. La recto-vestibular es de niñas.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+          "clave": "IMSS-275-10",
+          "seccion": "4.2 Diagnóstico",
+          "pagina": 17,
+          "fragmento": "fístula recto-uretro prostática"
+        }
+      },
+      {
+        "id": "RZ-PED-275-I-R3",
+        "tipo": "flashcard",
+        "concepto": "diagnostico_clinico_mar",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿En qué proporción de casos el diagnóstico de malformación anorrectal es clínico?",
+        "reverso": "En 90 a 95 %. La exploración perineal sistematizada es la base del diagnóstico.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+          "clave": "IMSS-275-10",
+          "seccion": "4.2 Diagnóstico",
+          "pagina": 18,
+          "fragmento": "considerar que el diagnóstico de MAR es"
+        }
+      },
+      {
+        "id": "RZ-PED-275-I-R4",
+        "tipo": "diagrama",
+        "concepto": "abordaje_diagnostico_mar",
+        "para_errores": [
+          "dato_omitido",
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Recién nacido sin orificio anal en la exploración\"] --> B{\"¿Cuadro típico con fístula ano cutánea visible?\"}\n  B -->|\"Sí\"| C[\"Tipo definido por la clínica; sin pruebas adicionales\"]\n  B -->|\"No\"| D{\"¿Ya cumplió 24 horas de vida?\"}\n  D -->|\"No\"| E[\"Observar evolución y reexplorar el periné hasta las 24 horas\"]\n  E --> D\n  D -->|\"Sí\"| F{\"¿Algún signo clínico define la localización?\"}\n  F -->|\"Sí\"| C\n  F -->|\"No\"| G[\"Radiografía lateral en decúbito ventral\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+            "clave": "IMSS-275-10",
+            "seccion": "4.2 Diagnóstico",
+            "pagina": 19,
+            "fragmento": "Ante un cuadro clínico típico con presencia de fístula"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+            "clave": "IMSS-275-10",
+            "seccion": "4.2 Diagnóstico",
+            "pagina": 19,
+            "fragmento": "evolución dentro de las 24horas de VEU son"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+            "clave": "IMSS-275-10",
+            "seccion": "4.2.1 Pruebas Diagnósticas",
+            "pagina": 21,
+            "fragmento": "localización de la MAR en las primeras 24 horas, está"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-275-I-R5",
+        "tipo": "tabla",
+        "concepto": "estudios_gabinete_mar",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Estudio",
+          "Qué aporta",
+          "Limitación"
+        ],
+        "filas": [
+          [
+            "Ultrasonido perineal",
+            "Distancia entre saco rectal y foseta anal",
+            "Sensibilidad del 86 %"
+          ],
+          [
+            "Radiografía lateral en decúbito ventral",
+            "Distancia entre fondo de saco rectal y periné",
+            "Requiere marcador radiopaco en la foseta anal"
+          ],
+          [
+            "Invertograma",
+            "Distancia entre fondo de saco rectal y periné",
+            "Sensibilidad del 27 %"
+          ],
+          [
+            "Tomografía de abdomen",
+            "Estructuras óseas y musculares",
+            "No identifica fístulas ni fondo de saco; radiación"
+          ],
+          [
+            "Resonancia magnética",
+            "Fondo de saco intestinal",
+            "Detecta pocas fístulas recto urogenitales"
+          ],
+          [
+            "Examen general de orina",
+            "Células epiteliales intestinales en varones",
+            "Solo confirma fístula a tracto urinario"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
+          "clave": "IMSS-275-10",
+          "seccion": "4.2.1 Pruebas Diagnósticas",
+          "pagina": 20,
+          "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR"
+        }
+      },
+      {
+        "id": "RZ-PED-275-I-R6",
+        "tipo": "resaltado",
+        "concepto": "pocas_horas_de_vida",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "6 horas de vida",
+        "motivo": "Con 6 horas de vida aún no se ve el meconio de una fístula recto-perineal; hay que esperar la evolución de 24 horas."
+      },
+      {
+        "id": "RZ-PED-275-I-R7",
+        "tipo": "resaltado",
+        "concepto": "sexo_masculino",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Recién nacido masculino",
+        "motivo": "Es varón: la fístula recto-vestibular solo existe en niñas."
+      },
+      {
+        "id": "RZ-PED-275-I-R8",
+        "tipo": "resaltado",
+        "concepto": "ausencia_temprana_meconio",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "No se observa meconio en periné ni en la orina",
+        "motivo": "La ausencia de meconio en las primeras 24 horas no descarta una fístula."
+      }
+    ]
   },
   {
     "id": "RZ-PED-275-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "malformacion_anorrectal_neonatal",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-275-I",
@@ -263,7 +450,46 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-275-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "mas_de_24_horas",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "30 horas de vida",
+        "motivo": "Ya pasaron las primeras 24 horas de evolución: no hay razón para seguir esperando."
+      },
+      {
+        "id": "RZ-PED-275-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "fistula_con_meconio",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "se observa un pequeño orificio por el que sale meconio",
+        "motivo": "Fístula ano cutánea visible con meconio: es un cuadro típico y la clínica define el tipo sin estudios de gabinete."
+      },
+      {
+        "id": "RZ-PED-275-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "orificios_genitales_independientes",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Genitales femeninos normales con uretra y vagina independientes",
+        "motivo": "No hay orificio único en el periné que sugiera cloaca; el meconio sale por una fístula en el periné."
+      }
+    ]
   }
 ]

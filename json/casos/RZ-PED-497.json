@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-497-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "tetralogia_fallot_crisis_hipoxia",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,168 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-497-I-R1",
+        "tipo": "flashcard",
+        "concepto": "farmacos_precipitantes_crisis",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué medicamentos pueden precipitar una crisis de hipoxia en la tetralogía de Fallot?",
+        "reverso": "Inotrópicos y digitálicos, inhibidores de la enzima convertidora de angiotensina, barbitúricos y cloropromacina.",
+        "cita": {
+          "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+          "clave": "IMSS-497-11",
+          "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+          "pagina": 14,
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+        }
+      },
+      {
+        "id": "RZ-PED-497-I-R2",
+        "tipo": "flashcard",
+        "concepto": "estudios_precipitan_crisis",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué procedimientos diagnósticos precipitan con frecuencia una crisis de hipoxia?",
+        "reverso": "La toma de radiografía de tórax, electrocardiograma, ecocardiograma y exámenes de laboratorio.",
+        "cita": {
+          "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+          "clave": "IMSS-497-11",
+          "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+          "pagina": 14,
+          "fragmento": "Son frecuentemente precipitados en la toma o"
+        }
+      },
+      {
+        "id": "RZ-PED-497-I-R3",
+        "tipo": "flashcard",
+        "concepto": "agitacion_y_espasmo_infundibular",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Por qué la agitación empeora una crisis de hipoxia?",
+        "reverso": "Aumenta la estimulación simpática del infundíbulo y con ello la obstrucción pulmonar; por eso sedar disminuye la cianosis.",
+        "cita": {
+          "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+          "clave": "IMSS-497-11",
+          "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+          "pagina": 15,
+          "fragmento": "estimulación simpática del infundíbulo incrementando"
+        }
+      },
+      {
+        "id": "RZ-PED-497-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_escalonado_crisis_hipoxia",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Crisis de hipoxia en tetralogía de Fallot\"] --> B[\"Tranquilizar, retirar estímulos y sostener en posición genupectoral\"]\n  B --> C[\"En el hospital: oxígeno por mascarilla; evitar punciones de primera intención\"]\n  C --> D{\"¿Persiste la crisis?\"}\n  D -->|\"No\"| E[\"Vigilar y evitar desencadenantes\"]\n  D -->|\"Sí\"| F[\"Sedación: morfina en bolos lentos cada 5 minutos, vigilando depresión respiratoria\"]\n  F --> G{\"¿Persiste la crisis?\"}\n  G -->|\"No\"| E\n  G -->|\"Sí\"| H[\"Vía venosa: vasoconstrictores, betabloqueadores, bicarbonato; valorar asistencia ventilatoria\"]",
+        "citas": [
+          {
+            "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+            "clave": "IMSS-497-11",
+            "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+            "pagina": 15,
+            "fragmento": "Sostenerlo por los brazos y colocándolo en posición de"
+          },
+          {
+            "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+            "clave": "IMSS-497-11",
+            "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+            "pagina": 15,
+            "fragmento": "oxigeno por mascarilla, evitar punciones de primera"
+          },
+          {
+            "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+            "clave": "IMSS-497-11",
+            "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+            "pagina": 16,
+            "fragmento": "La administración deberá ser lenta y en bolos a"
+          },
+          {
+            "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
+            "clave": "IMSS-497-11",
+            "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
+            "pagina": 15,
+            "fragmento": "colocar vía venosa permeable para la administración de"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-497-I-R5",
+        "tipo": "resaltado",
+        "concepto": "saturacion_actual_62",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "con SpO2 de 62 %",
+        "motivo": "Su basal es 85 %; hoy satura 62 % con cianosis intensa y taquipnea: es una crisis de hipoxia que exige actuar ya."
+      },
+      {
+        "id": "RZ-PED-497-I-R6",
+        "tipo": "resaltado",
+        "concepto": "llanto_sostenido_desencadenante",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "después de llorar de forma sostenida durante una toma de muestra",
+        "motivo": "El llanto sostenido y los procedimientos desencadenan la crisis; nuevas punciones o estudios la perpetúan."
+      },
+      {
+        "id": "RZ-PED-497-I-R7",
+        "tipo": "resaltado",
+        "concepto": "diagnostico_ya_conocido",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "tetralogía de Fallot diagnosticada por ecocardiograma, en espera de cirugía",
+        "motivo": "El diagnóstico ya está establecido; repetir estudios no cambia el manejo y puede agravar la crisis."
+      },
+      {
+        "id": "RZ-PED-497-I-R8",
+        "tipo": "imagen",
+        "concepto": "anatomia_tetralogia_fallot",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Tetralogy_of_Fallot.svg/960px-Tetralogy_of_Fallot.svg.png",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Tetralogy_of_Fallot.svg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Mariana Ruiz (LadyofHats)",
+        "licencia": "Dominio público",
+        "descripcion": "Esquema (rótulos en inglés) de un corazón normal junto a uno con tetralogía de Fallot: obstrucción del tracto de salida del ventrículo derecho, defecto septal interventricular, cabalgamiento aórtico e hipertrofia del ventrículo derecho. El espasmo del infundíbulo durante la crisis reduce aún más el flujo pulmonar.",
+        "archivo": "assets/RZ-PED-497-I-R8.png",
+        "sha256": "3d2030463fb7969a80432adaca2006313bfa028e34c5f0267bd662a8a5e55766"
+      }
+    ]
   },
   {
     "id": "RZ-PED-497-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "tetralogia_fallot_crisis_hipoxia",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-497-I",
@@ -263,7 +419,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-497-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "falla_medidas_iniciales",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "recibe oxígeno por mascarilla desde hace 10 minutos, pero persiste con cianosis intensa",
+        "motivo": "Las medidas iniciales ya se aplicaron sin respuesta: el siguiente escalón es la sedación, junto con el oxígeno."
+      },
+      {
+        "id": "RZ-PED-497-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "edad_cuatro_meses_riesgo_respiratorio",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Femenino de 4 meses, peso 6 kg",
+        "motivo": "Menor de 6 meses: la morfina conlleva mayor riesgo de depresión respiratoria y obliga a monitoreo continuo con oximetría."
+      },
+      {
+        "id": "RZ-PED-497-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "via_venosa_disponible",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Tiene vía venosa periférica permeable colocada por personal experto",
+        "motivo": "Con vía venosa ya disponible, la sedación puede darse por vía intravenosa sin nuevas punciones que agiten a la paciente."
+      }
+    ]
   }
 ]

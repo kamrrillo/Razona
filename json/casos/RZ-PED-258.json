@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-258-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "laringotraqueitis_aguda",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -142,12 +142,217 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-258-I-R1",
+        "tipo": "flashcard",
+        "concepto": "glucocorticoide_lta_leve_moderada",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Con qué glucocorticoide y dosis se inicia el manejo de la laringotraqueítis leve a moderada?",
+        "reverso": "Dexametasona 0.6 mg/kg vía oral, una sola vez; alternativa: prednisolona 1 mg/kg. No se recomiendan dosis repetidas.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+          "clave": "IMSS-258-10",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 26,
+          "fragmento": "Se recomienda iniciar manejo con"
+        }
+      },
+      {
+        "id": "RZ-PED-258-I-R2",
+        "tipo": "flashcard",
+        "concepto": "alternativas_si_vomito",
+        "para_errores": [
+          "dato_omitido",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo puede preferirse la budesonida nebulizada o la dexametasona intramuscular?",
+        "reverso": "En niños con vómito o que no toleran la vía oral. Si hay dexametasona oral disponible, se prefiere esta.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+          "clave": "IMSS-258-10",
+          "seccion": "4.2.1 Tratamiento Farmacológico",
+          "pagina": 26,
+          "fragmento": "vía oral si esta disponible"
+        }
+      },
+      {
+        "id": "RZ-PED-258-I-R3",
+        "tipo": "flashcard",
+        "concepto": "diagnostico_clinico_lta",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cómo se establece el diagnóstico de laringotraqueítis aguda y cuándo pedir radiografía de cuello?",
+        "reverso": "Es clínico: historia completa y exploración cuidadosa. La radiografía se reserva para duda diagnóstica o diagnóstico diferencial.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+          "clave": "IMSS-258-10",
+          "seccion": "4.1.2 Pruebas Diagnósticas",
+          "pagina": 14,
+          "fragmento": "El diagnóstico de LTA es confiable"
+        }
+      },
+      {
+        "id": "RZ-PED-258-I-R4",
+        "tipo": "diagrama",
+        "concepto": "tratamiento_lta_por_gravedad",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Laringotraqueítis aguda: glucocorticoide al inicio en toda gravedad\"] --> B{\"¿Gravedad?\"}\n  B -->|\"Leve o moderada\"| C{\"¿Vómito o no tolera la vía oral?\"}\n  C -->|\"No\"| D[\"Dexametasona oral 0.6 mg/kg, una vez\"]\n  C -->|\"Sí\"| E[\"Dexametasona intramuscular o budesonida nebulizada\"]\n  B -->|\"Grave o amenaza la vida\"| F[\"Epinefrina nebulizada como primera elección, junto con el glucocorticoide\"]\n  D --> H{\"¿Síntomas persistentes o mala evolución?\"}\n  E --> H\n  F --> H\n  H -->|\"Sí\"| I[\"Considerar diagnósticos diferenciales\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+            "clave": "IMSS-258-10",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 25,
+            "fragmento": "glucocorticoides la piedra angular en el"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+            "clave": "IMSS-258-10",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 25,
+            "fragmento": "En niños con vómito puede ser"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+            "clave": "IMSS-258-10",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 26,
+            "fragmento": "nebulizada en niños con LTA grave"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+            "clave": "IMSS-258-10",
+            "seccion": "4.2.1 Tratamiento Farmacológico",
+            "pagina": 22,
+            "fragmento": "Considerar ante la persistencia de los"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-258-I-R5",
+        "tipo": "resaltado",
+        "concepto": "estridor_solo_con_llanto",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "el estridor solo aparece cuando llora durante la exploración",
+        "motivo": "Sin estridor en reposo ni tiraje el cuadro es leve. La epinefrina nebulizada se reserva para el cuadro grave o la falla al tratamiento."
+      },
+      {
+        "id": "RZ-PED-258-I-R6",
+        "tipo": "resaltado",
+        "concepto": "tolera_via_oral",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Tolera la vía oral y no ha vomitado",
+        "motivo": "Sin vómito no hay razón para preferir la budesonida nebulizada: la dexametasona oral es la opción preferida."
+      },
+      {
+        "id": "RZ-PED-258-I-R7",
+        "tipo": "resaltado",
+        "concepto": "causa_viral",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "precedidas de 2 días de rinorrea. Temperatura 37.9 °C",
+        "motivo": "Pródromo catarral y fiebre baja: cuadro viral típico. Los antibióticos no son recomendables."
+      },
+      {
+        "id": "RZ-PED-258-I-R8",
+        "tipo": "tabla",
+        "concepto": "gravedad_obstruccion_via_aerea",
+        "para_errores": [
+          "razonamiento",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Dato",
+          "Leve",
+          "Moderada",
+          "Grave",
+          "Muy grave o amenaza la vida"
+        ],
+        "filas": [
+          [
+            "Estado mental",
+            "Normal",
+            "Ansioso",
+            "Agitado, exhausto",
+            "Letárgico, somnoliento"
+          ],
+          [
+            "Estridor",
+            "Ausente en reposo",
+            "Audible en reposo",
+            "Intenso",
+            "Persiste"
+          ],
+          [
+            "Tiro supraesternal o intercostal",
+            "Ausente o leve",
+            "Presente",
+            "Más intenso",
+            "Esfuerzo disminuido"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
+          "clave": "IMSS-258-10",
+          "seccion": "6.3 Clasificación o Escalas de la Enfermedad",
+          "pagina": 40,
+          "fragmento": "Evaluación de la gravedad de la obstrucción de la vía respiratoria"
+        }
+      },
+      {
+        "id": "RZ-PED-258-I-R9",
+        "tipo": "imagen",
+        "concepto": "signo_de_aguja",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://upload.wikimedia.org/wikipedia/commons/1/12/Croup_steeple_sign.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Croup_steeple_sign.jpg",
+        "fuente": "Wikimedia Commons",
+        "autor": "Frank Gaillard",
+        "licencia": "CC BY-SA 3.0",
+        "descripcion": "Radiografía anteroposterior de cuello de un niño con laringotraqueítis: estrechamiento subglótico de la columna de aire (signo de aguja o torre). Solo aparece en la mitad de los casos y la radiografía no se pide de rutina.",
+        "archivo": "assets/RZ-PED-258-I-R9.jpg",
+        "sha256": "01e694eb9aeea20c7c4b897eba61c7bbf8a8cb2f747979aef53c086146658a5b"
+      }
+    ]
   },
   {
     "id": "RZ-PED-258-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "laringotraqueitis_aguda",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-258-I",
@@ -276,7 +481,46 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-258-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "datos_de_gravedad",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "estridor inspiratorio audible en reposo, tiraje supraesternal e intercostal marcados",
+        "motivo": "Estridor en reposo y tiraje marcado indican obstrucción importante: además del glucocorticoide requiere epinefrina nebulizada de inmediato."
+      },
+      {
+        "id": "RZ-PED-258-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "agitacion",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Llega a urgencias agitada",
+        "motivo": "La agitación corresponde a obstrucción grave en la escala de la guía; no es un cuadro para egreso con esteroide solo."
+      },
+      {
+        "id": "RZ-PED-258-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "sin_datos_de_diferencial",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Sin babeo y sin apariencia tóxica",
+        "motivo": "Sin apariencia tóxica no orienta a epiglotitis ni traqueítis bacteriana; no hay duda diagnóstica que justifique retrasar el tratamiento por una radiografía."
+      }
+    ]
   }
 ]

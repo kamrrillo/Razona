@@ -16,7 +16,148 @@
    ["lectura", "Lee el valor de cloro como menor de 40 mmol/L; el resultado es de 72 mmol/L.", ["D"], ["descarta", "normal", "negativo"], "¿Cuál fue el valor de cloro en sudor y en qué rango cae según la guía?", "Un cloro menor de 40 mmol/L descarta el diagnóstico; mayor de 60 mmol/L en 2 determinaciones lo confirma.", "4.2 Pruebas diagnósticas", 24, "determinación de cloro < 40 mmo/L descarta"],
    ["dato_omitido", "Confirma el diagnóstico sin considerar que solo hay una determinación.", ["B"], ["ya está confirmado", "mayor de 60", "iniciar tratamiento"], "¿Cuántas determinaciones de cloro en sudor tiene el paciente y cuántas exige la guía?", "Todo resultado positivo debe confirmarse con la repetición de la cuantificación de cloruros en sudor en otro momento u otra prueba diagnóstica disponible.", "4.2 Pruebas diagnósticas", 26, "confirmados con la repetición de la Prueba de"],
    ["conocimiento", "Cree que el tamiz neonatal confirma el diagnóstico.", ["E"], ["tamiz positivo", "tripsinógeno", "ya se sabe"], "¿Qué mide el tamiz neonatal y qué prueba se requiere después de un tamiz positivo?", "El tamiz neonatal identifica valores altos de tripsinógeno inmunorreactivo; en todo neonato con tamiz positivo debe realizarse cloro en sudor.", "4.2 Pruebas diagnósticas", 23, "tamiz neonatal positivo para FQ, deberá"],
-   ["razonamiento", "Supone que la prueba genética desplaza a la prueba de sudor como estándar.", ["C"], ["molecular", "genética", "más preciso"], "¿Qué prueba considera la guía el estándar de oro para confirmar fibrosis quística?", "A pesar de la disponibilidad de pruebas genéticas, la cuantificación de cloruro en sudor por iontoforesis con pilocarpina es el estándar de oro.", "4.2 Pruebas diagnósticas", 24, "genéticas, la cuantificación de cloruro en sudor por"]]},
+   ["razonamiento", "Supone que la prueba genética desplaza a la prueba de sudor como estándar.", ["C"], ["molecular", "genética", "más preciso"], "¿Qué prueba considera la guía el estándar de oro para confirmar fibrosis quística?", "A pesar de la disponibilidad de pruebas genéticas, la cuantificación de cloruro en sudor por iontoforesis con pilocarpina es el estándar de oro.", "4.2 Pruebas diagnósticas", 24, "genéticas, la cuantificación de cloruro en sudor por"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "tamiz_neonatal_no_confirma",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Un tamiz neonatal positivo para fibrosis quística confirma el diagnóstico?",
+    "reverso": "No. Todo neonato con tamiz positivo requiere cuantificación de cloro en sudor.",
+    "cita": [
+     "4.2 Pruebas diagnósticas",
+     23,
+     "tamiz neonatal positivo para FQ, deberá"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "estandar_de_oro_prueba_sudor",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuál es el estándar de oro para el diagnóstico de fibrosis quística, aun con pruebas genéticas disponibles?",
+    "reverso": "La cuantificación de cloruro en sudor por iontoforesis con pilocarpina.",
+    "cita": [
+     "4.2 Pruebas diagnósticas",
+     24,
+     "genéticas, la cuantificación de cloruro en sudor por"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "confirmacion_resultado_positivo",
+    "para_errores": [
+     "dato_omitido",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Ante una prueba cuantitativa de cloruro en sudor positiva, ¿cómo se obtiene el diagnóstico de certeza?",
+    "reverso": "Repitiendo la prueba en un tiempo diferente, o con 2 mutaciones CFTR conocidas o diferencia de potencial nasal anormal.",
+    "cita": [
+     "4.2 Pruebas diagnósticas",
+     28,
+     "confirmar por la identificación de 2"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "interpretacion_cloro_en_sudor",
+    "para_errores": [
+     "razonamiento",
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Tamiz neonatal positivo para FQ\"] --> B[\"Cloro en sudor por Gibson-Cooke con muestra adecuada\"]\n  B --> C{\"¿Valor de cloro?\"}\n  C -->|\"Menor de 40 mmol/L\"| D[\"Descarta el diagnóstico\"]\n  C -->|\"40 a 60 mmol/L\"| E[\"Dudoso: repetir la prueba\"]\n  C -->|\"Mayor de 60 mmol/L\"| F{\"¿Hay 2 determinaciones distintas mayores de 60 mmol/L?\"}\n  F -->|\"No\"| G[\"Repetir en otro momento o confirmar con 2 mutaciones CFTR o DPN\"]\n  F -->|\"Sí\"| H[\"Diagnóstico confirmado\"]\n  G --> F\n  E --> I{\"¿Persiste limítrofe?\"}\n  I -->|\"Sí\"| J[\"Genotipo, función pancreática y otras pruebas auxiliares\"]",
+    "citas": [
+     [
+      "4.2 Pruebas diagnósticas",
+      23,
+      "tamiz neonatal positivo para FQ, deberá"
+     ],
+     [
+      "4.2 Pruebas diagnósticas",
+      24,
+      "distintas confirman el diagnóstico"
+     ],
+     [
+      "4.2 Pruebas diagnósticas",
+      28,
+      "confirmar por la identificación de 2"
+     ],
+     [
+      "4.2 Pruebas diagnósticas",
+      29,
+      "Todos los resultados dudosos de prueba del sudor"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "tabla",
+    "concepto": "valores_cloro_gibson_cooke",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Cloro en sudor (Gibson-Cooke)",
+     "Interpretación"
+    ],
+    "filas": [
+     [
+      "Menor de 40 mmol/L",
+      "Descarta el diagnóstico"
+     ],
+     [
+      "40 a 60 mmol/L",
+      "Dudoso"
+     ],
+     [
+      "Mayor de 60 mmol/L en 2 determinaciones distintas",
+      "Confirma el diagnóstico"
+     ]
+    ],
+    "cita": [
+     "4.2 Pruebas diagnósticas",
+     24,
+     "resultado 40-60 mmol/L de cloro es dudoso"
+    ]
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "valor_cloro_72",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "el resultado fue de 72 mmol/L",
+    "motivo": "Un valor mayor de 60 mmol/L está en rango positivo; no descarta la enfermedad."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "primera_determinacion",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Es la primera determinación",
+    "motivo": "La confirmación exige 2 determinaciones distintas mayores de 60 mmol/L; con una sola todavía no hay diagnóstico de certeza."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Recién nacida de término, 5 días de vida, peso 3,400 g, con tamiz neonatal positivo por tripsinógeno inmunorreactivo elevado. Asintomática, alimentada al seno materno, sin edema, sin ictericia ni distensión abdominal. Los padres preguntan cuándo se le hará la prueba de sudor.",
   "pregunta": "¿Cuál es el momento más adecuado para realizar la cuantificación de cloruros en sudor?",
@@ -32,5 +173,41 @@
    ["conocimiento", "Desconoce que en los primeros días el cloro en sudor puede estar elevado.", ["A"], ["hoy", "de inmediato", "no esperar"], "¿Qué pasa con el cloruro en sudor en los primeros 7 días de vida?", "En recién nacidos de término el sodio y el cloruro de sudor pueden estar elevados en los primeros 7 días, especialmente en las primeras 48 horas.", "4.2 Pruebas diagnósticas", 26, "de sodio y cloruro de sudor puede ser elevada"],
    ["conocimiento", "Retrasa la prueba más de lo necesario.", ["B"], ["6 meses", "más grande", "esperar"], "¿A partir de qué edad indica la guía la prueba de sudor en el neonato asintomático con tamiz positivo?", "En neonatos asintomáticos con tamiz positivo el cloro en sudor se realiza a partir de las 2 semanas de vida y con peso mayor de 2 kg.", "4.2 Pruebas diagnósticas", 23, "semanas de vida y con un peso > 2 kg"],
    ["razonamiento", "Condiciona la confirmación a la aparición de síntomas y pierde la ventaja del diagnóstico por tamiz.", ["C"], ["si tiene síntomas", "asintomática", "esperar"], "¿Qué beneficio se pierde si se espera a que aparezcan síntomas?", "En todos los neonatos asintomáticos con tamiz positivo debe realizarse cloro en sudor a partir de las 2 semanas de vida.", "4.2 Pruebas diagnósticas", 23, "tamiz neonatal positivo para FQ, deberá"],
-   ["dato_omitido", "Elige la conductividad sin considerar que es solo de escrutinio y que la paciente aún no tiene la edad adecuada.", ["E"], ["conductividad", "Macroduct", "más fácil"], "¿Para qué se aprobó la prueba de conductividad y qué se hace con un resultado elevado?", "La conductividad (Wescor Macroduct) se aprobó como escrutinio; un resultado de 50 mmol/L obliga a remitir a un centro con prueba cuantitativa de cloruros en sudor.", "4.2 Pruebas diagnósticas", 25, "50mmol / L, debe ser remitidos a un centro de"]]}
+   ["dato_omitido", "Elige la conductividad sin considerar que es solo de escrutinio y que la paciente aún no tiene la edad adecuada.", ["E"], ["conductividad", "Macroduct", "más fácil"], "¿Para qué se aprobó la prueba de conductividad y qué se hace con un resultado elevado?", "La conductividad (Wescor Macroduct) se aprobó como escrutinio; un resultado de 50 mmol/L obliga a remitir a un centro con prueba cuantitativa de cloruros en sudor.", "4.2 Pruebas diagnósticas", 25, "50mmol / L, debe ser remitidos a un centro de"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "edad_cinco_dias",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "5 días de vida",
+    "motivo": "En el neonato asintomático la prueba se hace a partir de las 2 semanas; en los primeros 7 días el cloro en sudor puede salir elevado."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "neonata_asintomatica",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Asintomática, alimentada al seno materno",
+    "motivo": "Aunque no tenga síntomas, todo neonato con tamiz positivo requiere cloro en sudor; no se espera a que aparezcan."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_edema",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin edema",
+    "motivo": "El edema o los esteroides sistémicos obligan a retrasar la prueba; esta niña no tiene ese motivo de retraso."
+   }
+  ]}
  ]}

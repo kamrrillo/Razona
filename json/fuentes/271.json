@@ -100,8 +100,124 @@
      28,
      "no hubo diferencia significativa en el tiempo medio"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "duracion_periodo_inicial",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En el primer episodio de síndrome nefrótico, ¿cuál es el periodo mínimo de prednisona diaria?",
+    "reverso": "De cuatro a seis semanas.",
+    "cita": [
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "Se recomienda un periodo mínimo del tratamiento"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "esquema_recaida_hasta_remision",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En una recaída poco frecuente, ¿hasta cuándo se da la prednisona diaria?",
+    "reverso": "Hasta la remisión completa: tres días sin proteinuria. Ese esquema es para recaídas, no para el primer episodio.",
+    "cita": [
+     "4.2.4 Tratamiento con Corticosteroides",
+     31,
+     "niño entre en remisión completa (tres días sin proteinuria)"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "dosis_unica_matutina",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Dividir la dosis diaria de prednisona acelera la remisión?",
+    "reverso": "No. No hubo diferencia en el tiempo de remisión; se da en dosis única matutina para mejorar el apego.",
+    "cita": [
+     "4.2.4 Tratamiento con Corticosteroides",
+     28,
+     "no hubo diferencia significativa en el tiempo medio"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_primer_evento",
+    "para_errores": [
+     "conocimiento",
+     "dato_omitido",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con primer evento de síndrome nefrótico\"] --> B{\"¿Artritis, adenopatías, eritema malar u otros signos además del edema?\"}\n  B -->|\"Sí\"| C[\"Considerar causa no primaria y buscarla\"]\n  B -->|\"No\"| D[\"Sin biopsia renal de rutina\"]\n  D --> E[\"Prednisona 60 mg/m²/día o 2 mg/kg, máximo 60 mg, una dosis al día\"]\n  E --> F[\"Mantener la dosis diaria 4 a 6 semanas\"]\n  F --> G[\"Seguir en días alternos 2 a 5 meses con disminución gradual\"]",
+    "citas": [
+     [
+      "4.1.2 Diagnóstico Diferencial",
+      19,
+      "Se deberá considerar la posibilidad que el origen del"
+     ],
+     [
+      "4.1.1 Diagnóstico Clínico",
+      19,
+      "biopsia renal de rutina en el primer evento"
+     ],
+     [
+      "4.2.4 Tratamiento con Corticosteroides",
+      28,
+      "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+     ],
+     [
+      "4.2.4 Tratamiento con Corticosteroides",
+      28,
+      "periodo de dos a cinco meses con disminución"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "primer_episodio",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Es su primer episodio.",
+    "motivo": "En el primer episodio el periodo diario dura 4 a 6 semanas; el esquema hasta la remisión es de recaídas."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "datos_de_cambios_minimos",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Sin artritis, exantema ni adenopatías",
+    "motivo": "Sin signos de causa no primaria, lo más probable es cambios mínimos: no se toma biopsia de rutina."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "sin_hematuria_creatinina_normal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin hematuria",
+    "motivo": "No hay datos de otra patología renal ni deterioro de la función: no cumple indicaciones de biopsia."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 6 años, peso 21 kg, superficie corporal 0.84 m², con primer episodio de síndrome nefrótico diagnosticado hace 6 semanas. Recibe prednisona 50 mg/día en dosis única matutina desde entonces. Desde la segunda semana las tiras reactivas de orina son negativas a proteínas y el edema desapareció. TA normal, creatinina normal. Los padres preguntan qué sigue.",
@@ -196,7 +312,41 @@
      28,
      "periodo de dos a cinco meses con disminución"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "periodo_inicial_completo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "diagnosticado hace 6 semanas",
+    "motivo": "Ya cumplió el periodo inicial de 4 a 6 semanas: toca pasar a la fase en días alternos."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "remision_no_es_suspender",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Desde la segunda semana las tiras reactivas de orina son negativas a proteínas",
+    "motivo": "Estar en remisión no significa suspender: después del periodo inicial sigue prednisona en días alternos por 2 a 5 meses."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "respuesta_adecuada_sin_biopsia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "TA normal, creatinina normal",
+    "motivo": "Responde al tratamiento y conserva la función renal: no hay indicación de biopsia."
+   }
+  ]}
  ]
 }

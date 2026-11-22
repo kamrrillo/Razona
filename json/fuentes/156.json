@@ -102,8 +102,162 @@
      38,
      "están indicados solamente si el niño es inhábil para tolerar la"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "volumen_rehidratacion_oral",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En un niño con deshidratación clínica, ¿qué volumen de SRO indica la guía para reponer el déficit?",
+    "reverso": "50 mL/kg en 4 horas, más los líquidos de mantenimiento, con SRO de baja osmolaridad (240-250 mOsm/L).",
+    "cita": [
+     "4.2.2.2.1 Farmacológico",
+     35,
+     "la rehidratación debe darse a 50 ml/kg durante un periodo de 4h"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "liquidos_no_recomendados",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué la guía excluye los jugos de frutas y las bebidas carbonatadas durante la rehidratación?",
+    "reverso": "Por su alta osmolaridad y porque pueden agravar la diarrea. Si rehúsa la SRO, se consideran leche o agua.",
+    "cita": [
+     "4.2.2.2.1 Farmacológico",
+     46,
+     "No se les deben dar jugos de frutas ni bebidas carbonatadas, por su alta osmolaridad"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "antimicrobiano_no_rutinario",
+    "para_errores": [
+     "lectura",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En la gastroenteritis aguda, ¿por qué no se busca de rutina el patógeno ni se da antimicrobiano a todos?",
+    "reverso": "La mayoría es viral y, aun con bacterias o protozoarios, muchos niños no ameritan antimicrobiano.",
+    "cita": [
+     "4.2.1.3 Estudios de Laboratorio y Gabinete",
+     27,
+     "no ameritan tratamiento antimicrobiano"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "secuencia_vias_rehidratacion",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con deshidratación clínica\"] --> S{\"¿Choque sospechado o confirmado?\"}\n  S -->|\"Sí\"| G[\"Terapia intravenosa\"]\n  S -->|\"No\"| B[\"SRO de baja osmolaridad: 50 mL/kg en 4 h más mantenimiento, poco y frecuente\"]\n  B --> C{\"¿No puede beber, vómito persistente, no acepta la vía oral cerca de 1 h o empeora?\"}\n  C -->|\"No\"| D[\"Continuar SRO y revalorar con regularidad\"]\n  C -->|\"Sí\"| E[\"SRO por sonda nasogástrica, en bolos o continua\"]\n  E --> F{\"¿No tolera la sonda o falla por vómito persistente o empeoramiento?\"}\n  F -->|\"No\"| D\n  F -->|\"Sí\"| G",
+    "citas": [
+     [
+      "4.2.2.2.1 Farmacológico",
+      37,
+      "Dar 50ml/kg para reponer el déficit de líquidos durante 4h"
+     ],
+     [
+      "4.2.2.2.1 Farmacológico",
+      37,
+      "durante 1 h aproximadamente o su estado de hidratación empeora"
+     ],
+     [
+      "4.2.2.2.1 Farmacológico",
+      38,
+      "están indicados solamente si el niño es inhábil para tolerar la"
+     ],
+     [
+      "4.2.2.2.1 Farmacológico",
+      41,
+      "El choque es sospechado o confirmado"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "diarrea_acuosa",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin moco ni sangre",
+    "motivo": "Es diarrea acuosa, no disentérica. No hay indicación de antibiótico empírico; la prioridad es hidratar."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "tolera_via_oral",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Acepta con avidez sorbos de suero oral sin vomitar",
+    "motivo": "Bebe y no vomita: no hay motivo para sonda nasogástrica ni para vía intravenosa."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "deshidratacion_sin_choque",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "llenado capilar de 2 segundos, pulsos normales, sin taquipnea",
+    "motivo": "Hay signos de deshidratación pero la perfusión está conservada: no es grave ni hay choque que obligue a usar la vía intravenosa."
+   },
+   {
+    "n": 8,
+    "tipo": "tabla",
+    "concepto": "clasificacion_severidad_deshidratacion",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Clasificación",
+     "Pérdida de peso",
+     "Signos"
+    ],
+    "filas": [
+     [
+      "Sin deshidratación",
+      "Menos de 3 %",
+      "Sin signos"
+     ],
+     [
+      "Leve a moderada",
+      "3 a 8 %",
+      "Mucosas secas, ojos hundidos con pocas o sin lágrimas, turgencia disminuida, somnolencia o irritabilidad, respiración acidótica"
+     ],
+     [
+      "Grave",
+      "9 % o más",
+      "Lo anterior más perfusión periférica disminuida (llenado capilar mayor de 2 segundos) o colapso circulatorio"
+     ]
+    ],
+    "cita": [
+     "5 Anexos",
+     77,
+     "Tabla 2: Clasificación de la severidad de la deshidratación"
+    ]
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 18 meses, peso 10 kg, con diarrea acuosa y vómitos desde hace un día. Presenta mucosas secas, ojos hundidos y sed. Se inició solución de rehidratación oral en la sala de hidratación; durante la última hora vomitó cada toma, aun en cucharaditas cada 5 minutos, y la madre refiere que está más decaída. Sigue alerta, FC 135 lpm, llenado capilar de 2 segundos, pulsos presentes. Recibe lactancia materna.",
@@ -199,7 +353,42 @@
      46,
      "bebidas carbonatadas, por su alta osmolaridad"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "falla_via_oral_una_hora",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "durante la última hora vomitó cada toma, aun en cucharaditas cada 5 minutos",
+    "motivo": "Ya lleva cerca de una hora sin tolerar la vía oral: la guía indica pasar a la sonda nasogástrica, no seguir insistiendo."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "empeoramiento_clinico",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "la madre refiere que está más decaída",
+    "motivo": "Su hidratación empeora durante el intento oral, otro criterio para cambiar a la sonda nasogástrica."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_choque",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Sigue alerta, FC 135 lpm, llenado capilar de 2 segundos, pulsos presentes",
+    "motivo": "No hay choque. La vía intravenosa se reserva para cuando falla o no se tolera la sonda nasogástrica."
+   }
+  ]}
  ]
 }
