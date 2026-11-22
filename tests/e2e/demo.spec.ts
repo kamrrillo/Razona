@@ -39,7 +39,7 @@ test("guion de la demo", async ({ page }) => {
   await page.getByTestId("submit-answer").click();
   const feedback = page.getByTestId("feedback");
   await expect(feedback).toContainText("¡Correcto!");
-  await expect(feedback.getByTestId("citation")).toBeVisible();
+  await expect(feedback.getByTestId("citation").first()).toBeVisible();
   // Diagrama SVG de la explicación, construido paso a paso
   const diagram = feedback.getByTestId("explanation-diagram");
   await expect(diagram).toBeVisible({ timeout: 20_000 });
@@ -48,6 +48,26 @@ test("guion de la demo", async ({ page }) => {
   await diagram.getByTestId("diagram-next").click();
   await expect(diagram.getByTestId("diagram-step")).toHaveText(/^Paso 2 de \d$/);
   await expect(diagram.locator('[data-testid="diagram-node"][data-visible="true"]')).toHaveCount(2);
+  // Recursos de aprendizaje: primero los de su error (eligió a: razonamiento)
+  const resources = feedback.getByTestId("learning-resources");
+  await expect(resources).toBeVisible();
+  await expect(
+    resources.getByTestId("resource").first().getByTestId("resource-for-you"),
+  ).toHaveText(/razonamiento/);
+  const flashcard = resources.locator('[data-testid="resource"][data-type="flashcard"]').first();
+  await expect(flashcard.getByTestId("flashcard-back")).toBeHidden();
+  await flashcard.getByTestId("flashcard-toggle").click();
+  await expect(flashcard.getByTestId("flashcard-back")).toBeVisible();
+  await resources.getByTestId("more-resources").click();
+  await expect(resources.getByTestId("resource-diagram").first()).toHaveAttribute(
+    "data-state",
+    "ready",
+    { timeout: 20_000 },
+  );
+  await expect(resources.getByTestId("resource-diagram").first().locator("svg")).toBeVisible();
+  const image = resources.locator('[data-testid="resource"][data-type="image"] img');
+  await expect(image).toBeVisible();
+  expect(await image.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
 
   // 5. Examen simulado global: 2 en vivo + "Completar examen (demo)"
   await page.getByRole("link", { name: "Examen", exact: true }).click();
@@ -68,8 +88,10 @@ test("guion de la demo", async ({ page }) => {
   await expect(page.getByTestId("exam-score")).toContainText("/10 aciertos");
   await expect(page.getByText("Aciertos por área")).toBeVisible();
   await expect(page.getByTestId("review-item")).toHaveCount(10);
-  await page.getByTestId("review-item").first().locator("summary").click();
-  await expect(page.getByTestId("review-item").first().getByTestId("citation")).toBeVisible();
+  await page.getByTestId("review-item").first().locator(":scope > summary").click();
+  await expect(
+    page.getByTestId("review-item").first().getByTestId("citation").first(),
+  ).toBeVisible();
   await page.getByTestId("review-item").first().getByTestId("load-diagram").click();
   await expect(
     page.getByTestId("review-item").first().getByTestId("explanation-diagram"),
@@ -100,8 +122,11 @@ test("examen por tema: el caso índice y su variante", async ({ page }) => {
   await expect(page.getByTestId("review-item")).toHaveCount(2);
   await expect(page.getByText("Aciertos por tema")).toBeVisible();
   // La opción a es incorrecta en RZ-PED-032-I: la revisión explica el tipo de error.
-  await page.getByTestId("review-item").first().locator("summary").click();
+  await page.getByTestId("review-item").first().locator(":scope > summary").click();
   await expect(page.getByTestId("review-item").first().getByTestId("error-type")).toBeVisible();
+  await expect(
+    page.getByTestId("review-item").first().getByTestId("learning-resources"),
+  ).toContainText("Para tu error de razonamiento");
 });
 
 test("examen por área", async ({ page }) => {

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
 import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
+import { LearningResources } from "@/components/app/learning-resources";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -378,6 +379,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
                 autoLoad
                 className="rounded-2xl bg-white p-1"
               />
+              <LearningResources resources={solved.resources} errorTypes={solved.errorTypes} />
               <p className="text-xs text-muted-foreground">
                 {solved.attemptNumber === 1
                   ? "Lo resolviste al primer intento."

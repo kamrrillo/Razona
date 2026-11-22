@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: lanAddresses(),
   // ADK tiene dependencias opcionales (GCP) que no deben empaquetarse: se carga en runtime desde node_modules.
   serverExternalPackages: ["@google/adk", "@google/genai"],
+  // Las imágenes de los recursos se leen del banco (json/assets) en /recursos/[archivo].
+  outputFileTracingIncludes: {
+    "/recursos/*": ["./json/assets/**/*"],
+  },
   turbopack: {
     rules: {
       "*.css": {

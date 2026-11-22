@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { CitationSchema, PublicItemSchema } from "./content";
+import { CitationSchema, ErrorTypeSchema, PublicItemSchema, ResourceSchema } from "./content";
 import { ChatMessageSchema } from "./tutor";
 
 const OptionId = z.string().regex(/^[a-e]$/);
@@ -30,6 +30,10 @@ export const AttemptResponseSchema = z.discriminatedUnion("isCorrect", [
     explanation: z.string(),
     correctOptionId: OptionId,
     citation: CitationSchema,
+    /** Recursos de aprendizaje del caso, primero los que atienden sus errores. */
+    resources: z.array(ResourceSchema).default([]),
+    /** Tipos de error de sus intentos fallidos (para marcar los recursos que le tocan). */
+    errorTypes: z.array(ErrorTypeSchema).default([]),
   }),
   z.object({
     isCorrect: z.literal(false),

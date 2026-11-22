@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CitationCard } from "@/components/app/citation-card";
 import { ExplanationDiagramLoader } from "@/components/app/explanation-diagram";
+import { LearningResources } from "@/components/app/learning-resources";
 import { SpecialtyBars } from "@/components/app/specialty-bars";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,6 +12,7 @@ import { rubricFor } from "@/lib/ai/fallback-engine";
 import { getAuthedContext } from "@/lib/data/auth";
 import { examItemsFor, loadExam } from "@/lib/data/exam";
 import { getProgress } from "@/lib/data/progress";
+import { orderResources } from "@/lib/learning/resources";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = { title: "Resultados" };
@@ -172,6 +174,10 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                   snippet={item.citation.snippet}
                 />
                 <ExplanationDiagramLoader request={{ examId, itemId: item.id }} />
+                <LearningResources
+                  resources={orderResources(item.resources ?? [], error ? [error.errorType] : [])}
+                  errorTypes={error ? [error.errorType] : []}
+                />
               </div>
             </details>
           );

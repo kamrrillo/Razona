@@ -132,6 +132,7 @@
           }
         }
       ],
+      "resources": [],
       "explanation": "En todos los niños menores de 6 meses y en todas las niñas menores de 2 años que deban recibir antimicrobianos, la muestra se obtiene por catéter. Si se requiere iniciar antibioticoterapia de inmediato, se usa de entrada una técnica estéril (cateterismo vesical o punción suprapúbica), en segundo o tercer nivel. Por cateterismo vesical, el urocultivo es positivo con más de 10,000 UFC/mL.",
       "specialtyId": "pediatria",
       "casoIndiceId": null,
@@ -269,6 +270,132 @@
           }
         }
       ],
+      "resources": [
+        {
+          "id": "RZ-PED-032-I-R1",
+          "back": "Ninguno: el diagnóstico es clínico, con la historia clínica y la exploración física.",
+          "type": "flashcard",
+          "front": "En un lactante ambulatorio con cuadro típico de bronquiolitis, ¿qué estudios se necesitan para confirmar el diagnóstico?",
+          "concept": "diagnostico_clinico_ambulatorio",
+          "citations": [
+            {
+              "page": 22,
+              "gpcId": "IMSS-032-08",
+              "section": "4.2.1.2 Pruebas de diagnóstico",
+              "snippet": "diagnóstico de bronquiolitis en pacientes ambulatorios",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            }
+          ],
+          "errorTypes": ["conocimiento"]
+        },
+        {
+          "id": "RZ-PED-032-I-R2",
+          "back": "Con saturación menor de 90 %, para mantenerla entre 90 y 94 %.",
+          "type": "flashcard",
+          "front": "¿Con qué saturación de oxígeno indica la guía administrar oxígeno en bronquiolitis?",
+          "concept": "umbral_saturacion_oxigeno",
+          "citations": [
+            {
+              "page": 27,
+              "gpcId": "IMSS-032-08",
+              "section": "4.2.1.3 Tratamiento farmacológico",
+              "snippet": "En saturaciones de oxigeno menor de 90% administrar",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            }
+          ],
+          "errorTypes": ["lectura"]
+        },
+        {
+          "id": "RZ-PED-032-I-R3",
+          "back": "Corticoesteroides, montelukast, antihistamínicos, descongestionantes, vasoconstrictores nasales y antibióticos.",
+          "type": "flashcard",
+          "front": "¿Qué fármacos recomienda la guía no utilizar en el tratamiento de la bronquiolitis?",
+          "concept": "farmacos_no_recomendados",
+          "citations": [
+            {
+              "page": 25,
+              "gpcId": "IMSS-032-08",
+              "section": "4.2.1.3 Tratamiento farmacológico",
+              "snippet": "Se recomienda no utilizar corticoesteroides, inhibidores",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            }
+          ],
+          "errorTypes": ["razonamiento", "conocimiento"]
+        },
+        {
+          "id": "RZ-PED-032-I-R4",
+          "code": "flowchart TD\n  A[\"Menor de 2 años con bronquiolitis en primer nivel\"] --> B{\"¿Prematurez, menor de 3 meses, SpO2 menor de 90 %, intolerancia a la vía oral o bronquiolitis moderada o grave?\"}\n  B -->|\"Sí\"| C[\"Referir a segundo nivel o urgencias\"]\n  B -->|\"No\"| D{\"¿Antecedente de atopia, asma o alergia?\"}\n  D -->|\"Sí\"| E[\"Una sola dosis de salbutamol y evaluar la respuesta\"]\n  D -->|\"No\"| F[\"Manejo en domicilio con medidas generales y signos de alarma\"]\n  E --> G{\"¿Disminuyen las sibilancias y mejora la escala de gravedad?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| C\n  F --> H[\"Revalorar a las 24 a 48 horas\"]",
+          "type": "diagram",
+          "concept": "manejo_primer_nivel_bronquiolitis",
+          "citations": [
+            {
+              "page": 29,
+              "gpcId": "IMSS-032-08",
+              "section": "4.3 Criterios de referencia",
+              "snippet": "Considerar criterios de referencia al segundo nivel",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            },
+            {
+              "page": 24,
+              "gpcId": "IMSS-032-08",
+              "section": "4.2.1.3 Tratamiento farmacológico",
+              "snippet": "se recomienda aplicar una sola dosis de salbutamol en",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            },
+            {
+              "page": 28,
+              "gpcId": "IMSS-032-08",
+              "section": "4.2.2.1 Tratamiento no farmacológico",
+              "snippet": "siguientes medidas para el manejo ambulatorio",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            },
+            {
+              "page": 30,
+              "gpcId": "IMSS-032-08",
+              "section": "4.4 Vigilancia y Seguimiento",
+              "snippet": "Se recomienda realizar una revaloración a las 24 o 48",
+              "gpcTitle": "Diagnóstico y Tratamiento de Bronquiolitis Aguda en niñas/niños y en el Primer Nivel de Atención"
+            }
+          ],
+          "errorTypes": ["razonamiento", "conocimiento"]
+        },
+        {
+          "id": "RZ-PED-032-I-R5",
+          "type": "highlight",
+          "reason": "La guía indica oxígeno solo con saturación menor de 90 %; con 96 % al aire ambiente no hay hipoxemia que tratar.",
+          "concept": "saturacion_normal",
+          "fragment": "SpO2 96 % al aire ambiente",
+          "errorTypes": ["lectura"]
+        },
+        {
+          "id": "RZ-PED-032-I-R6",
+          "type": "highlight",
+          "reason": "La guía reserva la dosis única de salbutamol para niños con atopia, asma o alergia; sin esos antecedentes no está indicada.",
+          "concept": "sin_atopia",
+          "fragment": "sin antecedentes de atopia en él ni en la familia",
+          "errorTypes": ["dato_omitido"]
+        },
+        {
+          "id": "RZ-PED-032-I-R7",
+          "type": "highlight",
+          "reason": "Tolera la vía oral y no hay datos de deshidratación: no cumple esos criterios de referencia y puede manejarse en domicilio.",
+          "concept": "tolera_via_oral",
+          "fragment": "Se alimenta bien al seno materno y moja pañales con normalidad",
+          "errorTypes": ["dato_omitido"]
+        },
+        {
+          "id": "RZ-PED-032-I-R8",
+          "type": "image",
+          "author": "CDC / Dr. Erskine Palmer",
+          "source": "Wikimedia Commons (CDC Public Health Image Library)",
+          "concept": "etiologia_viral",
+          "license": "Dominio público",
+          "imagePath": "/recursos/RZ-PED-032-I-R8.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Respiratory_syncytial_virus_01.jpg",
+          "errorTypes": ["razonamiento"],
+          "description": "Micrografía electrónica de transmisión (tinción negativa) del virus sincitial respiratorio, el agente viral más frecuente de la bronquiolitis aguda."
+        }
+      ],
       "explanation": "La mayoría de los niños con bronquiolitis leve se manejan en domicilio con seguimiento en primer nivel, porque la enfermedad se resuelve de forma espontánea. El diagnóstico es clínico; en pacientes ambulatorios no se realiza ningún estudio para confirmarlo. Puede usarse paracetamol para la fiebre cuando la temperatura axilar es igual o mayor a 38 °C.",
       "specialtyId": "pediatria",
       "casoIndiceId": null,
@@ -396,6 +523,24 @@
           }
         }
       ],
+      "resources": [
+        {
+          "id": "RZ-PED-032-V1-R1",
+          "type": "highlight",
+          "reason": "Con antecedente de atopia o asma la guía recomienda una sola dosis de salbutamol y evaluar la respuesta, en lugar de solo medidas generales.",
+          "concept": "antecedente_atopia",
+          "fragment": "dermatitis atópica desde los 3 meses; su madre tiene asma",
+          "errorTypes": ["dato_omitido"]
+        },
+        {
+          "id": "RZ-PED-032-V1-R2",
+          "type": "highlight",
+          "reason": "La solución hipertónica al 3 % exige descartar atopia y se aplica en el siguiente nivel; en primer nivel y con atopia no corresponde.",
+          "concept": "atopia_contraindica_hipertonica",
+          "fragment": "Es atendida en su unidad de medicina familiar",
+          "errorTypes": ["dato_omitido", "lectura"]
+        }
+      ],
       "explanation": "En pacientes con antecedente de atopia, asma o alergia se recomienda una sola dosis de salbutamol en aerosol o nebulizado. Tras el salbutamol se evalúa la respuesta por disminución de sibilancias y cambio en la escala de gravedad para decidir si continúa en domicilio.",
       "specialtyId": "pediatria",
       "casoIndiceId": "RZ-PED-032-I",
@@ -521,6 +666,112 @@
             "snippet": "En recién nacidos con ≤35 semanas de edad gestacional",
             "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
           }
+        }
+      ],
+      "resources": [
+        {
+          "id": "RZ-PED-262-I-R1",
+          "back": "Solo para saber si hay o no ictericia. No predice el nivel de bilirrubina; si hay ictericia se mide la sérica.",
+          "type": "flashcard",
+          "front": "¿Para qué recomienda la guía usar la escala de Kramer en el recién nacido?",
+          "concept": "uso_escala_kramer",
+          "citations": [
+            {
+              "page": 18,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.1 Diagnóstico",
+              "snippet": "Se recomienda usar la escala de Kramer solo para determinar la",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            }
+          ],
+          "errorTypes": ["conocimiento"]
+        },
+        {
+          "id": "RZ-PED-262-I-R2",
+          "back": "En los de 35 semanas de gestación o más y con más de 24 horas de vida.",
+          "type": "flashcard",
+          "front": "¿En qué recién nacidos se puede usar el bilirrubinómetro transcutáneo?",
+          "concept": "criterios_bilirrubinometro_transcutaneo",
+          "citations": [
+            {
+              "page": 19,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "con edad gestacional de ≥35 semanas y edad postnatal",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            }
+          ],
+          "errorTypes": ["dato_omitido"]
+        },
+        {
+          "id": "RZ-PED-262-I-R3",
+          "back": "Con la cifra de bilirrubina interpretada según la edad postnatal en horas, usando los cuadros de umbrales. No con la apariencia.",
+          "type": "flashcard",
+          "front": "¿Con qué se decide el tratamiento de la hiperbilirrubinemia neonatal?",
+          "concept": "interpretar_por_edad_en_horas",
+          "citations": [
+            {
+              "page": 20,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "interpretar de acuerdo a la edad postnatal en horas",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            }
+          ],
+          "errorTypes": ["razonamiento"]
+        },
+        {
+          "id": "RZ-PED-262-I-R4",
+          "code": "flowchart TD\n  A[\"Recién nacido con ictericia visible\"] --> B{\"¿Apareció en las primeras 24 horas de vida?\"}\n  B -->|\"Sí\"| C[\"Bilirrubina sérica en menos de 2 horas; repetir cada 6 horas hasta bajar del umbral\"]\n  B -->|\"No\"| D[\"Medir bilirrubina dentro de las siguientes 6 horas\"]\n  D --> E{\"¿35 semanas o más y transcutáneo disponible?\"}\n  E -->|\"No\"| F[\"Bilirrubina sérica\"]\n  E -->|\"Sí\"| G{\"¿Transcutánea mayor de 14.7 mg/dL?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| H[\"Interpretar según edad en horas\"]",
+          "type": "diagram",
+          "concept": "medicion_bilirrubina_segun_edad",
+          "citations": [
+            {
+              "page": 20,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "Mida y registre el nivel de bilirrubina sérica dentro de las",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            },
+            {
+              "page": 21,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "dentro de las siguientes 6 horas de haberse detectado la",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            },
+            {
+              "page": 19,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "con edad gestacional de ≥35 semanas y edad postnatal",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            },
+            {
+              "page": 20,
+              "gpcId": "GPC-IMSS-262-19",
+              "section": "2.2 Auxiliares diagnósticos",
+              "snippet": "indica un nivel de bilirrubina mayor de 14.7 mg/dl",
+              "gpcTitle": "Diagnóstico y Tratamiento de la Ictericia Neonatal"
+            }
+          ],
+          "errorTypes": ["conocimiento", "dato_omitido", "lectura"]
+        },
+        {
+          "id": "RZ-PED-262-I-R5",
+          "type": "highlight",
+          "reason": "Ictericia en las primeras 24 horas: no es fisiológica y obliga a medir la bilirrubina sérica de forma urgente.",
+          "concept": "ictericia_antes_24_horas",
+          "fragment": "A las 20 horas de vida la enfermera observa coloración amarilla",
+          "errorTypes": ["lectura"]
+        },
+        {
+          "id": "RZ-PED-262-I-R6",
+          "type": "highlight",
+          "reason": "Con menos de 35 semanas el transcutáneo no es confiable: siempre se mide la bilirrubina sérica.",
+          "concept": "prematuro_34_semanas",
+          "fragment": "34 semanas de gestación",
+          "errorTypes": ["dato_omitido"]
         }
       ],
       "explanation": "Al recién nacido con ictericia visible dentro de las primeras 24 horas se le mide la bilirrubina sérica en las siguientes 2 horas y cada 6 horas hasta que esté por debajo del umbral y en descenso. En recién nacidos de 35 semanas o menos con ictericia siempre se miden bilirrubinas séricas.",

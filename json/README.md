@@ -59,6 +59,10 @@ Cantidades, que el esquema hace cumplir: en el **índice**, de 2 a 3 flashcards,
 
 Ningún recurso menciona letras de opciones, porque el constructor las baraja, ni copia el texto completo de la opción correcta.
 
+### Cómo llegan a la app
+
+`content:load` los carga con el caso y la vista `v_casos_app` los entrega como `resources` (migración `20261122110000_recursos_aprendizaje`). La app los muestra en "Repasa lo clave" solo después de responder: en Practicar, al resolver el caso, y en los resultados del examen. Primero van los que atienden el tipo de error de la alumna. Las imágenes se sirven desde `assets/` en `/recursos/<archivo>`, sin copiarlas a `public/`. Un recurso con `"estado": "retirado"` deja de mostrarse.
+
 ### Reglas del validador para recursos
 
 Las citas de los recursos también pasan por R5.

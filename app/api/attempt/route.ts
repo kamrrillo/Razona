@@ -1,5 +1,6 @@
 import { HttpError, handleError, ok, parseJson, requireAuth } from "@/lib/api";
 import { loadStudySession, recordAttempt } from "@/lib/data/practice";
+import { errorTypesFor, orderResources } from "@/lib/learning/resources";
 import { AttemptRequestSchema, AttemptResponseSchema } from "@/lib/schemas/api";
 
 export async function POST(request: Request) {
@@ -20,12 +21,25 @@ export async function POST(request: Request) {
       body.optionId,
     );
     if (isCorrect) {
+      // Los recursos pueden revelar la respuesta: solo se entregan al resolver el caso.
+      const { data: attempts, error } = await supabase
+        .from("attempts")
+        .select("selected_option")
+        .eq("session_id", session.id)
+        .eq("is_correct", false);
+      if (error) throw error;
+      const errorTypes = errorTypesFor(
+        session.item,
+        attempts.map((a) => a.selected_option),
+      );
       return ok(AttemptResponseSchema, {
         isCorrect: true,
         attemptNumber,
         explanation: session.item.explanation,
         correctOptionId: session.item.correctOptionId,
         citation: session.item.citation,
+        resources: orderResources(session.item.resources ?? [], errorTypes),
+        errorTypes,
       });
     }
     return ok(AttemptResponseSchema, { isCorrect: false, attemptNumber });

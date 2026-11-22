@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { config } from "dotenv";
 import { describe, expect, it } from "vitest";
@@ -89,6 +91,24 @@ describe.skipIf(!reachable)("banco en Supabase local (v_casos_app)", () => {
         }
       }
     }
+  });
+
+  it("los recursos de todo el banco cumplen el esquema y sus imágenes existen en json/assets", async () => {
+    const db = createClient(url as string, secret as string);
+    const { data, error } = await db.from("v_casos_app").select("id, payload");
+    expect(error).toBeNull();
+    const types = new Set<string>();
+    for (const row of data ?? []) {
+      const item = ItemSchema.parse(row.payload);
+      for (const r of item.resources ?? []) {
+        types.add(r.type);
+        if (r.type === "image") {
+          const file = r.imagePath.replace("/recursos/", "");
+          expect(existsSync(path.join("json", "assets", file)), r.id).toBe(true);
+        }
+      }
+    }
+    expect([...types].sort()).toEqual(["diagram", "flashcard", "highlight", "image", "table"]);
   });
 
   it("la llave pública no puede leer el banco ni sus vistas", async () => {
