@@ -111,9 +111,13 @@ REC_032_V1 = [
 ]
 
 
-def fuente(num):
+def fuente(num, sin_rec=False):
     with open(os.path.join(RAIZ, "fuentes", f"{num}.json"), encoding="utf-8") as fh:
-        return json.load(fh)
+        f = json.load(fh)
+    if sin_rec:
+        for c in f["casos"]:
+            c.pop("rec", None)
+    return f
 
 
 @pytest.fixture
@@ -145,12 +149,12 @@ def test_construir_expande_rec(par032):
 
 
 def test_construir_sin_rec_no_cambia():
-    sin = cc.expande(fuente("032"), [0])[1][0]
+    sin = cc.expande(fuente("032", sin_rec=True), [0])[1][0]
     assert sin["version"] == cc.VERSION and sin["fecha"] == cc.FECHA and "recursos" not in sin
 
 
 def test_construir_rec_no_cambia_barajado(par032):
-    sin = cc.expande(fuente("032"), [0])[1]
+    sin = cc.expande(fuente("032", sin_rec=True), [0])[1]
     for a, b in zip(sin, par032):
         assert a["opciones"] == b["opciones"] and a["respuesta_correcta"] == b["respuesta_correcta"]
 
