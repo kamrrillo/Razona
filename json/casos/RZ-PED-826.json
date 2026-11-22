@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-826-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "sindrome_nefritico_postestreptococico",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -139,12 +139,187 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-826-I-R1",
+        "tipo": "flashcard",
+        "concepto": "indicacion_penicilina",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo indica la guía iniciar penicilina en un niño con glomerulonefritis aguda postestreptocócica?",
+        "reverso": "Si no recibió antibiótico previo o si tiene cultivo positivo para estreptococo beta hemolítico.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "postestreptocóccica cuando no hayan recibido"
+        }
+      },
+      {
+        "id": "RZ-PED-826-I-R2",
+        "tipo": "flashcard",
+        "concepto": "antihipertensivo_de_eleccion",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué antihipertensivos recomienda la guía en la fase aguda y qué riesgo señala con los IECA?",
+        "reverso": "Antagonistas de los canales de calcio junto con diuréticos. Con IECA hay riesgo de bajar el filtrado glomerular y causar hiperkalemia.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.2 Tratamiento",
+          "pagina": 21,
+          "fragmento": "Utilizar antagonistas de los canales de calcio"
+        }
+      },
+      {
+        "id": "RZ-PED-826-I-R3",
+        "tipo": "flashcard",
+        "concepto": "evolucion_esperada_c3",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En la nefritis postestreptocócica, ¿qué pasa con el C3 sérico y en cuánto tiempo se normaliza?",
+        "reverso": "Baja en más del 90 % de los casos, incluso antes de los síntomas, y vuelve a lo normal en un máximo de 8 semanas.",
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "2.1.2 Pruebas Diagnósticas",
+          "pagina": 17,
+          "fragmento": "los niveles vuelven a la normalidad en un"
+        }
+      },
+      {
+        "id": "RZ-PED-826-I-R4",
+        "tipo": "diagrama",
+        "concepto": "manejo_sindrome_nefritico_postestreptococico",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño de 2 a 12 años con hematuria, edema e hipertensión\"] --> B{\"¿Infección previa con antiestreptolisinas altas y C3 bajo?\"}\n  B -->|\"No\"| C[\"Investigar otras causas\"]\n  B -->|\"Sí\"| D[\"Vigilancia continua, de preferencia hospitalizado\"]\n  D --> E{\"¿Sin antibiótico previo o con cultivo positivo para estreptococo?\"}\n  E -->|\"Sí\"| F[\"Iniciar penicilina\"]\n  E -->|\"No\"| G{\"¿Hipertensión arterial?\"}\n  F --> G\n  G -->|\"Sí\"| H[\"Calcioantagonista más diurético; precaución con IECA\"]\n  G -->|\"No\"| I{\"¿C3 bajo pasadas 8 semanas, proteinuria masiva persistente o GN rápidamente progresiva?\"}\n  H --> I\n  I -->|\"Sí\"| J[\"Enviar a nefrología pediátrica\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+            "clave": "GPC-IMSS-826-18",
+            "seccion": "3.1.1 Algoritmo",
+            "pagina": 26,
+            "fragmento": "Niños entre 2 y 12 años de edad con hematuria, edema e"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+            "clave": "GPC-IMSS-826-18",
+            "seccion": "2.2 Tratamiento",
+            "pagina": 21,
+            "fragmento": "postestreptocóccica cuando no hayan recibido"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+            "clave": "GPC-IMSS-826-18",
+            "seccion": "2.2 Tratamiento",
+            "pagina": 21,
+            "fragmento": "Utilizar antagonistas de los canales de calcio"
+          },
+          {
+            "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+            "clave": "GPC-IMSS-826-18",
+            "seccion": "2.1.2 Pruebas Diagnósticas",
+            "pagina": 20,
+            "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-826-I-R5",
+        "tipo": "tabla",
+        "concepto": "patrones_complemento_glomerulopatias",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Patrón de complemento",
+          "Ejemplos"
+        ],
+        "filas": [
+          [
+            "C3 normal",
+            "Vasculitis ANCA positiva, enfermedad de Goodpasture, síndrome de Alport, nefropatía por IgA, nefritis por púrpura de Henoch-Schönlein"
+          ],
+          [
+            "C3 bajo con C4 bajo",
+            "Bacteremia crónica como endocarditis, glomerulonefritis membranoproliferativa tipo 1, nefritis lúpica"
+          ],
+          [
+            "C3 bajo con C4 normal",
+            "Glomerulonefritis postestreptocócica, otras glomerulonefritis postinfecciosas, membranoproliferativa tipos 2 y 3"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
+          "clave": "GPC-IMSS-826-18",
+          "seccion": "3.2 Cuadros o figuras",
+          "pagina": 28,
+          "fragmento": "Cuadro 3. Determinación de C3 y C4 en diversas patologías"
+        }
+      },
+      {
+        "id": "RZ-PED-826-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sin_antibiotico_previo",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "por la que no recibió antibiótico",
+        "motivo": "No recibió antibiótico durante la infección: es justo el supuesto en que la guía indica iniciar penicilina."
+      },
+      {
+        "id": "RZ-PED-826-I-R7",
+        "tipo": "resaltado",
+        "concepto": "hipertension_mayor_p95",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "TA 135/90 mmHg (mayor del percentil 95)",
+        "motivo": "Hay hipertensión: junto con edema, hematuria y oliguria pide vigilancia continua en hospital y tratamiento antihipertensivo."
+      },
+      {
+        "id": "RZ-PED-826-I-R8",
+        "tipo": "resaltado",
+        "concepto": "oliguria",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "disminución del volumen urinario",
+        "motivo": "La oliguria es uno de los datos por los que la guía prefiere vigilar al niño hospitalizado y no en casa."
+      }
+    ]
   },
   {
     "id": "RZ-PED-826-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "sindrome_nefritico_postestreptococico",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-826-I",
@@ -272,7 +447,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-826-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "c3_bajo_a_10_semanas",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "El C3 sérico continúa por debajo de lo normal, igual que al inicio",
+        "motivo": "El C3 debería normalizarse en un máximo de 8 semanas; si sigue bajo, hay que pensar en otra causa y enviar al nefrólogo pediatra."
+      },
+      {
+        "id": "RZ-PED-826-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "tiempo_de_evolucion",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "diagnosticada hace 10 semanas",
+        "motivo": "Ya pasaron más de 8 semanas de la fase aguda: el plazo esperado para normalizar el C3 se cumplió."
+      },
+      {
+        "id": "RZ-PED-826-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "mejoria_clinica_no_basta",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "La hipertensión y el edema se resolvieron en la segunda semana",
+        "motivo": "La mejoría clínica no descarta otra glomerulopatía; el dato que decide la conducta es el C3 persistentemente bajo."
+      }
+    ]
   }
 ]

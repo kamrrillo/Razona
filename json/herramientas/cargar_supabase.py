@@ -10,8 +10,8 @@ Uso (desde la raíz del repo):
   uv run json/herramientas/cargar_supabase.py --dry-run    # solo valida y resume
 
 Qué hace:
-  1. Valida los casos con validar_casos.py (esquema + R1, R2, R4, R6). R3 se omite: exige
-     estado 'borrador' y aplica al generador, no a la base (un caso revisado sí se carga).
+  1. Valida los casos con validar_casos.py (esquema + R1–R4, R6; R5 solo si existe
+     json/gpc_paginas con el texto de las guías).
   2. Valida json/temas.json: cada síndrome del banco tiene tema y cada tema tiene grupo.
   3. Upsert de grupos → temas → casos índice → variantes (por id; idempotente).
   4. Los casos que ya no están en el banco NO se borran: se marcan como 'retirado'.
@@ -76,8 +76,8 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="solo valida; no escribe en la base")
     args = ap.parse_args()
 
-    casos, errores, _avisos, _ = valida(str(JSON_DIR / "casos"))
-    errores = [e for e in errores if "(R3)" not in e]
+    gpc = JSON_DIR / "gpc_paginas"
+    casos, errores, _avisos, _ = valida(str(JSON_DIR / "casos"), str(gpc) if gpc.is_dir() else None)
     grupos, temas, errores_temas = cargar_temas(casos)
     errores += errores_temas
     if errores:

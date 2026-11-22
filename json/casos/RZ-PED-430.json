@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-430-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "pelagra",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -140,12 +140,169 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-430-I-R1",
+        "tipo": "flashcard",
+        "concepto": "dosis_nicotinamida",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué dosis y duración de nicotinamida recomienda la guía para tratar la pelagra?",
+        "reverso": "300 mg al día en total, no por kilogramo, repartidos en varias tomas durante 3 a 4 semanas.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+          "clave": "IMSS-430-10",
+          "seccion": "2.3 Tratamiento",
+          "pagina": 17,
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+        }
+      },
+      {
+        "id": "RZ-PED-430-I-R2",
+        "tipo": "flashcard",
+        "concepto": "diagnostico_clinico_pelagra",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Hace falta medir niacina para iniciar el tratamiento de la pelagra?",
+        "reverso": "No. El diagnóstico es principalmente clínico; la medición es cara, tarda más que la recuperación y no se realiza en el sector público.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+          "clave": "IMSS-430-10",
+          "seccion": "2.1 Diagnóstico",
+          "pagina": 15,
+          "fragmento": "El diagnóstico de Pelagra es principalmente clínico"
+        }
+      },
+      {
+        "id": "RZ-PED-430-I-R3",
+        "tipo": "flashcard",
+        "concepto": "cuidado_de_la_piel",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Además de la nicotinamida, ¿qué se indica para las lesiones de la piel?",
+        "reverso": "Cremas de fotoprotección y emolientes mientras se normalizan los niveles de niacina.",
+        "cita": {
+          "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+          "clave": "IMSS-430-10",
+          "seccion": "2.3 Tratamiento",
+          "pagina": 18,
+          "fragmento": "cremas de foto protección y"
+        }
+      },
+      {
+        "id": "RZ-PED-430-I-R4",
+        "tipo": "diagrama",
+        "concepto": "abordaje_pelagra",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Dermatitis simétrica en zonas expuestas al sol, diarrea y alteraciones neurológicas\"] --> B[\"Investigar factores de riesgo: dieta de sorgo, desnutrición, isoniazida, malabsorción\"]\n  B --> C{\"¿Cuadro clínico concluyente de pelagra?\"}\n  C -->|\"No\"| D[\"Diagnóstico diferencial: lupus, fotosensibilidad por fármacos, dermatitis, colitis\"]\n  C -->|\"Sí\"| E[\"Nicotinamida 300 mg al día, dividida, por 3 a 4 semanas, sin esperar laboratorio\"]\n  E --> F{\"¿Se controlan pronto la diarrea y la confusión?\"}\n  F -->|\"Sí\"| G[\"La respuesta confirma el diagnóstico; la piel mejora en forma gradual\"]\n  F -->|\"No\"| D",
+        "citas": [
+          {
+            "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+            "clave": "IMSS-430-10",
+            "seccion": "2.1 Diagnóstico",
+            "pagina": 12,
+            "fragmento": "Ante la sospecha de Pelagra se deberá investigar el"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+            "clave": "IMSS-430-10",
+            "seccion": "2.2 Diagnóstico diferencial",
+            "pagina": 16,
+            "fragmento": "Cuando el cuadro clínico y las pruebas de laboratorio"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+            "clave": "IMSS-430-10",
+            "seccion": "2.3 Tratamiento",
+            "pagina": 17,
+            "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          },
+          {
+            "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
+            "clave": "IMSS-430-10",
+            "seccion": "2.1 Diagnóstico",
+            "pagina": 14,
+            "fragmento": "diagnóstico al observar que rápidamente se controla"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-430-I-R5",
+        "tipo": "resaltado",
+        "concepto": "triada_completa",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "evacuaciones líquidas 4 veces al día, glositis, irritabilidad y dificultad para concentrarse",
+        "motivo": "La diarrea se acompaña de glositis y alteraciones neurológicas; junto con la dermatitis fotoexpuesta forman el cuadro de pelagra, no una gastroenteritis aislada."
+      },
+      {
+        "id": "RZ-PED-430-I-R6",
+        "tipo": "resaltado",
+        "concepto": "collar_de_casal",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "una banda alrededor del cuello, que empeoran con el sol",
+        "motivo": "Es el collar de Casal: lesión en zona expuesta al sol, típica de la pelagra."
+      },
+      {
+        "id": "RZ-PED-430-I-R7",
+        "tipo": "resaltado",
+        "concepto": "dieta_de_sorgo",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "se alimenta casi solo de sorgo y tortilla desde hace un año",
+        "motivo": "La ingestión prolongada de sorgo es un factor de riesgo de pelagra que la guía pide investigar."
+      },
+      {
+        "id": "RZ-PED-430-I-R8",
+        "tipo": "imagen",
+        "concepto": "guantes_de_pelagra",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Alcoholic_pellagra.jpg/500px-Alcoholic_pellagra.jpg",
+        "url_pagina": "https://commons.wikimedia.org/wiki/File:Alcoholic_pellagra.jpg",
+        "fuente": "Wikimedia Commons (CDC Public Health Image Library)",
+        "autor": "CDC / Robert Sumpter",
+        "licencia": "Dominio público",
+        "descripcion": "Dorso de las manos con piel engrosada, áspera e hiperpigmentada por pelagra, la distribución en zonas expuestas conocida como guantes de pelagra.",
+        "archivo": "assets/RZ-PED-430-I-R8.jpg",
+        "sha256": "10538b4b90ee27fb333616e6d69eb24f734378b0614deafa2bb6267ae5777044"
+      }
+    ]
   },
   {
     "id": "RZ-PED-430-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "pelagra",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-430-I",
@@ -273,7 +430,46 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-430-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "isoniazida_sin_suplemento",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "isoniazida desde hace 3 meses, sin suplementos vitamínicos",
+        "motivo": "La isoniazida, análoga estructural de la niacina, suprime su producción endógena: es un factor de riesgo de pelagra."
+      },
+      {
+        "id": "RZ-PED-430-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "triada_en_variante",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "evacuaciones líquidas y episodios de confusión",
+        "motivo": "Diarrea y confusión junto con la dermatitis fotoexpuesta apuntan a deficiencia de niacina, no a gastroenteritis ni a fotodermatitis aislada."
+      },
+      {
+        "id": "RZ-PED-430-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "lesiones_fotoexpuestas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "eritema y descamación simétrica en cara y dorso de manos que aparecieron después de exponerse al sol",
+        "motivo": "Lesiones simétricas en zonas expuestas al sol, como el signo de mariposa y los guantes de pelagra."
+      }
+    ]
   }
 ]

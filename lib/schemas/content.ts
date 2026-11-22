@@ -50,6 +50,51 @@ export const KeyPointSchema = z.object({
 });
 export type KeyPoint = z.infer<typeof KeyPointSchema>;
 
+const ResourceBase = {
+  id: z.string().min(1),
+  concept: z.string().min(1),
+  errorTypes: z.array(ErrorTypeSchema).min(1),
+  citations: z.array(CitationSchema).optional(),
+};
+
+/**
+ * Recurso de aprendizaje del banco (json/casos: "recursos"). Se muestra solo DESPUÉS de
+ * responder: puede contener la respuesta. Nunca va en PublicItem.
+ */
+export const ResourceSchema = z.discriminatedUnion("type", [
+  z.object({
+    ...ResourceBase,
+    type: z.literal("flashcard"),
+    front: z.string().min(1),
+    back: z.string().min(1),
+  }),
+  z.object({ ...ResourceBase, type: z.literal("diagram"), code: z.string().min(1) }),
+  z.object({
+    ...ResourceBase,
+    type: z.literal("highlight"),
+    fragment: z.string().min(1),
+    reason: z.string().min(1),
+  }),
+  z.object({
+    ...ResourceBase,
+    type: z.literal("table"),
+    columns: z.array(z.string()).min(1),
+    rows: z.array(z.array(z.string())).min(1),
+  }),
+  z.object({
+    ...ResourceBase,
+    type: z.literal("image"),
+    imagePath: z.string().regex(/^\/recursos\/[A-Za-z0-9-]+\.(jpg|jpeg|png|svg|webp)$/),
+    description: z.string().min(1),
+    source: z.string().min(1),
+    author: z.string().min(1),
+    license: z.string().min(1),
+    sourceUrl: z.string().url(),
+  }),
+]);
+export type Resource = z.infer<typeof ResourceSchema>;
+export type ResourceType = Resource["type"];
+
 export const ItemSchema = z
   .object({
     id: z.string().min(1),
@@ -73,6 +118,7 @@ export const ItemSchema = z
     groupName: z.string().optional(),
     keyPoints: z.array(KeyPointSchema).optional(),
     rubric: z.array(RubricEntrySchema).optional(),
+    resources: z.array(ResourceSchema).optional(),
   })
   .refine((item) => item.options.some((o) => o.id === item.correctOptionId), {
     message: "correctOptionId debe existir en options",

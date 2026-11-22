@@ -16,7 +16,124 @@
    ["lectura", "Lee mal la duración: la tos lleva 6 semanas, más de las 4 que definen tos crónica.", ["E"], ["no es crónica", "menos de 4 semanas", "aguda"], "¿Cuánto tiempo lleva la tos y cómo define la guía la tos crónica?", "La tos crónica en niños se define como la que dura más de 4 semanas.", "4.1 Concepto de Tos Crónica Específica y No Específica", 11, "La tos crónica en niños se define como aquella que dura"],
    ["dato_omitido", "La clasifica como no específica sin considerar que es húmeda, con roncus y sin respuesta a broncodilatador.", ["D"], ["no específica", "vigilar", "se quita sola"], "¿Qué características de la tos y de la auscultación orientan a una causa específica?", "La bronquitis bacteriana persistente se considera en pacientes con tos crónica húmeda o productiva en ausencia de otros diagnósticos específicos.", "4.2.2 Vías Respiratorias Bajas", 14, "El diagnóstico de la bronquitis bacteriana persistente"],
    ["conocimiento", "Desconoce que la bronquitis bacteriana persistente requiere un ciclo prolongado.", ["B"], ["7 días", "ciclo corto", "una semana"], "¿Qué ocurre con los ciclos cortos de antibiótico en la bronquitis bacteriana persistente?", "La bronquitis bacteriana persistente puede requerir tratamiento prolongado, de dos a cuatro semanas; los cursos cortos con frecuencia conducen a recaída.", "4.2.2 Vías Respiratorias Bajas", 15, "cursos cortos con frecuencia conducen a la recaída"],
-   ["razonamiento", "Equipara tos crónica con asma sin ponderar la falta de respuesta al broncodilatador ni la ausencia de sibilancias.", ["C"], ["asma", "inhaladores", "budesonida"], "¿Qué hallazgos de este niño no encajan con asma?", "La bronquitis bacteriana persistente puede parecerse al asma, pero no suele responder a broncodilatadores y la auscultación revela roncus espiratorios en lugar de sibilancias.", "4.2.2 Vías Respiratorias Bajas", 15, "asma pero no suele responder a los broncodilatadores"]]},
+   ["razonamiento", "Equipara tos crónica con asma sin ponderar la falta de respuesta al broncodilatador ni la ausencia de sibilancias.", ["C"], ["asma", "inhaladores", "budesonida"], "¿Qué hallazgos de este niño no encajan con asma?", "La bronquitis bacteriana persistente puede parecerse al asma, pero no suele responder a broncodilatadores y la auscultación revela roncus espiratorios en lugar de sibilancias.", "4.2.2 Vías Respiratorias Bajas", 15, "asma pero no suele responder a los broncodilatadores"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "definicion_tos_cronica",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿A partir de cuánto tiempo de evolución se considera crónica la tos en un niño?",
+    "reverso": "Cuando dura más de 4 semanas.",
+    "cita": [
+     "4.1 Concepto de Tos Crónica Específica y No Específica",
+     11,
+     "La tos crónica en niños se define como aquella que dura"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "duracion_antibiotico_bbp",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué no basta un ciclo corto de antibiótico en la bronquitis bacteriana persistente?",
+    "reverso": "Suele requerir tratamiento prolongado, de semanas; los cursos cortos con frecuencia llevan a recaída.",
+    "cita": [
+     "4.2.2 Vías Respiratorias Bajas",
+     15,
+     "cursos cortos con frecuencia conducen a la recaída"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "bbp_frente_a_asma",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué distingue clínicamente a la bronquitis bacteriana persistente del asma?",
+    "reverso": "No suele responder a broncodilatadores y a la auscultación hay roncus espiratorios en lugar de sibilancias.",
+    "cita": [
+     "4.2.2 Vías Respiratorias Bajas",
+     15,
+     "asma pero no suele responder a los broncodilatadores"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "abordaje_tos_cronica_humeda",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con tos de más de 4 semanas\"] --> B[\"Radiografía de tórax posteroanterior y lateral izquierda\"]\n  B --> C{\"¿Datos clínicos, radiológicos o espirométricos que sugieran una causa?\"}\n  C -->|\"No\"| D[\"Tos crónica no específica\"]\n  C -->|\"Sí\"| E{\"¿Tos húmeda sin otro diagnóstico específico?\"}\n  E -->|\"Sí\"| F[\"Sospecha de bronquitis bacteriana persistente: antibiótico empírico de 2 a 6 semanas\"]\n  E -->|\"No\"| G[\"Buscar la causa específica sugerida\"]\n  F --> H{\"¿Se resuelve la tos?\"}\n  H -->|\"Sí\"| I[\"Diagnóstico confirmado\"]\n  H -->|\"No\"| J[\"Broncoscopia con estudios histopatológicos y cultivos\"]",
+    "citas": [
+     [
+      "4.4.1 Radiografía de Tórax",
+      27,
+      "radiografía de tórax en lateral izquierda y postero-"
+     ],
+     [
+      "4.1 Concepto de Tos Crónica Específica y No Específica",
+      11,
+      "Todo niño con tos de 4 o más semanas de evolución sin"
+     ],
+     [
+      "4.2.2 Vías Respiratorias Bajas",
+      14,
+      "El diagnóstico de la bronquitis bacteriana persistente"
+     ],
+     [
+      "4.4.3 Broncoscopia",
+      28,
+      "realizar una broncoscopia para toma de estudios"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "tos_humeda_seis_semanas",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "tos húmeda diaria desde hace 6 semanas",
+    "motivo": "Seis semanas superan las 4 que definen tos crónica, y que sea húmeda orienta a bronquitis bacteriana persistente."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_respuesta_salbutamol",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recibió salbutamol inhalado durante 2 semanas sin mejoría",
+    "motivo": "La falta de respuesta a medicamentos para el asma por lo general basta para excluir asma."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "roncus_sin_sibilancias",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "roncus espiratorios bilaterales, sin sibilancias",
+    "motivo": "Roncus espiratorios en lugar de sibilancias es la auscultación típica de la bronquitis bacteriana persistente, no del asma."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Femenino de 5 años con tos seca diaria de 5 semanas de evolución, sin fiebre. No hay antecedente de atragantamiento ni de cuerpo extraño. Crece adecuadamente. A la exploración: campos pulmonares sin estertores ni sibilancias, sin acropaquias, sin soplos. No se le han realizado estudios. Acude a su unidad de medicina familiar.",
   "pregunta": "¿Cuál es el siguiente paso más adecuado en el abordaje?",
@@ -32,5 +149,41 @@
    ["dato_omitido", "Indica tratamiento de bronquitis bacteriana persistente en una tos seca.", ["A"], ["antibiótico", "bronquitis bacteriana", "amoxicilina"], "¿La tos de esta niña es húmeda o seca, y en cuál se sospecha bronquitis bacteriana persistente?", "La bronquitis bacteriana persistente se considera en la tos crónica húmeda o productiva; antes de tratar se completa el abordaje con radiografía.", "4.2.2 Vías Respiratorias Bajas", 14, "El diagnóstico de la bronquitis bacteriana persistente"],
    ["conocimiento", "Desconoce el umbral de tiempo que define la tos crónica.", ["B"], ["8 semanas", "esperar", "todavía no"], "¿A partir de cuántas semanas define la guía la tos crónica en niños?", "La tos crónica en niños se define como la que dura más de 4 semanas.", "4.1 Concepto de Tos Crónica Específica y No Específica", 11, "La tos crónica en niños se define como aquella que dura"],
    ["razonamiento", "Elige la proyección para cuerpo extraño sin que haya sospecha de aspiración.", ["D"], ["inspiración y espiración", "cuerpo extraño", "atrapamiento"], "¿En qué situación indica la guía las radiografías en inspiración y espiración? ¿Hay datos de ello?", "Las placas en inspiración y espiración se piden ante sospecha de aspiración de cuerpo extraño; en todo niño con tos crónica se toma radiografía posteroanterior y lateral izquierda.", "4.4.1 Radiografía de Tórax", 27, "En caso de sospecha de aspiración de cuerpo extraño se"],
-   ["conocimiento", "Clasifica como no específica sin haber descartado datos radiológicos.", ["E"], ["no específica", "sin estudios", "observar"], "¿Qué estudios deben ser normales para clasificar la tos como no específica?", "La tos se considera no específica solo si no hay datos clínicos, radiológicos o por espirometría que sugieran la etiología.", "4.1 Concepto de Tos Crónica Específica y No Específica", 11, "Todo niño con tos de 4 o más semanas de evolución sin"]]}
+   ["conocimiento", "Clasifica como no específica sin haber descartado datos radiológicos.", ["E"], ["no específica", "sin estudios", "observar"], "¿Qué estudios deben ser normales para clasificar la tos como no específica?", "La tos se considera no específica solo si no hay datos clínicos, radiológicos o por espirometría que sugieran la etiología.", "4.1 Concepto de Tos Crónica Específica y No Específica", 11, "Todo niño con tos de 4 o más semanas de evolución sin"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "tos_seca_cinco_semanas",
+    "para_errores": [
+     "lectura",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "tos seca diaria de 5 semanas de evolución",
+    "motivo": "Cinco semanas ya es tos crónica y hay que estudiarla; al ser seca no orienta a bronquitis bacteriana persistente."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_estudios_previos",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No se le han realizado estudios",
+    "motivo": "Sin radiografía de tórax no se puede clasificar como no específica: la guía pide radiografía a todo niño con tos crónica."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_sospecha_cuerpo_extrano",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No hay antecedente de atragantamiento ni de cuerpo extraño",
+    "motivo": "Las placas en inspiración y espiración se reservan para sospecha de aspiración de cuerpo extraño, que aquí no existe."
+   }
+  ]}
  ]}

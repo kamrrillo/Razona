@@ -109,8 +109,141 @@
      25,
      "Los antibióticos no muestran utilidad en el manejo de"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "diagnostico_clinico_ambulatorio",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En un lactante ambulatorio con cuadro típico de bronquiolitis, ¿qué estudios se necesitan para confirmar el diagnóstico?",
+    "reverso": "Ninguno: el diagnóstico es clínico, con la historia clínica y la exploración física.",
+    "cita": [
+     "4.2.1.2 Pruebas de diagnóstico",
+     22,
+     "diagnóstico de bronquiolitis en pacientes ambulatorios"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "umbral_saturacion_oxigeno",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Con qué saturación de oxígeno indica la guía administrar oxígeno en bronquiolitis?",
+    "reverso": "Con saturación menor de 90 %, para mantenerla entre 90 y 94 %.",
+    "cita": [
+     "4.2.1.3 Tratamiento farmacológico",
+     27,
+     "En saturaciones de oxigeno menor de 90% administrar"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "farmacos_no_recomendados",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué fármacos recomienda la guía no utilizar en el tratamiento de la bronquiolitis?",
+    "reverso": "Corticoesteroides, montelukast, antihistamínicos, descongestionantes, vasoconstrictores nasales y antibióticos.",
+    "cita": [
+     "4.2.1.3 Tratamiento farmacológico",
+     25,
+     "Se recomienda no utilizar corticoesteroides, inhibidores"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_primer_nivel_bronquiolitis",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Menor de 2 años con bronquiolitis en primer nivel\"] --> B{\"¿Prematurez, menor de 3 meses, SpO2 menor de 90 %, intolerancia a la vía oral o bronquiolitis moderada o grave?\"}\n  B -->|\"Sí\"| C[\"Referir a segundo nivel o urgencias\"]\n  B -->|\"No\"| D{\"¿Antecedente de atopia, asma o alergia?\"}\n  D -->|\"Sí\"| E[\"Una sola dosis de salbutamol y evaluar la respuesta\"]\n  D -->|\"No\"| F[\"Manejo en domicilio con medidas generales y signos de alarma\"]\n  E --> G{\"¿Disminuyen las sibilancias y mejora la escala de gravedad?\"}\n  G -->|\"Sí\"| F\n  G -->|\"No\"| C\n  F --> H[\"Revalorar a las 24 a 48 horas\"]",
+    "citas": [
+     [
+      "4.3 Criterios de referencia",
+      29,
+      "Considerar criterios de referencia al segundo nivel"
+     ],
+     [
+      "4.2.1.3 Tratamiento farmacológico",
+      24,
+      "se recomienda aplicar una sola dosis de salbutamol en"
+     ],
+     [
+      "4.2.2.1 Tratamiento no farmacológico",
+      28,
+      "siguientes medidas para el manejo ambulatorio"
+     ],
+     [
+      "4.4 Vigilancia y Seguimiento",
+      30,
+      "Se recomienda realizar una revaloración a las 24 o 48"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "saturacion_normal",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "SpO2 96 % al aire ambiente",
+    "motivo": "La guía indica oxígeno solo con saturación menor de 90 %; con 96 % al aire ambiente no hay hipoxemia que tratar."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_atopia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin antecedentes de atopia en él ni en la familia",
+    "motivo": "La guía reserva la dosis única de salbutamol para niños con atopia, asma o alergia; sin esos antecedentes no está indicada."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "tolera_via_oral",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Se alimenta bien al seno materno y moja pañales con normalidad",
+    "motivo": "Tolera la vía oral y no hay datos de deshidratación: no cumple esos criterios de referencia y puede manejarse en domicilio."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "etiologia_viral",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Respiratory_syncytial_virus_01.jpg/960px-Respiratory_syncytial_virus_01.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Respiratory_syncytial_virus_01.jpg",
+    "fuente": "Wikimedia Commons (CDC Public Health Image Library)",
+    "autor": "CDC / Dr. Erskine Palmer",
+    "licencia": "Dominio público",
+    "descripcion": "Micrografía electrónica de transmisión (tinción negativa) del virus sincitial respiratorio, el agente viral más frecuente de la bronquiolitis aguda.",
+    "archivo": "assets/RZ-PED-032-I-R8.jpg",
+    "sha256": "0bccaa4d27fcfd4d003d59c7c060e2551f7c2bb487eb2d7459ddd6aa072fa4b9"
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Femenino de 14 meses de edad con dermatitis atópica desde los 3 meses; su madre tiene asma. Presenta desde hace 2 días rinorrea, tos y sibilancias. Afebril, FR 46 rpm, tiraje intercostal leve, SpO2 93 % al aire ambiente. Tolera la vía oral. Es atendida en su unidad de medicina familiar, que cuenta con salbutamol en aerosol con espaciador.",
@@ -208,7 +341,31 @@
      26,
      "La Ribavirina no está recomendada para el tratamiento"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "antecedente_atopia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "dermatitis atópica desde los 3 meses; su madre tiene asma",
+    "motivo": "Con antecedente de atopia o asma la guía recomienda una sola dosis de salbutamol y evaluar la respuesta, en lugar de solo medidas generales."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "atopia_contraindica_hipertonica",
+    "para_errores": [
+     "dato_omitido",
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Es atendida en su unidad de medicina familiar",
+    "motivo": "La solución hipertónica al 3 % exige descartar atopia y se aplica en el siguiente nivel; en primer nivel y con atopia no corresponde."
+   }
+  ]}
  ]
 }

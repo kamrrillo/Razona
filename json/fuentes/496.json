@@ -16,7 +16,141 @@
    ["lectura", "Actúa como si el paciente fuera alérgico a la penicilina; la viñeta dice que no tiene alergias.", ["E"], ["alérgico", "macrólido", "claritromicina"], "¿Qué dice la viñeta sobre las alergias del paciente?", "Los macrólidos y la clindamicina son alternativas en pacientes alérgicos a betalactámicos; sin alergia, la amoxicilina es la primera elección.", "4.4.1 Tratamiento Antimicrobiano", 24, "alternativas terapéuticas en OMA por su adecuada"],
    ["dato_omitido", "Aplica la observación sin considerar que el paciente tiene menos de 6 meses.", ["B"], ["observar", "analgésico", "esperar", "viral"], "¿Qué edad tiene el paciente y qué indica la guía para ese grupo de edad?", "Todo niño menor de 6 meses con diagnóstico clínico de otitis media aguda debe recibir antimicrobiano para evitar complicaciones.", "4.4.1 Tratamiento Antimicrobiano", 24, "menores de 6 meses con diagnóstico clínico de OMA"],
    ["conocimiento", "Cree que el trimetoprim con sulfametoxazol es útil en otitis media aguda.", ["C"], ["trimetoprim", "sulfa", "bactrim"], "¿Qué resistencia tiene el neumococo al trimetoprim con sulfametoxazol según la guía?", "No se recomienda trimetoprim con sulfametoxazol para la otitis media aguda por su elevada resistencia de Streptococcus pneumoniae.", "4.4.1 Tratamiento Antimicrobiano", 24, "sulfametoxazol para el tratamiento de la OMA"],
-   ["razonamiento", "Escala a mayor espectro sin indicación de gravedad ni falla.", ["D"], ["más espectro", "clavulanato", "cubrir todo"], "¿En qué situaciones indica la guía iniciar con amoxicilina y clavulanato?", "La amoxicilina con clavulanato se inicia en enfermedad grave (otalgia moderada a grave o fiebre de 39 °C o más) o ante falla de la amoxicilina a las 72 horas.", "4.4.1 Tratamiento Antimicrobiano", 24, "En pacientes con enfermedad grave (otalgia moderada"]]},
+   ["razonamiento", "Escala a mayor espectro sin indicación de gravedad ni falla.", ["D"], ["más espectro", "clavulanato", "cubrir todo"], "¿En qué situaciones indica la guía iniciar con amoxicilina y clavulanato?", "La amoxicilina con clavulanato se inicia en enfermedad grave (otalgia moderada a grave o fiebre de 39 °C o más) o ante falla de la amoxicilina a las 72 horas.", "4.4.1 Tratamiento Antimicrobiano", 24, "En pacientes con enfermedad grave (otalgia moderada"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "antimicrobiano_menores_6_meses",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En un menor de 6 meses con diagnóstico clínico de otitis media aguda, ¿cabe la observación sin antimicrobiano?",
+    "reverso": "No. Todos deben recibir antimicrobiano, porque en ese grupo las complicaciones son más frecuentes.",
+    "cita": [
+     "4.4.1 Tratamiento Antimicrobiano",
+     24,
+     "menores de 6 meses con diagnóstico clínico de OMA"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "resistencia_trimetoprim_sulfametoxazol",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué no se recomienda trimetoprim con sulfametoxazol en otitis media aguda?",
+    "reverso": "Streptococcus pneumoniae tiene resistencia elevada a este fármaco, de 30 a 44.6 %.",
+    "cita": [
+     "4.4.1 Tratamiento Antimicrobiano",
+     24,
+     "resistencia para Streptococcus pneumoniae entre 30 y"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "indicaciones_amoxicilina_clavulanato",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo se inicia de entrada amoxicilina con ácido clavulánico en otitis media aguda?",
+    "reverso": "En enfermedad grave: otalgia moderada a grave o fiebre de 39 °C o más, o para cubrir bacterias productoras de betalactamasas.",
+    "cita": [
+     "4.4.1 Tratamiento Antimicrobiano",
+     24,
+     "En pacientes con enfermedad grave (otalgia moderada"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "tratamiento_oma_menor_6_meses",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Menor de 6 meses con otitis media aguda clínica\"] --> B[\"Antimicrobiano siempre: más complicaciones a esta edad\"]\n  B --> C{\"¿Enfermedad grave: otalgia moderada a grave o fiebre de 39 °C o más?\"}\n  C -->|\"Sí\"| D[\"Amoxicilina con ácido clavulánico a dosis alta\"]\n  C -->|\"No\"| E[\"Amoxicilina a dosis alta, de primera elección\"]\n  E --> F{\"¿Falla terapéutica a las 72 horas?\"}\n  F -->|\"Sí\"| G[\"Cambiar a amoxicilina con ácido clavulánico por 5 a 10 días\"]\n  F -->|\"No\"| H[\"Completar el esquema de 5 a 10 días según la edad\"]",
+    "citas": [
+     [
+      "4.4.1 Tratamiento Antimicrobiano",
+      24,
+      "menores de 6 meses con diagnóstico clínico de OMA"
+     ],
+     [
+      "4.4.1 Tratamiento Antimicrobiano",
+      24,
+      "En pacientes con enfermedad grave (otalgia moderada"
+     ],
+     [
+      "4.4.1 Tratamiento Antimicrobiano",
+      23,
+      "Se recomienda utilizar de primera elección amoxicilina a"
+     ],
+     [
+      "4.4.1 Tratamiento Antimicrobiano",
+      24,
+      "En caso de falla terapéutica con amoxicilina a las 72"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "edad_cinco_meses",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Masculino de 5 meses",
+    "motivo": "Por ser menor de 6 meses requiere antimicrobiano; la observación con analgésico no aplica a esta edad."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_alergias",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin alergias conocidas",
+    "motivo": "Los macrólidos y la clindamicina son alternativas solo para alérgicos a betalactámicos; sin alergia se usa amoxicilina."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "fiebre_menor_39",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "fiebre de 38.5 °C",
+    "motivo": "Fiebre menor de 39 °C, sin otalgia grave descrita: no cumple criterios de enfermedad grave para iniciar con clavulanato."
+   },
+   {
+    "n": 8,
+    "tipo": "imagen",
+    "concepto": "membrana_timpanica_abombada",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "url_imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Acute_Otitis_Media_Stage_of_Resolution.jpg/960px-Acute_Otitis_Media_Stage_of_Resolution.jpg",
+    "url_pagina": "https://commons.wikimedia.org/wiki/File:Acute_Otitis_Media_Stage_of_Resolution.jpg",
+    "fuente": "Wikimedia Commons",
+    "autor": "Michael Hawke MD",
+    "licencia": "CC BY 4.0",
+    "descripcion": "Otoscopia en otitis media aguda: membrana timpánica abombada hacia afuera por exudado mucopurulento en el oído medio, con vasos dilatados.",
+    "archivo": "assets/RZ-PED-496-I-R8.jpg",
+    "sha256": "85081fa02d2a9d118f1b624850316eab23a67da05c1075807c165e54eee38740"
+   }
+  ]},
  {"t": "V1",
   "vineta": "Femenino de 4 años, peso 16 kg, sin alergias. Hace 72 horas se diagnosticó otitis media aguda izquierda y se inició amoxicilina 85 mg/kg/día, que la madre ha administrado de forma correcta. Persiste con fiebre de 38.8 °C y otalgia; la otoscopia muestra la membrana timpánica izquierda abombada y eritematosa. Sin otorrea, sin signos meníngeos ni datos de mastoiditis.",
   "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -32,5 +166,40 @@
    ["dato_omitido", "Continúa la amoxicilina sin reconocer que persisten la fiebre y la otalgia a las 72 horas.", ["A"], ["completar esquema", "dar tiempo", "seguir igual"], "¿Cuánto tiempo lleva con amoxicilina y cómo ha evolucionado?", "Ante falla terapéutica con amoxicilina a las 72 horas se cambia a amoxicilina con ácido clavulánico.", "4.4.1 Tratamiento Antimicrobiano", 24, "En caso de falla terapéutica con amoxicilina a las 72"],
    ["conocimiento", "Elige un antibiótico con alta resistencia para neumococo.", ["B"], ["trimetoprim", "sulfa"], "¿Qué recomienda la guía sobre el trimetoprim con sulfametoxazol en otitis media aguda?", "No se recomienda trimetoprim con sulfametoxazol para el tratamiento de la otitis media aguda.", "4.4.1 Tratamiento Antimicrobiano", 24, "sulfametoxazol para el tratamiento de la OMA"],
    ["razonamiento", "Usa la alternativa para alérgicos en una paciente sin alergia.", ["C"], ["macrólido", "claritromicina", "cambiar de familia"], "¿Para qué pacientes reserva la guía los macrólidos en otitis media aguda?", "Los macrólidos y la clindamicina son alternativas en pacientes alérgicos a betalactámicos.", "4.4.1 Tratamiento Antimicrobiano", 24, "alternativas terapéuticas en OMA por su adecuada"],
-   ["razonamiento", "Interpreta la falta de respuesta como causa viral y suspende el antibiótico.", ["E"], ["es viral", "no sirve el antibiótico", "solo analgésico"], "Si la amoxicilina no funcionó, ¿qué tipo de bacterias podrían explicarlo?", "Las fallas con amoxicilina obligan a cubrir bacterias productoras de betalactamasas agregando ácido clavulánico.", "4.4.1 Tratamiento Antimicrobiano", 23, "productoras de betalactamasas. Por lo que es"]]}
+   ["razonamiento", "Interpreta la falta de respuesta como causa viral y suspende el antibiótico.", ["E"], ["es viral", "no sirve el antibiótico", "solo analgésico"], "Si la amoxicilina no funcionó, ¿qué tipo de bacterias podrían explicarlo?", "Las fallas con amoxicilina obligan a cubrir bacterias productoras de betalactamasas agregando ácido clavulánico.", "4.4.1 Tratamiento Antimicrobiano", 23, "productoras de betalactamasas. Por lo que es"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "persistencia_a_72_horas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Persiste con fiebre de 38.8 °C y otalgia",
+    "motivo": "Fiebre y otalgia que persisten a las 72 horas de amoxicilina definen falla terapéutica: hay que cubrir productoras de betalactamasas."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "apego_correcto",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "que la madre ha administrado de forma correcta",
+    "motivo": "Con dosis y apego adecuados, la falta de respuesta no se explica por mala administración: es falla del fármaco."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_alergias_variante",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "peso 16 kg, sin alergias",
+    "motivo": "Sin alergia a betalactámicos no corresponde un macrólido; se mantiene un betalactámico con inhibidor de betalactamasas."
+   }
+  ]}
  ]}

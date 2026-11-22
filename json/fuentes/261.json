@@ -17,7 +17,124 @@
    ["lectura", "Lee mal la duración: la paciente lleva 12 días, más del umbral de 10.", ["D"], ["menos de 10 días", "esperar", "es viral", "solo síntomas"], "¿Cuántos días de evolución tiene el cuadro y cuál es el umbral de la guía para el antibiótico?", "No se recomienda antibiótico antes de 10 días de evolución salvo datos de infección bacteriana grave; esta paciente lleva 12 días sin mejoría.", "4.2 Tratamiento Farmacológico", 30, "antes de los 10 días de evolución, a"],
    ["dato_omitido", "Usa la dosis alta de alto riesgo sin notar que la paciente no va a guardería ni recibió antibióticos recientes.", ["B"], ["dosis alta", "resistencia", "clavulanato", "neumococo resistente"], "¿Qué factores de riesgo de cepas resistentes tiene esta niña?", "La población en riesgo de cepas resistentes son los niños que acuden a guardería o con manejo previo con antibiótico; sin ellos, se elige la dosis baja.", "4.1.2 Epidemiología y Factores de Riesgo", 14, "niños que acuden a guarderías"],
    ["conocimiento", "Cree que la radiografía de senos paranasales es necesaria para el diagnóstico inicial.", ["C"], ["radiografía", "Waters", "niveles hidroaéreos", "confirmar"], "¿Qué recomienda la guía sobre las radiografías simples en la etapa inicial sin complicaciones?", "No se recomiendan las radiografías simples de senos paranasales para el diagnóstico de rinosinusitis bacteriana en etapa inicial y sin datos de complicación.", "4.1.3 Pruebas Diagnósticas", 28, "No se recomiendan las radiografías simples"],
-   ["razonamiento", "Concluye que, si el esquema corto es igual de eficaz, es preferible, sin ponderar el riesgo de portación de cepas resistentes.", ["E"], ["5 días", "menos días", "misma eficacia", "esquema corto"], "Si los esquemas corto y largo tienen eficacia similar, ¿qué otro desenlace los diferencia?", "Los tratamientos de 5 días y de 10 a 14 días tienen eficacia similar, pero con los cortos aumenta el riesgo de portadores asintomáticos de cepas resistentes; la duración recomendada es de 10 a 14 días.", "4.2 Tratamiento Farmacológico", 31, "incrementa el riesgo de portadores"]]},
+   ["razonamiento", "Concluye que, si el esquema corto es igual de eficaz, es preferible, sin ponderar el riesgo de portación de cepas resistentes.", ["E"], ["5 días", "menos días", "misma eficacia", "esquema corto"], "Si los esquemas corto y largo tienen eficacia similar, ¿qué otro desenlace los diferencia?", "Los tratamientos de 5 días y de 10 a 14 días tienen eficacia similar, pero con los cortos aumenta el riesgo de portadores asintomáticos de cepas resistentes; la duración recomendada es de 10 a 14 días.", "4.2 Tratamiento Farmacológico", 31, "incrementa el riesgo de portadores"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "umbral_10_dias_antibiotico",
+    "para_errores": [
+     "lectura",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "En rinosinusitis aguda sin presentación grave, ¿desde cuántos días de evolución se recomienda iniciar antibiótico?",
+    "reverso": "Después de 10 días de evolución. Antes de ese plazo solo si hay infección bacteriana con presentación grave.",
+    "cita": [
+     "4.2 Tratamiento Farmacológico",
+     30,
+     "antes de los 10 días de evolución, a"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "riesgo_cepas_resistentes",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué niños se consideran población en riesgo de cepas resistentes en rinosinusitis aguda?",
+    "reverso": "Los que acuden a guardería y los que recibieron manejo previo con antibiótico.",
+    "cita": [
+     "4.1.2 Epidemiología y Factores de Riesgo",
+     14,
+     "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "duracion_tratamiento",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "Si 5 días y 10 a 14 días de antibiótico tienen eficacia similar, ¿por qué se recomienda el esquema largo?",
+    "reverso": "Porque el esquema corto incrementa el riesgo de portadores asintomáticos de cepas resistentes.",
+    "cita": [
+     "4.2 Tratamiento Farmacológico",
+     31,
+     "incrementa el riesgo de portadores asintomáticos de cepas resistentes"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "eleccion_antibiotico_por_riesgo",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con sospecha de rinosinusitis aguda\"] --> B{\"¿Más de 10 días de evolución o presentación grave?\"}\n  B -->|\"No\"| C[\"No iniciar antibiótico y revalorar\"]\n  B -->|\"Sí\"| D[\"Iniciar tratamiento antimicrobiano\"]\n  D --> E{\"¿Acude a guardería o recibió antibiótico previo?\"}\n  E -->|\"No\"| F[\"Bajo riesgo: amoxicilina o amoxicilina-clavulanato a 45 mg/kg/día, 10 a 14 días\"]\n  E -->|\"Sí\"| G[\"Alto riesgo: amoxicilina-clavulanato a 80-90 mg/kg/día, 10 a 14 días\"]",
+    "citas": [
+     [
+      "4.2 Tratamiento Farmacológico",
+      30,
+      "antes de los 10 días de evolución, a"
+     ],
+     [
+      "4.1.2 Epidemiología y Factores de Riesgo",
+      14,
+      "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+     ],
+     [
+      "4.2 Tratamiento Farmacológico",
+      32,
+      "clavulanato 45 MG/Kg./día en dos dosis por 10 a 14 días"
+     ],
+     [
+      "4.2 Tratamiento Farmacológico",
+      33,
+      "aguda bacteriana de alto riesgo,"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "evolucion_mayor_10_dias",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "desde hace 12 días, sin ninguna mejoría",
+    "motivo": "Lleva más de 10 días sin mejoría: ya se recomienda tratamiento antimicrobiano por sospecha de causa bacteriana."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sin_antibiotico_previo",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "No ha recibido antibióticos en el último año",
+    "motivo": "Sin antibiótico previo no tiene ese factor de riesgo de cepas resistentes; corresponde la dosis baja."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "no_acude_guarderia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "cursa primer año de primaria",
+    "motivo": "Va a la primaria, no a guardería: no es población en riesgo de cepas resistentes."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Masculino de 3 años, peso 15 kg, que asiste a guardería. Hace 3 semanas recibió amoxicilina por otitis media aguda. Desde hace 11 días presenta rinorrea purulenta, tos de predominio nocturno y halitosis, sin mejoría. Temperatura 38 °C. Sin edema palpebral, sin cefalea intensa ni alteración del estado de alerta. Sin alergia a la penicilina.",
   "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
@@ -33,5 +150,40 @@
    ["dato_omitido", "Usa la dosis de bajo riesgo sin considerar la guardería y la amoxicilina de hace 3 semanas.", ["A"], ["dosis habitual", "45 mg", "primera línea"], "¿Qué antecedentes del niño aumentan el riesgo de cepas resistentes?", "Los niños que acuden a guardería y los que recibieron antibiótico previo son población en riesgo de cepas resistentes; en alto riesgo se usa amoxicilina con clavulanato a dosis alta.", "4.1.2 Epidemiología y Factores de Riesgo", 14, "con manejo previo con antibiótico"],
    ["conocimiento", "Ubica a las cefalosporinas como primera línea.", ["B"], ["cefuroxima", "cefalosporina", "más amplio"], "¿En qué lugar del esquema sitúa la guía a la cefuroxima?", "La cefuroxima, el cefpodoxime o el cefdinir se recomiendan como tratamiento de segunda línea.", "4.2 Tratamiento Farmacológico", 33, "o cefdinir (cuadro 2)"],
    ["conocimiento", "Cree que la tomografía es necesaria antes de tratar un cuadro no complicado.", ["C"], ["tomografía", "confirmar", "ver senos"], "¿En qué situaciones indica la guía tomografía de senos paranasales?", "No se recomienda la TC de rutina para el diagnóstico; se reserva para duda diagnóstica, síntomas unilaterales, recurrencia o persistencia y sospecha de complicación.", "4.1.3 Pruebas Diagnósticas", 29, "No se recomienda utilizar de rutina TC de"],
-   ["razonamiento", "Generaliza que las infecciones de vías aéreas son virales sin tomar en cuenta la persistencia de más de 10 días.", ["E"], ["es viral", "se quita sola", "no dar antibiótico"], "¿Qué cambia en la probabilidad de causa bacteriana cuando el cuadro persiste más de 10 días sin mejoría?", "Se recomienda tratamiento antimicrobiano ante la sospecha de rinosinusitis bacteriana; se evita solo antes de los 10 días de evolución sin datos de gravedad.", "4.2 Tratamiento Farmacológico", 30, "antimicrobiano ante la sospecha de"]]}
+   ["razonamiento", "Generaliza que las infecciones de vías aéreas son virales sin tomar en cuenta la persistencia de más de 10 días.", ["E"], ["es viral", "se quita sola", "no dar antibiótico"], "¿Qué cambia en la probabilidad de causa bacteriana cuando el cuadro persiste más de 10 días sin mejoría?", "Se recomienda tratamiento antimicrobiano ante la sospecha de rinosinusitis bacteriana; se evita solo antes de los 10 días de evolución sin datos de gravedad.", "4.2 Tratamiento Farmacológico", 30, "antimicrobiano ante la sospecha de"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "acude_guarderia",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "que asiste a guardería",
+    "motivo": "Los niños que asisten a guardería se consideran de alto riesgo de cepas resistentes y requieren dosis alta."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "antibiotico_reciente",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Hace 3 semanas recibió amoxicilina por otitis media aguda",
+    "motivo": "Antibiótico en las últimas seis semanas: la guía recomienda dosis altas por riesgo de cepas resistentes."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "persistencia_mayor_10_dias",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Desde hace 11 días presenta rinorrea purulenta",
+    "motivo": "Persiste más de 10 días sin mejoría: está indicado el tratamiento antimicrobiano, no solo vigilar."
+   }
+  ]}
  ]}

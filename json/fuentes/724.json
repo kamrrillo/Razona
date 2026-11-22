@@ -17,7 +17,124 @@
    ["lectura", "Lee la duración de las pausas como menor de 20 segundos; la viñeta describe 25 segundos con bradicardia.", ["E"], ["menos de 20", "respiración periódica", "no es apnea"], "¿Cuánto duran las pausas y qué las acompaña? ¿Cumplen la definición de apnea?", "La apnea es la ausencia de respiración por más de 20 segundos, o menor de 20 segundos acompañada de bradicardia o cianosis.", "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea", 13, "Ausencia de respiración por más de 20 segundos"],
    ["dato_omitido", "Elige aminofilina sin considerar que la unidad cuenta con citrato de cafeína.", ["B"], ["aminofilina", "teofilina", "metilxantina"], "¿Qué metilxantina recomienda la guía cuando la unidad cuenta con ella, y por qué?", "En las unidades que cuenten con citrato de cafeína puede usarse como primera elección; tiene mejor cociente terapéutico, absorción más fiable y vida media más larga que la teofilina.", "4.2.3.2 Cafeína", 24, "En las unidades que cuenten con citrato de cafeína"],
    ["conocimiento", "Usa un medicamento en estudio como tratamiento de primera línea.", ["C"], ["doxapram", "estimulante respiratorio"], "¿En qué apartado de la guía se ubica el doxapram?", "El doxapram se ubica entre los medicamentos en estudio como alternativa para la apnea del prematuro; las metilxantinas son las de elección.", "4.2.4.1 Doxapram", 28, "El doxapram actúa sobre quimiorreceptores periféricos"],
-   ["razonamiento", "Prefiere una medida no farmacológica sin evidencia suficiente frente al fármaco de elección.", ["D"], ["kinestésica", "colchón", "no farmacológico"], "¿Qué evidencia hay de la estimulación kinestésica como tratamiento de la apnea?", "No existe evidencia suficiente para recomendar la estimulación kinestésica como tratamiento de la apnea.", "4.2.1.3 Estimulación sensorial", 20, "estimulación kinestésica como tratamiento de apnea"]]},
+   ["razonamiento", "Prefiere una medida no farmacológica sin evidencia suficiente frente al fármaco de elección.", ["D"], ["kinestésica", "colchón", "no farmacológico"], "¿Qué evidencia hay de la estimulación kinestésica como tratamiento de la apnea?", "No existe evidencia suficiente para recomendar la estimulación kinestésica como tratamiento de la apnea.", "4.2.1.3 Estimulación sensorial", 20, "estimulación kinestésica como tratamiento de apnea"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "definicion_apnea",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué pausa respiratoria se considera apnea en el recién nacido prematuro?",
+    "reverso": "Ausencia de respiración por más de 20 segundos, o menor de 20 segundos con bradicardia o cianosis.",
+    "cita": [
+     "4.1.3.1 Detección y Vigilancia Contínua de Eventos de Apnea",
+     13,
+     "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "ventajas_cafeina_sobre_teofilina",
+    "para_errores": [
+     "dato_omitido",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué se prefiere el citrato de cafeína sobre la teofilina en la apnea del prematuro?",
+    "reverso": "Tiene cociente terapéutico más alto, absorción enteral más fiable y vida media más larga, que permite una dosis al día.",
+    "cita": [
+     "4.2.3.2 Cafeína",
+     23,
+     "terapéutico es más alto, la absorción enteral más fiable y la vida media más larga permiten"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "doxapram_en_estudio",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué lugar ocupa el doxapram en el tratamiento de la apnea del prematuro?",
+    "reverso": "Es un medicamento en estudio: reduce apneas a corto plazo, pero faltan datos de seguridad y de resultados a largo plazo.",
+    "cita": [
+     "4.2.4.1 Doxapram",
+     28,
+     "No se han medido resultados a largo plazo. Se necesitan estudios adicionales para determinar el rol"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_apnea_del_prematuro",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Prematuro con pausa respiratoria en el monitor\"] --> B{\"¿Más de 20 s, o menos de 20 s con bradicardia o cianosis?\"}\n  B -->|\"No\"| C[\"No cumple la definición: mantener vigilancia continua\"]\n  B -->|\"Sí\"| D[\"Apnea: buscar causas con historia, exploración y estudios según sospecha\"]\n  D --> E{\"¿Se encontró otra causa: infección, cardiopatía, metabólica?\"}\n  E -->|\"Sí\"| F[\"Apnea secundaria a esa patología\"]\n  E -->|\"No\"| G{\"¿La unidad cuenta con citrato de cafeína?\"}\n  G -->|\"Sí\"| H[\"Citrato de cafeína, metilxantina de primera elección\"]\n  G -->|\"No\"| I[\"Aminofilina o teofilina como segunda elección\"]\n  H --> J{\"¿Persisten las apneas con metilxantinas?\"}\n  I --> J\n  J -->|\"Sí\"| K[\"Ventilación no invasiva: IPPV-N de primera elección o CPAP-N\"]",
+    "citas": [
+     [
+      "4.1.3.1 Detección y Vigilancia Contínua de Eventos de Apnea",
+      13,
+      "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis"
+     ],
+     [
+      "4.1.4 Diagnóstico Diferencial",
+      15,
+      "infecciosas, cardiológicas, fisiológicas y metabólicas"
+     ],
+     [
+      "4.2.3.3 Aminofilina / Teofilina",
+      27,
+      "En caso de no contar con cafeína, se utilizará"
+     ],
+     [
+      "4.2.5.2 Ventilación No Invasiva",
+      33,
+      "Si a pesar del tratamiento con metilxantinas se"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "pausas_cumplen_definicion",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "pausas respiratorias de 25 segundos, acompañadas de bradicardia de 80 lpm",
+    "motivo": "Duran más de 20 segundos y se acompañan de bradicardia: cumplen la definición de apnea y requieren tratamiento."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "causas_descartadas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Glucosa, electrolitos, hemograma y PCR normales",
+    "motivo": "El diagnóstico de apnea del prematuro es por exclusión; con estos estudios normales y sin datos de sepsis se sostiene."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "cafeina_disponible",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "La unidad cuenta con citrato de cafeína",
+    "motivo": "Si la unidad tiene citrato de cafeína, la guía lo indica como primera elección; aminofilina o teofilina quedan para cuando no se cuenta con él."
+   }
+  ]},
  {"t": "V1",
   "vineta": "Recién nacida de 33 semanas de gestación, peso 1,900 g, con 12 horas de vida. Respira al aire ambiente, sin pausas respiratorias ni bradicardias desde su ingreso. Tolera la alimentación por sonda. El residente propone iniciar cafeína \"para prevenir apneas\" porque es prematura.",
   "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -33,5 +150,29 @@
    ["razonamiento", "Supone que prevenir con cafeína es mejor que tratar, sin evidencia que respalde la profilaxis.", ["A"], ["prevenir", "profiláctica", "es prematura"], "¿Qué dice la guía sobre el uso profiláctico de metilxantinas?", "No es posible recomendar el uso profiláctico de metilxantinas para evitar la apnea, por falta de estudios aleatorizados o metaanálisis en menores de 34 semanas.", "4.2.2 Tratamiento Profiláctico", 22, "profiláctico con metilxantinas para evitar la apnea en"],
    ["conocimiento", "Cree que la aminofilina profiláctica está indicada.", ["B"], ["aminofilina", "profilaxis"], "¿Se recomienda alguna metilxantina de forma profiláctica?", "No es posible recomendar el uso profiláctico de metilxantinas para evitar la apnea en el prematuro.", "4.2.2 Tratamiento Profiláctico", 22, "profiláctico con metilxantinas para evitar la apnea en"],
    ["conocimiento", "Cree que la estimulación kinestésica profiláctica previene la apnea.", ["D"], ["kinestésica", "colchón", "prevenir"], "¿Qué evidencia hay de la estimulación kinestésica para prevenir o tratar la apnea?", "No existe evidencia suficiente para recomendar la estimulación kinestésica en la apnea del prematuro.", "4.2.1.3 Estimulación sensorial", 20, "estimulación kinestésica como tratamiento de apnea"],
-   ["dato_omitido", "Retira la vigilancia sin considerar que la paciente tiene menos de 34 semanas.", ["E"], ["sin apneas", "retirar monitor", "estable"], "¿Qué edad gestacional tiene la paciente y qué vigilancia indica la guía para ella?", "El recién nacido pretérmino menor de 34 semanas debe mantenerse con vigilancia continua.", "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea", 13, "El recién nacido pretérmino menor de 34 semanas"]]}
+   ["dato_omitido", "Retira la vigilancia sin considerar que la paciente tiene menos de 34 semanas.", ["E"], ["sin apneas", "retirar monitor", "estable"], "¿Qué edad gestacional tiene la paciente y qué vigilancia indica la guía para ella?", "El recién nacido pretérmino menor de 34 semanas debe mantenerse con vigilancia continua.", "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea", 13, "El recién nacido pretérmino menor de 34 semanas"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "menor_de_34_semanas",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Recién nacida de 33 semanas de gestación",
+    "motivo": "Todo prematuro menor de 34 semanas debe tener vigilancia continua de frecuencia respiratoria, frecuencia cardiaca y oximetría."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "sin_eventos_de_apnea",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "sin pausas respiratorias ni bradicardias desde su ingreso",
+    "motivo": "No hay apnea que tratar, y la guía no recomienda metilxantinas profilácticas por evidencia insuficiente."
+   }
+  ]}
  ]}

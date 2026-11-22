@@ -17,7 +17,158 @@
    ["lectura", "Clasifica la talla baja como nutricional; la viñeta indica peso para la talla en percentil 50.", ["D"], ["desnutrición", "nutricional", "peso bajo"], "¿Qué percentil tiene el peso para la talla del paciente?", "La talla baja se clasifica como nutricional cuando se encuentra un peso bajo para la talla.", "4.1.4 Clasificación", 28, "bajo para la talla se puede clasificar a la talla baja"],
    ["dato_omitido", "Diagnostica retraso constitucional sin considerar que la edad ósea es concordante con la cronológica.", ["B"], ["retraso constitucional", "va a dar el estirón", "maduración lenta"], "¿Qué edad ósea esperarías en el retraso constitucional y qué edad ósea tiene este niño?", "En el retraso constitucional la maduración ósea es más lenta que el resto y hay retraso puberal; en la talla baja familiar la edad ósea es acorde a la cronológica.", "4.1.4 Clasificación", 27, "que tienen un ritmo de maduración ósea más lento que"],
    ["conocimiento", "Desconoce que las displasias son alteraciones intrínsecas de la placa de crecimiento, poco frecuentes, y que las variantes normales tienen proporciones normales.", ["E"], ["displasia", "hueso", "placa de crecimiento"], "¿Qué grupo etiopatogénico ocupan las displasias y qué proporciones corporales tiene este niño?", "Las displasias pertenecen a los padecimientos por desorden intrínseco de la placa de crecimiento; las variantes normales tienen proporciones corporales normales.", "4.1.4 Clasificación", 26, "intrínseco de la placa de crecimiento:"],
-   ["razonamiento", "Equipara talla baja con deficiencia hormonal sin considerar la talla de los padres ni la velocidad de crecimiento normal.", ["C"], ["hormona de crecimiento", "endocrino", "deficiencia"], "¿Qué porcentaje de las tallas bajas son de causa endocrina y qué característica suelen tener?", "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso; las variantes normales corresponden al 80 %.", "4.1.4 Clasificación", 27, "suele asociarse a un cierto grado de"]]},
+   ["razonamiento", "Equipara talla baja con deficiencia hormonal sin considerar la talla de los padres ni la velocidad de crecimiento normal.", ["C"], ["hormona de crecimiento", "endocrino", "deficiencia"], "¿Qué porcentaje de las tallas bajas son de causa endocrina y qué característica suelen tener?", "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso; las variantes normales corresponden al 80 %.", "4.1.4 Clasificación", 27, "suele asociarse a un cierto grado de"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "formula_talla_blanco_familiar",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cómo se calcula la talla blanco familiar de un niño varón?",
+    "reverso": "(Talla paterna + talla materna) / 2 + 6.5 cm; se toman ±5 cm como rango del potencial genético.",
+    "cita": [
+     "4.1.2 Parámetros antropométricos y auxológicos",
+     19,
+     "Niños: [(talla paterna + talla materna)/2] +"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "edad_osea_retrasada",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Cuándo se considera retrasada la edad ósea respecto a la cronológica?",
+    "reverso": "Cuando difiere al menos 6 meses en preescolares y al menos 2 años en escolares o adolescentes.",
+    "cita": [
+     "4.1.3 Diagnóstico paraclínico",
+     25,
+     "difiera al menos en 6 meses en caso de pre-escolares y"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "criterios_variantes_normales",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué criterios reúnen las variantes normales del crecimiento?",
+    "reverso": "Talla normal al nacer, proporciones corporales normales, ausencia de enfermedades crónicas y nutrición adecuada.",
+    "cita": [
+     "4.1.4 Clasificación",
+     26,
+     "Proporciones corporales normales"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "clasificacion_talla_baja",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Niño con talla por debajo del percentil 3\"] --> B{\"¿Peso bajo para la talla?\"}\n  B -->|\"Sí\"| C[\"Talla baja nutricional\"]\n  B -->|\"No\"| D{\"¿Peso alto para la talla en rango de obesidad?\"}\n  D -->|\"Sí\"| E[\"Sospechar hipotiroidismo, exceso de glucocorticoides o deficiencia de hormona de crecimiento: referir a endocrinología pediátrica\"]\n  D -->|\"No\"| F{\"¿Talla normal al nacer, proporciones normales, sin enfermedad crónica y bien nutrido?\"}\n  F -->|\"No\"| G[\"Buscar desorden de la placa de crecimiento u otra causa secundaria\"]\n  F -->|\"Sí\"| H{\"¿Talla dentro de la talla blanco familiar y edad ósea acorde a la cronológica?\"}\n  H -->|\"Sí\"| I[\"Variante familiar\"]\n  H -->|\"No: bajo la talla genética, edad ósea retrasada y pubertad tardía\"| J[\"Retraso constitucional\"]",
+    "citas": [
+     [
+      "4.1.4 Clasificación",
+      28,
+      "bajo para la talla se puede clasificar a la talla baja"
+     ],
+     [
+      "4.2.2 Criterios de referencia de segundo a tercer nivel",
+      31,
+      "para la talla en rango obesidad se debe sospechar"
+     ],
+     [
+      "4.1.4 Clasificación",
+      26,
+      "Proporciones corporales normales"
+     ],
+     [
+      "4.1.4 Clasificación",
+      27,
+      "Talla baja familiar: se reconoce en los niños que tienen"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "peso_talla_normal",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "peso para la talla en percentil 50",
+    "motivo": "Solo un peso bajo para la talla permite clasificarla como nutricional; percentil 50 lo descarta."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "edad_osea_concordante",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Edad ósea concordante con la cronológica",
+    "motivo": "En el retraso constitucional la maduración ósea es más lenta; una edad ósea acorde orienta a la variante familiar."
+   },
+   {
+    "n": 7,
+    "tipo": "resaltado",
+    "concepto": "talla_dentro_de_rango_familiar",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "su talla actual se encuentra dentro del rango de la talla blanco familiar",
+    "motivo": "Con padres de baja estatura, su talla corresponde a su potencial genético: (160 + 148)/2 + 6.5 = 160.5 cm ±5 cm."
+   },
+   {
+    "n": 8,
+    "tipo": "tabla",
+    "concepto": "variantes_normales_del_crecimiento",
+    "para_errores": [
+     "conocimiento",
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "columnas": [
+     "Variante normal",
+     "Talla frente a la talla blanco familiar",
+     "Edad ósea",
+     "Pubertad"
+    ],
+    "filas": [
+     [
+      "Familiar",
+      "Acorde a la talla blanco familiar",
+      "Acorde a la cronológica",
+      "A edad normal"
+     ],
+     [
+      "Retraso constitucional",
+      "Por debajo de la talla genética",
+      "Maduración más lenta",
+      "Retrasada"
+     ]
+    ],
+    "cita": [
+     "4.1.4 Clasificación",
+     27,
+     "Talla baja familiar: se reconoce en los niños que tienen"
+    ]
+   }
+  ]},
  {"t": "V1",
   "vineta": "Masculino de 13 años con talla por debajo del percentil 3, sano y bien nutrido, con proporciones corporales normales y talla normal al nacer. Su padre mide 175 cm y su madre 162 cm; el padre refiere que \"dio el estirón\" hasta los 16 años. Velocidad de crecimiento de 4.5 cm/año. Tanner 1. La edad ósea corresponde a 10 años 6 meses.",
   "pregunta": "¿Cuál es el diagnóstico más probable?",
@@ -33,5 +184,40 @@
    ["dato_omitido", "Diagnostica talla baja familiar sin considerar que los padres tienen talla normal y que la edad ósea está retrasada.", ["A"], ["familiar", "genética", "padres"], "¿Cuál es la talla blanco familiar de este niño y cómo se compara con su talla actual?", "En la talla baja familiar la talla es acorde a la talla blanco familiar y la edad ósea a la cronológica; aquí la talla queda por debajo de la talla genética y la edad ósea está retrasada.", "4.1.4 Clasificación", 27, "ambos padres) con edad ósea acorde a la cronológica y"],
    ["razonamiento", "Atribuye la talla baja a una deficiencia hormonal sin integrar el patrón familiar de maduración tardía.", ["B"], ["hormona de crecimiento", "deficiencia", "endocrino"], "¿Qué datos de la historia familiar y de la edad ósea apuntan a una variante normal?", "El retraso constitucional se presenta en niños sanos con maduración ósea más lenta y retraso puberal; es una variante normal del crecimiento.", "4.1.4 Clasificación", 27, "Retraso constitucional de crecimiento: son niños sanos"],
    ["conocimiento", "Clasifica como nutricional a un niño bien nutrido.", ["D"], ["nutricional", "desnutrición"], "¿Qué dato antropométrico define la talla baja nutricional?", "La talla baja se clasifica como nutricional cuando hay peso bajo para la talla.", "4.1.4 Clasificación", 28, "bajo para la talla se puede clasificar a la talla baja"],
-   ["conocimiento", "Desconoce la frecuencia y las características de la talla baja endocrina.", ["E"], ["endocrinopatía", "tiroides", "hormonal"], "¿Con qué frecuencia y con qué característica de peso se presenta la talla baja por endocrinopatía?", "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso.", "4.1.4 Clasificación", 27, "suele asociarse a un cierto grado de"]]}
+   ["conocimiento", "Desconoce la frecuencia y las características de la talla baja endocrina.", ["E"], ["endocrinopatía", "tiroides", "hormonal"], "¿Con qué frecuencia y con qué característica de peso se presenta la talla baja por endocrinopatía?", "La talla baja secundaria a endocrinopatías es cercana al 5 % y suele asociarse a cierto grado de sobrepeso.", "4.1.4 Clasificación", 27, "suele asociarse a un cierto grado de"]],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "padres_talla_normal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Su padre mide 175 cm y su madre 162 cm",
+    "motivo": "Talla blanco familiar: (175 + 162)/2 + 6.5 = 175 cm ±5 cm; un niño bajo el percentil 3 queda por debajo de su talla genética."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "edad_osea_retrasada_variante",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "La edad ósea corresponde a 10 años 6 meses",
+    "motivo": "A los 13 años, una edad ósea de 10 años 6 meses difiere más de 2 años: está retrasada, como en el retraso constitucional."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "sin_desarrollo_puberal",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Tanner 1",
+    "motivo": "Sin desarrollo puberal a los 13 años: el retraso puberal acompaña a la maduración ósea lenta del retraso constitucional."
+   }
+  ]}
  ]}

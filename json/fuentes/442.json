@@ -98,8 +98,113 @@
      22,
      "Si se usa infusión de solución glucosada mayor de"
     ]
-   ]
-  },
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "flashcard",
+    "concepto": "umbral_hipoglucemia_neonatal",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué cifra de glucosa se ha aceptado para definir la hipoglucemia neonatal?",
+    "reverso": "Menos de 47 mg/dL, aunque algunos autores usan menos de 45 y otros menos de 50 mg/dL.",
+    "cita": [
+     "2.1.4 Auxiliares diagnósticos",
+     19,
+     "debe utilizarse para definir la hipoglucemia"
+    ]
+   },
+   {
+    "n": 2,
+    "tipo": "flashcard",
+    "concepto": "bolo_con_infusion",
+    "para_errores": [
+     "conocimiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Qué debe acompañar siempre a un bolo de glucosa al 10 % de 2 mL/kg?",
+    "reverso": "Un incremento de 2 mg/kg/min de la infusión intravenosa, para evitar hipoglucemia grave por rebote.",
+    "cita": [
+     "2.2.1 Hipoglucemia sintomática",
+     22,
+     "glucosa 10% 2 ml/kg, siempre debe ir acompañado"
+    ]
+   },
+   {
+    "n": 3,
+    "tipo": "flashcard",
+    "concepto": "concentracion_y_via",
+    "para_errores": [
+     "razonamiento"
+    ],
+    "mostrar": "despues_de_responder",
+    "frente": "¿Por qué vía deben pasar las soluciones glucosadas de más de 12.5 %?",
+    "reverso": "Por catéter central, por el riesgo de tromboflebitis. El bolo indicado es de solución al 10 %.",
+    "cita": [
+     "2.2.1 Hipoglucemia sintomática",
+     22,
+     "Si se usa infusión de solución glucosada mayor de"
+    ]
+   },
+   {
+    "n": 4,
+    "tipo": "diagrama",
+    "concepto": "manejo_hipoglucemia_neonatal",
+    "para_errores": [
+     "razonamiento",
+     "conocimiento",
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "codigo": "flowchart TD\n  A[\"Recién nacido con glucosa baja\"] --> B{\"¿Tiene signos de hipoglucemia?\"}\n  B -->|\"Sí\"| C[\"Bolo de SG 10 % 2 mL/kg y luego infusión de SG 10 % a 6-8 mg/kg/min\"]\n  C --> D[\"Glucosa a los 30-60 min\"]\n  D --> E{\"¿Menor de 45 mg/dL?\"}\n  E -->|\"Sí\"| F[\"Nuevo bolo y subir la infusión 2 mg/kg/min cada 15-30 min, máximo 12\"]\n  E -->|\"No\"| L[\"Control cada 4-6 h hasta mantener más de 50 mg/dL\"]\n  B -->|\"No\"| G{\"¿Glucosa menor de 25 mg/dL?\"}\n  G -->|\"Sí\"| H[\"SG 10 % a 6-8 mg/kg/min y manejo como sintomática\"]\n  G -->|\"No, 25-45 mg/dL\"| I[\"Alimentación oral, de preferencia seno materno; nueva glucosa 30-60 min después\"]\n  I --> J{\"¿Sigue menor de 45 mg/dL?\"}\n  J -->|\"Sí\"| H\n  J -->|\"No\"| K[\"Alimentar cada 1-2 h y control cada 4-6 h por 48 h\"]",
+    "citas": [
+     [
+      "2.2.1 Hipoglucemia sintomática",
+      21,
+      "Administrar bolo de solución glucosada 10% 2"
+     ],
+     [
+      "2.2.1 Hipoglucemia sintomática",
+      21,
+      "administrar nuevo bolo de solución glucosada"
+     ],
+     [
+      "2.2.2 Hipoglucemia asintomática",
+      23,
+      "Glucosa plasmática entre 25-45 mg/dl"
+     ],
+     [
+      "2.2.2 Hipoglucemia asintomática",
+      24,
+      "Glucosa plasmática < 25 mg/dl"
+     ]
+    ]
+   },
+   {
+    "n": 5,
+    "tipo": "resaltado",
+    "concepto": "glucosa_32",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Glucosa plasmática de 32 mg/dL",
+    "motivo": "Está por debajo de 47 mg/dL, la cifra aceptada para definir hipoglucemia neonatal: no es un valor normal."
+   },
+   {
+    "n": 6,
+    "tipo": "resaltado",
+    "concepto": "sintomas_neurologicos",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "temblores finos, succión débil, hipotonía y un episodio de apnea breve",
+    "motivo": "Son signos de hipoglucemia: es sintomática y se trata de inmediato por vía intravenosa, no solo con alimentación."
+   }
+  ]},
   {
    "t": "V1",
    "vineta": "Recién nacida de 37 semanas, pequeña para la edad gestacional, peso 2,200 g. Por su factor de riesgo se mide la glucosa a las 3 horas de vida: 38 mg/dL. Está activa, con buen tono, succión vigorosa, sin temblores, apnea ni cianosis. Temperatura normal. La madre está en alojamiento conjunto y desea amamantarla.",
@@ -195,7 +300,41 @@
      22,
      "Se debe dar prioridad a la alimentación temprana con"
     ]
-   ]
-  }
+   ],
+  "rec": [
+   {
+    "n": 1,
+    "tipo": "resaltado",
+    "concepto": "glucosa_entre_25_y_45",
+    "para_errores": [
+     "lectura"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "glucosa a las 3 horas de vida: 38 mg/dL",
+    "motivo": "Está entre 25 y 45 mg/dL: en la asintomática la guía indica tratar, empezando por la alimentación oral."
+   },
+   {
+    "n": 2,
+    "tipo": "resaltado",
+    "concepto": "asintomatica",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "Está activa, con buen tono, succión vigorosa, sin temblores, apnea ni cianosis",
+    "motivo": "No tiene signos de hipoglucemia: no requiere bolo intravenoso de entrada."
+   },
+   {
+    "n": 3,
+    "tipo": "resaltado",
+    "concepto": "alojamiento_conjunto",
+    "para_errores": [
+     "dato_omitido"
+    ],
+    "mostrar": "despues_de_responder",
+    "fragmento": "La madre está en alojamiento conjunto y desea amamantarla",
+    "motivo": "La mayoría de las hipoglucemias asintomáticas se manejan en alojamiento conjunto, con seno materno y control de glucosa."
+   }
+  ]}
  ]
 }

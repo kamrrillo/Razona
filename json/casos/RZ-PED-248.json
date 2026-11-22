@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-248-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "hidrocefalia_menor_1_ano",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -132,12 +132,191 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-248-I-R1",
+        "tipo": "flashcard",
+        "concepto": "criterios_alteracion_perimetro_cefalico",
+        "para_errores": [
+          "lectura",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo se infiere alteración del perímetro cefálico en el seguimiento del lactante?",
+        "reverso": "Si queda fuera de los percentiles 3 y 97, o si cambia 2 canales percentilares hacia arriba o hacia abajo.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+          "clave": "IMSS-248-09",
+          "seccion": "4.2.1 Diagnóstico Clínico",
+          "pagina": 20,
+          "fragmento": "presenta cambios de 2 canales percentilares"
+        }
+      },
+      {
+        "id": "RZ-PED-248-I-R2",
+        "tipo": "flashcard",
+        "concepto": "ventajas_usg_transfontanelar",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "En un lactante con suturas abiertas, ¿qué ventajas tiene la ultrasonografía transfontanelar?",
+        "reverso": "Se hace junto a la cama, incluso en cuidados intensivos, sin radiación ionizante y con disponibilidad inmediata.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+          "clave": "IMSS-248-09",
+          "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
+          "pagina": 25,
+          "fragmento": "sin exposición a la radiación ionizante"
+        }
+      },
+      {
+        "id": "RZ-PED-248-I-R3",
+        "tipo": "flashcard",
+        "concepto": "diureticos_no_recomendados",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Se recomiendan la acetazolamida y la furosemida en la hidrocefalia posthemorragia?",
+        "reverso": "No. No son efectivas ni seguras: no mejoran mortalidad, derivación ni desarrollo, y causan trastornos hidroelectrolíticos y nefrocalcinosis.",
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+          "clave": "IMSS-248-09",
+          "seccion": "4.3.2 Tratamiento Médico",
+          "pagina": 37,
+          "fragmento": "La terapia con acetazolamida y con furosemida no es"
+        }
+      },
+      {
+        "id": "RZ-PED-248-I-R4",
+        "tipo": "diagrama",
+        "concepto": "seguimiento_perimetro_cefalico",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Lactante: medir perímetro cefálico cada mes y valorar su tendencia\"] --> B{\"¿Fuera de los percentiles 3 y 97 o cambio de 2 canales percentilares?\"}\n  B -->|\"No\"| C{\"¿Datos de hipertensión endocraneana?\"}\n  C -->|\"No\"| D[\"Continuar control mensual\"]\n  C -->|\"Sí\"| E[\"Envío a pediatría de segundo o tercer nivel\"]\n  B -->|\"Sí\"| E\n  E --> G[\"Imagen: ultrasonografía transfontanelar si las suturas están abiertas\"]\n  E --> H{\"¿Signos de aumento de la presión intracraneal?\"}\n  H -->|\"Sí\"| F[\"Valoración urgente por neurocirugía\"]",
+        "citas": [
+          {
+            "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+            "clave": "IMSS-248-09",
+            "seccion": "4.2.1 Diagnóstico Clínico",
+            "pagina": 20,
+            "fragmento": "presenta cambios de 2 canales percentilares"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+            "clave": "IMSS-248-09",
+            "seccion": "4.2.1 Diagnóstico Clínico",
+            "pagina": 19,
+            "fragmento": "No se recomienda la investigación adicional a menos"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+            "clave": "IMSS-248-09",
+            "seccion": "4.2.2 Signos de Alarma para daño neurológico",
+            "pagina": 21,
+            "fragmento": "intracraneal son indicaciones de valoración urgente"
+          },
+          {
+            "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+            "clave": "IMSS-248-09",
+            "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
+            "pagina": 25,
+            "fragmento": "Se prefiere en neonatos y lactantes con suturas"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-248-I-R5",
+        "tipo": "resaltado",
+        "concepto": "tendencia_ascendente_pc",
+        "para_errores": [
+          "dato_omitido",
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "percentil 50 al mes, percentil 75 a los 2 meses, percentil 90 a los 3 meses y hoy por arriba del percentil 97",
+        "motivo": "Hoy está fuera del percentil 97 y además subió más de 2 canales percentilares. Cualquiera de las dos amerita envío."
+      },
+      {
+        "id": "RZ-PED-248-I-R6",
+        "tipo": "resaltado",
+        "concepto": "sintomas_hipertension_endocraneana",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "irritabilidad y que en la última semana vomita después de algunas tomas",
+        "motivo": "Vómito e irritabilidad son signos de hidrocefalia en el lactante; con macrocefalia sugieren hipertensión endocraneana. No es momento de esperar."
+      },
+      {
+        "id": "RZ-PED-248-I-R7",
+        "tipo": "resaltado",
+        "concepto": "suturas_abiertas",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Fontanela anterior amplia y tensa, suturas abiertas",
+        "motivo": "La fontanela tensa apoya hipertensión endocraneana. Con suturas abiertas el ultrasonido transfontanelar es el estudio preferido."
+      },
+      {
+        "id": "RZ-PED-248-I-R8",
+        "tipo": "tabla",
+        "concepto": "riesgo_hidrocefalia_por_grado_hiv",
+        "para_errores": [
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Grado de hemorragia intraventricular (prematuro menor de 1.5 kg)",
+          "Riesgo de hidrocefalia"
+        ],
+        "filas": [
+          [
+            "Grado I",
+            "5 %"
+          ],
+          [
+            "Grado II",
+            "15 %"
+          ],
+          [
+            "Grado III",
+            "35 %"
+          ],
+          [
+            "Grado IV",
+            "90 %"
+          ]
+        ],
+        "cita": {
+          "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
+          "clave": "IMSS-248-09",
+          "seccion": "4.2.1 Diagnóstico Clínico",
+          "pagina": 21,
+          "fragmento": "grado de severidad de la HIV"
+        }
+      }
+    ]
   },
   {
     "id": "RZ-PED-248-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "hidrocefalia_menor_1_ano",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-248-I",
@@ -265,7 +444,34 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-248-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "cambio_dos_canales",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "en los controles mensuales previos se mantuvo en el percentil 25 hasta los 4 meses",
+        "motivo": "Del percentil 25 al 90 en tres meses: cambió 2 canales percentilares, lo que amerita envío aunque la cifra actual esté entre 3 y 97."
+      },
+      {
+        "id": "RZ-PED-248-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "sin_sintomas_no_descarta",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "fontanela anterior normotensa, sin vómito ni irritabilidad",
+        "motivo": "La ausencia de síntomas no anula el criterio: el cambio de canales percentilares por sí solo amerita envío."
+      }
+    ]
   }
 ]

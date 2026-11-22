@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-793-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alteraciones_visuales_recien_nacido_lactante",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,194 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-793-I-R1",
+        "tipo": "flashcard",
+        "concepto": "tecnica_reflejo_rojo",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cómo se explora el reflejo rojo en un lactante?",
+        "reverso": "En cuarto oscuro, con el oftalmoscopio con lente en 0, proyectando la luz sobre ambos ojos a unos 45 cm.",
+        "cita": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 26,
+          "fragmento": "distancia aproximada de 45 cm"
+        }
+      },
+      {
+        "id": "RZ-PED-793-I-R2",
+        "tipo": "flashcard",
+        "concepto": "interpretacion_reflejo_rojo",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Cuándo se califica como normal el reflejo rojo?",
+        "reverso": "Cuando los reflejos de ambos ojos son equivalentes en color, intensidad y claridad, sin opacidades ni manchas blancas.",
+        "cita": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+          "pagina": 27,
+          "fragmento": "individual y bilateralmente son equivalentes en color"
+        }
+      },
+      {
+        "id": "RZ-PED-793-I-R3",
+        "tipo": "flashcard",
+        "concepto": "leucocoria_referida_por_padres",
+        "para_errores": [
+          "dato_omitido",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "Si los padres describen un reflejo blanco en un ojo de su hijo, ¿qué indica la guía?",
+        "reverso": "Que lo examine un oftalmólogo o médico con experiencia en niños para descartar retinoblastoma u otras lesiones graves.",
+        "cita": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "4.6 Criterios de referencia",
+          "pagina": 37,
+          "fragmento": "(reflejo blanco) en 1 o ambos ojos deben ser"
+        }
+      },
+      {
+        "id": "RZ-PED-793-I-R4",
+        "tipo": "diagrama",
+        "concepto": "tamizaje_visual_preverbal",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Recién nacido o lactante en primer nivel\"] --> B[\"Explorar estructuras oculares, reflejo rojo y reflejo pupilar\"]\n  B --> C{\"¿Reflejo rojo anormal, leucocoria o problema estructural?\"}\n  C -->|\"Sí\"| D[\"Envío urgente al oftalmólogo\"]\n  C -->|\"No\"| E{\"¿Alto riesgo ocular por antecedentes familiares o enfermedad metabólica o neurológica?\"}\n  E -->|\"Sí\"| F[\"Referir al oftalmólogo aunque el reflejo rojo sea normal\"]\n  E -->|\"No\"| G[\"Continuar revisiones de rutina\"]\n  G --> H[\"A los 6 meses reevaluar estructuras, alineamiento y fijación\"]",
+        "citas": [
+          {
+            "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+            "clave": "IMSS-793-16",
+            "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+            "pagina": 26,
+            "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+          },
+          {
+            "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+            "clave": "IMSS-793-16",
+            "seccion": "4.6 Criterios de referencia",
+            "pagina": 35,
+            "fragmento": "esto independientemente del resultado de la"
+          },
+          {
+            "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+            "clave": "IMSS-793-16",
+            "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
+            "pagina": 27,
+            "fragmento": "A los 6 meses de edad, reevaluar:"
+          },
+          {
+            "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+            "clave": "IMSS-793-16",
+            "seccion": "4.6 Criterios de referencia",
+            "pagina": 36,
+            "fragmento": "lactante que requiere una atención ocular inmediata"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-793-I-R5",
+        "tipo": "tabla",
+        "concepto": "patrones_reflejo_rojo",
+        "para_errores": [
+          "lectura",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Hallazgo",
+          "Qué se observa"
+        ],
+        "filas": [
+          [
+            "Normal",
+            "Ambos reflejos son iguales"
+          ],
+          [
+            "Reflexión asimétrica",
+            "Uno de los reflejos es menos brillante"
+          ],
+          [
+            "Ausencia de reflejo",
+            "Una opacidad, como una catarata, bloquea o disminuye la reflexión"
+          ],
+          [
+            "Cuerpo extraño o abrasión corneal",
+            "El reflejo rojo facilita ver el defecto corneal"
+          ],
+          [
+            "Estrabismo",
+            "El reflejo rojo es más intenso en el ojo desviado"
+          ]
+        ],
+        "cita": {
+          "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
+          "clave": "IMSS-793-16",
+          "seccion": "5.3 Cuadros o figuras",
+          "pagina": 49,
+          "fragmento": "Uno de los reflejos es menos"
+        }
+      },
+      {
+        "id": "RZ-PED-793-I-R6",
+        "tipo": "resaltado",
+        "concepto": "reflejo_blanco_unilateral",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "el del ojo derecho se observa blanco",
+        "motivo": "Un reflejo blanco en un solo ojo es leucocoria y asimetría: el reflejo rojo es anormal y obliga a referir de urgencia."
+      },
+      {
+        "id": "RZ-PED-793-I-R7",
+        "tipo": "resaltado",
+        "concepto": "pupilas_normales_no_tranquilizan",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Ambas pupilas son redondas y reaccionan a la luz",
+        "motivo": "Un reflejo pupilar normal no descarta el problema: la alteración del reflejo rojo por sí sola es signo de alarma."
+      },
+      {
+        "id": "RZ-PED-793-I-R8",
+        "tipo": "resaltado",
+        "concepto": "leucocoria_en_fotografias",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "la madre notó en varias fotografías con flash un brillo blanco en el ojo derecho",
+        "motivo": "La guía indica que la leucocoria descrita por los padres se examine por oftalmología para descartar retinoblastoma."
+      }
+    ]
   },
   {
     "id": "RZ-PED-793-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "alteraciones_visuales_recien_nacido_lactante",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-793-I",
@@ -263,7 +445,45 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-793-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "antes_del_alta",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "que será egresada hoy del cunero",
+        "motivo": "El examen del reflejo rojo debe hacerse antes del alta del cunero; no se difiere a meses posteriores."
+      },
+      {
+        "id": "RZ-PED-793-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "medico_primer_contacto",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "El médico familiar en formación pregunta qué exploración visual debe hacerle",
+        "motivo": "El tamizaje lo realiza el médico de primer contacto capacitado; no hace falta esperar al oftalmólogo."
+      },
+      {
+        "id": "RZ-PED-793-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "tamizaje_universal",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "la paciente no tiene factores de riesgo ocular",
+        "motivo": "Sin factores de riesgo igual se hace el tamizaje: todo recién nacido requiere revisión de estructuras, reflejo rojo y reflejo pupilar."
+      }
+    ]
   }
 ]

@@ -1,0 +1,5 @@
+# Texto de las GPC generado con pdftotext (se regenera desde los PDF; ver README)
+gpc_paginas/
+__pycache__/
+.pytest_cache/
+*.tmp

@@ -1,7 +1,7 @@
 [
   {
     "id": "RZ-PED-361-I",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "amigdalectomia_indicaciones",
     "tipo": "indice",
     "caso_indice_id": null,
@@ -130,12 +130,191 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-361-I-R1",
+        "tipo": "flashcard",
+        "concepto": "frecuencia_paradise",
+        "para_errores": [
+          "razonamiento",
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Qué frecuencia de episodios de faringoamigdalitis exigen los criterios de Paradise?",
+        "reverso": "Basta una: 7 o más en un año, 5 o más anuales por 2 años, o 3 o más anuales por 3 años.",
+        "cita": {
+          "guia": "Amigdalectomía en Niños",
+          "clave": "IMSS-361-12",
+          "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+          "pagina": 12,
+          "fragmento": "establece un minimo de 7 o más episodios en el"
+        }
+      },
+      {
+        "id": "RZ-PED-361-I-R2",
+        "tipo": "flashcard",
+        "concepto": "restriccion_edad_peso",
+        "para_errores": [
+          "lectura",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿En qué niños se aplican las indicaciones de amigdalectomía solo de forma muy selectiva, y por qué?",
+        "reverso": "En menores de 3-4 años o con menos de 12 kg: la hemorragia conlleva gran riesgo de hipovolemia.",
+        "cita": {
+          "guia": "Amigdalectomía en Niños",
+          "clave": "IMSS-361-12",
+          "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+          "pagina": 13,
+          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12"
+        }
+      },
+      {
+        "id": "RZ-PED-361-I-R3",
+        "tipo": "flashcard",
+        "concepto": "sin_antibiotico_perioperatorio",
+        "para_errores": [
+          "conocimiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "frente": "¿Se recomienda antibiótico perioperatorio de rutina en la amigdalectomía?",
+        "reverso": "No. Una revisión Cochrane no mostró reducción consistente de los eventos mórbidos posoperatorios.",
+        "cita": {
+          "guia": "Amigdalectomía en Niños",
+          "clave": "IMSS-361-12",
+          "seccion": "4.5.1 Uso de antibióticos perioperatorios",
+          "pagina": 18,
+          "fragmento": "No se recomienda administrar de manera rutinaria"
+        }
+      },
+      {
+        "id": "RZ-PED-361-I-R4",
+        "tipo": "diagrama",
+        "concepto": "indicaciones_absolutas_amigdalectomia",
+        "para_errores": [
+          "razonamiento",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "codigo": "flowchart TD\n  A[\"Niño valorado para amigdalectomía\"] --> B{\"¿Datos de obstrucción: ronquido con apneas, sueño intranquilo, enuresis, somnolencia diurna o crecimiento insuficiente?\"}\n  B -->|\"Sí\"| C[\"Indicación absoluta de amigdalectomía\"]\n  B -->|\"No\"| D{\"¿Cumple algún criterio de frecuencia de Paradise?\"}\n  D -->|\"Sí\"| C\n  D -->|\"No\"| E[\"Observación si las infecciones de vía aérea superior son leves\"]",
+        "citas": [
+          {
+            "guia": "Amigdalectomía en Niños",
+            "clave": "IMSS-361-12",
+            "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+            "pagina": 13,
+            "fragmento": "práctica es suficiente la observación de las pautas"
+          },
+          {
+            "guia": "Amigdalectomía en Niños",
+            "clave": "IMSS-361-12",
+            "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+            "pagina": 13,
+            "fragmento": "Las únicas indicaciones absolutas de"
+          },
+          {
+            "guia": "Amigdalectomía en Niños",
+            "clave": "IMSS-361-12",
+            "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+            "pagina": 12,
+            "fragmento": "establece un minimo de 7 o más episodios en el"
+          },
+          {
+            "guia": "Amigdalectomía en Niños",
+            "clave": "IMSS-361-12",
+            "seccion": "4.1 Indicaciones para amigdalectomía en niños",
+            "pagina": 13,
+            "fragmento": "La conducta de observación, es más apropiada que"
+          }
+        ]
+      },
+      {
+        "id": "RZ-PED-361-I-R5",
+        "tipo": "resaltado",
+        "concepto": "ocho_episodios_un_ano",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "En los últimos 12 meses ha tenido 8 episodios de faringoamigdalitis",
+        "motivo": "Ocho episodios en un año superan el mínimo de 7 del criterio de Paradise. No son infecciones leves para solo observar."
+      },
+      {
+        "id": "RZ-PED-361-I-R6",
+        "tipo": "resaltado",
+        "concepto": "edad_y_peso_suficientes",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Femenino de 7 años, peso 22 kg",
+        "motivo": "La restricción por riesgo de hipovolemia aplica a menores de 3-4 años o con menos de 12 kg. Ella no está en ese grupo."
+      },
+      {
+        "id": "RZ-PED-361-I-R7",
+        "tipo": "resaltado",
+        "concepto": "antibioticoterapia_adecuada",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "Todos fueron tratados con esquemas completos de antibiótico",
+        "motivo": "Para aplicar el criterio quirúrgico se exige que los episodios se hayan tratado con antibioticoterapia adecuada. Aquí se cumple."
+      },
+      {
+        "id": "RZ-PED-361-I-R8",
+        "tipo": "tabla",
+        "concepto": "criterios_paradise",
+        "para_errores": [
+          "conocimiento",
+          "razonamiento"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "columnas": [
+          "Criterio de Paradise",
+          "Qué se requiere"
+        ],
+        "filas": [
+          [
+            "Frecuencia mínima",
+            "7 o más episodios en el año anterior, o 5 o más en cada uno de 2 años, o 3 o más en cada uno de 3 años"
+          ],
+          [
+            "Características clínicas",
+            "Dolor de garganta más temperatura mayor de 38.3 °C, adenopatías cervicales dolorosas o mayores de 2 cm, exudado amigdalino o cultivo positivo para estreptococo del grupo A"
+          ],
+          [
+            "Tratamiento",
+            "Antibiótico a dosis convencionales en los episodios probados o sospechosos de estreptococo"
+          ],
+          [
+            "Documentación",
+            "Cada episodio registrado en la historia clínica, o 2 episodios observados por el clínico con hallazgos consistentes"
+          ]
+        ],
+        "cita": {
+          "guia": "Amigdalectomía en Niños",
+          "clave": "IMSS-361-12",
+          "seccion": "5.3 Clasificación o Escalas de la Enfermedad",
+          "pagina": 27,
+          "fragmento": "Criterios de elección de pacientes candidatos a amigdalectomía"
+        }
+      }
+    ]
   },
   {
     "id": "RZ-PED-361-V1",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "sindrome": "amigdalectomia_indicaciones",
     "tipo": "variante",
     "caso_indice_id": "RZ-PED-361-I",
@@ -263,7 +442,46 @@
     ],
     "autor": "claude",
     "estado": "borrador",
-    "fecha": "2026-11-20",
-    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)"
+    "fecha": "2026-11-21",
+    "licencia": "Equipo Razona (PCIC-UNAM), uso educativo no lucrativo; contenido clínico derivado de GPC CENETEC/IMSS, autorización de uso pendiente (H11)",
+    "recursos": [
+      {
+        "id": "RZ-PED-361-V1-R1",
+        "tipo": "resaltado",
+        "concepto": "ronquido_con_apneas",
+        "para_errores": [
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "ronca todas las noches y sus padres han observado pausas respiratorias durante el sueño",
+        "motivo": "Ronquido con apneas indica obstrucción de vía aérea superior, indicación absoluta aunque no cumpla criterios de infección."
+      },
+      {
+        "id": "RZ-PED-361-V1-R2",
+        "tipo": "resaltado",
+        "concepto": "enuresis_somnolencia",
+        "para_errores": [
+          "lectura",
+          "dato_omitido"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "volvió a mojar la cama y la maestra refiere somnolencia en clase",
+        "motivo": "Enuresis y somnolencia diurna son condiciones secundarias a la apnea obstructiva. En la práctica bastan sin polisomnografía."
+      },
+      {
+        "id": "RZ-PED-361-V1-R3",
+        "tipo": "resaltado",
+        "concepto": "crecimiento_insuficiente",
+        "para_errores": [
+          "lectura"
+        ],
+        "mostrar": "despues_de_responder",
+        "estado": "borrador",
+        "fragmento": "peso 15 kg (por debajo del percentil 3 para la edad)",
+        "motivo": "El crecimiento insuficiente es otra consecuencia de la apnea obstructiva. Con 5 años y 15 kg no aplica la restricción por hipovolemia."
+      }
+    ]
   }
 ]
