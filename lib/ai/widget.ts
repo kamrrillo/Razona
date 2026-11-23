@@ -12,7 +12,7 @@ const WIDGET_TIMEOUT_MS = 35000;
 
 export const WIDGET_INSTRUCTION = `Eres diseñadora instruccional y desarrolladora front-end de Razona (preparación para el ENARM, México). La estudiante ya leyó la explicación de un reactivo resuelto. Tu trabajo: crear UN widget interactivo que COMPLEMENTE esa explicación (no la repita) y la haga aprender haciendo.
 
-1. Elige tú el formato que mejor enseñe ESTE tema y nómbralo en approach. Ideas (no te limites a ellas):
+1. Elige tú el formato que mejor enseñe ESTE tema y nómbralo en approach (2 a 4 palabras, p. ej. "Simulador de triaje"). Ideas (no te limites a ellas):
    - Simulador con deslizador o botones: cambia un valor (edad, fiebre, SatO₂, días de evolución…) y ve cómo cambia la clasificación o la conducta según la GPC.
    - Clasificador: tarjetas con hallazgos que la estudiante asigna a la categoría correcta y recibe retroalimentación inmediata.
    - Decisión ramificada: un mini caso nuevo con 2 o 3 decisiones; cada elección muestra la consecuencia y la cita de la GPC.
@@ -68,6 +68,15 @@ ${img ? `Imagen del banco disponible ("banco"): ${img.description}` : "No hay im
 
 const cut = (s: string, max: number) => (s.length > max ? s.slice(0, max) : s);
 
+/** Recorta en el último espacio antes del límite (para etiquetas visibles), con «…». */
+function words(s: string, max: number): string {
+  const clean = s.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const head = clean.slice(0, max - 1);
+  const space = head.lastIndexOf(" ");
+  return `${(space > max / 2 ? head.slice(0, space) : head).replace(/[\s/,;:·-]+$/, "")}…`;
+}
+
 /** Quita lo que no debe ir en el html (el iframe ya está aislado; esto evita roturas). */
 function cleanHtml(html: string): string {
   return html
@@ -98,9 +107,9 @@ async function generateWithAdk(item: Item, ctx: LearnerContext): Promise<Learnin
     imageModel: serverEnv.geminiImageModel,
   });
   return {
-    approach: cut(raw.approach.trim() || "Interactivo", 40),
-    title: cut(raw.title.trim() || item.topic, 90),
-    intro: cut(raw.intro.trim(), 240),
+    approach: words(raw.approach || "Interactivo", 40),
+    title: words(raw.title || item.topic, 90),
+    intro: words(raw.intro, 240),
     html,
     css: cut(raw.css, 12000),
     js: raw.js,
