@@ -26,7 +26,14 @@ type TutorMessage = {
   role: "student" | "tutor";
   text: string;
   hint?: string;
-  citation?: { gpcId: string; gpcTitle?: string; section: string; page?: number; snippet: string };
+  citation?: {
+    gpcId: string;
+    gpcTitle?: string;
+    section: string;
+    page?: number;
+    snippet: string;
+    pdfUrl?: string;
+  };
   error?: string;
   streaming?: boolean;
 };
@@ -113,6 +120,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
                   section: event.section,
                   page: event.page,
                   snippet: event.snippet,
+                  pdfUrl: event.pdfUrl,
                 },
               }));
               break;
@@ -315,6 +323,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
                       section={m.citation.section}
                       page={m.citation.page}
                       snippet={m.citation.snippet}
+                      pdfUrl={m.citation.pdfUrl}
                     />
                   )}
                   {m.error && (
@@ -373,13 +382,6 @@ export function PracticeSession({ topic }: { topic?: string }) {
                 correctLabel={`${solved.correctOptionId}) ${
                   item.options.find((o) => o.id === solved.correctOptionId)?.text ?? ""
                 }`}
-              />
-              <CitationCard
-                gpcId={solved.citation.gpcId}
-                gpcTitle={solved.citation.gpcTitle}
-                section={solved.citation.section}
-                page={solved.citation.page}
-                snippet={solved.citation.snippet}
               />
               <LearningResources resources={solved.resources} errorTypes={solved.errorTypes} />
               <p className="text-xs text-muted-foreground">

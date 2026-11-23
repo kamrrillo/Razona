@@ -10,6 +10,7 @@ export const TutorEventSchema = z.discriminatedUnion("type", [
     section: z.string(),
     page: z.number().int().positive().optional(),
     snippet: z.string(),
+    pdfUrl: z.string().optional(),
   }),
   z.object({ type: z.literal("done") }),
   z.object({ type: z.literal("error"), message: z.string() }),

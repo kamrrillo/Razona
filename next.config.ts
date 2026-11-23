@@ -16,9 +16,11 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   // ADK tiene dependencias opcionales (GCP) que no deben empaquetarse: se carga en runtime desde node_modules.
   serverExternalPackages: ["@google/adk", "@google/genai"],
-  // Las imágenes de los recursos se leen del banco (json/assets) en /recursos/[archivo].
+  // Las imágenes de los recursos se leen del banco (json/assets) en /recursos/[archivo] y en
+  // /api/explain/widget (imagen curada del widget interactivo).
   outputFileTracingIncludes: {
     "/recursos/*": ["./json/assets/**/*"],
+    "/api/explain/widget": ["./json/assets/**/*"],
   },
   turbopack: {
     rules: {

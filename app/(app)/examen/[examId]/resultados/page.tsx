@@ -162,6 +162,7 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                       section={error.citation.section}
                       page={error.citation.page}
                       snippet={error.citation.snippet}
+                      pdfUrl={error.citation.pdfUrl}
                     />
                   </div>
                 )}
@@ -172,9 +173,11 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                   section={item.citation.section}
                   page={item.citation.page}
                   snippet={item.citation.snippet}
+                  pdfUrl={item.citation.pdfUrl}
                 />
                 <TutorExplanation
                   request={{ examId, itemId: item.id }}
+                  showCitation={false}
                   correctLabel={`${item.correctOptionId}) ${correctText}`}
                 />
                 <LearningResources
