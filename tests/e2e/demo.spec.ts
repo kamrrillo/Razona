@@ -20,7 +20,7 @@ test("guion de la demo", async ({ page }) => {
   await expect(page.getByTestId("path-practice-weak")).toBeVisible();
   await page.getByTestId("path-node-current").click();
 
-  // 3. Caso del tema débil: respuesta incorrecta → pregunta socrática + cita GPC
+  // 3. Caso del tema débil: respuesta incorrecta → se revela la correcta y el tutor explica
   await page.getByTestId("practice-weak-topic").click();
   await expect(page).toHaveURL(/\/practicar\?topic=weak/);
   await expect(page.getByText("Tema débil")).toBeVisible();
@@ -28,21 +28,16 @@ test("guion de la demo", async ({ page }) => {
   await expect(page.getByText(/CONTENIDO DE EJEMPLO/)).toHaveCount(0);
   await page.getByTestId("option-a").click();
   await page.getByTestId("submit-answer").click();
-  const tutor = page.getByTestId("tutor-message").first();
-  await expect(tutor).toContainText("?");
-  await expect(tutor.getByTestId("citation")).toContainText("IMSS-032-08");
-  await expect(tutor.getByTestId("citation")).toContainText(/p\. \d+/);
-  await expect(tutor.getByTestId("tutor-hint")).toBeVisible();
-
-  // 4. Corrige y ve el feedback con la cita (la correcta de RZ-PED-032-I es la e)
-  await page.getByTestId("option-e").click();
-  await page.getByTestId("submit-answer").click();
+  // 4. Feedback del error (la correcta de RZ-PED-032-I es la e): GPC citada primero
   const feedback = page.getByTestId("feedback");
-  await expect(feedback).toContainText("¡Correcto!");
-  await expect(feedback.getByTestId("citation").first()).toBeVisible();
-  // Explicación personalizada del tutor con fundamentos y diagrama conceptual
+  await expect(feedback).toHaveAttribute("data-correct", "false");
+  await expect(feedback.getByTestId("wrong-summary")).toContainText("e)");
+  await expect(page.getByTestId("option-e")).toHaveClass(/emerald/);
   const explanation = feedback.getByTestId("tutor-explanation");
   await expect(explanation).toBeVisible({ timeout: 25_000 });
+  await expect(explanation.getByTestId("tutor-gpc")).toContainText("IMSS-032-08");
+  await expect(explanation.getByTestId("citation")).toContainText(/p\. \d+/);
+  await expect(explanation.getByTestId("socratic-dialog")).toContainText("?");
   await expect(explanation.getByTestId("tutor-personal")).toContainText("Ana");
   await expect(explanation.getByTestId("tutor-fundamentals").locator("li").first()).toBeVisible();
   await expect(explanation.getByTestId("tutor-distractors")).toContainText("TU ELECCIÓN");

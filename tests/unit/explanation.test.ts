@@ -72,10 +72,11 @@ describe("explicación de respaldo personalizada", () => {
     }
   });
 
-  it("usa el nombre, el camino y el historial reales de la estudiante", () => {
-    const e = buildFallbackExplanation(item, ctx);
+  it("usa el nombre, su error y el historial reales de la estudiante", () => {
+    const e = buildFallbackExplanation(item, { ...ctx, answeredCorrectly: false, attempts: 1 });
     expect(e.personal).toContain("Ana");
-    expect(e.personal).toContain("2 intentos");
+    expect(e.personal).toContain("elegiste a)");
+    expect(e.personal).toContain(`la respuesta es ${item.correctOptionId})`);
     expect(e.personal).toContain("3 de 11");
     expect(e.personal).toContain("tema más débil");
     expect(e.distractors[0]).toMatchObject({ optionId: "a", chosen: true });
@@ -94,6 +95,25 @@ describe("explicación de respaldo personalizada", () => {
     }
     expect(roles).toContain("respuesta");
     expect(roles.filter((r) => r === "elegida")).toHaveLength(1);
+  });
+
+  it("al acertar refuerza y al equivocarse corrige", () => {
+    const ok = buildFallbackExplanation(item, {
+      ...ctx,
+      wrongChoices: [],
+      answeredCorrectly: true,
+    });
+    expect(ok.personal).toContain("Acertaste");
+    const wrongPrompt = buildExplanationPrompt(item, { ...ctx, answeredCorrectly: false });
+    expect(wrongPrompt).toContain("SE EQUIVOCÓ");
+    expect(wrongPrompt).toContain("CORREGIR");
+    const okPrompt = buildExplanationPrompt(item, {
+      ...ctx,
+      wrongChoices: [],
+      answeredCorrectly: true,
+    });
+    expect(okPrompt).toContain("ACERTÓ");
+    expect(okPrompt).toContain("REFORZAR");
   });
 
   it("el prompt incluye el contexto y la GPC", () => {

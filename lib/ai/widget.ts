@@ -2,7 +2,11 @@ import "server-only";
 import { specialtyName } from "@/lib/content";
 import { serverEnv } from "@/lib/env.server";
 import type { Item } from "@/lib/schemas/content";
-import { type LearningWidget, ModelWidgetSchema } from "@/lib/schemas/explanation";
+import {
+  type LearningWidget,
+  LearningWidgetSchema,
+  ModelWidgetSchema,
+} from "@/lib/schemas/explanation";
 import { runStructuredAgent, withTimeout } from "./adk-structured";
 import { geminiOptions } from "./explain";
 import { gpcFragments, type LearnerContext } from "./feedback";
@@ -19,7 +23,10 @@ export const WIDGET_INSTRUCTION = `Eres diseñadora instruccional y desarrollado
    - Línea de tiempo o secuencia: ordenar pasos o fases tocando en orden.
    - Comparador lado a lado con revelado progresivo (la correcta frente a lo que eligió ella).
    - Imagen con zonas o hallazgos señalados que se revelan al tocar.
-2. Progresión: que empiece fácil y suba un poco de dificultad; al final muestra un breve resumen de lo que logró.
+2. Adáptalo a su resultado:
+   - Si SE EQUIVOCÓ: el widget la ayuda a CORREGIR. Contrasta su opción con la correcta y hazla redescubrir, interactuando, el dato o criterio que pasó por alto (p. ej. mueve el valor y ve dónde cambia la conducta; clasifica hallazgos y descubre cuál decide).
+   - Si ACERTÓ: el widget REFUERZA y sube un escalón: variantes del caso con un dato distinto, excepciones o límites del criterio que usó bien.
+   Progresión: que empiece fácil y suba un poco de dificultad; al final muestra un breve resumen de lo que logró.
 3. Imagen: decide si una imagen ayuda de verdad (signos clínicos visibles, anatomía, estudios de imagen, lesiones de piel…).
    - "banco": usa la imagen curada del banco si te la doy y es pertinente.
    - "buscar": imagen real de Wikimedia Commons; en query pon 2 a 5 términos en inglés muy específicos (p. ej. "Koplik spots measles"). La app verifica licencia y descarga.
@@ -54,7 +61,7 @@ ${item.vignette}
 Pregunta: ${item.question}
 ${options}
 Respuesta correcta: ${item.correctOptionId}) ${correct?.text ?? ""}
-${chosen ? `Antes eligió (incorrecto): ${chosen}` : "La resolvió sin errores."}
+${ctx.answeredCorrectly ? `Resultado: ACERTÓ.${chosen ? ` Antes había elegido (incorrecto): ${chosen}` : ""} Objetivo del widget: REFORZAR y llevarla un paso más allá.` : `Resultado: SE EQUIVOCÓ. Eligió: ${chosen || "nada"}. Objetivo del widget: CORREGIR esa idea.`}
 
 Explicación: ${item.explanation}
 ${keyPoints ? `Puntos clave:\n${keyPoints}\n` : ""}
@@ -106,7 +113,7 @@ async function generateWithAdk(item: Item, ctx: LearnerContext): Promise<Learnin
     apiKey: gemini.apiKey,
     imageModel: serverEnv.geminiImageModel,
   });
-  return {
+  return LearningWidgetSchema.parse({
     approach: words(raw.approach || "Interactivo", 40),
     title: words(raw.title || item.topic, 90),
     intro: words(raw.intro, 240),
@@ -115,7 +122,7 @@ async function generateWithAdk(item: Item, ctx: LearnerContext): Promise<Learnin
     js: raw.js,
     image,
     source: "adk",
-  };
+  });
 }
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);

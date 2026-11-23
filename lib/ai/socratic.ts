@@ -47,6 +47,11 @@ Explicación: ${item.explanation}
 Fragmentos de la GPC (${item.citation.gpcTitle}):
 ${gpcFragments(item, 5)}
 
+Cómo le fue en el caso: ${
+    ctx.answeredCorrectly
+      ? "ACERTÓ; la conversación refuerza y lleva a transferir."
+      : `SE EQUIVOCÓ (eligió ${ctx.wrongChoices.map((id) => `${id}) ${item.options.find((o) => o.id === id)?.text ?? ""}`).join("; ")}); en los primeros niveles asegúrate de que corrija esa idea.`
+  }
 Historial de la estudiante en el tema: ${ctx.topic.correct} de ${ctx.topic.total} aciertos.
 
 Conversación:

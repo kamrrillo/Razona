@@ -23,23 +23,22 @@ export const AttemptRequestSchema = z.object({
   sessionId: z.uuid(),
   optionId: OptionId,
 });
-export const AttemptResponseSchema = z.discriminatedUnion("isCorrect", [
-  z.object({
-    isCorrect: z.literal(true),
-    attemptNumber: z.number().int().positive(),
-    explanation: z.string(),
-    correctOptionId: OptionId,
-    citation: CitationSchema,
-    /** Recursos de aprendizaje del caso, primero los que atienden sus errores. */
-    resources: z.array(ResourceSchema).default([]),
-    /** Tipos de error de sus intentos fallidos (para marcar los recursos que le tocan). */
-    errorTypes: z.array(ErrorTypeSchema).default([]),
-  }),
-  z.object({
-    isCorrect: z.literal(false),
-    attemptNumber: z.number().int().positive(),
-  }),
-]);
+/**
+ * Resultado de responder un caso de práctica. El caso se cierra con la primera respuesta:
+ * acierte o no, se revela la respuesta y se entrega lo necesario para explicarla.
+ */
+export const AttemptResponseSchema = z.object({
+  isCorrect: z.boolean(),
+  attemptNumber: z.number().int().positive(),
+  selectedOptionId: OptionId,
+  explanation: z.string(),
+  correctOptionId: OptionId,
+  citation: CitationSchema,
+  /** Recursos de aprendizaje del caso, primero los que atienden su error. */
+  resources: z.array(ResourceSchema).default([]),
+  /** Tipos de error de su respuesta (para marcar los recursos que le tocan). */
+  errorTypes: z.array(ErrorTypeSchema).default([]),
+});
 export type AttemptResponse = z.infer<typeof AttemptResponseSchema>;
 
 // POST /api/tutor -----------------------------------------------------------
