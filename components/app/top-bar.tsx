@@ -49,7 +49,9 @@ export function TopBar({
           <button
             type="submit"
             title="Cerrar sesión"
-            className="flex size-9 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-brand-50 hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+            data-testid="logout"
+            // Se ve de 36 px como los otros chips, pero el área táctil es de 44 px.
+            className="relative flex size-9 items-center justify-center rounded-full bg-muted after:absolute after:-inset-1 after:content-[''] text-muted-foreground transition-colors hover:bg-brand-50 hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
           >
             <LogOut className="size-4" aria-hidden />
             <span className="sr-only">Cerrar sesión</span>

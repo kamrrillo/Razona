@@ -13,7 +13,8 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = { title: "Inicio" };
 
-export default async function InicioPage() {
+export default async function InicioPage({ searchParams }: PageProps<"/inicio">) {
+  const params = await searchParams;
   const ctx = await getAuthedContext();
   if (!ctx) redirect("/login");
   const [progress, catalog] = await Promise.all([
@@ -29,6 +30,13 @@ export default async function InicioPage() {
     weakTopic: progress.weakTopic?.topic ?? null,
   });
   const weak = progress.weakTopic;
+  const isNew = progress.totals.answered === 0;
+  const notice =
+    params.contrasena === "1"
+      ? "Listo: guardamos tu contraseña nueva."
+      : params.bienvenida === "1"
+        ? "¡Tu cuenta está lista! Empieza con tu primer caso."
+        : null;
   const goalPct = Math.min(100, Math.round((progress.totals.answeredToday / DAILY_GOAL) * 100));
 
   return (
@@ -38,6 +46,15 @@ export default async function InicioPage() {
         activeToday={progress.streak.activeToday}
         answeredToday={progress.totals.answeredToday}
       />
+
+      {notice && (
+        <output
+          className="block rounded-2xl bg-aqua-200/60 px-4 py-3 text-sm font-semibold text-brand-900"
+          data-testid="inicio-notice"
+        >
+          {notice}
+        </output>
+      )}
 
       <section className="relative overflow-hidden rounded-3xl bg-brand-gradient p-5 text-white shadow-[0_6px_0_0_var(--color-brand-800)]">
         <div className="pointer-events-none absolute -top-10 -right-10 size-40 rounded-full bg-white/10" />
@@ -65,9 +82,34 @@ export default async function InicioPage() {
             </Link>
           </div>
         ) : (
-          <p className="relative mt-1 text-lg font-bold">
-            Resuelve casos para descubrir tu tema débil
-          </p>
+          <div className="relative" data-testid={isNew ? "first-steps" : undefined}>
+            <p className="mt-1 text-2xl font-extrabold leading-tight">
+              {isNew ? "Empieza con tu primer caso" : "Sigue resolviendo casos"}
+            </p>
+            <p className="text-sm text-brand-50">
+              {isNew
+                ? "Con tus respuestas descubrimos tu tema débil y armamos tu ruta."
+                : "Con unos casos más descubrimos tu tema débil."}
+            </p>
+            <Link
+              href="/practicar"
+              data-testid="start-practice"
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "mt-4 w-full bg-white text-base font-extrabold text-brand-700 shadow-[0_4px_0_0_var(--color-brand-200)] hover:bg-brand-50",
+              )}
+            >
+              {isNew ? "Resolver mi primer caso" : "Practicar"}
+            </Link>
+            {isNew && (
+              <Link
+                href="/diagnostico"
+                className="mt-2 flex min-h-11 items-center justify-center text-sm font-semibold text-white underline underline-offset-4"
+              >
+                o haz un diagnóstico con IA (10 min)
+              </Link>
+            )}
+          </div>
         )}
         <div className="relative mt-4 grid grid-cols-2 gap-2 text-sm">
           <div className="flex items-center gap-2 rounded-xl bg-white/15 px-3 py-2">
