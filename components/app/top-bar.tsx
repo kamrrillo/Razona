@@ -1,4 +1,4 @@
-import { Flame, Target } from "lucide-react";
+import { Flame, LogOut, Target } from "lucide-react";
 import { LogoMark } from "@/components/app/logo";
 import { cn } from "@/lib/utils";
 
@@ -45,6 +45,16 @@ export function TopBar({
           {Math.min(answeredToday, DAILY_GOAL)}/{DAILY_GOAL}
           <span className="sr-only">respuestas de la meta diaria</span>
         </span>
+        <form action="/auth/logout" method="post">
+          <button
+            type="submit"
+            title="Cerrar sesión"
+            className="flex size-9 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-brand-50 hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+          >
+            <LogOut className="size-4" aria-hidden />
+            <span className="sr-only">Cerrar sesión</span>
+          </button>
+        </form>
       </div>
     </div>
   );
