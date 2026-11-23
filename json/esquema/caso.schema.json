@@ -22,7 +22,8 @@
       "properties": {
         "guia": {"type": "string", "minLength": 10},
         "clave": {"type": "string", "pattern": "^(GPC-)?(IMSS|SSA)-[0-9]{3}-[0-9]{2}$"},
-        "archivo": {"type": "string", "pattern": "^[0-9]{3}GER(_0)?\\.pdf$"}
+        "archivo": {"type": "string", "pattern": "^[0-9]{3}GER(_0)?\\.pdf$"},
+        "url_pdf": {"type": "string", "pattern": "^https://", "description": "Enlace público al PDF de la GPC (sale del campo url de json/fuentes)."}
       }
     },
     "vineta": {"type": "string", "minLength": 200, "maxLength": 1800},
@@ -163,7 +164,8 @@
             "seccion": {"type": "string", "minLength": 3},
             "pagina": {"type": "integer", "minimum": 1},
             "fragmento": {"type": "string", "minLength": 15, "maxLength": 220,
-                          "description": "Texto literal breve de la página citada; permite verificar la cita de forma automática."}
+                          "description": "Texto literal breve de la página citada; permite verificar la cita de forma automática."},
+            "url_pdf": {"type": "string", "pattern": "^https://", "description": "Enlace público al PDF de la GPC; la app lo abre en la página citada."}
           }
         },
         {

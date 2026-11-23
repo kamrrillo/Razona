@@ -35,6 +35,7 @@ export function replyToEvents(reply: TutorReply): TutorEvent[] {
     section: reply.citation.section,
     page: reply.citation.page,
     snippet: reply.citation.snippet,
+    pdfUrl: reply.citation.pdfUrl,
   });
   events.push({ type: "done" });
   return events;

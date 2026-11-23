@@ -66,6 +66,8 @@ describe("explicación de respaldo personalizada", () => {
         });
         expect(TutorExplanationSchema.safeParse(e).success, `${it.id} ${mode}`).toBe(true);
         expect(e.why).toBe(it.explanation.slice(0, 900));
+        expect(e.gpc).toContain(it.citation.gpcId);
+        expect(e.socraticQuestion.trim().endsWith("?")).toBe(true);
       }
     }
   });
@@ -101,6 +103,13 @@ describe("explicación de respaldo personalizada", () => {
     expect(prompt).toContain("Es su tema más débil");
     expect(prompt).toContain("«Pensé que las sibilancias eran broncoespasmo»");
     expect(prompt).toContain(item.citation.snippet);
+    expect(prompt).toContain(item.citation.gpcId);
+  });
+
+  it("la pregunta socrática de respaldo sale de la rúbrica para su error", () => {
+    const e = buildFallbackExplanation(item, ctx);
+    const seed = item.rubric?.find((r) => r.optionIds.includes("a"))?.question;
+    if (seed) expect(e.socraticQuestion).toBe(seed);
   });
 });
 
@@ -187,6 +196,8 @@ describe("normalización de la salida del modelo", () => {
         { optionId: "a", text: "duplicada" },
       ],
       nextStep: "Otro caso de bronquiolitis.",
+      gpc: "Dice que es viral.",
+      socraticQuestion: "Piensa en el mecanismo",
       diagram: emptyDiagram,
     });
     expect(e.personal).toBe("Ana, elegiste salbutamol.");
@@ -195,7 +206,27 @@ describe("normalización de la salida del modelo", () => {
     ]);
     expect(e.source).toBe("adk");
     expect(e.diagramSource).toBe("fallback");
+    // Sin citar la GPC ni terminar en «?» se usan los de respaldo.
+    expect(e.gpc).toContain(item.citation.gpcId);
+    expect(e.socraticQuestion.endsWith("?")).toBe(true);
+    expect(e.citation).toEqual(item.citation);
     expect(TutorExplanationSchema.safeParse(e).success).toBe(true);
+  });
+
+  it("conserva el texto de la GPC del modelo cuando la cita", () => {
+    const gpc = `La GPC ${item.citation.gpcId} (${item.citation.section}) indica que el manejo es de soporte.`;
+    const e = normalizeModelExplanation(item, ctx, {
+      personal: "Ana, elegiste salbutamol.",
+      gpc,
+      why: "Porque es una infección viral.",
+      fundamentals: [],
+      distractors: [],
+      nextStep: "",
+      socraticQuestion: "¿Qué cambiaría si la saturación fuera menor?",
+      diagram: emptyDiagram,
+    });
+    expect(e.gpc).toBe(gpc);
+    expect(e.socraticQuestion).toBe("¿Qué cambiaría si la saturación fuera menor?");
   });
 });
 
