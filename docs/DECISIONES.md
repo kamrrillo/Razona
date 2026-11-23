@@ -112,3 +112,10 @@ Registro de decisiones tomadas el viernes 20 nov 2026 para el demo. Ante ambigü
 - **Resultados del examen:** cada reactivo fallado muestra "Por qué te desviaste" con el tipo de error y la explicación de la rúbrica.
 - **Agente de Python:** lee `v_casos_app`; el diagnóstico reparte por área (1 por área por defecto) y `buscar_gpc(item_id, opcion)` devuelve la guía de la rúbrica para una opción incorrecta.
 - **Lint:** Biome excluye `json/casos`, `json/fuentes` y `json/esquema` (datos que generan las herramientas de Python).
+
+## Iteración: explicación al responder (acierto o error)
+
+- **El caso de práctica se responde una sola vez.** Antes, con un error se abría el tutor socrático y la estudiante reintentaba hasta acertar; ahora, acierte o no, se revela la respuesta y el tutor explica en el mismo formato: lo que dice la GPC (citada con clave, sección y página, y enlace al PDF cuando la fuente lo traiga), por qué, diagrama y fundamentos, distractores, widget interactivo y una pregunta socrática con diálogo progresivo (recordar → transferir).
+- **Error = corregir; acierto = reforzar.** El prompt de la explicación, el widget y el diálogo reciben el resultado: con error identifican la idea equivocada y la hacen reconstruir el razonamiento; con acierto consolidan el criterio usado y lo llevan a una variante.
+- El tutor de chat previo a la respuesta (`/api/tutor`) queda en el código pero la práctica ya no lo usa; la conversación socrática ocurre después de la explicación (`/api/explain/socratic`).
+- El widget se ejecuta en un iframe `sandbox="allow-scripts"` con CSP sin red; sus imágenes (banco → Wikimedia Commons con licencia libre → generada con Gemini) se descargan y verifican en el servidor y viajan como `data:`.

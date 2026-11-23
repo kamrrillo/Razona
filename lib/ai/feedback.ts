@@ -35,14 +35,18 @@ function optionText(item: Item, id: string) {
 
 export const EXPLANATION_INSTRUCTION = `Eres el tutor inteligente de Razona (preparación para el ENARM, México). La estudiante YA respondió el reactivo; ahora le explicas el tema en orden, de lo general a lo profundo, para que progrese paso a paso.
 
+Te digo si ACERTÓ o SE EQUIVOCÓ; adapta toda la explicación a eso:
+- Si SE EQUIVOCÓ: el objetivo es CORREGIR. Dile con claridad y sin culparla cuál era la respuesta correcta; identifica la idea equivocada que revela su opción y el dato de la viñeta que pasó por alto o malinterpretó; contrasta su opción con la correcta usando la GPC; la pregunta socrática debe hacerla reconstruir el razonamiento correcto por sí misma (no repetir la respuesta).
+- Si ACERTÓ: el objetivo es REFORZAR. Nombra qué dato o criterio usó bien para llegar a la respuesta y consolídalo con la GPC; agrega un matiz que la haga más sólida (un límite, una excepción o lo que cambiaría la conducta); la pregunta socrática debe llevarla un paso más allá del caso (transferencia a una variante).
+
 Devuelve SOLO el JSON pedido, en español de México, en texto plano (sin Markdown), hablándole de tú:
-- personal (2 a 3 oraciones): usa su nombre y SU contexto real: qué opción(es) eligió y qué idea equivocada revela esa elección; si escribió su razonamiento, retómalo con sus palabras y corrígelo con tacto; menciona su historial en el tema con los números que te doy (y si es su tema más débil). Nada de elogios genéricos.
+- personal (2 a 3 oraciones): usa su nombre y SU contexto real. Si se equivocó: qué opción eligió, cuál era la correcta y qué idea equivocada revela su elección. Si acertó: qué razonamiento la llevó a la respuesta. Si escribió su razonamiento, retómalo con sus palabras. Menciona su historial en el tema con los números que te doy (y si es su tema más débil). Nada de elogios genéricos.
 - gpc (3 a 4 oraciones) — ES LO PRIMERO QUE LEE: explica qué dice la GPC sobre este caso, citándola de forma explícita con su clave, sección y página, por ejemplo: «La GPC IMSS-027-08 (Diagnóstico, p. 14) señala que…». Parafrasea o cita textual entre comillas latinas «» solo lo que está en los fragmentos que te doy; si hay varios fragmentos relevantes, cita los dos más útiles. Conecta lo que dice la guía con el dato de la viñeta que lo activa.
-- why (3 a 5 oraciones): por qué la respuesta correcta es correcta, conectando los datos de la viñeta con el mecanismo o criterio que la sustenta (aquí ya no repitas la cita, profundiza en el razonamiento).
+- why (3 a 5 oraciones): por qué la respuesta correcta es correcta, conectando los datos de la viñeta con el mecanismo o criterio que la sustenta (aquí ya no repitas la cita, profundiza en el razonamiento). Si se equivocó, incluye en qué punto exacto su razonamiento se separó del correcto.
 - fundamentals (2 a 4): conceptos base que hay que dominar para resolver casos así (fisiopatología, criterios, clasificación, mecanismo de acción). title corto + text de 1 a 2 oraciones.
 - distractors: por qué NO aplica cada opción incorrecta, empezando por las que eligió ella (1 a 2 oraciones cada una; optionId es la letra).
 - nextStep (1 oración): qué le conviene practicar ahora, según su historial.
-- socraticQuestion (1 pregunta, termina en «?»): para cerrar, una pregunta socrática que la obligue a USAR lo que acaba de aprender un paso más allá del caso (p. ej. qué cambiaría si un dato de la viñeta fuera distinto, o qué dato buscaría para confirmar). No la respondas tú; no debe poder contestarse con sí/no ni copiando una frase de la explicación.
+- socraticQuestion (1 pregunta, termina en «?»): para cerrar. Si se equivocó, que la haga identificar por sí misma el dato o criterio que la habría llevado a la respuesta correcta. Si acertó, que la obligue a USAR lo aprendido un paso más allá del caso (qué cambiaría si un dato de la viñeta fuera distinto, o qué dato buscaría para confirmar). No la respondas tú; no debe poder contestarse con sí/no ni copiando una frase de la explicación.
 - diagram: un diagrama CONCEPTUAL del tema (no una lista de pasos). Elige el tipo que mejor lo explique:
   * "escala": cuando el tema depende de puntos de corte numéricos (glucosa, presión, saturación, puntajes). Llena scale con min/max, 2 a 4 rangos contiguos con su etiqueta y markerValue con el valor del paciente (markerLabel corto y sin el número, p. ej. "Paciente").
   * "arbol": clasificaciones o decisiones (raíz = concepto; hijos = categorías o ramas; edge = criterio que lleva a cada rama). 4 a 9 nodos, máximo 2 niveles bajo la raíz y 3 hijos por nodo.
@@ -76,14 +80,18 @@ export function buildExplanationPrompt(item: Item, ctx: LearnerContext): string 
     ctx.topic.total > 0
       ? `${ctx.topic.correct} de ${ctx.topic.total} aciertos en ${item.topic} (${pct(ctx.topic.correct, ctx.topic.total)} %)`
       : `es la primera vez que responde ${item.topic}`;
-  const how =
+  const where =
     ctx.mode === "practica"
-      ? ctx.attempts <= 1
-        ? "Lo resolvió al primer intento."
-        : `Lo resolvió en ${ctx.attempts} intentos${ctx.usedTutor ? " con ayuda del tutor socrático" : ""}. Antes eligió: ${wrong}.`
-      : ctx.answeredCorrectly
-        ? `En el ${ctx.mode === "examen" ? "simulacro" : "diagnóstico"} acertó.`
-        : `En el ${ctx.mode === "examen" ? "simulacro" : "diagnóstico"} eligió ${wrong || "nada (lo dejó sin responder)"}, que es incorrecta.`;
+      ? "En la práctica"
+      : ctx.mode === "examen"
+        ? "En el simulacro"
+        : "En el diagnóstico";
+  const how = ctx.answeredCorrectly
+    ? `${where} ACERTÓ.${wrong ? ` Antes había elegido: ${wrong}.` : ""}`
+    : `${where} SE EQUIVOCÓ: eligió ${wrong || "nada (lo dejó sin responder)"}, que es incorrecta.`;
+  const goal = ctx.answeredCorrectly
+    ? "REFORZAR lo que hizo bien y llevarla un paso más allá."
+    : "CORREGIR su idea equivocada y que entienda por qué la correcta es la correcta.";
 
   return `Caso (${specialtyName(item)} · ${item.topic}):
 ${item.vignette}
@@ -100,6 +108,7 @@ ${gpcFragments(item)}
 Contexto de la estudiante:
 - Nombre: ${firstName(ctx.name) || "(sin nombre)"}
 - ${how}
+- Objetivo de esta explicación: ${goal}
 - Historial: ${history}.${ctx.topic.isWeakest ? " Es su tema más débil." : ctx.weakestTopic ? ` Su tema más débil es ${ctx.weakestTopic}.` : ""}
 - Racha: ${ctx.streakDays} día(s) seguidos estudiando.
 ${ctx.studentMessages.length ? `- Lo que le escribió al tutor: ${ctx.studentMessages.map((m) => `«${m}»`).join(" ")}` : "- No escribió su razonamiento."}`;
@@ -217,14 +226,12 @@ export function buildFallbackExplanation(item: Item, ctx: LearnerContext): Tutor
   const name = firstName(ctx.name);
   const hi = name ? `${name}, ` : "";
   const parts: string[] = [];
-  if (ctx.mode === "practica") {
+  if (ctx.answeredCorrectly) {
     parts.push(
-      ctx.attempts <= 1
-        ? `${name ? `¡Bien, ${name}!` : "¡Bien!"} Lo resolviste al primer intento.`
-        : `${hi}lo resolviste en ${ctx.attempts} intentos: antes elegiste ${ctx.wrongChoices.map((id) => optionText(item, id)).join(" y ")}.`,
+      ctx.mode === "practica"
+        ? `${name ? `¡Bien, ${name}!` : "¡Bien!"} Acertaste: repasa por qué para fijarlo.`
+        : `${hi}acertaste este reactivo.`,
     );
-  } else if (ctx.answeredCorrectly) {
-    parts.push(`${hi}acertaste este reactivo.`);
   } else {
     parts.push(
       ctx.wrongChoices.length

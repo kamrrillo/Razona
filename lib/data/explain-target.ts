@@ -33,7 +33,7 @@ export async function loadExplainTarget(
     const ctx = await loadLearnerContext(supabase, userId, session.item, {
       mode: "practica",
       wrongChoices: wrong,
-      answeredCorrectly: true,
+      answeredCorrectly: data.some((a) => a.is_correct),
       attempts: data.length,
       usedTutor: session.messages.some((m) => m.role === "tutor"),
       studentMessages: session.messages

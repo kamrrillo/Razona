@@ -3,6 +3,10 @@ import { loadStudySession, recordAttempt } from "@/lib/data/practice";
 import { errorTypesFor, orderResources } from "@/lib/learning/resources";
 import { AttemptRequestSchema, AttemptResponseSchema } from "@/lib/schemas/api";
 
+/**
+ * Registra la respuesta de un caso de práctica y lo cierra. Acierte o no, devuelve la respuesta
+ * correcta, la cita y los recursos (primero los que atienden su error) para la explicación.
+ */
 export async function POST(request: Request) {
   try {
     const { supabase, userId } = await requireAuth();
@@ -20,29 +24,17 @@ export async function POST(request: Request) {
       session,
       body.optionId,
     );
-    if (isCorrect) {
-      // Los recursos pueden revelar la respuesta: solo se entregan al resolver el caso.
-      const { data: attempts, error } = await supabase
-        .from("attempts")
-        .select("selected_option")
-        .eq("session_id", session.id)
-        .eq("is_correct", false);
-      if (error) throw error;
-      const errorTypes = errorTypesFor(
-        session.item,
-        attempts.map((a) => a.selected_option),
-      );
-      return ok(AttemptResponseSchema, {
-        isCorrect: true,
-        attemptNumber,
-        explanation: session.item.explanation,
-        correctOptionId: session.item.correctOptionId,
-        citation: session.item.citation,
-        resources: orderResources(session.item.resources ?? [], errorTypes),
-        errorTypes,
-      });
-    }
-    return ok(AttemptResponseSchema, { isCorrect: false, attemptNumber });
+    const errorTypes = isCorrect ? [] : errorTypesFor(session.item, [body.optionId]);
+    return ok(AttemptResponseSchema, {
+      isCorrect,
+      attemptNumber,
+      selectedOptionId: body.optionId,
+      explanation: session.item.explanation,
+      correctOptionId: session.item.correctOptionId,
+      citation: session.item.citation,
+      resources: orderResources(session.item.resources ?? [], errorTypes),
+      errorTypes,
+    });
   } catch (error) {
     return handleError(error);
   }

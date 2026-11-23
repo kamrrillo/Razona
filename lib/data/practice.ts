@@ -130,13 +130,13 @@ export async function recordAttempt(
   });
   if (error) throw error;
 
-  if (isCorrect) {
-    const { error: updateError } = await supabase
-      .from("study_sessions")
-      .update({ completed_at: new Date().toISOString() })
-      .eq("id", session.id);
-    if (updateError) throw updateError;
-  }
+  // El caso se cierra con la primera respuesta, correcta o no: en ambos casos se revela la
+  // respuesta y se explica (corregir el error o reforzar el acierto).
+  const { error: updateError } = await supabase
+    .from("study_sessions")
+    .update({ completed_at: new Date().toISOString() })
+    .eq("id", session.id);
+  if (updateError) throw updateError;
 
   return { isCorrect, attemptNumber: (count ?? 0) + 1 };
 }
