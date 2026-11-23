@@ -146,7 +146,8 @@ test("examen por área", async ({ page }) => {
 
 test("las rutas de la app requieren sesión", async ({ page }) => {
   await page.goto("/progreso");
-  await expect(page).toHaveURL(/\/login$/);
+  // Pide entrar y recuerda a dónde iba.
+  await expect(page).toHaveURL(/\/login\?next=%2Fprogreso$/);
 });
 
 test("las APIs rechazan peticiones sin sesión", async ({ request }) => {

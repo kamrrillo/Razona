@@ -1,6 +1,7 @@
 import { BookOpenCheck, MessageCircleQuestion, Route } from "lucide-react";
 import type { Metadata } from "next";
 import { LogoMark } from "@/components/app/logo";
+import { safeNextPath } from "@/lib/auth/next-path";
 import { publicEnv } from "@/lib/env";
 import { LoginForm } from "./login-form";
 
@@ -15,6 +16,8 @@ const FEATURES = [
 export default async function LoginPage({ searchParams }: PageProps<"/login">) {
   const params = await searchParams;
   const authError = params.error === "auth";
+  const next = safeNextPath(params.next, "");
+  const initialMode = params.modo === "registro" ? "signup" : "signin";
   return (
     <main className="flex min-h-dvh flex-col">
       <section className="relative overflow-hidden bg-brand-gradient px-6 pt-[calc(env(safe-area-inset-top)+2.5rem)] pb-16 text-white">
@@ -46,7 +49,13 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
           <LoginForm
             demoMode={publicEnv.demoMode}
             enableGoogle={publicEnv.enableGoogle}
-            initialError={authError ? "No se pudo completar el inicio de sesión." : undefined}
+            initialError={
+              authError
+                ? "El enlace no funcionó o ya expiró. Entra de nuevo o pide otro correo."
+                : undefined
+            }
+            initialMode={initialMode}
+            next={next || undefined}
           />
         </div>
 

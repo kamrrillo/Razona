@@ -1,9 +1,17 @@
 import { createServerClient } from "@supabase/ssr";
 import { type NextRequest, NextResponse } from "next/server";
+import { safeNextPath } from "@/lib/auth/next-path";
 import { requireSupabasePublicEnv } from "@/lib/env";
 import type { Database } from "./database.types";
 
-const PROTECTED_PREFIXES = ["/inicio", "/practicar", "/examen", "/diagnostico", "/progreso"];
+const PROTECTED_PREFIXES = [
+  "/inicio",
+  "/practicar",
+  "/examen",
+  "/diagnostico",
+  "/progreso",
+  "/restablecer",
+];
 
 /** Refresca la sesión de Supabase y protege las rutas de (app). */
 export async function updateSession(request: NextRequest) {
@@ -40,16 +48,22 @@ export async function updateSession(request: NextRequest) {
   );
 
   if (!isAuthenticated && isProtected) {
+    // Recuerda a dónde iba para volver ahí después de entrar.
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     url.search = "";
+    const next = safeNextPath(`${pathname}${request.nextUrl.search}`, "");
+    if (next && next !== "/inicio") url.searchParams.set("next", next);
     return NextResponse.redirect(url);
   }
 
   if (pathname === "/" || (isAuthenticated && pathname === "/login")) {
     const url = request.nextUrl.clone();
-    url.pathname = isAuthenticated ? "/inicio" : "/login";
-    url.search = "";
+    const next = isAuthenticated
+      ? safeNextPath(request.nextUrl.searchParams.get("next"))
+      : "/login";
+    url.pathname = next.split("?")[0];
+    url.search = next.includes("?") ? next.slice(next.indexOf("?")) : "";
     return NextResponse.redirect(url);
   }
 
