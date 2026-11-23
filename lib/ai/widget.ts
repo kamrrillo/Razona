@@ -2,7 +2,11 @@ import "server-only";
 import { specialtyName } from "@/lib/content";
 import { serverEnv } from "@/lib/env.server";
 import type { Item } from "@/lib/schemas/content";
-import { type LearningWidget, ModelWidgetSchema } from "@/lib/schemas/explanation";
+import {
+  type LearningWidget,
+  LearningWidgetSchema,
+  ModelWidgetSchema,
+} from "@/lib/schemas/explanation";
 import { runStructuredAgent, withTimeout } from "./adk-structured";
 import { geminiOptions } from "./explain";
 import { gpcFragments, type LearnerContext } from "./feedback";
@@ -106,7 +110,7 @@ async function generateWithAdk(item: Item, ctx: LearnerContext): Promise<Learnin
     apiKey: gemini.apiKey,
     imageModel: serverEnv.geminiImageModel,
   });
-  return {
+  return LearningWidgetSchema.parse({
     approach: words(raw.approach || "Interactivo", 40),
     title: words(raw.title || item.topic, 90),
     intro: words(raw.intro, 240),
@@ -115,7 +119,7 @@ async function generateWithAdk(item: Item, ctx: LearnerContext): Promise<Learnin
     js: raw.js,
     image,
     source: "adk",
-  };
+  });
 }
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);

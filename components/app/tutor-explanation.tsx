@@ -35,7 +35,7 @@ export function TutorExplanationView({
   correctLabel?: string;
   /** Reactivo al que se refiere (para el diálogo socrático). */
   target?: ExplainRequest;
-  widget?: WidgetState;
+  widget?: WidgetState & { retry?: () => void };
   /** Mostrar la tarjeta de la cita (desactivar si la página ya la muestra junto). */
   showCitation?: boolean;
 }) {

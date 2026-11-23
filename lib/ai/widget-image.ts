@@ -163,6 +163,16 @@ export async function resolveWidgetImage(
       return null;
     }
   };
+  const img = await pickImage(item, req, gen, attempt);
+  return img ? { ...img, alt: img.alt.slice(0, 200), credit: img.credit.slice(0, 300) } : null;
+}
+
+async function pickImage(
+  item: Item,
+  req: ImageRequest,
+  gen: { apiKey: string; imageModel: string } | null,
+  attempt: (fn: () => Promise<WidgetImage | null>, label: string) => Promise<WidgetImage | null>,
+): Promise<WidgetImage | null> {
   if (req.mode === "ninguna") return null;
   if (req.mode === "banco") {
     const img = await attempt(() => fromBank(item, req.alt), "banco");

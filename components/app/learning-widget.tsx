@@ -98,13 +98,18 @@ export type WidgetState =
  * Un solo pedido por reactivo, también con el doble montaje de StrictMode: generarlo es caro,
  * así que no se cancela; si cambia el reactivo, se ignora la respuesta vieja.
  */
-export function useLearningWidget(body: string, enabled: boolean): WidgetState {
+export function useLearningWidget(
+  body: string,
+  enabled: boolean,
+): WidgetState & { retry: () => void } {
   const [state, setState] = useState<WidgetState>({ status: "idle", widget: null });
+  const [attempt, setAttempt] = useState(0);
   const requested = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!enabled || requested.current === body) return;
-    requested.current = body;
+    const key = `${body}#${attempt}`;
+    if (!enabled || requested.current === key) return;
+    requested.current = key;
     setState({ status: "loading", widget: null });
     void (async () => {
       try {
@@ -115,19 +120,37 @@ export function useLearningWidget(body: string, enabled: boolean): WidgetState {
         });
         if (!res.ok) throw new Error(String(res.status));
         const widget = LearningWidgetSchema.parse(await res.json());
-        if (requested.current === body) setState({ status: "ready", widget });
-      } catch {
-        if (requested.current === body) setState({ status: "error", widget: null });
+        if (requested.current === key) setState({ status: "ready", widget });
+      } catch (error) {
+        console.warn("[widget]", error);
+        if (requested.current === key) setState({ status: "error", widget: null });
       }
     })();
-  }, [body, enabled]);
+  }, [body, enabled, attempt]);
 
-  return state;
+  return { ...state, retry: () => setAttempt((a) => a + 1) } as WidgetState & {
+    retry: () => void;
+  };
 }
 
 /** Lugar del widget dentro de la explicación: cargando, listo o nada si falló. */
-export function LearningWidgetSlot({ state }: { state: WidgetState }) {
+export function LearningWidgetSlot({ state }: { state: WidgetState & { retry?: () => void } }) {
   if (state.status === "ready") return <LearningWidgetView widget={state.widget} />;
+  if (state.status === "error") {
+    return (
+      <div
+        className="flex items-center justify-between gap-2 rounded-2xl bg-brand-50/70 p-3 text-sm text-brand-800 ring-1 ring-brand-100"
+        data-testid="widget-error"
+      >
+        No se pudo preparar la actividad interactiva.
+        {state.retry && (
+          <Button variant="outline" size="sm" onClick={state.retry}>
+            <RotateCcw aria-hidden /> Reintentar
+          </Button>
+        )}
+      </div>
+    );
+  }
   if (state.status !== "loading") return null;
   return (
     <div
