@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
       "clave": "IMSS-244-09",
-      "archivo": "244GER.pdf"
+      "archivo": "244GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
     },
     "vineta": "Femenino de 7 años, previamente sana, con desarrollo psicomotor normal y sin antecedentes familiares de epilepsia. Hace 3 horas, estando despierta y jugando, presentó pérdida del estado de alerta con movimientos tónico-clónicos generalizados de 2 minutos de duración, sin desencadenante identificado. Hoy no ha tenido vómito, diarrea ni fiebre. A su llegada a urgencias está completamente recuperada: temperatura 36.7 °C, sin rigidez de nuca, exploración neurológica normal.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 22,
-          "fragmento": "una CC de primera vez no provocada"
+          "fragmento": "una CC de primera vez no provocada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 23,
-          "fragmento": "estudios de imágen en las personas que presentaron"
+          "fragmento": "estudios de imágen en las personas que presentaron",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
           "pagina": 28,
-          "fragmento": "Se recomienda evitar el uso de antiepilépticos"
+          "fragmento": "Se recomienda evitar el uso de antiepilépticos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -58,7 +62,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.7 Criterios de referencia y contrarreferencia",
           "pagina": 29,
-          "fragmento": "Toda persona en la que se sospecha CC de"
+          "fragmento": "Toda persona en la que se sospecha CC de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       }
     ],
@@ -82,7 +87,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 20,
-          "fragmento": "de sospecha de infección del Sistema Nervioso"
+          "fragmento": "de sospecha de infección del Sistema Nervioso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -104,7 +110,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 22,
-          "fragmento": "vez que sean menores de 2 años, o que hayan tenido"
+          "fragmento": "vez que sean menores de 2 años, o que hayan tenido",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -125,7 +132,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
           "pagina": 29,
-          "fragmento": "impregnación con fenitoína, ni tampaco con otro"
+          "fragmento": "impregnación con fenitoína, ni tampaco con otro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -147,7 +155,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
           "pagina": 28,
-          "fragmento": "disminuye el riesgo de una segunda crisis, pero no"
+          "fragmento": "disminuye el riesgo de una segunda crisis, pero no",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       }
     ],
@@ -172,7 +181,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 22,
-          "fragmento": "para establecer un diagnóstico temprano"
+          "fragmento": "para establecer un diagnóstico temprano",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -192,7 +202,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 22,
-          "fragmento": "vez que sean menores de 2 años, o que hayan tenido"
+          "fragmento": "vez que sean menores de 2 años, o que hayan tenido",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -211,7 +222,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
           "pagina": 28,
-          "fragmento": "modifica el porcentaje de remisión de las crisis a largo"
+          "fragmento": "modifica el porcentaje de remisión de las crisis a largo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -231,28 +243,32 @@
             "clave": "IMSS-244-09",
             "seccion": "4.4 Pruebas diagnósticas",
             "pagina": 20,
-            "fragmento": "de sospecha de infección del Sistema Nervioso"
+            "fragmento": "de sospecha de infección del Sistema Nervioso",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
             "clave": "IMSS-244-09",
             "seccion": "4.5 Exámenes de gabinete",
             "pagina": 22,
-            "fragmento": "vez que sean menores de 2 años, o que hayan tenido"
+            "fragmento": "vez que sean menores de 2 años, o que hayan tenido",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
             "clave": "IMSS-244-09",
             "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
             "pagina": 28,
-            "fragmento": "Se recomienda el inicio de tratamiento antiepiléptico"
+            "fragmento": "Se recomienda el inicio de tratamiento antiepiléptico",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
             "clave": "IMSS-244-09",
             "seccion": "4.7 Criterios de referencia y contrarreferencia",
             "pagina": 29,
-            "fragmento": "Toda persona en la que se sospecha CC de"
+            "fragmento": "Toda persona en la que se sospecha CC de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
           }
         ]
       },
@@ -304,7 +320,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de la primera crisis convulsiva en niñas, niños y adolescentes",
       "clave": "IMSS-244-09",
-      "archivo": "244GER.pdf"
+      "archivo": "244GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
     },
     "vineta": "Masculino de 10 años, sin antecedentes patológicos ni familiares de epilepsia. Mientras desayunaba presentó movimientos clónicos del brazo y la hemicara derechos, de 3 minutos de duración, sin generalización. No hubo fiebre, vómito ni traumatismo. Una hora después está alerta, orientado, afebril y con exploración neurológica normal. Es valorado en urgencias de pediatría de un hospital general.",
     "pregunta": "¿Cuál es el abordaje más adecuado?",
@@ -324,7 +341,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 23,
-          "fragmento": "50% de las personas con crisis focales de primera vez"
+          "fragmento": "50% de las personas con crisis focales de primera vez",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -334,7 +352,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 23,
-          "fragmento": "La RM constituye la modalidad de elección, entre los"
+          "fragmento": "La RM constituye la modalidad de elección, entre los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -344,7 +363,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.6.2 Tratamiento anticonvulsivo después de la primera crisis",
           "pagina": 28,
-          "fragmento": "crisis convulsivas focales"
+          "fragmento": "crisis convulsivas focales",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       }
     ],
@@ -367,7 +387,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 23,
-          "fragmento": "50% de las personas con crisis focales de primera vez"
+          "fragmento": "50% de las personas con crisis focales de primera vez",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -388,7 +409,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.5 Exámenes de gabinete",
           "pagina": 23,
-          "fragmento": "La RM constituye la modalidad de elección, entre los"
+          "fragmento": "La RM constituye la modalidad de elección, entre los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -409,7 +431,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 20,
-          "fragmento": "citometría hemática, calcio y magnesio en la persona"
+          "fragmento": "citometría hemática, calcio y magnesio en la persona",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       },
       {
@@ -430,7 +453,8 @@
           "clave": "IMSS-244-09",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 20,
-          "fragmento": "de sospecha de infección del Sistema Nervioso"
+          "fragmento": "de sospecha de infección del Sistema Nervioso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/244GER.pdf"
         }
       }
     ],

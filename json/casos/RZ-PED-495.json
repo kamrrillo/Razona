@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
       "clave": "IMSS-495-11",
-      "archivo": "495GER.pdf"
+      "archivo": "495GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
     },
     "vineta": "Masculino de 4 años que hace 2 meses, 10 minutos después de comer cacahuate, presentó urticaria generalizada, edema de labios, sibilancias e hipotensión, por lo que recibió epinefrina intramuscular en urgencias. Desde entonces no ha vuelto a comerlo y está asintomático. Los padres solicitan una prueba que confirme el diagnóstico antes de quitarle definitivamente el cacahuate.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "contraindicada en pacientes con reacciones"
+          "fragmento": "contraindicada en pacientes con reacciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.4 Tratamiento",
           "pagina": 17,
-          "fragmento": "eliminar el alimento específico de la dieta y aquellos"
+          "fragmento": "eliminar el alimento específico de la dieta y aquellos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "anafiláctica por alimentos tienen alto riesgo de"
+          "fragmento": "anafiláctica por alimentos tienen alto riesgo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "contraindicada en pacientes con reacciones"
+          "fragmento": "contraindicada en pacientes con reacciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "Se recomienda no usar la determinación de la IgE"
+          "fragmento": "Se recomienda no usar la determinación de la IgE",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "intradermicas no sean usadas para el diagnóstico"
+          "fragmento": "intradermicas no sean usadas para el diagnóstico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1 Manifestaciones Clínicas",
           "pagina": 13,
-          "fragmento": "Las reacciones anafilácticas por alimentos consisten"
+          "fragmento": "Las reacciones anafilácticas por alimentos consisten",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "anafiláctica por alimentos tienen alto riesgo de"
+          "fragmento": "anafiláctica por alimentos tienen alto riesgo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 14,
-          "fragmento": "tienen una sensibilidad de 90% y una especificidad"
+          "fragmento": "tienen una sensibilidad de 90% y una especificidad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "IMSS-495-11",
             "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
             "pagina": 16,
-            "fragmento": "contraindicada en pacientes con reacciones"
+            "fragmento": "contraindicada en pacientes con reacciones",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
             "clave": "IMSS-495-11",
             "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
             "pagina": 15,
-            "fragmento": "como el estándar de oro en el diagnóstico de alergia"
+            "fragmento": "como el estándar de oro en el diagnóstico de alergia",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
             "clave": "IMSS-495-11",
             "seccion": "4.4 Tratamiento",
             "pagina": 17,
-            "fragmento": "eliminar el alimento específico de la dieta y aquellos"
+            "fragmento": "eliminar el alimento específico de la dieta y aquellos",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
             "clave": "IMSS-495-11",
             "seccion": "4.5 Criterios de Referencia y Contrarreferencia",
             "pagina": 19,
-            "fragmento": "Cuando existan manifestaciones graves de"
+            "fragmento": "Cuando existan manifestaciones graves de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
           }
         ]
       },
@@ -292,7 +306,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "Se recomienda no usar la determinación de la IgE"
+          "fragmento": "Se recomienda no usar la determinación de la IgE",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -324,7 +339,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Alergia Alimentaria en Niños",
       "clave": "IMSS-495-11",
-      "archivo": "495GER.pdf"
+      "archivo": "495GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
     },
     "vineta": "Femenino de 18 meses que en tres ocasiones, unos minutos después de comer huevo cocido, presentó ronchas alrededor de la boca y en mejillas que cedieron solas en una hora, sin dificultad respiratoria, vómito ni cambios de coloración. Nunca ha tenido anafilaxia. Tiene dermatitis atópica leve. Es referida a pediatría para confirmar el diagnóstico.",
     "pregunta": "¿Qué prueba se considera el estándar de oro para confirmar la alergia alimentaria en esta paciente?",
@@ -344,7 +360,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 15,
-          "fragmento": "como el estándar de oro en el diagnóstico de alergia"
+          "fragmento": "como el estándar de oro en el diagnóstico de alergia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -354,7 +371,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "contraindicada en pacientes con reacciones"
+          "fragmento": "contraindicada en pacientes con reacciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       }
     ],
@@ -376,7 +394,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "Se recomienda no usar la determinación de la IgE"
+          "fragmento": "Se recomienda no usar la determinación de la IgE",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -396,7 +415,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "Se sugiere que la prueba de parche atópico no sea"
+          "fragmento": "Se sugiere que la prueba de parche atópico no sea",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -416,7 +436,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "intradermicas no sean usadas para el diagnóstico"
+          "fragmento": "intradermicas no sean usadas para el diagnóstico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       },
       {
@@ -437,7 +458,8 @@
           "clave": "IMSS-495-11",
           "seccion": "4.2.1.2 Prueba de reto oral con alimentos",
           "pagina": 16,
-          "fragmento": "contraindicada en pacientes con reacciones"
+          "fragmento": "contraindicada en pacientes con reacciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/495GER.pdf"
         }
       }
     ],

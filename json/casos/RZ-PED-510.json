@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
       "clave": "IMSS-510-11",
-      "archivo": "510GER.pdf"
+      "archivo": "510GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
     },
     "vineta": "Masculino de 9 años referido a pediatría por talla por debajo del percentil 3. Nació de término con peso y talla normales. Sin enfermedades crónicas, con alimentación adecuada; peso para la talla en percentil 50. Proporciones corporales normales. Velocidad de crecimiento de 5.5 cm/año en el último año. Talla del padre 160 cm y de la madre 148 cm; su talla actual se encuentra dentro del rango de la talla blanco familiar. Edad ósea concordante con la cronológica. Sin datos de pubertad.",
     "pregunta": "¿Cuál es el diagnóstico más probable?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
           "pagina": 19,
-          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 26,
-          "fragmento": "Proporciones corporales normales"
+          "fragmento": "Proporciones corporales normales",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 28,
-          "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+          "fragmento": "bajo para la talla se puede clasificar a la talla baja",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "que tienen un ritmo de maduración ósea más lento que"
+          "fragmento": "que tienen un ritmo de maduración ósea más lento que",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 26,
-          "fragmento": "intrínseco de la placa de crecimiento:"
+          "fragmento": "intrínseco de la placa de crecimiento:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "suele asociarse a un cierto grado de"
+          "fragmento": "suele asociarse a un cierto grado de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
           "pagina": 19,
-          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.3 Diagnóstico paraclínico",
           "pagina": 25,
-          "fragmento": "difiera al menos en 6 meses en caso de pre-escolares y"
+          "fragmento": "difiera al menos en 6 meses en caso de pre-escolares y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 26,
-          "fragmento": "Proporciones corporales normales"
+          "fragmento": "Proporciones corporales normales",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -217,28 +228,32 @@
             "clave": "IMSS-510-11",
             "seccion": "4.1.4 Clasificación",
             "pagina": 28,
-            "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+            "fragmento": "bajo para la talla se puede clasificar a la talla baja",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
             "clave": "IMSS-510-11",
             "seccion": "4.2.2 Criterios de referencia de segundo a tercer nivel",
             "pagina": 31,
-            "fragmento": "para la talla en rango obesidad se debe sospechar"
+            "fragmento": "para la talla en rango obesidad se debe sospechar",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
             "clave": "IMSS-510-11",
             "seccion": "4.1.4 Clasificación",
             "pagina": 26,
-            "fragmento": "Proporciones corporales normales"
+            "fragmento": "Proporciones corporales normales",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
             "clave": "IMSS-510-11",
             "seccion": "4.1.4 Clasificación",
             "pagina": 27,
-            "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+            "fragmento": "Talla baja familiar: se reconoce en los niños que tienen",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
           }
         ]
       },
@@ -313,7 +328,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen"
+          "fragmento": "Talla baja familiar: se reconoce en los niños que tienen",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       }
     ]
@@ -327,7 +343,8 @@
     "gpc_base": {
       "guia": "Abordaje Diagnóstico y Seguimiento del Paciente Pediátrico con Talla Baja",
       "clave": "IMSS-510-11",
-      "archivo": "510GER.pdf"
+      "archivo": "510GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
     },
     "vineta": "Masculino de 13 años con talla por debajo del percentil 3, sano y bien nutrido, con proporciones corporales normales y talla normal al nacer. Su padre mide 175 cm y su madre 162 cm; el padre refiere que \"dio el estirón\" hasta los 16 años. Velocidad de crecimiento de 4.5 cm/año. Tanner 1. La edad ósea corresponde a 10 años 6 meses.",
     "pregunta": "¿Cuál es el diagnóstico más probable?",
@@ -347,7 +364,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "Retraso constitucional de crecimiento: son niños sanos"
+          "fragmento": "Retraso constitucional de crecimiento: son niños sanos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -357,7 +375,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.2 Parámetros antropométricos y auxológicos",
           "pagina": 19,
-          "fragmento": "Niños: [(talla paterna + talla materna)/2] +"
+          "fragmento": "Niños: [(talla paterna + talla materna)/2] +",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       }
     ],
@@ -380,7 +399,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "ambos padres) con edad ósea acorde a la cronológica y"
+          "fragmento": "ambos padres) con edad ósea acorde a la cronológica y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -401,7 +421,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "Retraso constitucional de crecimiento: son niños sanos"
+          "fragmento": "Retraso constitucional de crecimiento: son niños sanos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -421,7 +442,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 28,
-          "fragmento": "bajo para la talla se puede clasificar a la talla baja"
+          "fragmento": "bajo para la talla se puede clasificar a la talla baja",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       },
       {
@@ -442,7 +464,8 @@
           "clave": "IMSS-510-11",
           "seccion": "4.1.4 Clasificación",
           "pagina": 27,
-          "fragmento": "suele asociarse a un cierto grado de"
+          "fragmento": "suele asociarse a un cierto grado de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/510GER.pdf"
         }
       }
     ],

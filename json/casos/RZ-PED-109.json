@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
       "clave": "IMSS-109-08",
-      "archivo": "109GER.pdf"
+      "archivo": "109GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
     },
     "vineta": "Masculino de 1 año 6 meses, sin vacuna triple viral por cambio de domicilio. Presenta fiebre de 39 °C desde hace 4 días, coriza, tos y conjuntivitis; hoy apareció exantema maculopapular que inició detrás de las orejas y se extiende al tronco. En la mucosa bucal se observan puntos blanquecinos sobre fondo eritematoso. Peso y talla normales para la edad. FR 30 rpm, campos pulmonares limpios, SpO2 97 %. Hidratado y alerta.",
     "pregunta": "Además de las medidas generales, ¿cuál es el manejo más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos"
+          "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "Mayor a 12 meses 200,000 UI"
+          "fragmento": "Mayor a 12 meses 200,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.4 Vigilancia y Seguimiento",
           "pagina": 25,
-          "fragmento": "Todo paciente pediátrico de EFE con sospecha de sarampión"
+          "fragmento": "Todo paciente pediátrico de EFE con sospecha de sarampión",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "De 6 a 11 meses 100,000 UI"
+          "fragmento": "De 6 a 11 meses 100,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -93,7 +98,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
           "pagina": 25,
-          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+          "fragmento": "Niños menores de un año de edad, sin complicaciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -115,7 +121,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -137,7 +144,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 23,
-          "fragmento": "reduce la gravedad de la enfermedad y también la tasa de letalidad"
+          "fragmento": "reduce la gravedad de la enfermedad y también la tasa de letalidad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       }
     ],
@@ -162,7 +170,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos"
+          "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -181,7 +190,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -200,7 +210,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
           "pagina": 25,
-          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+          "fragmento": "Niños menores de un año de edad, sin complicaciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -221,28 +232,32 @@
             "clave": "IMSS-109-08",
             "seccion": "4.4 Vigilancia y Seguimiento",
             "pagina": 25,
-            "fragmento": "Todo paciente pediátrico de EFE con sospecha de sarampión"
+            "fragmento": "Todo paciente pediátrico de EFE con sospecha de sarampión",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
             "clave": "IMSS-109-08",
             "seccion": "4.2.4.2 Tratamiento Farmacológico",
             "pagina": 24,
-            "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos"
+            "fragmento": "La vitamina A se debe administrar en todos los pacientes pediátricos",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
             "clave": "IMSS-109-08",
             "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
             "pagina": 25,
-            "fragmento": "Niños menores de un año de edad, sin complicaciones"
+            "fragmento": "Niños menores de un año de edad, sin complicaciones",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
             "clave": "IMSS-109-08",
             "seccion": "4.2.4.2 Tratamiento Farmacológico",
             "pagina": 24,
-            "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+            "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
           }
         ]
       },
@@ -282,7 +297,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "De 6 a 11 meses 100,000 UI"
+          "fragmento": "De 6 a 11 meses 100,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -350,7 +366,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento del Paciente Pediátrico con Sarampión",
       "clave": "IMSS-109-08",
-      "archivo": "109GER.pdf"
+      "archivo": "109GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
     },
     "vineta": "Femenino de 8 meses, aún sin edad para la vacuna triple viral. Su hermano de 5 años fue diagnosticado con sarampión hace 12 días. Presenta fiebre de 38.9 °C desde hace 3 días, rinorrea, conjuntivitis y tos, y hoy exantema maculopapular en cara y cuello. Hidratada, sin dificultad respiratoria, SpO2 96 %, sin diarrea. Peso en percentil 50. Es valorada en su unidad de medicina familiar.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -370,7 +387,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "De 6 a 11 meses 100,000 UI"
+          "fragmento": "De 6 a 11 meses 100,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -380,7 +398,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
           "pagina": 25,
-          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+          "fragmento": "Niños menores de un año de edad, sin complicaciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       }
     ],
@@ -403,7 +422,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "De 6 a 11 meses 100,000 UI"
+          "fragmento": "De 6 a 11 meses 100,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -424,7 +444,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "Menor 6 meses 50,000 UI"
+          "fragmento": "Menor 6 meses 50,000 UI",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -445,7 +466,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.3 Criterios de Referencia a Segundo Nivel",
           "pagina": 25,
-          "fragmento": "Niños menores de un año de edad, sin complicaciones"
+          "fragmento": "Niños menores de un año de edad, sin complicaciones",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       },
       {
@@ -466,7 +488,8 @@
           "clave": "IMSS-109-08",
           "seccion": "4.2.4.2 Tratamiento Farmacológico",
           "pagina": 24,
-          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión"
+          "fragmento": "El uso profiláctico de antibióticos no es útil en el manejo del sarampión",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/109GER.pdf"
         }
       }
     ],

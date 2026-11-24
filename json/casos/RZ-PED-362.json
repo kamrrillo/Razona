@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
       "clave": "GPC-IMSS-362-18",
-      "archivo": "362GER.pdf"
+      "archivo": "362GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
     },
     "vineta": "Recién nacido masculino de 32 semanas de gestación, peso al nacer 1,650 g, Apgar 8/9. Tiene 10 horas de vida, está en cuidados intermedios con temperatura estable en incubadora, respira al aire ambiente con SpO2 de 95 % y tolera alimentación por sonda orogástrica. La madre no tuvo control prenatal y no se le realizó determinación de antígeno de superficie de hepatitis B (HBsAg).",
     "pregunta": "En relación con la vacunación, ¿cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "todos los niños, independientemente de la edad"
+          "fragmento": "todos los niños, independientemente de la edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "primeras 12 horas de vida también deben recibir la"
+          "fragmento": "primeras 12 horas de vida también deben recibir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "todos los niños, independientemente de la edad"
+          "fragmento": "todos los niños, independientemente de la edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "primeras 12 horas de vida también deben recibir la"
+          "fragmento": "primeras 12 horas de vida también deben recibir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "todos los niños, independientemente de la edad"
+          "fragmento": "todos los niños, independientemente de la edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "primeras 12 horas de vida también deben recibir la"
+          "fragmento": "primeras 12 horas de vida también deben recibir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "GPC-IMSS-362-18",
             "seccion": "2.3 Tamizaje y Vacunación",
             "pagina": 44,
-            "fragmento": "riesgo de transmisión de infección aumenta al 90%"
+            "fragmento": "riesgo de transmisión de infección aumenta al 90%",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
           },
           {
             "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
             "clave": "GPC-IMSS-362-18",
             "seccion": "2.3 Tamizaje y Vacunación",
             "pagina": 44,
-            "fragmento": "primeras 12 horas de vida también deben recibir la"
+            "fragmento": "primeras 12 horas de vida también deben recibir la",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
           },
           {
             "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
             "clave": "GPC-IMSS-362-18",
             "seccion": "2.3 Tamizaje y Vacunación",
             "pagina": 44,
-            "fragmento": "todos los niños, independientemente de la edad"
+            "fragmento": "todos los niños, independientemente de la edad",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
           },
           {
             "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
             "clave": "GPC-IMSS-362-18",
             "seccion": "2.3 Tamizaje y Vacunación",
             "pagina": 44,
-            "fragmento": "los 2000 gr de peso o > 34 SDG"
+            "fragmento": "los 2000 gr de peso o > 34 SDG",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
           }
         ]
       },
@@ -281,7 +295,8 @@
     "gpc_base": {
       "guia": "Cuidados del Recién Nacido Prematuro Sano Hospitalizado",
       "clave": "GPC-IMSS-362-18",
-      "archivo": "362GER.pdf"
+      "archivo": "362GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
     },
     "vineta": "Recién nacida de 30 semanas de gestación, peso al nacer 1,300 g, que recibió la vacuna de hepatitis B al nacimiento. Hoy tiene 5 semanas de vida (35 semanas de edad corregida), pesa 2,050 g, regula temperatura en cuna, respira al aire ambiente y se alimenta por succión. Se planea su egreso en los próximos días. Aún no ha recibido BCG.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la vacuna BCG?",
@@ -301,7 +316,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -311,7 +327,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de"
+          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       }
     ],
@@ -334,7 +351,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -355,7 +373,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -376,7 +395,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de"
+          "fragmento": "inmunización con BCG a las 34 SDG y >2000 gr de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       },
       {
@@ -397,7 +417,8 @@
           "clave": "GPC-IMSS-362-18",
           "seccion": "2.3 Tamizaje y Vacunación",
           "pagina": 44,
-          "fragmento": "los 2000 gr de peso o > 34 SDG"
+          "fragmento": "los 2000 gr de peso o > 34 SDG",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/362GER.pdf"
         }
       }
     ],

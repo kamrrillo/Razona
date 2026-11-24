@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Otitis Media Aguda en la Edad Pediátrica",
       "clave": "IMSS-496-11",
-      "archivo": "496GER.pdf"
+      "archivo": "496GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
     },
     "vineta": "Masculino de 5 meses, peso 7 kg, sin alergias conocidas y sin antibióticos en los últimos 3 meses. Desde ayer presenta fiebre de 38.5 °C, irritabilidad, rechazo parcial al pecho y se jala la oreja derecha. Antecedente de rinorrea de 4 días. A la otoscopia: membrana timpánica derecha eritematosa, abombada y con movilidad disminuida. Resto de la exploración normal.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 23,
-          "fragmento": "Se recomienda utilizar de primera elección amoxicilina a"
+          "fragmento": "Se recomienda utilizar de primera elección amoxicilina a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA"
+          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "alternativas terapéuticas en OMA por su adecuada"
+          "fragmento": "alternativas terapéuticas en OMA por su adecuada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -83,7 +87,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA"
+          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -104,7 +109,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "sulfametoxazol para el tratamiento de la OMA"
+          "fragmento": "sulfametoxazol para el tratamiento de la OMA",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -125,7 +131,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "En pacientes con enfermedad grave (otalgia moderada"
+          "fragmento": "En pacientes con enfermedad grave (otalgia moderada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       }
     ],
@@ -151,7 +158,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA"
+          "fragmento": "menores de 6 meses con diagnóstico clínico de OMA",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "resistencia para Streptococcus pneumoniae entre 30 y"
+          "fragmento": "resistencia para Streptococcus pneumoniae entre 30 y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "En pacientes con enfermedad grave (otalgia moderada"
+          "fragmento": "En pacientes con enfermedad grave (otalgia moderada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-496-11",
             "seccion": "4.4.1 Tratamiento Antimicrobiano",
             "pagina": 24,
-            "fragmento": "menores de 6 meses con diagnóstico clínico de OMA"
+            "fragmento": "menores de 6 meses con diagnóstico clínico de OMA",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Otitis Media Aguda en la Edad Pediátrica",
             "clave": "IMSS-496-11",
             "seccion": "4.4.1 Tratamiento Antimicrobiano",
             "pagina": 24,
-            "fragmento": "En pacientes con enfermedad grave (otalgia moderada"
+            "fragmento": "En pacientes con enfermedad grave (otalgia moderada",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Otitis Media Aguda en la Edad Pediátrica",
             "clave": "IMSS-496-11",
             "seccion": "4.4.1 Tratamiento Antimicrobiano",
             "pagina": 23,
-            "fragmento": "Se recomienda utilizar de primera elección amoxicilina a"
+            "fragmento": "Se recomienda utilizar de primera elección amoxicilina a",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Otitis Media Aguda en la Edad Pediátrica",
             "clave": "IMSS-496-11",
             "seccion": "4.4.1 Tratamiento Antimicrobiano",
             "pagina": 24,
-            "fragmento": "En caso de falla terapéutica con amoxicilina a las 72"
+            "fragmento": "En caso de falla terapéutica con amoxicilina a las 72",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
           }
         ]
       },
@@ -299,7 +313,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Otitis Media Aguda en la Edad Pediátrica",
       "clave": "IMSS-496-11",
-      "archivo": "496GER.pdf"
+      "archivo": "496GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
     },
     "vineta": "Femenino de 4 años, peso 16 kg, sin alergias. Hace 72 horas se diagnosticó otitis media aguda izquierda y se inició amoxicilina 85 mg/kg/día, que la madre ha administrado de forma correcta. Persiste con fiebre de 38.8 °C y otalgia; la otoscopia muestra la membrana timpánica izquierda abombada y eritematosa. Sin otorrea, sin signos meníngeos ni datos de mastoiditis.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -319,7 +334,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "En caso de falla terapéutica con amoxicilina a las 72"
+          "fragmento": "En caso de falla terapéutica con amoxicilina a las 72",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -329,7 +345,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 23,
-          "fragmento": "productoras de betalactamasas. Por lo que es"
+          "fragmento": "productoras de betalactamasas. Por lo que es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       }
     ],
@@ -352,7 +369,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "En caso de falla terapéutica con amoxicilina a las 72"
+          "fragmento": "En caso de falla terapéutica con amoxicilina a las 72",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -372,7 +390,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "sulfametoxazol para el tratamiento de la OMA"
+          "fragmento": "sulfametoxazol para el tratamiento de la OMA",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -393,7 +412,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 24,
-          "fragmento": "alternativas terapéuticas en OMA por su adecuada"
+          "fragmento": "alternativas terapéuticas en OMA por su adecuada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       },
       {
@@ -414,7 +434,8 @@
           "clave": "IMSS-496-11",
           "seccion": "4.4.1 Tratamiento Antimicrobiano",
           "pagina": 23,
-          "fragmento": "productoras de betalactamasas. Por lo que es"
+          "fragmento": "productoras de betalactamasas. Por lo que es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/496GER.pdf"
         }
       }
     ],

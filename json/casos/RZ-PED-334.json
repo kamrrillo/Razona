@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
       "clave": "IMSS-334-09",
-      "archivo": "334GER.pdf"
+      "archivo": "334GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
     },
     "vineta": "Masculino de 4 años, con esquema de vacunación incompleto (no recibió vacuna contra Haemophilus influenzae tipo b). Inicia hace 6 horas con fiebre de 39.8 °C, odinofagia intensa y dificultad para deglutir. Llega a urgencias de segundo nivel sentado en brazos de su madre, inclinado hacia adelante con el cuello extendido, babeando y con voz apagada. Presenta estridor inspiratorio, FR de 36 rpm, ansiedad marcada y SpO2 de 93 %. Sin tos.",
     "pregunta": "¿Cuál es la conducta inicial más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
           "pagina": 28,
-          "fragmento": "prescindir de la visualización directa"
+          "fragmento": "prescindir de la visualización directa",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 38,
-          "fragmento": "infecciosa es la estabilización de la vía"
+          "fragmento": "infecciosa es la estabilización de la vía",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       }
     ],
@@ -62,7 +65,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.3.1 Diagnóstico Clínico y Diagnóstico Diferencial",
           "pagina": 17,
-          "fragmento": "Blackstock describió las 4"
+          "fragmento": "Blackstock describió las 4",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -83,7 +87,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
           "pagina": 28,
-          "fragmento": "adopción de una posición libremente"
+          "fragmento": "adopción de una posición libremente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -104,7 +109,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
           "pagina": 28,
-          "fragmento": "con abate lenguas"
+          "fragmento": "con abate lenguas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -125,7 +131,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "betalactamasa debe ser iniciado tan"
+          "fragmento": "betalactamasa debe ser iniciado tan",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       }
     ],
@@ -151,7 +158,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.3.1 Diagnóstico Clínico y Diagnóstico Diferencial",
           "pagina": 17,
-          "fragmento": "Blackstock describió las 4"
+          "fragmento": "Blackstock describió las 4",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -171,7 +179,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
           "pagina": 28,
-          "fragmento": "evitar ansiedad e incremento de la dificultad respiratoria"
+          "fragmento": "evitar ansiedad e incremento de la dificultad respiratoria",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -191,7 +200,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.3.2 Pruebas Diagnósticas",
           "pagina": 25,
-          "fragmento": "no se recomienda la realización de la radiografía lateral de"
+          "fragmento": "no se recomienda la realización de la radiografía lateral de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -211,28 +221,32 @@
             "clave": "IMSS-334-09",
             "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
             "pagina": 28,
-            "fragmento": "prescindir de la visualización directa"
+            "fragmento": "prescindir de la visualización directa",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
             "clave": "IMSS-334-09",
             "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
             "pagina": 32,
-            "fragmento": "laringoscopia e intubación de urgencia. Si esta no es posible, se realiza cricotirotomía urgente"
+            "fragmento": "laringoscopia e intubación de urgencia. Si esta no es posible, se realiza cricotirotomía urgente",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
             "clave": "IMSS-334-09",
             "seccion": "4.4.2 Tratamiento Inicial y no Farmacológico",
             "pagina": 32,
-            "fragmento": "traslado inmediato a quirófano con el material de vía aérea necesario"
+            "fragmento": "traslado inmediato a quirófano con el material de vía aérea necesario",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
             "clave": "IMSS-334-09",
             "seccion": "4.4.1 Tratamiento Farmacológico",
             "pagina": 39,
-            "fragmento": "betalactamasa debe ser iniciado tan pronto como se asegure la vía aérea"
+            "fragmento": "betalactamasa debe ser iniciado tan pronto como se asegure la vía aérea",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
           }
         ]
       },
@@ -303,7 +317,8 @@
     "gpc_base": {
       "guia": "Diagnóstico, Tratamiento y Prevención de la Epiglotitis Aguda en Edad Preescolar y Escolar",
       "clave": "IMSS-334-09",
-      "archivo": "334GER.pdf"
+      "archivo": "334GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
     },
     "vineta": "Femenino de 5 años, peso 18 kg, con epiglotitis aguda. Fue intubada en quirófano por anestesiología bajo anestesia inhalatoria; se tomó muestra supraglótica para cultivo y hemocultivo. Está en la unidad de cuidados intensivos pediátricos con vía aérea asegurada, hemodinámicamente estable, con acceso venoso. No tiene alergias conocidas.",
     "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
@@ -323,7 +338,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "segunda o tercera generación durante"
+          "fragmento": "segunda o tercera generación durante",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -333,7 +349,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "betalactamasa debe ser iniciado tan"
+          "fragmento": "betalactamasa debe ser iniciado tan",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       }
     ],
@@ -356,7 +373,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "intravenosos de amplio espectro"
+          "fragmento": "intravenosos de amplio espectro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -377,7 +395,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "betalactamasa debe ser iniciado tan"
+          "fragmento": "betalactamasa debe ser iniciado tan",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -398,7 +417,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "un periodo de 7 a 10 días"
+          "fragmento": "un periodo de 7 a 10 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       },
       {
@@ -419,7 +439,8 @@
           "clave": "IMSS-334-09",
           "seccion": "4.4.1 Tratamiento Farmacológico",
           "pagina": 39,
-          "fragmento": "Las alternativas terapéuticas son:"
+          "fragmento": "Las alternativas terapéuticas son:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/334GER.pdf"
         }
       }
     ],

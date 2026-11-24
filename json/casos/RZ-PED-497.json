@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
       "clave": "IMSS-497-11",
-      "archivo": "497GER.pdf"
+      "archivo": "497GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
     },
     "vineta": "Masculino de 7 meses con tetralogía de Fallot diagnosticada por ecocardiograma, en espera de cirugía, con SpO2 habitual de 85 %. Hoy, después de llorar de forma sostenida durante una toma de muestra en otro servicio, presenta cianosis intensa, taquipnea, irritabilidad y disminución del soplo. Llega a urgencias en brazos de su madre con SpO2 de 62 %. Sin fiebre.",
     "pregunta": "¿Cuáles son las medidas iniciales más adecuadas?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 15,
-          "fragmento": "oxigeno por mascarilla, evitar punciones de primera"
+          "fragmento": "oxigeno por mascarilla, evitar punciones de primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 15,
-          "fragmento": "Sostenerlo por los brazos y colocándolo en posición de"
+          "fragmento": "Sostenerlo por los brazos y colocándolo en posición de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Son frecuentemente precipitados en la toma o"
+          "fragmento": "Son frecuentemente precipitados en la toma o",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 15,
-          "fragmento": "oxigeno por mascarilla, evitar punciones de primera"
+          "fragmento": "oxigeno por mascarilla, evitar punciones de primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Son frecuentemente precipitados en la toma o"
+          "fragmento": "Son frecuentemente precipitados en la toma o",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 15,
-          "fragmento": "estimulación simpática del infundíbulo incrementando"
+          "fragmento": "estimulación simpática del infundíbulo incrementando",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -208,28 +218,32 @@
             "clave": "IMSS-497-11",
             "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
             "pagina": 15,
-            "fragmento": "Sostenerlo por los brazos y colocándolo en posición de"
+            "fragmento": "Sostenerlo por los brazos y colocándolo en posición de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
           },
           {
             "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
             "clave": "IMSS-497-11",
             "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
             "pagina": 15,
-            "fragmento": "oxigeno por mascarilla, evitar punciones de primera"
+            "fragmento": "oxigeno por mascarilla, evitar punciones de primera",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
           },
           {
             "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
             "clave": "IMSS-497-11",
             "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
             "pagina": 16,
-            "fragmento": "La administración deberá ser lenta y en bolos a"
+            "fragmento": "La administración deberá ser lenta y en bolos a",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
           },
           {
             "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
             "clave": "IMSS-497-11",
             "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
             "pagina": 15,
-            "fragmento": "colocar vía venosa permeable para la administración de"
+            "fragmento": "colocar vía venosa permeable para la administración de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
           }
         ]
       },
@@ -298,7 +312,8 @@
     "gpc_base": {
       "guia": "Tratamiento de la Tetralogía de Fallot en Edad Pediátrica",
       "clave": "IMSS-497-11",
-      "archivo": "497GER.pdf"
+      "archivo": "497GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
     },
     "vineta": "Femenino de 4 meses, peso 6 kg, con tetralogía de Fallot. Ingresó a urgencias por crisis de hipoxia; se le calmó en brazos de su madre, se colocó en posición genupectoral y recibe oxígeno por mascarilla desde hace 10 minutos, pero persiste con cianosis intensa, taquipnea, irritabilidad y SpO2 de 58 %. Tiene vía venosa periférica permeable colocada por personal experto.",
     "pregunta": "¿Cuál es el siguiente paso más adecuado?",
@@ -318,7 +333,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 15,
-          "fragmento": "La administración inicial de oxígeno y morfina se"
+          "fragmento": "La administración inicial de oxígeno y morfina se",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -328,7 +344,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 16,
-          "fragmento": "0.05 – 0.2mg /kg dosis IV /IM"
+          "fragmento": "0.05 – 0.2mg /kg dosis IV /IM",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       }
     ],
@@ -351,7 +368,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -372,7 +390,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 16,
-          "fragmento": "0.05 – 0.2mg /kg dosis IV /IM"
+          "fragmento": "0.05 – 0.2mg /kg dosis IV /IM",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -393,7 +412,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 16,
-          "fragmento": "mayor de depresión respiratoria, por lo que posterior a"
+          "fragmento": "mayor de depresión respiratoria, por lo que posterior a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       },
       {
@@ -413,7 +433,8 @@
           "clave": "IMSS-497-11",
           "seccion": "4.1 Crisis de hipoxia en pacientes con TF",
           "pagina": 14,
-          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de"
+          "fragmento": "Medicamentos: inotrópicos-digitálicos, inhibidores de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/497GER.pdf"
         }
       }
     ],

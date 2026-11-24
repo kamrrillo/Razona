@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
       "clave": "IMSS-275-10",
-      "archivo": "275GER.pdf"
+      "archivo": "275GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
     },
     "vineta": "Recién nacido masculino de término, 6 horas de vida, peso 3,100 g. En la exploración sistematizada no se identifica orificio anal; hay pliegue interglúteo y foseta anal visibles. No se observa meconio en periné ni en la orina. Abdomen blando, sin distensión. Rafé escrotal normal, testículos en bolsa. Signos vitales normales y succión adecuada. Se encuentra en ayuno con soluciones intravenosas.",
     "pregunta": "¿Cuál es la conducta diagnóstica más adecuada en este momento?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
-          "fragmento": "evolución dentro de las 24horas de VEU son"
+          "fragmento": "evolución dentro de las 24horas de VEU son",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
-          "fragmento": "en el periné hasta las 16 a 24 horas"
+          "fragmento": "en el periné hasta las 16 a 24 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 17,
-          "fragmento": "fístula recto-vestibular"
+          "fragmento": "fístula recto-vestibular",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 18,
-          "fragmento": "fístula recto perineal; sin embargo su ausencia"
+          "fragmento": "fístula recto perineal; sin embargo su ausencia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "reportado una sensibilidad del 27%;"
+          "fragmento": "reportado una sensibilidad del 27%;",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "recto urogenitales, ni fondo de saco intestinal"
+          "fragmento": "recto urogenitales, ni fondo de saco intestinal",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
-          "fragmento": "en el periné hasta las 16 a 24 horas"
+          "fragmento": "en el periné hasta las 16 a 24 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 17,
-          "fragmento": "fístula recto-uretro prostática"
+          "fragmento": "fístula recto-uretro prostática",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 18,
-          "fragmento": "considerar que el diagnóstico de MAR es"
+          "fragmento": "considerar que el diagnóstico de MAR es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -209,21 +219,24 @@
             "clave": "IMSS-275-10",
             "seccion": "4.2 Diagnóstico",
             "pagina": 19,
-            "fragmento": "Ante un cuadro clínico típico con presencia de fístula"
+            "fragmento": "Ante un cuadro clínico típico con presencia de fístula",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
             "clave": "IMSS-275-10",
             "seccion": "4.2 Diagnóstico",
             "pagina": 19,
-            "fragmento": "evolución dentro de las 24horas de VEU son"
+            "fragmento": "evolución dentro de las 24horas de VEU son",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
             "clave": "IMSS-275-10",
             "seccion": "4.2.1 Pruebas Diagnósticas",
             "pagina": 21,
-            "fragmento": "localización de la MAR en las primeras 24 horas, está"
+            "fragmento": "localización de la MAR en las primeras 24 horas, está",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
           }
         ]
       },
@@ -279,7 +292,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR"
+          "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -329,7 +343,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Malformación Ano rectal en el Periodo Neonatal",
       "clave": "IMSS-275-10",
-      "archivo": "275GER.pdf"
+      "archivo": "275GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
     },
     "vineta": "Recién nacida de término, 30 horas de vida. No tiene orificio anal en la posición habitual; en el periné, por delante de la foseta anal y fuera del complejo esfinteriano, se observa un pequeño orificio por el que sale meconio. Genitales femeninos normales con uretra y vagina independientes. Abdomen discretamente distendido, tolera ayuno. Sin otras malformaciones evidentes a la exploración.",
     "pregunta": "Para establecer el tipo de malformación anorrectal, ¿cuál es la conducta más adecuada?",
@@ -349,7 +364,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
-          "fragmento": "Ante un cuadro clínico típico con presencia de fístula"
+          "fragmento": "Ante un cuadro clínico típico con presencia de fístula",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -359,7 +375,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 18,
-          "fragmento": "física de la región perianal provee información"
+          "fragmento": "física de la región perianal provee información",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       }
     ],
@@ -381,7 +398,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "reportado una sensibilidad del 27%;"
+          "fragmento": "reportado una sensibilidad del 27%;",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -402,7 +420,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR"
+          "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -423,7 +442,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
-          "fragmento": "Ante un cuadro clínico típico con presencia de fístula"
+          "fragmento": "Ante un cuadro clínico típico con presencia de fístula",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       },
       {
@@ -444,7 +464,8 @@
           "clave": "IMSS-275-10",
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "recto urogenitales, ni fondo de saco intestinal"
+          "fragmento": "recto urogenitales, ni fondo de saco intestinal",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf"
         }
       }
     ],

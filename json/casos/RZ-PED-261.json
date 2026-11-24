@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
       "clave": "IMSS-261-10",
-      "archivo": "261GER.pdf"
+      "archivo": "261GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
     },
     "vineta": "Femenino de 6 años, peso 20 kg, cursa primer año de primaria. Presenta rinorrea mucopurulenta, obstrucción nasal y tos diurna desde hace 12 días, sin ninguna mejoría. Temperatura máxima de 37.8 °C. No ha recibido antibióticos en el último año y no tiene enfermedades crónicas. A la exploración: descarga posterior purulenta, sin edema periorbitario, sin alteraciones neurológicas ni oculares. Sin alergia a la penicilina.",
     "pregunta": "¿Cuál es el manejo más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 30,
-          "fragmento": "antes de los 10 días de evolución, a"
+          "fragmento": "antes de los 10 días de evolución, a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 32,
-          "fragmento": "clavulanato 45 MG/Kg./día en"
+          "fragmento": "clavulanato 45 MG/Kg./día en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
           "pagina": 14,
-          "fragmento": "niños que acuden a guarderías"
+          "fragmento": "niños que acuden a guarderías",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       }
     ],
@@ -72,7 +76,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 30,
-          "fragmento": "antes de los 10 días de evolución, a"
+          "fragmento": "antes de los 10 días de evolución, a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -94,7 +99,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
           "pagina": 14,
-          "fragmento": "niños que acuden a guarderías"
+          "fragmento": "niños que acuden a guarderías",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -116,7 +122,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.3 Pruebas Diagnósticas",
           "pagina": 28,
-          "fragmento": "No se recomiendan las radiografías simples"
+          "fragmento": "No se recomiendan las radiografías simples",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -138,7 +145,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 31,
-          "fragmento": "incrementa el riesgo de portadores"
+          "fragmento": "incrementa el riesgo de portadores",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       }
     ],
@@ -164,7 +172,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 30,
-          "fragmento": "antes de los 10 días de evolución, a"
+          "fragmento": "antes de los 10 días de evolución, a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -183,7 +192,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
           "pagina": 14,
-          "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+          "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -202,7 +212,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 31,
-          "fragmento": "incrementa el riesgo de portadores asintomáticos de cepas resistentes"
+          "fragmento": "incrementa el riesgo de portadores asintomáticos de cepas resistentes",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -222,28 +233,32 @@
             "clave": "IMSS-261-10",
             "seccion": "4.2 Tratamiento Farmacológico",
             "pagina": 30,
-            "fragmento": "antes de los 10 días de evolución, a"
+            "fragmento": "antes de los 10 días de evolución, a",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
             "clave": "IMSS-261-10",
             "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
             "pagina": 14,
-            "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas"
+            "fragmento": "cepas resistentes ó colonización nasofaríngea por cepas invasivas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
             "clave": "IMSS-261-10",
             "seccion": "4.2 Tratamiento Farmacológico",
             "pagina": 32,
-            "fragmento": "clavulanato 45 MG/Kg./día en dos dosis por 10 a 14 días"
+            "fragmento": "clavulanato 45 MG/Kg./día en dos dosis por 10 a 14 días",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
             "clave": "IMSS-261-10",
             "seccion": "4.2 Tratamiento Farmacológico",
             "pagina": 33,
-            "fragmento": "aguda bacteriana de alto riesgo,"
+            "fragmento": "aguda bacteriana de alto riesgo,",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
           }
         ]
       },
@@ -294,7 +309,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Rinosinusitis Aguda en la Edad Pediátrica",
       "clave": "IMSS-261-10",
-      "archivo": "261GER.pdf"
+      "archivo": "261GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
     },
     "vineta": "Masculino de 3 años, peso 15 kg, que asiste a guardería. Hace 3 semanas recibió amoxicilina por otitis media aguda. Desde hace 11 días presenta rinorrea purulenta, tos de predominio nocturno y halitosis, sin mejoría. Temperatura 38 °C. Sin edema palpebral, sin cefalea intensa ni alteración del estado de alerta. Sin alergia a la penicilina.",
     "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
@@ -314,7 +330,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 33,
-          "fragmento": "aguda bacteriana de alto riesgo,"
+          "fragmento": "aguda bacteriana de alto riesgo,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -324,7 +341,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
           "pagina": 14,
-          "fragmento": "con manejo previo con antibiótico"
+          "fragmento": "con manejo previo con antibiótico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       }
     ],
@@ -347,7 +365,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.2 Epidemiología y Factores de Riesgo",
           "pagina": 14,
-          "fragmento": "con manejo previo con antibiótico"
+          "fragmento": "con manejo previo con antibiótico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -368,7 +387,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 33,
-          "fragmento": "o cefdinir (cuadro 2)"
+          "fragmento": "o cefdinir (cuadro 2)",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -389,7 +409,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.1.3 Pruebas Diagnósticas",
           "pagina": 29,
-          "fragmento": "No se recomienda utilizar de rutina TC de"
+          "fragmento": "No se recomienda utilizar de rutina TC de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       },
       {
@@ -410,7 +431,8 @@
           "clave": "IMSS-261-10",
           "seccion": "4.2 Tratamiento Farmacológico",
           "pagina": 30,
-          "fragmento": "antimicrobiano ante la sospecha de"
+          "fragmento": "antimicrobiano ante la sospecha de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/261GER.pdf"
         }
       }
     ],

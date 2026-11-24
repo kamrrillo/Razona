@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
       "clave": "IMSS-418-11",
-      "archivo": "418GER.pdf"
+      "archivo": "418GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
     },
     "vineta": "Recién nacido femenino de 29 semanas de gestación, peso 1,150 g, con 30 horas de vida. Se encuentra en CPAP nasal con FiO2 de 25 %, tiene catéter venoso umbilical y recibe nutrición parenteral. Está hemodinámicamente estable, sin datos de sepsis, con abdomen blando y sin distensión. La madre se extrae leche y ya llevó calostro a la unidad.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la alimentación enteral?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
           "pagina": 13,
-          "fragmento": "inicie la vía oral en las primeras 48 horas de vida"
+          "fragmento": "inicie la vía oral en las primeras 48 horas de vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
           "pagina": 15,
-          "fragmento": "Se recomienda iniciar la alimentación enteral con"
+          "fragmento": "Se recomienda iniciar la alimentación enteral con",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
           "pagina": 13,
-          "fragmento": "inicie la vía oral en las primeras 48 horas de vida"
+          "fragmento": "inicie la vía oral en las primeras 48 horas de vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
           "pagina": 15,
-          "fragmento": "semanas. En caso de no disponer de ella, se puede"
+          "fragmento": "semanas. En caso de no disponer de ella, se puede",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
           "pagina": 14,
-          "fragmento": "extrauterina no está contraindicado en las siguientes"
+          "fragmento": "extrauterina no está contraindicado en las siguientes",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -125,7 +131,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
           "pagina": 15,
-          "fragmento": "Ni las formulas maternizadas diluidas ni las"
+          "fragmento": "Ni las formulas maternizadas diluidas ni las",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
           "pagina": 14,
-          "fragmento": "extrauterina no está contraindicado en las siguientes"
+          "fragmento": "extrauterina no está contraindicado en las siguientes",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
           "pagina": 15,
-          "fragmento": "Se recomienda iniciar la alimentación enteral con"
+          "fragmento": "Se recomienda iniciar la alimentación enteral con",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
           "pagina": 15,
-          "fragmento": "Ni las formulas maternizadas diluidas ni las"
+          "fragmento": "Ni las formulas maternizadas diluidas ni las",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -210,28 +220,32 @@
             "clave": "IMSS-418-11",
             "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
             "pagina": 13,
-            "fragmento": "inicie la vía oral en las primeras 48 horas de vida"
+            "fragmento": "inicie la vía oral en las primeras 48 horas de vida",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
           },
           {
             "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
             "clave": "IMSS-418-11",
             "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
             "pagina": 14,
-            "fragmento": "En caso de sepsis o de asfixia documentada se"
+            "fragmento": "En caso de sepsis o de asfixia documentada se",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
           },
           {
             "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
             "clave": "IMSS-418-11",
             "seccion": "4.1 Edad de Inicio de la Alimentación Enteral",
             "pagina": 14,
-            "fragmento": "extrauterina no está contraindicado en las siguientes"
+            "fragmento": "extrauterina no está contraindicado en las siguientes",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
           },
           {
             "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
             "clave": "IMSS-418-11",
             "seccion": "4.2 Tipo de Leche para Iniciar la Alimentación Enteral",
             "pagina": 15,
-            "fragmento": "Se recomienda iniciar la alimentación enteral con"
+            "fragmento": "Se recomienda iniciar la alimentación enteral con",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
           }
         ]
       },
@@ -282,7 +296,8 @@
     "gpc_base": {
       "guia": "Alimentación Enteral del Recién Nacido Prematuro Menor o Igual a 32 Semanas de Edad Gestacional",
       "clave": "IMSS-418-11",
-      "archivo": "418GER.pdf"
+      "archivo": "418GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
     },
     "vineta": "Recién nacido masculino de 31 semanas de gestación, peso 1,500 g, con 3 días de vida. Ha tolerado alimentación enteral mínima con leche materna, sin residuo gástrico significativo, evacuaciones presentes y abdomen blando. Respira al aire ambiente y está estable. El equipo decide avanzar la alimentación enteral.",
     "pregunta": "¿Cuál es el esquema más adecuado para iniciar e incrementar la alimentación enteral?",
@@ -302,7 +317,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral",
           "pagina": 19,
-          "fragmento": "de 10 a 20 ml/kg/día (ver anexo 5.3, cuadro I)"
+          "fragmento": "de 10 a 20 ml/kg/día (ver anexo 5.3, cuadro I)",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -312,7 +328,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral",
           "pagina": 19,
-          "fragmento": "10 a 35 ml/kg/día se considera seguro"
+          "fragmento": "10 a 35 ml/kg/día se considera seguro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       }
     ],
@@ -335,7 +352,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.6 Indicaciones de los Suplementos y Fortificadores de la Alimentación Enteral",
           "pagina": 24,
-          "fragmento": "tolerancia enteral de 100 ml/kg/día"
+          "fragmento": "tolerancia enteral de 100 ml/kg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -356,7 +374,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral",
           "pagina": 19,
-          "fragmento": "10 a 35 ml/kg/día se considera seguro"
+          "fragmento": "10 a 35 ml/kg/día se considera seguro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -377,7 +396,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral",
           "pagina": 19,
-          "fragmento": "significativo en cuanto a enterocolitis necrosante ni"
+          "fragmento": "significativo en cuanto a enterocolitis necrosante ni",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       },
       {
@@ -397,7 +417,8 @@
           "clave": "IMSS-418-11",
           "seccion": "4.4 Volumen para Iniciar e Incrementar la Alimentación Enteral",
           "pagina": 19,
-          "fragmento": "alimentación a libre demanda en los recién nacidos"
+          "fragmento": "alimentación a libre demanda en los recién nacidos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/418GER.pdf"
         }
       }
     ],

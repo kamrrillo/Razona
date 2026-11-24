@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
       "clave": "IMSS-724-14",
-      "archivo": "724GER.pdf"
+      "archivo": "724GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
     },
     "vineta": "Recién nacido masculino de 30 semanas de gestación, peso 1,300 g, con 3 días de vida, en incubadora con temperatura estable. El monitor registra varias pausas respiratorias de 25 segundos, acompañadas de bradicardia de 80 lpm, que ceden con estimulación táctil. Glucosa, electrolitos, hemograma y PCR normales; hemocultivo en proceso sin datos clínicos de sepsis. La unidad cuenta con citrato de cafeína.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.3.2 Cafeína",
           "pagina": 24,
-          "fragmento": "Dosis de impregnación de 20mg/kg de peso (10"
+          "fragmento": "Dosis de impregnación de 20mg/kg de peso (10",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
-          "fragmento": "Ausencia de respiración por más de 20 segundos"
+          "fragmento": "Ausencia de respiración por más de 20 segundos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.3.1 Metilxantinas",
           "pagina": 23,
-          "fragmento": "Las metilxantinas son los medicamento de elección"
+          "fragmento": "Las metilxantinas son los medicamento de elección",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
-          "fragmento": "Ausencia de respiración por más de 20 segundos"
+          "fragmento": "Ausencia de respiración por más de 20 segundos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.3.2 Cafeína",
           "pagina": 24,
-          "fragmento": "En las unidades que cuenten con citrato de cafeína"
+          "fragmento": "En las unidades que cuenten con citrato de cafeína",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -112,7 +118,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.4.1 Doxapram",
           "pagina": 28,
-          "fragmento": "El doxapram actúa sobre quimiorreceptores periféricos"
+          "fragmento": "El doxapram actúa sobre quimiorreceptores periféricos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -133,7 +140,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.1.3 Estimulación sensorial",
           "pagina": 20,
-          "fragmento": "estimulación kinestésica como tratamiento de apnea"
+          "fragmento": "estimulación kinestésica como tratamiento de apnea",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       }
     ],
@@ -158,7 +166,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.1.3.1 Detección y Vigilancia Contínua de Eventos de Apnea",
           "pagina": 13,
-          "fragmento": "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis"
+          "fragmento": "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.3.2 Cafeína",
           "pagina": 23,
-          "fragmento": "terapéutico es más alto, la absorción enteral más fiable y la vida media más larga permiten"
+          "fragmento": "terapéutico es más alto, la absorción enteral más fiable y la vida media más larga permiten",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.4.1 Doxapram",
           "pagina": 28,
-          "fragmento": "No se han medido resultados a largo plazo. Se necesitan estudios adicionales para determinar el rol"
+          "fragmento": "No se han medido resultados a largo plazo. Se necesitan estudios adicionales para determinar el rol",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -217,28 +228,32 @@
             "clave": "IMSS-724-14",
             "seccion": "4.1.3.1 Detección y Vigilancia Contínua de Eventos de Apnea",
             "pagina": 13,
-            "fragmento": "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis"
+            "fragmento": "Ausencia de respiración menor de 20 segundos acompañada de bradicardia o cianosis",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
             "clave": "IMSS-724-14",
             "seccion": "4.1.4 Diagnóstico Diferencial",
             "pagina": 15,
-            "fragmento": "infecciosas, cardiológicas, fisiológicas y metabólicas"
+            "fragmento": "infecciosas, cardiológicas, fisiológicas y metabólicas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
             "clave": "IMSS-724-14",
             "seccion": "4.2.3.3 Aminofilina / Teofilina",
             "pagina": 27,
-            "fragmento": "En caso de no contar con cafeína, se utilizará"
+            "fragmento": "En caso de no contar con cafeína, se utilizará",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
             "clave": "IMSS-724-14",
             "seccion": "4.2.5.2 Ventilación No Invasiva",
             "pagina": 33,
-            "fragmento": "Si a pesar del tratamiento con metilxantinas se"
+            "fragmento": "Si a pesar del tratamiento con metilxantinas se",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
           }
         ]
       },
@@ -289,7 +304,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Apnea del Prematuro",
       "clave": "IMSS-724-14",
-      "archivo": "724GER.pdf"
+      "archivo": "724GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
     },
     "vineta": "Recién nacida de 33 semanas de gestación, peso 1,900 g, con 12 horas de vida. Respira al aire ambiente, sin pausas respiratorias ni bradicardias desde su ingreso. Tolera la alimentación por sonda. El residente propone iniciar cafeína \"para prevenir apneas\" porque es prematura.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -309,7 +325,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
-          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -319,7 +336,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
-          "fragmento": "El recién nacido pretérmino menor de 34 semanas"
+          "fragmento": "El recién nacido pretérmino menor de 34 semanas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       }
     ],
@@ -342,7 +360,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
-          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -362,7 +381,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
-          "fragmento": "profiláctico con metilxantinas para evitar la apnea en"
+          "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -383,7 +403,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.2.1.3 Estimulación sensorial",
           "pagina": 20,
-          "fragmento": "estimulación kinestésica como tratamiento de apnea"
+          "fragmento": "estimulación kinestésica como tratamiento de apnea",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       },
       {
@@ -404,7 +425,8 @@
           "clave": "IMSS-724-14",
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
-          "fragmento": "El recién nacido pretérmino menor de 34 semanas"
+          "fragmento": "El recién nacido pretérmino menor de 34 semanas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf"
         }
       }
     ],

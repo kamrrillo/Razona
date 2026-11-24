@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Deficiencia de Vitamina A en Niños",
       "clave": "IMSS-725-14",
-      "archivo": "725GER.pdf"
+      "archivo": "725GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
     },
     "vineta": "Masculino de 3 años (36 meses), originario de una comunidad rural considerada de alto riesgo de mortalidad infantil por enfermedades diarreicas, con 4 episodios de diarrea en el último año. La madre refiere que \"no ve bien al oscurecer\". A la exploración: placas blanquecinas espumosas en la conjuntiva bulbar temporal de ambos ojos y piel áspera y seca. Peso para la talla en percentil 10. No recibe tratamiento para tuberculosis.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la vitamina A?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "vitamina A vía oral cada 4 a 6"
+          "fragmento": "vitamina A vía oral cada 4 a 6",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "prevalencia de problemas de la visión como la"
+          "fragmento": "prevalencia de problemas de la visión como la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.1.2 Signos y Síntomas",
           "pagina": 14,
-          "fragmento": "Xeroftalmía en todos sus niveles de gravedad"
+          "fragmento": "Xeroftalmía en todos sus niveles de gravedad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Se recomienda administrar vitamina A 200 000"
+          "fragmento": "Se recomienda administrar vitamina A 200 000",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "A, a las dosis para su grupo de edad, ya que la"
+          "fragmento": "A, a las dosis para su grupo de edad, ya que la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -112,7 +118,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "6 meses vitamina A vía oral Dosis única"
+          "fragmento": "6 meses vitamina A vía oral Dosis única",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -133,7 +140,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "5000IU/día por 4 meses"
+          "fragmento": "5000IU/día por 4 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.1.2 Signos y Síntomas",
           "pagina": 14,
-          "fragmento": "Xeroftalmía en todos sus niveles de gravedad"
+          "fragmento": "Xeroftalmía en todos sus niveles de gravedad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "5000IU/día por 4 meses"
+          "fragmento": "5000IU/día por 4 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -198,7 +208,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "edad la suplementación de Vitamina A reduce el"
+          "fragmento": "edad la suplementación de Vitamina A reduce el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -219,21 +230,24 @@
             "clave": "IMSS-725-14",
             "seccion": "4.2 Tratamiento",
             "pagina": 18,
-            "fragmento": "vitamina A vía oral cada 4 a 6"
+            "fragmento": "vitamina A vía oral cada 4 a 6",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Deficiencia de Vitamina A en Niños",
             "clave": "IMSS-725-14",
             "seccion": "4.2 Tratamiento",
             "pagina": 18,
-            "fragmento": "5000IU/día por 4 meses"
+            "fragmento": "5000IU/día por 4 meses",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Deficiencia de Vitamina A en Niños",
             "clave": "IMSS-725-14",
             "seccion": "4.2.1 Tratamiento Nutricional",
             "pagina": 20,
-            "fragmento": "Se prefieren los de origen animal sobre"
+            "fragmento": "Se prefieren los de origen animal sobre",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
           }
         ]
       },
@@ -285,7 +299,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Deficiencia de Vitamina A en Niños",
       "clave": "IMSS-725-14",
-      "archivo": "725GER.pdf"
+      "archivo": "725GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
     },
     "vineta": "Femenino de 8 meses, originaria de un municipio considerado de alto riesgo de mortalidad infantil por enfermedades diarreicas. Acude durante la Semana Nacional de Salud. Está asintomática, con crecimiento en percentil 25, sin alteraciones oculares ni cutáneas, y no ha recibido vitamina A previamente.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -305,7 +320,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Se recomienda administrar 100,000 UI, si"
+          "fragmento": "Se recomienda administrar 100,000 UI, si",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -315,7 +331,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 19,
-          "fragmento": "megadosis de vitamina A en niños de 6 meses a"
+          "fragmento": "megadosis de vitamina A en niños de 6 meses a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       }
     ],
@@ -337,7 +354,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Se recomienda administrar 100,000 UI, si"
+          "fragmento": "Se recomienda administrar 100,000 UI, si",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -357,7 +375,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "6 meses vitamina A vía oral Dosis única"
+          "fragmento": "6 meses vitamina A vía oral Dosis única",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -378,7 +397,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "edad la suplementación de Vitamina A reduce el"
+          "fragmento": "edad la suplementación de Vitamina A reduce el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       },
       {
@@ -398,7 +418,8 @@
           "clave": "IMSS-725-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 18,
-          "fragmento": "5000IU/día por 4 meses"
+          "fragmento": "5000IU/día por 4 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/725GER.pdf"
         }
       }
     ],

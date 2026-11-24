@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
       "clave": "IMSS-062-08",
-      "archivo": "062GER.pdf"
+      "archivo": "062GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
     },
     "vineta": "Masculino de 8 años, peso 24 kg, acude a consulta por odinofagia intensa y fiebre de 38.7 °C de un día de evolución. Niega tos y rinorrea. A la exploración: amígdalas hipertróficas con exudado blanquecino bilateral y adenopatías cervicales anteriores dolorosas a la palpación. Sin esplenomegalia. No tiene antecedente de alergia a penicilina. No se cuenta con prueba rápida ni cultivo en la unidad.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "presencia de tres o más criterios modificados de Centor"
+          "fragmento": "presencia de tres o más criterios modificados de Centor",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis"
+          "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "edad entre 3–14 años"
+          "fragmento": "edad entre 3–14 años",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "Niños > de 27kg"
+          "fragmento": "Niños > de 27kg",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -93,7 +98,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "presencia de tres o más criterios modificados de Centor"
+          "fragmento": "presencia de tres o más criterios modificados de Centor",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -115,7 +121,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "cepas de Streptococcus pyogenes son resistentes a"
+          "fragmento": "cepas de Streptococcus pyogenes son resistentes a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -137,7 +144,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "superiores, que persisten de 10 a 14 días"
+          "fragmento": "superiores, que persisten de 10 a 14 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       }
     ],
@@ -162,7 +170,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis"
+          "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -181,7 +190,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "cepas de Streptococcus pyogenes son resistentes a"
+          "fragmento": "cepas de Streptococcus pyogenes son resistentes a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -200,7 +210,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "superiores, que persisten de 10 a 14 días"
+          "fragmento": "superiores, que persisten de 10 a 14 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -221,28 +232,32 @@
             "clave": "IMSS-062-08",
             "seccion": "4.2 Diagnóstico Clínico",
             "pagina": 20,
-            "fragmento": "presencia de tres o más criterios modificados de Centor"
+            "fragmento": "presencia de tres o más criterios modificados de Centor",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
           },
           {
             "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
             "clave": "IMSS-062-08",
             "seccion": "4.2 Diagnóstico Clínico",
             "pagina": 20,
-            "fragmento": "y a pesar de no disponer de pruebas diagnósticas, no se"
+            "fragmento": "y a pesar de no disponer de pruebas diagnósticas, no se",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
           },
           {
             "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
             "clave": "IMSS-062-08",
             "seccion": "4.6 Tratamiento farmacológico",
             "pagina": 36,
-            "fragmento": "se aconseje acudir a reevaluación, si los síntomas no"
+            "fragmento": "se aconseje acudir a reevaluación, si los síntomas no",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
           },
           {
             "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
             "clave": "IMSS-062-08",
             "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
             "pagina": 37,
-            "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis"
+            "fragmento": "Penicilina G benzatínica: 600,000UI IM dosis",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
           }
         ]
       },
@@ -290,7 +305,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "exudado faríngeo Inflamación amigdalina o"
+          "fragmento": "exudado faríngeo Inflamación amigdalina o",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -358,7 +374,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y manejo de la infección aguda de vías aéreas superiores en pacientes mayores de 3 meses hasta 18 años de edad",
       "clave": "IMSS-062-08",
-      "archivo": "062GER.pdf"
+      "archivo": "062GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
     },
     "vineta": "Femenino de 13 años, peso 45 kg, acude por dolor de garganta, rinorrea hialina, tos seca y ojos rojos de 2 días de evolución. Temperatura 37.8 °C. A la exploración: faringe hiperémica sin exudado, amígdalas sin hipertrofia, sin adenopatías cervicales palpables y sin esplenomegalia. La madre solicita que se le aplique \"la penicilina\" porque su hermano tuvo faringitis estreptocócica el año pasado.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -378,7 +395,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "criterios de Centor entre 0-2, el uso de rutina de la"
+          "fragmento": "criterios de Centor entre 0-2, el uso de rutina de la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -388,7 +406,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.6 Tratamiento farmacológico",
           "pagina": 36,
-          "fragmento": "se aconseje acudir a reevaluación, si los síntomas no"
+          "fragmento": "se aconseje acudir a reevaluación, si los síntomas no",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       }
     ],
@@ -412,7 +431,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "y a pesar de no disponer de pruebas diagnósticas, no se"
+          "fragmento": "y a pesar de no disponer de pruebas diagnósticas, no se",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -433,7 +453,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "criterios de Centor entre 0-2, el uso de rutina de la"
+          "fragmento": "criterios de Centor entre 0-2, el uso de rutina de la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -454,7 +475,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.7 Tratamiento Antimicrobiano de Faringitis estreptocócica",
           "pagina": 37,
-          "fragmento": "cepas de Streptococcus pyogenes son resistentes a"
+          "fragmento": "cepas de Streptococcus pyogenes son resistentes a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       },
       {
@@ -475,7 +497,8 @@
           "clave": "IMSS-062-08",
           "seccion": "4.2 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "edad entre 3–14 años"
+          "fragmento": "edad entre 3–14 años",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/062GER.pdf"
         }
       }
     ],

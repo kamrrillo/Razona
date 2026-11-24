@@ -8,7 +8,7 @@ import { ChatHistorySchema, type ChatMessage } from "@/lib/schemas/tutor";
 import type { ServerSupabase } from "@/lib/supabase/server";
 import { loadOutcomes } from "./progress";
 
-export type CaseChoice = { item: Item; reason: "topic" | "weak" | "thompson" };
+export type CaseChoice = { item: Item; reason: "topic" | "weak" | "thompson" | "study" };
 
 export async function chooseCase(
   supabase: ServerSupabase,

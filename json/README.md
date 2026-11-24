@@ -102,6 +102,7 @@ La carga es idempotente: actualiza solo lo que cambió y marca como `retirado` (
 
 1. Texto de la GPC por página en `gpc_paginas/` (ver *Uso*).
 2. Escribe `fuentes/NNN.json` (formato compacto: índice + variante).
+   Incluye `"url"` con el enlace público (https) al PDF de la guía, por ejemplo `https://www.imss.gob.mx/sites/all/statics/guiasclinicas/NNNGER.pdf`, sin `#page`. El constructor lo copia a cada cita como `url_pdf` y la app abre el PDF en la página citada. No se edita `casos/` a mano: se regenera desde `fuentes/`.
 3. Agrega el tema a `temas.json` (nombre y área; si es un área nueva, agrégala en `grupos`).
 4. `python3 herramientas/construir_casos.py`: genera `casos/RZ-PED-NNN.json` y le asigna a cada caso nuevo la letra menos usada en `letras.json`. Las letras de los casos existentes no cambian.
 5. `python3 herramientas/validar_casos.py casos --gpc gpc_paginas`.

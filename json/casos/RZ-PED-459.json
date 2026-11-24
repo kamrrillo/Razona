@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
       "clave": "GPC-IMSS-459-19",
-      "archivo": "459GER.pdf"
+      "archivo": "459GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
     },
     "vineta": "Masculino de 2 meses, nacido a término con peso adecuado, acude a control del niño sano. Se alimenta con lactancia materna exclusiva y crece en el percentil 50. No tiene enfermedades ni toma medicamentos. La madre no toma suplementos. Pregunta si su hijo necesita alguna vitamina, porque su vecina le dijo que la leche materna \"trae todo\".",
     "pregunta": "¿Cuál es la recomendación más adecuada sobre la vitamina D para el lactante?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "suplemento diario de 400 UI/día"
+          "fragmento": "suplemento diario de 400 UI/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 17,
-          "fragmento": "D, que es insuficiente para sostener un aporte"
+          "fragmento": "D, que es insuficiente para sostener un aporte",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       }
     ],
@@ -60,7 +63,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "recomienda la administración de 600 UI de vitamina"
+          "fragmento": "recomienda la administración de 600 UI de vitamina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -81,7 +85,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros"
+          "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -102,7 +107,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 17,
-          "fragmento": "D, que es insuficiente para sostener un aporte"
+          "fragmento": "D, que es insuficiente para sostener un aporte",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -123,7 +129,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "D desde los primeros días de vida y deberá"
+          "fragmento": "D desde los primeros días de vida y deberá",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "suplemento diario de 400 UI/día"
+          "fragmento": "suplemento diario de 400 UI/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 17,
-          "fragmento": "La leche materna contiene 5 a 80 UI /L de vitamina"
+          "fragmento": "La leche materna contiene 5 a 80 UI /L de vitamina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "recomienda la administración de 600 UI de vitamina"
+          "fragmento": "recomienda la administración de 600 UI de vitamina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "GPC-IMSS-459-19",
             "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
             "pagina": 18,
-            "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+            "fragmento": "En los grupos de riesgo, se recomienda evaluar el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
           },
           {
             "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
             "clave": "GPC-IMSS-459-19",
             "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
             "pagina": 19,
-            "fragmento": "suplementación con 800 UI/día desde los"
+            "fragmento": "suplementación con 800 UI/día desde los",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
           },
           {
             "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
             "clave": "GPC-IMSS-459-19",
             "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
             "pagina": 18,
-            "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros"
+            "fragmento": "De 0 a 6 meses: 400 UI/día desde los primeros",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
           },
           {
             "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
             "clave": "GPC-IMSS-459-19",
             "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
             "pagina": 18,
-            "fragmento": "De 6 a 12 meses: 400–600 UI/día, dependiendo"
+            "fragmento": "De 6 a 12 meses: 400–600 UI/día, dependiendo",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
           }
         ]
       },
@@ -286,7 +300,8 @@
     "gpc_base": {
       "guia": "Prevención, diagnóstico y tratamiento del Raquitismo Carencial",
       "clave": "GPC-IMSS-459-19",
-      "archivo": "459GER.pdf"
+      "archivo": "459GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
     },
     "vineta": "Femenino de 3 años con epilepsia focal en tratamiento con carbamazepina desde hace 18 meses, con buen control de crisis. Se alimenta con dieta familiar, pasa la mayor parte del día en interiores y no recibe suplementos. Exploración sin deformidades óseas. Acude a revisión con pediatría.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la vitamina D?",
@@ -306,7 +321,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 17,
-          "fragmento": "medicamentos anticonvulsivos requieren dosis"
+          "fragmento": "medicamentos anticonvulsivos requieren dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -316,7 +332,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       }
     ],
@@ -339,7 +356,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 17,
-          "fragmento": "medicamentos anticonvulsivos requieren dosis"
+          "fragmento": "medicamentos anticonvulsivos requieren dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -360,7 +378,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -381,7 +400,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "general debe considerar: la edad, el peso corporal, el"
+          "fragmento": "general debe considerar: la edad, el peso corporal, el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       },
       {
@@ -402,7 +422,8 @@
           "clave": "GPC-IMSS-459-19",
           "seccion": "2.1.1 Aporte de vitamina D y calcio para prevenir el raquitismo carencial",
           "pagina": 18,
-          "fragmento": "En los grupos de riesgo, se recomienda evaluar el"
+          "fragmento": "En los grupos de riesgo, se recomienda evaluar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/459GER.pdf"
         }
       }
     ],

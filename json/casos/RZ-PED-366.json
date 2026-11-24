@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
       "clave": "IMSS-366-16",
-      "archivo": "366GER.pdf"
+      "archivo": "366GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
     },
     "vineta": "Masculino de 7 años con dolor en la cadera derecha de 6 semanas de evolución. La radiografía y la tomografía muestran una lesión lítica única de 3.5 cm en el ala iliaca derecha. La biopsia por aspiración con aguja fina sugiere histiocitosis de células de Langerhans. La estadificación (serie ósea, biometría hemática, pruebas de función hepática, radiografía de tórax y osmolaridad urinaria) es normal: se clasifica como enfermedad unisistémica ósea unifocal. No hay afectación de columna.",
     "pregunta": "¿Cuál es el tratamiento local más adecuado de la lesión?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "no está indicada porque puede incrementar el"
+          "fragmento": "no está indicada porque puede incrementar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
           "pagina": 31,
-          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "La escisión completa, está indicada en lesiones < de 2"
+          "fragmento": "La escisión completa, está indicada en lesiones < de 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 30,
-          "fragmento": "metotrexate oral (20 mg/m2/ semanal durante 6"
+          "fragmento": "metotrexate oral (20 mg/m2/ semanal durante 6",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos"
+          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "no está indicada porque puede incrementar el"
+          "fragmento": "no está indicada porque puede incrementar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
           "pagina": 31,
-          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -190,7 +199,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos"
+          "fragmento": "esta práctica no se ha evaluado en ensayos clínicos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -210,28 +220,32 @@
             "clave": "IMSS-366-16",
             "seccion": "4.2.7 Estratificación",
             "pagina": 26,
-            "fragmento": "estadifique adecuadamente antes de iniciar el"
+            "fragmento": "estadifique adecuadamente antes de iniciar el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
             "clave": "IMSS-366-16",
             "seccion": "4.3.1.1 Consideraciones Generales",
             "pagina": 28,
-            "fragmento": "MS con o sin afección de órganos de riesgo y en enfermedad US con lesiones localizadas en sitios especiales y en las multifocales óseas"
+            "fragmento": "MS con o sin afección de órganos de riesgo y en enfermedad US con lesiones localizadas en sitios especiales y en las multifocales óseas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
             "clave": "IMSS-366-16",
             "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
             "pagina": 31,
-            "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+            "fragmento": "La combinación de prednisona (PDN) y vinblastina",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
             "clave": "IMSS-366-16",
             "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
             "pagina": 29,
-            "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+            "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
           }
         ]
       },
@@ -292,7 +306,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -324,7 +339,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de histiocitosis de células de Langerhans en edad pediátrica para segundo y tercer nivel de atención",
       "clave": "IMSS-366-16",
-      "archivo": "366GER.pdf"
+      "archivo": "366GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
     },
     "vineta": "Femenino de 10 años con aumento de volumen doloroso en la sexta costilla izquierda. La tomografía muestra una lesión lítica única de 1.5 cm. La estadificación completa es normal y se clasifica como histiocitosis de células de Langerhans unisistémica ósea unifocal. Sin otras lesiones en la serie ósea y sin afectación de columna.",
     "pregunta": "¿Cuál es el tratamiento local más adecuado?",
@@ -344,7 +360,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "La escisión completa, está indicada en lesiones < de 2"
+          "fragmento": "La escisión completa, está indicada en lesiones < de 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -354,7 +371,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "consiste en biopsia de la lesión y curetage"
+          "fragmento": "consiste en biopsia de la lesión y curetage",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       }
     ],
@@ -376,7 +394,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm"
+          "fragmento": "realizar excision completa, sí la lesión es de 2 a 5 cm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -397,7 +416,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "no está indicada porque puede incrementar el"
+          "fragmento": "no está indicada porque puede incrementar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -418,7 +438,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.3 Tratamiento para enfermedad multisistémica",
           "pagina": 31,
-          "fragmento": "La combinación de prednisona (PDN) y vinblastina"
+          "fragmento": "La combinación de prednisona (PDN) y vinblastina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       },
       {
@@ -439,7 +460,8 @@
           "clave": "IMSS-366-16",
           "seccion": "4.3.2 Tratamiento para enfermedad de bajo riesgo (unisistémica)",
           "pagina": 29,
-          "fragmento": "consiste en biopsia de la lesión y curetage"
+          "fragmento": "consiste en biopsia de la lesión y curetage",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/366GER.pdf"
         }
       }
     ],

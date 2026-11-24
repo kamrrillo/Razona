@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { LogoMark } from "@/components/app/logo";
 import { getAuthedContext } from "@/lib/data/auth";
+import { getStudyProgress } from "@/lib/data/study";
 import { getStudyProfile } from "@/lib/data/study-group";
+import { STUDY_SIZE } from "@/lib/study";
 import { chooseMode } from "./actions";
 import { NameForm } from "./name-form";
 
@@ -18,7 +20,10 @@ export default async function EstudioPage({ searchParams }: PageProps<"/estudio"
   const ctx = await getAuthedContext();
   const profile = ctx ? await getStudyProfile(ctx.supabase, ctx.userId) : null;
   const participant = ctx?.isAnonymous && profile;
-  if (participant && profile.chosen) redirect("/inicio");
+  if (participant && profile.chosen && ctx) {
+    const progress = await getStudyProgress(ctx.supabase, ctx.userId);
+    redirect(progress.done ? "/estudio/fin" : "/practicar");
+  }
 
   return (
     <main className="flex min-h-dvh flex-col">
@@ -40,7 +45,8 @@ export default async function EstudioPage({ searchParams }: PageProps<"/estudio"
                   Elige cómo vas a practicar
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Solo puedes elegir una vez: el modo queda fijo para todo el estudio.
+                  Son {STUDY_SIZE} preguntas. Solo puedes elegir una vez: el modo queda fijo para
+                  todo el estudio.
                 </p>
               </div>
               {params.error === "1" && (
@@ -52,13 +58,13 @@ export default async function EstudioPage({ searchParams }: PageProps<"/estudio"
                 <ModeButton
                   value="ia"
                   title="Con IA"
-                  text="Un tutor te hace preguntas cuando te equivocas y te explica cada caso."
+                  text="Después de cada respuesta, un tutor te explica el caso y te hace preguntas."
                   icon={<MessageCircleQuestion className="size-6" aria-hidden />}
                 />
                 <ModeButton
                   value="control"
                   title="Sin IA"
-                  text="Solo el cuestionario: respondes y ves la respuesta correcta con su explicación."
+                  text="Solo el cuestionario: después de cada respuesta ves si acertaste y cuál era la correcta."
                   icon={<ListChecks className="size-6" aria-hidden />}
                 />
               </form>

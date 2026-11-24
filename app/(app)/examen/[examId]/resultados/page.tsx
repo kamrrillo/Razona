@@ -37,7 +37,7 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
     getProgress(ctx.supabase, ctx.userId),
     getStudyGroup(ctx.supabase, ctx.userId),
   ]);
-  // Grupo control (solo cuestionario): respuesta, explicación fija y cita; nada de IA ni rúbrica.
+  // Modo sin IA: solo si acertó y la respuesta correcta; sin explicación, cita, IA ni rúbrica.
   const withAi = group === "ia";
   if (!loaded) notFound();
   if (!loaded.exam.finishedAt) redirect(`/examen/${examId}`);
@@ -170,17 +170,18 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                     />
                   </div>
                 )}
-                <p className="leading-relaxed">{item.explanation}</p>
-                <CitationCard
-                  gpcId={item.citation.gpcId}
-                  gpcTitle={item.citation.gpcTitle}
-                  section={item.citation.section}
-                  page={item.citation.page}
-                  snippet={item.citation.snippet}
-                  pdfUrl={item.citation.pdfUrl}
-                />
+                {/* Modo sin IA: solo si acertó y la respuesta correcta (arriba). */}
                 {withAi && (
                   <>
+                    <p className="leading-relaxed">{item.explanation}</p>
+                    <CitationCard
+                      gpcId={item.citation.gpcId}
+                      gpcTitle={item.citation.gpcTitle}
+                      section={item.citation.section}
+                      page={item.citation.page}
+                      snippet={item.citation.snippet}
+                      pdfUrl={item.citation.pdfUrl}
+                    />
                     <TutorExplanation
                       request={{ examId, itemId: item.id }}
                       showCitation={false}

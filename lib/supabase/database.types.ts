@@ -185,14 +185,14 @@ isOneToOne: false
                   ]
                 },"profiles": {
                   Row: {
-                    "created_at": string,"display_name": string,"id": string,"study_group": string,"study_group_chosen_at": string | null
+                    "created_at": string,"display_name": string,"id": string,"study_consent_at": string | null,"study_group": string,"study_group_chosen_at": string | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"display_name"?: string,"id": string,"study_group"?: string,"study_group_chosen_at"?: string | null
+                    "created_at"?: string,"display_name"?: string,"id": string,"study_consent_at"?: string | null,"study_group"?: string,"study_group_chosen_at"?: string | null
                   }
                   Update: {
-                    "created_at"?: string,"display_name"?: string,"id"?: string,"study_group"?: string,"study_group_chosen_at"?: string | null
+                    "created_at"?: string,"display_name"?: string,"id"?: string,"study_consent_at"?: string | null,"study_group"?: string,"study_group_chosen_at"?: string | null
                   }
                   Relationships: [
                     

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
       "clave": "IMSS-602-13",
-      "archivo": "602GER.pdf"
+      "archivo": "602GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
     },
     "vineta": "Femenino de 8 años con prurito en cuero cabelludo de 2 semanas. Con peine de dientes finos se observan piojos vivos y liendres adheridas al tallo en las regiones occipital y retroauricular, con excoriaciones leves. No ha recibido tratamiento. Su hermana de 6 años, con quien comparte cama y cepillo, también se rasca la cabeza desde hace unos días. Sin alergias.",
     "pregunta": "¿Cuál es el manejo más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 20,
-          "fragmento": "La permetrina al 1% en loción o crema, es el"
+          "fragmento": "La permetrina al 1% en loción o crema, es el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 21,
-          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.3 Medidas de Prevención",
           "pagina": 18,
-          "fragmento": "Examinar a los miembros de la familia que estén"
+          "fragmento": "Examinar a los miembros de la familia que estén",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 21,
-          "fragmento": "Los pediculicidas, son recomendables en niños"
+          "fragmento": "Los pediculicidas, son recomendables en niños",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.3 Medidas de Prevención",
           "pagina": 18,
-          "fragmento": "Examinar a los miembros de la familia que estén"
+          "fragmento": "Examinar a los miembros de la familia que estén",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 21,
-          "fragmento": "pacientes que no toleran el tratamiento de primera"
+          "fragmento": "pacientes que no toleran el tratamiento de primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.6 Tratamiento en resistencia",
           "pagina": 23,
-          "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+          "fragmento": "Su uso se recomienda en infestaciones masivas, con una",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 21,
-          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+          "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 21,
-          "fragmento": "pacientes que no toleran el tratamiento de primera"
+          "fragmento": "pacientes que no toleran el tratamiento de primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.6 Tratamiento en resistencia",
           "pagina": 23,
-          "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+          "fragmento": "Su uso se recomienda en infestaciones masivas, con una",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -217,28 +228,32 @@
             "clave": "IMSS-602-13",
             "seccion": "4.5 Tratamiento",
             "pagina": 21,
-            "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,"
+            "fragmento": "y enjuagar y una segunda aplicación a los 7 a 10 días,",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
             "clave": "IMSS-602-13",
             "seccion": "4.3 Medidas de Prevención",
             "pagina": 18,
-            "fragmento": "Examinar a los miembros de la familia que estén"
+            "fragmento": "Examinar a los miembros de la familia que estén",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
             "clave": "IMSS-602-13",
             "seccion": "4.5 Tratamiento",
             "pagina": 22,
-            "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+            "fragmento": "evaluados a los 15 días del inicio del tratamiento con el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
             "clave": "IMSS-602-13",
             "seccion": "4.6 Tratamiento en resistencia",
             "pagina": 23,
-            "fragmento": "Su uso se recomienda en infestaciones masivas, con una"
+            "fragmento": "Su uso se recomienda en infestaciones masivas, con una",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
           }
         ]
       },
@@ -307,7 +322,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de Pediculosis capitis en escolares y adolescentes",
       "clave": "IMSS-602-13",
-      "archivo": "602GER.pdf"
+      "archivo": "602GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
     },
     "vineta": "Masculino de 11 años con diagnóstico de pediculosis capitis; hoy se le aplicó la primera dosis de permetrina al 1 %. La madre pregunta qué hacer con la ropa de cama, los peluches, la gorra, los audífonos y los peines del niño para que no se vuelva a infestar.",
     "pregunta": "¿Cuál es la recomendación más adecuada?",
@@ -327,7 +343,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30"
+          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -337,7 +354,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "plástico sellada, por dos semanas en busca de"
+          "fragmento": "plástico sellada, por dos semanas en busca de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -347,7 +365,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       }
     ],
@@ -370,7 +389,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "plástico sellada, por dos semanas en busca de"
+          "fragmento": "plástico sellada, por dos semanas en busca de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -390,7 +410,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30"
+          "fragmento": "detergente y posteriormente hervir a 50°C, durante 30",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -411,7 +432,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "plástico sellada, por dos semanas en busca de"
+          "fragmento": "plástico sellada, por dos semanas en busca de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       },
       {
@@ -432,7 +454,8 @@
           "clave": "IMSS-602-13",
           "seccion": "4.5 Tratamiento",
           "pagina": 22,
-          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el"
+          "fragmento": "evaluados a los 15 días del inicio del tratamiento con el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/602GER.pdf"
         }
       }
     ],

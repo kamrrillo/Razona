@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Hipospadias",
       "clave": "IMSS-467-11",
-      "archivo": "467GER.pdf"
+      "archivo": "467GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
     },
     "vineta": "Recién nacido masculino de término, 2 días de vida, peso 3,300 g. En la exploración se encuentra el meato uretral en la cara ventral del glande, a nivel del surco coronal, con prepucio incompleto en la cara ventral. El pene mide 3.2 cm de longitud. Ambos testículos se palpan en bolsas escrotales bien desarrolladas, sin fusión labioescrotal. Micción con chorro adecuado. Sin otras malformaciones.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 15,
-          "fragmento": "intervengan quirúrgicamente después de los 6 meses de"
+          "fragmento": "intervengan quirúrgicamente después de los 6 meses de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 14,
-          "fragmento": "Se debe considerar el diagnóstico diferencial con un"
+          "fragmento": "Se debe considerar el diagnóstico diferencial con un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 12,
-          "fragmento": "Medir el tamaño del pene (en el recién nacido"
+          "fragmento": "Medir el tamaño del pene (en el recién nacido",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 14,
-          "fragmento": "Se debe considerar el diagnóstico diferencial con un"
+          "fragmento": "Se debe considerar el diagnóstico diferencial con un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 15,
-          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la"
+          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 15,
-          "fragmento": "edad, idealmente entre los 6 y 18 meses"
+          "fragmento": "edad, idealmente entre los 6 y 18 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 12,
-          "fragmento": "Medir el tamaño del pene (en el recién nacido"
+          "fragmento": "Medir el tamaño del pene (en el recién nacido",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 15,
-          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la"
+          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 14,
-          "fragmento": "Las ventajas de la cirugía temprana incluyen mayor"
+          "fragmento": "Las ventajas de la cirugía temprana incluyen mayor",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "IMSS-467-11",
             "seccion": "4.2.1 Criterios Técnico-Médicos de Referencia",
             "pagina": 24,
-            "fragmento": "Referir urgentemente al servicio de endocrinología"
+            "fragmento": "Referir urgentemente al servicio de endocrinología",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Hipospadias",
             "clave": "IMSS-467-11",
             "seccion": "4.2.1 Criterios Técnico-Médicos de Referencia",
             "pagina": 23,
-            "fragmento": "Todos los niños con hipospadias deben referirse al"
+            "fragmento": "Todos los niños con hipospadias deben referirse al",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Hipospadias",
             "clave": "IMSS-467-11",
             "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
             "pagina": 15,
-            "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la"
+            "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Hipospadias",
             "clave": "IMSS-467-11",
             "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
             "pagina": 15,
-            "fragmento": "intervengan quirúrgicamente después de los 6 meses de"
+            "fragmento": "intervengan quirúrgicamente después de los 6 meses de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
           }
         ]
       },
@@ -264,7 +278,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 12,
-          "fragmento": "frecuente es anterior o distal (60 - 65%), medio (20 -"
+          "fragmento": "frecuente es anterior o distal (60 - 65%), medio (20 -",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -302,7 +317,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Hipospadias",
       "clave": "IMSS-467-11",
-      "archivo": "467GER.pdf"
+      "archivo": "467GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
     },
     "vineta": "Recién nacido de término, 1 día de vida, con meato uretral en la unión penoescrotal y curvatura ventral del pene, que mide 2.5 cm. El testículo derecho se palpa en la bolsa escrotal; el izquierdo no se palpa en la bolsa ni en el canal inguinal. Escroto bífido sin fusión labioescrotal. Estable, con buena succión.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -322,7 +338,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.2.1 Criterios Técnico-Médicos de Referencia",
           "pagina": 24,
-          "fragmento": "Referir urgentemente al servicio de endocrinología"
+          "fragmento": "Referir urgentemente al servicio de endocrinología",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -332,7 +349,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 13,
-          "fragmento": "La ausencia de uno o ambos testículos puede traducir la"
+          "fragmento": "La ausencia de uno o ambos testículos puede traducir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       }
     ],
@@ -355,7 +373,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.2.1 Criterios Técnico-Médicos de Referencia",
           "pagina": 24,
-          "fragmento": "Referir urgentemente al servicio de endocrinología"
+          "fragmento": "Referir urgentemente al servicio de endocrinología",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -376,7 +395,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 13,
-          "fragmento": "La ausencia de uno o ambos testículos puede traducir la"
+          "fragmento": "La ausencia de uno o ambos testículos puede traducir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -396,7 +416,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.3.1 Edad ideal de intervención e indicación de testosterona",
           "pagina": 15,
-          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la"
+          "fragmento": "Cuando el hipospadias se asocia a micropene o cuando la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       },
       {
@@ -417,7 +438,8 @@
           "clave": "IMSS-467-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 12,
-          "fragmento": "hipospadias tienen criptorquidia y del 9 al 15% hernia"
+          "fragmento": "hipospadias tienen criptorquidia y del 9 al 15% hernia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/467GER.pdf"
         }
       }
     ],

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
       "clave": "IMSS-371-10",
-      "archivo": "371GER.pdf"
+      "archivo": "371GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
     },
     "vineta": "Recién nacido masculino de 39 semanas, peso 3,200 g, nacido por parto vaginal con desprendimiento prematuro de placenta. Apgar 2, 4 y 5 a los 1, 5 y 10 minutos; requirió ventilación con presión positiva durante los primeros 10 minutos. Gasometría arterial a los 30 minutos: pH 6.92 y déficit de base de 16. A las 2 horas de vida está letárgico, hipotónico, con succión débil y reflejo de Moro incompleto (encefalopatía moderada de Sarnat). Sin malformaciones ni sangrado activo. El hospital cuenta con equipo de hipotermia.",
     "pregunta": "¿Cuál es la conducta neuroprotectora más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Menos de 6 horas de vida"
+          "fragmento": "Menos de 6 horas de vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 38,
-          "fragmento": "La hipotermia terapéutica es un tratamiento sensible"
+          "fragmento": "La hipotermia terapéutica es un tratamiento sensible",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 36,
-          "fragmento": "Se ha demostrado que la hipotermia reduce en forma"
+          "fragmento": "Se ha demostrado que la hipotermia reduce en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Gasometría en la primera hora con pH 7.00 o"
+          "fragmento": "Gasometría en la primera hora con pH 7.00 o",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "moderada a grave (de acuerdo a la clasificación"
+          "fragmento": "moderada a grave (de acuerdo a la clasificación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "un método de hipotermia sistémico o cefálico"
+          "fragmento": "un método de hipotermia sistémico o cefálico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 38,
-          "fragmento": "La hipotermia terapéutica es un tratamiento sensible"
+          "fragmento": "La hipotermia terapéutica es un tratamiento sensible",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Recién nacidos de ≥35 semanas de gestación"
+          "fragmento": "Recién nacidos de ≥35 semanas de gestación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Gasometría en la primera hora con pH 7.00 o"
+          "fragmento": "Gasometría en la primera hora con pH 7.00 o",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "un método de hipotermia sistémico o cefálico"
+          "fragmento": "un método de hipotermia sistémico o cefálico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -217,28 +228,32 @@
             "clave": "IMSS-371-10",
             "seccion": "2.2.1.1 Hipotermia",
             "pagina": 37,
-            "fragmento": "Evidencia de asfixia perinatal, con al menos uno"
+            "fragmento": "Evidencia de asfixia perinatal, con al menos uno",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
             "clave": "IMSS-371-10",
             "seccion": "2.2.1.1 Hipotermia",
             "pagina": 38,
-            "fragmento": "Coagulopatía con hemorragia activa"
+            "fragmento": "Coagulopatía con hemorragia activa",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
             "clave": "IMSS-371-10",
             "seccion": "2.2.1.1 Hipotermia",
             "pagina": 38,
-            "fragmento": "La hipotermia terapéutica es un tratamiento sensible"
+            "fragmento": "La hipotermia terapéutica es un tratamiento sensible",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
           },
           {
             "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
             "clave": "IMSS-371-10",
             "seccion": "2.2.1.1 Hipotermia",
             "pagina": 40,
-            "fragmento": "Se deberá monitorizar en todo paciente bajo"
+            "fragmento": "Se deberá monitorizar en todo paciente bajo",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
           }
         ]
       },
@@ -301,7 +316,8 @@
           "clave": "IMSS-371-10",
           "seccion": "3.2 Cuadros o figuras",
           "pagina": 57,
-          "fragmento": "Escala de Sarnat para evaluar la encefalopatía hipóxico-isquémica"
+          "fragmento": "Escala de Sarnat para evaluar la encefalopatía hipóxico-isquémica",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -351,7 +367,8 @@
     "gpc_base": {
       "guia": "Diagnóstico, Tratamiento y Pronóstico de la Encefalopatía Hipóxico-Isquémica",
       "clave": "IMSS-371-10",
-      "archivo": "371GER.pdf"
+      "archivo": "371GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
     },
     "vineta": "Recién nacida de 34 semanas de gestación, peso 2,100 g, nacida por cesárea de urgencia por bradicardia fetal. Apgar 3 a los 10 minutos; requirió intubación en sala de partos. Gasometría a los 40 minutos: pH 6.95. A las 3 horas de vida presenta letargia, hipotonía y crisis convulsivas sutiles. Sin malformaciones. La unidad cuenta con equipo de hipotermia sistémica.",
     "pregunta": "Respecto a la hipotermia terapéutica, ¿cuál es la conducta más adecuada?",
@@ -371,7 +388,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Recién nacidos de ≥35 semanas de gestación"
+          "fragmento": "Recién nacidos de ≥35 semanas de gestación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -381,7 +399,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 38,
-          "fragmento": "mencionados anteriormente para la selección de"
+          "fragmento": "mencionados anteriormente para la selección de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       }
     ],
@@ -404,7 +423,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Recién nacidos de ≥35 semanas de gestación"
+          "fragmento": "Recién nacidos de ≥35 semanas de gestación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -425,7 +445,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 38,
-          "fragmento": "mencionados anteriormente para la selección de"
+          "fragmento": "mencionados anteriormente para la selección de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -446,7 +467,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 38,
-          "fragmento": "primeras seis horas de vida"
+          "fragmento": "primeras seis horas de vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       },
       {
@@ -466,7 +488,8 @@
           "clave": "IMSS-371-10",
           "seccion": "2.2.1.1 Hipotermia",
           "pagina": 37,
-          "fragmento": "Peso de ≥1800 gramos"
+          "fragmento": "Peso de ≥1800 gramos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/371GER.pdf"
         }
       }
     ],

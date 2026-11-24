@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
       "clave": "IMSS-733-14",
-      "archivo": "733GER.pdf"
+      "archivo": "733GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
     },
     "vineta": "Masculino de 10 años que hasta los 9 años toleraba la leche sin problema. Desde hace un año presenta distensión abdominal, flatulencia, borborigmos y evacuaciones blandas 1 a 2 horas después de tomar leche o yogur; los síntomas desaparecieron durante 2 semanas sin lácteos y reaparecieron al reintroducirlos. Crecimiento normal, sin sangre en heces, sin lesiones cutáneas ni síntomas respiratorios. Síntomas leves.",
     "pregunta": "¿Cuál es el manejo más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "síntomas y cuatro semanas despues ir"
+          "fragmento": "síntomas y cuatro semanas despues ir",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y"
+          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 14,
-          "fragmento": "Consiste en mantener un régimen estricto sin lactosa"
+          "fragmento": "Consiste en mantener un régimen estricto sin lactosa",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-733-14",
           "seccion": "3.3 Definición",
           "pagina": 10,
-          "fragmento": "se presenta desde el nacimiento y persiste durante"
+          "fragmento": "se presenta desde el nacimiento y persiste durante",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 15,
-          "fragmento": "La intolerancia a la lactosa es una entidad distinta de"
+          "fragmento": "La intolerancia a la lactosa es una entidad distinta de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 14,
-          "fragmento": "Los estudios de imagen no son útiles para apoyar el"
+          "fragmento": "Los estudios de imagen no son útiles para apoyar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Restringir en su totalidad los productos lacteos de la"
+          "fragmento": "Restringir en su totalidad los productos lacteos de la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 14,
-          "fragmento": "Los estudios de imagen no son útiles para apoyar el"
+          "fragmento": "Los estudios de imagen no son útiles para apoyar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 17,
-          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y"
+          "fragmento": "Debe asegurarse aporte de calcio diario entre 500 y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -198,7 +208,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.2 Diagnóstico Diferencial",
           "pagina": 15,
-          "fragmento": "La intolerancia a la lactosa es una entidad distinta de"
+          "fragmento": "La intolerancia a la lactosa es una entidad distinta de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "IMSS-733-14",
             "seccion": "4.1.1 Auxiliares Diagnósticos",
             "pagina": 14,
-            "fragmento": "Consiste en mantener un régimen estricto sin lactosa"
+            "fragmento": "Consiste en mantener un régimen estricto sin lactosa",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
             "clave": "IMSS-733-14",
             "seccion": "4.1.2 Diagnóstico Diferencial",
             "pagina": 15,
-            "fragmento": "sospecha intolerancia a la lactosa, se deberá hacer"
+            "fragmento": "sospecha intolerancia a la lactosa, se deberá hacer",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
             "clave": "IMSS-733-14",
             "seccion": "4.2 Tratamiento",
             "pagina": 16,
-            "fragmento": "promedio por cuatro semanas"
+            "fragmento": "promedio por cuatro semanas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
             "clave": "IMSS-733-14",
             "seccion": "4.2 Tratamiento",
             "pagina": 17,
-            "fragmento": "síntomas y cuatro semanas despues ir"
+            "fragmento": "síntomas y cuatro semanas despues ir",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
           }
         ]
       },
@@ -280,7 +295,8 @@
           "clave": "IMSS-733-14",
           "seccion": "3.3 Definición",
           "pagina": 10,
-          "fragmento": "Se manifesta entre los 2 y los 7 años de vida"
+          "fragmento": "Se manifesta entre los 2 y los 7 años de vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -330,7 +346,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Intolerancia a la Lactosa en Niños",
       "clave": "IMSS-733-14",
-      "archivo": "733GER.pdf"
+      "archivo": "733GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
     },
     "vineta": "Femenino de 18 meses que hace 10 días tuvo gastroenteritis por rotavirus. La diarrea había cedido, pero al reintroducir la leche entera reaparecieron las evacuaciones líquidas explosivas, la distensión abdominal y el eritema perianal. pH fecal de 5.0. Hidratada, sin sangre en heces. Antes de la gastroenteritis toleraba la leche sin problemas.",
     "pregunta": "¿Cuál es el manejo más adecuado respecto a la lactosa?",
@@ -350,7 +367,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 16,
-          "fragmento": "retiro o disminución de alimentos con lactosa es"
+          "fragmento": "retiro o disminución de alimentos con lactosa es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -360,7 +378,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 16,
-          "fragmento": "promedio por cuatro semanas"
+          "fragmento": "promedio por cuatro semanas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       }
     ],
@@ -383,7 +402,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 16,
-          "fragmento": "retiro o disminución de alimentos con lactosa es"
+          "fragmento": "retiro o disminución de alimentos con lactosa es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -404,7 +424,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 14,
-          "fragmento": "cuando el pH de las heces fecales es menor a 5.5"
+          "fragmento": "cuando el pH de las heces fecales es menor a 5.5",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -425,7 +446,8 @@
           "clave": "IMSS-733-14",
           "seccion": "3.3 Definición",
           "pagina": 10,
-          "fragmento": "la mucosa intestinal ocasiona reducción de la actividad de la enzima lactasa"
+          "fragmento": "la mucosa intestinal ocasiona reducción de la actividad de la enzima lactasa",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       },
       {
@@ -446,7 +468,8 @@
           "clave": "IMSS-733-14",
           "seccion": "4.2 Tratamiento",
           "pagina": 16,
-          "fragmento": "promedio por cuatro semanas"
+          "fragmento": "promedio por cuatro semanas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/733GER.pdf"
         }
       }
     ],

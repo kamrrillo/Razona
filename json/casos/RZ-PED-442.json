@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
       "clave": "GPC-IMSS-442-18",
-      "archivo": "442GER.pdf"
+      "archivo": "442GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
     },
     "vineta": "Recién nacido masculino de 38 semanas, hijo de madre con diabetes gestacional mal controlada, peso 4,100 g. A las 2 horas de vida presenta temblores finos, succión débil, hipotonía y un episodio de apnea breve. Glucosa plasmática de 32 mg/dL. Temperatura 36.7 °C. Se encuentra en la unidad de cuidados intermedios con bomba de infusión disponible y acceso venoso periférico.",
     "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
-          "fragmento": "Administrar bolo de solución glucosada 10% 2"
+          "fragmento": "Administrar bolo de solución glucosada 10% 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
-          "fragmento": "inmediatamente con infusión de glucosa intravenosa"
+          "fragmento": "inmediatamente con infusión de glucosa intravenosa",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.1.4 Auxiliares diagnósticos",
           "pagina": 19,
-          "fragmento": "debe utilizarse para definir la hipoglucemia"
+          "fragmento": "debe utilizarse para definir la hipoglucemia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
-          "fragmento": "inmediatamente con infusión de glucosa intravenosa"
+          "fragmento": "inmediatamente con infusión de glucosa intravenosa",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -102,7 +107,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
-          "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado"
+          "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -123,7 +129,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
-          "fragmento": "Si se usa infusión de solución glucosada mayor de"
+          "fragmento": "Si se usa infusión de solución glucosada mayor de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       }
     ],
@@ -148,7 +155,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.1.4 Auxiliares diagnósticos",
           "pagina": 19,
-          "fragmento": "debe utilizarse para definir la hipoglucemia"
+          "fragmento": "debe utilizarse para definir la hipoglucemia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -167,7 +175,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
-          "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado"
+          "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -186,7 +195,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
-          "fragmento": "Si se usa infusión de solución glucosada mayor de"
+          "fragmento": "Si se usa infusión de solución glucosada mayor de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "GPC-IMSS-442-18",
             "seccion": "2.2.1 Hipoglucemia sintomática",
             "pagina": 21,
-            "fragmento": "Administrar bolo de solución glucosada 10% 2"
+            "fragmento": "Administrar bolo de solución glucosada 10% 2",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
             "clave": "GPC-IMSS-442-18",
             "seccion": "2.2.1 Hipoglucemia sintomática",
             "pagina": 21,
-            "fragmento": "administrar nuevo bolo de solución glucosada"
+            "fragmento": "administrar nuevo bolo de solución glucosada",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
             "clave": "GPC-IMSS-442-18",
             "seccion": "2.2.2 Hipoglucemia asintomática",
             "pagina": 23,
-            "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+            "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
             "clave": "GPC-IMSS-442-18",
             "seccion": "2.2.2 Hipoglucemia asintomática",
             "pagina": 24,
-            "fragmento": "Glucosa plasmática < 25 mg/dl"
+            "fragmento": "Glucosa plasmática < 25 mg/dl",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
           }
         ]
       },
@@ -267,7 +281,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Hipoglucemia Neonatal Transitoria",
       "clave": "GPC-IMSS-442-18",
-      "archivo": "442GER.pdf"
+      "archivo": "442GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
     },
     "vineta": "Recién nacida de 37 semanas, pequeña para la edad gestacional, peso 2,200 g. Por su factor de riesgo se mide la glucosa a las 3 horas de vida: 38 mg/dL. Está activa, con buen tono, succión vigorosa, sin temblores, apnea ni cianosis. Temperatura normal. La madre está en alojamiento conjunto y desea amamantarla.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -287,7 +302,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
-          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -297,7 +313,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
-          "fragmento": "Si el nivel < 45 mg/dl, iniciar solución"
+          "fragmento": "Si el nivel < 45 mg/dl, iniciar solución",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       }
     ],
@@ -320,7 +337,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
-          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -341,7 +359,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
-          "fragmento": "Glucosa plasmática entre 25-45 mg/dl"
+          "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -362,7 +381,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
-          "fragmento": "repetir nivel de glucosa sérica 30-60 min después"
+          "fragmento": "repetir nivel de glucosa sérica 30-60 min después",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       },
       {
@@ -383,7 +403,8 @@
           "clave": "GPC-IMSS-442-18",
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
-          "fragmento": "Se debe dar prioridad a la alimentación temprana con"
+          "fragmento": "Se debe dar prioridad a la alimentación temprana con",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf"
         }
       }
     ],

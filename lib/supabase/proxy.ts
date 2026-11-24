@@ -41,6 +41,7 @@ export async function updateSession(request: NextRequest) {
   // Importante: no ejecutar código entre createServerClient y getClaims().
   const { data } = await supabase.auth.getClaims();
   const isAuthenticated = Boolean(data?.claims?.sub);
+  const isParticipant = Boolean(data?.claims?.is_anonymous);
   const { pathname } = request.nextUrl;
 
   const isProtected = PROTECTED_PREFIXES.some(
@@ -64,6 +65,20 @@ export async function updateSession(request: NextRequest) {
   if (isAuthenticated && (pathname === "/" || pathname === "/login")) {
     const { data: userData, error } = await supabase.auth.getUser();
     confirmedAuthenticated = !error && Boolean(userData.user);
+  }
+
+  // Participante del estudio: solo responde las preguntas del estudio (en /practicar).
+  // En / y /login solo si Auth confirmó la sesión: con una cookie de una participante
+  // borrada, /login debe mostrarse en vez de mandar a /estudio para siempre.
+  const participantOnEntry =
+    isParticipant && confirmedAuthenticated && (pathname === "/" || pathname === "/login");
+  const participantOutsideStudy =
+    isParticipant && isProtected && !pathname.startsWith("/practicar");
+  if (participantOnEntry || participantOutsideStudy) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/estudio";
+    url.search = "";
+    return NextResponse.redirect(url);
   }
 
   if (pathname === "/" || (confirmedAuthenticated && pathname === "/login")) {

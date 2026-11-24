@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
       "clave": "IMSS-793-16",
-      "archivo": "793GER.pdf"
+      "archivo": "793GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
     },
     "vineta": "Masculino de 2 meses llevado a su unidad de medicina familiar porque la madre notó en varias fotografías con flash un brillo blanco en el ojo derecho. En la exploración en cuarto oscuro con oftalmoscopio a 45 cm, el reflejo rojo del ojo izquierdo es normal y el del ojo derecho se observa blanco. Ambas pupilas son redondas y reaccionan a la luz. Sin antecedentes familiares oculares.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+          "fragmento": "reflejo rojo anormal, el recién nacido debe ser",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.6 Criterios de referencia",
           "pagina": 36,
-          "fragmento": "lactante que requiere una atención ocular inmediata"
+          "fragmento": "lactante que requiere una atención ocular inmediata",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 27,
-          "fragmento": "cuando las reflexiones de los 2 ojos, tanto de forma"
+          "fragmento": "cuando las reflexiones de los 2 ojos, tanto de forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.6 Criterios de referencia",
           "pagina": 36,
-          "fragmento": "lactante que requiere una atención ocular inmediata"
+          "fragmento": "lactante que requiere una atención ocular inmediata",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+          "fragmento": "reflejo rojo anormal, el recién nacido debe ser",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 27,
-          "fragmento": "A los 6 meses de edad, reevaluar:"
+          "fragmento": "A los 6 meses de edad, reevaluar:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "distancia aproximada de 45 cm"
+          "fragmento": "distancia aproximada de 45 cm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 27,
-          "fragmento": "individual y bilateralmente son equivalentes en color"
+          "fragmento": "individual y bilateralmente son equivalentes en color",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.6 Criterios de referencia",
           "pagina": 37,
-          "fragmento": "(reflejo blanco) en 1 o ambos ojos deben ser"
+          "fragmento": "(reflejo blanco) en 1 o ambos ojos deben ser",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -208,28 +218,32 @@
             "clave": "IMSS-793-16",
             "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
             "pagina": 26,
-            "fragmento": "reflejo rojo anormal, el recién nacido debe ser"
+            "fragmento": "reflejo rojo anormal, el recién nacido debe ser",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
             "clave": "IMSS-793-16",
             "seccion": "4.6 Criterios de referencia",
             "pagina": 35,
-            "fragmento": "esto independientemente del resultado de la"
+            "fragmento": "esto independientemente del resultado de la",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
             "clave": "IMSS-793-16",
             "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
             "pagina": 27,
-            "fragmento": "A los 6 meses de edad, reevaluar:"
+            "fragmento": "A los 6 meses de edad, reevaluar:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
             "clave": "IMSS-793-16",
             "seccion": "4.6 Criterios de referencia",
             "pagina": 36,
-            "fragmento": "lactante que requiere una atención ocular inmediata"
+            "fragmento": "lactante que requiere una atención ocular inmediata",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
           }
         ]
       },
@@ -274,7 +288,8 @@
           "clave": "IMSS-793-16",
           "seccion": "5.3 Cuadros o figuras",
           "pagina": 49,
-          "fragmento": "Uno de los reflejos es menos"
+          "fragmento": "Uno de los reflejos es menos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -324,7 +339,8 @@
     "gpc_base": {
       "guia": "Detección oportuna de alteraciones visuales en el recién nacido y lactante en el primer nivel de atención",
       "clave": "IMSS-793-16",
-      "archivo": "793GER.pdf"
+      "archivo": "793GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
     },
     "vineta": "Recién nacida de término, 36 horas de vida, sana, en alojamiento conjunto, que será egresada hoy del cunero. El médico familiar en formación pregunta qué exploración visual debe hacerle antes del alta, ya que la paciente no tiene factores de riesgo ocular.",
     "pregunta": "¿Cuál es la exploración visual más adecuada antes del egreso?",
@@ -344,7 +360,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 27,
-          "fragmento": "El tamizaje que debe realizarse en el recién nacido es"
+          "fragmento": "El tamizaje que debe realizarse en el recién nacido es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -354,7 +371,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "se realiza por un pediatra, médico familiar u otro"
+          "fragmento": "se realiza por un pediatra, médico familiar u otro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       }
     ],
@@ -377,7 +395,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "Todo recién nacido y lactante deben tener un"
+          "fragmento": "Todo recién nacido y lactante deben tener un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -397,7 +416,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "se realiza por un pediatra, médico familiar u otro"
+          "fragmento": "se realiza por un pediatra, médico familiar u otro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -418,7 +438,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 27,
-          "fragmento": "El tamizaje que debe realizarse en el recién nacido es"
+          "fragmento": "El tamizaje que debe realizarse en el recién nacido es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       },
       {
@@ -439,7 +460,8 @@
           "clave": "IMSS-793-16",
           "seccion": "4.4 Recién Nacido y Lactante: exploración en el niño preverbal",
           "pagina": 26,
-          "fragmento": "distancia aproximada de 45 cm"
+          "fragmento": "distancia aproximada de 45 cm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/793GER.pdf"
         }
       }
     ],

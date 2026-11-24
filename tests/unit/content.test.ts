@@ -142,7 +142,7 @@ describe.skipIf(!reachable)("banco en Supabase local (v_casos_app)", () => {
   it("estudio: la participante anónima elige su modo una sola vez", async () => {
     const user = createClient(url as string, publishable as string);
     const { data, error } = await user.auth.signInAnonymously({
-      options: { data: { display_name: "Anónima" } },
+      options: { data: { display_name: "Anónima", study_consent: true } },
     });
     expect(error).toBeNull();
     const userId = data.user?.id as string;
@@ -150,10 +150,13 @@ describe.skipIf(!reachable)("banco en Supabase local (v_casos_app)", () => {
     try {
       const before = await admin
         .from("profiles")
-        .select("display_name, study_group_chosen_at")
+        .select("display_name, study_group_chosen_at, study_consent_at")
         .eq("id", userId)
         .single();
-      expect(before.data).toEqual({ display_name: "Anónima", study_group_chosen_at: null });
+      expect(before.data?.display_name).toBe("Anónima");
+      expect(before.data?.study_group_chosen_at).toBeNull();
+      // El acuerdo aceptado queda con fecha
+      expect(before.data?.study_consent_at).not.toBeNull();
 
       expect((await user.rpc("elegir_grupo_estudio", { grupo: "control" })).data).toBe("control");
       // La segunda elección no cambia nada

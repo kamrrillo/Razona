@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
       "clave": "IMSS-632-13",
-      "archivo": "632GER.pdf"
+      "archivo": "632GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
     },
     "vineta": "Recién nacido masculino de 40 semanas, peso 3,400 g, nacido por parto vaginal con líquido amniótico teñido de meconio. Al nacer está hipotónico y sin esfuerzo respiratorio. Se realizan los pasos iniciales (calor, secado, posición y estimulación) y a los 30 segundos persiste en apnea con frecuencia cardiaca de 80 lpm. Se cuenta con bolsa y mascarilla, mezclador de oxígeno y oxímetro de pulso.",
     "pregunta": "¿Cuál es la conducta más adecuada en este momento?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 47,
-          "fragmento": "positiva, se recomienda iniciar con oxígeno a"
+          "fragmento": "positiva, se recomienda iniciar con oxígeno a",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la"
+          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 49,
-          "fragmento": "que mantienen frecuencia cardiaca menor de 60"
+          "fragmento": "que mantienen frecuencia cardiaca menor de 60",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "No se recomienda la aspiración de nasofaríngea y"
+          "fragmento": "No se recomienda la aspiración de nasofaríngea y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la"
+          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la"
+          "fragmento": "de oxígeno al 100% no confiere ventaja sobre la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "No se recomienda la aspiración de nasofaríngea y"
+          "fragmento": "No se recomienda la aspiración de nasofaríngea y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 51,
-          "fragmento": "Si la frecuencia cardiaca se mantiene por debajo"
+          "fragmento": "Si la frecuencia cardiaca se mantiene por debajo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -208,21 +218,24 @@
             "clave": "IMSS-632-13",
             "seccion": "4.2.1 Reanimación Neonatal",
             "pagina": 47,
-            "fragmento": "positiva, se recomienda iniciar con oxígeno a"
+            "fragmento": "positiva, se recomienda iniciar con oxígeno a",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
             "clave": "IMSS-632-13",
             "seccion": "4.2.1 Reanimación Neonatal",
             "pagina": 47,
-            "fragmento": "de gestación se administrara oxígeno con mezclador"
+            "fragmento": "de gestación se administrara oxígeno con mezclador",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
             "clave": "IMSS-632-13",
             "seccion": "4.2.1 Reanimación Neonatal",
             "pagina": 46,
-            "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+            "fragmento": "reanimación con oxígeno entre el 30% y el 90%,",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
           }
         ]
       },
@@ -274,7 +287,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Asfixia Neonatal",
       "clave": "IMSS-632-13",
-      "archivo": "632GER.pdf"
+      "archivo": "632GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
     },
     "vineta": "Recién nacida de 29 semanas de gestación, peso 1,150 g, nacida por cesárea por preeclampsia grave. Tras los pasos iniciales en bolsa de polietileno bajo calor radiante, continúa en apnea con frecuencia cardiaca de 90 lpm. Se dispone de pieza en T, mezclador de oxígeno y oxímetro de pulso en la mano derecha.",
     "pregunta": "¿Cuál es la conducta más adecuada para iniciar la ventilación?",
@@ -294,7 +308,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -304,7 +319,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 47,
-          "fragmento": "de gestación se administrara oxígeno con mezclador"
+          "fragmento": "de gestación se administrara oxígeno con mezclador",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       }
     ],
@@ -327,7 +343,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -348,7 +365,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 46,
-          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,"
+          "fragmento": "reanimación con oxígeno entre el 30% y el 90%,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -369,7 +387,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 48,
-          "fragmento": "Los recién nacidos prematuros una presión inicial de"
+          "fragmento": "Los recién nacidos prematuros una presión inicial de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       },
       {
@@ -390,7 +409,8 @@
           "clave": "IMSS-632-13",
           "seccion": "4.2.1 Reanimación Neonatal",
           "pagina": 47,
-          "fragmento": "de gestación se administrara oxígeno con mezclador"
+          "fragmento": "de gestación se administrara oxígeno con mezclador",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/632GER.pdf"
         }
       }
     ],

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
       "clave": "GPC-IMSS-643-18",
-      "archivo": "643GER.pdf"
+      "archivo": "643GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
     },
     "vineta": "Masculino de 8 años, peso 26 kg, con evacuaciones duras y dolorosas cada 5 a 6 días desde hace 8 meses, conductas de retención y manchado de la ropa interior. Cumple criterios de Roma para estreñimiento funcional. A la exploración se palpa masa fecal en hipogastrio y fosa iliaca izquierda. Crecimiento normal, sin distensión abdominal importante, sin alteraciones neurológicas ni en la región lumbosacra, sin sangrado. No ha recibido tratamiento.",
     "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 15,
-          "fragmento": "Si el paciente está impactado se recomienda iniciar"
+          "fragmento": "Si el paciente está impactado se recomienda iniciar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 15,
-          "fragmento": "gradual: iniciar 1-1.5 g/ kg por 3-6 días es la"
+          "fragmento": "gradual: iniciar 1-1.5 g/ kg por 3-6 días es la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 12,
-          "fragmento": "oportunamente los datos de alarma (conocidas como"
+          "fragmento": "oportunamente los datos de alarma (conocidas como",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 15,
-          "fragmento": "Si el paciente está impactado se recomienda iniciar"
+          "fragmento": "Si el paciente está impactado se recomienda iniciar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 16,
-          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos"
+          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 17,
-          "fragmento": "No se recomienda realizar la evacuación manual del"
+          "fragmento": "No se recomienda realizar la evacuación manual del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 12,
-          "fragmento": "presencia de una masa fecal grande y dura"
+          "fragmento": "presencia de una masa fecal grande y dura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 16,
-          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos"
+          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 17,
-          "fragmento": "No se recomienda realizar la evacuación manual del"
+          "fragmento": "No se recomienda realizar la evacuación manual del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -208,28 +218,32 @@
             "clave": "GPC-IMSS-643-18",
             "seccion": "2.1 Tratamiento médico para la impactación fecal",
             "pagina": 12,
-            "fragmento": "considerados de alarma, no deben ser tratados"
+            "fragmento": "considerados de alarma, no deben ser tratados",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
           },
           {
             "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
             "clave": "GPC-IMSS-643-18",
             "seccion": "2.1 Tratamiento médico para la impactación fecal",
             "pagina": 15,
-            "fragmento": "desimpactación o intolerancia dentro de las 2"
+            "fragmento": "desimpactación o intolerancia dentro de las 2",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
           },
           {
             "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
             "clave": "GPC-IMSS-643-18",
             "seccion": "2.1 Tratamiento médico para la impactación fecal",
             "pagina": 16,
-            "fragmento": "No se aconseja el uso de enemas de fosfato, a menos"
+            "fragmento": "No se aconseja el uso de enemas de fosfato, a menos",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
           },
           {
             "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
             "clave": "GPC-IMSS-643-18",
             "seccion": "2.1 Tratamiento médico para la impactación fecal",
             "pagina": 17,
-            "fragmento": "No se recomienda realizar la evacuación manual del"
+            "fragmento": "No se recomienda realizar la evacuación manual del",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
           }
         ]
       },
@@ -280,7 +294,8 @@
     "gpc_base": {
       "guia": "Tratamiento médico del Estreñimiento Funcional en el Escolar y Adolescente",
       "clave": "GPC-IMSS-643-18",
-      "archivo": "643GER.pdf"
+      "archivo": "643GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
     },
     "vineta": "Femenino de 10 años, peso 32 kg, con estreñimiento funcional e impactación fecal, sin datos de alarma. Hace 2 semanas inició polietilenglicol 3350 en dosis creciente, que ha tomado de forma correcta y tolera bien. Persiste la masa fecal palpable y no ha logrado la desimpactación.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -300,7 +315,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 15,
-          "fragmento": "desimpactación o intolerancia dentro de las 2"
+          "fragmento": "desimpactación o intolerancia dentro de las 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -310,7 +326,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 16,
-          "fragmento": "dosis altas de aceite mineral, lactulosa y senósidos,"
+          "fragmento": "dosis altas de aceite mineral, lactulosa y senósidos,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       }
     ],
@@ -332,7 +349,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 16,
-          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos"
+          "fragmento": "No se aconseja el uso de enemas de fosfato, a menos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -352,7 +370,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 17,
-          "fragmento": "No se recomienda realizar la evacuación manual del"
+          "fragmento": "No se recomienda realizar la evacuación manual del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -373,7 +392,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 16,
-          "fragmento": "dosis altas de aceite mineral, lactulosa y senósidos,"
+          "fragmento": "dosis altas de aceite mineral, lactulosa y senósidos,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       },
       {
@@ -394,7 +414,8 @@
           "clave": "GPC-IMSS-643-18",
           "seccion": "2.1 Tratamiento médico para la impactación fecal",
           "pagina": 15,
-          "fragmento": "desimpactación o intolerancia dentro de las 2"
+          "fragmento": "desimpactación o intolerancia dentro de las 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/643GER.pdf"
         }
       }
     ],

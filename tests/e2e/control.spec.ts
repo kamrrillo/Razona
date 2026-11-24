@@ -20,21 +20,24 @@ async function signUpControl(page: Page, name = "Control") {
   return email;
 }
 
-test("grupo control: un intento por caso, respuesta y explicación, sin tutor", async ({ page }) => {
+test("grupo control: un intento por caso, solo si acertó y la correcta", async ({ page }) => {
   await signUpControl(page);
   await expect(page.getByText(/diagnóstico con IA/i)).toHaveCount(0);
 
   await page.getByTestId("start-practice").click();
   await expect(page.getByTestId("case-title")).toBeVisible();
-  // Elige una opción incorrecta a propósito: la que no es la correcta según la respuesta.
   const options = page.locator('[data-testid^="option-"]');
   await options.first().click();
   await page.getByTestId("submit-answer").click();
 
   const feedback = page.getByTestId("quiz-feedback");
   await expect(feedback).toBeVisible();
-  await expect(feedback.getByTestId("quiz-correct-answer")).toContainText("Respuesta correcta");
-  await expect(feedback.getByTestId("citation")).toBeVisible();
+  if ((await feedback.getAttribute("data-correct")) === "false") {
+    await expect(feedback).toContainText("Incorrecto");
+    await expect(feedback.getByTestId("quiz-correct-answer")).toContainText("Respuesta correcta");
+  }
+  // Sin explicación ni cita
+  await expect(feedback.getByTestId("citation")).toHaveCount(0);
   // Nada de IA ni reintentos
   await expect(page.getByTestId("tutor-chat")).toHaveCount(0);
   await expect(page.getByTestId("tutor-explanation")).toHaveCount(0);
@@ -66,7 +69,7 @@ test("grupo control: las funciones con IA responden 403 y el diagnóstico no abr
   await expect(page.getByTestId("open-diagnostic")).toHaveCount(0);
 });
 
-test("grupo control: los resultados del examen no traen rúbrica, tutor ni recursos", async ({
+test("grupo control: los resultados del examen solo dicen la respuesta correcta", async ({
   page,
 }) => {
   await signUpControl(page);
@@ -81,7 +84,9 @@ test("grupo control: los resultados del examen no traen rúbrica, tutor ni recur
 
   const first = page.getByTestId("review-item").first();
   await first.locator(":scope > summary").click();
-  await expect(first.getByTestId("citation").first()).toBeVisible();
+  // La opción a es incorrecta en RZ-PED-032-I
+  await expect(first).toContainText("Respuesta correcta");
+  await expect(first.getByTestId("citation")).toHaveCount(0);
   await expect(first.getByTestId("error-type")).toHaveCount(0);
   await expect(first.getByTestId("tutor-explanation")).toHaveCount(0);
   await expect(first.getByTestId("learning-resources")).toHaveCount(0);

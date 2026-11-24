@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
       "clave": "GPC-IMSS-829-18",
-      "archivo": "829GER.pdf"
+      "archivo": "829GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
     },
     "vineta": "Femenino de 17 años, cursa embarazo de 20 semanas, primera consulta prenatal en su centro de salud rural. No tiene cartilla de vacunación y no recuerda haber recibido vacunas en la adolescencia. Planea atender su parto en casa con una partera de la comunidad, a 2 horas del hospital más cercano. Sin enfermedades crónicas.",
     "pregunta": "¿Cuál es la conducta más adecuada para prevenir el tétanos neonatal?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 27,
-          "fragmento": "que incluya de 2 a 3 dosis de inmunización contra tétanos para"
+          "fragmento": "que incluya de 2 a 3 dosis de inmunización contra tétanos para",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo"
+          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.1 Prevención y promoción a la salud",
           "pagina": 18,
-          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "documentados de haber completado su serie primaria de"
+          "fragmento": "documentados de haber completado su serie primaria de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.1 Prevención y promoción a la salud",
           "pagina": 18,
-          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil"
+          "fragmento": "se recomienda la inmunización con toxoide tetánico a la mujer en edad fértil",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "Una dosis única de la vacuna antitetánica no es suficiente para"
+          "fragmento": "Una dosis única de la vacuna antitetánica no es suficiente para",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 27,
-          "fragmento": "En la embarazada se recomienda el esquema de vacunación"
+          "fragmento": "En la embarazada se recomienda el esquema de vacunación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 25,
-          "fragmento": "dosis múltiples de 2 a 3, es efectiva hasta el 98% en la"
+          "fragmento": "dosis múltiples de 2 a 3, es efectiva hasta el 98% en la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 25,
-          "fragmento": "una protección pasiva transitoria durante el periodo"
+          "fragmento": "una protección pasiva transitoria durante el periodo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.1 Prevención y promoción a la salud",
           "pagina": 18,
-          "fragmento": "controles prenatales deficientes, falta de vacunas"
+          "fragmento": "controles prenatales deficientes, falta de vacunas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "GPC-IMSS-829-18",
             "seccion": "3.2 Cuadros o figuras",
             "pagina": 43,
-            "fragmento": "Aplicar una dosis de Tdap durante cada embarazo"
+            "fragmento": "Aplicar una dosis de Tdap durante cada embarazo",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
           },
           {
             "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
             "clave": "GPC-IMSS-829-18",
             "seccion": "3.2 Cuadros o figuras",
             "pagina": 43,
-            "fragmento": "1ª dosis día 0 en primer consulta prenatal"
+            "fragmento": "1ª dosis día 0 en primer consulta prenatal",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
           },
           {
             "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
             "clave": "GPC-IMSS-829-18",
             "seccion": "2.1 Prevención y promoción a la salud",
             "pagina": 18,
-            "fragmento": "higiene durante el parto, con énfasis particular en el"
+            "fragmento": "higiene durante el parto, con énfasis particular en el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
           },
           {
             "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
             "clave": "GPC-IMSS-829-18",
             "seccion": "2.1 Prevención y promoción a la salud",
             "pagina": 23,
-            "fragmento": "recomienda el uso de clorhexidina en el cordón"
+            "fragmento": "recomienda el uso de clorhexidina en el cordón",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
           }
         ]
       },
@@ -296,7 +311,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "3.2 Cuadros o figuras",
           "pagina": 44,
-          "fragmento": "Cuadro 3. Eficacia de la vacuna con toxoide tetánico"
+          "fragmento": "Cuadro 3. Eficacia de la vacuna con toxoide tetánico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -346,7 +362,8 @@
     "gpc_base": {
       "guia": "Detección de Factores de Riesgo y Prevención Primaria del Tétanos Neonatal en el Primer Nivel de Atención Médica",
       "clave": "GPC-IMSS-829-18",
-      "archivo": "829GER.pdf"
+      "archivo": "829GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
     },
     "vineta": "Femenino de 19 años con embarazo de 28 semanas, en control prenatal en su unidad de medicina familiar. Presenta cartilla con esquema completo de DPT en la infancia y 5 dosis documentadas de toxoide tetánico-diftérico; la última fue hace 3 años. Pregunta si necesita alguna vacuna en este embarazo para proteger a su bebé.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -366,7 +383,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 27,
-          "fragmento": "El personal de salud debe administrar una dosis de Tdap"
+          "fragmento": "El personal de salud debe administrar una dosis de Tdap",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -376,7 +394,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "documentados de haber completado su serie primaria de"
+          "fragmento": "documentados de haber completado su serie primaria de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       }
     ],
@@ -399,7 +418,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 27,
-          "fragmento": "durante cada embarazo independientemente de la historia"
+          "fragmento": "durante cada embarazo independientemente de la historia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -420,7 +440,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "previamente, deben iniciar con una serie de 5 dosis de acuerdo"
+          "fragmento": "previamente, deben iniciar con una serie de 5 dosis de acuerdo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -441,7 +462,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 26,
-          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo"
+          "fragmento": "2 dosis de toxoide tetánico aplicadas con un intervalo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       },
       {
@@ -462,7 +484,8 @@
           "clave": "GPC-IMSS-829-18",
           "seccion": "2.2 Prevención Primaria",
           "pagina": 27,
-          "fragmento": "durante cada embarazo independientemente de la historia"
+          "fragmento": "durante cada embarazo independientemente de la historia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/829GER.pdf"
         }
       }
     ],

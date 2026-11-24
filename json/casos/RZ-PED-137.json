@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Síndrome de Dificultad Respiratoria en el Recién Nacido",
       "clave": "IMSS-137-08",
-      "archivo": "137GER.pdf"
+      "archivo": "137GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
     },
     "vineta": "Recién nacido masculino de 28 semanas de gestación por fecha de última menstruación y Capurro, peso 1,050 g, producto de parto vaginal precipitado. La madre llegó en periodo expulsivo y no recibió esteroides prenatales. Al nacer presentó esfuerzo respiratorio débil y frecuencia cardiaca de 80 lpm que no mejoró con ventilación con bolsa y mascarilla, por lo que fue intubado en la sala de partos. A los 15 minutos de vida está en ventilación mecánica con FiO2 de 35 % y SpO2 91 %.",
     "pregunta": "En relación con el surfactante exógeno, ¿cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 17,
-          "fragmento": "profiláctico a todos los recién nacidos"
+          "fragmento": "profiláctico a todos los recién nacidos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 17,
-          "fragmento": "surfactante profiláctico y de rescate en"
+          "fragmento": "surfactante profiláctico y de rescate en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       }
     ],
@@ -62,7 +65,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 17,
-          "fragmento": "madres no hayan recibido esteroides"
+          "fragmento": "madres no hayan recibido esteroides",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -84,7 +88,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 17,
-          "fragmento": "gestacional que requieran intubación"
+          "fragmento": "gestacional que requieran intubación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -105,7 +110,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 19,
-          "fragmento": "Una fracción de oxígeno mayor del"
+          "fragmento": "Una fracción de oxígeno mayor del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -127,7 +133,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "administración tardía disminuye el"
+          "fragmento": "administración tardía disminuye el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       }
     ],
@@ -152,7 +159,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.1 Diagnóstico",
           "pagina": 11,
-          "fragmento": "incrementan la incidencia de SDR"
+          "fragmento": "incrementan la incidencia de SDR",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -171,7 +179,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "administración tardía disminuye el"
+          "fragmento": "administración tardía disminuye el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -190,7 +199,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 19,
-          "fragmento": "Una fracción de oxígeno mayor del"
+          "fragmento": "Una fracción de oxígeno mayor del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -210,21 +220,24 @@
             "clave": "IMSS-137-08",
             "seccion": "4.2.2 Administración de Surfactante Exógeno",
             "pagina": 18,
-            "fragmento": "primeras 2 horas después del"
+            "fragmento": "primeras 2 horas después del",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Síndrome de Dificultad Respiratoria en el Recién Nacido",
             "clave": "IMSS-137-08",
             "seccion": "4.2.2 Administración de Surfactante Exógeno",
             "pagina": 18,
-            "fragmento": "extubación rápida tras una breve"
+            "fragmento": "extubación rápida tras una breve",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Síndrome de Dificultad Respiratoria en el Recién Nacido",
             "clave": "IMSS-137-08",
             "seccion": "4.2.2 Administración de Surfactante Exógeno",
             "pagina": 19,
-            "fragmento": "Una fracción de oxígeno mayor del"
+            "fragmento": "Una fracción de oxígeno mayor del",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
           }
         ]
       },
@@ -294,7 +307,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Síndrome de Dificultad Respiratoria en el Recién Nacido",
       "clave": "IMSS-137-08",
-      "archivo": "137GER.pdf"
+      "archivo": "137GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
     },
     "vineta": "Recién nacida de 32 semanas de gestación, peso 1,700 g, nacida por cesárea por preeclampsia grave. La madre recibió esquema completo de esteroides prenatales. Respiró al nacer y no requirió intubación. A los 40 minutos de vida presenta quejido, aleteo nasal, retracción xifoidea, Silverman-Anderson de 6 y cianosis que requiere FiO2 de 45 % para SpO2 de 90 %. Se intuba para estabilizarla.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto al surfactante y el soporte ventilatorio?",
@@ -314,7 +328,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "primeras 2 horas después del"
+          "fragmento": "primeras 2 horas después del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -324,7 +339,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "extubación rápida tras una breve"
+          "fragmento": "extubación rápida tras una breve",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       }
     ],
@@ -347,7 +363,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "primeras 2 horas después del"
+          "fragmento": "primeras 2 horas después del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -368,7 +385,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "administración tardía disminuye el"
+          "fragmento": "administración tardía disminuye el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -389,7 +407,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 18,
-          "fragmento": "extubación rápida tras una breve"
+          "fragmento": "extubación rápida tras una breve",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       },
       {
@@ -410,7 +429,8 @@
           "clave": "IMSS-137-08",
           "seccion": "4.2.2 Administración de Surfactante Exógeno",
           "pagina": 19,
-          "fragmento": "Una fracción de oxígeno mayor del"
+          "fragmento": "Una fracción de oxígeno mayor del",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/137GER.pdf"
         }
       }
     ],

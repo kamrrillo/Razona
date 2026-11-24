@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
       "clave": "IMSS-475-11",
-      "archivo": "475GER.pdf"
+      "archivo": "475GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
     },
     "vineta": "Masculino de 3 años, peso 14 kg, que acude a guardería. Tiene tos húmeda diaria desde hace 6 semanas, sin fiebre, sin pérdida de peso y con buen crecimiento. Recibió salbutamol inhalado durante 2 semanas sin mejoría. A la auscultación presenta roncus espiratorios bilaterales, sin sibilancias. No hay antecedente de atragantamiento. La radiografía de tórax es normal. Sin acropaquias.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 14,
-          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 15,
-          "fragmento": "Se recomienda iniciar amoxicilina suspensión a dosis de"
+          "fragmento": "Se recomienda iniciar amoxicilina suspensión a dosis de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
           "pagina": 11,
-          "fragmento": "La tos crónica en niños se define como aquella que dura"
+          "fragmento": "La tos crónica en niños se define como aquella que dura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 14,
-          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 15,
-          "fragmento": "cursos cortos con frecuencia conducen a la recaída"
+          "fragmento": "cursos cortos con frecuencia conducen a la recaída",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 15,
-          "fragmento": "asma pero no suele responder a los broncodilatadores"
+          "fragmento": "asma pero no suele responder a los broncodilatadores",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
           "pagina": 11,
-          "fragmento": "La tos crónica en niños se define como aquella que dura"
+          "fragmento": "La tos crónica en niños se define como aquella que dura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 15,
-          "fragmento": "cursos cortos con frecuencia conducen a la recaída"
+          "fragmento": "cursos cortos con frecuencia conducen a la recaída",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 15,
-          "fragmento": "asma pero no suele responder a los broncodilatadores"
+          "fragmento": "asma pero no suele responder a los broncodilatadores",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "IMSS-475-11",
             "seccion": "4.4.1 Radiografía de Tórax",
             "pagina": 27,
-            "fragmento": "radiografía de tórax en lateral izquierda y postero-"
+            "fragmento": "radiografía de tórax en lateral izquierda y postero-",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
             "clave": "IMSS-475-11",
             "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
             "pagina": 11,
-            "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin"
+            "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
             "clave": "IMSS-475-11",
             "seccion": "4.2.2 Vías Respiratorias Bajas",
             "pagina": 14,
-            "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+            "fragmento": "El diagnóstico de la bronquitis bacteriana persistente",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
           },
           {
             "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
             "clave": "IMSS-475-11",
             "seccion": "4.4.3 Broncoscopia",
             "pagina": 28,
-            "fragmento": "realizar una broncoscopia para toma de estudios"
+            "fragmento": "realizar una broncoscopia para toma de estudios",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
           }
         ]
       },
@@ -280,7 +294,8 @@
     "gpc_base": {
       "guia": "Abordaje Diagnóstico de la Tos Crónica en Niños",
       "clave": "IMSS-475-11",
-      "archivo": "475GER.pdf"
+      "archivo": "475GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
     },
     "vineta": "Femenino de 5 años con tos seca diaria de 5 semanas de evolución, sin fiebre. No hay antecedente de atragantamiento ni de cuerpo extraño. Crece adecuadamente. A la exploración: campos pulmonares sin estertores ni sibilancias, sin acropaquias, sin soplos. No se le han realizado estudios. Acude a su unidad de medicina familiar.",
     "pregunta": "¿Cuál es el siguiente paso más adecuado en el abordaje?",
@@ -300,7 +315,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.4.1 Radiografía de Tórax",
           "pagina": 27,
-          "fragmento": "radiografía de tórax en lateral izquierda y postero-"
+          "fragmento": "radiografía de tórax en lateral izquierda y postero-",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -310,7 +326,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
           "pagina": 11,
-          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin"
+          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       }
     ],
@@ -333,7 +350,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.2.2 Vías Respiratorias Bajas",
           "pagina": 14,
-          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente"
+          "fragmento": "El diagnóstico de la bronquitis bacteriana persistente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -354,7 +372,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
           "pagina": 11,
-          "fragmento": "La tos crónica en niños se define como aquella que dura"
+          "fragmento": "La tos crónica en niños se define como aquella que dura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -375,7 +394,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.4.1 Radiografía de Tórax",
           "pagina": 27,
-          "fragmento": "En caso de sospecha de aspiración de cuerpo extraño se"
+          "fragmento": "En caso de sospecha de aspiración de cuerpo extraño se",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       },
       {
@@ -396,7 +416,8 @@
           "clave": "IMSS-475-11",
           "seccion": "4.1 Concepto de Tos Crónica Específica y No Específica",
           "pagina": 11,
-          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin"
+          "fragmento": "Todo niño con tos de 4 o más semanas de evolución sin",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/475GER.pdf"
         }
       }
     ],

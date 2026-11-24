@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Displasia Broncopulmonar en niñas/niños menores de 2 años en el segundo y tercer nivel de atención",
       "clave": "IMSS-776-15",
-      "archivo": "776GER.pdf"
+      "archivo": "776GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
     },
     "vineta": "Masculino nacido a las 28 semanas de gestación, que recibió surfactante y ventilación mecánica 5 días y después CPAP nasal. Hoy tiene 8 semanas de vida (36 semanas de edad corregida) y continúa requiriendo oxígeno suplementario por puntas nasales para mantener SpO2 en la meta; ha recibido oxígeno de forma continua desde el nacimiento. Gana peso de forma adecuada.",
     "pregunta": "¿Cuál es la interpretación más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "semanas de gestación con evaluación diagnóstica a las 36 SDG corregidas"
+          "fragmento": "semanas de gestación con evaluación diagnóstica a las 36 SDG corregidas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "ya no requiere oxigeno suplementario se considera"
+          "fragmento": "ya no requiere oxigeno suplementario se considera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "ya no requiere oxigeno suplementario se considera"
+          "fragmento": "ya no requiere oxigeno suplementario se considera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "semanas de gestación con evaluación a los 56 días de edad"
+          "fragmento": "semanas de gestación con evaluación a los 56 días de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "necesita oxigeno suplementario por más de 28 días"
+          "fragmento": "necesita oxigeno suplementario por más de 28 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "necesita oxigeno suplementario por más de 28 días"
+          "fragmento": "necesita oxigeno suplementario por más de 28 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "necesita oxigeno suplementario por más de 28 días"
+          "fragmento": "necesita oxigeno suplementario por más de 28 días",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-776-15",
           "seccion": "3.4 Definición",
           "pagina": 11,
-          "fragmento": "semanas de gestación con evaluación a los 56 días de edad"
+          "fragmento": "semanas de gestación con evaluación a los 56 días de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.3.1.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "antecedentes. No se requiere de la radiografía de"
+          "fragmento": "antecedentes. No se requiere de la radiografía de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -208,21 +218,24 @@
             "clave": "IMSS-776-15",
             "seccion": "3.4 Definición",
             "pagina": 11,
-            "fragmento": "necesita oxigeno suplementario por más de 28 días"
+            "fragmento": "necesita oxigeno suplementario por más de 28 días",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Displasia Broncopulmonar en niñas/niños menores de 2 años en el segundo y tercer nivel de atención",
             "clave": "IMSS-776-15",
             "seccion": "3.4 Definición",
             "pagina": 11,
-            "fragmento": "semanas de gestación con evaluación a los 56 días de edad"
+            "fragmento": "semanas de gestación con evaluación a los 56 días de edad",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Displasia Broncopulmonar en niñas/niños menores de 2 años en el segundo y tercer nivel de atención",
             "clave": "IMSS-776-15",
             "seccion": "5.3 Clasificación o Escalas de la Enfermedad",
             "pagina": 37,
-            "fragmento": "Clasificación de la Gravedad de la Displasia Broncopulmonar"
+            "fragmento": "Clasificación de la Gravedad de la Displasia Broncopulmonar",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
           }
         ]
       },
@@ -273,7 +286,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Displasia Broncopulmonar en niñas/niños menores de 2 años en el segundo y tercer nivel de atención",
       "clave": "IMSS-776-15",
-      "archivo": "776GER.pdf"
+      "archivo": "776GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
     },
     "vineta": "Recién nacida de 26 semanas de gestación, peso 850 g, cuya madre recibió esteroides prenatales completos. A los 10 minutos de vida respira espontáneamente con quejido y retracciones; requiere FiO2 de 30 % para SpO2 de 90 %. FC 150 lpm, sin inestabilidad hemodinámica. La unidad cuenta con CPAP nasal y surfactante.",
     "pregunta": "¿Cuál es la estrategia más adecuada para reducir el riesgo de displasia broncopulmonar?",
@@ -293,7 +307,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 14,
-          "fragmento": "nasales de 5 a 6 cm H2O en niños con riesgo de"
+          "fragmento": "nasales de 5 a 6 cm H2O en niños con riesgo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -303,7 +318,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 15,
-          "fragmento": "estricto de la saturación periférica de O2 entre 88 y"
+          "fragmento": "estricto de la saturación periférica de O2 entre 88 y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       }
     ],
@@ -326,7 +342,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 14,
-          "fragmento": "oxígeno con Fi02> 50% para mantener saturación"
+          "fragmento": "oxígeno con Fi02> 50% para mantener saturación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -347,7 +364,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 15,
-          "fragmento": "surfactante electivo) el riesgo de DBP o muerte fue"
+          "fragmento": "surfactante electivo) el riesgo de DBP o muerte fue",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -367,7 +385,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 15,
-          "fragmento": "El uso de broncodilatadores como salbutamol no"
+          "fragmento": "El uso de broncodilatadores como salbutamol no",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       },
       {
@@ -388,7 +407,8 @@
           "clave": "IMSS-776-15",
           "seccion": "4.2.1 Medidas de Prevención para el desarrollo de Displasia broncopulmonar",
           "pagina": 15,
-          "fragmento": "estricto de la saturación periférica de O2 entre 88 y"
+          "fragmento": "estricto de la saturación periférica de O2 entre 88 y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/776GER.pdf"
         }
       }
     ],

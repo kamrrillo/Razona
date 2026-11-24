@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
       "clave": "IMSS-637-13",
-      "archivo": "637GER.pdf"
+      "archivo": "637GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
     },
     "vineta": "Recién nacido masculino de término, 2 horas de vida, peso 3,200 g, sano. Su madre tiene hepatitis B crónica (HBsAg positivo), sin tratamiento antiviral, y desea amamantar. A la exploración de la madre, ambos pezones están íntegros, sin grietas ni sangrado. En la unidad se dispone de vacuna contra hepatitis B e inmunoglobulina específica.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+          "fragmento": "Las madres con hepatitis B pueden amamantar a sus",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas"
+          "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "hijos. Sin embargo, las madres deben aplazar el"
+          "fragmento": "hijos. Sin embargo, las madres deben aplazar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera"
+          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "con los niños que se alimentan con sucedáneos de"
+          "fragmento": "con los niños que se alimentan con sucedáneos de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+          "fragmento": "Las madres con hepatitis B pueden amamantar a sus",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "con los niños que se alimentan con sucedáneos de"
+          "fragmento": "con los niños que se alimentan con sucedáneos de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera"
+          "fragmento": "inmunoglobulina de hepatitis B (HBIG), la primera",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 22,
-          "fragmento": "hijos. Sin embargo, las madres deben aplazar el"
+          "fragmento": "hijos. Sin embargo, las madres deben aplazar el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-637-13",
             "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
             "pagina": 22,
-            "fragmento": "Las madres con hepatitis B pueden amamantar a sus"
+            "fragmento": "Las madres con hepatitis B pueden amamantar a sus",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
           },
           {
             "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
             "clave": "IMSS-637-13",
             "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
             "pagina": 22,
-            "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas"
+            "fragmento": "vacuna se debe aplicar dentro de las primeras 24 horas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
           },
           {
             "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
             "clave": "IMSS-637-13",
             "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
             "pagina": 23,
-            "fragmento": "Se contraindica la lactancia si la madre tiene"
+            "fragmento": "Se contraindica la lactancia si la madre tiene",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
           },
           {
             "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
             "clave": "IMSS-637-13",
             "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
             "pagina": 23,
-            "fragmento": "Indicar lactancia materna en caso de madre con"
+            "fragmento": "Indicar lactancia materna en caso de madre con",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
           }
         ]
       },
@@ -269,7 +283,8 @@
     "gpc_base": {
       "guia": "Lactancia materna: Niño de madre con enfermedad, tratada con medicamento",
       "clave": "IMSS-637-13",
-      "archivo": "637GER.pdf"
+      "archivo": "637GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
     },
     "vineta": "Femenino de 2 semanas, de término, sana, alimentada con lactancia materna exclusiva. Su madre tiene hepatitis C crónica y su hepatólogo le acaba de iniciar tratamiento con interferón pegilado y ribavirina. La madre no tiene VIH y sus pezones están íntegros. Pregunta si puede seguir amamantando.",
     "pregunta": "¿Cuál es la recomendación más adecuada?",
@@ -289,7 +304,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "Se contraindica la lactancia si la madre tiene"
+          "fragmento": "Se contraindica la lactancia si la madre tiene",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -299,7 +315,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "La ribavirina es un potente teratógeno y podría"
+          "fragmento": "La ribavirina es un potente teratógeno y podría",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       }
     ],
@@ -322,7 +339,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "Se contraindica la lactancia si la madre tiene"
+          "fragmento": "Se contraindica la lactancia si la madre tiene",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -343,7 +361,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "La ribavirina es un potente teratógeno y podría"
+          "fragmento": "La ribavirina es un potente teratógeno y podría",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -364,7 +383,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "Se contraindica la lactancia si la madre tiene"
+          "fragmento": "Se contraindica la lactancia si la madre tiene",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       },
       {
@@ -385,7 +405,8 @@
           "clave": "IMSS-637-13",
           "seccion": "4.4 Indicaciones y contraindicaciones de lactancia en niños con madre con hepatitis B y C",
           "pagina": 23,
-          "fragmento": "Indicar lactancia materna en caso de madre con"
+          "fragmento": "Indicar lactancia materna en caso de madre con",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/637GER.pdf"
         }
       }
     ],
