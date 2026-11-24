@@ -80,13 +80,15 @@ export async function signUpWithPassword(
   if (!parsed.success) return { error: firstIssue(parsed.error) };
 
   const next = safeNextPath(formData.get("next"));
+  // Grupo del estudio: el enlace de registro ?grupo=control lo fija al crear la cuenta.
+  const studyGroup = field(formData, "study_group") === "control" ? "control" : "ia";
   const supabase = await createClient();
   const { data, error } = await supabase.auth.signUp({
     email: parsed.data.email,
     password: parsed.data.password,
     options: {
       // El trigger handle_new_user copia display_name a profiles (saludo en Inicio).
-      data: { display_name: parsed.data.name },
+      data: { display_name: parsed.data.name, study_group: studyGroup },
       emailRedirectTo: await callbackUrl(next),
     },
   });

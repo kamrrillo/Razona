@@ -1,10 +1,10 @@
 import { callDiagnosticAgent } from "@/lib/agent/client";
-import { handleError, ok, parseJson, requireAuth } from "@/lib/api";
+import { handleError, ok, parseJson, requireAiAuth } from "@/lib/api";
 import { DiagnosticAnswerRequestSchema, DiagnosticResponseSchema } from "@/lib/schemas/diagnostic";
 
 export async function POST(request: Request) {
   try {
-    const { userId } = await requireAuth();
+    const { userId } = await requireAiAuth();
     const body = await parseJson(request, DiagnosticAnswerRequestSchema);
     const data = await callDiagnosticAgent(
       `/diagnostico/sesiones/${encodeURIComponent(body.sessionId)}/respuestas`,

@@ -38,6 +38,17 @@ export const AttemptResponseSchema = z.discriminatedUnion("isCorrect", [
   z.object({
     isCorrect: z.literal(false),
     attemptNumber: z.number().int().positive(),
+    /**
+     * Solo en el grupo control (sin IA): el caso se cierra al primer intento y se muestra
+     * la respuesta correcta con la explicación fija del caso.
+     */
+    reveal: z
+      .object({
+        correctOptionId: OptionId,
+        explanation: z.string(),
+        citation: CitationSchema,
+      })
+      .optional(),
   }),
 ]);
 export type AttemptResponse = z.infer<typeof AttemptResponseSchema>;

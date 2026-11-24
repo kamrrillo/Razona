@@ -33,12 +33,28 @@ type TutorMessage = {
 
 type Solved = Extract<AttemptResponse, { isCorrect: true }>;
 
-export function PracticeSession({ topic }: { topic?: string }) {
+/** Resultado en la versión de solo cuestionario (grupo control): un intento y se revela. */
+type QuizOutcome = {
+  isCorrect: boolean;
+  correctOptionId: string;
+  explanation: string;
+  citation: Solved["citation"];
+};
+
+export function PracticeSession({
+  topic,
+  quizOnly = false,
+}: {
+  topic?: string;
+  /** Grupo control del estudio: sin tutor, sin explicación con IA y sin recursos. */
+  quizOnly?: boolean;
+}) {
   const [session, setSession] = useState<SessionResponse | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [wrong, setWrong] = useState<string[]>([]);
   const [solved, setSolved] = useState<Solved | null>(null);
+  const [outcome, setOutcome] = useState<QuizOutcome | null>(null);
   const [messages, setMessages] = useState<TutorMessage[]>([]);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
@@ -54,6 +70,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
     setSelected(null);
     setWrong([]);
     setSolved(null);
+    setOutcome(null);
     setMessages([]);
     try {
       const res = await fetch("/api/session", {
@@ -82,8 +99,9 @@ export function PracticeSession({ topic }: { topic?: string }) {
   }, [messages]);
 
   useEffect(() => {
-    if (solved) feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [solved]);
+    if (solved || outcome)
+      feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [solved, outcome]);
 
   const askTutor = useCallback(
     async (body: { optionId?: string; message?: string }) => {
@@ -144,7 +162,18 @@ export function PracticeSession({ topic }: { topic?: string }) {
       });
       if (!res.ok) throw new Error(String(res.status));
       const result = AttemptResponseSchema.parse(await res.json());
-      if (result.isCorrect) {
+      if (quizOnly) {
+        const reveal = result.isCorrect ? result : result.reveal;
+        if (!reveal) throw new Error("sin respuesta revelada");
+        if (!result.isCorrect) setWrong([selected]);
+        setOutcome({
+          isCorrect: result.isCorrect,
+          correctOptionId: reveal.correctOptionId,
+          explanation: reveal.explanation,
+          citation: reveal.citation,
+        });
+        track("case_completed", { itemId: session.item.id, attempts: 1, quizOnly: true });
+      } else if (result.isCorrect) {
         setSolved(result);
         track("case_completed", { itemId: session.item.id, attempts: result.attemptNumber });
       } else {
@@ -198,6 +227,8 @@ export function PracticeSession({ topic }: { topic?: string }) {
   }
 
   const { item } = session;
+  const closed = Boolean(solved || outcome);
+  const correctId = solved?.correctOptionId ?? outcome?.correctOptionId;
 
   return (
     <div className="space-y-4 py-4">
@@ -221,11 +252,11 @@ export function PracticeSession({ topic }: { topic?: string }) {
         <CardContent className="space-y-4">
           <p className="leading-relaxed">{item.vignette}</p>
           <p className="font-semibold">{item.question}</p>
-          <fieldset className="space-y-2" disabled={Boolean(solved) || busy}>
+          <fieldset className="space-y-2" disabled={closed || busy}>
             <legend className="sr-only">Opciones</legend>
             {item.options.map((option) => {
               const isWrong = wrong.includes(option.id);
-              const isCorrect = solved?.correctOptionId === option.id;
+              const isCorrect = correctId === option.id;
               const isSelected = selected === option.id;
               return (
                 <button
@@ -233,7 +264,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
                   type="button"
                   data-testid={`option-${option.id}`}
                   aria-pressed={isSelected}
-                  disabled={isWrong || Boolean(solved) || busy}
+                  disabled={isWrong || closed || busy}
                   onClick={() => setSelected(option.id)}
                   className={cn(
                     "flex min-h-12 w-full items-start gap-3 rounded-lg border bg-background p-3 text-left text-[15px] transition-colors",
@@ -258,7 +289,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
               );
             })}
           </fieldset>
-          {!solved && (
+          {!closed && (
             <Button
               className="w-full"
               size="lg"
@@ -357,7 +388,63 @@ export function PracticeSession({ topic }: { topic?: string }) {
         </Card>
       )}
 
-      {solved && (
+      {outcome && (
+        <div ref={feedbackRef} className="scroll-mt-14">
+          <Card
+            className={outcome.isCorrect ? "border-emerald-300" : "border-rose-300"}
+            data-testid="quiz-feedback"
+          >
+            <CardHeader>
+              <CardTitle
+                className={cn(
+                  "flex items-center gap-2 text-lg",
+                  outcome.isCorrect ? "text-emerald-700" : "text-rose-700",
+                )}
+              >
+                {outcome.isCorrect ? (
+                  <>
+                    <CheckCircle2 className="size-6" aria-hidden /> ¡Correcto!
+                  </>
+                ) : (
+                  <>
+                    <XCircle className="size-6" aria-hidden /> Incorrecto
+                  </>
+                )}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p data-testid="quiz-correct-answer">
+                Respuesta correcta:{" "}
+                <span className="font-semibold text-emerald-700">
+                  {outcome.correctOptionId}){" "}
+                  {item.options.find((o) => o.id === outcome.correctOptionId)?.text ?? ""}
+                </span>
+              </p>
+              <p className="leading-relaxed">{outcome.explanation}</p>
+              <CitationCard
+                gpcId={outcome.citation.gpcId}
+                gpcTitle={outcome.citation.gpcTitle}
+                section={outcome.citation.section}
+                page={outcome.citation.page}
+                snippet={outcome.citation.snippet}
+              />
+              <Button
+                className="w-full"
+                size="lg"
+                onClick={() => void loadSession({ excludeItemId: item.id })}
+                data-testid="next-case"
+              >
+                Siguiente caso
+              </Button>
+              <Link href="/examen" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
+                Ir al examen simulado
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
+      {solved && !quizOnly && (
         <div ref={feedbackRef} className="scroll-mt-14">
           <Card className="border-emerald-300" data-testid="feedback">
             <CardHeader>

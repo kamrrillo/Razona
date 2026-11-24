@@ -109,6 +109,8 @@ export async function recordAttempt(
   userId: string,
   session: LoadedSession,
   optionId: string,
+  /** Grupo control del estudio: un solo intento, el caso se cierra aunque falle. */
+  { closeOnWrong = false }: { closeOnWrong?: boolean } = {},
 ) {
   const isCorrect = optionId === session.item.correctOptionId;
   const { count, error: countError } = await supabase
@@ -130,7 +132,7 @@ export async function recordAttempt(
   });
   if (error) throw error;
 
-  if (isCorrect) {
+  if (isCorrect || closeOnWrong) {
     const { error: updateError } = await supabase
       .from("study_sessions")
       .update({ completed_at: new Date().toISOString() })

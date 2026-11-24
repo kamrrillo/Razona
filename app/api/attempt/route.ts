@@ -1,5 +1,6 @@
 import { HttpError, handleError, ok, parseJson, requireAuth } from "@/lib/api";
 import { loadStudySession, recordAttempt } from "@/lib/data/practice";
+import { getStudyGroup } from "@/lib/data/study-group";
 import { errorTypesFor, orderResources } from "@/lib/learning/resources";
 import { AttemptRequestSchema, AttemptResponseSchema } from "@/lib/schemas/api";
 
@@ -14,12 +15,25 @@ export async function POST(request: Request) {
       throw new HttpError(400, "Opción no válida");
     }
 
+    const control = (await getStudyGroup(supabase, userId)) === "control";
     const { isCorrect, attemptNumber } = await recordAttempt(
       supabase,
       userId,
       session,
       body.optionId,
+      { closeOnWrong: control },
     );
+    if (control) {
+      // Solo cuestionario: respuesta y explicación fija del caso; sin recursos ni tutor.
+      const reveal = {
+        correctOptionId: session.item.correctOptionId,
+        explanation: session.item.explanation,
+        citation: session.item.citation,
+      };
+      return isCorrect
+        ? ok(AttemptResponseSchema, { isCorrect: true, attemptNumber, ...reveal })
+        : ok(AttemptResponseSchema, { isCorrect: false, attemptNumber, reveal });
+    }
     if (isCorrect) {
       // Los recursos pueden revelar la respuesta: solo se entregan al resolver el caso.
       const { data: attempts, error } = await supabase

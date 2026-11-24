@@ -1,5 +1,5 @@
 import { explainForLearner } from "@/lib/ai/explain";
-import { HttpError, handleError, ok, parseJson, requireAuth } from "@/lib/api";
+import { HttpError, handleError, ok, parseJson, requireAiAuth } from "@/lib/api";
 import { getItem } from "@/lib/content";
 import { loadExam } from "@/lib/data/exam";
 import { loadLearnerContext } from "@/lib/data/learner";
@@ -15,7 +15,7 @@ export const maxDuration = 30;
  */
 export async function POST(request: Request) {
   try {
-    const { supabase, userId } = await requireAuth();
+    const { supabase, userId } = await requireAiAuth();
     const body = await parseJson(request, ExplainRequestSchema);
 
     if ("sessionId" in body) {
