@@ -57,9 +57,18 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (pathname === "/" || (isAuthenticated && pathname === "/login")) {
+  // getClaims() solo valida el JWT en local: una cookie de una usuaria borrada o
+  // con sesión revocada sigue pareciendo válida. Si en /login no confirmamos con
+  // el servidor de Auth, rebotaríamos /login → /inicio → /login sin fin.
+  let confirmedAuthenticated = isAuthenticated;
+  if (isAuthenticated && (pathname === "/" || pathname === "/login")) {
+    const { data: userData, error } = await supabase.auth.getUser();
+    confirmedAuthenticated = !error && Boolean(userData.user);
+  }
+
+  if (pathname === "/" || (confirmedAuthenticated && pathname === "/login")) {
     const url = request.nextUrl.clone();
-    const next = isAuthenticated
+    const next = confirmedAuthenticated
       ? safeNextPath(request.nextUrl.searchParams.get("next"))
       : "/login";
     url.pathname = next.split("?")[0];
