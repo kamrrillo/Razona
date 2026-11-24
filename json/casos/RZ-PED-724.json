@@ -29,7 +29,7 @@
           "seccion": "4.2.3.2 Cafeína",
           "pagina": 24,
           "fragmento": "Dosis de impregnación de 20mg/kg de peso (10",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=24"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=24"
         }
       },
       {
@@ -40,7 +40,7 @@
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
           "fragmento": "Ausencia de respiración por más de 20 segundos",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
         }
       },
       {
@@ -51,7 +51,7 @@
           "seccion": "4.2.3.1 Metilxantinas",
           "pagina": 23,
           "fragmento": "Las metilxantinas son los medicamento de elección",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=23"
         }
       }
     ],
@@ -75,7 +75,7 @@
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
           "fragmento": "Ausencia de respiración por más de 20 segundos",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
         }
       },
       {
@@ -97,7 +97,7 @@
           "seccion": "4.2.3.2 Cafeína",
           "pagina": 24,
           "fragmento": "En las unidades que cuenten con citrato de cafeína",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=24"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=24"
         }
       },
       {
@@ -118,7 +118,7 @@
           "seccion": "4.2.4.1 Doxapram",
           "pagina": 28,
           "fragmento": "El doxapram actúa sobre quimiorreceptores periféricos",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=28"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=28"
         }
       },
       {
@@ -140,7 +140,7 @@
           "seccion": "4.2.1.3 Estimulación sensorial",
           "pagina": 20,
           "fragmento": "estimulación kinestésica como tratamiento de apnea",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=20"
         }
       }
     ],
@@ -317,7 +317,7 @@
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
           "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
         }
       },
       {
@@ -328,7 +328,7 @@
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
           "fragmento": "El recién nacido pretérmino menor de 34 semanas",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
         }
       }
     ],
@@ -352,7 +352,7 @@
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
           "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
         }
       },
       {
@@ -373,7 +373,7 @@
           "seccion": "4.2.2 Tratamiento Profiláctico",
           "pagina": 22,
           "fragmento": "profiláctico con metilxantinas para evitar la apnea en",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=22"
         }
       },
       {
@@ -395,7 +395,7 @@
           "seccion": "4.2.1.3 Estimulación sensorial",
           "pagina": 20,
           "fragmento": "estimulación kinestésica como tratamiento de apnea",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=20"
         }
       },
       {
@@ -417,7 +417,7 @@
           "seccion": "4.1.3.1 Detección y Vigilancia Continua de Eventos de Apnea",
           "pagina": 13,
           "fragmento": "El recién nacido pretérmino menor de 34 semanas",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/724GER.pdf#page=13"
         }
       }
     ],

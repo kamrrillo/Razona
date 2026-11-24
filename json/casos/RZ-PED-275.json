@@ -29,7 +29,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
           "fragmento": "evolución dentro de las 24horas de VEU son",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
         }
       },
       {
@@ -40,7 +40,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
           "fragmento": "en el periné hasta las 16 a 24 horas",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
         }
       }
     ],
@@ -64,7 +64,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 17,
           "fragmento": "fístula recto-vestibular",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=17"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=17"
         }
       },
       {
@@ -86,7 +86,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 18,
           "fragmento": "fístula recto perineal; sin embargo su ausencia",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=18"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=18"
         }
       },
       {
@@ -108,7 +108,7 @@
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
           "fragmento": "reportado una sensibilidad del 27%;",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
         }
       },
       {
@@ -130,7 +130,7 @@
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
           "fragmento": "recto urogenitales, ni fondo de saco intestinal",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
         }
       }
     ],
@@ -356,7 +356,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
           "fragmento": "Ante un cuadro clínico típico con presencia de fístula",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
         }
       },
       {
@@ -367,7 +367,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 18,
           "fragmento": "física de la región perianal provee información",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=18"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=18"
         }
       }
     ],
@@ -390,7 +390,7 @@
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
           "fragmento": "reportado una sensibilidad del 27%;",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
         }
       },
       {
@@ -412,7 +412,7 @@
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
           "fragmento": "En el 5 a 10% donde no se establezca el tipo de MAR",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
         }
       },
       {
@@ -434,7 +434,7 @@
           "seccion": "4.2 Diagnóstico",
           "pagina": 19,
           "fragmento": "Ante un cuadro clínico típico con presencia de fístula",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=19"
         }
       },
       {
@@ -456,7 +456,7 @@
           "seccion": "4.2.1 Pruebas Diagnósticas",
           "pagina": 20,
           "fragmento": "recto urogenitales, ni fondo de saco intestinal",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/275GER.pdf#page=20"
         }
       }
     ],

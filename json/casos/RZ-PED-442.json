@@ -29,7 +29,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
           "fragmento": "Administrar bolo de solución glucosada 10% 2",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
         }
       },
       {
@@ -40,7 +40,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
           "fragmento": "inmediatamente con infusión de glucosa intravenosa",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
         }
       }
     ],
@@ -64,7 +64,7 @@
           "seccion": "2.1.4 Auxiliares diagnósticos",
           "pagina": 19,
           "fragmento": "debe utilizarse para definir la hipoglucemia",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=19"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=19"
         }
       },
       {
@@ -86,7 +86,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 21,
           "fragmento": "inmediatamente con infusión de glucosa intravenosa",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=21"
         }
       },
       {
@@ -107,7 +107,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
           "fragmento": "glucosa 10% 2 ml/kg, siempre debe ir acompañado",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
         }
       },
       {
@@ -129,7 +129,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
           "fragmento": "Si se usa infusión de solución glucosada mayor de",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
         }
       }
     ],
@@ -294,7 +294,7 @@
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
           "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
         }
       },
       {
@@ -305,7 +305,7 @@
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
           "fragmento": "Si el nivel < 45 mg/dl, iniciar solución",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
         }
       }
     ],
@@ -329,7 +329,7 @@
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
           "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
         }
       },
       {
@@ -351,7 +351,7 @@
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
           "fragmento": "Glucosa plasmática entre 25-45 mg/dl",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
         }
       },
       {
@@ -373,7 +373,7 @@
           "seccion": "2.2.2 Hipoglucemia asintomática",
           "pagina": 23,
           "fragmento": "repetir nivel de glucosa sérica 30-60 min después",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=23"
         }
       },
       {
@@ -395,7 +395,7 @@
           "seccion": "2.2.1 Hipoglucemia sintomática",
           "pagina": 22,
           "fragmento": "Se debe dar prioridad a la alimentación temprana con",
-          "url": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/442GER.pdf#page=22"
         }
       }
     ],
