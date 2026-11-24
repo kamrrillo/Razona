@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
       "clave": "IMSS-395-10",
-      "archivo": "395GER.pdf"
+      "archivo": "395GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
     },
     "vineta": "Masculino de 2 años, peso 12 kg, con fiebre de 39.5 °C de 6 días de evolución que no cede con antipiréticos. Presenta hiperemia conjuntival bilateral sin secreción, labios rojos y agrietados, lengua en fresa, exantema maculopapular en tronco y edema indurado del dorso de manos y pies. Adenopatía cervical derecha de 2 cm. PCR 9 mg/dL y VSG 70 mm/h. El ecocardiograma inicial no muestra aneurismas.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+          "fragmento": "de 2gr/kg al realizarse el diagnóstico y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 31,
-          "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+          "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.1 Diagnóstico clínico",
           "pagina": 19,
-          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+          "fragmento": "de 2gr/kg al realizarse el diagnóstico y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.1 Diagnóstico clínico",
           "pagina": 19,
-          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "de la administración de IGIV en una sola dosis de 2"
+          "fragmento": "de la administración de IGIV en una sola dosis de 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "normal no ha demostrado reducir el riesgo de"
+          "fragmento": "normal no ha demostrado reducir el riesgo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.1 Diagnóstico clínico",
           "pagina": 19,
-          "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+          "fragmento": "Presencia de cuatro o más de los siguientes cinco",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "de la administración de IGIV en una sola dosis de 2"
+          "fragmento": "de la administración de IGIV en una sola dosis de 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "normal no ha demostrado reducir el riesgo de"
+          "fragmento": "normal no ha demostrado reducir el riesgo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "IMSS-395-10",
             "seccion": "4.1.1 Diagnóstico clínico",
             "pagina": 19,
-            "fragmento": "Presencia de cuatro o más de los siguientes cinco"
+            "fragmento": "Presencia de cuatro o más de los siguientes cinco",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
             "clave": "IMSS-395-10",
             "seccion": "4.1.4.1 Tratamiento Farmacológico",
             "pagina": 28,
-            "fragmento": "de 2gr/kg al realizarse el diagnóstico y"
+            "fragmento": "de 2gr/kg al realizarse el diagnóstico y",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
             "clave": "IMSS-395-10",
             "seccion": "4.1.4.1 Tratamiento Farmacológico",
             "pagina": 28,
-            "fragmento": "pacientes con más de 10 días de evolución, en las"
+            "fragmento": "pacientes con más de 10 días de evolución, en las",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
             "clave": "IMSS-395-10",
             "seccion": "4.1.4.1 Tratamiento Farmacológico",
             "pagina": 31,
-            "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro"
+            "fragmento": "Dosis inicial de 80 a 100 mg/kg/día (en cuatro",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
           }
         ]
       },
@@ -308,7 +323,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Enfermedad de Kawasaki en el primero, segundo y tercer nivel de atención (Síndrome Mucocutáneo Linfonodular)",
       "clave": "IMSS-395-10",
-      "archivo": "395GER.pdf"
+      "archivo": "395GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
     },
     "vineta": "Femenino de 4 años, peso 16 kg, referida al día 12 de enfermedad con diagnóstico de enfermedad de Kawasaki. Persiste con fiebre de 39 °C y descamación periungueal de los dedos. PCR 8 mg/dL y VSG 85 mm/h. El ecocardiograma muestra dilatación leve de la arteria coronaria derecha. No ha recibido inmunoglobulina.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la inmunoglobulina intravenosa?",
@@ -328,7 +344,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "pacientes con más de 10 días de evolución, en las"
+          "fragmento": "pacientes con más de 10 días de evolución, en las",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -338,7 +355,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 29,
-          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el"
+          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       }
     ],
@@ -361,7 +379,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "pacientes con más de 10 días de evolución, en las"
+          "fragmento": "pacientes con más de 10 días de evolución, en las",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -382,7 +401,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 31,
-          "fragmento": "de 3 a 5 mg/kg/día (en una sola toma) por 6 a 8"
+          "fragmento": "de 3 a 5 mg/kg/día (en una sola toma) por 6 a 8",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -403,7 +423,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 29,
-          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el"
+          "fragmento": "Evitar el uso de esteroides de forma rutinaria en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       },
       {
@@ -424,7 +445,8 @@
           "clave": "IMSS-395-10",
           "seccion": "4.1.4.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "pacientes con más de 10 días de evolución, en las"
+          "fragmento": "pacientes con más de 10 días de evolución, en las",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/395GER.pdf"
         }
       }
     ],

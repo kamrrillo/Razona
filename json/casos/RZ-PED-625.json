@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
       "clave": "IMSS-625-13",
-      "archivo": "625GER.pdf"
+      "archivo": "625GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
     },
     "vineta": "Recién nacido masculino de término, 2 días de vida, asintomático y con micción espontánea. En el ultrasonido obstétrico del tercer trimestre se informó dilatación de la pelvis renal izquierda con diámetro anteroposterior de 12 mm. Exploración física normal, sin masas abdominales. La madre pregunta qué estudio se le hará antes de que lo den de alta y después.",
     "pregunta": "¿Cuál es la conducta diagnóstica más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias"
+          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "El ultrasonido después de la 1er semana de vida, es el"
+          "fragmento": "El ultrasonido después de la 1er semana de vida, es el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "Moderado 9-15mm Severo > de 15mm"
+          "fragmento": "Moderado 9-15mm Severo > de 15mm",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias"
+          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "El ultrasonido después de la 1er semana de vida, es el"
+          "fragmento": "El ultrasonido después de la 1er semana de vida, es el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "De rutina no esta indicado la cistouretrografia"
+          "fragmento": "De rutina no esta indicado la cistouretrografia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias"
+          "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "De rutina no esta indicado la cistouretrografia"
+          "fragmento": "De rutina no esta indicado la cistouretrografia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "El riesgo para malformación de vías urinarias de"
+          "fragmento": "El riesgo para malformación de vías urinarias de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-625-13",
             "seccion": "4.4 Pruebas diagnósticas",
             "pagina": 22,
-            "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias"
+            "fragmento": "por USG prenatal deben tener seguimiento a los 7 dias",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
             "clave": "IMSS-625-13",
             "seccion": "4.4 Pruebas diagnósticas",
             "pagina": 22,
-            "fragmento": "Considerar al USG renal y de vías urinarias (incluyendo"
+            "fragmento": "Considerar al USG renal y de vías urinarias (incluyendo",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
             "clave": "IMSS-625-13",
             "seccion": "4.4 Pruebas diagnósticas",
             "pagina": 22,
-            "fragmento": "De rutina no esta indicado la cistouretrografia"
+            "fragmento": "De rutina no esta indicado la cistouretrografia",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
             "clave": "IMSS-625-13",
             "seccion": "4.4 Pruebas diagnósticas",
             "pagina": 22,
-            "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,"
+            "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
           }
         ]
       },
@@ -274,7 +288,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "la medición del diámetro antero posterior de la pelvis"
+          "fragmento": "la medición del diámetro antero posterior de la pelvis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -324,7 +339,8 @@
     "gpc_base": {
       "guia": "Abordaje diagnóstico de las malformaciones de vías urinarias en el niño",
       "clave": "IMSS-625-13",
-      "archivo": "625GER.pdf"
+      "archivo": "625GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
     },
     "vineta": "Femenino de 3 semanas con antecedente de hidronefrosis prenatal derecha de 10 mm en el tercer trimestre. El ultrasonido renal y de vías urinarias realizado a los 8 días de vida no mostró hidronefrosis ni dilatación ureteral, con riñones de tamaño normal sin anormalidad cortical ni vesical. Asintomática, alimentada al seno materno, con buen crecimiento.",
     "pregunta": "¿Cuál es el seguimiento más adecuado?",
@@ -344,7 +360,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,"
+          "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -354,7 +371,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "De rutina no esta indicado la cistouretrografia"
+          "fragmento": "De rutina no esta indicado la cistouretrografia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       }
     ],
@@ -377,7 +395,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "De rutina no esta indicado la cistouretrografia"
+          "fragmento": "De rutina no esta indicado la cistouretrografia",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -398,7 +417,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,"
+          "fragmento": "Repetir el USG entre la 4 a 6 semanas de edad,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -419,7 +439,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "si es normal, vigilar y realizar al año de edad,"
+          "fragmento": "si es normal, vigilar y realizar al año de edad,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       },
       {
@@ -440,7 +461,8 @@
           "clave": "IMSS-625-13",
           "seccion": "4.4 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "si es normal, vigilar y realizar al año de edad,"
+          "fragmento": "si es normal, vigilar y realizar al año de edad,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/625GER.pdf"
         }
       }
     ],

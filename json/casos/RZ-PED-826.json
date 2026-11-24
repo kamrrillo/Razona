@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
       "clave": "GPC-IMSS-826-18",
-      "archivo": "826GER_0.pdf"
+      "archivo": "826GER_0.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
     },
     "vineta": "Masculino de 7 años que hace 3 semanas tuvo faringoamigdalitis, por la que no recibió antibiótico. Desde hace 2 días presenta orina color \"refresco de cola\", edema palpebral matutino y disminución del volumen urinario. TA 135/90 mmHg (mayor del percentil 95). Examen general de orina con eritrocitos dismórficos y cilindros hemáticos; C3 bajo, C4 normal, antiestreptolisinas elevadas; creatinina ligeramente elevada para la edad.",
     "pregunta": "¿Cuál es el manejo inicial más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "preferentemente en hospital a los niños"
+          "fragmento": "preferentemente en hospital a los niños",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "Se recomienda iniciar tratamiento con penicilina en"
+          "fragmento": "Se recomienda iniciar tratamiento con penicilina en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "Utilizar antagonistas de los canales de calcio"
+          "fragmento": "Utilizar antagonistas de los canales de calcio",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       }
     ],
@@ -70,7 +74,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "tratamiento antibiótico previo, o si se tiene cultivo"
+          "fragmento": "tratamiento antibiótico previo, o si se tiene cultivo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -91,7 +96,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "preferentemente en hospital a los niños"
+          "fragmento": "preferentemente en hospital a los niños",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -112,7 +118,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 22,
-          "fragmento": "metilprednisolona se reservan a casos de"
+          "fragmento": "metilprednisolona se reservan a casos de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -133,7 +140,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "Persistencia de niveles bajos de C3 posterior"
+          "fragmento": "Persistencia de niveles bajos de C3 posterior",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "postestreptocóccica cuando no hayan recibido"
+          "fragmento": "postestreptocóccica cuando no hayan recibido",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "Utilizar antagonistas de los canales de calcio"
+          "fragmento": "Utilizar antagonistas de los canales de calcio",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 17,
-          "fragmento": "los niveles vuelven a la normalidad en un"
+          "fragmento": "los niveles vuelven a la normalidad en un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "GPC-IMSS-826-18",
             "seccion": "3.1.1 Algoritmo",
             "pagina": 26,
-            "fragmento": "Niños entre 2 y 12 años de edad con hematuria, edema e"
+            "fragmento": "Niños entre 2 y 12 años de edad con hematuria, edema e",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
             "clave": "GPC-IMSS-826-18",
             "seccion": "2.2 Tratamiento",
             "pagina": 21,
-            "fragmento": "postestreptocóccica cuando no hayan recibido"
+            "fragmento": "postestreptocóccica cuando no hayan recibido",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
             "clave": "GPC-IMSS-826-18",
             "seccion": "2.2 Tratamiento",
             "pagina": 21,
-            "fragmento": "Utilizar antagonistas de los canales de calcio"
+            "fragmento": "Utilizar antagonistas de los canales de calcio",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
             "clave": "GPC-IMSS-826-18",
             "seccion": "2.1.2 Pruebas Diagnósticas",
             "pagina": 20,
-            "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que"
+            "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
           }
         ]
       },
@@ -276,7 +291,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "3.2 Cuadros o figuras",
           "pagina": 28,
-          "fragmento": "Cuadro 3. Determinación de C3 y C4 en diversas patologías"
+          "fragmento": "Cuadro 3. Determinación de C3 y C4 en diversas patologías",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -326,7 +342,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento del Síndrome Nefrítico Agudo Postestreptocócico en Edad Pediátrica",
       "clave": "GPC-IMSS-826-18",
-      "archivo": "826GER_0.pdf"
+      "archivo": "826GER_0.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
     },
     "vineta": "Femenino de 9 años diagnosticada hace 10 semanas con síndrome nefrítico agudo postestreptocócico tras impétigo. La hipertensión y el edema se resolvieron en la segunda semana. En el control actual persiste hematuria microscópica, la proteinuria es leve y la creatinina es normal. El C3 sérico continúa por debajo de lo normal, igual que al inicio.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -346,7 +363,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que"
+          "fragmento": "Se debe enviar al nefrólogo pediatra a los niños que",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -356,7 +374,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 17,
-          "fragmento": "en caso de persistir niveles bajos de C3"
+          "fragmento": "en caso de persistir niveles bajos de C3",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       }
     ],
@@ -379,7 +398,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 20,
-          "fragmento": "Persistencia de niveles bajos de C3 posterior"
+          "fragmento": "Persistencia de niveles bajos de C3 posterior",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -400,7 +420,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.1.2 Pruebas Diagnósticas",
           "pagina": 17,
-          "fragmento": "en caso de persistir niveles bajos de C3"
+          "fragmento": "en caso de persistir niveles bajos de C3",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -421,7 +442,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 21,
-          "fragmento": "Considerar el riesgo potencial de disminuir el"
+          "fragmento": "Considerar el riesgo potencial de disminuir el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       },
       {
@@ -441,7 +463,8 @@
           "clave": "GPC-IMSS-826-18",
           "seccion": "2.2 Tratamiento",
           "pagina": 22,
-          "fragmento": "metilprednisolona se reservan a casos de"
+          "fragmento": "metilprednisolona se reservan a casos de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/826GER_0.pdf"
         }
       }
     ],

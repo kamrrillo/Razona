@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
       "clave": "IMSS-473-11",
-      "archivo": "473GER.pdf"
+      "archivo": "473GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
     },
     "vineta": "Femenino de 8 meses, previamente sana, que hace 3 horas presentó tos intensa y atragantamiento mientras la alimentaban con papilla acostada. Llega a urgencias con tos ocasional, FR de 42 rpm, tiraje intercostal leve, estertores finos en base derecha, SpO2 de 95 % al aire ambiente, temperatura 37.3 °C, alerta y reactiva. La radiografía muestra infiltrado en el lóbulo inferior derecho.",
     "pregunta": "¿Cuál es el manejo más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.1 Tratamiento No Farmacológico",
           "pagina": 17,
-          "fragmento": "Vigilancia durante 24 a 48hrs"
+          "fragmento": "Vigilancia durante 24 a 48hrs",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 18,
-          "fragmento": "No deben indicarse antimicrobianos por que la"
+          "fragmento": "No deben indicarse antimicrobianos por que la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.1 Tratamiento No Farmacológico",
           "pagina": 17,
-          "fragmento": "Enviar al niño a la unidad de cuidados"
+          "fragmento": "Enviar al niño a la unidad de cuidados",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.1 Tratamiento No Farmacológico",
           "pagina": 17,
-          "fragmento": "Administrar oxigeno entre 40 y 50%, en"
+          "fragmento": "Administrar oxigeno entre 40 y 50%, en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 18,
-          "fragmento": "No deben indicarse antimicrobianos por que la"
+          "fragmento": "No deben indicarse antimicrobianos por que la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 19,
-          "fragmento": "recomendar el uso de corticosteroides para el"
+          "fragmento": "recomendar el uso de corticosteroides para el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 18,
-          "fragmento": "No deben indicarse antimicrobianos por que la"
+          "fragmento": "No deben indicarse antimicrobianos por que la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 19,
-          "fragmento": "recomendar el uso de corticosteroides para el"
+          "fragmento": "recomendar el uso de corticosteroides para el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.1 Tratamiento No Farmacológico",
           "pagina": 17,
-          "fragmento": "Enviar al niño a la unidad de cuidados"
+          "fragmento": "Enviar al niño a la unidad de cuidados",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "IMSS-473-11",
             "seccion": "4.2.1 Tratamiento No Farmacológico",
             "pagina": 17,
-            "fragmento": "Enviar al niño a la unidad de cuidados"
+            "fragmento": "Enviar al niño a la unidad de cuidados",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
             "clave": "IMSS-473-11",
             "seccion": "4.2.1 Tratamiento No Farmacológico",
             "pagina": 17,
-            "fragmento": "Administrar oxigeno entre 40 y 50%, en"
+            "fragmento": "Administrar oxigeno entre 40 y 50%, en",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
             "clave": "IMSS-473-11",
             "seccion": "4.2.1 Tratamiento No Farmacológico",
             "pagina": 17,
-            "fragmento": "Vigilancia durante 24 a 48hrs"
+            "fragmento": "Vigilancia durante 24 a 48hrs",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
             "clave": "IMSS-473-11",
             "seccion": "4.2.2 Tratamiento Farmacológico",
             "pagina": 18,
-            "fragmento": "las primeras 48 horas y se confirma proceso"
+            "fragmento": "las primeras 48 horas y se confirma proceso",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
           }
         ]
       },
@@ -268,7 +282,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 12,
-          "fragmento": "6 a 12 meses · > 50 por minuto"
+          "fragmento": "6 a 12 meses · > 50 por minuto",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -307,7 +322,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Neumonitis por Aspiración de Alimento en Niños",
       "clave": "IMSS-473-11",
-      "archivo": "473GER.pdf"
+      "archivo": "473GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
     },
     "vineta": "Masculino de 2 años con parálisis cerebral, hospitalizado hace 72 horas por neumonitis por aspiración de alimento, manejado con oxígeno y vigilancia. En lugar de mejorar, hoy presenta fiebre de 39.2 °C, aumento de la dificultad respiratoria y leucocitosis con neutrofilia; la radiografía de control muestra consolidación del lóbulo inferior derecho que no existía al ingreso y el cultivo de secreción bronquial reporta crecimiento bacteriano.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -327,7 +343,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 18,
-          "fragmento": "las primeras 48 horas y se confirma proceso"
+          "fragmento": "las primeras 48 horas y se confirma proceso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -337,7 +354,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.3 Complicaciones",
           "pagina": 19,
-          "fragmento": "Las complicaciones de la neumonitis por aspiración de"
+          "fragmento": "Las complicaciones de la neumonitis por aspiración de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       }
     ],
@@ -360,7 +378,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 18,
-          "fragmento": "las primeras 48 horas y se confirma proceso"
+          "fragmento": "las primeras 48 horas y se confirma proceso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -380,7 +399,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.2 Tratamiento Farmacológico",
           "pagina": 19,
-          "fragmento": "recomendar el uso de corticosteroides para el"
+          "fragmento": "recomendar el uso de corticosteroides para el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -401,7 +421,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.2.1 Tratamiento No Farmacológico",
           "pagina": 17,
-          "fragmento": "En caso de mejoría egreso a su domicilio"
+          "fragmento": "En caso de mejoría egreso a su domicilio",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       },
       {
@@ -422,7 +443,8 @@
           "clave": "IMSS-473-11",
           "seccion": "4.3 Complicaciones",
           "pagina": 19,
-          "fragmento": "Las complicaciones de la neumonitis por aspiración de"
+          "fragmento": "Las complicaciones de la neumonitis por aspiración de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/473GER.pdf"
         }
       }
     ],

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Amigdalectomía en Niños",
       "clave": "IMSS-361-12",
-      "archivo": "361GER.pdf"
+      "archivo": "361GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
     },
     "vineta": "Femenino de 7 años, peso 22 kg. En los últimos 12 meses ha tenido 8 episodios de faringoamigdalitis con fiebre mayor de 38.3 °C, exudado amigdalino y adenopatías cervicales dolorosas; en tres de ellos el cultivo fue positivo para estreptococo beta hemolítico del grupo A. Todos fueron tratados con esquemas completos de antibiótico. Ha faltado 20 días a la escuela. Sin ronquido ni apneas. Exploración actual: amígdalas grado II, sin exudado.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 12,
-          "fragmento": "establece un minimo de 7 o más episodios en el"
+          "fragmento": "establece un minimo de 7 o más episodios en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "tratados con antibioticoterapia adecuada, siempre"
+          "fragmento": "tratados con antibioticoterapia adecuada, siempre",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12"
+          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "La conducta de observación, es más apropiada que"
+          "fragmento": "La conducta de observación, es más apropiada que",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.5.1 Uso de antibióticos perioperatorios",
           "pagina": 18,
-          "fragmento": "No se recomienda administrar de manera rutinaria"
+          "fragmento": "No se recomienda administrar de manera rutinaria",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 12,
-          "fragmento": "establece un minimo de 7 o más episodios en el"
+          "fragmento": "establece un minimo de 7 o más episodios en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 12,
-          "fragmento": "establece un minimo de 7 o más episodios en el"
+          "fragmento": "establece un minimo de 7 o más episodios en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12"
+          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.5.1 Uso de antibióticos perioperatorios",
           "pagina": 18,
-          "fragmento": "No se recomienda administrar de manera rutinaria"
+          "fragmento": "No se recomienda administrar de manera rutinaria",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-361-12",
             "seccion": "4.1 Indicaciones para amigdalectomía en niños",
             "pagina": 13,
-            "fragmento": "práctica es suficiente la observación de las pautas"
+            "fragmento": "práctica es suficiente la observación de las pautas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
           },
           {
             "guia": "Amigdalectomía en Niños",
             "clave": "IMSS-361-12",
             "seccion": "4.1 Indicaciones para amigdalectomía en niños",
             "pagina": 13,
-            "fragmento": "Las únicas indicaciones absolutas de"
+            "fragmento": "Las únicas indicaciones absolutas de",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
           },
           {
             "guia": "Amigdalectomía en Niños",
             "clave": "IMSS-361-12",
             "seccion": "4.1 Indicaciones para amigdalectomía en niños",
             "pagina": 12,
-            "fragmento": "establece un minimo de 7 o más episodios en el"
+            "fragmento": "establece un minimo de 7 o más episodios en el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
           },
           {
             "guia": "Amigdalectomía en Niños",
             "clave": "IMSS-361-12",
             "seccion": "4.1 Indicaciones para amigdalectomía en niños",
             "pagina": 13,
-            "fragmento": "La conducta de observación, es más apropiada que"
+            "fragmento": "La conducta de observación, es más apropiada que",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
           }
         ]
       },
@@ -307,7 +321,8 @@
           "clave": "IMSS-361-12",
           "seccion": "5.3 Clasificación o Escalas de la Enfermedad",
           "pagina": 27,
-          "fragmento": "Criterios de elección de pacientes candidatos a amigdalectomía"
+          "fragmento": "Criterios de elección de pacientes candidatos a amigdalectomía",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       }
     ]
@@ -321,7 +336,8 @@
     "gpc_base": {
       "guia": "Amigdalectomía en Niños",
       "clave": "IMSS-361-12",
-      "archivo": "361GER.pdf"
+      "archivo": "361GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
     },
     "vineta": "Masculino de 5 años, peso 15 kg (por debajo del percentil 3 para la edad). Desde hace un año ronca todas las noches y sus padres han observado pausas respiratorias durante el sueño; duerme intranquilo, volvió a mojar la cama y la maestra refiere somnolencia en clase. Solo ha tenido 2 episodios de faringoamigdalitis en el último año. Amígdalas grado IV que casi contactan en la línea media. En su hospital no se dispone de polisomnografía.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -341,7 +357,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "Las únicas indicaciones absolutas de"
+          "fragmento": "Las únicas indicaciones absolutas de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -351,7 +368,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "práctica es suficiente la observación de las pautas"
+          "fragmento": "práctica es suficiente la observación de las pautas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       }
     ],
@@ -374,7 +392,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "práctica es suficiente la observación de las pautas"
+          "fragmento": "práctica es suficiente la observación de las pautas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -395,7 +414,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "Las únicas indicaciones absolutas de"
+          "fragmento": "Las únicas indicaciones absolutas de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -415,7 +435,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.5.1 Uso de antibióticos perioperatorios",
           "pagina": 18,
-          "fragmento": "No se recomienda administrar de manera rutinaria"
+          "fragmento": "No se recomienda administrar de manera rutinaria",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       },
       {
@@ -436,7 +457,8 @@
           "clave": "IMSS-361-12",
           "seccion": "4.1 Indicaciones para amigdalectomía en niños",
           "pagina": 13,
-          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12"
+          "fragmento": "debajo de los 3-4 años de edad, o con menos de 12",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/361GER.pdf"
         }
       }
     ],

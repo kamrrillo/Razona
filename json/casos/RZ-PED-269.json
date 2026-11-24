@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
       "clave": "IMSS-269-13",
-      "archivo": "269GER.pdf"
+      "archivo": "269GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
     },
     "vineta": "Masculino de 2 años con mielomeningocele lumbosacro operado al nacer acude a su control con pediatría. Su madre, de 28 años, sana, comenta que desean otro hijo y que planea suspender el método anticonceptivo en los próximos meses. Desea saber qué puede hacer para disminuir el riesgo de que su siguiente hijo tenga el mismo problema. Su dieta incluye tortillas y pan elaborados con harinas comerciales.",
     "pregunta": "¿Cuál es la recomendación más adecuada para la madre?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "periconcepcional (desde tres meses antes hasta tres"
+          "fragmento": "periconcepcional (desde tres meses antes hasta tres",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 13,
-          "fragmento": "un 70% si antes del embarazo la madre ingiere"
+          "fragmento": "un 70% si antes del embarazo la madre ingiere",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 13,
-          "fragmento": "añade 0.1 mg/ día a la dieta normal"
+          "fragmento": "añade 0.1 mg/ día a la dieta normal",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 13,
-          "fragmento": "un 70% si antes del embarazo la madre ingiere"
+          "fragmento": "un 70% si antes del embarazo la madre ingiere",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       }
     ],
@@ -159,7 +167,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -178,7 +187,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 13,
-          "fragmento": "añade 0.1 mg/ día a la dieta normal"
+          "fragmento": "añade 0.1 mg/ día a la dieta normal",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -197,7 +207,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 13,
-          "fragmento": "un 70% si antes del embarazo la madre ingiere"
+          "fragmento": "un 70% si antes del embarazo la madre ingiere",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "IMSS-269-13",
             "seccion": "4.1 Prevención",
             "pagina": 14,
-            "fragmento": "0.4mg de ácido fólico por día durante el período"
+            "fragmento": "0.4mg de ácido fólico por día durante el período",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
             "clave": "IMSS-269-13",
             "seccion": "4.1 Prevención",
             "pagina": 14,
-            "fragmento": "dosis debe aumentar a 4.0 mg/día"
+            "fragmento": "dosis debe aumentar a 4.0 mg/día",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
             "clave": "IMSS-269-13",
             "seccion": "4.1 Prevención",
             "pagina": 14,
-            "fragmento": "periconcepcional (desde tres meses antes hasta tres"
+            "fragmento": "periconcepcional (desde tres meses antes hasta tres",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
           },
           {
             "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
             "clave": "IMSS-269-13",
             "seccion": "4.1 Prevención",
             "pagina": 15,
-            "fragmento": "alto contenido de ácido fólico listados en la tabla"
+            "fragmento": "alto contenido de ácido fólico listados en la tabla",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
           }
         ]
       },
@@ -290,7 +305,8 @@
     "gpc_base": {
       "guia": "Prevención, Diagnóstico y Tratamiento de la Espina Bífida en Niños",
       "clave": "IMSS-269-13",
-      "archivo": "269GER.pdf"
+      "archivo": "269GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
     },
     "vineta": "Femenino de 22 años acude con su hija de 3 años a consulta de control. Comenta que ella y su pareja buscarán un embarazo en los próximos meses. No tiene enfermedades crónicas, no toma medicamentos y no hay antecedentes familiares ni personales de defectos del tubo neural. Pregunta si debe tomar algún suplemento o si basta con comer más verduras.",
     "pregunta": "¿Cuál es la recomendación más adecuada?",
@@ -310,7 +326,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "0.4mg de ácido fólico por día durante el período"
+          "fragmento": "0.4mg de ácido fólico por día durante el período",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -320,7 +337,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       }
     ],
@@ -343,7 +361,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "dosis debe aumentar a 4.0 mg/día"
+          "fragmento": "dosis debe aumentar a 4.0 mg/día",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -365,7 +384,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "0.4mg de ácido fólico por día durante el período"
+          "fragmento": "0.4mg de ácido fólico por día durante el período",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -386,7 +406,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "periconcepcional (desde tres meses antes hasta tres"
+          "fragmento": "periconcepcional (desde tres meses antes hasta tres",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       },
       {
@@ -407,7 +428,8 @@
           "clave": "IMSS-269-13",
           "seccion": "4.1 Prevención",
           "pagina": 14,
-          "fragmento": "0.4mg de ácido fólico por día durante el período"
+          "fragmento": "0.4mg de ácido fólico por día durante el período",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/269GER.pdf"
         }
       }
     ],

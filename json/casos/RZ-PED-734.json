@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
       "clave": "IMSS-734-14",
-      "archivo": "734GER.pdf"
+      "archivo": "734GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
     },
     "vineta": "Femenino de 6 meses, nacida a término sin complicaciones perinatales, acude a control del niño sano. Sostiene la cabeza desde los 4 meses, pero aún no se sienta con apoyo, no se rota sobre sí misma y no balbucea. Al explorar persiste la reacción de Moro. Perímetro cefálico en percentil 40, crecimiento adecuado. La madre comenta que su suegra le dijo que \"cada niño tiene su ritmo\".",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "Persistencia de reacción de Moro"
+          "fragmento": "Persistencia de reacción de Moro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 15,
-          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+          "fragmento": "Dado que la detección basada en el juicio clínico no es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "Persistencia de reacción de Moro"
+          "fragmento": "Persistencia de reacción de Moro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "No sedestación con apoyo"
+          "fragmento": "No sedestación con apoyo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 18,
-          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen"
+          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 16,
-          "fragmento": "evaluación sistemática la cual debe ser incorporada"
+          "fragmento": "evaluación sistemática la cual debe ser incorporada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 15,
-          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+          "fragmento": "Dado que la detección basada en el juicio clínico no es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 18,
-          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen"
+          "fragmento": "Los estudios de rayos X y el Ultrasonido no tienen",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -187,7 +196,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 18,
-          "fragmento": "Movilidad, tono o postura anormal"
+          "fragmento": "Movilidad, tono o postura anormal",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -207,28 +217,32 @@
             "clave": "IMSS-734-14",
             "seccion": "4.1 Diagnóstico",
             "pagina": 16,
-            "fragmento": "evaluación sistemática la cual debe ser incorporada"
+            "fragmento": "evaluación sistemática la cual debe ser incorporada",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
           },
           {
             "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
             "clave": "IMSS-734-14",
             "seccion": "4.3 Criterios de Referencia",
             "pagina": 20,
-            "fragmento": "Desarrollo Psicomotor debera ser referido al"
+            "fragmento": "Desarrollo Psicomotor debera ser referido al",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
           },
           {
             "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
             "clave": "IMSS-734-14",
             "seccion": "4.2 Diagnóstico Diferencial",
             "pagina": 19,
-            "fragmento": "Desarrollo Psicomotor se debera realizar diagnóstico"
+            "fragmento": "Desarrollo Psicomotor se debera realizar diagnóstico",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
           },
           {
             "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
             "clave": "IMSS-734-14",
             "seccion": "4.3 Criterios de Referencia",
             "pagina": 20,
-            "fragmento": "sea valorado por neuropediatria o por alguna otra"
+            "fragmento": "sea valorado por neuropediatria o por alguna otra",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
           }
         ]
       },
@@ -279,7 +293,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "Persistencia de reacción de Moro"
+          "fragmento": "Persistencia de reacción de Moro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -329,7 +344,8 @@
     "gpc_base": {
       "guia": "Detección del Trastorno Específico del Desarrollo Psicomotor en Niños de 0 a 3 Años",
       "clave": "IMSS-734-14",
-      "archivo": "734GER.pdf"
+      "archivo": "734GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
     },
     "vineta": "Masculino de 15 meses, de término, sin antecedentes perinatales. En su control la madre refiere que aún no camina solo (camina tomado de las dos manos), no tiene pinza fina y dice solo \"mamá\". Gatea desde los 10 meses. Exploración: tono y reflejos normales, perímetro cefálico en percentil 50, sin rasgos dismórficos.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -349,7 +365,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "No camina solo Ausencia de pinza superior"
+          "fragmento": "No camina solo Ausencia de pinza superior",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -359,7 +376,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 15,
-          "fragmento": "que deberá ser evaluado por medicos especializados"
+          "fragmento": "que deberá ser evaluado por medicos especializados",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       }
     ],
@@ -382,7 +400,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1.1 Auxiliares Diagnósticos",
           "pagina": 18,
-          "fragmento": "Los estudios electrofisiológicos no son útiles para"
+          "fragmento": "Los estudios electrofisiológicos no son útiles para",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -403,7 +422,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 15,
-          "fragmento": "Dado que la detección basada en el juicio clínico no es"
+          "fragmento": "Dado que la detección basada en el juicio clínico no es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -424,7 +444,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "No tiene un vocabulario de tres o cuatro"
+          "fragmento": "No tiene un vocabulario de tres o cuatro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       },
       {
@@ -445,7 +466,8 @@
           "clave": "IMSS-734-14",
           "seccion": "4.1 Diagnóstico",
           "pagina": 17,
-          "fragmento": "No tiene un vocabulario de tres o cuatro"
+          "fragmento": "No tiene un vocabulario de tres o cuatro",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/734GER.pdf"
         }
       }
     ],

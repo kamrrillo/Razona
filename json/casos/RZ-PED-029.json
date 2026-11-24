@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
       "clave": "IMSS-029-08",
-      "archivo": "029GER.pdf"
+      "archivo": "029GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
     },
     "vineta": "Masculino de 4 meses de edad acude a consulta de control del niño sano en su unidad de medicina familiar. Se alimenta con lactancia materna exclusiva a libre demanda. Peso y talla en percentil 50 para la edad, con ganancia ponderal adecuada desde la última consulta. Exploración física normal. La madre refiere que en ocasiones llora después de las tomas y que la abuela le recomienda empezar a darle caldo de frijol, jugos de fruta y papillas \"para que se llene\".",
     "pregunta": "¿Cuál es la recomendación más adecuada sobre su alimentación?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "Indicar lactancia materna exclusiva durante los"
+          "fragmento": "Indicar lactancia materna exclusiva durante los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "se inicia a partir de los 6 meses"
+          "fragmento": "se inicia a partir de los 6 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 15,
-          "fragmento": "Valorar el estado nutricional de la niña o del niño"
+          "fragmento": "Valorar el estado nutricional de la niña o del niño",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       }
     ],
@@ -72,7 +76,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "alimentación diferente a la lactancia a partir del sexto"
+          "fragmento": "alimentación diferente a la lactancia a partir del sexto",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -94,7 +99,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "Indicar lactancia materna exclusiva durante los"
+          "fragmento": "Indicar lactancia materna exclusiva durante los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -116,7 +122,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "se inicia a partir de los 6 meses"
+          "fragmento": "se inicia a partir de los 6 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -138,7 +145,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "El destete se recomienda a la edad de los 2 años"
+          "fragmento": "El destete se recomienda a la edad de los 2 años",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       }
     ],
@@ -164,7 +172,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "se inicia a partir de los 6 meses"
+          "fragmento": "se inicia a partir de los 6 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -183,7 +192,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "El destete se recomienda a la edad de los 2 años"
+          "fragmento": "El destete se recomienda a la edad de los 2 años",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -202,7 +212,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 15,
-          "fragmento": "Valorar el estado nutricional de la niña o del niño"
+          "fragmento": "Valorar el estado nutricional de la niña o del niño",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -223,28 +234,32 @@
             "clave": "IMSS-029-08",
             "seccion": "4.1.1 Nutrición",
             "pagina": 15,
-            "fragmento": "Valorar el estado nutricional de la niña o del niño"
+            "fragmento": "Valorar el estado nutricional de la niña o del niño",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
           },
           {
             "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
             "clave": "IMSS-029-08",
             "seccion": "4.1.1 Nutrición",
             "pagina": 16,
-            "fragmento": "Indicar lactancia materna exclusiva durante los"
+            "fragmento": "Indicar lactancia materna exclusiva durante los",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
           },
           {
             "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
             "clave": "IMSS-029-08",
             "seccion": "4.1.1 Nutrición",
             "pagina": 17,
-            "fragmento": "Se recomienda incorporar lenta y progresivamente la"
+            "fragmento": "Se recomienda incorporar lenta y progresivamente la",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
           },
           {
             "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
             "clave": "IMSS-029-08",
             "seccion": "4.1.1 Nutrición",
             "pagina": 17,
-            "fragmento": "El destete se recomienda a la edad de los 2 años"
+            "fragmento": "El destete se recomienda a la edad de los 2 años",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
           }
         ]
       },
@@ -283,7 +298,8 @@
     "gpc_base": {
       "guia": "Control y seguimiento de la salud en la niña y el niño menor de 5 años en el primer nivel de atención",
       "clave": "IMSS-029-08",
-      "archivo": "029GER.pdf"
+      "archivo": "029GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
     },
     "vineta": "Femenino de 7 meses de edad, acude a consulta de control. Recibe únicamente leche materna; aún no ha probado otros alimentos. Se mantiene sentada con apoyo, lleva objetos a la boca y muestra interés cuando la familia come. Peso en percentil 25, sin cambios respecto a la consulta previa. La madre leyó en internet que retrasar los alimentos hasta el año evita alergias y prefiere esperar.",
     "pregunta": "¿Cuál es la recomendación más adecuada sobre su alimentación?",
@@ -303,7 +319,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "Se recomienda incorporar lenta y progresivamente la"
+          "fragmento": "Se recomienda incorporar lenta y progresivamente la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -313,7 +330,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "los 6 y 23 meses de edad"
+          "fragmento": "los 6 y 23 meses de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       }
     ],
@@ -337,7 +355,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 16,
-          "fragmento": "se inicia a partir de los 6 meses"
+          "fragmento": "se inicia a partir de los 6 meses",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -359,7 +378,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "los 6 y 23 meses de edad"
+          "fragmento": "los 6 y 23 meses de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -381,7 +401,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "frutas y cereales sin gluten"
+          "fragmento": "frutas y cereales sin gluten",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       },
       {
@@ -402,7 +423,8 @@
           "clave": "IMSS-029-08",
           "seccion": "4.1.1 Nutrición",
           "pagina": 17,
-          "fragmento": "El destete se recomienda a la edad de los 2 años"
+          "fragmento": "El destete se recomienda a la edad de los 2 años",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/029GER.pdf"
         }
       }
     ],

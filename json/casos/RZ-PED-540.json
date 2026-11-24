@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Tratamiento de la Anemia del Prematuro",
       "clave": "IMSS-540-12",
-      "archivo": "540GER.pdf"
+      "archivo": "540GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
     },
     "vineta": "Recién nacido femenino de 30 semanas de gestación, hoy con 5 semanas de vida y peso de 1,450 g. Recibe CPAP nasal con FiO2 de 28 % y cafeína a dosis terapéuticas. En las últimas 6 horas ha tenido 8 episodios de apnea con bradicardia que requirieron ventilación con bolsa y mascarilla. Hematocrito 26 %, reticulocitos 1.5 %. Hemodinámicamente estable, sin datos de sepsis.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la anemia?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 16,
-          "fragmento": "durante un período de infusión de 2 a 4 horas"
+          "fragmento": "durante un período de infusión de 2 a 4 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Eventos de apnea o bradicardia (más de seis"
+          "fragmento": "Eventos de apnea o bradicardia (más de seis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "terapéuticas de metilxantinas)"
+          "fragmento": "terapéuticas de metilxantinas)",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 16,
-          "fragmento": "durante un período de infusión de 2 a 4 horas"
+          "fragmento": "durante un período de infusión de 2 a 4 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Eventos de apnea o bradicardia (más de seis"
+          "fragmento": "Eventos de apnea o bradicardia (más de seis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 16,
-          "fragmento": "durante un período de infusión de 2 a 4 horas"
+          "fragmento": "durante un período de infusión de 2 a 4 horas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 16,
-          "fragmento": "la administración rápida de sangre puede"
+          "fragmento": "la administración rápida de sangre puede",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-540-12",
             "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
             "pagina": 15,
-            "fragmento": "Hematocrito menor de 20% y:"
+            "fragmento": "Hematocrito menor de 20% y:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
           },
           {
             "guia": "Tratamiento de la Anemia del Prematuro",
             "clave": "IMSS-540-12",
             "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
             "pagina": 15,
-            "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+            "fragmento": "Hematocrito entre 21% y 30% en un niño con:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
           },
           {
             "guia": "Tratamiento de la Anemia del Prematuro",
             "clave": "IMSS-540-12",
             "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
             "pagina": 15,
-            "fragmento": "Hematocrito entre 31% y 35% en niños con:"
+            "fragmento": "Hematocrito entre 31% y 35% en niños con:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
           },
           {
             "guia": "Tratamiento de la Anemia del Prematuro",
             "clave": "IMSS-540-12",
             "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
             "pagina": 16,
-            "fragmento": "durante un período de infusión de 2 a 4 horas"
+            "fragmento": "durante un período de infusión de 2 a 4 horas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
           }
         ]
       },
@@ -270,7 +284,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "prematuros con anemia, se recomienda en los"
+          "fragmento": "prematuros con anemia, se recomienda en los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -320,7 +335,8 @@
     "gpc_base": {
       "guia": "Tratamiento de la Anemia del Prematuro",
       "clave": "IMSS-540-12",
-      "archivo": "540GER.pdf"
+      "archivo": "540GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
     },
     "vineta": "Recién nacido masculino de 32 semanas de gestación, hoy con 6 semanas de vida y peso de 1,900 g. Respira al aire ambiente, sin apneas ni bradicardias, FC de 150 lpm y FR de 45 rpm. Gana 25 g al día con alimentación enteral completa. Hematocrito 28 %, reticulocitos 3 %. No ha recibido suplementación con hierro.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -340,7 +356,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -350,7 +367,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.3 Tratamiento con hierro y ácido fólico",
           "pagina": 25,
-          "fragmento": "iniciar la suplementación con hierro desde las 4-8"
+          "fragmento": "iniciar la suplementación con hierro desde las 4-8",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       }
     ],
@@ -373,7 +391,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Hematocrito entre 21% y 30% en un niño con:"
+          "fragmento": "Hematocrito entre 21% y 30% en un niño con:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -393,7 +412,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Hematocrito entre 31% y 35% en niños con:"
+          "fragmento": "Hematocrito entre 31% y 35% en niños con:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -414,7 +434,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.3 Tratamiento con hierro y ácido fólico",
           "pagina": 25,
-          "fragmento": "iniciar la suplementación con hierro desde las 4-8"
+          "fragmento": "iniciar la suplementación con hierro desde las 4-8",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       },
       {
@@ -435,7 +456,8 @@
           "clave": "IMSS-540-12",
           "seccion": "4.1.1.1 Transfusión de concentrado eritrocitario",
           "pagina": 15,
-          "fragmento": "Incremento ponderal menor de 10 gr por día,"
+          "fragmento": "Incremento ponderal menor de 10 gr por día,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/540GER.pdf"
         }
       }
     ],

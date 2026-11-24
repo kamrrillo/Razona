@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
       "clave": "IMSS-271-13",
-      "archivo": "271GER.pdf"
+      "archivo": "271GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
     },
     "vineta": "Masculino de 4 años, peso 16 kg, superficie corporal 0.68 m², previamente sano. Presenta desde hace 5 días edema palpebral matutino que progresó a edema de miembros inferiores y escrotal. TA 95/60 mmHg. Sin artritis, exantema ni adenopatías. Examen general de orina con proteínas +++ y sin hematuria; índice proteína/creatinina urinaria de 4.5 mg/mg; albúmina sérica 1.8 g/dL; colesterol 380 mg/dL; creatinina sérica normal. Es su primer episodio.",
     "pregunta": "¿Cuál es el tratamiento inicial más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+          "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "biopsia renal de rutina en el primer evento"
+          "fragmento": "biopsia renal de rutina en el primer evento",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 31,
-          "fragmento": "Después de lograr nuevamente la remisión"
+          "fragmento": "Después de lograr nuevamente la remisión",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "Falta de respuesta al tratamiento inicial"
+          "fragmento": "Falta de respuesta al tratamiento inicial",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "Se recomienda un periodo mínimo del tratamiento"
+          "fragmento": "Se recomienda un periodo mínimo del tratamiento",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -125,7 +131,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "no hubo diferencia significativa en el tiempo medio"
+          "fragmento": "no hubo diferencia significativa en el tiempo medio",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "Se recomienda un periodo mínimo del tratamiento"
+          "fragmento": "Se recomienda un periodo mínimo del tratamiento",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 31,
-          "fragmento": "niño entre en remisión completa (tres días sin proteinuria)"
+          "fragmento": "niño entre en remisión completa (tres días sin proteinuria)",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "no hubo diferencia significativa en el tiempo medio"
+          "fragmento": "no hubo diferencia significativa en el tiempo medio",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-271-13",
             "seccion": "4.1.2 Diagnóstico Diferencial",
             "pagina": 19,
-            "fragmento": "Se deberá considerar la posibilidad que el origen del"
+            "fragmento": "Se deberá considerar la posibilidad que el origen del",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
             "clave": "IMSS-271-13",
             "seccion": "4.1.1 Diagnóstico Clínico",
             "pagina": 19,
-            "fragmento": "biopsia renal de rutina en el primer evento"
+            "fragmento": "biopsia renal de rutina en el primer evento",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
             "clave": "IMSS-271-13",
             "seccion": "4.2.4 Tratamiento con Corticosteroides",
             "pagina": 28,
-            "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis"
+            "fragmento": "Iniciar con 60mg/m2/día ó 2mg/kg/dosis",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
             "clave": "IMSS-271-13",
             "seccion": "4.2.4 Tratamiento con Corticosteroides",
             "pagina": 28,
-            "fragmento": "periodo de dos a cinco meses con disminución"
+            "fragmento": "periodo de dos a cinco meses con disminución",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
           }
         ]
       },
@@ -281,7 +295,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento del Síndrome Nefrótico Primario en Niños",
       "clave": "IMSS-271-13",
-      "archivo": "271GER.pdf"
+      "archivo": "271GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
     },
     "vineta": "Femenino de 6 años, peso 21 kg, superficie corporal 0.84 m², con primer episodio de síndrome nefrótico diagnosticado hace 6 semanas. Recibe prednisona 50 mg/día en dosis única matutina desde entonces. Desde la segunda semana las tiras reactivas de orina son negativas a proteínas y el edema desapareció. TA normal, creatinina normal. Los padres preguntan qué sigue.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la prednisona?",
@@ -301,7 +316,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2"
+          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -311,7 +327,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "periodo de dos a cinco meses con disminución"
+          "fragmento": "periodo de dos a cinco meses con disminución",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       }
     ],
@@ -334,7 +351,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "periodo de dos a cinco meses con disminución"
+          "fragmento": "periodo de dos a cinco meses con disminución",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -355,7 +373,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2"
+          "fragmento": "Al término del periodo inicial, seguir con: 40 mg/m2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -375,7 +394,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "Falta de respuesta al tratamiento inicial"
+          "fragmento": "Falta de respuesta al tratamiento inicial",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       },
       {
@@ -396,7 +416,8 @@
           "clave": "IMSS-271-13",
           "seccion": "4.2.4 Tratamiento con Corticosteroides",
           "pagina": 28,
-          "fragmento": "periodo de dos a cinco meses con disminución"
+          "fragmento": "periodo de dos a cinco meses con disminución",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/271GER.pdf"
         }
       }
     ],

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
       "clave": "IMSS-248-09",
-      "archivo": "248GER.pdf"
+      "archivo": "248GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
     },
     "vineta": "Masculino de 4 meses de edad corregida, nacido a las 29 semanas, con hemorragia intraventricular durante su estancia en la unidad de cuidados intensivos neonatales. Acude a control mensual en su unidad de medicina familiar. Perímetro cefálico: percentil 50 al mes, percentil 75 a los 2 meses, percentil 90 a los 3 meses y hoy por arriba del percentil 97. La madre refiere irritabilidad y que en la última semana vomita después de algunas tomas. Fontanela anterior amplia y tensa, suturas abiertas.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "ameritan envío a pediatría de un"
+          "fragmento": "ameritan envío a pediatría de un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
           "pagina": 25,
-          "fragmento": "Se prefiere en neonatos y lactantes con suturas"
+          "fragmento": "Se prefiere en neonatos y lactantes con suturas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "el perímetro cefálico se sitúa por fuera de los"
+          "fragmento": "el perímetro cefálico se sitúa por fuera de los",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -83,7 +87,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 19,
-          "fragmento": "No se recomienda la investigación adicional a menos"
+          "fragmento": "No se recomienda la investigación adicional a menos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -105,7 +110,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.3.2 Tratamiento Médico",
           "pagina": 37,
-          "fragmento": "Por lo que no se recomienda su uso para el manejo de"
+          "fragmento": "Por lo que no se recomienda su uso para el manejo de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -126,7 +132,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
           "pagina": 25,
-          "fragmento": "Se prefiere en neonatos y lactantes con suturas"
+          "fragmento": "Se prefiere en neonatos y lactantes con suturas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       }
     ],
@@ -152,7 +159,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "presenta cambios de 2 canales percentilares"
+          "fragmento": "presenta cambios de 2 canales percentilares",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -172,7 +180,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
           "pagina": 25,
-          "fragmento": "sin exposición a la radiación ionizante"
+          "fragmento": "sin exposición a la radiación ionizante",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -191,7 +200,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.3.2 Tratamiento Médico",
           "pagina": 37,
-          "fragmento": "La terapia con acetazolamida y con furosemida no es"
+          "fragmento": "La terapia con acetazolamida y con furosemida no es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -211,28 +221,32 @@
             "clave": "IMSS-248-09",
             "seccion": "4.2.1 Diagnóstico Clínico",
             "pagina": 20,
-            "fragmento": "presenta cambios de 2 canales percentilares"
+            "fragmento": "presenta cambios de 2 canales percentilares",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
             "clave": "IMSS-248-09",
             "seccion": "4.2.1 Diagnóstico Clínico",
             "pagina": 19,
-            "fragmento": "No se recomienda la investigación adicional a menos"
+            "fragmento": "No se recomienda la investigación adicional a menos",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
             "clave": "IMSS-248-09",
             "seccion": "4.2.2 Signos de Alarma para daño neurológico",
             "pagina": 21,
-            "fragmento": "intracraneal son indicaciones de valoración urgente"
+            "fragmento": "intracraneal son indicaciones de valoración urgente",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
             "clave": "IMSS-248-09",
             "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
             "pagina": 25,
-            "fragmento": "Se prefiere en neonatos y lactantes con suturas"
+            "fragmento": "Se prefiere en neonatos y lactantes con suturas",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
           }
         ]
       },
@@ -309,7 +323,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 21,
-          "fragmento": "grado de severidad de la HIV"
+          "fragmento": "grado de severidad de la HIV",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       }
     ]
@@ -323,7 +338,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Manejo de la Hidrocefalia Congénita y Adquirida en Menores de 1 Año de Edad",
       "clave": "IMSS-248-09",
-      "archivo": "248GER.pdf"
+      "archivo": "248GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
     },
     "vineta": "Femenino de 7 meses, de término, sin antecedentes perinatales relevantes. En su control de niña sana el perímetro cefálico está en el percentil 90; en los controles mensuales previos se mantuvo en el percentil 25 hasta los 4 meses y en el percentil 50 a los 5 meses. Desarrollo psicomotor acorde con la edad, fontanela anterior normotensa, sin vómito ni irritabilidad. Los padres tienen perímetro cefálico normal.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -343,7 +359,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "presenta cambios de 2 canales percentilares"
+          "fragmento": "presenta cambios de 2 canales percentilares",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -353,7 +370,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "el PC desde el nacimiento hasta los 2 años de edad"
+          "fragmento": "el PC desde el nacimiento hasta los 2 años de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       }
     ],
@@ -376,7 +394,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "presenta cambios de 2 canales percentilares"
+          "fragmento": "presenta cambios de 2 canales percentilares",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -397,7 +416,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "el PC desde el nacimiento hasta los 2 años de edad"
+          "fragmento": "el PC desde el nacimiento hasta los 2 años de edad",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -417,7 +437,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.3 Pruebas Diagnósticas Prenatales y Postnatales de Hidrocefalia",
           "pagina": 25,
-          "fragmento": "Se prefiere en neonatos y lactantes con suturas"
+          "fragmento": "Se prefiere en neonatos y lactantes con suturas",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       },
       {
@@ -438,7 +459,8 @@
           "clave": "IMSS-248-09",
           "seccion": "4.2.1 Diagnóstico Clínico",
           "pagina": 20,
-          "fragmento": "ameritan envío a pediatría de un"
+          "fragmento": "ameritan envío a pediatría de un",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/248GER.pdf"
         }
       }
     ],

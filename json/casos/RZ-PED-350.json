@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
       "clave": "IMSS-350-13",
-      "archivo": "350GER.pdf"
+      "archivo": "350GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
     },
     "vineta": "Masculino de 18 meses con esquema de vacunación completo para la edad. Presenta fiebre de 39.2 °C de 24 horas de evolución. Sin tos, rinorrea, vómito ni diarrea. En la consulta está alerta, sonríe, juega con los juguetes de la sala, tiene mucosas húmedas, llenado capilar de 2 segundos y FR de 28 rpm. Oídos, faringe, campos pulmonares, abdomen y piel sin alteraciones; sin rigidez de nuca. Los padres viven cerca de la unidad y entienden las indicaciones.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "recomendable realizar un Examen General de Orina"
+          "fragmento": "recomendable realizar un Examen General de Orina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 24,
-          "fragmento": "Los niños con bajo riesgo podrán manejarse en forma"
+          "fragmento": "Los niños con bajo riesgo podrán manejarse en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 24,
-          "fragmento": "Los antibióticos orales no deben ser usados en"
+          "fragmento": "Los antibióticos orales no deben ser usados en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       }
     ],
@@ -72,7 +76,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 25,
-          "fragmento": "recibir antibióticos intravenosos profilácticos:"
+          "fragmento": "recibir antibióticos intravenosos profilácticos:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -94,7 +99,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -115,7 +121,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 24,
-          "fragmento": "Los antibióticos orales no deben ser usados en"
+          "fragmento": "Los antibióticos orales no deben ser usados en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -137,7 +144,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "recomendable realizar un Examen General de Orina"
+          "fragmento": "recomendable realizar un Examen General de Orina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       }
     ],
@@ -163,7 +171,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 21,
-          "fragmento": "recomendable realizar un Examen General de Orina"
+          "fragmento": "recomendable realizar un Examen General de Orina",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -182,7 +191,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 24,
-          "fragmento": "Los antibióticos orales no deben ser usados en"
+          "fragmento": "Los antibióticos orales no deben ser usados en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -202,7 +212,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.1 Manifestaciones clínicas y factores de riesgos",
           "pagina": 14,
-          "fragmento": "Coloración normal de piel, labios y lengua"
+          "fragmento": "Coloración normal de piel, labios y lengua",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -222,28 +233,32 @@
             "clave": "IMSS-350-13",
             "seccion": "4.2 Pruebas diagnósticas",
             "pagina": 23,
-            "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+            "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
             "clave": "IMSS-350-13",
             "seccion": "4.3 Manejo médico",
             "pagina": 25,
-            "fragmento": "recibir antibióticos intravenosos profilácticos:"
+            "fragmento": "recibir antibióticos intravenosos profilácticos:",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
             "clave": "IMSS-350-13",
             "seccion": "4.4 Criterios de Referencia",
             "pagina": 27,
-            "fragmento": "proveer a los padres o cuidadores indicaciones"
+            "fragmento": "proveer a los padres o cuidadores indicaciones",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
             "clave": "IMSS-350-13",
             "seccion": "4.3 Manejo médico",
             "pagina": 24,
-            "fragmento": "Los niños con bajo riesgo podrán manejarse en forma"
+            "fragmento": "Los niños con bajo riesgo podrán manejarse en forma",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
           }
         ]
       },
@@ -294,7 +309,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de la Fiebre Sin Signos de Focalización en los Niños de 3 Meses Hasta los 5 Años de Edad",
       "clave": "IMSS-350-13",
-      "archivo": "350GER.pdf"
+      "archivo": "350GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
     },
     "vineta": "Femenino de 10 meses con fiebre de 39.6 °C de 12 horas de evolución, sin foco aparente a la exploración. En urgencias está poco reactiva a estímulos, con llanto débil, piel moteada y llenado capilar de 4 segundos. FC 185 lpm. Sin petequias ni rigidez de nuca. Sin contraindicaciones para punción lumbar. Vacunación incompleta.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -314,7 +330,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 25,
-          "fragmento": "No se debe retrasar la hospitalización y el uso de"
+          "fragmento": "No se debe retrasar la hospitalización y el uso de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -324,7 +341,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:"
+          "fragmento": "alto con fiebre sin foco infeccioso aparente realizar:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       }
     ],
@@ -347,7 +365,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 25,
-          "fragmento": "No se debe retrasar la hospitalización y el uso de"
+          "fragmento": "No se debe retrasar la hospitalización y el uso de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -368,7 +387,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 25,
-          "fragmento": "recibir antibióticos intravenosos profilácticos:"
+          "fragmento": "recibir antibióticos intravenosos profilácticos:",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -389,7 +409,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 22,
-          "fragmento": "en forma inmediata, si el paciente tiene una IBG ya que"
+          "fragmento": "en forma inmediata, si el paciente tiene una IBG ya que",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       },
       {
@@ -411,7 +432,8 @@
           "clave": "IMSS-350-13",
           "seccion": "4.3 Manejo médico",
           "pagina": 25,
-          "fragmento": "Los baños de esponja con agua tibia no están"
+          "fragmento": "Los baños de esponja con agua tibia no están",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/350GER.pdf"
         }
       }
     ],

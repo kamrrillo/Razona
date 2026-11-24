@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
       "clave": "IMSS-430-10",
-      "archivo": "430GER.pdf"
+      "archivo": "430GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
     },
     "vineta": "Masculino de 9 años, peso 25 kg, originario de una comunidad rural donde la familia se alimenta casi solo de sorgo y tortilla desde hace un año. Presenta desde hace 2 meses lesiones hiperpigmentadas, descamativas y simétricas en dorso de manos, antebrazos y una banda alrededor del cuello, que empeoran con el sol. Además tiene evacuaciones líquidas 4 veces al día, glositis, irritabilidad y dificultad para concentrarse en la escuela.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 18,
-          "fragmento": "cremas de foto protección y"
+          "fragmento": "cremas de foto protección y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 12,
-          "fragmento": "Ingestión por tiempo prolongado de sorgo"
+          "fragmento": "Ingestión por tiempo prolongado de sorgo",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       }
     ],
@@ -71,7 +75,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -92,7 +97,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 13,
-          "fragmento": "Cuello “Collar de Casal”"
+          "fragmento": "Cuello “Collar de Casal”",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -113,7 +119,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -134,7 +141,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "siendo una entidad fácilmente tratable"
+          "fragmento": "siendo una entidad fácilmente tratable",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       }
     ],
@@ -160,7 +168,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -179,7 +188,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 15,
-          "fragmento": "El diagnóstico de Pelagra es principalmente clínico"
+          "fragmento": "El diagnóstico de Pelagra es principalmente clínico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -198,7 +208,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 18,
-          "fragmento": "cremas de foto protección y"
+          "fragmento": "cremas de foto protección y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -218,28 +229,32 @@
             "clave": "IMSS-430-10",
             "seccion": "2.1 Diagnóstico",
             "pagina": 12,
-            "fragmento": "Ante la sospecha de Pelagra se deberá investigar el"
+            "fragmento": "Ante la sospecha de Pelagra se deberá investigar el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
             "clave": "IMSS-430-10",
             "seccion": "2.2 Diagnóstico diferencial",
             "pagina": 16,
-            "fragmento": "Cuando el cuadro clínico y las pruebas de laboratorio"
+            "fragmento": "Cuando el cuadro clínico y las pruebas de laboratorio",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
             "clave": "IMSS-430-10",
             "seccion": "2.3 Tratamiento",
             "pagina": 17,
-            "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+            "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
           },
           {
             "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
             "clave": "IMSS-430-10",
             "seccion": "2.1 Diagnóstico",
             "pagina": 14,
-            "fragmento": "diagnóstico al observar que rápidamente se controla"
+            "fragmento": "diagnóstico al observar que rápidamente se controla",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
           }
         ]
       },
@@ -309,7 +324,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y tratamiento de la Pelagra en Edad Pediátrica",
       "clave": "IMSS-430-10",
-      "archivo": "430GER.pdf"
+      "archivo": "430GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
     },
     "vineta": "Femenino de 14 años con tuberculosis pulmonar, en fase intensiva de tratamiento que incluye isoniazida desde hace 3 meses, sin suplementos vitamínicos. Presenta eritema y descamación simétrica en cara y dorso de manos que aparecieron después de exponerse al sol, evacuaciones líquidas y episodios de confusión. No tiene fiebre y la baciloscopia de control es negativa.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -329,7 +345,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 12,
-          "fragmento": "Terapia con isoniazida que por su estructura"
+          "fragmento": "Terapia con isoniazida que por su estructura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -339,7 +356,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       }
     ],
@@ -362,7 +380,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 12,
-          "fragmento": "Terapia con isoniazida que por su estructura"
+          "fragmento": "Terapia con isoniazida que por su estructura",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -383,7 +402,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.1 Diagnóstico",
           "pagina": 13,
-          "fragmento": "Cuello “Collar de Casal”"
+          "fragmento": "Cuello “Collar de Casal”",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -403,7 +423,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 17,
-          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis"
+          "fragmento": "Pelagra es de 300 mg de nicotinamida en dosis",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       },
       {
@@ -424,7 +445,8 @@
           "clave": "IMSS-430-10",
           "seccion": "2.3 Tratamiento",
           "pagina": 18,
-          "fragmento": "cremas de foto protección y"
+          "fragmento": "cremas de foto protección y",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/430GER.pdf"
         }
       }
     ],

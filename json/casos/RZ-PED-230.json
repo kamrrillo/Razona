@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
       "clave": "IMSS-230-16",
-      "archivo": "230GER.pdf"
+      "archivo": "230GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
     },
     "vineta": "Femenino de 5 años (60 meses) acude a su revisión anual en la unidad de medicina familiar. Sin antecedentes perinatales ni familiares de alteraciones oculares. Coopera bien con la prueba. Se evalúa la agudeza visual de forma monocular con cartilla HOTV: con el ojo derecho identifica tres de cuatro optotipos en el nivel 20/40; con el ojo izquierdo identifica tres de cuatro en el nivel 20/50, pero solo uno de cuatro en el nivel 20/40. Reflejo rojo presente y simétrico, sin estrabismo aparente.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "tres de tres o tres de cuatro en el nivel 20/40"
+          "fragmento": "tres de tres o tres de cuatro en el nivel 20/40",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
           "pagina": 24,
-          "fragmento": "agudeza visual en forma monocular, esto es en forma"
+          "fragmento": "agudeza visual en forma monocular, esto es en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "de tres o tres de cuatro en el nivel 20/50"
+          "fragmento": "de tres o tres de cuatro en el nivel 20/50",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "prueba, deben ser reevaluados el mismo día, si es"
+          "fragmento": "prueba, deben ser reevaluados el mismo día, si es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
           "pagina": 24,
-          "fragmento": "agudeza visual en forma monocular, esto es en forma"
+          "fragmento": "agudeza visual en forma monocular, esto es en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "deben ser remitidos para un examen completo de la"
+          "fragmento": "deben ser remitidos para un examen completo de la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3.1 Exploración en el niños verbal o Preescolar",
           "pagina": 34,
-          "fragmento": "niños entre 48 a 72 meses, deben identificar"
+          "fragmento": "niños entre 48 a 72 meses, deben identificar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3.1 Exploración en el niños verbal o Preescolar",
           "pagina": 34,
-          "fragmento": "edad y debe ser cumplido por ambos ojos derecho e"
+          "fragmento": "edad y debe ser cumplido por ambos ojos derecho e",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3.1 Exploración en el niños verbal o Preescolar",
           "pagina": 25,
-          "fragmento": "reducir la prevalencia de la ambliopía con una referencia oportuna"
+          "fragmento": "reducir la prevalencia de la ambliopía con una referencia oportuna",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-230-16",
             "seccion": "4.4 Criterios de referencia",
             "pagina": 44,
-            "fragmento": "de tres o tres de cuatro en el nivel 20/50"
+            "fragmento": "de tres o tres de cuatro en el nivel 20/50",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
             "clave": "IMSS-230-16",
             "seccion": "4.4 Criterios de referencia",
             "pagina": 44,
-            "fragmento": "tres de tres o tres de cuatro en el nivel 20/40"
+            "fragmento": "tres de tres o tres de cuatro en el nivel 20/40",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
             "clave": "IMSS-230-16",
             "seccion": "4.4 Criterios de referencia",
             "pagina": 44,
-            "fragmento": "brevedad (dentro de los próximos 6 meses)"
+            "fragmento": "brevedad (dentro de los próximos 6 meses)",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
           },
           {
             "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
             "clave": "IMSS-230-16",
             "seccion": "4.4 Criterios de referencia",
             "pagina": 44,
-            "fragmento": "la agudeza visual en una segunda ocasión, o existen"
+            "fragmento": "la agudeza visual en una segunda ocasión, o existen",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
           }
         ]
       },
@@ -303,7 +317,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3.1 Exploración en el niños verbal o Preescolar",
           "pagina": 34,
-          "fragmento": "Se interpreta en la siguiente forma"
+          "fragmento": "Se interpreta en la siguiente forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       }
     ]
@@ -317,7 +332,8 @@
     "gpc_base": {
       "guia": "Detección oportuna de alteraciones visuales en el preescolar en el primer nivel de atención",
       "clave": "IMSS-230-16",
-      "archivo": "230GER.pdf"
+      "archivo": "230GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
     },
     "vineta": "Masculino de 4 años 2 meses (50 meses) acude a su primera evaluación visual en la unidad de medicina familiar. Sin antecedentes familiares de estrabismo, ambliopía ni uso de lentes. Al intentar la evaluación monocular con símbolos de Lea, llora, se niega a la oclusión y no logra señalar los símbolos con ninguno de los dos ojos; la madre comenta que hoy no durmió siesta. Reflejo rojo presente y simétrico, prueba de Hirschberg con reflejo corneal centrado.",
     "pregunta": "¿Cuál es la conducta más adecuada respecto a la agudeza visual?",
@@ -337,7 +353,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "brevedad (dentro de los próximos 6 meses)"
+          "fragmento": "brevedad (dentro de los próximos 6 meses)",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -347,7 +364,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "la agudeza visual en una segunda ocasión, o existen"
+          "fragmento": "la agudeza visual en una segunda ocasión, o existen",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       }
     ],
@@ -370,7 +388,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.4 Criterios de referencia",
           "pagina": 44,
-          "fragmento": "prueba, deben ser reevaluados el mismo día, si es"
+          "fragmento": "prueba, deben ser reevaluados el mismo día, si es",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -391,7 +410,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
           "pagina": 24,
-          "fragmento": "agudeza visual en forma monocular, esto es en forma"
+          "fragmento": "agudeza visual en forma monocular, esto es en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -412,7 +432,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
           "pagina": 24,
-          "fragmento": "todo niño entre los 36 a 72 meses de edad, debe ser"
+          "fragmento": "todo niño entre los 36 a 72 meses de edad, debe ser",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       },
       {
@@ -433,7 +454,8 @@
           "clave": "IMSS-230-16",
           "seccion": "4.3 Puntos críticos en la evaluación clínica de la exploración ocular y la agudeza visual en el niño",
           "pagina": 24,
-          "fragmento": "agudeza visual en forma monocular, esto es en forma"
+          "fragmento": "agudeza visual en forma monocular, esto es en forma",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/230GER.pdf"
         }
       }
     ],

@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
       "clave": "IMSS-601-13",
-      "archivo": "601GER.pdf"
+      "archivo": "601GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
     },
     "vineta": "Femenino de 14 años que practica gimnasia 5 días por semana. Presenta dolor lumbar bajo de 4 meses de evolución que aparece con el entrenamiento y aumenta al arquear la espalda hacia atrás. Niega fiebre, pérdida de peso, dolor nocturno, rigidez matutina y síntomas en piernas. A la exploración: hiperlordosis lumbar, dolor a la hiperextensión de la columna con la pierna estirada, examen neurológico normal. Sin escoliosis aparente.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "espondilólisis, por lo que está indicado solicitar"
+          "fragmento": "espondilólisis, por lo que está indicado solicitar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "de la columna lumbar mientras se tiene la"
+          "fragmento": "de la columna lumbar mientras se tiene la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "Dolor persistente o en aumento,"
+          "fragmento": "Dolor persistente o en aumento,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 17,
-          "fragmento": "inespecífico y por consenso de expertos se"
+          "fragmento": "inespecífico y por consenso de expertos se",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 19,
-          "fragmento": "Rigidez matutina que mejora con la"
+          "fragmento": "Rigidez matutina que mejora con la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "Las radiografías simples son usualmente"
+          "fragmento": "Las radiografías simples son usualmente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "Dolor persistente o en aumento,"
+          "fragmento": "Dolor persistente o en aumento,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "de la columna lumbar mientras se tiene la"
+          "fragmento": "de la columna lumbar mientras se tiene la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "Las radiografías simples son usualmente"
+          "fragmento": "Las radiografías simples son usualmente",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -208,28 +218,32 @@
             "clave": "IMSS-601-13",
             "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
             "pagina": 18,
-            "fragmento": "caso de estar presentes se requiere una evaluación"
+            "fragmento": "caso de estar presentes se requiere una evaluación",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
             "clave": "IMSS-601-13",
             "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
             "pagina": 18,
-            "fragmento": "espondilólisis, por lo que está indicado solicitar"
+            "fragmento": "espondilólisis, por lo que está indicado solicitar",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
             "clave": "IMSS-601-13",
             "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
             "pagina": 19,
-            "fragmento": "Sospechar de enfermedades autoinmunes como"
+            "fragmento": "Sospechar de enfermedades autoinmunes como",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
           },
           {
             "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
             "clave": "IMSS-601-13",
             "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
             "pagina": 17,
-            "fragmento": "inespecífico y por consenso de expertos se"
+            "fragmento": "inespecífico y por consenso de expertos se",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
           }
         ]
       },
@@ -298,7 +312,8 @@
     "gpc_base": {
       "guia": "Abordaje diagnóstico del dolor lumbar crónico en la población pediátrica en el primer nivel de atención",
       "clave": "IMSS-601-13",
-      "archivo": "601GER.pdf"
+      "archivo": "601GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
     },
     "vineta": "Masculino de 10 años con dolor lumbar de 3 meses de evolución que en las últimas semanas lo despierta por la noche y va en aumento. Ha perdido 2 kg y tiene fiebre intermitente de 38 °C. Sin antecedente de traumatismo ni actividad deportiva intensa. A la exploración: dolor a la palpación de apófisis espinosas lumbares, fuerza y reflejos normales. Acude a su unidad de medicina familiar.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -318,7 +333,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "dolor lumbar que sugieren una investigación"
+          "fragmento": "dolor lumbar que sugieren una investigación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -328,7 +344,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "caso de estar presentes se requiere una evaluación"
+          "fragmento": "caso de estar presentes se requiere una evaluación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       }
     ],
@@ -351,7 +368,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "Dolor persistente o en aumento,"
+          "fragmento": "Dolor persistente o en aumento,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -372,7 +390,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "caso de estar presentes se requiere una evaluación"
+          "fragmento": "caso de estar presentes se requiere una evaluación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -393,7 +412,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "de la columna lumbar mientras se tiene la"
+          "fragmento": "de la columna lumbar mientras se tiene la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       },
       {
@@ -414,7 +434,8 @@
           "clave": "IMSS-601-13",
           "seccion": "4.2 Cuadro clínico y Diagnóstico diferencial",
           "pagina": 18,
-          "fragmento": "dolor lumbar que sugieren una investigación"
+          "fragmento": "dolor lumbar que sugieren una investigación",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/601GER.pdf"
         }
       }
     ],

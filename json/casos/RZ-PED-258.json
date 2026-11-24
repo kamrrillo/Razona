@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
       "clave": "IMSS-258-10",
-      "archivo": "258GER.pdf"
+      "archivo": "258GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
     },
     "vineta": "Masculino de 2 años, peso 12 kg, llevado a urgencias a las 2 de la mañana por tos \"de perro\" y disfonía que iniciaron por la noche, precedidas de 2 días de rinorrea. Temperatura 37.9 °C. Tranquilo en brazos de su madre presenta FR de 30 rpm, sin tiraje ni estridor; el estridor solo aparece cuando llora durante la exploración. SpO2 97 % al aire ambiente. Tolera la vía oral y no ha vomitado.",
     "pregunta": "¿Cuál es el tratamiento más adecuado?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 25,
-          "fragmento": "dexametasona 0.60mg/Kg. vía oral,"
+          "fragmento": "dexametasona 0.60mg/Kg. vía oral,",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "recomienda una sola dosis de"
+          "fragmento": "recomienda una sola dosis de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -48,7 +51,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "LTA grave y LTA que amenaza la vida"
+          "fragmento": "LTA grave y LTA que amenaza la vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       }
     ],
@@ -72,7 +76,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "LTA grave y LTA que amenaza la vida"
+          "fragmento": "LTA grave y LTA que amenaza la vida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -93,7 +98,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "En niños con vómito, la budesonida"
+          "fragmento": "En niños con vómito, la budesonida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -114,7 +120,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.1.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "No se sugiere utilizar la radiografía de"
+          "fragmento": "No se sugiere utilizar la radiografía de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -136,7 +143,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "antibióticos no es recomendable"
+          "fragmento": "antibióticos no es recomendable",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       }
     ],
@@ -161,7 +169,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "Se recomienda iniciar manejo con"
+          "fragmento": "Se recomienda iniciar manejo con",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -181,7 +190,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "vía oral si esta disponible"
+          "fragmento": "vía oral si esta disponible",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -201,7 +211,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.1.2 Pruebas Diagnósticas",
           "pagina": 14,
-          "fragmento": "El diagnóstico de LTA es confiable"
+          "fragmento": "El diagnóstico de LTA es confiable",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -221,28 +232,32 @@
             "clave": "IMSS-258-10",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 25,
-            "fragmento": "glucocorticoides la piedra angular en el"
+            "fragmento": "glucocorticoides la piedra angular en el",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
             "clave": "IMSS-258-10",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 25,
-            "fragmento": "En niños con vómito puede ser"
+            "fragmento": "En niños con vómito puede ser",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
             "clave": "IMSS-258-10",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 26,
-            "fragmento": "nebulizada en niños con LTA grave"
+            "fragmento": "nebulizada en niños con LTA grave",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
           },
           {
             "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
             "clave": "IMSS-258-10",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 22,
-            "fragmento": "Considerar ante la persistencia de los"
+            "fragmento": "Considerar ante la persistencia de los",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
           }
         ]
       },
@@ -327,7 +342,8 @@
           "clave": "IMSS-258-10",
           "seccion": "6.3 Clasificación o Escalas de la Enfermedad",
           "pagina": 40,
-          "fragmento": "Evaluación de la gravedad de la obstrucción de la vía respiratoria"
+          "fragmento": "Evaluación de la gravedad de la obstrucción de la vía respiratoria",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -359,7 +375,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Manejo de la Laringotraqueitis Aguda en Pacientes Mayores de 3 Meses Hasta 15 Años de Edad",
       "clave": "IMSS-258-10",
-      "archivo": "258GER.pdf"
+      "archivo": "258GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
     },
     "vineta": "Femenino de 3 años, peso 14 kg, con 1 día de rinorrea y tos traqueal. Llega a urgencias agitada, con estridor inspiratorio audible en reposo, tiraje supraesternal e intercostal marcados, FR de 46 rpm y SpO2 92 % al aire ambiente. Temperatura 38 °C. Sin babeo y sin apariencia tóxica. Se le colocan puntas nasales con oxígeno.",
     "pregunta": "Además del glucocorticoide, ¿cuál es el tratamiento inmediato más adecuado?",
@@ -379,7 +396,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "nebulizada en niños con LTA grave"
+          "fragmento": "nebulizada en niños con LTA grave",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -389,7 +407,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "Se hace énfasis en no diluir la"
+          "fragmento": "Se hace énfasis en no diluir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       }
     ],
@@ -412,7 +431,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "nebulizada en niños con LTA grave"
+          "fragmento": "nebulizada en niños con LTA grave",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -433,7 +453,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "Se hace énfasis en no diluir la"
+          "fragmento": "Se hace énfasis en no diluir la",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -454,7 +475,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento no Farmacológico",
           "pagina": 30,
-          "fragmento": "humidificado no mostró mejoría"
+          "fragmento": "humidificado no mostró mejoría",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       },
       {
@@ -475,7 +497,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.1.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "No se sugiere utilizar la radiografía de"
+          "fragmento": "No se sugiere utilizar la radiografía de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf"
         }
       }
     ],

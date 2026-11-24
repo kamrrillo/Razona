@@ -37,6 +37,11 @@ test("guion de la demo", async ({ page }) => {
   await expect(explanation).toBeVisible({ timeout: 25_000 });
   await expect(explanation.getByTestId("tutor-gpc")).toContainText("IMSS-032-08");
   await expect(explanation.getByTestId("citation")).toContainText(/p\. \d+/);
+  // La cita abre el PDF de la GPC en la página citada (json/fuentes: url → url_pdf → pdfUrl)
+  await expect(explanation.getByTestId("citation-pdf").first()).toHaveAttribute(
+    "href",
+    /^https:\/\/www\.imss\.gob\.mx\/.+\/032GER\.pdf#page=\d+$/,
+  );
   await expect(explanation.getByTestId("socratic-dialog")).toContainText("?");
   await expect(explanation.getByTestId("tutor-personal")).toContainText("Ana");
   await expect(explanation.getByTestId("tutor-fundamentals").locator("li").first()).toBeVisible();

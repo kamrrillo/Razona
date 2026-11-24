@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
       "clave": "IMSS-627-13",
-      "archivo": "627GER.pdf"
+      "archivo": "627GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
     },
     "vineta": "Masculino de 2 meses, peso 4.8 kg, con tamiz neonatal positivo por tripsinógeno inmunorreactivo elevado. Asintomático, con buena ganancia ponderal y evacuaciones normales. Se le realizó una cuantificación de cloruros en sudor por iontoforesis con pilocarpina (método de Gibson-Cooke) con muestra adecuada de 90 mg; el resultado fue de 72 mmol/L. Es la primera determinación.",
     "pregunta": "¿Cuál es la conducta más adecuada?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "distintas confirman el diagnóstico"
+          "fragmento": "distintas confirman el diagnóstico",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "determinación de cloro < 40 mmo/L descarta"
+          "fragmento": "determinación de cloro < 40 mmo/L descarta",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 26,
-          "fragmento": "confirmados con la repetición de la Prueba de"
+          "fragmento": "confirmados con la repetición de la Prueba de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+          "fragmento": "tamiz neonatal positivo para FQ, deberá",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+          "fragmento": "tamiz neonatal positivo para FQ, deberá",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -169,7 +177,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "genéticas, la cuantificación de cloruro en sudor por"
+          "fragmento": "genéticas, la cuantificación de cloruro en sudor por",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 28,
-          "fragmento": "confirmar por la identificación de 2"
+          "fragmento": "confirmar por la identificación de 2",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -210,28 +220,32 @@
             "clave": "IMSS-627-13",
             "seccion": "4.2 Pruebas diagnósticas",
             "pagina": 23,
-            "fragmento": "tamiz neonatal positivo para FQ, deberá"
+            "fragmento": "tamiz neonatal positivo para FQ, deberá",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
           },
           {
             "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
             "clave": "IMSS-627-13",
             "seccion": "4.2 Pruebas diagnósticas",
             "pagina": 24,
-            "fragmento": "distintas confirman el diagnóstico"
+            "fragmento": "distintas confirman el diagnóstico",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
           },
           {
             "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
             "clave": "IMSS-627-13",
             "seccion": "4.2 Pruebas diagnósticas",
             "pagina": 28,
-            "fragmento": "confirmar por la identificación de 2"
+            "fragmento": "confirmar por la identificación de 2",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
           },
           {
             "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
             "clave": "IMSS-627-13",
             "seccion": "4.2 Pruebas diagnósticas",
             "pagina": 29,
-            "fragmento": "Todos los resultados dudosos de prueba del sudor"
+            "fragmento": "Todos los resultados dudosos de prueba del sudor",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
           }
         ]
       },
@@ -268,7 +282,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 24,
-          "fragmento": "resultado 40-60 mmol/L de cloro es dudoso"
+          "fragmento": "resultado 40-60 mmol/L de cloro es dudoso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -306,7 +321,8 @@
     "gpc_base": {
       "guia": "Diagnóstico de Fibrosis Quística en la Edad Pediátrica",
       "clave": "IMSS-627-13",
-      "archivo": "627GER.pdf"
+      "archivo": "627GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
     },
     "vineta": "Recién nacida de término, 5 días de vida, peso 3,400 g, con tamiz neonatal positivo por tripsinógeno inmunorreactivo elevado. Asintomática, alimentada al seno materno, sin edema, sin ictericia ni distensión abdominal. Los padres preguntan cuándo se le hará la prueba de sudor.",
     "pregunta": "¿Cuál es el momento más adecuado para realizar la cuantificación de cloruros en sudor?",
@@ -326,7 +342,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "semanas de vida y con un peso > 2 kg"
+          "fragmento": "semanas de vida y con un peso > 2 kg",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -336,7 +353,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 26,
-          "fragmento": "de sodio y cloruro de sudor puede ser elevada"
+          "fragmento": "de sodio y cloruro de sudor puede ser elevada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       }
     ],
@@ -359,7 +377,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 26,
-          "fragmento": "de sodio y cloruro de sudor puede ser elevada"
+          "fragmento": "de sodio y cloruro de sudor puede ser elevada",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -380,7 +399,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "semanas de vida y con un peso > 2 kg"
+          "fragmento": "semanas de vida y con un peso > 2 kg",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -401,7 +421,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 23,
-          "fragmento": "tamiz neonatal positivo para FQ, deberá"
+          "fragmento": "tamiz neonatal positivo para FQ, deberá",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       },
       {
@@ -422,7 +443,8 @@
           "clave": "IMSS-627-13",
           "seccion": "4.2 Pruebas diagnósticas",
           "pagina": 25,
-          "fragmento": "50mmol / L, debe ser remitidos a un centro de"
+          "fragmento": "50mmol / L, debe ser remitidos a un centro de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/627GER.pdf"
         }
       }
     ],

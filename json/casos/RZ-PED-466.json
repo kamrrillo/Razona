@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
       "clave": "IMSS-466-11",
-      "archivo": "466GER.pdf"
+      "archivo": "466GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
     },
     "vineta": "Masculino de 6 años, peso 20 kg, sin alergias conocidas. Inició hace 2 días con fiebre de 39.8 °C, odinofagia, vómito y dolor abdominal; ayer apareció un exantema eritematoso, áspero al tacto, que inició en cuello y se extendió a tronco, más intenso en pliegues. A la exploración: faringe congestiva, petequias en paladar blando, lengua con papilas rojas y prominentes, y palidez alrededor de la boca. Su hermano tuvo faringitis estreptocócica la semana pasada.",
     "pregunta": "¿Cuál es el tratamiento más adecuado en el primer nivel de atención?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 21,
-          "fragmento": "se mencionaran en orden de preferencia de uso"
+          "fragmento": "se mencionaran en orden de preferencia de uso",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "sea posible para reducir la incidencia de fiebre"
+          "fragmento": "sea posible para reducir la incidencia de fiebre",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "La penicilina sigue siendo el fármaco de elección"
+          "fragmento": "La penicilina sigue siendo el fármaco de elección",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 13,
-          "fragmento": "al descubierto las papilas rojas (lengua"
+          "fragmento": "al descubierto las papilas rojas (lengua",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 21,
-          "fragmento": "El periodo de administración es por 10 días, excepto"
+          "fragmento": "El periodo de administración es por 10 días, excepto",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       }
     ],
@@ -149,7 +156,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 21,
-          "fragmento": "El periodo de administración es por 10 días, excepto"
+          "fragmento": "El periodo de administración es por 10 días, excepto",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -168,7 +176,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -188,7 +197,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.1.1 Diagnóstico Clínico",
           "pagina": 13,
-          "fragmento": "Maculas puntiformes rojas en la úvula y en el"
+          "fragmento": "Maculas puntiformes rojas en la úvula y en el",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -208,28 +218,32 @@
             "clave": "IMSS-466-11",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 21,
-            "fragmento": "se mencionaran en orden de preferencia de uso"
+            "fragmento": "se mencionaran en orden de preferencia de uso",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
             "clave": "IMSS-466-11",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 21,
-            "fragmento": "El periodo de administración es por 10 días, excepto"
+            "fragmento": "El periodo de administración es por 10 días, excepto",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
             "clave": "IMSS-466-11",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 20,
-            "fragmento": "cuando el paciente no haya presentado reacción"
+            "fragmento": "cuando el paciente no haya presentado reacción",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
           },
           {
             "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
             "clave": "IMSS-466-11",
             "seccion": "4.2.1 Tratamiento Farmacológico",
             "pagina": 20,
-            "fragmento": "penicilina, la eritromicina puede ser considerada como"
+            "fragmento": "penicilina, la eritromicina puede ser considerada como",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
           }
         ]
       },
@@ -298,7 +312,8 @@
     "gpc_base": {
       "guia": "Diagnóstico y Tratamiento de Escarlatina en Niños",
       "clave": "IMSS-466-11",
-      "archivo": "466GER.pdf"
+      "archivo": "466GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
     },
     "vineta": "Femenino de 8 años, peso 30 kg, con fiebre de 39 °C, odinofagia y exantema puntiforme áspero con acentuación en pliegues del codo (líneas de Pastia) y lengua en frambuesa. Hace 2 años presentó edema laríngeo y urticaria generalizada minutos después de una dosis de amoxicilina, que requirió epinefrina en urgencias.",
     "pregunta": "¿Cuál es el tratamiento antimicrobiano más adecuado?",
@@ -318,7 +333,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "penicilina, la eritromicina puede ser considerada como"
+          "fragmento": "penicilina, la eritromicina puede ser considerada como",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -328,7 +344,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "cuando el paciente no haya presentado reacción"
+          "fragmento": "cuando el paciente no haya presentado reacción",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       }
     ],
@@ -351,7 +368,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "cuando el paciente no haya presentado reacción"
+          "fragmento": "cuando el paciente no haya presentado reacción",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -372,7 +390,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "penicilina, la eritromicina puede ser considerada como"
+          "fragmento": "penicilina, la eritromicina puede ser considerada como",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -392,7 +411,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 20,
-          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar"
+          "fragmento": "La tetraciclinas y las sulfonamidas no se deben usar",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       },
       {
@@ -413,7 +433,8 @@
           "clave": "IMSS-466-11",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "sea posible para reducir la incidencia de fiebre"
+          "fragmento": "sea posible para reducir la incidencia de fiebre",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/466GER.pdf"
         }
       }
     ],

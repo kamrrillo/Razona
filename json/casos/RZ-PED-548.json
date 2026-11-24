@@ -8,7 +8,8 @@
     "gpc_base": {
       "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
       "clave": "IMSS-548-12",
-      "archivo": "548GER.pdf"
+      "archivo": "548GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
     },
     "vineta": "Recién nacido masculino de 29 semanas de gestación, peso al nacer 1,100 g, ingresado a la unidad de cuidados intensivos neonatales a los 30 minutos de vida. Se encuentra en incubadora de doble pared con humedad, en CPAP nasal, sin fototerapia. Se coloca catéter venoso umbilical para iniciar líquidos intravenosos en su primer día de vida, mientras se decide la nutrición parenteral.",
     "pregunta": "¿Cuál es el aporte de líquidos más adecuado para el primer día de vida?",
@@ -28,7 +29,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "nacidos prematuros con peso < 1500 g."
+          "fragmento": "nacidos prematuros con peso < 1500 g.",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -38,7 +40,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "No adicionar electrolitos"
+          "fragmento": "No adicionar electrolitos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       }
     ],
@@ -61,7 +64,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "Solución glucosada al 7.5-10 % en los RN de"
+          "fragmento": "Solución glucosada al 7.5-10 % en los RN de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -82,7 +86,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "nacidos prematuros con peso < 1500 g."
+          "fragmento": "nacidos prematuros con peso < 1500 g.",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -103,7 +108,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "No adicionar electrolitos"
+          "fragmento": "No adicionar electrolitos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -124,7 +130,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "Aporte basal - 60ml/Kg/día."
+          "fragmento": "Aporte basal - 60ml/Kg/día.",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       }
     ],
@@ -150,7 +157,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "Aporte basal - 60ml/Kg/día."
+          "fragmento": "Aporte basal - 60ml/Kg/día.",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -170,7 +178,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "Solución glucosada al 7.5-10 % en los RN de"
+          "fragmento": "Solución glucosada al 7.5-10 % en los RN de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -189,7 +198,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "No adicionar electrolitos"
+          "fragmento": "No adicionar electrolitos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -209,28 +219,32 @@
             "clave": "IMSS-548-12",
             "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
             "pagina": 20,
-            "fragmento": "nacidos prematuros con peso < 1500 g."
+            "fragmento": "nacidos prematuros con peso < 1500 g.",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
           },
           {
             "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
             "clave": "IMSS-548-12",
             "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
             "pagina": 20,
-            "fragmento": "Se recomienda para aporte de glucosa de 4-7"
+            "fragmento": "Se recomienda para aporte de glucosa de 4-7",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
           },
           {
             "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
             "clave": "IMSS-548-12",
             "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
             "pagina": 20,
-            "fragmento": "No adicionar electrolitos"
+            "fragmento": "No adicionar electrolitos",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
           },
           {
             "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
             "clave": "IMSS-548-12",
             "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
             "pagina": 20,
-            "fragmento": "aporte se dará de acuerdo al balance"
+            "fragmento": "aporte se dará de acuerdo al balance",
+            "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
           }
         ]
       },
@@ -278,7 +292,8 @@
           "clave": "IMSS-548-12",
           "seccion": "5 Anexos",
           "pagina": 48,
-          "fragmento": "Cuadro 5. Factores que afectan las pérdidas insensibles de agua en recién nacidos"
+          "fragmento": "Cuadro 5. Factores que afectan las pérdidas insensibles de agua en recién nacidos",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -328,7 +343,8 @@
     "gpc_base": {
       "guia": "Manejo de Líquidos y Electrólitos en el Recién Nacido Prematuro en la Unidad de Cuidados Intensivos Neonatales",
       "clave": "IMSS-548-12",
-      "archivo": "548GER.pdf"
+      "archivo": "548GER.pdf",
+      "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
     },
     "vineta": "Recién nacida de 30 semanas, peso al nacer 1,250 g, en su tercer día de vida en la unidad de cuidados intensivos neonatales. En las últimas 24 horas perdió 4 % de su peso. Sodio sérico 148 mEq/L, diuresis de 0.8 mL/kg/h, densidad urinaria 1,022. Recibe líquidos intravenosos a 90 mL/kg/día. Perfusión adecuada, sin datos de choque.",
     "pregunta": "¿Cuál es el ajuste más adecuado de los líquidos?",
@@ -348,7 +364,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 21,
-          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L"
+          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -358,7 +375,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 20,
-          "fragmento": "Aumentar 10 ml/kg/día por cada 1% de pérdida de"
+          "fragmento": "Aumentar 10 ml/kg/día por cada 1% de pérdida de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       }
     ],
@@ -381,7 +399,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 22,
-          "fragmento": "Reducción de sodio sérico (Na<130 mEq/L)en"
+          "fragmento": "Reducción de sodio sérico (Na<130 mEq/L)en",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -402,7 +421,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 21,
-          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L"
+          "fragmento": "Aumento del Sodio (Na)sérico >145mEq/L",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -423,7 +443,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 21,
-          "fragmento": "Pérdida de peso >3% al día o una pérdida"
+          "fragmento": "Pérdida de peso >3% al día o una pérdida",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       },
       {
@@ -444,7 +465,8 @@
           "clave": "IMSS-548-12",
           "seccion": "4.2 Aporte de Líquidos en el Recién Nacido Prematuro",
           "pagina": 21,
-          "fragmento": "No es necesario medir gases en sangre de"
+          "fragmento": "No es necesario medir gases en sangre de",
+          "url_pdf": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/548GER.pdf"
         }
       }
     ],
