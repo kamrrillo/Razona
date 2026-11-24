@@ -1,4 +1,4 @@
-import { BookOpenCheck } from "lucide-react";
+import { BookOpenCheck, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -8,10 +8,27 @@ type Props = {
   /** Página del PDF de la GPC. */
   page?: number;
   snippet: string;
+  /** PDF público de la GPC (json/fuentes: `url`). Si existe, se enlaza en la página citada. */
+  pdfUrl?: string;
   className?: string;
 };
 
-export function CitationCard({ gpcId, gpcTitle, section, page, snippet, className }: Props) {
+/** Enlace al PDF abierto en la página citada (`#page=N` lo respetan los visores de PDF). */
+export function gpcPdfHref(pdfUrl: string | undefined, page?: number): string | null {
+  if (!pdfUrl || !/^https:\/\//.test(pdfUrl)) return null;
+  return page ? `${pdfUrl.split("#")[0]}#page=${page}` : pdfUrl;
+}
+
+export function CitationCard({
+  gpcId,
+  gpcTitle,
+  section,
+  page,
+  snippet,
+  pdfUrl,
+  className,
+}: Props) {
+  const href = gpcPdfHref(pdfUrl, page);
   return (
     <figure
       data-testid="citation"
@@ -28,6 +45,18 @@ export function CitationCard({ gpcId, gpcTitle, section, page, snippet, classNam
         </span>
       </figcaption>
       <blockquote className="text-foreground/90">«{snippet}»</blockquote>
+      {href && (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="citation-pdf"
+          className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-bold text-primary ring-1 ring-primary/30 transition-colors hover:bg-primary/10"
+        >
+          <FileText className="size-3.5" aria-hidden />
+          Abrir la GPC (PDF){page ? `, p. ${page}` : ""}
+        </a>
+      )}
     </figure>
   );
 }

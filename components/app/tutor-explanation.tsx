@@ -1,25 +1,43 @@
 "use client";
 
-import { Compass, Lightbulb, Loader2, Sparkles, XCircle } from "lucide-react";
+import { BookOpenCheck, Compass, Lightbulb, Loader2, Sparkles, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { CitationCard } from "@/components/app/citation-card";
+import {
+  LearningWidgetSlot,
+  useLearningWidget,
+  type WidgetState,
+} from "@/components/app/learning-widget";
 import { LogoMark } from "@/components/app/logo";
+import { SocraticDialog } from "@/components/app/socratic-dialog";
 import { Button } from "@/components/ui/button";
 import {
+  type ExplainRequest,
   type TutorExplanation as Explanation,
   TutorExplanationSchema,
 } from "@/lib/schemas/explanation";
 import { cn } from "@/lib/utils";
 import { ConceptDiagram } from "./concept-diagram";
 
-type ExplainRequest = { sessionId: string } | { examId: string; itemId: string };
-
+/**
+ * Explicación en el orden en que se aprende: lo que dice la GPC (citada, con enlace al PDF) →
+ * por qué → diagrama y fundamentos → distractores → widget interactivo → pregunta socrática.
+ */
 export function TutorExplanationView({
   explanation: e,
   correctLabel,
+  target,
+  widget,
+  showCitation = true,
 }: {
   explanation: Explanation;
   /** "c) Medidas de soporte…" */
   correctLabel?: string;
+  /** Reactivo al que se refiere (para el diálogo socrático). */
+  target?: ExplainRequest;
+  widget?: WidgetState & { retry?: () => void };
+  /** Mostrar la tarjeta de la cita (desactivar si la página ya la muestra junto). */
+  showCitation?: boolean;
 }) {
   return (
     <div className="space-y-4" data-testid="tutor-explanation" data-source={e.source}>
@@ -32,6 +50,23 @@ export function TutorExplanationView({
           {e.personal}
         </div>
       </div>
+
+      <section className="space-y-2" data-testid="tutor-gpc">
+        <h3 className="flex items-center gap-1.5 text-sm font-extrabold tracking-wide text-brand-800">
+          <BookOpenCheck className="size-4 text-brand-600" aria-hidden /> Lo que dice la GPC
+        </h3>
+        <p className="leading-relaxed">{e.gpc}</p>
+        {showCitation && (
+          <CitationCard
+            gpcId={e.citation.gpcId}
+            gpcTitle={e.citation.gpcTitle}
+            section={e.citation.section}
+            page={e.citation.page}
+            snippet={e.citation.snippet}
+            pdfUrl={e.citation.pdfUrl}
+          />
+        )}
+      </section>
 
       <section className="space-y-1.5">
         <h3 className="text-sm font-extrabold tracking-wide text-brand-800">
@@ -96,6 +131,8 @@ export function TutorExplanationView({
         </section>
       )}
 
+      {widget && <LearningWidgetSlot state={widget} />}
+
       <div className="flex gap-2 rounded-xl bg-brand-900 p-3 text-sm leading-relaxed text-white">
         <Compass className="mt-0.5 size-4 shrink-0 text-aqua-300" aria-hidden />
         <p>
@@ -103,6 +140,8 @@ export function TutorExplanationView({
           {e.nextStep}
         </p>
       </div>
+
+      {target && <SocraticDialog target={target} question={e.socraticQuestion} />}
 
       <p className="flex items-start gap-1 text-[11px] text-muted-foreground">
         {e.source === "adk" ? (
@@ -125,9 +164,12 @@ export function TutorExplanation({
   autoLoad = false,
   placeholder,
   correctLabel,
+  showCitation = true,
   className,
 }: {
   request: ExplainRequest;
+  /** Mostrar la cita dentro de la explicación (desactivar si la página ya la muestra). */
+  showCitation?: boolean;
   autoLoad?: boolean;
   /** Texto a mostrar mientras llega la explicación (la explicación base del reactivo). */
   placeholder?: string;
@@ -139,6 +181,8 @@ export function TutorExplanation({
   const [error, setError] = useState<string | null>(null);
   const requested = useRef(false);
   const body = JSON.stringify(request);
+  // El widget se pide en cuanto se pide la explicación, para que llegue poco después de ella.
+  const widget = useLearningWidget(body, loading || data !== null);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -168,7 +212,13 @@ export function TutorExplanation({
   if (data) {
     return (
       <div className={className}>
-        <TutorExplanationView explanation={data} correctLabel={correctLabel} />
+        <TutorExplanationView
+          explanation={data}
+          correctLabel={correctLabel}
+          target={request}
+          widget={widget}
+          showCitation={showCitation}
+        />
       </div>
     );
   }
@@ -182,7 +232,7 @@ export function TutorExplanation({
           data-testid="explanation-loading"
         >
           <Loader2 className="size-5 animate-spin" aria-hidden />
-          Tu tutor está revisando tu respuesta y armando el diagrama del tema…
+          Tu tutor está revisando la GPC y tu respuesta para explicártelo…
         </div>
       ) : (
         <Button

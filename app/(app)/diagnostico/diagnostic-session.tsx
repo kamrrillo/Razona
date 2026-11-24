@@ -328,6 +328,7 @@ export function DiagnosticSession() {
                   />
                   <TutorExplanation
                     request={{ examId: result.exam_id, itemId: r.item_id }}
+                    showCitation={false}
                     correctLabel={`${r.correct_option}) ${r.correct_option_text}`}
                   />
                 </div>

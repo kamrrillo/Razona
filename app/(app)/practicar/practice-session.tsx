@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle2, Lightbulb, Loader2, Send, Sparkles, XCircle } from "lucide-react";
+import { CheckCircle2, Loader2, Sparkles, XCircle } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CitationCard } from "@/components/app/citation-card";
@@ -10,8 +10,6 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { streamTutor } from "@/lib/ai/client-stream";
 import { track } from "@/lib/analytics/events";
 import {
   type AttemptResponse,
@@ -21,57 +19,34 @@ import {
 } from "@/lib/schemas/api";
 import { cn } from "@/lib/utils";
 
-type TutorMessage = {
-  id: number;
-  role: "student" | "tutor";
-  text: string;
-  hint?: string;
-  citation?: { gpcId: string; gpcTitle?: string; section: string; page?: number; snippet: string };
-  error?: string;
-  streaming?: boolean;
-};
-
-type Solved = Extract<AttemptResponse, { isCorrect: true }>;
-
-/** Resultado en la versión de solo cuestionario (grupo control): un intento y se revela. */
-type QuizOutcome = {
-  isCorrect: boolean;
-  correctOptionId: string;
-  explanation: string;
-  citation: Solved["citation"];
-};
-
+/**
+ * Caso de práctica. Se responde una vez: acierte o no, se revela la respuesta y el tutor explica
+ * (GPC primero, widget interactivo y pregunta socrática). Si se equivocó, la explicación corrige
+ * su idea; si acertó, la refuerza y la lleva un paso más allá.
+ *
+ * `quizOnly` (grupo control del estudio): igual, pero en lugar del tutor solo se muestra la
+ * respuesta correcta con la explicación fija del caso y su cita. Nada generado con IA.
+ */
 export function PracticeSession({
   topic,
   quizOnly = false,
 }: {
   topic?: string;
-  /** Grupo control del estudio: sin tutor, sin explicación con IA y sin recursos. */
   quizOnly?: boolean;
 }) {
   const [session, setSession] = useState<SessionResponse | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
-  const [wrong, setWrong] = useState<string[]>([]);
-  const [solved, setSolved] = useState<Solved | null>(null);
-  const [outcome, setOutcome] = useState<QuizOutcome | null>(null);
-  const [messages, setMessages] = useState<TutorMessage[]>([]);
-  const [draft, setDraft] = useState("");
+  const [result, setResult] = useState<AttemptResponse | null>(null);
   const [busy, setBusy] = useState(false);
-  const [tutorBusy, setTutorBusy] = useState(false);
   const started = useRef(false);
-  const nextId = useRef(1);
-  const chatEnd = useRef<HTMLDivElement>(null);
   const feedbackRef = useRef<HTMLDivElement>(null);
 
   const loadSession = useCallback(async (opts: { topic?: string; excludeItemId?: string }) => {
     setLoadError(null);
     setSession(null);
     setSelected(null);
-    setWrong([]);
-    setSolved(null);
-    setOutcome(null);
-    setMessages([]);
+    setResult(null);
     try {
       const res = await fetch("/api/session", {
         method: "POST",
@@ -95,65 +70,13 @@ export function PracticeSession({
   }, [loadSession, topic]);
 
   useEffect(() => {
-    if (messages.length > 0) chatEnd.current?.scrollIntoView({ behavior: "smooth", block: "end" });
-  }, [messages]);
-
-  useEffect(() => {
-    if (solved || outcome)
-      feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [solved, outcome]);
-
-  const askTutor = useCallback(
-    async (body: { optionId?: string; message?: string }) => {
-      if (!session) return;
-      setTutorBusy(true);
-      const tutorId = nextId.current++;
-      setMessages((prev) => [...prev, { id: tutorId, role: "tutor", text: "", streaming: true }]);
-      const update = (fn: (m: TutorMessage) => TutorMessage) =>
-        setMessages((prev) => prev.map((m) => (m.id === tutorId ? fn(m) : m)));
-
-      try {
-        await streamTutor({ sessionId: session.sessionId, ...body }, (event) => {
-          switch (event.type) {
-            case "text":
-              update((m) => ({ ...m, text: m.text + event.delta }));
-              break;
-            case "hint":
-              update((m) => ({ ...m, hint: event.text }));
-              track("hint_shown", { itemId: session.item.id });
-              break;
-            case "citation":
-              update((m) => ({
-                ...m,
-                citation: {
-                  gpcId: event.gpcId,
-                  gpcTitle: event.gpcTitle,
-                  section: event.section,
-                  page: event.page,
-                  snippet: event.snippet,
-                },
-              }));
-              break;
-            case "error":
-              update((m) => ({ ...m, error: event.message }));
-              break;
-            case "done":
-              break;
-          }
-        });
-      } catch {
-        update((m) => ({ ...m, error: "El tutor no está disponible. Intenta de nuevo." }));
-      } finally {
-        update((m) => ({ ...m, streaming: false }));
-        setTutorBusy(false);
-      }
-    },
-    [session],
-  );
+    if (result) feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [result]);
 
   async function submitAnswer() {
     if (!session || !selected || busy) return;
     setBusy(true);
+    setLoadError(null);
     try {
       const res = await fetch("/api/attempt", {
         method: "POST",
@@ -161,48 +84,18 @@ export function PracticeSession({
         body: JSON.stringify({ sessionId: session.sessionId, optionId: selected }),
       });
       if (!res.ok) throw new Error(String(res.status));
-      const result = AttemptResponseSchema.parse(await res.json());
-      if (quizOnly) {
-        const reveal = result.isCorrect ? result : result.reveal;
-        if (!reveal) throw new Error("sin respuesta revelada");
-        if (!result.isCorrect) setWrong([selected]);
-        setOutcome({
-          isCorrect: result.isCorrect,
-          correctOptionId: reveal.correctOptionId,
-          explanation: reveal.explanation,
-          citation: reveal.citation,
-        });
-        track("case_completed", { itemId: session.item.id, attempts: 1, quizOnly: true });
-      } else if (result.isCorrect) {
-        setSolved(result);
-        track("case_completed", { itemId: session.item.id, attempts: result.attemptNumber });
-      } else {
-        const optionId = selected;
-        setWrong((w) => [...w, optionId]);
-        setSelected(null);
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: nextId.current++,
-            role: "student",
-            text: `Elegí ${optionId}) ${session.item.options.find((o) => o.id === optionId)?.text ?? ""}`,
-          },
-        ]);
-        await askTutor({ optionId });
-      }
+      const data = AttemptResponseSchema.parse(await res.json());
+      setResult(data);
+      track("case_completed", {
+        itemId: session.item.id,
+        attempts: data.attemptNumber,
+        correct: data.isCorrect,
+      });
     } catch {
       setLoadError("No se pudo registrar tu respuesta. Intenta de nuevo.");
     } finally {
       setBusy(false);
     }
-  }
-
-  async function sendMessage() {
-    const text = draft.trim();
-    if (!text || tutorBusy) return;
-    setDraft("");
-    setMessages((prev) => [...prev, { id: nextId.current++, role: "student", text }]);
-    await askTutor({ message: text });
   }
 
   if (loadError && !session) {
@@ -227,8 +120,7 @@ export function PracticeSession({
   }
 
   const { item } = session;
-  const closed = Boolean(solved || outcome);
-  const correctId = solved?.correctOptionId ?? outcome?.correctOptionId;
+  const optionLabel = (id: string) => `${id}) ${item.options.find((o) => o.id === id)?.text ?? ""}`;
 
   return (
     <div className="space-y-4 py-4">
@@ -252,19 +144,20 @@ export function PracticeSession({
         <CardContent className="space-y-4">
           <p className="leading-relaxed">{item.vignette}</p>
           <p className="font-semibold">{item.question}</p>
-          <fieldset className="space-y-2" disabled={closed || busy}>
+          <fieldset className="space-y-2" disabled={Boolean(result) || busy}>
             <legend className="sr-only">Opciones</legend>
             {item.options.map((option) => {
-              const isWrong = wrong.includes(option.id);
-              const isCorrect = correctId === option.id;
-              const isSelected = selected === option.id;
+              const isCorrect = result?.correctOptionId === option.id;
+              const isWrong =
+                result !== null && !result.isCorrect && result.selectedOptionId === option.id;
+              const isSelected = !result && selected === option.id;
               return (
                 <button
                   key={option.id}
                   type="button"
                   data-testid={`option-${option.id}`}
                   aria-pressed={isSelected}
-                  disabled={isWrong || closed || busy}
+                  disabled={Boolean(result) || busy}
                   onClick={() => setSelected(option.id)}
                   className={cn(
                     "flex min-h-12 w-full items-start gap-3 rounded-lg border bg-background p-3 text-left text-[15px] transition-colors",
@@ -277,7 +170,7 @@ export function PracticeSession({
                   <span className="font-semibold uppercase">{option.id})</span>
                   <span className="flex-1">{option.text}</span>
                   {isWrong && (
-                    <XCircle className="size-5 shrink-0 text-rose-500" aria-label="Incorrecta" />
+                    <XCircle className="size-5 shrink-0 text-rose-500" aria-label="Tu respuesta" />
                   )}
                   {isCorrect && (
                     <CheckCircle2
@@ -289,11 +182,11 @@ export function PracticeSession({
               );
             })}
           </fieldset>
-          {!closed && (
+          {!result && (
             <Button
               className="w-full"
               size="lg"
-              disabled={!selected || busy || tutorBusy}
+              disabled={!selected || busy}
               onClick={() => void submitAnswer()}
               data-testid="submit-answer"
             >
@@ -301,179 +194,72 @@ export function PracticeSession({
               Responder
             </Button>
           )}
+          {loadError && (
+            <Alert variant="destructive">
+              <AlertDescription>{loadError}</AlertDescription>
+            </Alert>
+          )}
         </CardContent>
       </Card>
 
-      {messages.length > 0 && (
-        <Card data-testid="tutor-chat">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              <Sparkles className="size-5 text-primary" aria-hidden /> Tutor
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {messages.map((m) =>
-              m.role === "student" ? (
-                <p
-                  key={m.id}
-                  className="ml-8 rounded-2xl rounded-br-sm bg-primary px-3 py-2 text-sm text-primary-foreground"
-                >
-                  {m.text}
-                </p>
-              ) : (
-                <div key={m.id} className="mr-4 space-y-2" data-testid="tutor-message">
-                  <p className="rounded-2xl rounded-bl-sm bg-muted px-3 py-2 text-[15px] leading-relaxed">
-                    {m.text}
-                    {m.streaming && !m.text && (
-                      <span className="inline-flex items-center gap-1 text-muted-foreground">
-                        <Loader2 className="size-4 animate-spin" aria-hidden /> Pensando…
-                      </span>
-                    )}
-                    {m.streaming && m.text && <span className="ml-0.5 animate-pulse">▍</span>}
-                  </p>
-                  {m.hint && (
-                    <p
-                      className="flex items-start gap-2 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-950"
-                      data-testid="tutor-hint"
-                    >
-                      <Lightbulb className="mt-0.5 size-4 shrink-0" aria-hidden /> {m.hint}
-                    </p>
-                  )}
-                  {m.citation && (
-                    <CitationCard
-                      gpcId={m.citation.gpcId}
-                      gpcTitle={m.citation.gpcTitle}
-                      section={m.citation.section}
-                      page={m.citation.page}
-                      snippet={m.citation.snippet}
-                    />
-                  )}
-                  {m.error && (
-                    <Alert variant="destructive">
-                      <AlertDescription>{m.error}</AlertDescription>
-                    </Alert>
-                  )}
-                </div>
-              ),
-            )}
-            {!solved && (
-              <form
-                className="flex items-end gap-2"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  void sendMessage();
-                }}
-              >
-                <Textarea
-                  value={draft}
-                  onChange={(e) => setDraft(e.target.value)}
-                  placeholder="Responde al tutor…"
-                  rows={2}
-                  maxLength={1000}
-                  className="min-h-11 flex-1 resize-none text-base"
-                  aria-label="Mensaje para el tutor"
-                />
-                <Button
-                  type="submit"
-                  size="icon"
-                  disabled={!draft.trim() || tutorBusy}
-                  aria-label="Enviar"
-                >
-                  <Send aria-hidden />
-                </Button>
-              </form>
-            )}
-            <div ref={chatEnd} />
-          </CardContent>
-        </Card>
-      )}
-
-      {outcome && (
+      {result && (
         <div ref={feedbackRef} className="scroll-mt-14">
           <Card
-            className={outcome.isCorrect ? "border-emerald-300" : "border-rose-300"}
-            data-testid="quiz-feedback"
+            className={result.isCorrect ? "border-emerald-300" : "border-rose-300"}
+            data-testid={quizOnly ? "quiz-feedback" : "feedback"}
+            data-correct={result.isCorrect}
           >
-            <CardHeader>
-              <CardTitle
-                className={cn(
-                  "flex items-center gap-2 text-lg",
-                  outcome.isCorrect ? "text-emerald-700" : "text-rose-700",
-                )}
-              >
-                {outcome.isCorrect ? (
-                  <>
-                    <CheckCircle2 className="size-6" aria-hidden /> ¡Correcto!
-                  </>
-                ) : (
-                  <>
-                    <XCircle className="size-6" aria-hidden /> Incorrecto
-                  </>
-                )}
-              </CardTitle>
+            <CardHeader className="space-y-1">
+              {result.isCorrect ? (
+                <CardTitle className="flex items-center gap-2 text-lg text-emerald-700">
+                  <CheckCircle2 className="size-6" aria-hidden /> ¡Correcto!
+                </CardTitle>
+              ) : (
+                <>
+                  <CardTitle className="flex items-center gap-2 text-lg text-rose-700">
+                    <XCircle className="size-6" aria-hidden /> No es la correcta
+                  </CardTitle>
+                  <p className="text-sm text-muted-foreground" data-testid="wrong-summary">
+                    Elegiste{" "}
+                    <span className="font-semibold">{optionLabel(result.selectedOptionId)}</span>.
+                    La respuesta es{" "}
+                    <span className="font-semibold text-emerald-700">
+                      {optionLabel(result.correctOptionId)}
+                    </span>
+                    .{quizOnly ? "" : " Tu tutor te explica por qué."}
+                  </p>
+                </>
+              )}
             </CardHeader>
             <CardContent className="space-y-3">
-              <p data-testid="quiz-correct-answer">
-                Respuesta correcta:{" "}
-                <span className="font-semibold text-emerald-700">
-                  {outcome.correctOptionId}){" "}
-                  {item.options.find((o) => o.id === outcome.correctOptionId)?.text ?? ""}
-                </span>
-              </p>
-              <p className="leading-relaxed">{outcome.explanation}</p>
-              <CitationCard
-                gpcId={outcome.citation.gpcId}
-                gpcTitle={outcome.citation.gpcTitle}
-                section={outcome.citation.section}
-                page={outcome.citation.page}
-                snippet={outcome.citation.snippet}
-              />
-              <Button
-                className="w-full"
-                size="lg"
-                onClick={() => void loadSession({ excludeItemId: item.id })}
-                data-testid="next-case"
-              >
-                Siguiente caso
-              </Button>
-              <Link href="/examen" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                Ir al examen simulado
-              </Link>
-            </CardContent>
-          </Card>
-        </div>
-      )}
-
-      {solved && !quizOnly && (
-        <div ref={feedbackRef} className="scroll-mt-14">
-          <Card className="border-emerald-300" data-testid="feedback">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg text-emerald-700">
-                <CheckCircle2 className="size-6" aria-hidden /> ¡Correcto!
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <TutorExplanation
-                request={{ sessionId: session.sessionId }}
-                autoLoad
-                placeholder={solved.explanation}
-                correctLabel={`${solved.correctOptionId}) ${
-                  item.options.find((o) => o.id === solved.correctOptionId)?.text ?? ""
-                }`}
-              />
-              <CitationCard
-                gpcId={solved.citation.gpcId}
-                gpcTitle={solved.citation.gpcTitle}
-                section={solved.citation.section}
-                page={solved.citation.page}
-                snippet={solved.citation.snippet}
-              />
-              <LearningResources resources={solved.resources} errorTypes={solved.errorTypes} />
-              <p className="text-xs text-muted-foreground">
-                {solved.attemptNumber === 1
-                  ? "Lo resolviste al primer intento."
-                  : `Lo resolviste en ${solved.attemptNumber} intentos con ayuda del tutor.`}
-              </p>
+              {quizOnly ? (
+                <>
+                  <p data-testid="quiz-correct-answer">
+                    Respuesta correcta:{" "}
+                    <span className="font-semibold text-emerald-700">
+                      {optionLabel(result.correctOptionId)}
+                    </span>
+                  </p>
+                  <p className="leading-relaxed">{result.explanation}</p>
+                  <CitationCard
+                    gpcId={result.citation.gpcId}
+                    gpcTitle={result.citation.gpcTitle}
+                    section={result.citation.section}
+                    page={result.citation.page}
+                    snippet={result.citation.snippet}
+                  />
+                </>
+              ) : (
+                <>
+                  <TutorExplanation
+                    request={{ sessionId: session.sessionId }}
+                    autoLoad
+                    placeholder={result.explanation}
+                    correctLabel={optionLabel(result.correctOptionId)}
+                  />
+                  <LearningResources resources={result.resources} errorTypes={result.errorTypes} />
+                </>
+              )}
               <Button
                 className="w-full"
                 size="lg"

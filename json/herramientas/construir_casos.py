@@ -60,7 +60,16 @@ def cita(f, resto):
     if resto and resto[0] == "SIN_RESPALDO_GPC":
         return {"estado": "SIN_RESPALDO_GPC", "motivo": resto[1]}
     seccion, pagina, fragmento = resto
-    return {"guia": f["guia"], "clave": f["clave"], "seccion": seccion, "pagina": pagina, "fragmento": fragmento}
+    out = {"guia": f["guia"], "clave": f["clave"], "seccion": seccion, "pagina": pagina, "fragmento": fragmento}
+    if url_pdf(f):
+        out["url_pdf"] = url_pdf(f)
+    return out
+
+
+def url_pdf(f):
+    """Enlace al PDF de la GPC si la fuente lo trae (campo `url` o `url_pdf`); solo https."""
+    url = (f.get("url_pdf") or f.get("url") or "").strip()
+    return url if url.startswith("https://") else None
 
 
 def recurso(f, caso_id, r):
@@ -119,6 +128,8 @@ def estado_para(cid, revisiones):
 def expande(f, letras, revisiones):
     num = f["archivo"][:3]
     base = {"guia": f["guia"], "clave": f["clave"], "archivo": f["archivo"]}
+    if url_pdf(f):
+        base["url_pdf"] = url_pdf(f)
     out = []
     for c in f["casos"]:
         indice = c["t"] == "I"

@@ -9,7 +9,8 @@ export type DemoEvent =
   | "case_completed"
   | "exam_started"
   | "exam_finished"
-  | "practice_weak_topic";
+  | "practice_weak_topic"
+  | "socratic_turn";
 
 const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "";
 const HOST = (process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://us.i.posthog.com").replace(

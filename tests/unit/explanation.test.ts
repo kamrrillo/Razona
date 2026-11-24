@@ -66,14 +66,17 @@ describe("explicación de respaldo personalizada", () => {
         });
         expect(TutorExplanationSchema.safeParse(e).success, `${it.id} ${mode}`).toBe(true);
         expect(e.why).toBe(it.explanation.slice(0, 900));
+        expect(e.gpc).toContain(it.citation.gpcId);
+        expect(e.socraticQuestion.trim().endsWith("?")).toBe(true);
       }
     }
   });
 
-  it("usa el nombre, el camino y el historial reales de la estudiante", () => {
-    const e = buildFallbackExplanation(item, ctx);
+  it("usa el nombre, su error y el historial reales de la estudiante", () => {
+    const e = buildFallbackExplanation(item, { ...ctx, answeredCorrectly: false, attempts: 1 });
     expect(e.personal).toContain("Ana");
-    expect(e.personal).toContain("2 intentos");
+    expect(e.personal).toContain("elegiste a)");
+    expect(e.personal).toContain(`la respuesta es ${item.correctOptionId})`);
     expect(e.personal).toContain("3 de 11");
     expect(e.personal).toContain("tema más débil");
     expect(e.distractors[0]).toMatchObject({ optionId: "a", chosen: true });
@@ -94,6 +97,25 @@ describe("explicación de respaldo personalizada", () => {
     expect(roles.filter((r) => r === "elegida")).toHaveLength(1);
   });
 
+  it("al acertar refuerza y al equivocarse corrige", () => {
+    const ok = buildFallbackExplanation(item, {
+      ...ctx,
+      wrongChoices: [],
+      answeredCorrectly: true,
+    });
+    expect(ok.personal).toContain("Acertaste");
+    const wrongPrompt = buildExplanationPrompt(item, { ...ctx, answeredCorrectly: false });
+    expect(wrongPrompt).toContain("SE EQUIVOCÓ");
+    expect(wrongPrompt).toContain("CORREGIR");
+    const okPrompt = buildExplanationPrompt(item, {
+      ...ctx,
+      wrongChoices: [],
+      answeredCorrectly: true,
+    });
+    expect(okPrompt).toContain("ACERTÓ");
+    expect(okPrompt).toContain("REFORZAR");
+  });
+
   it("el prompt incluye el contexto y la GPC", () => {
     const prompt = buildExplanationPrompt(item, ctx);
     expect(prompt).toContain("Ana");
@@ -101,6 +123,13 @@ describe("explicación de respaldo personalizada", () => {
     expect(prompt).toContain("Es su tema más débil");
     expect(prompt).toContain("«Pensé que las sibilancias eran broncoespasmo»");
     expect(prompt).toContain(item.citation.snippet);
+    expect(prompt).toContain(item.citation.gpcId);
+  });
+
+  it("la pregunta socrática de respaldo sale de la rúbrica para su error", () => {
+    const e = buildFallbackExplanation(item, ctx);
+    const seed = item.rubric?.find((r) => r.optionIds.includes("a"))?.question;
+    if (seed) expect(e.socraticQuestion).toBe(seed);
   });
 });
 
@@ -187,6 +216,8 @@ describe("normalización de la salida del modelo", () => {
         { optionId: "a", text: "duplicada" },
       ],
       nextStep: "Otro caso de bronquiolitis.",
+      gpc: "Dice que es viral.",
+      socraticQuestion: "Piensa en el mecanismo",
       diagram: emptyDiagram,
     });
     expect(e.personal).toBe("Ana, elegiste salbutamol.");
@@ -195,7 +226,27 @@ describe("normalización de la salida del modelo", () => {
     ]);
     expect(e.source).toBe("adk");
     expect(e.diagramSource).toBe("fallback");
+    // Sin citar la GPC ni terminar en «?» se usan los de respaldo.
+    expect(e.gpc).toContain(item.citation.gpcId);
+    expect(e.socraticQuestion.endsWith("?")).toBe(true);
+    expect(e.citation).toEqual(item.citation);
     expect(TutorExplanationSchema.safeParse(e).success).toBe(true);
+  });
+
+  it("conserva el texto de la GPC del modelo cuando la cita", () => {
+    const gpc = `La GPC ${item.citation.gpcId} (${item.citation.section}) indica que el manejo es de soporte.`;
+    const e = normalizeModelExplanation(item, ctx, {
+      personal: "Ana, elegiste salbutamol.",
+      gpc,
+      why: "Porque es una infección viral.",
+      fundamentals: [],
+      distractors: [],
+      nextStep: "",
+      socraticQuestion: "¿Qué cambiaría si la saturación fuera menor?",
+      diagram: emptyDiagram,
+    });
+    expect(e.gpc).toBe(gpc);
+    expect(e.socraticQuestion).toBe("¿Qué cambiaría si la saturación fuera menor?");
   });
 });
 

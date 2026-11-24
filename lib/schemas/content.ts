@@ -27,6 +27,8 @@ export const CitationSchema = z.object({
   /** Página del PDF de la GPC (desde 1). */
   page: z.number().int().positive().optional(),
   snippet: z.string().min(1),
+  /** Enlace público al PDF de la GPC (campo `url` de json/fuentes), si existe. */
+  pdfUrl: z.url({ protocol: /^https$/ }).optional(),
 });
 export type Citation = z.infer<typeof CitationSchema>;
 
