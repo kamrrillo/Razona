@@ -58,22 +58,32 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  // getClaims() solo valida el JWT en local: una cookie de una usuaria borrada o
+  // con sesión revocada sigue pareciendo válida. Si en /login no confirmamos con
+  // el servidor de Auth, rebotaríamos /login → /inicio → /login sin fin.
+  let confirmedAuthenticated = isAuthenticated;
+  if (isAuthenticated && (pathname === "/" || pathname === "/login")) {
+    const { data: userData, error } = await supabase.auth.getUser();
+    confirmedAuthenticated = !error && Boolean(userData.user);
+  }
+
   // Participante del estudio: solo responde las preguntas del estudio (en /practicar).
-  if (
-    isParticipant &&
-    (pathname === "/" ||
-      pathname === "/login" ||
-      (isProtected && !pathname.startsWith("/practicar")))
-  ) {
+  // En / y /login solo si Auth confirmó la sesión: con una cookie de una participante
+  // borrada, /login debe mostrarse en vez de mandar a /estudio para siempre.
+  const participantOnEntry =
+    isParticipant && confirmedAuthenticated && (pathname === "/" || pathname === "/login");
+  const participantOutsideStudy =
+    isParticipant && isProtected && !pathname.startsWith("/practicar");
+  if (participantOnEntry || participantOutsideStudy) {
     const url = request.nextUrl.clone();
     url.pathname = "/estudio";
     url.search = "";
     return NextResponse.redirect(url);
   }
 
-  if (pathname === "/" || (isAuthenticated && pathname === "/login")) {
+  if (pathname === "/" || (confirmedAuthenticated && pathname === "/login")) {
     const url = request.nextUrl.clone();
-    const next = isAuthenticated
+    const next = confirmedAuthenticated
       ? safeNextPath(request.nextUrl.searchParams.get("next"))
       : "/login";
     url.pathname = next.split("?")[0];
