@@ -28,7 +28,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 25,
-          "fragmento": "dexametasona 0.60mg/Kg. vía oral,"
+          "fragmento": "dexametasona 0.60mg/Kg. vía oral,",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=25"
         }
       },
       {
@@ -38,7 +39,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "recomienda una sola dosis de"
+          "fragmento": "recomienda una sola dosis de",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=22"
         }
       },
       {
@@ -48,7 +50,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "LTA grave y LTA que amenaza la vida"
+          "fragmento": "LTA grave y LTA que amenaza la vida",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=27"
         }
       }
     ],
@@ -72,7 +75,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 27,
-          "fragmento": "LTA grave y LTA que amenaza la vida"
+          "fragmento": "LTA grave y LTA que amenaza la vida",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=27"
         }
       },
       {
@@ -93,7 +97,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 22,
-          "fragmento": "En niños con vómito, la budesonida"
+          "fragmento": "En niños con vómito, la budesonida",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=22"
         }
       },
       {
@@ -114,7 +119,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.1.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "No se sugiere utilizar la radiografía de"
+          "fragmento": "No se sugiere utilizar la radiografía de",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=15"
         }
       },
       {
@@ -136,7 +142,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 28,
-          "fragmento": "antibióticos no es recomendable"
+          "fragmento": "antibióticos no es recomendable",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=28"
         }
       }
     ],
@@ -379,7 +386,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "nebulizada en niños con LTA grave"
+          "fragmento": "nebulizada en niños con LTA grave",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=26"
         }
       },
       {
@@ -389,7 +397,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "Se hace énfasis en no diluir la"
+          "fragmento": "Se hace énfasis en no diluir la",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=26"
         }
       }
     ],
@@ -412,7 +421,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "nebulizada en niños con LTA grave"
+          "fragmento": "nebulizada en niños con LTA grave",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=26"
         }
       },
       {
@@ -433,7 +443,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento Farmacológico",
           "pagina": 26,
-          "fragmento": "Se hace énfasis en no diluir la"
+          "fragmento": "Se hace énfasis en no diluir la",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=26"
         }
       },
       {
@@ -454,7 +465,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.2.1 Tratamiento no Farmacológico",
           "pagina": 30,
-          "fragmento": "humidificado no mostró mejoría"
+          "fragmento": "humidificado no mostró mejoría",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=30"
         }
       },
       {
@@ -475,7 +487,8 @@
           "clave": "IMSS-258-10",
           "seccion": "4.1.2 Pruebas Diagnósticas",
           "pagina": 15,
-          "fragmento": "No se sugiere utilizar la radiografía de"
+          "fragmento": "No se sugiere utilizar la radiografía de",
+          "pdfUrl": "https://www.imss.gob.mx/sites/all/statics/guiasclinicas/258GER.pdf#page=15"
         }
       }
     ],
