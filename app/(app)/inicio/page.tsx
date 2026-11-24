@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { getCatalog } from "@/lib/content";
 import { getAuthedContext } from "@/lib/data/auth";
 import { getProgress } from "@/lib/data/progress";
+import { getStudyGroup } from "@/lib/data/study-group";
 import { buildLearningPath } from "@/lib/learning/path";
 import { cn } from "@/lib/utils";
 
@@ -17,9 +18,10 @@ export default async function InicioPage({ searchParams }: PageProps<"/inicio">)
   const params = await searchParams;
   const ctx = await getAuthedContext();
   if (!ctx) redirect("/login");
-  const [progress, catalog] = await Promise.all([
+  const [progress, catalog, group] = await Promise.all([
     getProgress(ctx.supabase, ctx.userId),
     getCatalog(),
+    getStudyGroup(ctx.supabase, ctx.userId),
   ]);
   // Una unidad por área (grupo de temas) y solo los casos índice: son los que se practican.
   const units = buildLearningPath({
@@ -101,7 +103,7 @@ export default async function InicioPage({ searchParams }: PageProps<"/inicio">)
             >
               {isNew ? "Resolver mi primer caso" : "Practicar"}
             </Link>
-            {isNew && (
+            {isNew && group === "ia" && (
               <Link
                 href="/diagnostico"
                 className="mt-2 flex min-h-11 items-center justify-center text-sm font-semibold text-white underline underline-offset-4"

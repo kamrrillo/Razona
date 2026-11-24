@@ -1,5 +1,6 @@
 import { HttpError, handleError, ok, parseJson, requireAuth } from "@/lib/api";
 import { loadStudySession, recordAttempt } from "@/lib/data/practice";
+import { getStudyGroup } from "@/lib/data/study-group";
 import { errorTypesFor, orderResources } from "@/lib/learning/resources";
 import { AttemptRequestSchema, AttemptResponseSchema } from "@/lib/schemas/api";
 
@@ -24,7 +25,9 @@ export async function POST(request: Request) {
       session,
       body.optionId,
     );
-    const errorTypes = isCorrect ? [] : errorTypesFor(session.item, [body.optionId]);
+    // Grupo control (solo cuestionario): respuesta y explicación fija; sin recursos de aprendizaje.
+    const control = (await getStudyGroup(supabase, userId)) === "control";
+    const errorTypes = isCorrect || control ? [] : errorTypesFor(session.item, [body.optionId]);
     return ok(AttemptResponseSchema, {
       isCorrect,
       attemptNumber,
@@ -32,7 +35,7 @@ export async function POST(request: Request) {
       explanation: session.item.explanation,
       correctOptionId: session.item.correctOptionId,
       citation: session.item.citation,
-      resources: orderResources(session.item.resources ?? [], errorTypes),
+      resources: control ? [] : orderResources(session.item.resources ?? [], errorTypes),
       errorTypes,
     });
   } catch (error) {

@@ -3,6 +3,7 @@
 import { CheckCircle2, Loader2, Sparkles, XCircle } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { CitationCard } from "@/components/app/citation-card";
 import { LearningResources } from "@/components/app/learning-resources";
 import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -22,8 +23,17 @@ import { cn } from "@/lib/utils";
  * Caso de práctica. Se responde una vez: acierte o no, se revela la respuesta y el tutor explica
  * (GPC primero, widget interactivo y pregunta socrática). Si se equivocó, la explicación corrige
  * su idea; si acertó, la refuerza y la lleva un paso más allá.
+ *
+ * `quizOnly` (grupo control del estudio): igual, pero en lugar del tutor solo se muestra la
+ * respuesta correcta con la explicación fija del caso y su cita. Nada generado con IA.
  */
-export function PracticeSession({ topic }: { topic?: string }) {
+export function PracticeSession({
+  topic,
+  quizOnly = false,
+}: {
+  topic?: string;
+  quizOnly?: boolean;
+}) {
   const [session, setSession] = useState<SessionResponse | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
@@ -196,7 +206,7 @@ export function PracticeSession({ topic }: { topic?: string }) {
         <div ref={feedbackRef} className="scroll-mt-14">
           <Card
             className={result.isCorrect ? "border-emerald-300" : "border-rose-300"}
-            data-testid="feedback"
+            data-testid={quizOnly ? "quiz-feedback" : "feedback"}
             data-correct={result.isCorrect}
           >
             <CardHeader className="space-y-1">
@@ -216,19 +226,40 @@ export function PracticeSession({ topic }: { topic?: string }) {
                     <span className="font-semibold text-emerald-700">
                       {optionLabel(result.correctOptionId)}
                     </span>
-                    . Tu tutor te explica por qué.
+                    .{quizOnly ? "" : " Tu tutor te explica por qué."}
                   </p>
                 </>
               )}
             </CardHeader>
             <CardContent className="space-y-3">
-              <TutorExplanation
-                request={{ sessionId: session.sessionId }}
-                autoLoad
-                placeholder={result.explanation}
-                correctLabel={optionLabel(result.correctOptionId)}
-              />
-              <LearningResources resources={result.resources} errorTypes={result.errorTypes} />
+              {quizOnly ? (
+                <>
+                  <p data-testid="quiz-correct-answer">
+                    Respuesta correcta:{" "}
+                    <span className="font-semibold text-emerald-700">
+                      {optionLabel(result.correctOptionId)}
+                    </span>
+                  </p>
+                  <p className="leading-relaxed">{result.explanation}</p>
+                  <CitationCard
+                    gpcId={result.citation.gpcId}
+                    gpcTitle={result.citation.gpcTitle}
+                    section={result.citation.section}
+                    page={result.citation.page}
+                    snippet={result.citation.snippet}
+                  />
+                </>
+              ) : (
+                <>
+                  <TutorExplanation
+                    request={{ sessionId: session.sessionId }}
+                    autoLoad
+                    placeholder={result.explanation}
+                    correctLabel={optionLabel(result.correctOptionId)}
+                  />
+                  <LearningResources resources={result.resources} errorTypes={result.errorTypes} />
+                </>
+              )}
               <Button
                 className="w-full"
                 size="lg"

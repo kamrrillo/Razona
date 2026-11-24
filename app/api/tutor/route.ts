@@ -1,7 +1,7 @@
 import { getTutorEngine } from "@/lib/ai";
 import { encodeSse, replyToEvents } from "@/lib/ai/sse";
 import type { TutorTools } from "@/lib/ai/tutor-engine";
-import { HttpError, handleError, parseJson, requireAuth } from "@/lib/api";
+import { HttpError, handleError, parseJson, requireAiAuth } from "@/lib/api";
 import { appendMessages, chooseCase, loadStudySession } from "@/lib/data/practice";
 import { TutorRequestSchema } from "@/lib/schemas/api";
 import { type ChatMessage, type TutorEvent, TutorEventSchema } from "@/lib/schemas/tutor";
@@ -11,10 +11,10 @@ export const maxDuration = 30;
 const DELTA_DELAY_MS = 35;
 
 export async function POST(request: Request) {
-  let ctx: Awaited<ReturnType<typeof requireAuth>>;
+  let ctx: Awaited<ReturnType<typeof requireAiAuth>>;
   let body: Awaited<ReturnType<typeof parseJson<typeof TutorRequestSchema>>>;
   try {
-    ctx = await requireAuth();
+    ctx = await requireAiAuth();
     body = await parseJson(request, TutorRequestSchema);
   } catch (error) {
     return handleError(error);

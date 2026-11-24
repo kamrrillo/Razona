@@ -111,6 +111,62 @@ describe.skipIf(!reachable)("banco en Supabase local (v_casos_app)", () => {
     expect([...types].sort()).toEqual(["diagram", "flashcard", "highlight", "image", "table"]);
   });
 
+  it("el grupo del estudio se fija al registrarse y la usuaria no lo puede cambiar", async () => {
+    const admin = createClient(url as string, secret as string);
+    const email = `grupo.${Date.now()}@razona.local`;
+    const password = "clave-segura-123";
+    const created = await admin.auth.admin.createUser({
+      email,
+      password,
+      email_confirm: true,
+      user_metadata: { display_name: "Grupo", study_group: "control" },
+    });
+    const userId = created.data.user?.id as string;
+    try {
+      const profile = await admin.from("profiles").select("study_group").eq("id", userId).single();
+      expect(profile.data?.study_group).toBe("control");
+
+      const user = createClient(url as string, publishable as string);
+      await user.auth.signInWithPassword({ email, password });
+      const change = await user.from("profiles").update({ study_group: "ia" }).eq("id", userId);
+      expect(change.error?.code).toBe("42501");
+      const rename = await user.from("profiles").update({ display_name: "Nuevo" }).eq("id", userId);
+      expect(rename.error).toBeNull();
+      const after = await admin.from("profiles").select("study_group").eq("id", userId).single();
+      expect(after.data?.study_group).toBe("control");
+    } finally {
+      await admin.auth.admin.deleteUser(userId);
+    }
+  });
+
+  it("estudio: la participante anónima elige su modo una sola vez", async () => {
+    const user = createClient(url as string, publishable as string);
+    const { data, error } = await user.auth.signInAnonymously({
+      options: { data: { display_name: "Anónima" } },
+    });
+    expect(error).toBeNull();
+    const userId = data.user?.id as string;
+    const admin = createClient(url as string, secret as string);
+    try {
+      const before = await admin
+        .from("profiles")
+        .select("display_name, study_group_chosen_at")
+        .eq("id", userId)
+        .single();
+      expect(before.data).toEqual({ display_name: "Anónima", study_group_chosen_at: null });
+
+      expect((await user.rpc("elegir_grupo_estudio", { grupo: "control" })).data).toBe("control");
+      // La segunda elección no cambia nada
+      expect((await user.rpc("elegir_grupo_estudio", { grupo: "ia" })).data).toBe("control");
+      expect((await user.rpc("elegir_grupo_estudio", { grupo: "otro" })).error?.code).toBe("22023");
+
+      const anon = createClient(url as string, publishable as string);
+      expect((await anon.rpc("elegir_grupo_estudio", { grupo: "ia" })).error).not.toBeNull();
+    } finally {
+      await admin.auth.admin.deleteUser(userId);
+    }
+  });
+
   it("la llave pública no puede leer el banco ni sus vistas", async () => {
     const anon = createClient(url as string, publishable as string);
     for (const table of [

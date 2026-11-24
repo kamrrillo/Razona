@@ -2,10 +2,15 @@ import { redirect } from "next/navigation";
 import { BottomNav } from "@/components/app/bottom-nav";
 import { DemoBanner } from "@/components/app/demo-banner";
 import { getAuthedContext } from "@/lib/data/auth";
+import { getStudyProfile } from "@/lib/data/study-group";
 
 export default async function AppLayout({ children }: LayoutProps<"/">) {
   const ctx = await getAuthedContext();
   if (!ctx) redirect("/login");
+  // Participante del estudio que aún no elige modo: primero lo elige en /estudio.
+  if (ctx.isAnonymous && !(await getStudyProfile(ctx.supabase, ctx.userId)).chosen) {
+    redirect("/estudio");
+  }
 
   return (
     <>

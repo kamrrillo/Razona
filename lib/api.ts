@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import type { z } from "zod";
 import { type AuthedContext, getAuthedContext } from "@/lib/data/auth";
 import { ExamClosedError, NotFoundError } from "@/lib/data/exam";
+import { getStudyGroup } from "@/lib/data/study-group";
 
 export class HttpError extends Error {
   constructor(
@@ -16,6 +17,15 @@ export class HttpError extends Error {
 export async function requireAuth(): Promise<AuthedContext> {
   const ctx = await getAuthedContext();
   if (!ctx) throw new HttpError(401, "No autenticada");
+  return ctx;
+}
+
+/** Para las funciones con IA: el grupo control del estudio no tiene acceso (403). */
+export async function requireAiAuth(): Promise<AuthedContext> {
+  const ctx = await requireAuth();
+  if ((await getStudyGroup(ctx.supabase, ctx.userId)) === "control") {
+    throw new HttpError(403, "Esta función no está disponible en tu versión");
+  }
   return ctx;
 }
 

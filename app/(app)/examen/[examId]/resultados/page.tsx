@@ -12,6 +12,7 @@ import { rubricFor } from "@/lib/ai/fallback-engine";
 import { getAuthedContext } from "@/lib/data/auth";
 import { examItemsFor, loadExam } from "@/lib/data/exam";
 import { getProgress } from "@/lib/data/progress";
+import { getStudyGroup } from "@/lib/data/study-group";
 import { orderResources } from "@/lib/learning/resources";
 import { cn } from "@/lib/utils";
 
@@ -31,10 +32,13 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
   if (!UUID.test(examId)) notFound();
   const ctx = await getAuthedContext();
   if (!ctx) redirect("/login");
-  const [loaded, progress] = await Promise.all([
+  const [loaded, progress, group] = await Promise.all([
     loadExam(ctx.supabase, ctx.userId, examId),
     getProgress(ctx.supabase, ctx.userId),
+    getStudyGroup(ctx.supabase, ctx.userId),
   ]);
+  // Grupo control (solo cuestionario): respuesta, explicación fija y cita; nada de IA ni rúbrica.
+  const withAi = group === "ia";
   if (!loaded) notFound();
   if (!loaded.exam.finishedAt) redirect(`/examen/${examId}`);
 
@@ -114,7 +118,7 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
           const ok = chosen === item.correctOptionId;
           const chosenText = item.options.find((o) => o.id === chosen)?.text;
           const correctText = item.options.find((o) => o.id === item.correctOptionId)?.text;
-          const error = chosen && !ok ? rubricFor(item, chosen) : undefined;
+          const error = withAi && chosen && !ok ? rubricFor(item, chosen) : undefined;
           return (
             <details
               key={item.id}
@@ -175,15 +179,22 @@ export default async function ResultadosPage({ params }: PageProps<"/examen/[exa
                   snippet={item.citation.snippet}
                   pdfUrl={item.citation.pdfUrl}
                 />
-                <TutorExplanation
-                  request={{ examId, itemId: item.id }}
-                  showCitation={false}
-                  correctLabel={`${item.correctOptionId}) ${correctText}`}
-                />
-                <LearningResources
-                  resources={orderResources(item.resources ?? [], error ? [error.errorType] : [])}
-                  errorTypes={error ? [error.errorType] : []}
-                />
+                {withAi && (
+                  <>
+                    <TutorExplanation
+                      request={{ examId, itemId: item.id }}
+                      showCitation={false}
+                      correctLabel={`${item.correctOptionId}) ${correctText}`}
+                    />
+                    <LearningResources
+                      resources={orderResources(
+                        item.resources ?? [],
+                        error ? [error.errorType] : [],
+                      )}
+                      errorTypes={error ? [error.errorType] : []}
+                    />
+                  </>
+                )}
               </div>
             </details>
           );

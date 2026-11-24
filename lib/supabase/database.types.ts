@@ -185,14 +185,14 @@ isOneToOne: false
                   ]
                 },"profiles": {
                   Row: {
-                    "created_at": string,"display_name": string,"id": string
+                    "created_at": string,"display_name": string,"id": string,"study_group": string,"study_group_chosen_at": string | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"display_name"?: string,"id": string
+                    "created_at"?: string,"display_name"?: string,"id": string,"study_group"?: string,"study_group_chosen_at"?: string | null
                   }
                   Update: {
-                    "created_at"?: string,"display_name"?: string,"id"?: string
+                    "created_at"?: string,"display_name"?: string,"id"?: string,"study_group"?: string,"study_group_chosen_at"?: string | null
                   }
                   Relationships: [
                     
@@ -351,6 +351,12 @@ isOneToOne: false
           Functions: {
             "cita_app":
 { Args: { "cita": Json }; Returns: Json
+                           },
+"elegir_grupo_estudio":
+{ Args: { "grupo": string }; Returns: string
+                           },
+"recursos_app":
+{ Args: { "recursos": Json }; Returns: Json
                            }
           }
           Enums: {

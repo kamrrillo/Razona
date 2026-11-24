@@ -28,6 +28,8 @@ type Props = {
   initialMode?: AuthMode;
   /** Página a la que iba antes de que se le pidiera entrar. */
   next?: string;
+  /** Enlace del grupo control del estudio (?grupo=control): las cuentas nuevas quedan sin IA. */
+  control?: boolean;
 };
 
 /**
@@ -41,6 +43,7 @@ export function LoginForm({
   initialError,
   initialMode = "signin",
   next,
+  control = false,
 }: Props) {
   const [mode, setMode] = useState<AuthMode>(initialMode);
   const [email, setEmail] = useState("");
@@ -89,10 +92,10 @@ export function LoginForm({
       {mode === "signin" && (
         <SignInForm {...shared} initialError={initialError} onForgot={() => setMode("reset")} />
       )}
-      {mode === "signup" && <SignUpForm {...shared} />}
+      {mode === "signup" && <SignUpForm {...shared} control={control} />}
       {mode === "reset" && <ResetForm {...shared} onBack={() => setMode("signin")} />}
 
-      {demoMode && mode !== "reset" && <DemoButton />}
+      {demoMode && !control && mode !== "reset" && <DemoButton />}
     </div>
   );
 }
@@ -133,7 +136,7 @@ function SignInForm({
   );
 }
 
-function SignUpForm({ email, setEmail, next }: Shared) {
+function SignUpForm({ email, setEmail, next, control }: Shared & { control: boolean }) {
   const [state, action, pending] = useActionState<AuthFormState, FormData>(signUpWithPassword, {});
   const [name, setName] = useState("");
 
@@ -154,6 +157,7 @@ function SignUpForm({ email, setEmail, next }: Shared) {
   return (
     <form action={action} noValidate className="space-y-4" data-testid="signup-form">
       <NextField next={next} />
+      {control && <input type="hidden" name="study_group" value="control" />}
       <div className="space-y-2">
         <Label htmlFor="name">¿Cómo te llamas?</Label>
         <Input

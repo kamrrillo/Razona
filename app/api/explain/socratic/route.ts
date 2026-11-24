@@ -1,5 +1,5 @@
 import { socraticReply } from "@/lib/ai/socratic";
-import { handleError, ok, parseJson, requireAuth } from "@/lib/api";
+import { handleError, ok, parseJson, requireAiAuth } from "@/lib/api";
 import { loadExplainTarget } from "@/lib/data/explain-target";
 import { SocraticReplySchema, SocraticRequestSchema } from "@/lib/schemas/explanation";
 
@@ -11,7 +11,7 @@ export const maxDuration = 30;
  */
 export async function POST(request: Request) {
   try {
-    const auth = await requireAuth();
+    const auth = await requireAiAuth();
     const body = await parseJson(request, SocraticRequestSchema);
     const { item, ctx } = await loadExplainTarget(auth, body.target);
     return ok(
