@@ -85,3 +85,20 @@ test("estudio: el nombre es obligatorio", async ({ page }) => {
     "Escribe tu nombre",
   );
 });
+
+test("estudio: se puede volver al login desde el nombre y desde la elección de modo", async ({
+  page,
+}) => {
+  // Paso 1 (nombre): enlace directo
+  await page.goto("/estudio");
+  await page.getByTestId("back-to-login").click();
+  await expect(page).toHaveURL(/\/login$/);
+
+  // Paso 2 (modo): ya hay sesión de participante; el botón la cierra y el login se queda
+  await enterStudy(page, `Sale ${Date.now()}`);
+  await page.getByTestId("back-to-login").click();
+  await expect(page).toHaveURL(/\/login$/);
+  await page.goto("/login");
+  await expect(page).toHaveURL(/\/login$/);
+  await expect(page.getByTestId("signin-form")).toBeVisible();
+});
