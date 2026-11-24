@@ -1,6 +1,7 @@
 import { ListChecks, MessageCircleQuestion } from "lucide-react";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { BackToLogin } from "@/components/app/back-to-login";
 import { LogoMark } from "@/components/app/logo";
 import { getAuthedContext } from "@/lib/data/auth";
 import { getStudyProgress } from "@/lib/data/study";
@@ -68,6 +69,8 @@ export default async function EstudioPage({ searchParams }: PageProps<"/estudio"
                   icon={<ListChecks className="size-6" aria-hidden />}
                 />
               </form>
+              {/* Ya hay sesión de participante: se cierra para que el login no la regrese aquí. */}
+              <BackToLogin signOut />
             </div>
           ) : (
             <div className="space-y-4">
@@ -77,6 +80,7 @@ export default async function EstudioPage({ searchParams }: PageProps<"/estudio"
               <NameForm
                 signedInAs={ctx ? profile?.name || ctx.email || "otra cuenta" : undefined}
               />
+              <BackToLogin />
             </div>
           )}
         </div>

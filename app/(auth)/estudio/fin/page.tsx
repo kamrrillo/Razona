@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { BackToLogin } from "@/components/app/back-to-login";
 import { StudyAgreement } from "@/components/app/study-agreement";
 import { Button } from "@/components/ui/button";
 import { getAuthedContext } from "@/lib/data/auth";
@@ -58,6 +59,7 @@ export default async function EstudioFinPage() {
         <p className="text-center text-xs text-muted-foreground">
           Al terminar, este teléfono queda listo para la siguiente persona.
         </p>
+        <BackToLogin signOut />
       </div>
     </main>
   );
