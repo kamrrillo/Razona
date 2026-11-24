@@ -13,8 +13,12 @@ export const SessionRequestSchema = z.object({
 export const SessionResponseSchema = z.object({
   sessionId: z.uuid(),
   item: PublicItemSchema,
-  reason: z.enum(["topic", "weak", "thompson"]),
+  reason: z.enum(["topic", "weak", "thompson", "study"]),
   messages: z.array(ChatMessageSchema),
+  /** Solo en el estudio: número de esta pregunta (desde 1) y total. */
+  study: z
+    .object({ index: z.number().int().positive(), total: z.number().int().positive() })
+    .optional(),
 });
 export type SessionResponse = z.infer<typeof SessionResponseSchema>;
 
@@ -31,9 +35,10 @@ export const AttemptResponseSchema = z.object({
   isCorrect: z.boolean(),
   attemptNumber: z.number().int().positive(),
   selectedOptionId: OptionId,
-  explanation: z.string(),
   correctOptionId: OptionId,
-  citation: CitationSchema,
+  /** Explicación fija y cita del caso. El modo sin IA no las recibe: solo ve si acertó y la correcta. */
+  explanation: z.string().optional(),
+  citation: CitationSchema.optional(),
   /** Recursos de aprendizaje del caso, primero los que atienden su error. */
   resources: z.array(ResourceSchema).default([]),
   /** Tipos de error de su respuesta (para marcar los recursos que le tocan). */

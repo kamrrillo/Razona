@@ -20,12 +20,16 @@ export async function startParticipant(
   const raw = formData.get("name");
   const name = NameSchema.safeParse(typeof raw === "string" ? raw : "");
   if (!name.success) return { error: name.error.issues[0]?.message ?? "Escribe tu nombre" };
+  if (formData.get("consent") !== "si") {
+    return { error: "Para participar necesitas aceptar el acuerdo." };
+  }
 
   const supabase = await createClient();
   // Si había otra sesión en este teléfono, se cierra: cada participante es una cuenta nueva.
   await supabase.auth.signOut();
   const { error } = await supabase.auth.signInAnonymously({
-    options: { data: { display_name: name.data } },
+    // study_consent: el trigger guarda la fecha de aceptación en profiles.study_consent_at.
+    options: { data: { display_name: name.data, study_consent: true } },
   });
   if (error?.code === "over_request_rate_limit") {
     return { error: "Demasiados registros desde esta red. Espera unos minutos." };
@@ -41,5 +45,5 @@ export async function chooseMode(formData: FormData): Promise<void> {
   const supabase = await createClient();
   const { error } = await supabase.rpc("elegir_grupo_estudio", { grupo: mode });
   if (error) redirect("/estudio?error=1");
-  redirect("/inicio?bienvenida=1");
+  redirect("/practicar");
 }

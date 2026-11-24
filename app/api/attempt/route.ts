@@ -32,9 +32,11 @@ export async function POST(request: Request) {
       isCorrect,
       attemptNumber,
       selectedOptionId: body.optionId,
-      explanation: session.item.explanation,
       correctOptionId: session.item.correctOptionId,
-      citation: session.item.citation,
+      // Modo sin IA: solo si acertó y la respuesta correcta (sin explicación ni cita).
+      ...(control
+        ? {}
+        : { explanation: session.item.explanation, citation: session.item.citation }),
       resources: control ? [] : orderResources(session.item.resources ?? [], errorTypes),
       errorTypes,
     });

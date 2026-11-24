@@ -11,6 +11,8 @@ export default async function AppLayout({ children }: LayoutProps<"/">) {
   if (ctx.isAnonymous && !(await getStudyProfile(ctx.supabase, ctx.userId)).chosen) {
     redirect("/estudio");
   }
+  // En el estudio no hay navegación: solo las preguntas.
+  const showNav = !ctx.isAnonymous;
 
   return (
     <>
@@ -18,7 +20,7 @@ export default async function AppLayout({ children }: LayoutProps<"/">) {
       <main className="mx-auto w-full max-w-md flex-1 px-4 pt-[calc(env(safe-area-inset-top)+2.25rem)] pb-[calc(env(safe-area-inset-bottom)+6rem)]">
         {children}
       </main>
-      <BottomNav />
+      {showNav && <BottomNav />}
     </>
   );
 }

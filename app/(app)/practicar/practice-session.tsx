@@ -3,7 +3,6 @@
 import { CheckCircle2, Loader2, Sparkles, XCircle } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { CitationCard } from "@/components/app/citation-card";
 import { LearningResources } from "@/components/app/learning-resources";
 import { TutorExplanation } from "@/components/app/tutor-explanation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -24,8 +23,11 @@ import { cn } from "@/lib/utils";
  * (GPC primero, widget interactivo y pregunta socrática). Si se equivocó, la explicación corrige
  * su idea; si acertó, la refuerza y la lleva un paso más allá.
  *
- * `quizOnly` (grupo control del estudio): igual, pero en lugar del tutor solo se muestra la
- * respuesta correcta con la explicación fija del caso y su cita. Nada generado con IA.
+ * `quizOnly` (modo sin IA del estudio): solo dice si acertó y, si no, cuál era la correcta.
+ * Sin explicación, cita, tutor ni recursos: así se compara el efecto de explicar.
+ *
+ * En el estudio (`session.study`) las preguntas son fijas y al terminar la última se va a
+ * /estudio/fin.
  */
 export function PracticeSession({
   topic,
@@ -125,6 +127,11 @@ export function PracticeSession({
   return (
     <div className="space-y-4 py-4">
       <div className="flex flex-wrap items-center gap-2">
+        {session.study && (
+          <Badge className="bg-brand-700" data-testid="study-progress">
+            Pregunta {session.study.index} de {session.study.total}
+          </Badge>
+        )}
         <Badge variant="secondary">{item.specialtyName}</Badge>
         <Badge variant="outline">{item.topic}</Badge>
         {session.reason === "weak" && <Badge className="bg-rose-600">Tema débil</Badge>}
@@ -217,60 +224,70 @@ export function PracticeSession({
               ) : (
                 <>
                   <CardTitle className="flex items-center gap-2 text-lg text-rose-700">
-                    <XCircle className="size-6" aria-hidden /> No es la correcta
+                    <XCircle className="size-6" aria-hidden />{" "}
+                    {quizOnly ? "Incorrecto" : "No es la correcta"}
                   </CardTitle>
-                  <p className="text-sm text-muted-foreground" data-testid="wrong-summary">
-                    Elegiste{" "}
-                    <span className="font-semibold">{optionLabel(result.selectedOptionId)}</span>.
-                    La respuesta es{" "}
-                    <span className="font-semibold text-emerald-700">
-                      {optionLabel(result.correctOptionId)}
-                    </span>
-                    .{quizOnly ? "" : " Tu tutor te explica por qué."}
-                  </p>
+                  {!quizOnly && (
+                    <p className="text-sm text-muted-foreground" data-testid="wrong-summary">
+                      Elegiste{" "}
+                      <span className="font-semibold">{optionLabel(result.selectedOptionId)}</span>.
+                      La respuesta es{" "}
+                      <span className="font-semibold text-emerald-700">
+                        {optionLabel(result.correctOptionId)}
+                      </span>
+                      . Tu tutor te explica por qué.
+                    </p>
+                  )}
                 </>
               )}
             </CardHeader>
             <CardContent className="space-y-3">
               {quizOnly ? (
-                <>
+                !result.isCorrect && (
                   <p data-testid="quiz-correct-answer">
                     Respuesta correcta:{" "}
                     <span className="font-semibold text-emerald-700">
                       {optionLabel(result.correctOptionId)}
                     </span>
                   </p>
-                  <p className="leading-relaxed">{result.explanation}</p>
-                  <CitationCard
-                    gpcId={result.citation.gpcId}
-                    gpcTitle={result.citation.gpcTitle}
-                    section={result.citation.section}
-                    page={result.citation.page}
-                    snippet={result.citation.snippet}
-                  />
-                </>
+                )
               ) : (
                 <>
                   <TutorExplanation
                     request={{ sessionId: session.sessionId }}
                     autoLoad
-                    placeholder={result.explanation}
+                    placeholder={result.explanation ?? ""}
                     correctLabel={optionLabel(result.correctOptionId)}
                   />
                   <LearningResources resources={result.resources} errorTypes={result.errorTypes} />
                 </>
               )}
-              <Button
-                className="w-full"
-                size="lg"
-                onClick={() => void loadSession({ excludeItemId: item.id })}
-                data-testid="next-case"
-              >
-                Siguiente caso
-              </Button>
-              <Link href="/examen" className={cn(buttonVariants({ variant: "outline" }), "w-full")}>
-                Ir al examen simulado
-              </Link>
+              {session.study && session.study.index >= session.study.total ? (
+                <Link
+                  href="/estudio/fin"
+                  className={cn(buttonVariants({ size: "lg" }), "w-full")}
+                  data-testid="finish-study"
+                >
+                  Terminar
+                </Link>
+              ) : (
+                <Button
+                  className="w-full"
+                  size="lg"
+                  onClick={() => void loadSession({ excludeItemId: item.id })}
+                  data-testid="next-case"
+                >
+                  {session.study ? "Siguiente pregunta" : "Siguiente caso"}
+                </Button>
+              )}
+              {!session.study && (
+                <Link
+                  href="/examen"
+                  className={cn(buttonVariants({ variant: "outline" }), "w-full")}
+                >
+                  Ir al examen simulado
+                </Link>
+              )}
             </CardContent>
           </Card>
         </div>

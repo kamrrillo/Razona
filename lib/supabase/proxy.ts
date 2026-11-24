@@ -41,6 +41,7 @@ export async function updateSession(request: NextRequest) {
   // Importante: no ejecutar código entre createServerClient y getClaims().
   const { data } = await supabase.auth.getClaims();
   const isAuthenticated = Boolean(data?.claims?.sub);
+  const isParticipant = Boolean(data?.claims?.is_anonymous);
   const { pathname } = request.nextUrl;
 
   const isProtected = PROTECTED_PREFIXES.some(
@@ -54,6 +55,19 @@ export async function updateSession(request: NextRequest) {
     url.search = "";
     const next = safeNextPath(`${pathname}${request.nextUrl.search}`, "");
     if (next && next !== "/inicio") url.searchParams.set("next", next);
+    return NextResponse.redirect(url);
+  }
+
+  // Participante del estudio: solo responde las preguntas del estudio (en /practicar).
+  if (
+    isParticipant &&
+    (pathname === "/" ||
+      pathname === "/login" ||
+      (isProtected && !pathname.startsWith("/practicar")))
+  ) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/estudio";
+    url.search = "";
     return NextResponse.redirect(url);
   }
 
