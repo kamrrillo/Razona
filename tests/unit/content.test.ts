@@ -178,6 +178,7 @@ describe.skipIf(!reachable)("banco en Supabase local (v_casos_app)", () => {
       "v_casos_rubrica",
       "v_casos_citas",
       "temas",
+      "v_estudio",
     ]) {
       const { data, error } = await anon.from(table).select("*").limit(1);
       expect(data ?? [], table).toHaveLength(0);
